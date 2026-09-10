@@ -18,33 +18,6 @@
   ],
   "controls": [
     {
-      "name": "AutoScaleDimensions",
-      "type": "System.Drawing.SizeF",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
-      "name": "Margin",
-      "type": "System.Windows.Forms.Padding",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
-      "name": "Size",
-      "type": "System.Drawing.Size",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
       "name": "scMain",
       "type": "System.Windows.Forms.SplitContainer",
       "parent": "TabToListView",
@@ -85,6 +58,15 @@
       "resources": []
     },
     {
+      "name": "columnHeader2",
+      "type": "System.Windows.Forms.ColumnHeader",
+      "parent": "lvMain",
+      "parent_slot": "Columns",
+      "child_index": 0,
+      "properties": {},
+      "resources": []
+    },
+    {
       "name": "lvMain",
       "type": "MyListView",
       "parent": "scMain",
@@ -92,12 +74,6 @@
       "child_index": 0,
       "properties": {
         "AutoFillColumn": true,
-        "Columns.literal_items": [
-          {
-            "kind": "ident",
-            "raw": "columnHeader2"
-          }
-        ],
         "Dock": {
           "kind": "expr",
           "raw": "System.Windows.Forms.DockStyle.Fill"
@@ -181,7 +157,15 @@
               {
                 "name": "lvMain",
                 "type": "MyListView",
-                "slots": {}
+                "slots": {
+                  "Columns": [
+                    {
+                      "name": "columnHeader2",
+                      "type": "System.Windows.Forms.ColumnHeader",
+                      "slots": {}
+                    }
+                  ]
+                }
               }
             ]
           }

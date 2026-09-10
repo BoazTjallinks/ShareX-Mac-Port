@@ -168,15 +168,6 @@
   ],
   "controls": [
     {
-      "name": "components",
-      "type": "System.ComponentModel.Container",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
       "name": "cmsLanguages",
       "type": "System.Windows.Forms.ContextMenuStrip",
       "parent": null,
@@ -194,52 +185,6 @@
         {
           "property": "Size",
           "resource_key": "cmsLanguages.Size",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "chDescription",
-      "type": "System.Windows.Forms.ColumnHeader",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Text": "Description",
-        "Width": 135
-      },
-      "resources": [
-        {
-          "property": "Text",
-          "resource_key": "chDescription.Text",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Width",
-          "resource_key": "chDescription.Width",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "chFormat",
-      "type": "System.Windows.Forms.ColumnHeader",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Text": "Format",
-        "Width": 320
-      },
-      "resources": [
-        {
-          "property": "Text",
-          "resource_key": "chFormat.Text",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Width",
-          "resource_key": "chFormat.Width",
           "source": "ApplyResources"
         }
       ]
@@ -1295,12 +1240,6 @@
           "kind": "expr",
           "raw": "System.Windows.Forms.BorderStyle.None"
         },
-        "Columns.literal_items": [
-          {
-            "kind": "ident",
-            "raw": "chSecondaryFileUploaders"
-          }
-        ],
         "Dock": "Fill",
         "Location": {
           "kind": "Point",
@@ -1364,12 +1303,6 @@
           "kind": "expr",
           "raw": "System.Windows.Forms.BorderStyle.None"
         },
-        "Columns.literal_items": [
-          {
-            "kind": "ident",
-            "raw": "chSecondaryImageUploaders"
-          }
-        ],
         "Dock": "Fill",
         "Location": {
           "kind": "Point",
@@ -1433,12 +1366,6 @@
           "kind": "expr",
           "raw": "System.Windows.Forms.BorderStyle.None"
         },
-        "Columns.literal_items": [
-          {
-            "kind": "ident",
-            "raw": "chSecondaryTextUploaders"
-          }
-        ],
         "Dock": "Fill",
         "Location": {
           "kind": "Point",
@@ -2278,6 +2205,79 @@
           "source": "ApplyResources"
         }
       ]
+    },
+    {
+      "name": "chDescription",
+      "type": "System.Windows.Forms.ColumnHeader",
+      "parent": "lvClipboardFormats",
+      "parent_slot": "Columns",
+      "child_index": 0,
+      "properties": {
+        "Text": "Description",
+        "Width": 135
+      },
+      "resources": [
+        {
+          "property": "Text",
+          "resource_key": "chDescription.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Width",
+          "resource_key": "chDescription.Width",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "chFormat",
+      "type": "System.Windows.Forms.ColumnHeader",
+      "parent": "lvClipboardFormats",
+      "parent_slot": "Columns",
+      "child_index": 1,
+      "properties": {
+        "Text": "Format",
+        "Width": 320
+      },
+      "resources": [
+        {
+          "property": "Text",
+          "resource_key": "chFormat.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Width",
+          "resource_key": "chFormat.Width",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "chSecondaryFileUploaders",
+      "type": "System.Windows.Forms.ColumnHeader",
+      "parent": "lvSecondaryFileUploaders",
+      "parent_slot": "Columns",
+      "child_index": 0,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "chSecondaryImageUploaders",
+      "type": "System.Windows.Forms.ColumnHeader",
+      "parent": "lvSecondaryImageUploaders",
+      "parent_slot": "Columns",
+      "child_index": 0,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "chSecondaryTextUploaders",
+      "type": "System.Windows.Forms.ColumnHeader",
+      "parent": "lvSecondaryTextUploaders",
+      "parent_slot": "Columns",
+      "child_index": 0,
+      "properties": {},
+      "resources": []
     },
     {
       "name": "tpGeneral",
@@ -3262,16 +3262,6 @@
         },
         "TabIndex": 3,
         "AutoFillColumn": true,
-        "Columns.literal_items": [
-          {
-            "kind": "ident",
-            "raw": "chDescription"
-          },
-          {
-            "kind": "ident",
-            "raw": "chFormat"
-          }
-        ],
         "FullRowSelect": true,
         "HideSelection": false,
         "Name": "lvClipboardFormats",
@@ -8455,7 +8445,20 @@
                     {
                       "name": "lvClipboardFormats",
                       "type": "HelpersLib.MyListView",
-                      "slots": {}
+                      "slots": {
+                        "Columns": [
+                          {
+                            "name": "chDescription",
+                            "type": "System.Windows.Forms.ColumnHeader",
+                            "slots": {}
+                          },
+                          {
+                            "name": "chFormat",
+                            "type": "System.Windows.Forms.ColumnHeader",
+                            "slots": {}
+                          }
+                        ]
+                      }
                     }
                   ]
                 }
@@ -8473,7 +8476,15 @@
                           {
                             "name": "lvSecondaryFileUploaders",
                             "type": "MyListView",
-                            "slots": {}
+                            "slots": {
+                              "Columns": [
+                                {
+                                  "name": "chSecondaryFileUploaders",
+                                  "type": "System.Windows.Forms.ColumnHeader",
+                                  "slots": {}
+                                }
+                              ]
+                            }
                           }
                         ]
                       }
@@ -8491,7 +8502,15 @@
                           {
                             "name": "lvSecondaryImageUploaders",
                             "type": "MyListView",
-                            "slots": {}
+                            "slots": {
+                              "Columns": [
+                                {
+                                  "name": "chSecondaryImageUploaders",
+                                  "type": "System.Windows.Forms.ColumnHeader",
+                                  "slots": {}
+                                }
+                              ]
+                            }
                           }
                         ]
                       }
@@ -8504,7 +8523,15 @@
                           {
                             "name": "lvSecondaryTextUploaders",
                             "type": "MyListView",
-                            "slots": {}
+                            "slots": {
+                              "Columns": [
+                                {
+                                  "name": "chSecondaryTextUploaders",
+                                  "type": "System.Windows.Forms.ColumnHeader",
+                                  "slots": {}
+                                }
+                              ]
+                            }
                           }
                         ]
                       }

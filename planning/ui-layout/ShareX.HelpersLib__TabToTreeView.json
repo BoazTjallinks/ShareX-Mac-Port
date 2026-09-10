@@ -20,33 +20,6 @@
   ],
   "controls": [
     {
-      "name": "AutoScaleDimensions",
-      "type": "System.Drawing.SizeF",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
-      "name": "Margin",
-      "type": "System.Windows.Forms.Padding",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
-      "name": "Size",
-      "type": "System.Drawing.Size",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
       "name": "scMain",
       "type": "System.Windows.Forms.SplitContainer",
       "parent": "TabToTreeView",

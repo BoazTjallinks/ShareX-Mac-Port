@@ -43,14 +43,20 @@
 //   - StartupState is ported in its non-MicrosoftStore form only. The omitted variant is the
 //     `#if MicrosoftStore` branch, whose members reference Windows.ApplicationModel.StartupTaskState
 //     (Windows Store API, not applicable to this macOS port).
-//   - Enums not requested for this port (ShareXBuild, ScreenTearingTestMode) are intentionally
-//     not included here.
-
 using System;
 using System.Collections.Generic;
 
 namespace ShareX.Core.Enums
 {
+    public enum ShareXBuild
+    {
+        Debug,
+        Release,
+        Steam,
+        MicrosoftStore,
+        Unknown
+    }
+
     public enum TaskJob
     {
         Job,
@@ -273,6 +279,12 @@ namespace ShareX.Core.Enums
     public enum RegionCaptureType
     {
         Default, Light, Transparent
+    }
+
+    public enum ScreenTearingTestMode
+    {
+        VerticalLines,
+        HorizontalLines
     }
 
     // Ported alongside the other members of this file's #if !MicrosoftStore branch.

@@ -1,62 +1,103 @@
-# ShareX for macOS — project and Claude Code package
+# ShareX-Mac-Port
 
-This is the complete researched design package for a personal **ShareX 21.0.0 macOS port**. It includes the pinned Windows source, architecture, implementation catalogues, compatibility rules, build stages, acceptance cases and ready-to-use Claude Code instructions. **It is not a compiled or implemented Mac app.**
+An **unofficial, work-in-progress macOS port of [ShareX](https://github.com/ShareX/ShareX) 21.0.0.**
 
-Recommended stack: **C# / .NET 10 LTS / Avalonia / SkiaSharp**, with a **Swift native bridge** for macOS capture and system integration. No hosted backend. The recommendation reuses ShareX's existing Avalonia editor and portable C# logic.
+> ShareX is created by the **ShareX Team** (Jaex, McoreD and contributors) and is
+> licensed GPL-3.0. All credit for ShareX belongs to them. This repository is a
+> derivative port — it is not official, not affiliated with, and not endorsed by
+> the ShareX project. Please direct ShareX issues to
+> [upstream](https://github.com/ShareX/ShareX/issues), not here.
+>
+> Full attribution and provenance: **[NOTICE.md](NOTICE.md)**.
 
-## Start in Claude Code
+---
 
-1. Extract this entire project folder on your Mac. Keep its files together.
-2. Open a terminal in this folder and start Claude Code. Use `/model` to select the Opus model available in your account. “Opus 5.1” was not verified in Anthropic's official catalogue; see [model guidance](docs/CLAUDE-GUIDANCE.md).
-3. Paste the complete prompt from [IMPLEMENT.md](prompts/IMPLEMENT.md), or use this launcher:
+## Status: early. It does not do anything useful yet.
 
-```text
-Read CLAUDE.md and prompts/IMPLEMENT.md in this project. Execute that
-implementation prompt against the supplied specification and pinned source.
-Start with environment inspection and stage 0, then continue the complete
-ShareX 21.0.0 macOS port. Do not stop at a plan or basic capture demo. Track
-feature evidence and explicit platform differences in the supplied ledgers.
-```
+This is an honest status table, not a roadmap of intentions. Nothing is listed as
+working unless it was actually executed on a real machine.
 
-4. For a later session use [CONTINUE.md](prompts/CONTINUE.md).
+| Area | State | Evidence |
+| --- | --- | --- |
+| Native bridge (Swift + Objective-C C ABI over ScreenCaptureKit) | **builds and links**, arm64 | `native/ShareXMacNative/build.sh` |
+| Upstream enum port (75 commands, 22 after-capture, 6 after-upload flags, …) | **ported**, values verified against the pinned source | `tests/ShareX.Core.Tests` |
+| Managed interop (`LibraryImport` over the C ABI) | **builds**, unit-tested without the dylib | `tests/ShareX.Platform.Mac.Tests` |
+| `.app` packaging + local code signing | **scripted**, not yet exercised end to end | `scripts/build-app.sh` |
+| Screen capture at runtime | **not yet demonstrated** | — |
+| Recording, editors, effects, uploaders, settings UI, history, CLI | **not implemented** | — |
 
-You do not have to clone ShareX yourself. The supplied restore script verifies and extracts the included source archive. Claude should inspect existing developer tools and tell you about genuinely missing prerequisites when needed.
+The upstream feature ledger (`planning/feature-ledger.json`) tracks 671 catalogue
+entries. Almost all of them are still `not_started`. This README will not claim
+otherwise.
 
-## Read the design
+## What this port is trying to be
 
-| File | Contents |
-| --- | --- |
-| [PROJECT-SPEC.md](PROJECT-SPEC.md) | Architecture decisions, stack, capture/media/editor design, workflow semantics, data model, migration, UI and packaging. |
-| [INTERFACES-AND-DATA.md](docs/INTERFACES-AND-DATA.md) | Module inputs/outputs, native ABI, artifact ownership, settings boundaries and error taxonomy. |
-| [FEATURE-CATALOGUE.md](docs/FEATURE-CATALOGUE.md) | Every executable command, after-task flag, editor/region tool, integration variant and additional feature surface, with implementation and acceptance mapping. |
-| [EFFECT-CATALOGUE.md](docs/EFFECT-CATALOGUE.md) | All 232 new effect IDs and 51 legacy effects, linked to their implementation. |
-| [DESTINATIONS.md](docs/DESTINATIONS.md) | All 74 registered services, two file-uploader routes, custom-uploader functions and per-adapter approach. |
-| [SETTINGS-COMPATIBILITY.md](docs/SETTINGS-COMPATIBILITY.md) | 926 source-field candidates, original declarations and per-field port/migration rules; semantic reconciliation requirement. |
-| [UPSTREAM-SOURCE-MAP.md](docs/UPSTREAM-SOURCE-MAP.md) | Where the relevant Windows/C# code lives and what can be reused or replaced. |
-| [BUILD-ROADMAP.md](docs/BUILD-ROADMAP.md) | Twelve staged deliverables with concrete exit evidence. |
-| [PARITY-TEST-PLAN.md](docs/PARITY-TEST-PLAN.md) | Capture, workflow, editor, upload, recording, migration, UI and installation acceptance cases. |
-| [MACOS-LIMITATIONS.md](docs/MACOS-LIMITATIONS.md) | OS differences and external-service limits that cannot honestly count as exact parity. |
-| [SOURCES.md](docs/SOURCES.md) | Official research references, dates, source provenance and retrieval limits. |
+A faithful port, not a smaller screenshot app: the same commands, the same
+workflow semantics, both editors, the full destination catalogue, `.sxcu`/`.sxie`
+compatibility, and the same settings — rendered with native macOS chrome rather
+than transplanted WinForms metrics. See [`PROJECT-SPEC.md`](PROJECT-SPEC.md) and
+[`planning/adr/`](planning/adr/) for the decisions and their reasoning.
 
-Machine-readable tracking lives in `planning/feature-ledger.json` (**671 entries**) and `planning/settings-ledger.json`. Entries include overlapping feature variants and option values; 671 is a tracking count, not a claim of 671 independent user-facing tools. All application implementation statuses start unfinished.
+Where macOS genuinely cannot reproduce a Windows behaviour, the difference is
+written down (see [`docs/MACOS-LIMITATIONS.md`](docs/MACOS-LIMITATIONS.md)) rather
+than hidden behind a disabled button.
 
-## Included source
+## Requirements
 
-Repository: [ShareX/ShareX](https://github.com/ShareX/ShareX). Release: [v21.0.0](https://github.com/ShareX/ShareX/releases/tag/v21.0.0). Commit: `d2502561f63fc3ff502cacd91514e3f7f2948c74`.
+- Apple Silicon Mac, macOS 15 or later (developed on macOS 26.6)
+- .NET SDK 10.0.4xx
+- Xcode Command Line Tools (full Xcode is **not** required)
+- FFmpeg, for the media features that need it
 
-`vendor/ShareX-v21.0.0-source.tar.gz` contains all **3,971 tracked source files** from that commit, including project files, original license notices and assets. It excludes Git history and downloaded dependency binaries/models. The source tree is restored under `reference/ShareX`; implementation forks belong under `src/`.
-
-Optional manual integrity/restore commands, if Python 3 is available:
+## Building
 
 ```sh
+# 1. verify and unpack the pinned upstream source into reference/ShareX
 python3 scripts/verify-package.py
 python3 scripts/restore-upstream.py
+
+# 2. native bridge (Swift + Objective-C, Command Line Tools only)
+./native/ShareXMacNative/build.sh
+
+# 3. managed solution and tests
+dotnet build ShareX-Mac.sln
+dotnet test  tests/ShareX.Core.Tests/ShareX.Core.Tests.csproj
+
+# 4. (optional) a stable local signing identity, so macOS keeps the
+#    Screen Recording permission across rebuilds
+./scripts/create-signing-identity.sh
+
+# 5. assemble and install the app bundle
+./packaging/make-icns.sh
+./scripts/build-app.sh
+./scripts/install-app.sh
 ```
 
-Restoration refuses to overwrite an existing reference tree. `scripts/audit-upstream.py` reproduces the lexical inventory. A separate semantic settings audit is required during implementation.
+`reference/ShareX` is a read-only extraction of the pinned upstream source. It is
+git-ignored and must never be edited; ports live under `src/` and `native/`.
 
-## What “1:1” can mean
+## Repository layout
 
-The full source feature set remains in scope. Some Windows operations have no direct public macOS equivalent; OCR, permissions, hardware encoders and third-party window control also differ. Remote services can disappear independently of either OS. The port must reproduce feasible behavior and openly document these differences. Neither this package nor the final application should claim literal perfect parity while exceptions remain.
+| Path | Contents |
+| --- | --- |
+| `native/ShareXMacNative/` | Swift implementation behind a versioned C ABI (`include/sxm_abi.h`) |
+| `src/ShareX.Core/` | Portable domain: upstream enums, error taxonomy, coordinate spaces |
+| `src/ShareX.Platform.Mac/` | Managed bindings for the native bridge |
+| `src/ShareX.Imaging/` | Portable image abstraction and the legacy effect library |
+| `src/ShareX.Mac.App/` | Avalonia application host |
+| `planning/` | ADRs, the feature ledger, and behaviour extracted from the pinned source |
+| `docs/` | Feature/effect/destination catalogues and the parity test plan |
+| `reference/` | Read-only upstream source (git-ignored, restored by script) |
 
-The project is large. Claude Code should build it in stages, preserve progress between sessions and use observable evidence. The included source and inventories prevent a changing baseline or a forgotten feature list; they do not eliminate the engineering work.
+Two documents in `planning/` are worth reading before changing behaviour, because
+they record semantics that are easy to get wrong by guessing:
+
+- [`planning/workflow-control-flow.md`](planning/workflow-control-flow.md) — the real
+  execution order inside `WorkerTask`, extracted from the pinned source.
+- [`planning/task-settings-resolution.md`](planning/task-settings-resolution.md) — how
+  the 13 settings override groups resolve into a per-job snapshot.
+
+## Licence
+
+GPL-3.0, the same as upstream ShareX. See [`LICENSE`](LICENSE) and
+[`NOTICE.md`](NOTICE.md).

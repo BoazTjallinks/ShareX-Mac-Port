@@ -12,6 +12,23 @@ namespace ShareX.Core.Tests
     public class UpstreamEnumsTests
     {
         [Fact]
+        public void ShareXBuild_Values_MatchUpstream()
+        {
+            Assert.Equal(0, (int)ShareXBuild.Debug);
+            Assert.Equal(1, (int)ShareXBuild.Release);
+            Assert.Equal(2, (int)ShareXBuild.Steam);
+            Assert.Equal(3, (int)ShareXBuild.MicrosoftStore);
+            Assert.Equal(4, (int)ShareXBuild.Unknown);
+        }
+
+        [Fact]
+        public void ScreenTearingTestMode_Values_MatchUpstream()
+        {
+            Assert.Equal(0, (int)ScreenTearingTestMode.VerticalLines);
+            Assert.Equal(1, (int)ScreenTearingTestMode.HorizontalLines);
+        }
+
+        [Fact]
         public void TaskJob_Values_MatchUpstream()
         {
             Assert.Equal(0, (int)TaskJob.Job);

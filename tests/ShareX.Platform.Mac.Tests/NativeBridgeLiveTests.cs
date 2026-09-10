@@ -1,5 +1,6 @@
 using System.Threading;
 using System.Threading.Tasks;
+using System.Threading.Channels;
 using ShareX.Platform.Mac.Interop;
 using Xunit;
 
@@ -30,6 +31,23 @@ namespace ShareX.Platform.Mac.Tests
             using var bridge = new NativeBridge();
             NativeResponse response = await bridge.InvokeAsync("capabilities.get", null, CancellationToken.None);
             Assert.Equal(NativeResultCode.Ok, response.Code);
+        }
+
+        [Fact(Skip = SkipReason)]
+        public async Task EventReceived_SubscribingInstallsSink_AndDeliversRealNativeEvents()
+        {
+            // Exercises the sxm_set_event_sink path added for the recording pipeline: once the
+            // native ShareXMacNative/swift target actually publishes "recording.state" /
+            // "recording.progress" events, this should observe at least one NativeEvent within
+            // the timeout below without this test asserting anything about their exact schema.
+            using var bridge = new NativeBridge();
+            var channel = Channel.CreateUnbounded<NativeEvent>();
+            bridge.EventReceived += (_, evt) => channel.Writer.TryWrite(evt);
+
+            using var cts = new CancellationTokenSource(System.TimeSpan.FromSeconds(5));
+            NativeEvent received = await channel.Reader.ReadAsync(cts.Token);
+
+            Assert.True(received.Payload.ValueKind is System.Text.Json.JsonValueKind.Object);
         }
     }
 }

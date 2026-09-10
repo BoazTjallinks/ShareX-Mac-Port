@@ -62,127 +62,6 @@
   ],
   "controls": [
     {
-      "name": "components",
-      "type": "System.ComponentModel.Container",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
-      "name": "pbPreview",
-      "type": "HelpersLib.MyPictureBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "BackColor": {
-          "kind": "expr",
-          "raw": "System.Drawing.SystemColors.Window"
-        },
-        "Dock": "Fill",
-        "Location": {
-          "kind": "Point",
-          "x": 335,
-          "y": 0
-        },
-        "Margin": {
-          "kind": "Padding",
-          "left": 0,
-          "top": 0,
-          "right": 0,
-          "bottom": 0
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 1049,
-          "height": 761
-        },
-        "TabIndex": 1,
-        "DrawCheckeredBackground": true,
-        "EnableRightClickMenu": true,
-        "FullscreenOnClick": true,
-        "Name": "pbPreview",
-        "PictureBoxBackColor": {
-          "kind": "expr",
-          "raw": "System.Drawing.SystemColors.Window"
-        },
-        "ShowImageSizeLabel": true
-      },
-      "resources": [
-        {
-          "property": "Dock",
-          "resource_key": "pbPreview.Dock",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "pbPreview.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Margin",
-          "resource_key": "pbPreview.Margin",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "pbPreview.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "pbPreview.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "pOptions",
-      "type": "System.Windows.Forms.Panel",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Dock": "Fill",
-        "Location": {
-          "kind": "Point",
-          "x": 3,
-          "y": 3
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 329,
-          "height": 755
-        },
-        "TabIndex": 0,
-        "Name": "pOptions"
-      },
-      "resources": [
-        {
-          "property": "Dock",
-          "resource_key": "pOptions.Dock",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "pOptions.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "pOptions.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "pOptions.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "ttMain",
       "type": "System.Windows.Forms.ToolTip",
       "parent": null,
@@ -2224,6 +2103,118 @@
           "source": "ApplyResources"
         }
       ]
+    },
+    {
+      "name": "pbPreview",
+      "type": "HelpersLib.MyPictureBox",
+      "parent": "tlpMain",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        },
+        "Dock": "Fill",
+        "Location": {
+          "kind": "Point",
+          "x": 335,
+          "y": 0
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 1049,
+          "height": 761
+        },
+        "TabIndex": 1,
+        "DrawCheckeredBackground": true,
+        "EnableRightClickMenu": true,
+        "FullscreenOnClick": true,
+        "Name": "pbPreview",
+        "PictureBoxBackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        },
+        "ShowImageSizeLabel": true
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "pbPreview.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "pbPreview.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "pbPreview.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pbPreview.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pbPreview.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pOptions",
+      "type": "System.Windows.Forms.Panel",
+      "parent": "tlpMain",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Dock": "Fill",
+        "Location": {
+          "kind": "Point",
+          "x": 3,
+          "y": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 329,
+          "height": 755
+        },
+        "TabIndex": 0,
+        "Name": "pOptions"
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "pOptions.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "pOptions.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pOptions.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pOptions.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
     }
   ],
   "tree": {
@@ -2234,7 +2225,206 @@
         {
           "name": "tlpMain",
           "type": "System.Windows.Forms.TableLayoutPanel",
-          "slots": {}
+          "slots": {
+            "Controls": [
+              {
+                "name": "pbPreview",
+                "type": "HelpersLib.MyPictureBox",
+                "slots": {}
+              },
+              {
+                "name": "pOptions",
+                "type": "System.Windows.Forms.Panel",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "btnShadowExpand",
+                      "type": "System.Windows.Forms.Button",
+                      "slots": {}
+                    },
+                    {
+                      "name": "gbShadow",
+                      "type": "System.Windows.Forms.GroupBox",
+                      "slots": {
+                        "Controls": [
+                          {
+                            "name": "lblShadowAngleValue",
+                            "type": "System.Windows.Forms.Label",
+                            "slots": {}
+                          },
+                          {
+                            "name": "lblShadowDistanceValue",
+                            "type": "System.Windows.Forms.Label",
+                            "slots": {}
+                          },
+                          {
+                            "name": "lblShadowOpacityValue",
+                            "type": "System.Windows.Forms.Label",
+                            "slots": {}
+                          },
+                          {
+                            "name": "btnShadowColor",
+                            "type": "HelpersLib.ColorButton",
+                            "slots": {}
+                          },
+                          {
+                            "name": "tbShadowRadius",
+                            "type": "System.Windows.Forms.TrackBar",
+                            "slots": {}
+                          },
+                          {
+                            "name": "tbShadowAngle",
+                            "type": "System.Windows.Forms.TrackBar",
+                            "slots": {}
+                          },
+                          {
+                            "name": "lblShadowRadiusValue",
+                            "type": "System.Windows.Forms.Label",
+                            "slots": {}
+                          },
+                          {
+                            "name": "lblShadowAngle",
+                            "type": "System.Windows.Forms.Label",
+                            "slots": {}
+                          },
+                          {
+                            "name": "lblShadowRadius",
+                            "type": "System.Windows.Forms.Label",
+                            "slots": {}
+                          },
+                          {
+                            "name": "tbShadowDistance",
+                            "type": "System.Windows.Forms.TrackBar",
+                            "slots": {}
+                          },
+                          {
+                            "name": "lblShadowOpacity",
+                            "type": "System.Windows.Forms.Label",
+                            "slots": {}
+                          },
+                          {
+                            "name": "lblShadowDistance",
+                            "type": "System.Windows.Forms.Label",
+                            "slots": {}
+                          },
+                          {
+                            "name": "tbShadowOpacity",
+                            "type": "System.Windows.Forms.TrackBar",
+                            "slots": {}
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "btnResetOptions",
+                      "type": "System.Windows.Forms.Button",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblBackgroundImageFilePath",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "btnBackgroundImageFilePathBrowse",
+                      "type": "System.Windows.Forms.Button",
+                      "slots": {}
+                    },
+                    {
+                      "name": "cbBackgroundType",
+                      "type": "System.Windows.Forms.ComboBox",
+                      "slots": {}
+                    },
+                    {
+                      "name": "btnPrint",
+                      "type": "System.Windows.Forms.Button",
+                      "slots": {}
+                    },
+                    {
+                      "name": "btnSave",
+                      "type": "System.Windows.Forms.Button",
+                      "slots": {}
+                    },
+                    {
+                      "name": "btnUpload",
+                      "type": "System.Windows.Forms.Button",
+                      "slots": {}
+                    },
+                    {
+                      "name": "btnSaveAs",
+                      "type": "System.Windows.Forms.Button",
+                      "slots": {}
+                    },
+                    {
+                      "name": "btnCopy",
+                      "type": "System.Windows.Forms.Button",
+                      "slots": {}
+                    },
+                    {
+                      "name": "pbBackground",
+                      "type": "System.Windows.Forms.PictureBox",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblMargin",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "tbMargin",
+                      "type": "System.Windows.Forms.TrackBar",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblRoundedCornerValue",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblPadding",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblPaddingValue",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "tbPadding",
+                      "type": "System.Windows.Forms.TrackBar",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblMarginValue",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "cbSmartPadding",
+                      "type": "System.Windows.Forms.CheckBox",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblRoundedCorner",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblBackground",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "tbRoundedCorner",
+                      "type": "System.Windows.Forms.TrackBar",
+                      "slots": {}
+                    }
+                  ]
+                }
+              }
+            ]
+          }
         }
       ]
     }

@@ -48,15 +48,6 @@
   ],
   "controls": [
     {
-      "name": "components",
-      "type": "System.ComponentModel.Container",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
       "name": "cmsEffects",
       "type": "System.Windows.Forms.ContextMenuStrip",
       "parent": null,
@@ -114,40 +105,6 @@
         "ReshowDelay": 100
       },
       "resources": []
-    },
-    {
-      "name": "chPreset",
-      "type": "System.Windows.Forms.ColumnHeader",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Width": 164
-      },
-      "resources": [
-        {
-          "property": "Width",
-          "resource_key": "chPreset.Width",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "chEffect",
-      "type": "System.Windows.Forms.ColumnHeader",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Width": 50
-      },
-      "resources": [
-        {
-          "property": "Width",
-          "resource_key": "chEffect.Width",
-          "source": "ApplyResources"
-        }
-      ]
     },
     {
       "name": "txtEffectName",
@@ -808,12 +765,6 @@
         },
         "TabIndex": 6,
         "AutoFillColumn": true,
-        "Columns.literal_items": [
-          {
-            "kind": "ident",
-            "raw": "chPreset"
-          }
-        ],
         "DisableDeselect": true,
         "FullRowSelect": true,
         "HeaderStyle": {
@@ -1590,12 +1541,6 @@
         "TabIndex": 15,
         "AutoFillColumn": true,
         "CheckBoxes": true,
-        "Columns.literal_items": [
-          {
-            "kind": "ident",
-            "raw": "chEffect"
-          }
-        ],
         "DisableDeselect": true,
         "FullRowSelect": true,
         "HeaderStyle": {
@@ -1689,6 +1634,40 @@
           "source": "ApplyResources"
         }
       ]
+    },
+    {
+      "name": "chEffect",
+      "type": "System.Windows.Forms.ColumnHeader",
+      "parent": "lvEffects",
+      "parent_slot": "Columns",
+      "child_index": 0,
+      "properties": {
+        "Width": 50
+      },
+      "resources": [
+        {
+          "property": "Width",
+          "resource_key": "chEffect.Width",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "chPreset",
+      "type": "System.Windows.Forms.ColumnHeader",
+      "parent": "lvPresets",
+      "parent_slot": "Columns",
+      "child_index": 0,
+      "properties": {
+        "Width": 164
+      },
+      "resources": [
+        {
+          "property": "Width",
+          "resource_key": "chPreset.Width",
+          "source": "ApplyResources"
+        }
+      ]
     }
   ],
   "tree": {
@@ -1754,7 +1733,15 @@
         {
           "name": "lvPresets",
           "type": "HelpersLib.MyListView",
-          "slots": {}
+          "slots": {
+            "Columns": [
+              {
+                "name": "chPreset",
+                "type": "System.Windows.Forms.ColumnHeader",
+                "slots": {}
+              }
+            ]
+          }
         },
         {
           "name": "btnPresetDuplicate",
@@ -1819,7 +1806,15 @@
         {
           "name": "lvEffects",
           "type": "ShareX.HelpersLib.MyListView",
-          "slots": {}
+          "slots": {
+            "Columns": [
+              {
+                "name": "chEffect",
+                "type": "System.Windows.Forms.ColumnHeader",
+                "slots": {}
+              }
+            ]
+          }
         }
       ]
     }

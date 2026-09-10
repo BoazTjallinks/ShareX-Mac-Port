@@ -30,23 +30,6 @@
   ],
   "controls": [
     {
-      "name": "chName",
-      "type": "System.Windows.Forms.ColumnHeader",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Width": 372
-      },
-      "resources": [
-        {
-          "property": "Width",
-          "resource_key": "chName.Width",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "lblTip",
       "type": "System.Windows.Forms.Label",
       "parent": "QuickTaskMenuEditorForm",
@@ -380,12 +363,6 @@
         },
         "TabIndex": 0,
         "AutoFillColumn": true,
-        "Columns.literal_items": [
-          {
-            "kind": "ident",
-            "raw": "chName"
-          }
-        ],
         "FullRowSelect": true,
         "GridLines": true,
         "HeaderStyle": {
@@ -424,6 +401,23 @@
         {
           "property": "TabIndex",
           "resource_key": "lvPresets.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "chName",
+      "type": "System.Windows.Forms.ColumnHeader",
+      "parent": "lvPresets",
+      "parent_slot": "Columns",
+      "child_index": 0,
+      "properties": {
+        "Width": 372
+      },
+      "resources": [
+        {
+          "property": "Width",
+          "resource_key": "chName.Width",
           "source": "ApplyResources"
         }
       ]
@@ -467,7 +461,15 @@
         {
           "name": "lvPresets",
           "type": "HelpersLib.MyListView",
-          "slots": {}
+          "slots": {
+            "Columns": [
+              {
+                "name": "chName",
+                "type": "System.Windows.Forms.ColumnHeader",
+                "slots": {}
+              }
+            ]
+          }
         }
       ]
     }

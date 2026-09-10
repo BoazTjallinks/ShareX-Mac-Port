@@ -35,15 +35,6 @@
   ],
   "controls": [
     {
-      "name": "components",
-      "type": "System.ComponentModel.Container",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
       "name": "niTray",
       "type": "System.Windows.Forms.NotifyIcon",
       "parent": null,

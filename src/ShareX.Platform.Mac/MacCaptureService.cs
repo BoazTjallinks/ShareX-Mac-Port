@@ -288,7 +288,13 @@ namespace ShareX.Platform.Mac
             return OperationOutcome<CaptureResult>.Success(result);
         }
 
-        private static TaskError ToTaskError(NativeResponse response)
+        // Internal (not private) so ShareX.Platform.Mac.Tests can prove this never assumes a
+        // JSON object is present: on the sxm_begin-returned-non-zero path in
+        // NativeBridge.InvokeAsync, response.Payload is default(JsonElement) (ValueKind
+        // Undefined), not an empty object. GetString below already guards on
+        // ValueKind == JsonValueKind.Object before ever calling TryGetProperty, so it degrades
+        // to the fallback message instead of throwing.
+        internal static TaskError ToTaskError(NativeResponse response)
         {
             string message = GetString(response.Payload, "message")
                 ?? GetString(response.Payload, "error")

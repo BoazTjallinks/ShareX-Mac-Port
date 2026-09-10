@@ -36,15 +36,6 @@
   ],
   "controls": [
     {
-      "name": "AutoScaleDimensions",
-      "type": "System.Drawing.SizeF",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
       "name": "lblColumnRow",
       "type": "System.Windows.Forms.Label",
       "parent": "ImageSplitterForm",

@@ -534,15 +534,6 @@
   ],
   "controls": [
     {
-      "name": "components",
-      "type": "System.ComponentModel.Container",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
       "name": "txtRapidSharePremiumUserName",
       "type": "System.Windows.Forms.TextBox",
       "parent": null,

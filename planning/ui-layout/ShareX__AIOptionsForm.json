@@ -55,15 +55,6 @@
   ],
   "controls": [
     {
-      "name": "components",
-      "type": "System.ComponentModel.Container",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
       "name": "tipStatus",
       "type": "System.Windows.Forms.ToolTip",
       "parent": null,

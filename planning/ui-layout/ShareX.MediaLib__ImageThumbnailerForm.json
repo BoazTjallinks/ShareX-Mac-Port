@@ -39,15 +39,6 @@
   ],
   "controls": [
     {
-      "name": "AutoScaleDimensions",
-      "type": "System.Drawing.SizeF",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
       "name": "lblQualityPercentage",
       "type": "System.Windows.Forms.Label",
       "parent": "ImageThumbnailerForm",
@@ -768,12 +759,6 @@
         "AllowDrop": true,
         "AllowItemDrag": true,
         "AutoFillColumn": true,
-        "Columns.literal_items": [
-          {
-            "kind": "ident",
-            "raw": "chImages"
-          }
-        ],
         "FullRowSelect": true,
         "HeaderStyle": {
           "kind": "expr",
@@ -815,6 +800,15 @@
           "source": "ApplyResources"
         }
       ]
+    },
+    {
+      "name": "chImages",
+      "type": "System.Windows.Forms.ColumnHeader",
+      "parent": "lvImages",
+      "parent_slot": "Columns",
+      "child_index": 0,
+      "properties": {},
+      "resources": []
     }
   ],
   "tree": {
@@ -900,7 +894,15 @@
         {
           "name": "lvImages",
           "type": "HelpersLib.MyListView",
-          "slots": {}
+          "slots": {
+            "Columns": [
+              {
+                "name": "chImages",
+                "type": "System.Windows.Forms.ColumnHeader",
+                "slots": {}
+              }
+            ]
+          }
         }
       ]
     }

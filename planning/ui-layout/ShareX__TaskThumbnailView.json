@@ -18,24 +18,6 @@
   ],
   "controls": [
     {
-      "name": "AutoScaleDimensions",
-      "type": "System.Drawing.SizeF",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
-      "name": "Size",
-      "type": "System.Drawing.Size",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
       "name": "pMain",
       "type": "System.Windows.Forms.Panel",
       "parent": "TaskThumbnailView",

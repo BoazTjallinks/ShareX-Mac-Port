@@ -39,15 +39,6 @@
   ],
   "controls": [
     {
-      "name": "components",
-      "type": "System.ComponentModel.Container",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
       "name": "ilColors",
       "type": "System.Windows.Forms.ImageList",
       "parent": null,
@@ -101,52 +92,6 @@
         {
           "property": "ImageSize",
           "resource_key": "ilPresets.ImageSize",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "chGradient",
-      "type": "System.Windows.Forms.ColumnHeader",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Text": "Gradient",
-        "Width": 140
-      },
-      "resources": [
-        {
-          "property": "Text",
-          "resource_key": "chGradient.Text",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Width",
-          "resource_key": "chGradient.Width",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "chLocation",
-      "type": "System.Windows.Forms.ColumnHeader",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Text": "Location",
-        "Width": 76
-      },
-      "resources": [
-        {
-          "property": "Text",
-          "resource_key": "chLocation.Text",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Width",
-          "resource_key": "chLocation.Width",
           "source": "ApplyResources"
         }
       ]
@@ -209,12 +154,6 @@
       "parent_slot": "Controls",
       "child_index": 1,
       "properties": {
-        "Columns.literal_items": [
-          {
-            "kind": "ident",
-            "raw": "chGradient"
-          }
-        ],
         "HeaderStyle": {
           "kind": "expr",
           "raw": "System.Windows.Forms.ColumnHeaderStyle.None"
@@ -941,12 +880,6 @@
       "parent_slot": "Controls",
       "child_index": 15,
       "properties": {
-        "Columns.literal_items": [
-          {
-            "kind": "ident",
-            "raw": "chLocation"
-          }
-        ],
         "DisableDeselect": true,
         "FullRowSelect": true,
         "HeaderStyle": {
@@ -994,6 +927,52 @@
           "source": "ApplyResources"
         }
       ]
+    },
+    {
+      "name": "chLocation",
+      "type": "System.Windows.Forms.ColumnHeader",
+      "parent": "lvGradientPoints",
+      "parent_slot": "Columns",
+      "child_index": 0,
+      "properties": {
+        "Text": "Location",
+        "Width": 76
+      },
+      "resources": [
+        {
+          "property": "Text",
+          "resource_key": "chLocation.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Width",
+          "resource_key": "chLocation.Width",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "chGradient",
+      "type": "System.Windows.Forms.ColumnHeader",
+      "parent": "lvPresets",
+      "parent_slot": "Columns",
+      "child_index": 0,
+      "properties": {
+        "Text": "Gradient",
+        "Width": 140
+      },
+      "resources": [
+        {
+          "property": "Text",
+          "resource_key": "chGradient.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Width",
+          "resource_key": "chGradient.Width",
+          "source": "ApplyResources"
+        }
+      ]
     }
   ],
   "tree": {
@@ -1009,7 +988,15 @@
         {
           "name": "lvPresets",
           "type": "System.Windows.Forms.ListView",
-          "slots": {}
+          "slots": {
+            "Columns": [
+              {
+                "name": "chGradient",
+                "type": "System.Windows.Forms.ColumnHeader",
+                "slots": {}
+              }
+            ]
+          }
         },
         {
           "name": "lblPresets",
@@ -1079,7 +1066,15 @@
         {
           "name": "lvGradientPoints",
           "type": "MyListView",
-          "slots": {}
+          "slots": {
+            "Columns": [
+              {
+                "name": "chLocation",
+                "type": "System.Windows.Forms.ColumnHeader",
+                "slots": {}
+              }
+            ]
+          }
         }
       ]
     }

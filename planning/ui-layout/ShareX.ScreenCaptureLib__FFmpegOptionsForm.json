@@ -102,15 +102,6 @@
   ],
   "controls": [
     {
-      "name": "components",
-      "type": "System.ComponentModel.Container",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
       "name": "ttHelpTip",
       "type": "System.Windows.Forms.ToolTip",
       "parent": null,

@@ -479,7 +479,14 @@ IDENT = r"[A-Za-z_][A-Za-z0-9_]*"
 PATH = r"[A-Za-z_][A-Za-z0-9_]*(?:\.[A-Za-z_][A-Za-z0-9_]*)*"
 
 RE_APPLY_RESOURCES = re.compile(r"^resources\.ApplyResources\((.*)\)$", re.S)
-RE_CONTROLS_ADD = re.compile(rf"^(?:(?P<target>{PATH})\.)?Controls\.Add\(\s*(?P<child>{IDENT})\s*\)$")
+RE_CONTROLS_ADD = re.compile(
+    rf"^(?:(?P<target>{PATH})\.)?Controls\.Add\(\s*(?:this\.)?(?P<child>{IDENT})\s*(?:,\s*[^)]*)?\)$"
+)
+RE_INSTANTIATION_CAST = re.compile(
+    rf"^(?:(?P<decltype>[\w\.]+(?:\[\])?)\s+)?(?:this\.)?(?P<name>{IDENT})\s*=\s*"
+    rf"\(\(\s*[\w\.\[\]]+\s*\)\s*\(\s*new\s+(?P<newtype>[\w\.]+)\s*\((?P<args>.*)\)\s*\)\)$",
+    re.S,
+)
 RE_ADDRANGE = re.compile(r"^(?P<full>.+)\.AddRange\(\s*new\s+[\w\.]+\s*\[\]\s*\{(?P<items>.*)\}\s*\)$", re.S)
 RE_SETTOOLTIP = re.compile(
     rf"^(?:this\.)?(?P<owner>{IDENT})\.SetToolTip\(\s*(?:this\.)?(?P<target>{IDENT})\s*,\s*(?P<value>.*)\)$", re.S
@@ -616,6 +623,8 @@ class FormExtractor:
             literal_items = []
             for item in items:
                 item = item.strip()
+                if item.startswith("this."):
+                    item = item[5:]
                 if IDENT_RE.match(item) and item in self.controls_seen_as_instantiated:
                     self.set_parent(item, base_name, full_slot)
                 else:
@@ -638,7 +647,8 @@ class FormExtractor:
             return True
 
         # 5. instantiation: [decltype] [this.]name = new Type(args)
-        m = RE_INSTANTIATION.match(stmt)
+        #    (also handles the cast-wrapped form: name = ((CastType)(new Type(args))))
+        m = RE_INSTANTIATION.match(stmt) or RE_INSTANTIATION_CAST.match(stmt)
         if m:
             name = m.group("name")
             newtype = m.group("newtype")
@@ -900,12 +910,25 @@ def extract_form(designer_path: Path, resx_path: Path | None):
         menu_strip_val = menu_strip_val["raw"]
 
     local_var_names = {lv["name"] for lv in extractor.local_variables}
+    NON_CONTROL_TYPES = {
+        "System.Drawing.Size",
+        "System.Drawing.SizeF",
+        "System.Drawing.Point",
+        "System.Drawing.PointF",
+        "System.Drawing.Padding",
+        "System.Windows.Forms.Padding",
+        "System.Drawing.Font",
+        "System.Drawing.Color",
+        "System.ComponentModel.Container",
+    }
 
     controls_out = []
     for name, c in extractor.controls.items():
         if name == FORM_KEY:
             continue
         if name in local_var_names and c["parent"] is None:
+            continue
+        if c["parent"] is None and (c["type"] or "") in NON_CONTROL_TYPES:
             continue
         controls_out.append(
             {

@@ -28,15 +28,6 @@
   ],
   "controls": [
     {
-      "name": "AutoScaleDimensions",
-      "type": "System.Drawing.SizeF",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
       "name": "btnBrowse",
       "type": "System.Windows.Forms.Button",
       "parent": "VideoThumbnailerForm",

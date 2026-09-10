@@ -26,15 +26,6 @@
   ],
   "controls": [
     {
-      "name": "components",
-      "type": "System.ComponentModel.Container",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
       "name": "cmsAction",
       "type": "System.Windows.Forms.ContextMenuStrip",
       "parent": null,
@@ -86,23 +77,6 @@
       ]
     },
     {
-      "name": "chAction",
-      "type": "System.Windows.Forms.ColumnHeader",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Width": 435
-      },
-      "resources": [
-        {
-          "property": "Width",
-          "resource_key": "chAction.Width",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "lvActions",
       "type": "HelpersLib.MyListView",
       "parent": "ActionsToolbarEditForm",
@@ -124,12 +98,6 @@
         },
         "TabIndex": 3,
         "AutoFillColumn": true,
-        "Columns.literal_items": [
-          {
-            "kind": "ident",
-            "raw": "chAction"
-          }
-        ],
         "FullRowSelect": true,
         "HeaderStyle": {
           "kind": "expr",
@@ -264,6 +232,23 @@
           "source": "ApplyResources"
         }
       ]
+    },
+    {
+      "name": "chAction",
+      "type": "System.Windows.Forms.ColumnHeader",
+      "parent": "lvActions",
+      "parent_slot": "Columns",
+      "child_index": 0,
+      "properties": {
+        "Width": 435
+      },
+      "resources": [
+        {
+          "property": "Width",
+          "resource_key": "chAction.Width",
+          "source": "ApplyResources"
+        }
+      ]
     }
   ],
   "tree": {
@@ -274,7 +259,15 @@
         {
           "name": "lvActions",
           "type": "HelpersLib.MyListView",
-          "slots": {}
+          "slots": {
+            "Columns": [
+              {
+                "name": "chAction",
+                "type": "System.Windows.Forms.ColumnHeader",
+                "slots": {}
+              }
+            ]
+          }
         },
         {
           "name": "btnAdd",
