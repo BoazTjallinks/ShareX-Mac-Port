@@ -18,6 +18,10 @@
     <PackageVersion Include="FluentFTP" Version="54.2.0" />
     <PackageVersion Include="SSH.NET" Version="2025.1.0" />
     <PackageVersion Include="ZXing.Net" Version="0.16.11" />
+    <!-- Portable CPU ONNX Runtime, replacing upstream's
+         Microsoft.ML.OnnxRuntime.DirectML (see ADR 0003 and ADR 0004). Same
+         version, same models; only the execution provider differs. -->
+    <PackageVersion Include="Microsoft.ML.OnnxRuntime" Version="1.24.4" />
 
     <!-- Test-only -->
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />

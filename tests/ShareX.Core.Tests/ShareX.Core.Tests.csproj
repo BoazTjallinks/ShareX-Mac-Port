@@ -10,6 +10,9 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" />
     <PackageReference Include="xunit" />
     <PackageReference Include="xunit.runner.visualstudio" />
+    <!-- Referenced so the editor-fork parity tests can reflect over the built
+         assembly and fail if an effect or tool is ever dropped. -->
+    <ProjectReference Include="..\..\src\ShareX.Editor\ShareX.Editor.csproj" />
   </ItemGroup>
 
   <ItemGroup>

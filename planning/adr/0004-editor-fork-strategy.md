@@ -1,6 +1,6 @@
 # ADR 0004 — Fork the upstream Avalonia editor; replace four files, not the editor
 
-Status: accepted (stage 0 survey)
+Status: accepted and EXECUTED (fork landed)
 Date: 2026-09-10
 
 ## Context
@@ -59,3 +59,41 @@ serialized IDs stay byte-identical to upstream.
   keeps its full stage-3 cost.
 - Emoji and cursor rendering will differ visually from Windows. That is a
   recorded platform difference with its own ledger exceptions; it is not parity.
+
+
+## Outcome (executed)
+
+The fork landed as `src/ShareX.Editor` and **builds clean on macOS**, keeping the
+upstream directory layout, file names, namespace (`ShareX.ImageEditor`) and
+assembly name so the 33 `.axaml` files work unchanged and future upstream diffs
+stay readable.
+
+What actually had to change, against the five files the survey predicted:
+
+| File | Resolution |
+| --- | --- |
+| `Core/BackgroundRemoval/BackgroundRemovalService.cs` | Dropped `Vortice.DXGI` adapter enumeration and the DirectML provider. Switched to `Microsoft.ML.OnnxRuntime` (CPU) with an optional CoreML provider that is **queried, not assumed** (`OrtEnv.Instance().GetAvailableProviders()`), and only used when the caller explicitly asks for GPU. Same model files, same preprocessing. CoreML output tolerance is unverified and labelled as such. |
+| `Presentation/Rendering/WindowsCursorBitmapRenderer.cs` | Replaced by `MacCursorBitmapRenderer`: cursor shapes drawn with Skia vector paths. Same public surface and caching. |
+| `Presentation/Emoji/WindowsEmojiBitmapRenderer.cs` | Replaced by `MacEmojiBitmapRenderer`: Apple Color Emoji through Skia, with upstream's padding constants, size quantisation and bounded cache preserved exactly. |
+| `Hosting/WindowsDesktopWallpaperService.cs` | Deleted; upstream already shipped `MacOSDesktopWallpaperService` beside it, and the `OperatingSystem.IsWindows()` branch was removed. |
+| `Presentation/Views/ScreenColorPickerWindow.axaml.cs` | Compiled unchanged — its `user32`/`gdi32` P/Invokes are declared but only reached on Windows. Left as-is for now; the native `pixel.colorAt` route replaces them when the picker is wired up. |
+
+### Effect inventory, verified
+
+232 `public override string Id` literals in the fork, matching upstream's 232
+exactly — no additions, no omissions, verified by diffing the id sets.
+
+**230 of those compile.** `Rotate3DImageEffect` and `Rotate3DBoxImageEffect` are
+wrapped in `/* TODO: SkiaSharp bug … */` in **upstream v21.0.0 itself**, so they
+produce no types there either. This is an upstream decision the port inherits,
+not a porting loss, and `tests/ShareX.Core.Tests/EditorForkParityTests.cs` pins
+both the 230 count and the reason, so the gap cannot quietly become a real
+omission later.
+
+`EditorTool` has its 20 values.
+
+### Cost
+
+The whole fork was four real file replacements plus a project file. The survey's
+prediction held: this was the single largest scope win available in the project,
+and it came from evidence rather than from cutting features.
