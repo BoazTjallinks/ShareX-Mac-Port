@@ -5,19 +5,19 @@
         x:Class="ShareX.Mac.App.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Title="ShareX"
-        Width="1120" Height="720"
-        MinWidth="820" MinHeight="520"
-        ExtendClientAreaToDecorationsHint="False">
+        Width="1060" Height="680"
+        MinWidth="780" MinHeight="480">
 
-  <!-- Layout follows upstream MainForm: pToolbars docked Left (the command rail),
-       pMain filling, scMain splitting the task list from the preview.
-       Chrome, metrics and typography are macOS-native (ADR 0005). -->
-  <Grid ColumnDefinitions="252,1,*" RowDefinitions="*,Auto">
+  <!-- Upstream MainForm layout: pToolbars docked Left (the command rail), pMain
+       filling, scMain splitting the task list from the preview. Rendered with Mac
+       chrome and metrics (ADR 0005). Diagnostics - permissions, displays, logs -
+       deliberately live in a separate window, not here. -->
+  <Grid ColumnDefinitions="240,1,*" RowDefinitions="*,Auto">
 
-    <!-- ============ command rail (upstream tsMain) ============ -->
+    <!-- ================= command rail (upstream tsMain) ================= -->
     <ScrollViewer Grid.Column="0" Grid.Row="0"
                   Background="{DynamicResource SystemControlBackgroundListLowBrush}">
-      <StackPanel Margin="0,8,0,12">
+      <StackPanel Margin="0,10,0,14">
         <ItemsControl ItemsSource="{Binding MainRail}">
           <ItemsControl.ItemTemplate>
             <DataTemplate x:DataType="models:CommandEntry">
@@ -28,9 +28,8 @@
                         CommandParameter="{Binding}">
                   <Grid ColumnDefinitions="*,Auto">
                     <TextBlock Grid.Column="0" Text="{Binding Label}" VerticalAlignment="Center" />
-                    <TextBlock Grid.Column="1" Text="›" Opacity="0.4"
-                               VerticalAlignment="Center"
-                               IsVisible="{Binding HasChildren}" />
+                    <TextBlock Grid.Column="1" Text="›" Opacity="0.35"
+                               VerticalAlignment="Center" IsVisible="{Binding HasChildren}" />
                   </Grid>
                   <Button.Flyout>
                     <MenuFlyout ItemsSource="{Binding Children}">
@@ -54,158 +53,135 @@
       </StackPanel>
     </ScrollViewer>
 
-    <Border Grid.Column="1" Grid.Row="0" Background="{DynamicResource SystemControlForegroundBaseLowBrush}" />
+    <Border Grid.Column="1" Grid.Row="0"
+            Background="{DynamicResource SystemControlForegroundBaseLowBrush}" />
 
-    <!-- ============ main area (upstream pMain) ============ -->
-    <Grid Grid.Column="2" Grid.Row="0" RowDefinitions="Auto,*">
+    <!-- ================= main area (upstream pMain) ================= -->
+    <Grid Grid.Column="2" Grid.Row="0" RowDefinitions="Auto,Auto,*">
 
-      <!-- Capture actions + stage-0 diagnostics. The diagnostics panel exists
-           because a capture cannot be trusted until the bundle identity and
-           permission state are visible. -->
-      <StackPanel Grid.Row="0" Margin="16,14,16,8" Spacing="10">
+      <!-- Capture toolbar -->
+      <StackPanel Grid.Row="0" Orientation="Horizontal" Spacing="8" Margin="16,14,16,10">
+        <Button Content="Fullscreen" Command="{Binding CaptureFullscreenCommand}"
+                IsEnabled="{Binding !IsBusy}" />
+        <Button Content="Monitor" Command="{Binding CaptureActiveMonitorCommand}"
+                IsEnabled="{Binding !IsBusy}" />
+        <Button Content="Window" Command="{Binding CaptureActiveWindowCommand}"
+                IsEnabled="{Binding !IsBusy}" />
+        <Button Content="Region…" Command="{Binding CaptureRegionCommand}"
+                IsEnabled="{Binding !IsBusy}" />
 
-        <TextBlock Text="{Binding EnvironmentSummary}" Classes="mono" TextWrapping="Wrap" />
+        <Border Width="1" Margin="4,2"
+                Background="{DynamicResource SystemControlForegroundBaseLowBrush}" />
 
-        <Border Padding="10" CornerRadius="6"
-                Background="{DynamicResource SystemControlBackgroundListLowBrush}"
-                IsVisible="{Binding !IsBundled}">
-          <TextBlock Text="{Binding BundleSummary}" TextWrapping="Wrap" FontSize="12" />
-        </Border>
+        <!-- After capture tasks, as a drop-down exactly like upstream's toolbar. -->
+        <Button Content="After capture tasks ▾">
+          <Button.Flyout>
+            <Flyout Placement="Bottom">
+              <ScrollViewer MaxHeight="420">
+                <StackPanel Width="330" Margin="4">
+                  <TextBlock Text="Applied to every capture, in ShareX's own order."
+                             FontSize="11" Opacity="0.6" TextWrapping="Wrap" Margin="6,4,6,8" />
+                  <ItemsControl ItemsSource="{Binding AfterCaptureTasksList}">
+                    <ItemsControl.ItemTemplate>
+                      <DataTemplate x:DataType="vm:AfterCaptureTaskViewModel">
+                        <StackPanel Margin="6,2">
+                          <CheckBox Content="{Binding Label}" IsChecked="{Binding IsChecked}"
+                                    IsEnabled="{Binding Implemented}" FontSize="12" />
+                          <TextBlock Text="{Binding Note}" IsVisible="{Binding HasNote}"
+                                     FontSize="10" Opacity="0.55" TextWrapping="Wrap"
+                                     Margin="26,0,0,4" />
+                        </StackPanel>
+                      </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                  </ItemsControl>
+                </StackPanel>
+              </ScrollViewer>
+            </Flyout>
+          </Button.Flyout>
+        </Button>
 
-        <!-- Shown only while Screen Recording is still missing. macOS applies a
-             new grant to a freshly launched process, so the relaunch button is
-             part of the fix, not a nicety. -->
-        <Border Padding="12" CornerRadius="6" Background="#33FF9500"
-                BorderBrush="#66FF9500" BorderThickness="1"
-                IsVisible="{Binding NeedsRelaunch}">
-          <StackPanel Spacing="8">
-            <TextBlock Text="Screen Recording permission is required"
-                       FontWeight="SemiBold" FontSize="13" />
-            <TextBlock TextWrapping="Wrap" FontSize="12"
-                       Text="Approve ShareX-Mac in the macOS dialog, or enable it in System Settings → Privacy &amp; Security → Screen &amp; System Audio Recording. macOS only applies a new grant to a newly launched process, so relaunch afterwards." />
-            <StackPanel Orientation="Horizontal" Spacing="8">
-              <Button Content="Open System Settings…"
-                      Command="{Binding OpenPrivacySettingsCommand}" />
-              <Button Content="Quit and reopen ShareX-Mac"
-                      Command="{Binding RelaunchAppCommand}" />
-              <Button Content="Re-check" Command="{Binding RefreshPermissionsCommand}" />
-            </StackPanel>
-          </StackPanel>
-        </Border>
-
-        <StackPanel Orientation="Horizontal" Spacing="8">
-          <Button Content="Fullscreen" Command="{Binding CaptureFullscreenCommand}"
-                  IsEnabled="{Binding !IsBusy}" />
-          <Button Content="Monitor" Command="{Binding CaptureActiveMonitorCommand}"
-                  IsEnabled="{Binding !IsBusy}" />
-          <Button Content="Window" Command="{Binding CaptureActiveWindowCommand}"
-                  IsEnabled="{Binding !IsBusy}" />
-          <Button Content="Region…" Command="{Binding CaptureRegionCommand}"
-                  IsEnabled="{Binding !IsBusy}" />
-          <Border Width="1" Margin="4,2"
-                  Background="{DynamicResource SystemControlForegroundBaseLowBrush}" />
-          <Button Content="Screenshots folder…" Command="{Binding OpenScreenshotsFolderCommand}" />
-          <Button Content="Refresh" Command="{Binding RefreshAllCommand}" />
-        </StackPanel>
-
-        <!-- Permissions: real state, honest next step. -->
-        <TextBlock Text="PERMISSIONS" Classes="sectionHeader" Margin="0,4,0,0" />
-        <ItemsControl ItemsSource="{Binding Permissions}">
-          <ItemsControl.ItemTemplate>
-            <DataTemplate x:DataType="vm:PermissionRowViewModel">
-              <Grid ColumnDefinitions="220,90,*,Auto,Auto" Margin="0,2">
-                <TextBlock Grid.Column="0" Text="{Binding Title}" VerticalAlignment="Center" FontSize="12" />
-                <TextBlock Grid.Column="1" Text="{Binding State}" Classes="mono" VerticalAlignment="Center" />
-                <TextBlock Grid.Column="2" Text="{Binding Why}" Opacity="0.6" FontSize="11"
-                           VerticalAlignment="Center" TextWrapping="Wrap" Margin="0,0,8,0" />
-                <Button Grid.Column="3" Content="Request…" FontSize="11" Padding="8,3"
-                        IsVisible="{Binding !IsGranted}"
-                        Command="{Binding $parent[Window].((vm:MainWindowViewModel)DataContext).RequestPermissionCommand}"
-                        CommandParameter="{Binding}" />
-                <Button Grid.Column="4" Content="System Settings…" FontSize="11" Padding="8,3" Margin="6,0,0,0"
-                        IsVisible="{Binding !IsGranted}"
-                        Command="{Binding $parent[Window].((vm:MainWindowViewModel)DataContext).OpenPrivacySettingsCommand}"
-                        CommandParameter="{Binding}" />
-              </Grid>
-            </DataTemplate>
-          </ItemsControl.ItemTemplate>
-        </ItemsControl>
+        <Button Content="Screenshots folder…" Command="{Binding OpenScreenshotsFolderCommand}" />
       </StackPanel>
 
-      <!-- upstream scMain: task list above, preview below -->
-      <Grid Grid.Row="1" RowDefinitions="*,4,*" Margin="16,4,16,8">
+      <!-- Only shown while Screen Recording is missing; otherwise the main window
+           carries no diagnostic clutter at all. -->
+      <Border Grid.Row="1" Margin="16,0,16,10" Padding="12" CornerRadius="6"
+              Background="#33FF9500" BorderBrush="#66FF9500" BorderThickness="1"
+              IsVisible="{Binding NeedsRelaunch}">
+        <StackPanel Spacing="8">
+          <TextBlock Text="Screen Recording permission is required"
+                     FontWeight="SemiBold" FontSize="13" />
+          <TextBlock TextWrapping="Wrap" FontSize="12"
+                     Text="Approve ShareX-Mac in the macOS dialog, or enable it in System Settings → Privacy &amp; Security → Screen &amp; System Audio Recording. macOS only applies a new grant to a newly launched process, so relaunch afterwards." />
+          <StackPanel Orientation="Horizontal" Spacing="8">
+            <Button Content="Open System Settings…" Command="{Binding OpenPrivacySettingsCommand}" />
+            <Button Content="Quit and reopen" Command="{Binding RelaunchAppCommand}" />
+            <Button Content="Re-check" Command="{Binding RefreshPermissionsCommand}" />
+          </StackPanel>
+        </StackPanel>
+      </Border>
 
-        <Grid Grid.Row="0" RowDefinitions="Auto,*,Auto">
+      <!-- upstream scMain: task list above, preview below -->
+      <Grid Grid.Row="2" RowDefinitions="*,6,1.2*" Margin="16,0,16,10">
+
+        <Grid Grid.Row="0" RowDefinitions="Auto,Auto,*">
           <TextBlock Grid.Row="0" Text="TASKS" Classes="sectionHeader" Margin="0,0,0,4" />
-          <!-- Upstream uses a columned ListView (MyListView). Rendered here as a
-               Mac-style list with a header row: same columns, same order. -->
-          <Grid Grid.Row="1" RowDefinitions="Auto,*">
-            <Grid Grid.Row="0" ColumnDefinitions="80,100,220,*" Margin="6,0,6,4">
-              <TextBlock Grid.Column="0" Text="Time"   FontSize="11" Opacity="0.55" />
-              <TextBlock Grid.Column="1" Text="Status" FontSize="11" Opacity="0.55" />
-              <TextBlock Grid.Column="2" Text="File"   FontSize="11" Opacity="0.55" />
-              <TextBlock Grid.Column="3" Text="Detail" FontSize="11" Opacity="0.55" />
-            </Grid>
-            <ListBox Grid.Row="1" ItemsSource="{Binding Tasks}" FontSize="12"
-                     Background="Transparent" BorderThickness="0">
-              <ListBox.ItemTemplate>
-                <DataTemplate x:DataType="vm:TaskRowViewModel">
-                  <Grid ColumnDefinitions="80,100,220,*">
-                    <TextBlock Grid.Column="0" Text="{Binding StartedText}" Classes="mono" />
-                    <TextBlock Grid.Column="1" Text="{Binding Status}" />
-                    <TextBlock Grid.Column="2" Text="{Binding FileName}" TextTrimming="CharacterEllipsis" />
-                    <TextBlock Grid.Column="3" Text="{Binding Detail}" Opacity="0.75"
-                               TextTrimming="CharacterEllipsis" />
-                  </Grid>
-                </DataTemplate>
-              </ListBox.ItemTemplate>
-            </ListBox>
+          <Grid Grid.Row="1" ColumnDefinitions="80,100,220,*" Margin="6,0,6,4">
+            <TextBlock Grid.Column="0" Text="Time"   FontSize="11" Opacity="0.5" />
+            <TextBlock Grid.Column="1" Text="Status" FontSize="11" Opacity="0.5" />
+            <TextBlock Grid.Column="2" Text="File"   FontSize="11" Opacity="0.5" />
+            <TextBlock Grid.Column="3" Text="Detail" FontSize="11" Opacity="0.5" />
           </Grid>
-          <TextBlock Grid.Row="2" Text="DIAGNOSTIC LOG" Classes="sectionHeader" Margin="0,8,0,4" />
+          <ListBox Grid.Row="2" ItemsSource="{Binding Tasks}" FontSize="12"
+                   Background="Transparent" BorderThickness="0">
+            <ListBox.ItemTemplate>
+              <DataTemplate x:DataType="vm:TaskRowViewModel">
+                <Grid ColumnDefinitions="80,100,220,*">
+                  <TextBlock Grid.Column="0" Text="{Binding StartedText}" Classes="mono" />
+                  <TextBlock Grid.Column="1" Text="{Binding Status}" />
+                  <TextBlock Grid.Column="2" Text="{Binding FileName}" TextTrimming="CharacterEllipsis" />
+                  <TextBlock Grid.Column="3" Text="{Binding Detail}" Opacity="0.7"
+                             TextTrimming="CharacterEllipsis" />
+                </Grid>
+              </DataTemplate>
+            </ListBox.ItemTemplate>
+          </ListBox>
         </Grid>
 
         <GridSplitter Grid.Row="1" Background="Transparent" />
 
-        <Grid Grid.Row="2" ColumnDefinitions="*,320">
-          <Border Grid.Column="0" CornerRadius="6" Padding="8" Margin="0,0,8,0"
+        <Grid Grid.Row="2" RowDefinitions="Auto,*,Auto">
+          <StackPanel Grid.Row="0" Orientation="Horizontal" Spacing="8" Margin="0,4,0,6">
+            <TextBlock Text="PREVIEW" Classes="sectionHeader" Margin="0" VerticalAlignment="Center" />
+            <Button Content="Copy image" FontSize="11" Padding="8,3"
+                    Command="{Binding CopyLastCaptureCommand}" />
+            <Button Content="Reveal in Finder" FontSize="11" Padding="8,3"
+                    Command="{Binding RevealLastCaptureCommand}" />
+          </StackPanel>
+
+          <Border Grid.Row="1" CornerRadius="6" Padding="8"
                   Background="{DynamicResource SystemControlBackgroundListLowBrush}">
-            <Grid RowDefinitions="*,Auto">
-              <Image Grid.Row="0" Source="{Binding PreviewImage}" Stretch="Uniform"
-                     HorizontalAlignment="Center" VerticalAlignment="Center" />
-              <TextBlock Grid.Row="1" Text="{Binding PreviewCaption}" Classes="mono"
-                         TextWrapping="Wrap" Margin="0,6,0,0" />
-            </Grid>
+            <Image Source="{Binding PreviewImage}" Stretch="Uniform"
+                   HorizontalAlignment="Center" VerticalAlignment="Center" />
           </Border>
 
-          <Grid Grid.Column="1" RowDefinitions="Auto,*,Auto,Auto">
-            <TextBlock Grid.Row="0" Text="DISPLAYS" Classes="sectionHeader" Margin="0,0,0,4" />
-            <ItemsControl Grid.Row="1" ItemsSource="{Binding Displays}">
-              <ItemsControl.ItemTemplate>
-                <DataTemplate x:DataType="x:String">
-                  <TextBlock Text="{Binding}" Classes="mono" TextWrapping="Wrap" Margin="0,1" />
-                </DataTemplate>
-              </ItemsControl.ItemTemplate>
-            </ItemsControl>
-            <TextBlock Grid.Row="2" Text="LOG" Classes="sectionHeader" Margin="0,6,0,4" />
-            <ScrollViewer Grid.Row="3" MaxHeight="150">
-              <ItemsControl ItemsSource="{Binding Log}">
-                <ItemsControl.ItemTemplate>
-                  <DataTemplate x:DataType="x:String">
-                    <TextBlock Text="{Binding}" Classes="mono" TextWrapping="Wrap" Opacity="0.75" />
-                  </DataTemplate>
-                </ItemsControl.ItemTemplate>
-              </ItemsControl>
-            </ScrollViewer>
-          </Grid>
+          <TextBlock Grid.Row="2" Text="{Binding PreviewCaption}" Classes="mono"
+                     TextWrapping="Wrap" Opacity="0.65" Margin="0,6,0,0" />
         </Grid>
       </Grid>
     </Grid>
 
-    <!-- ============ status bar (upstream sslStatus) ============ -->
+    <!-- ================= status bar ================= -->
     <Border Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="1"
             BorderThickness="0,1,0,0" Padding="12,6"
             BorderBrush="{DynamicResource SystemControlForegroundBaseLowBrush}">
-      <TextBlock Text="{Binding StatusText}" FontSize="11" Opacity="0.8" />
+      <Grid ColumnDefinitions="*,Auto">
+        <TextBlock Grid.Column="0" Text="{Binding StatusText}" FontSize="11"
+                   Opacity="0.8" VerticalAlignment="Center"
+                   TextTrimming="CharacterEllipsis" />
+        <Button Grid.Column="1" Content="Diagnostics…" FontSize="11" Padding="8,2"
+                Command="{Binding OpenDiagnosticsCommand}" />
+      </Grid>
     </Border>
   </Grid>
 </Window>

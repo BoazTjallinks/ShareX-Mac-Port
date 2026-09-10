@@ -333,6 +333,66 @@ public static class SelfTest
             }
 
             Line("");
+
+            // ---- clipboard round trip -------------------------------------------
+            // Verifies the after-capture CopyImageToClipboard path end to end:
+            // seed the clipboard with text, copy a real PNG, then read the
+            // clipboard back and confirm it now reports an image. Without the
+            // read-back this would only prove the call did not throw.
+            if (!attemptCapture)
+            {
+                Line("SKIP  clipboard       : --no-capture requested");
+                results["clipboard"] = "skipped";
+            }
+            else
+            {
+                var clipboard = new MacClipboardService(bridge);
+                string? sample = results.TryGetValue("captureFile", out object? f) ? f as string : null;
+
+                if (sample is null || !File.Exists(sample))
+                {
+                    Line("SKIP  clipboard       : no captured file to copy");
+                    results["clipboard"] = "skipped:no-file";
+                }
+                else
+                {
+                    await clipboard.CopyTextAsync("sharex-mac-selftest-sentinel").ConfigureAwait(false);
+                    OperationOutcome<JsonElement> before = await clipboard.GetAsync().ConfigureAwait(false);
+                    bool hadImageBefore = before.IsSuccess && Flag(before.Value, "hasImage");
+
+                    OperationOutcome<bool> copied =
+                        await clipboard.CopyImageFileAsync(sample).ConfigureAwait(false);
+
+                    if (!copied.IsSuccess)
+                    {
+                        Line($"FAIL  clipboard       : {copied.Error!.Kind} — {copied.Error!.Message}");
+                        results["clipboard"] = $"fail:{copied.Error!.Kind}";
+                        allRequiredPassed = false;
+                    }
+                    else
+                    {
+                        OperationOutcome<JsonElement> after =
+                            await clipboard.GetAsync().ConfigureAwait(false);
+                        bool hasImageNow = after.IsSuccess && Flag(after.Value, "hasImage");
+
+                        if (hasImageNow)
+                        {
+                            Line("PASS  clipboard       : image copied and read back from NSPasteboard");
+                            Line($"      before        : hasImage={hadImageBefore} (text sentinel)");
+                            results["clipboard"] = "pass";
+                        }
+                        else
+                        {
+                            Line("FAIL  clipboard       : the copy reported success but the pasteboard "
+                                 + "does not report an image.");
+                            results["clipboard"] = "fail:not-readable";
+                            allRequiredPassed = false;
+                        }
+                    }
+                }
+            }
+
+            Line("");
             Line(allRequiredPassed
                 ? "RESULT: all checks passed."
                 : "RESULT: one or more checks did not pass (see above).");
@@ -431,6 +491,11 @@ public static class SelfTest
         Console.WriteLine("--- json ---");
         Console.WriteLine(JsonSerializer.Serialize(results, new JsonSerializerOptions { WriteIndented = true }));
     }
+
+    private static bool Flag(JsonElement element, string name)
+        => element.ValueKind == JsonValueKind.Object
+           && element.TryGetProperty(name, out JsonElement value)
+           && value.ValueKind == JsonValueKind.True;
 
     private static string Str(JsonElement element, string name)
         => element.ValueKind == JsonValueKind.Object

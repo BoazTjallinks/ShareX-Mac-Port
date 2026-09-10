@@ -7,6 +7,7 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using ShareX.Core.Enums;
 using ShareX.Core.Errors;
+using ShareX.Core.Workflow;
 using ShareX.Mac.App.Models;
 using ShareX.Mac.App.Services;
 using ShareX.Mac.App.Support;
@@ -55,6 +56,23 @@ public sealed partial class PermissionRowViewModel : ObservableObject
         OnPropertyChanged(nameof(IsGranted));
         OnPropertyChanged(nameof(NeedsSystemSettings));
     }
+}
+
+/// <summary>One after-capture stage from the most recent task, for the diagnostics view.</summary>
+public sealed class WorkflowStageViewModel
+{
+    public WorkflowStageViewModel(WorkflowStage stage)
+    {
+        Name = stage.Name;
+        Detail = stage.Detail;
+        // A stage that failed is visually distinct from one that was simply not
+        // requested: the trace must never make a failure look like a skip.
+        Marker = stage.Error is not null ? "!" : stage.Ran ? "\u2713" : "\u00b7";
+    }
+
+    public string Name { get; }
+    public string Detail { get; }
+    public string Marker { get; }
 }
 
 public sealed partial class MainWindowViewModel : ObservableObject, IDisposable
@@ -179,6 +197,15 @@ public sealed partial class MainWindowViewModel : ObservableObject, IDisposable
                 PreviewCaption = $"{entry.Label} failed - {run.Message}";
             }
 
+            LastWorkflowStages.Clear();
+            if (run.Stages is { } stages)
+            {
+                foreach (WorkflowStage stage in stages)
+                {
+                    LastWorkflowStages.Add(new WorkflowStageViewModel(stage));
+                }
+            }
+
             AppendLog($"command {entry.Hotkey} -> {row.Status} in {stopwatch.ElapsedMilliseconds} ms: {run.Message}");
         }
         catch (Exception ex)
@@ -216,6 +243,9 @@ public sealed partial class MainWindowViewModel : ObservableObject, IDisposable
 
     /// <summary>Upstream's "After capture tasks" set, all 22 non-zero flags.</summary>
     public ObservableCollection<AfterCaptureTaskViewModel> AfterCaptureTasksList { get; } = new();
+
+    /// <summary>Stage trace of the most recent task, shown in Diagnostics.</summary>
+    public ObservableCollection<WorkflowStageViewModel> LastWorkflowStages { get; } = new();
 
     [ObservableProperty] private string _environmentSummary = "Querying the native bridge…";
     [ObservableProperty] private string _bundleSummary = "";
@@ -604,12 +634,75 @@ public sealed partial class MainWindowViewModel : ObservableObject, IDisposable
         }
     }
 
+    /// <summary>
+    /// Opens the diagnostics window. Permissions, display geometry, the native
+    /// capability report and the operation log live there rather than on the main
+    /// window, which stays focused on capturing.
+    /// </summary>
     [RelayCommand]
-    private void OpenScreenshotsFolder()
+    private void OpenDiagnostics()
+    {
+        if (_diagnosticsWindow is { } existing)
+        {
+            existing.Activate();
+            return;
+        }
+
+        var window = new Views.DiagnosticsWindow { DataContext = this };
+        window.Closed += (_, _) => _diagnosticsWindow = null;
+        _diagnosticsWindow = window;
+
+        Avalonia.Controls.Window? owner = OwnerWindowAccessor();
+        if (owner is not null)
+        {
+            window.Show(owner);
+        }
+        else
+        {
+            window.Show();
+        }
+    }
+
+    private Views.DiagnosticsWindow? _diagnosticsWindow;
+
+    [RelayCommand]
+    private async Task OpenScreenshotsFolderAsync()
     {
         string folder = AppPaths.EnsureDirectory(AppPaths.DefaultScreenshotsFolder);
-        BundleInfo.OpenSystemSettings(folder);
-        AppendLog($"revealed {folder}");
+        OperationOutcome<bool> opened = await _clipboard.OpenAsync(folder).ConfigureAwait(true);
+        StatusText = opened.IsSuccess ? $"Opened {folder}" : opened.Error!.Message;
+        AppendLog($"open screenshots folder -> {(opened.IsSuccess ? "ok" : opened.Error!.Kind.ToString())}");
+    }
+
+    /// <summary>Reveals the currently previewed capture in Finder.</summary>
+    [RelayCommand]
+    private async Task RevealLastCaptureAsync()
+    {
+        TaskRowViewModel? last = Tasks.FirstOrDefault(t => !string.IsNullOrEmpty(t.FilePath));
+        if (last is null)
+        {
+            StatusText = "No capture to reveal yet.";
+            return;
+        }
+
+        OperationOutcome<bool> revealed = await _clipboard.RevealAsync(last.FilePath).ConfigureAwait(true);
+        StatusText = revealed.IsSuccess ? $"Revealed {last.FileName}" : revealed.Error!.Message;
+    }
+
+    /// <summary>Copies the currently previewed capture to the clipboard on demand.</summary>
+    [RelayCommand]
+    private async Task CopyLastCaptureAsync()
+    {
+        TaskRowViewModel? last = Tasks.FirstOrDefault(t => !string.IsNullOrEmpty(t.FilePath));
+        if (last is null)
+        {
+            StatusText = "No capture to copy yet.";
+            return;
+        }
+
+        OperationOutcome<bool> copied = await _clipboard.CopyImageFileAsync(last.FilePath).ConfigureAwait(true);
+        StatusText = copied.IsSuccess ? $"Copied {last.FileName} to the clipboard" : copied.Error!.Message;
+        AppendLog($"copy image -> {(copied.IsSuccess ? "ok" : copied.Error!.Kind.ToString())}");
     }
 
     // ---------------------------------------------------------------- helpers

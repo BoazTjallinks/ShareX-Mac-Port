@@ -1,0 +1,115 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:ShareX.Mac.App.ViewModels"
+        x:Class="ShareX.Mac.App.Views.DiagnosticsWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Title="ShareX — Diagnostics"
+        Width="820" Height="620"
+        MinWidth="620" MinHeight="420">
+
+  <!-- Everything that is useful for debugging but not for daily use lives here,
+       off the main window: permissions, display geometry, the native capability
+       report and the operation log. -->
+  <TabControl Margin="8">
+
+    <TabItem Header="Permissions">
+      <ScrollViewer>
+        <StackPanel Margin="12" Spacing="10">
+          <TextBlock Text="{Binding EnvironmentSummary}" Classes="mono" TextWrapping="Wrap" />
+          <TextBlock Text="{Binding BundleSummary}" TextWrapping="Wrap" FontSize="11"
+                     Opacity="0.7" IsVisible="{Binding !IsBundled}" />
+
+          <ItemsControl ItemsSource="{Binding Permissions}">
+            <ItemsControl.ItemTemplate>
+              <DataTemplate x:DataType="vm:PermissionRowViewModel">
+                <Border Padding="10" Margin="0,3" CornerRadius="6"
+                        Background="{DynamicResource SystemControlBackgroundListLowBrush}">
+                  <Grid ColumnDefinitions="*,Auto,Auto" RowDefinitions="Auto,Auto">
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="{Binding Title}"
+                               FontWeight="SemiBold" VerticalAlignment="Center" />
+                    <TextBlock Grid.Row="1" Grid.Column="0" Text="{Binding Why}"
+                               Opacity="0.6" FontSize="11" TextWrapping="Wrap" />
+                    <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding State}"
+                               Classes="mono" VerticalAlignment="Center" Margin="8,0" />
+                    <StackPanel Grid.Row="0" Grid.RowSpan="2" Grid.Column="2"
+                                Orientation="Horizontal" Spacing="6"
+                                VerticalAlignment="Center" IsVisible="{Binding !IsGranted}">
+                      <Button Content="Request…" FontSize="11" Padding="8,3"
+                              Command="{Binding $parent[Window].((vm:MainWindowViewModel)DataContext).RequestPermissionCommand}"
+                              CommandParameter="{Binding}" />
+                      <Button Content="System Settings…" FontSize="11" Padding="8,3"
+                              Command="{Binding $parent[Window].((vm:MainWindowViewModel)DataContext).OpenPrivacySettingsCommand}"
+                              CommandParameter="{Binding}" />
+                    </StackPanel>
+                  </Grid>
+                </Border>
+              </DataTemplate>
+            </ItemsControl.ItemTemplate>
+          </ItemsControl>
+
+          <StackPanel Orientation="Horizontal" Spacing="8">
+            <Button Content="Re-check" Command="{Binding RefreshPermissionsCommand}" />
+            <Button Content="Quit and reopen ShareX-Mac" Command="{Binding RelaunchAppCommand}" />
+          </StackPanel>
+
+          <TextBlock TextWrapping="Wrap" FontSize="11" Opacity="0.65"
+                     Text="macOS only applies a new Screen Recording grant to a newly launched process, so relaunch after approving." />
+        </StackPanel>
+      </ScrollViewer>
+    </TabItem>
+
+    <TabItem Header="Displays">
+      <ScrollViewer>
+        <StackPanel Margin="12" Spacing="6">
+          <Button Content="Refresh" HorizontalAlignment="Left"
+                  Command="{Binding RefreshDisplaysCommand}" />
+          <ItemsControl ItemsSource="{Binding Displays}">
+            <ItemsControl.ItemTemplate>
+              <DataTemplate x:DataType="x:String">
+                <TextBlock Text="{Binding}" Classes="mono" TextWrapping="Wrap" Margin="0,2" />
+              </DataTemplate>
+            </ItemsControl.ItemTemplate>
+          </ItemsControl>
+        </StackPanel>
+      </ScrollViewer>
+    </TabItem>
+
+    <TabItem Header="Log">
+      <Grid Margin="12" RowDefinitions="Auto,*">
+        <TextBlock Grid.Row="0" FontSize="11" Opacity="0.6" Margin="0,0,0,6"
+                   Text="Newest first. Every native operation with its result and elapsed time." />
+        <ScrollViewer Grid.Row="1">
+          <ItemsControl ItemsSource="{Binding Log}">
+            <ItemsControl.ItemTemplate>
+              <DataTemplate x:DataType="x:String">
+                <TextBlock Text="{Binding}" Classes="mono" TextWrapping="Wrap" Opacity="0.8" />
+              </DataTemplate>
+            </ItemsControl.ItemTemplate>
+          </ItemsControl>
+        </ScrollViewer>
+      </Grid>
+    </TabItem>
+
+    <TabItem Header="Last workflow">
+      <Grid Margin="12" RowDefinitions="Auto,*">
+        <TextBlock Grid.Row="0" FontSize="11" Opacity="0.6" Margin="0,0,0,6"
+                   TextWrapping="Wrap"
+                   Text="Every after-capture stage from the most recent task, in the order upstream runs them. A stage that did not run says why." />
+        <ScrollViewer Grid.Row="1">
+          <ItemsControl ItemsSource="{Binding LastWorkflowStages}">
+            <ItemsControl.ItemTemplate>
+              <DataTemplate x:DataType="vm:WorkflowStageViewModel">
+                <Grid ColumnDefinitions="20,220,*" Margin="0,2">
+                  <TextBlock Grid.Column="0" Text="{Binding Marker}" Classes="mono" />
+                  <TextBlock Grid.Column="1" Text="{Binding Name}" FontSize="12" />
+                  <TextBlock Grid.Column="2" Text="{Binding Detail}" FontSize="11"
+                             Opacity="0.7" TextWrapping="Wrap" />
+                </Grid>
+              </DataTemplate>
+            </ItemsControl.ItemTemplate>
+          </ItemsControl>
+        </ScrollViewer>
+      </Grid>
+    </TabItem>
+  </TabControl>
+</Window>
