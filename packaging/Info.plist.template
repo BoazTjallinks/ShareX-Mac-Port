@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Identity -->
+	<key>CFBundleIdentifier</key>
+	<string>@@BUNDLE_ID@@</string>
+	<key>CFBundleName</key>
+	<string>ShareX-Mac</string>
+	<key>CFBundleDisplayName</key>
+	<string>ShareX</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleExecutable</key>
+	<string>@@EXECUTABLE@@</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+
+	<!-- Versioning -->
+	<key>CFBundleShortVersionString</key>
+	<string>@@VERSION@@</string>
+	<key>CFBundleVersion</key>
+	<string>@@BUILD@@</string>
+
+	<!-- Icon -->
+	<key>CFBundleIconFile</key>
+	<string>@@ICON@@</string>
+
+	<!-- Platform requirements -->
+	<key>LSMinimumSystemVersion</key>
+	<string>@@MIN_OS@@</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.productivity</string>
+
+	<!-- This is a regular, Dock-visible app: a main window plus a status
+	     item (upstream ShareX behavior). Deliberately no LSUIElement key. -->
+	<key>NSHighResolutionCapable</key>
+	<true/>
+	<key>NSSupportsAutomaticGraphicsSwitching</key>
+	<true/>
+
+	<!-- Permission usage strings. Only permissions the app actually uses are
+	     declared here (see native/ShareXMacNative/swift/SXMPermissions.swift
+	     and SXMRoutes.swift for the evidenced call sites). Screen Recording
+	     itself does not take an Info.plist usage-description key on macOS
+	     (TCC shows a fixed system string for it), so only microphone needs
+	     one. The app does not send Apple Events to other applications, so
+	     NSAppleEventsUsageDescription is intentionally omitted. -->
+	<key>NSMicrophoneUsageDescription</key>
+	<string>ShareX-Mac uses the microphone to record narration audio into your screen recordings when you choose to include your voice.</string>
+
+	<!-- Document types: ShareX's own file formats, so double-clicking a
+	     .sxcu or .sxie file in Finder opens it in ShareX-Mac. Evidenced in
+	     reference/ShareX/ShareX/IntegrationHelpers.cs (Explorer shell
+	     registration for .sxcu/.sxie) and ShareXCLIManager.cs (CLI argument
+	     handling for files with these extensions). No .sxbk/.sxb extension
+	     was found anywhere in reference/ShareX, so it is not declared here. -->
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>ShareX Custom Uploader</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSHandlerRank</key>
+			<string>Owner</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.tjallinks.sharexmac.sxcu</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>ShareX Image Effect Package</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSHandlerRank</key>
+			<string>Owner</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.tjallinks.sharexmac.sxie</string>
+			</array>
+		</dict>
+	</array>
+
+	<!-- UTI declarations backing the document types above. Both formats are
+	     JSON documents (see ShareX.UploadersLib/CustomUploader/CustomUploaderItem.cs
+	     for .sxcu's JSON-serialized shape); declared as conforming to
+	     public.json so Finder/Quick Look/other apps can still treat them
+	     sensibly as JSON if ShareX-Mac is not installed. -->
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.tjallinks.sharexmac.sxcu</string>
+			<key>UTTypeDescription</key>
+			<string>ShareX Custom Uploader</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.json</string>
+				<string>public.data</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>sxcu</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.tjallinks.sharexmac.sxie</string>
+			<key>UTTypeDescription</key>
+			<string>ShareX Image Effect Package</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.json</string>
+				<string>public.data</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>sxie</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

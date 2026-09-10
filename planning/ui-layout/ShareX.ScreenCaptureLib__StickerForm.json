@@ -1,0 +1,498 @@
+{
+  "form_name": "StickerForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX.ScreenCaptureLib/Forms/StickerForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.ScreenCaptureLib/Forms/StickerForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 784,
+    "height": 561
+  },
+  "text": "ShareX - Sticker picker",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 6,
+    "height": 13
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Font"
+  },
+  "tab_order": [
+    "ilvStickers",
+    "tsMain",
+    "tscMain"
+  ],
+  "controls": [
+    {
+      "name": "tscMain",
+      "type": "System.Windows.Forms.ToolStripContainer",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "ContentPanel.Size": {
+          "kind": "Size",
+          "width": 784,
+          "height": 531
+        },
+        "Dock": "Fill",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 784,
+          "height": 561
+        },
+        "TabIndex": 2,
+        "Name": "tscMain"
+      },
+      "resources": [
+        {
+          "property": "ContentPanel.Size",
+          "resource_key": "tscMain.ContentPanel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ContentPanel.Size",
+          "resource_key": "tscMain.ContentPanel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Dock",
+          "resource_key": "tscMain.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "tscMain.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tscMain.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tscMain.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "ilvStickers",
+      "type": "Manina.Windows.Forms.ImageListView",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AllowItemReorder": false,
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.None"
+        },
+        "Dock": "Fill",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 784,
+          "height": 531
+        },
+        "TabIndex": 0,
+        "MultiSelect": false,
+        "Name": "ilvStickers",
+        "PersistentCacheDirectory": "",
+        "PersistentCacheSize": {
+          "kind": "expr",
+          "raw": "((long)(100))"
+        },
+        "UseWIC": true
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "ilvStickers.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "ilvStickers.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "ilvStickers.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "ilvStickers.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsMain",
+      "type": "System.Windows.Forms.ToolStrip",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Dock": "None",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 784,
+          "height": 30
+        },
+        "TabIndex": 0,
+        "GripStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ToolStripGripStyle.Hidden"
+        },
+        "Items.literal_items": [
+          {
+            "kind": "expr",
+            "raw": "this.tslSearch"
+          },
+          {
+            "kind": "expr",
+            "raw": "this.tstbSearch"
+          },
+          {
+            "kind": "expr",
+            "raw": "this.tslStickers"
+          },
+          {
+            "kind": "expr",
+            "raw": "this.tscbStickers"
+          },
+          {
+            "kind": "expr",
+            "raw": "this.tsbEditStickers"
+          },
+          {
+            "kind": "expr",
+            "raw": "this.tslSize"
+          },
+          {
+            "kind": "expr",
+            "raw": "this.tsnudSize"
+          }
+        ],
+        "Name": "tsMain",
+        "Stretch": true
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "tsMain.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "tsMain.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "tsMain.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tsMain.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tsMain.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tslSearch",
+      "type": "System.Windows.Forms.ToolStripLabel",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 1,
+          "right": 0,
+          "bottom": 2
+        },
+        "Name": "tslSearch",
+        "Size": {
+          "kind": "Size",
+          "width": 45,
+          "height": 23
+        },
+        "Text": "Search:"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tslSearch.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tslSearch.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tstbSearch",
+      "type": "System.Windows.Forms.ToolStripTextBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
+        },
+        "Font": "Segoe UI, 9pt",
+        "Size": {
+          "kind": "Size",
+          "width": 100,
+          "height": 26
+        },
+        "Name": "tstbSearch"
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "tstbSearch.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tstbSearch.Size",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tslStickers",
+      "type": "System.Windows.Forms.ToolStripLabel",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 1,
+          "right": 0,
+          "bottom": 2
+        },
+        "Name": "tslStickers",
+        "Size": {
+          "kind": "Size",
+          "width": 50,
+          "height": 23
+        },
+        "Text": "Stickers:"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tslStickers.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tslStickers.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tscbStickers",
+      "type": "System.Windows.Forms.ToolStripComboBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FlatStyle": "System",
+        "Size": {
+          "kind": "Size",
+          "width": 150,
+          "height": 26
+        },
+        "Name": "tscbStickers"
+      },
+      "resources": [
+        {
+          "property": "FlatStyle",
+          "resource_key": "tscbStickers.FlatStyle",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tscbStickers.Size",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsbEditStickers",
+      "type": "System.Windows.Forms.ToolStripButton",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "DisplayStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ToolStripItemDisplayStyle.Image"
+        },
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.ScreenCaptureLib.Properties.Resources.gear"
+        },
+        "ImageTransparentColor": "Magenta",
+        "Size": {
+          "kind": "Size",
+          "width": 23,
+          "height": 23
+        },
+        "Text": "Edit sticker packs",
+        "Name": "tsbEditStickers"
+      },
+      "resources": [
+        {
+          "property": "ImageTransparentColor",
+          "resource_key": "tsbEditStickers.ImageTransparentColor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tsbEditStickers.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsbEditStickers.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tslSize",
+      "type": "System.Windows.Forms.ToolStripLabel",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 1,
+          "right": 0,
+          "bottom": 2
+        },
+        "Name": "tslSize",
+        "Size": {
+          "kind": "Size",
+          "width": 30,
+          "height": 23
+        },
+        "Text": "Size:"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tslSize.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tslSize.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsnudSize",
+      "type": "HelpersLib.ToolStripNumericUpDown",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Name": "tsnudSize",
+        "Size": {
+          "kind": "Size",
+          "width": 41,
+          "height": 23
+        },
+        "Text": "64"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsnudSize.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsnudSize.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "StickerForm",
+    "type": "Form",
+    "slots": {}
+  },
+  "strings": {
+    "tslSearch.Text": "Search:",
+    "tslStickers.Text": "Stickers:",
+    "tsbEditStickers.Text": "Edit sticker packs",
+    "tslSize.Text": "Size:",
+    "tsnudSize.Text": "64",
+    "$this.Text": "ShareX - Sticker picker"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 75,
+  "parsed_statements": 75,
+  "unparsed_lines": []
+}

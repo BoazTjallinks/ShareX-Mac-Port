@@ -1,0 +1,312 @@
+{
+  "form_name": "ImageInsertForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX.ScreenCaptureLib/Forms/ImageInsertForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.ScreenCaptureLib/Forms/ImageInsertForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 409,
+    "height": 129
+  },
+  "text": "ShareX - Insert image",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 6,
+    "height": 13
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Font"
+  },
+  "tab_order": [
+    "btnCenter",
+    "btnCanvasExpandDown",
+    "btnCanvasExpandRight"
+  ],
+  "controls": [
+    {
+      "name": "btnCenter",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "ImageAlign": "MiddleLeft",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 8
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 3,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 392,
+          "height": 32
+        },
+        "TabIndex": 0,
+        "Text": "Insert image in the center",
+        "TextAlign": "MiddleLeft",
+        "TextImageRelation": "ImageBeforeText",
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.ScreenCaptureLib.Properties.Resources.layout_center"
+        },
+        "Name": "btnCenter",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "btnCenter.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImageAlign",
+          "resource_key": "btnCenter.ImageAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnCenter.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "btnCenter.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCenter.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCenter.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCenter.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "btnCenter.TextAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextImageRelation",
+          "resource_key": "btnCenter.TextImageRelation",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnCanvasExpandDown",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "ImageAlign": "MiddleLeft",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 48
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 3,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 392,
+          "height": 32
+        },
+        "TabIndex": 1,
+        "Text": "Insert image below (expanding canvas)",
+        "TextAlign": "MiddleLeft",
+        "TextImageRelation": "ImageBeforeText",
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.ScreenCaptureLib.Properties.Resources.layout_split_vertical"
+        },
+        "Name": "btnCanvasExpandDown",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "btnCanvasExpandDown.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImageAlign",
+          "resource_key": "btnCanvasExpandDown.ImageAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnCanvasExpandDown.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "btnCanvasExpandDown.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCanvasExpandDown.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCanvasExpandDown.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCanvasExpandDown.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "btnCanvasExpandDown.TextAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextImageRelation",
+          "resource_key": "btnCanvasExpandDown.TextImageRelation",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnCanvasExpandRight",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "ImageAlign": "MiddleLeft",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 88
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 3,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 392,
+          "height": 32
+        },
+        "TabIndex": 2,
+        "Text": "Insert image on right side (expanding canvas)",
+        "TextAlign": "MiddleLeft",
+        "TextImageRelation": "ImageBeforeText",
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.ScreenCaptureLib.Properties.Resources.layout_split"
+        },
+        "Name": "btnCanvasExpandRight",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "btnCanvasExpandRight.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImageAlign",
+          "resource_key": "btnCanvasExpandRight.ImageAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "btnCanvasExpandRight.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnCanvasExpandRight.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "btnCanvasExpandRight.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCanvasExpandRight.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCanvasExpandRight.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCanvasExpandRight.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "btnCanvasExpandRight.TextAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextImageRelation",
+          "resource_key": "btnCanvasExpandRight.TextImageRelation",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "ImageInsertForm",
+    "type": "Form",
+    "slots": {}
+  },
+  "strings": {
+    "btnCenter.Text": "Insert image in the center",
+    "btnCanvasExpandDown.Text": "Insert image below (expanding canvas)",
+    "btnCanvasExpandRight.Text": "Insert image on right side (expanding canvas)",
+    "$this.Text": "ShareX - Insert image"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 30,
+  "parsed_statements": 30,
+  "unparsed_lines": []
+}

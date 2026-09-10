@@ -1,0 +1,291 @@
+{
+  "form_name": "CustomUploaderSyntaxTestForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX.UploadersLib/Forms/CustomUploaderSyntaxTestForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.UploadersLib/Forms/CustomUploaderSyntaxTestForm.resx",
+  "client_size": null,
+  "text": "ShareX - Custom uploader syntax test",
+  "menu_strip": null,
+  "auto_scale_dimensions": null,
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Font"
+  },
+  "tab_order": [
+    "lblURLSyntax",
+    "rtbURLSyntax",
+    "rtbResponseText",
+    "pURLSyntax",
+    "lblResult",
+    "txtResult",
+    "lblResponseText",
+    "pResponseText"
+  ],
+  "controls": [
+    {
+      "name": "lblResponseText",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 16
+        },
+        "Name": "lblResponseText",
+        "Size": {
+          "kind": "Size",
+          "width": 78,
+          "height": 13
+        },
+        "TabIndex": 4,
+        "Text": "Response text:"
+      },
+      "resources": []
+    },
+    {
+      "name": "lblURLSyntax",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 208
+        },
+        "Name": "lblURLSyntax",
+        "Size": {
+          "kind": "Size",
+          "width": 65,
+          "height": 13
+        },
+        "TabIndex": 0,
+        "Text": "URL syntax:"
+      },
+      "resources": []
+    },
+    {
+      "name": "lblResult",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 256
+        },
+        "Name": "lblResult",
+        "Size": {
+          "kind": "Size",
+          "width": 40,
+          "height": 13
+        },
+        "TabIndex": 2,
+        "Text": "Result:"
+      },
+      "resources": []
+    },
+    {
+      "name": "txtResult",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 272
+        },
+        "Multiline": true,
+        "Name": "txtResult",
+        "ReadOnly": true,
+        "ScrollBars": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ScrollBars.Both"
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 568,
+          "height": 56
+        },
+        "TabIndex": 3
+      },
+      "resources": []
+    },
+    {
+      "name": "rtbURLSyntax",
+      "type": "System.Windows.Forms.RichTextBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.None"
+        },
+        "DetectUrls": false,
+        "Dock": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DockStyle.Fill"
+        },
+        "Font": {
+          "kind": "expr",
+          "raw": "new System.Drawing.Font(\"Arial\", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)))"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 2,
+          "y": 2
+        },
+        "Multiline": false,
+        "Name": "rtbURLSyntax",
+        "Size": {
+          "kind": "Size",
+          "width": 562,
+          "height": 14
+        },
+        "TabIndex": 0,
+        "Text": ""
+      },
+      "resources": []
+    },
+    {
+      "name": "pURLSyntax",
+      "type": "System.Windows.Forms.Panel",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 224
+        },
+        "Name": "pURLSyntax",
+        "Padding": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 568,
+          "height": 20
+        },
+        "TabIndex": 1
+      },
+      "resources": []
+    },
+    {
+      "name": "pResponseText",
+      "type": "System.Windows.Forms.Panel",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 32
+        },
+        "Name": "pResponseText",
+        "Padding": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 568,
+          "height": 168
+        },
+        "TabIndex": 5
+      },
+      "resources": []
+    },
+    {
+      "name": "rtbResponseText",
+      "type": "System.Windows.Forms.RichTextBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.None"
+        },
+        "DetectUrls": false,
+        "Dock": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DockStyle.Fill"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 2,
+          "y": 2
+        },
+        "Name": "rtbResponseText",
+        "Size": {
+          "kind": "Size",
+          "width": 562,
+          "height": 162
+        },
+        "TabIndex": 0,
+        "Text": ""
+      },
+      "resources": []
+    },
+    {
+      "name": "AutoScaleDimensions",
+      "type": "System.Drawing.SizeF",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "ClientSize",
+      "type": "System.Drawing.Size",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    }
+  ],
+  "tree": {
+    "name": "CustomUploaderSyntaxTestForm",
+    "type": "Form",
+    "slots": {}
+  },
+  "strings": {},
+  "binary_resources": [],
+  "local_variables": [],
+  "parse_coverage": 1.0,
+  "total_statements": 87,
+  "parsed_statements": 87,
+  "unparsed_lines": []
+}

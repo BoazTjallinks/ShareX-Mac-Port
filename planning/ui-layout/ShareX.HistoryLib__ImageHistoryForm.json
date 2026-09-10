@@ -1,0 +1,796 @@
+{
+  "form_name": "ImageHistoryForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX.HistoryLib/Forms/ImageHistoryForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.HistoryLib/Forms/ImageHistoryForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 994,
+    "height": 661
+  },
+  "text": "ShareX - Image history",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 96,
+    "height": 96
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Dpi"
+  },
+  "tab_order": [
+    "tscMain",
+    "pMain",
+    "ilvImages",
+    "tsMain"
+  ],
+  "controls": [
+    {
+      "name": "components",
+      "type": "System.ComponentModel.Container",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "ttMain",
+      "type": "System.Windows.Forms.ToolTip",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "tscMain",
+      "type": "System.Windows.Forms.ToolStripContainer",
+      "parent": "ImageHistoryForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "ContentPanel.Size": {
+          "kind": "Size",
+          "width": 994,
+          "height": 636
+        },
+        "Dock": "Fill",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 994,
+          "height": 661
+        },
+        "TabIndex": 0,
+        "Name": "tscMain"
+      },
+      "resources": [
+        {
+          "property": "ContentPanel.Size",
+          "resource_key": "tscMain.ContentPanel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ContentPanel.Size",
+          "resource_key": "tscMain.ContentPanel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Dock",
+          "resource_key": "tscMain.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "tscMain.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tscMain.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tscMain.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "imageListViewColumnHeader1",
+      "type": null,
+      "parent": "ilvImages",
+      "parent_slot": "Columns",
+      "child_index": 0,
+      "properties": {
+        "Comparer": null,
+        "DisplayIndex": 0,
+        "Grouper": null,
+        "Key": "",
+        "Type": {
+          "kind": "expr",
+          "raw": "Manina.Windows.Forms.ColumnType.Name"
+        }
+      },
+      "resources": []
+    },
+    {
+      "name": "imageListViewColumnHeader2",
+      "type": null,
+      "parent": "ilvImages",
+      "parent_slot": "Columns",
+      "child_index": 1,
+      "properties": {
+        "Comparer": null,
+        "DisplayIndex": 1,
+        "Grouper": null,
+        "Key": "",
+        "Type": {
+          "kind": "expr",
+          "raw": "Manina.Windows.Forms.ColumnType.FileSize"
+        }
+      },
+      "resources": []
+    },
+    {
+      "name": "imageListViewColumnHeader3",
+      "type": null,
+      "parent": "ilvImages",
+      "parent_slot": "Columns",
+      "child_index": 2,
+      "properties": {
+        "Comparer": null,
+        "DisplayIndex": 2,
+        "Grouper": null,
+        "Key": "",
+        "Type": {
+          "kind": "expr",
+          "raw": "Manina.Windows.Forms.ColumnType.Dimensions"
+        }
+      },
+      "resources": []
+    },
+    {
+      "name": "imageListViewColumnHeader4",
+      "type": null,
+      "parent": "ilvImages",
+      "parent_slot": "Columns",
+      "child_index": 3,
+      "properties": {
+        "Comparer": null,
+        "DisplayIndex": 3,
+        "Grouper": null,
+        "Key": "",
+        "Type": {
+          "kind": "expr",
+          "raw": "Manina.Windows.Forms.ColumnType.FilePath"
+        }
+      },
+      "resources": []
+    },
+    {
+      "name": "ilvImages",
+      "type": "Manina.Windows.Forms.ImageListView",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "AllowDrag": true,
+        "AllowDuplicateFileNames": true,
+        "AllowItemReorder": false,
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
+        },
+        "CacheLimit": "100MB",
+        "Dock": "Fill",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 994,
+          "height": 636
+        },
+        "TabIndex": 0,
+        "Name": "ilvImages",
+        "ThumbnailSize": {
+          "kind": "Size",
+          "width": 100,
+          "height": 100
+        },
+        "UseWIC": true
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "ilvImages.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "ilvImages.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "ilvImages.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "ilvImages.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tslSearch",
+      "type": "System.Windows.Forms.ToolStripLabel",
+      "parent": "tsMain",
+      "parent_slot": "Items",
+      "child_index": 0,
+      "properties": {
+        "Name": "tslSearch",
+        "Size": {
+          "kind": "Size",
+          "width": 45,
+          "height": 22
+        },
+        "Text": "Search:"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tslSearch.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tslSearch.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tstbSearch",
+      "type": "System.Windows.Forms.ToolStripTextBox",
+      "parent": "tsMain",
+      "parent_slot": "Items",
+      "child_index": 1,
+      "properties": {
+        "AutoCompleteMode": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.AutoCompleteMode.Suggest"
+        },
+        "AutoCompleteSource": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.AutoCompleteSource.CustomSource"
+        },
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
+        },
+        "Name": "tstbSearch",
+        "Size": {
+          "kind": "Size",
+          "width": 300,
+          "height": 25
+        }
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tstbSearch.Size",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsbSearch",
+      "type": "System.Windows.Forms.ToolStripButton",
+      "parent": "tsMain",
+      "parent_slot": "Items",
+      "child_index": 2,
+      "properties": {
+        "DisplayStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ToolStripItemDisplayStyle.Image"
+        },
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.magnifier"
+        },
+        "ImageTransparentColor": "Magenta",
+        "Size": {
+          "kind": "Size",
+          "width": 23,
+          "height": 22
+        },
+        "Text": "Search",
+        "ToolTipText": "Search",
+        "Name": "tsbSearch"
+      },
+      "resources": [
+        {
+          "property": "ImageTransparentColor",
+          "resource_key": "tsbSearch.ImageTransparentColor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tsbSearch.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsbSearch.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTipText",
+          "resource_key": "tsbSearch.ToolTipText",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tss1",
+      "type": "System.Windows.Forms.ToolStripSeparator",
+      "parent": "tsMain",
+      "parent_slot": "Items",
+      "child_index": 3,
+      "properties": {
+        "Name": "tss1",
+        "Size": {
+          "kind": "Size",
+          "width": 6,
+          "height": 25
+        }
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tss1.Size",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsbFavorites",
+      "type": "System.Windows.Forms.ToolStripButton",
+      "parent": "tsMain",
+      "parent_slot": "Items",
+      "child_index": 4,
+      "properties": {
+        "CheckOnClick": true,
+        "DisplayStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ToolStripItemDisplayStyle.Image"
+        },
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.star"
+        },
+        "ImageTransparentColor": "Magenta",
+        "Size": {
+          "kind": "Size",
+          "width": 23,
+          "height": 22
+        },
+        "Text": "Favorites",
+        "Name": "tsbFavorites"
+      },
+      "resources": [
+        {
+          "property": "ImageTransparentColor",
+          "resource_key": "tsbFavorites.ImageTransparentColor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tsbFavorites.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsbFavorites.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsbShowStats",
+      "type": "System.Windows.Forms.ToolStripButton",
+      "parent": "tsMain",
+      "parent_slot": "Items",
+      "child_index": 5,
+      "properties": {
+        "DisplayStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ToolStripItemDisplayStyle.Image"
+        },
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.chart"
+        },
+        "ImageTransparentColor": "Magenta",
+        "Size": {
+          "kind": "Size",
+          "width": 23,
+          "height": 22
+        },
+        "Text": "Show stats...",
+        "Name": "tsbShowStats"
+      },
+      "resources": [
+        {
+          "property": "ImageTransparentColor",
+          "resource_key": "tsbShowStats.ImageTransparentColor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tsbShowStats.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsbShowStats.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsbImportFolder",
+      "type": "System.Windows.Forms.ToolStripButton",
+      "parent": "tsMain",
+      "parent_slot": "Items",
+      "child_index": 6,
+      "properties": {
+        "DisplayStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ToolStripItemDisplayStyle.Image"
+        },
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.folder_search_result"
+        },
+        "ImageTransparentColor": "Magenta",
+        "Size": {
+          "kind": "Size",
+          "width": 23,
+          "height": 22
+        },
+        "Text": "Import folder...",
+        "Name": "tsbImportFolder"
+      },
+      "resources": [
+        {
+          "property": "ImageTransparentColor",
+          "resource_key": "tsbImportFolder.ImageTransparentColor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tsbImportFolder.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsbImportFolder.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tss2",
+      "type": "System.Windows.Forms.ToolStripSeparator",
+      "parent": "tsMain",
+      "parent_slot": "Items",
+      "child_index": 7,
+      "properties": {
+        "Name": "tss2",
+        "Size": {
+          "kind": "Size",
+          "width": 6,
+          "height": 25
+        }
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tss2.Size",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsbSettings",
+      "type": "System.Windows.Forms.ToolStripButton",
+      "parent": "tsMain",
+      "parent_slot": "Items",
+      "child_index": 8,
+      "properties": {
+        "DisplayStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ToolStripItemDisplayStyle.Image"
+        },
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.gear"
+        },
+        "ImageTransparentColor": "Magenta",
+        "Size": {
+          "kind": "Size",
+          "width": 23,
+          "height": 22
+        },
+        "Text": "Settings...",
+        "Name": "tsbSettings"
+      },
+      "resources": [
+        {
+          "property": "ImageTransparentColor",
+          "resource_key": "tsbSettings.ImageTransparentColor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tsbSettings.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsbSettings.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pMain",
+      "type": "System.Windows.Forms.Panel",
+      "parent": "tscMain",
+      "parent_slot": "ContentPanel.Controls",
+      "child_index": 0,
+      "properties": {
+        "Dock": "Fill",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 994,
+          "height": 636
+        },
+        "TabIndex": 0,
+        "Name": "pMain"
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "pMain.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "pMain.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pMain.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pMain.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsMain",
+      "type": "System.Windows.Forms.ToolStrip",
+      "parent": "tscMain",
+      "parent_slot": "TopToolStripPanel.Controls",
+      "child_index": 0,
+      "properties": {
+        "Dock": "None",
+        "Location": {
+          "kind": "Point",
+          "x": 3,
+          "y": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 477,
+          "height": 25
+        },
+        "TabIndex": 0,
+        "GripStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ToolStripGripStyle.Hidden"
+        },
+        "Name": "tsMain"
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "tsMain.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "tsMain.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tsMain.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tsMain.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "ImageHistoryForm",
+    "type": "Form",
+    "slots": {
+      "Controls": [
+        {
+          "name": "tscMain",
+          "type": "System.Windows.Forms.ToolStripContainer",
+          "slots": {
+            "ContentPanel.Controls": [
+              {
+                "name": "pMain",
+                "type": "System.Windows.Forms.Panel",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "ilvImages",
+                      "type": "Manina.Windows.Forms.ImageListView",
+                      "slots": {
+                        "Columns": [
+                          {
+                            "name": "imageListViewColumnHeader1",
+                            "type": null,
+                            "slots": {}
+                          },
+                          {
+                            "name": "imageListViewColumnHeader2",
+                            "type": null,
+                            "slots": {}
+                          },
+                          {
+                            "name": "imageListViewColumnHeader3",
+                            "type": null,
+                            "slots": {}
+                          },
+                          {
+                            "name": "imageListViewColumnHeader4",
+                            "type": null,
+                            "slots": {}
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "TopToolStripPanel.Controls": [
+              {
+                "name": "tsMain",
+                "type": "System.Windows.Forms.ToolStrip",
+                "slots": {
+                  "Items": [
+                    {
+                      "name": "tslSearch",
+                      "type": "System.Windows.Forms.ToolStripLabel",
+                      "slots": {}
+                    },
+                    {
+                      "name": "tstbSearch",
+                      "type": "System.Windows.Forms.ToolStripTextBox",
+                      "slots": {}
+                    },
+                    {
+                      "name": "tsbSearch",
+                      "type": "System.Windows.Forms.ToolStripButton",
+                      "slots": {}
+                    },
+                    {
+                      "name": "tss1",
+                      "type": "System.Windows.Forms.ToolStripSeparator",
+                      "slots": {}
+                    },
+                    {
+                      "name": "tsbFavorites",
+                      "type": "System.Windows.Forms.ToolStripButton",
+                      "slots": {}
+                    },
+                    {
+                      "name": "tsbShowStats",
+                      "type": "System.Windows.Forms.ToolStripButton",
+                      "slots": {}
+                    },
+                    {
+                      "name": "tsbImportFolder",
+                      "type": "System.Windows.Forms.ToolStripButton",
+                      "slots": {}
+                    },
+                    {
+                      "name": "tss2",
+                      "type": "System.Windows.Forms.ToolStripSeparator",
+                      "slots": {}
+                    },
+                    {
+                      "name": "tsbSettings",
+                      "type": "System.Windows.Forms.ToolStripButton",
+                      "slots": {}
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "strings": {
+    "tslSearch.Text": "Search:",
+    "tsbSearch.Text": "Search",
+    "tsbSearch.ToolTipText": "Search",
+    "tsbFavorites.Text": "Favorites",
+    "tsbShowStats.Text": "Show stats...",
+    "tsbImportFolder.Text": "Import folder...",
+    "tsbSettings.Text": "Settings...",
+    "$this.Text": "ShareX - Image history"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "imageListViewColumnHeader1",
+      "type": "Manina.Windows.Forms.ImageListView.ImageListViewColumnHeader"
+    },
+    {
+      "name": "imageListViewColumnHeader2",
+      "type": "Manina.Windows.Forms.ImageListView.ImageListViewColumnHeader"
+    },
+    {
+      "name": "imageListViewColumnHeader3",
+      "type": "Manina.Windows.Forms.ImageListView.ImageListViewColumnHeader"
+    },
+    {
+      "name": "imageListViewColumnHeader4",
+      "type": "Manina.Windows.Forms.ImageListView.ImageListViewColumnHeader"
+    },
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 127,
+  "parsed_statements": 127,
+  "unparsed_lines": []
+}

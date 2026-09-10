@@ -1,0 +1,700 @@
+{
+  "form_name": "InspectWindowForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX/Forms/InspectWindowForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX/Forms/InspectWindowForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 913,
+    "height": 657
+  },
+  "text": "ShareX - Inspect window",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 8,
+    "height": 16
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Font"
+  },
+  "tab_order": [
+    "rtbInfo",
+    "mbWindowList",
+    "btnInspectWindow",
+    "btnInspectControl",
+    "btnRefresh",
+    "cbTopMost",
+    "lblOpacity",
+    "nudOpacity",
+    "lblOpacityTip",
+    "pInfo"
+  ],
+  "controls": [
+    {
+      "name": "components",
+      "type": "System.ComponentModel.Container",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "rtbInfo",
+      "type": "System.Windows.Forms.RichTextBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.None"
+        },
+        "DetectUrls": false,
+        "Dock": "Fill",
+        "Font": "Arial, 11.25pt",
+        "Location": {
+          "kind": "Point",
+          "x": 4,
+          "y": 4
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 4,
+          "right": 4,
+          "bottom": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 686,
+          "height": 630
+        },
+        "TabIndex": 0,
+        "Text": "",
+        "Name": "rtbInfo",
+        "ReadOnly": true
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "rtbInfo.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "rtbInfo.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "rtbInfo.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "rtbInfo.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "rtbInfo.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "rtbInfo.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "rtbInfo.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pInfo",
+      "type": "System.Windows.Forms.Panel",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Top, Bottom, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 208,
+          "y": 8
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 4,
+          "right": 4,
+          "bottom": 4
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 4,
+          "right": 4,
+          "bottom": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 696,
+          "height": 640
+        },
+        "TabIndex": 8,
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
+        },
+        "Name": "pInfo"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "pInfo.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "pInfo.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "pInfo.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "pInfo.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pInfo.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pInfo.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnInspectWindow",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 48
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 4,
+          "right": 4,
+          "bottom": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 192,
+          "height": 32
+        },
+        "TabIndex": 1,
+        "Text": "Inspect window...",
+        "Name": "btnInspectWindow",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnInspectWindow.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnInspectWindow.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "btnInspectWindow.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnInspectWindow.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnInspectWindow.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnInspectWindow.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnInspectControl",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 88
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 4,
+          "right": 4,
+          "bottom": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 192,
+          "height": 32
+        },
+        "TabIndex": 2,
+        "Text": "Inspect control...",
+        "Name": "btnInspectControl",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnInspectControl.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnInspectControl.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "btnInspectControl.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnInspectControl.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnInspectControl.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnInspectControl.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnRefresh",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 128
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 4,
+          "right": 4,
+          "bottom": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 192,
+          "height": 32
+        },
+        "TabIndex": 3,
+        "Text": "Refresh",
+        "Name": "btnRefresh",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnRefresh.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnRefresh.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "btnRefresh.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnRefresh.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnRefresh.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnRefresh.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cmsWindowList",
+      "type": "System.Windows.Forms.ContextMenuStrip",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Name": "cmsWindowList",
+        "Size": {
+          "kind": "Size",
+          "width": 61,
+          "height": 4
+        }
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "cmsWindowList.Size",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbTopMost",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 176
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 83,
+          "height": 20
+        },
+        "TabIndex": 4,
+        "Text": "Top most",
+        "Name": "cbTopMost",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbTopMost.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "cbTopMost.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbTopMost.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbTopMost.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbTopMost.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbTopMost.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblOpacity",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 208
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 56,
+          "height": 16
+        },
+        "TabIndex": 5,
+        "Text": "Opacity:",
+        "Name": "lblOpacity"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblOpacity.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblOpacity.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblOpacity.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblOpacity.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblOpacity.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblOpacity.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudOpacity",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Increment": 10,
+        "Location": {
+          "kind": "Point",
+          "x": 112,
+          "y": 205
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 64,
+          "height": 22
+        },
+        "TabIndex": 6,
+        "TextAlign": "Center",
+        "Minimum": 10,
+        "Name": "nudOpacity",
+        "Value": 100
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudOpacity.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudOpacity.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudOpacity.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudOpacity.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblOpacityTip",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 178,
+          "y": 208
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 19,
+          "height": 16
+        },
+        "TabIndex": 7,
+        "Text": "%",
+        "Name": "lblOpacityTip"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblOpacityTip.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblOpacityTip.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblOpacityTip.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblOpacityTip.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblOpacityTip.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblOpacityTip.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "mbWindowList",
+      "type": "HelpersLib.MenuButton",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 192,
+          "height": 32
+        },
+        "TabIndex": 0,
+        "Text": "Window list",
+        "Menu": {
+          "kind": "expr",
+          "raw": "this.cmsWindowList"
+        },
+        "Name": "mbWindowList",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "mbWindowList.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "mbWindowList.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "mbWindowList.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "mbWindowList.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "mbWindowList.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "InspectWindowForm",
+    "type": "Form",
+    "slots": {}
+  },
+  "strings": {
+    "rtbInfo.Text": "",
+    "btnInspectWindow.Text": "Inspect window...",
+    "btnInspectControl.Text": "Inspect control...",
+    "btnRefresh.Text": "Refresh",
+    "cbTopMost.Text": "Top most",
+    "lblOpacity.Text": "Opacity:",
+    "lblOpacityTip.Text": "%",
+    "mbWindowList.Text": "Window list",
+    "$this.Text": "ShareX - Inspect window"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 74,
+  "parsed_statements": 74,
+  "unparsed_lines": []
+}

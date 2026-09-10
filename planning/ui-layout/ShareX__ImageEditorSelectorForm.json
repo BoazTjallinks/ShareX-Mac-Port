@@ -1,0 +1,257 @@
+{
+  "form_name": "ImageEditorSelectorForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX/Forms/ImageEditorSelectorForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX/Forms/ImageEditorSelectorForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 536,
+    "height": 176
+  },
+  "text": "ShareX - Image editor selector",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 7,
+    "height": 17
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Font"
+  },
+  "tab_order": [
+    "btnModernImageEditor",
+    "btnLegacyImageEditor",
+    "lblNote"
+  ],
+  "controls": [
+    {
+      "name": "lblNote",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ImageEditorSelectorForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 120
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 0,
+          "right": 4,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 293,
+          "height": 34
+        },
+        "TabIndex": 2,
+        "Text": "You can change this at any time from:\nTask settings → Tools → Use legacy image editor",
+        "Name": "lblNote"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblNote.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblNote.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblNote.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblNote.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblNote.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblNote.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnModernImageEditor",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageEditorSelectorForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Font": "Segoe UI, 14.25pt",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 16
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 4,
+          "right": 4,
+          "bottom": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 248,
+          "height": 88
+        },
+        "TabIndex": 0,
+        "Text": "Modern Image Editor",
+        "Name": "btnModernImageEditor",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "btnModernImageEditor.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnModernImageEditor.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "btnModernImageEditor.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnModernImageEditor.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnModernImageEditor.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnModernImageEditor.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnLegacyImageEditor",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageEditorSelectorForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Font": "Comic Sans MS, 14.25pt",
+        "Location": {
+          "kind": "Point",
+          "x": 272,
+          "y": 16
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 4,
+          "right": 4,
+          "bottom": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 248,
+          "height": 88
+        },
+        "TabIndex": 1,
+        "Text": "Legacy Image Editor",
+        "Name": "btnLegacyImageEditor",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "btnLegacyImageEditor.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnLegacyImageEditor.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "btnLegacyImageEditor.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnLegacyImageEditor.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnLegacyImageEditor.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnLegacyImageEditor.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "ImageEditorSelectorForm",
+    "type": "Form",
+    "slots": {
+      "Controls": [
+        {
+          "name": "lblNote",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "btnModernImageEditor",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnLegacyImageEditor",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        }
+      ]
+    }
+  },
+  "strings": {
+    "btnLegacyImageEditor.Text": "Legacy Image Editor",
+    "btnModernImageEditor.Text": "Modern Image Editor",
+    "lblNote.Text": "You can change this at any time from:\nTask settings → Tools → Use legacy image editor",
+    "$this.Text": "ShareX - Image editor selector"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 26,
+  "parsed_statements": 26,
+  "unparsed_lines": []
+}

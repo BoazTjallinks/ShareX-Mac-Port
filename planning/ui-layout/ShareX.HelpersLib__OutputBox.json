@@ -1,0 +1,94 @@
+{
+  "form_name": "OutputBox",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX.HelpersLib/Forms/OutputBox.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.HelpersLib/Forms/OutputBox.resx",
+  "client_size": null,
+  "text": null,
+  "menu_strip": null,
+  "auto_scale_dimensions": null,
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Dpi"
+  },
+  "tab_order": [
+    "rtbText"
+  ],
+  "controls": [
+    {
+      "name": "rtbText",
+      "type": "System.Windows.Forms.RichTextBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.None"
+        },
+        "Dock": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DockStyle.Fill"
+        },
+        "Font": {
+          "kind": "expr",
+          "raw": "new System.Drawing.Font(\"Segoe UI\", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)))"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 8
+        },
+        "Name": "rtbText",
+        "ReadOnly": true,
+        "Size": {
+          "kind": "Size",
+          "width": 968,
+          "height": 745
+        },
+        "TabIndex": 1,
+        "Text": ""
+      },
+      "resources": []
+    },
+    {
+      "name": "AutoScaleDimensions",
+      "type": "System.Drawing.SizeF",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "ClientSize",
+      "type": "System.Drawing.Size",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "Padding",
+      "type": "System.Windows.Forms.Padding",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    }
+  ],
+  "tree": {
+    "name": "OutputBox",
+    "type": "Form",
+    "slots": {}
+  },
+  "strings": {},
+  "binary_resources": [],
+  "local_variables": [],
+  "parse_coverage": 1.0,
+  "total_statements": 21,
+  "parsed_statements": 21,
+  "unparsed_lines": []
+}

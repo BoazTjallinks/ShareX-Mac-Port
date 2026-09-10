@@ -1,0 +1,2422 @@
+{
+  "form_name": "AIOptionsForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX/Tools/AI/AIOptionsForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX/Tools/AI/AIOptionsForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 288,
+    "height": 467
+  },
+  "text": "ShareX - AI options",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 6,
+    "height": 13
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Font"
+  },
+  "tab_order": [
+    "lblProvider",
+    "lblOpenAIAPIKey",
+    "lblGeminiAPIKey",
+    "lblOpenRouterAPIKey",
+    "cbProvider",
+    "txtOpenAIAPIKey",
+    "txtGeminiAPIKey",
+    "txtOpenRouterAPIKey",
+    "btnAPIKeyHelp",
+    "lblOpenAIModel",
+    "lblGeminiModel",
+    "lblOpenRouterModel",
+    "gbOpenAI",
+    "cbOpenAIModel",
+    "cbGeminiModel",
+    "cbOpenRouterModel",
+    "lblReasoningEffort",
+    "gbGemini",
+    "btnTestConnection",
+    "cbOpenAIReasoningEffort",
+    "gbOpenRouter",
+    "lblTestStatus",
+    "lblVerbosity",
+    "cbAutoStartRegion",
+    "cbOpenAIVerbosity",
+    "cbAutoStartAnalyze",
+    "lblOpenAICustomURL",
+    "cbAutoCopyResult",
+    "txtOpenAICustomURL",
+    "btnOK",
+    "btnCancel",
+    "btnOpenAILoadModels"
+  ],
+  "controls": [
+    {
+      "name": "components",
+      "type": "System.ComponentModel.Container",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "tipStatus",
+      "type": "System.Windows.Forms.ToolTip",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "lblProvider",
+      "type": "System.Windows.Forms.Label",
+      "parent": "AIOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 10,
+          "y": 13
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 0,
+          "right": 2,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 49,
+          "height": 13
+        },
+        "TabIndex": 0,
+        "Text": "Provider:",
+        "Name": "lblProvider"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblProvider.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblProvider.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblProvider.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblProvider.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblProvider.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblProvider.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbProvider",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "AIOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 12,
+          "y": 32
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 228,
+          "height": 21
+        },
+        "TabIndex": 1,
+        "Name": "cbProvider"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbProvider.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "cbProvider.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbProvider.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbProvider.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnAPIKeyHelp",
+      "type": "System.Windows.Forms.Button",
+      "parent": "AIOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.question"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 248,
+          "y": 29
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 26,
+          "height": 26
+        },
+        "TabIndex": 2,
+        "Name": "btnAPIKeyHelp",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnAPIKeyHelp.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "btnAPIKeyHelp.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnAPIKeyHelp.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnAPIKeyHelp.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "gbOpenAI",
+      "type": "System.Windows.Forms.GroupBox",
+      "parent": "AIOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 12,
+          "y": 65
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 264,
+          "height": 263
+        },
+        "TabIndex": 3,
+        "Text": "Provider Settings",
+        "Name": "gbOpenAI",
+        "TabStop": false
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "gbOpenAI.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "gbOpenAI.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "gbOpenAI.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "gbOpenAI.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "gbOpenAI.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "gbOpenAI.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "gbGemini",
+      "type": "System.Windows.Forms.GroupBox",
+      "parent": "AIOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 12,
+          "y": 65
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 264,
+          "height": 146
+        },
+        "TabIndex": 4,
+        "Text": "Provider Settings",
+        "Visible": false,
+        "Name": "gbGemini",
+        "TabStop": false
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "gbGemini.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "gbGemini.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "gbGemini.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "gbGemini.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "gbGemini.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "gbGemini.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Visible",
+          "resource_key": "gbGemini.Visible",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "gbOpenRouter",
+      "type": "System.Windows.Forms.GroupBox",
+      "parent": "AIOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 12,
+          "y": 65
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 264,
+          "height": 146
+        },
+        "TabIndex": 5,
+        "Text": "Provider Settings",
+        "Visible": false,
+        "Name": "gbOpenRouter",
+        "TabStop": false
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "gbOpenRouter.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "gbOpenRouter.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "gbOpenRouter.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "gbOpenRouter.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "gbOpenRouter.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "gbOpenRouter.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Visible",
+          "resource_key": "gbOpenRouter.Visible",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnTestConnection",
+      "type": "System.Windows.Forms.Button",
+      "parent": "AIOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 12,
+          "y": 332
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 78,
+          "height": 26
+        },
+        "TabIndex": 4,
+        "Text": "Test",
+        "Name": "btnTestConnection",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnTestConnection.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnTestConnection.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "btnTestConnection.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnTestConnection.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnTestConnection.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnTestConnection.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblTestStatus",
+      "type": "System.Windows.Forms.Label",
+      "parent": "AIOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 7,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 102,
+          "y": 339
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 0,
+          "right": 2,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 0,
+          "height": 13
+        },
+        "TabIndex": 5,
+        "TextAlign": "BottomRight",
+        "Name": "lblTestStatus"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblTestStatus.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblTestStatus.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblTestStatus.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblTestStatus.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblTestStatus.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "lblTestStatus.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbAutoStartRegion",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "AIOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 8,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 12,
+          "y": 369
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 103,
+          "height": 17
+        },
+        "TabIndex": 6,
+        "Text": "Auto start region",
+        "Name": "cbAutoStartRegion",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbAutoStartRegion.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbAutoStartRegion.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "cbAutoStartRegion.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbAutoStartRegion.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbAutoStartRegion.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbAutoStartRegion.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbAutoStartAnalyze",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "AIOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 9,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 12,
+          "y": 389
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 110,
+          "height": 17
+        },
+        "TabIndex": 7,
+        "Text": "Auto start analyze",
+        "Name": "cbAutoStartAnalyze",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbAutoStartAnalyze.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbAutoStartAnalyze.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "cbAutoStartAnalyze.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbAutoStartAnalyze.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbAutoStartAnalyze.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbAutoStartAnalyze.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbAutoCopyResult",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "AIOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 10,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 12,
+          "y": 408
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 102,
+          "height": 17
+        },
+        "TabIndex": 8,
+        "Text": "Auto copy result",
+        "Name": "cbAutoCopyResult",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbAutoCopyResult.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbAutoCopyResult.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "cbAutoCopyResult.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbAutoCopyResult.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbAutoCopyResult.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbAutoCopyResult.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnOK",
+      "type": "System.Windows.Forms.Button",
+      "parent": "AIOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 11,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 114,
+          "y": 429
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 78,
+          "height": 26
+        },
+        "TabIndex": 9,
+        "Text": "OK",
+        "Name": "btnOK",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnOK.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "btnOK.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnOK.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnOK.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnOK.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnCancel",
+      "type": "System.Windows.Forms.Button",
+      "parent": "AIOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 12,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 198,
+          "y": 429
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 78,
+          "height": 26
+        },
+        "TabIndex": 10,
+        "Text": "Cancel",
+        "Name": "btnCancel",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnCancel.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "btnCancel.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCancel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCancel.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCancel.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblGeminiAPIKey",
+      "type": "System.Windows.Forms.Label",
+      "parent": "gbGemini",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 9,
+          "y": 20
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 0,
+          "right": 2,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 47,
+          "height": 13
+        },
+        "TabIndex": 0,
+        "Text": "API key:",
+        "Name": "lblGeminiAPIKey"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblGeminiAPIKey.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblGeminiAPIKey.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblGeminiAPIKey.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblGeminiAPIKey.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblGeminiAPIKey.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblGeminiAPIKey.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtGeminiAPIKey",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "gbGemini",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 9,
+          "y": 36
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 247,
+          "height": 20
+        },
+        "TabIndex": 1,
+        "Name": "txtGeminiAPIKey",
+        "UseSystemPasswordChar": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtGeminiAPIKey.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "txtGeminiAPIKey.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtGeminiAPIKey.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtGeminiAPIKey.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblGeminiModel",
+      "type": "System.Windows.Forms.Label",
+      "parent": "gbGemini",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 9,
+          "y": 62
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 0,
+          "right": 2,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 39,
+          "height": 13
+        },
+        "TabIndex": 2,
+        "Text": "Model:",
+        "Name": "lblGeminiModel"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblGeminiModel.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblGeminiModel.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblGeminiModel.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblGeminiModel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblGeminiModel.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblGeminiModel.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbGeminiModel",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "gbGemini",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "FormattingEnabled": true,
+        "Items.literal_items": [
+          {
+            "kind": "resource_string",
+            "resource_key": "cbGeminiModel.Items"
+          },
+          {
+            "kind": "resource_string",
+            "resource_key": "cbGeminiModel.Items1"
+          },
+          {
+            "kind": "resource_string",
+            "resource_key": "cbGeminiModel.Items2"
+          },
+          {
+            "kind": "resource_string",
+            "resource_key": "cbGeminiModel.Items3"
+          }
+        ],
+        "Items": "gemini-2.0-flash",
+        "Items1": "gemini-2.0-flash-lite",
+        "Items2": "gemini-1.5-flash",
+        "Items3": "gemini-1.5-pro",
+        "Location": {
+          "kind": "Point",
+          "x": 9,
+          "y": 78
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 247,
+          "height": 21
+        },
+        "TabIndex": 3,
+        "Name": "cbGeminiModel"
+      },
+      "resources": [
+        {
+          "property": "Items",
+          "resource_key": "cbGeminiModel.Items",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Items1",
+          "resource_key": "cbGeminiModel.Items1",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Items2",
+          "resource_key": "cbGeminiModel.Items2",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Items3",
+          "resource_key": "cbGeminiModel.Items3",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbGeminiModel.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "cbGeminiModel.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbGeminiModel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbGeminiModel.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnOpenAILoadModels",
+      "type": "System.Windows.Forms.Button",
+      "parent": "gbOpenAI",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Font": "Microsoft Sans Serif, 8.25pt",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 232,
+          "y": 81
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 26,
+          "height": 26
+        },
+        "TabIndex": 11,
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "btnOpenAILoadModels.ToolTip"
+        },
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.arrow_circle_double_135"
+        },
+        "Name": "btnOpenAILoadModels",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "btnOpenAILoadModels.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "btnOpenAILoadModels.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnOpenAILoadModels.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "btnOpenAILoadModels.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnOpenAILoadModels.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnOpenAILoadModels.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnOpenAILoadModels.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnOpenAILoadModels.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "lblOpenAIAPIKey",
+      "type": "System.Windows.Forms.Label",
+      "parent": "gbOpenAI",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 10,
+          "y": 20
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 0,
+          "right": 2,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 47,
+          "height": 13
+        },
+        "TabIndex": 0,
+        "Text": "API key:",
+        "Name": "lblOpenAIAPIKey"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblOpenAIAPIKey.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblOpenAIAPIKey.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblOpenAIAPIKey.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblOpenAIAPIKey.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblOpenAIAPIKey.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblOpenAIAPIKey.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtOpenAIAPIKey",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "gbOpenAI",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 12,
+          "y": 39
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 241,
+          "height": 20
+        },
+        "TabIndex": 1,
+        "Name": "txtOpenAIAPIKey",
+        "UseSystemPasswordChar": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtOpenAIAPIKey.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "txtOpenAIAPIKey.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtOpenAIAPIKey.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtOpenAIAPIKey.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblOpenAIModel",
+      "type": "System.Windows.Forms.Label",
+      "parent": "gbOpenAI",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 10,
+          "y": 65
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 0,
+          "right": 2,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 39,
+          "height": 13
+        },
+        "TabIndex": 2,
+        "Text": "Model:",
+        "Name": "lblOpenAIModel"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblOpenAIModel.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblOpenAIModel.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblOpenAIModel.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblOpenAIModel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblOpenAIModel.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblOpenAIModel.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbOpenAIModel",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "gbOpenAI",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "FormattingEnabled": true,
+        "Items.literal_items": [
+          {
+            "kind": "resource_string",
+            "resource_key": "cbOpenAIModel.Items"
+          },
+          {
+            "kind": "resource_string",
+            "resource_key": "cbOpenAIModel.Items1"
+          },
+          {
+            "kind": "resource_string",
+            "resource_key": "cbOpenAIModel.Items2"
+          },
+          {
+            "kind": "resource_string",
+            "resource_key": "cbOpenAIModel.Items3"
+          },
+          {
+            "kind": "resource_string",
+            "resource_key": "cbOpenAIModel.Items4"
+          }
+        ],
+        "Items": "gpt-5.2",
+        "Items1": "gpt-5.1",
+        "Items2": "gpt-5",
+        "Items3": "gpt-5-mini",
+        "Items4": "gpt-5-nano",
+        "Location": {
+          "kind": "Point",
+          "x": 12,
+          "y": 84
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 212,
+          "height": 21
+        },
+        "TabIndex": 3,
+        "Name": "cbOpenAIModel"
+      },
+      "resources": [
+        {
+          "property": "Items",
+          "resource_key": "cbOpenAIModel.Items",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Items1",
+          "resource_key": "cbOpenAIModel.Items1",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Items2",
+          "resource_key": "cbOpenAIModel.Items2",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Items3",
+          "resource_key": "cbOpenAIModel.Items3",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Items4",
+          "resource_key": "cbOpenAIModel.Items4",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbOpenAIModel.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "cbOpenAIModel.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbOpenAIModel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbOpenAIModel.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblOpenAICustomURL",
+      "type": "System.Windows.Forms.Label",
+      "parent": "gbOpenAI",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 10,
+          "y": 209
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 0,
+          "right": 2,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 96,
+          "height": 13
+        },
+        "TabIndex": 8,
+        "Text": "Custom base URL:",
+        "Name": "lblOpenAICustomURL"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblOpenAICustomURL.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblOpenAICustomURL.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblOpenAICustomURL.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblOpenAICustomURL.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblOpenAICustomURL.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblOpenAICustomURL.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtOpenAICustomURL",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "gbOpenAI",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 12,
+          "y": 229
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 241,
+          "height": 20
+        },
+        "TabIndex": 9,
+        "Name": "txtOpenAICustomURL"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtOpenAICustomURL.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "txtOpenAICustomURL.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtOpenAICustomURL.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtOpenAICustomURL.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbOpenAIReasoningEffort",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "gbOpenAI",
+      "parent_slot": "Controls",
+      "child_index": 7,
+      "properties": {
+        "FormattingEnabled": true,
+        "Items.literal_items": [
+          {
+            "kind": "resource_string",
+            "resource_key": "cbOpenAIReasoningEffort.Items"
+          },
+          {
+            "kind": "resource_string",
+            "resource_key": "cbOpenAIReasoningEffort.Items1"
+          },
+          {
+            "kind": "resource_string",
+            "resource_key": "cbOpenAIReasoningEffort.Items2"
+          },
+          {
+            "kind": "resource_string",
+            "resource_key": "cbOpenAIReasoningEffort.Items3"
+          }
+        ],
+        "Items": "minimal",
+        "Items1": "low",
+        "Items2": "medium",
+        "Items3": "high",
+        "Location": {
+          "kind": "Point",
+          "x": 12,
+          "y": 130
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 241,
+          "height": 21
+        },
+        "TabIndex": 5,
+        "Name": "cbOpenAIReasoningEffort"
+      },
+      "resources": [
+        {
+          "property": "Items",
+          "resource_key": "cbOpenAIReasoningEffort.Items",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Items1",
+          "resource_key": "cbOpenAIReasoningEffort.Items1",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Items2",
+          "resource_key": "cbOpenAIReasoningEffort.Items2",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Items3",
+          "resource_key": "cbOpenAIReasoningEffort.Items3",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbOpenAIReasoningEffort.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "cbOpenAIReasoningEffort.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbOpenAIReasoningEffort.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbOpenAIReasoningEffort.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblReasoningEffort",
+      "type": "System.Windows.Forms.Label",
+      "parent": "gbOpenAI",
+      "parent_slot": "Controls",
+      "child_index": 8,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 10,
+          "y": 110
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 0,
+          "right": 2,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 88,
+          "height": 13
+        },
+        "TabIndex": 4,
+        "Text": "Reasoning effort:",
+        "Name": "lblReasoningEffort"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblReasoningEffort.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblReasoningEffort.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblReasoningEffort.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblReasoningEffort.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblReasoningEffort.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblReasoningEffort.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblVerbosity",
+      "type": "System.Windows.Forms.Label",
+      "parent": "gbOpenAI",
+      "parent_slot": "Controls",
+      "child_index": 9,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 10,
+          "y": 156
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 0,
+          "right": 2,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 53,
+          "height": 13
+        },
+        "TabIndex": 6,
+        "Text": "Verbosity:",
+        "Name": "lblVerbosity"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblVerbosity.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblVerbosity.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblVerbosity.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblVerbosity.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblVerbosity.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblVerbosity.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbOpenAIVerbosity",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "gbOpenAI",
+      "parent_slot": "Controls",
+      "child_index": 10,
+      "properties": {
+        "FormattingEnabled": true,
+        "Items.literal_items": [
+          {
+            "kind": "resource_string",
+            "resource_key": "cbOpenAIVerbosity.Items"
+          },
+          {
+            "kind": "resource_string",
+            "resource_key": "cbOpenAIVerbosity.Items1"
+          },
+          {
+            "kind": "resource_string",
+            "resource_key": "cbOpenAIVerbosity.Items2"
+          }
+        ],
+        "Items": "low",
+        "Items1": "medium",
+        "Items2": "high",
+        "Location": {
+          "kind": "Point",
+          "x": 12,
+          "y": 176
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 241,
+          "height": 21
+        },
+        "TabIndex": 7,
+        "Name": "cbOpenAIVerbosity"
+      },
+      "resources": [
+        {
+          "property": "Items",
+          "resource_key": "cbOpenAIVerbosity.Items",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Items1",
+          "resource_key": "cbOpenAIVerbosity.Items1",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Items2",
+          "resource_key": "cbOpenAIVerbosity.Items2",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbOpenAIVerbosity.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "cbOpenAIVerbosity.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbOpenAIVerbosity.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbOpenAIVerbosity.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblOpenRouterAPIKey",
+      "type": "System.Windows.Forms.Label",
+      "parent": "gbOpenRouter",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 9,
+          "y": 20
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 0,
+          "right": 2,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 47,
+          "height": 13
+        },
+        "TabIndex": 0,
+        "Text": "API key:",
+        "Name": "lblOpenRouterAPIKey"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblOpenRouterAPIKey.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblOpenRouterAPIKey.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblOpenRouterAPIKey.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblOpenRouterAPIKey.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblOpenRouterAPIKey.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblOpenRouterAPIKey.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtOpenRouterAPIKey",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "gbOpenRouter",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 9,
+          "y": 36
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 247,
+          "height": 20
+        },
+        "TabIndex": 1,
+        "Name": "txtOpenRouterAPIKey",
+        "UseSystemPasswordChar": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtOpenRouterAPIKey.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "txtOpenRouterAPIKey.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtOpenRouterAPIKey.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtOpenRouterAPIKey.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblOpenRouterModel",
+      "type": "System.Windows.Forms.Label",
+      "parent": "gbOpenRouter",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 9,
+          "y": 62
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 0,
+          "right": 2,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 39,
+          "height": 13
+        },
+        "TabIndex": 2,
+        "Text": "Model:",
+        "Name": "lblOpenRouterModel"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblOpenRouterModel.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblOpenRouterModel.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblOpenRouterModel.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblOpenRouterModel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblOpenRouterModel.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblOpenRouterModel.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbOpenRouterModel",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "gbOpenRouter",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "FormattingEnabled": true,
+        "Items.literal_items": [
+          {
+            "kind": "resource_string",
+            "resource_key": "cbOpenRouterModel.Items"
+          },
+          {
+            "kind": "resource_string",
+            "resource_key": "cbOpenRouterModel.Items1"
+          },
+          {
+            "kind": "resource_string",
+            "resource_key": "cbOpenRouterModel.Items2"
+          }
+        ],
+        "Items": "openai/gpt-4o",
+        "Items1": "anthropic/claude-3.5-sonnet",
+        "Items2": "google/gemini-pro-1.5",
+        "Location": {
+          "kind": "Point",
+          "x": 9,
+          "y": 78
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 247,
+          "height": 21
+        },
+        "TabIndex": 3,
+        "Name": "cbOpenRouterModel"
+      },
+      "resources": [
+        {
+          "property": "Items",
+          "resource_key": "cbOpenRouterModel.Items",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Items1",
+          "resource_key": "cbOpenRouterModel.Items1",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Items2",
+          "resource_key": "cbOpenRouterModel.Items2",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbOpenRouterModel.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "cbOpenRouterModel.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbOpenRouterModel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbOpenRouterModel.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "AIOptionsForm",
+    "type": "Form",
+    "slots": {
+      "Controls": [
+        {
+          "name": "lblProvider",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "cbProvider",
+          "type": "System.Windows.Forms.ComboBox",
+          "slots": {}
+        },
+        {
+          "name": "btnAPIKeyHelp",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "gbOpenAI",
+          "type": "System.Windows.Forms.GroupBox",
+          "slots": {
+            "Controls": [
+              {
+                "name": "btnOpenAILoadModels",
+                "type": "System.Windows.Forms.Button",
+                "slots": {}
+              },
+              {
+                "name": "lblOpenAIAPIKey",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "txtOpenAIAPIKey",
+                "type": "System.Windows.Forms.TextBox",
+                "slots": {}
+              },
+              {
+                "name": "lblOpenAIModel",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "cbOpenAIModel",
+                "type": "System.Windows.Forms.ComboBox",
+                "slots": {}
+              },
+              {
+                "name": "lblOpenAICustomURL",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "txtOpenAICustomURL",
+                "type": "System.Windows.Forms.TextBox",
+                "slots": {}
+              },
+              {
+                "name": "cbOpenAIReasoningEffort",
+                "type": "System.Windows.Forms.ComboBox",
+                "slots": {}
+              },
+              {
+                "name": "lblReasoningEffort",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "lblVerbosity",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "cbOpenAIVerbosity",
+                "type": "System.Windows.Forms.ComboBox",
+                "slots": {}
+              }
+            ]
+          }
+        },
+        {
+          "name": "gbGemini",
+          "type": "System.Windows.Forms.GroupBox",
+          "slots": {
+            "Controls": [
+              {
+                "name": "lblGeminiAPIKey",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "txtGeminiAPIKey",
+                "type": "System.Windows.Forms.TextBox",
+                "slots": {}
+              },
+              {
+                "name": "lblGeminiModel",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "cbGeminiModel",
+                "type": "System.Windows.Forms.ComboBox",
+                "slots": {}
+              }
+            ]
+          }
+        },
+        {
+          "name": "gbOpenRouter",
+          "type": "System.Windows.Forms.GroupBox",
+          "slots": {
+            "Controls": [
+              {
+                "name": "lblOpenRouterAPIKey",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "txtOpenRouterAPIKey",
+                "type": "System.Windows.Forms.TextBox",
+                "slots": {}
+              },
+              {
+                "name": "lblOpenRouterModel",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "cbOpenRouterModel",
+                "type": "System.Windows.Forms.ComboBox",
+                "slots": {}
+              }
+            ]
+          }
+        },
+        {
+          "name": "btnTestConnection",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "lblTestStatus",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "cbAutoStartRegion",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "cbAutoStartAnalyze",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "cbAutoCopyResult",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "btnOK",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnCancel",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        }
+      ]
+    }
+  },
+  "strings": {
+    "lblProvider.Text": "Provider:",
+    "btnOpenAILoadModels.ToolTip": "Load models",
+    "lblOpenAIAPIKey.Text": "API key:",
+    "lblOpenAIModel.Text": "Model:",
+    "cbOpenAIModel.Items": "gpt-5.2",
+    "cbOpenAIModel.Items1": "gpt-5.1",
+    "cbOpenAIModel.Items2": "gpt-5",
+    "cbOpenAIModel.Items3": "gpt-5-mini",
+    "cbOpenAIModel.Items4": "gpt-5-nano",
+    "lblOpenAICustomURL.Text": "Custom base URL:",
+    "cbOpenAIReasoningEffort.Items": "minimal",
+    "cbOpenAIReasoningEffort.Items1": "low",
+    "cbOpenAIReasoningEffort.Items2": "medium",
+    "cbOpenAIReasoningEffort.Items3": "high",
+    "lblReasoningEffort.Text": "Reasoning effort:",
+    "lblVerbosity.Text": "Verbosity:",
+    "cbOpenAIVerbosity.Items": "low",
+    "cbOpenAIVerbosity.Items1": "medium",
+    "cbOpenAIVerbosity.Items2": "high",
+    "gbOpenAI.Text": "Provider Settings",
+    "lblGeminiAPIKey.Text": "API key:",
+    "lblGeminiModel.Text": "Model:",
+    "cbGeminiModel.Items": "gemini-2.0-flash",
+    "cbGeminiModel.Items1": "gemini-2.0-flash-lite",
+    "cbGeminiModel.Items2": "gemini-1.5-flash",
+    "cbGeminiModel.Items3": "gemini-1.5-pro",
+    "gbGemini.Text": "Provider Settings",
+    "lblOpenRouterAPIKey.Text": "API key:",
+    "lblOpenRouterModel.Text": "Model:",
+    "cbOpenRouterModel.Items": "openai/gpt-4o",
+    "cbOpenRouterModel.Items1": "anthropic/claude-3.5-sonnet",
+    "cbOpenRouterModel.Items2": "google/gemini-pro-1.5",
+    "gbOpenRouter.Text": "Provider Settings",
+    "btnTestConnection.Text": "Test",
+    "cbAutoStartRegion.Text": "Auto start region",
+    "cbAutoStartAnalyze.Text": "Auto start analyze",
+    "cbAutoCopyResult.Text": "Auto copy result",
+    "btnOK.Text": "OK",
+    "btnCancel.Text": "Cancel",
+    "$this.Text": "ShareX - AI options"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 184,
+  "parsed_statements": 184,
+  "unparsed_lines": []
+}

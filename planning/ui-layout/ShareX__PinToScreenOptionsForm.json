@@ -1,0 +1,999 @@
+{
+  "form_name": "PinToScreenOptionsForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX/Tools/PinToScreen/PinToScreenOptionsForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX/Tools/PinToScreen/PinToScreenOptionsForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 420,
+    "height": 445
+  },
+  "text": "ShareX - Pin to screen options",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 8,
+    "height": 16
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Font"
+  },
+  "tab_order": [
+    "lblPlacement",
+    "cbPlacement",
+    "lblPlacementOffset",
+    "lblScaleStep",
+    "nudPlacementOffset",
+    "nudScaleStep",
+    "cbTopMost",
+    "cbKeepCenterLocation",
+    "cbShadow",
+    "cbBorder",
+    "lblBorderSize",
+    "nudBorderSize",
+    "btnBorderColor",
+    "lblMinimizeSize",
+    "nudMinimizeSizeWidth",
+    "lblMinimizeSizeX",
+    "nudMinimizeSizeHeight",
+    "btnOK",
+    "btnCancel"
+  ],
+  "controls": [
+    {
+      "name": "btnOK",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 192,
+          "y": 400
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 104,
+          "height": 32
+        },
+        "TabIndex": 15,
+        "Text": "OK",
+        "Name": "btnOK",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnOK.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnOK.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnOK.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnOK.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnCancel",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 304,
+          "y": 400
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 104,
+          "height": 32
+        },
+        "TabIndex": 16,
+        "Text": "Cancel",
+        "Name": "btnCancel",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnCancel.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCancel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCancel.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCancel.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblPlacement",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 16
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 74,
+          "height": 16
+        },
+        "TabIndex": 0,
+        "Text": "Placement:",
+        "Name": "lblPlacement"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblPlacement.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblPlacement.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblPlacement.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblPlacement.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblPlacement.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbPlacement",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 40
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 144,
+          "height": 24
+        },
+        "TabIndex": 1,
+        "Name": "cbPlacement"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbPlacement.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbPlacement.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbPlacement.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblPlacementOffset",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 173,
+          "y": 16
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 109,
+          "height": 16
+        },
+        "TabIndex": 2,
+        "Text": "Placement offset:",
+        "Name": "lblPlacementOffset"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblPlacementOffset.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblPlacementOffset.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblPlacementOffset.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblPlacementOffset.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblPlacementOffset.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudPlacementOffset",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 176,
+          "y": 41
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 72,
+          "height": 22
+        },
+        "TabIndex": 3,
+        "TextAlign": "Center",
+        "Maximum": 300,
+        "Name": "nudPlacementOffset"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudPlacementOffset.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudPlacementOffset.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudPlacementOffset.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudPlacementOffset.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbTopMost",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 80
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 83,
+          "height": 20
+        },
+        "TabIndex": 4,
+        "Text": "Top most",
+        "Name": "cbTopMost",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbTopMost.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbTopMost.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbTopMost.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbTopMost.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbTopMost.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbKeepCenterLocation",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 112
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 148,
+          "height": 20
+        },
+        "TabIndex": 5,
+        "Text": "Keep center location",
+        "Name": "cbKeepCenterLocation",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbKeepCenterLocation.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbKeepCenterLocation.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbKeepCenterLocation.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbKeepCenterLocation.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbKeepCenterLocation.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbShadow",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 144
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 75,
+          "height": 20
+        },
+        "TabIndex": 6,
+        "Text": "Shadow",
+        "Name": "cbShadow",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbShadow.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbShadow.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbShadow.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbShadow.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbShadow.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbBorder",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 176
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 67,
+          "height": 20
+        },
+        "TabIndex": 7,
+        "Text": "Border",
+        "Name": "cbBorder",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbBorder.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbBorder.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbBorder.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbBorder.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbBorder.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblBorderSize",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 208
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 78,
+          "height": 16
+        },
+        "TabIndex": 8,
+        "Text": "Border size:",
+        "Name": "lblBorderSize"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblBorderSize.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblBorderSize.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblBorderSize.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblBorderSize.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblBorderSize.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudBorderSize",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 232
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 72,
+          "height": 22
+        },
+        "TabIndex": 9,
+        "TextAlign": "Center",
+        "Maximum": 30,
+        "Minimum": 1,
+        "Name": "nudBorderSize",
+        "Value": 1
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudBorderSize.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudBorderSize.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudBorderSize.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudBorderSize.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnBorderColor",
+      "type": "HelpersLib.ColorButton",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Color": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.Empty"
+        },
+        "ColorPickerOptions": null,
+        "Location": {
+          "kind": "Point",
+          "x": 104,
+          "y": 230
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 160,
+          "height": 26
+        },
+        "TabIndex": 10,
+        "Text": "Border color",
+        "TextAlign": "MiddleLeft",
+        "Name": "btnBorderColor",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnBorderColor.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnBorderColor.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnBorderColor.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnBorderColor.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "btnBorderColor.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblMinimizeSize",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 272
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 89,
+          "height": 16
+        },
+        "TabIndex": 11,
+        "Text": "Minimize size:",
+        "Name": "lblMinimizeSize"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblMinimizeSize.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblMinimizeSize.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblMinimizeSize.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblMinimizeSize.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblMinimizeSize.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudMinimizeSizeWidth",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 296
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 72,
+          "height": 22
+        },
+        "TabIndex": 12,
+        "TextAlign": "Center",
+        "Maximum": 1000,
+        "Name": "nudMinimizeSizeWidth"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudMinimizeSizeWidth.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudMinimizeSizeWidth.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudMinimizeSizeWidth.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudMinimizeSizeWidth.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudMinimizeSizeHeight",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 120,
+          "y": 296
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 72,
+          "height": 22
+        },
+        "TabIndex": 14,
+        "TextAlign": "Center",
+        "Maximum": 1000,
+        "Name": "nudMinimizeSizeHeight"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudMinimizeSizeHeight.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudMinimizeSizeHeight.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudMinimizeSizeHeight.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudMinimizeSizeHeight.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblMinimizeSizeX",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 98,
+          "y": 299
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 13,
+          "height": 16
+        },
+        "TabIndex": 13,
+        "Text": "x",
+        "Name": "lblMinimizeSizeX"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblMinimizeSizeX.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblMinimizeSizeX.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblMinimizeSizeX.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblMinimizeSizeX.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblMinimizeSizeX.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblScaleStep",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 336
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 74,
+          "height": 16
+        },
+        "TabIndex": 2,
+        "Text": "Scale step:",
+        "Name": "lblScaleStep"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblScaleStep.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblScaleStep.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblScaleStep.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblScaleStep.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblScaleStep.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudScaleStep",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 361
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 72,
+          "height": 22
+        },
+        "TabIndex": 3,
+        "TextAlign": "Center",
+        "Maximum": 100,
+        "Minimum": 1,
+        "Name": "nudScaleStep",
+        "Value": 10
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudScaleStep.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudScaleStep.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudScaleStep.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudScaleStep.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "PinToScreenOptionsForm",
+    "type": "Form",
+    "slots": {}
+  },
+  "strings": {
+    "btnOK.Text": "OK",
+    "btnCancel.Text": "Cancel",
+    "lblPlacement.Text": "Placement:",
+    "lblPlacementOffset.Text": "Placement offset:",
+    "cbTopMost.Text": "Top most",
+    "cbKeepCenterLocation.Text": "Keep center location",
+    "cbShadow.Text": "Shadow",
+    "cbBorder.Text": "Border",
+    "lblBorderSize.Text": "Border size:",
+    "btnBorderColor.Text": "Border color",
+    "lblMinimizeSize.Text": "Minimize size:",
+    "lblMinimizeSizeX.Text": "x",
+    "lblScaleStep.Text": "Scale step:",
+    "$this.Text": "ShareX - Pin to screen options"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 115,
+  "parsed_statements": 115,
+  "unparsed_lines": []
+}

@@ -1,0 +1,204 @@
+{
+  "form_name": "BorderlessWindowSettingsForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX/Tools/BorderlessWindow/BorderlessWindowSettingsForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX/Tools/BorderlessWindow/BorderlessWindowSettingsForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 328,
+    "height": 148
+  },
+  "text": "ShareX - Borderless window settings",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 6,
+    "height": 13
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Font"
+  },
+  "tab_order": [
+    "cbRememberWindowTitle",
+    "cbAutoCloseWindow",
+    "cbExcludeTaskbarArea"
+  ],
+  "controls": [
+    {
+      "name": "cbRememberWindowTitle",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 16
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 135,
+          "height": 17
+        },
+        "TabIndex": 0,
+        "Text": "Remember window title",
+        "Name": "cbRememberWindowTitle",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbRememberWindowTitle.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbRememberWindowTitle.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbRememberWindowTitle.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbRememberWindowTitle.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbRememberWindowTitle.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbAutoCloseWindow",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 40
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 155,
+          "height": 17
+        },
+        "TabIndex": 1,
+        "Text": "Automatically close window",
+        "Name": "cbAutoCloseWindow",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbAutoCloseWindow.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbAutoCloseWindow.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbAutoCloseWindow.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbAutoCloseWindow.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbAutoCloseWindow.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbExcludeTaskbarArea",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 64
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 126,
+          "height": 17
+        },
+        "TabIndex": 2,
+        "Text": "Exclude taskbar area",
+        "Name": "cbExcludeTaskbarArea",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbExcludeTaskbarArea.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbExcludeTaskbarArea.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbExcludeTaskbarArea.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbExcludeTaskbarArea.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbExcludeTaskbarArea.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "BorderlessWindowSettingsForm",
+    "type": "Form",
+    "slots": {}
+  },
+  "strings": {
+    "cbRememberWindowTitle.Text": "Remember window title",
+    "cbAutoCloseWindow.Text": "Automatically close window",
+    "cbExcludeTaskbarArea.Text": "Exclude taskbar area",
+    "$this.Text": "ShareX - Borderless window settings"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 28,
+  "parsed_statements": 28,
+  "unparsed_lines": []
+}

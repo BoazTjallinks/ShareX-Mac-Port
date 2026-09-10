@@ -1,0 +1,257 @@
+{
+  "form_name": "UpdateMessageBox",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX.HelpersLib/UpdateChecker/UpdateMessageBox.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.HelpersLib/UpdateChecker/UpdateMessageBox.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 394,
+    "height": 217
+  },
+  "text": null,
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 96,
+    "height": 96
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Dpi"
+  },
+  "tab_order": [
+    "btnYes",
+    "btnNo",
+    "lblText",
+    "lblViewChangelog"
+  ],
+  "controls": [
+    {
+      "name": "lblText",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Font": "Arial, 12pt",
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 16
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 368,
+          "height": 96
+        },
+        "TabIndex": 2,
+        "Name": "lblText"
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "lblText.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblText.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblText.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblText.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnNo",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Font": "Arial, 12pt",
+        "Location": {
+          "kind": "Point",
+          "x": 272,
+          "y": 176
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 112,
+          "height": 32
+        },
+        "TabIndex": 1,
+        "Text": "No",
+        "Name": "btnNo",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "btnNo.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnNo.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnNo.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnNo.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnNo.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnYes",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Font": "Arial, 12pt",
+        "Location": {
+          "kind": "Point",
+          "x": 152,
+          "y": 176
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 112,
+          "height": 32
+        },
+        "TabIndex": 0,
+        "Text": "Yes",
+        "Name": "btnYes",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "btnYes.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnYes.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnYes.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnYes.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnYes.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblViewChangelog",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Font": "Arial, 12pt, style=Underline",
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 128
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 119,
+          "height": 18
+        },
+        "TabIndex": 3,
+        "Text": "View changelog",
+        "Cursor": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.Cursors.Hand"
+        },
+        "Name": "lblViewChangelog"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblViewChangelog.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "lblViewChangelog.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblViewChangelog.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblViewChangelog.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblViewChangelog.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblViewChangelog.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "UpdateMessageBox",
+    "type": "Form",
+    "slots": {}
+  },
+  "strings": {
+    "btnNo.Text": "No",
+    "btnYes.Text": "Yes",
+    "lblViewChangelog.Text": "View changelog"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 34,
+  "parsed_statements": 34,
+  "unparsed_lines": []
+}

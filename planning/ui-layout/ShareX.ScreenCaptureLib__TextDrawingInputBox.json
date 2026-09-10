@@ -1,0 +1,1708 @@
+{
+  "form_name": "TextDrawingInputBox",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX.ScreenCaptureLib/Forms/TextDrawingInputBox.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.ScreenCaptureLib/Forms/TextDrawingInputBox.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 534,
+    "height": 361
+  },
+  "text": "ShareX - Text input",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 6,
+    "height": 13
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Font"
+  },
+  "tab_order": [
+    "txtInput",
+    "lblFont",
+    "cbFonts",
+    "btnSwapEnterKey",
+    "lblTextSize",
+    "lblTip",
+    "nudTextSize",
+    "btnOK",
+    "btnTextColor",
+    "btnCancel",
+    "flpProperties",
+    "btnGradient",
+    "cbBold",
+    "cbItalic",
+    "cbUnderline",
+    "btnAlignmentHorizontal",
+    "btnAlignmentVertical"
+  ],
+  "controls": [
+    {
+      "name": "components",
+      "type": "System.ComponentModel.Container",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "txtInput",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Top, Bottom, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 40
+        },
+        "Multiline": true,
+        "ScrollBars": "Vertical",
+        "Size": {
+          "kind": "Size",
+          "width": 518,
+          "height": 281
+        },
+        "TabIndex": 0,
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
+        },
+        "Name": "txtInput"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "txtInput.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "txtInput.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Multiline",
+          "resource_key": "txtInput.Multiline",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ScrollBars",
+          "resource_key": "txtInput.ScrollBars",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtInput.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtInput.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "flpProperties",
+      "type": "System.Windows.Forms.FlowLayoutPanel",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Top, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 5
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 518,
+          "height": 32
+        },
+        "TabIndex": 5,
+        "WrapContents": false,
+        "Name": "flpProperties"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "flpProperties.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "flpProperties.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "flpProperties.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "flpProperties.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "WrapContents",
+          "resource_key": "flpProperties.WrapContents",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblFont",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Left",
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 8
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 31,
+          "height": 13
+        },
+        "TabIndex": 0,
+        "Text": "Font:",
+        "Name": "lblFont"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "lblFont.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "AutoSize",
+          "resource_key": "lblFont.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblFont.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblFont.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblFont.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblFont.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblFont.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblFont.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbFonts",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Left",
+        "Location": {
+          "kind": "Point",
+          "x": 34,
+          "y": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 158,
+          "height": 21
+        },
+        "TabIndex": 1,
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Name": "cbFonts"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "cbFonts.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbFonts.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbFonts.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbFonts.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblTextSize",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Left",
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 198,
+          "y": 8
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 3,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 30,
+          "height": 13
+        },
+        "TabIndex": 2,
+        "Text": "Size:",
+        "Name": "lblTextSize"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "lblTextSize.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "AutoSize",
+          "resource_key": "lblTextSize.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblTextSize.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblTextSize.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblTextSize.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblTextSize.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblTextSize.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblTextSize.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudTextSize",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Left",
+        "Location": {
+          "kind": "Point",
+          "x": 231,
+          "y": 5
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 55,
+          "height": 20
+        },
+        "TabIndex": 3,
+        "TextAlign": "Center",
+        "Maximum": 300,
+        "Minimum": 5,
+        "Name": "nudTextSize",
+        "Value": 10
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "nudTextSize.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "nudTextSize.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudTextSize.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudTextSize.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudTextSize.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnTextColor",
+      "type": "HelpersLib.ColorButton",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Left",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 292,
+          "y": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 24,
+          "height": 24
+        },
+        "TabIndex": 4,
+        "TextAlign": "MiddleLeft",
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "btnTextColor.ToolTip"
+        },
+        "Color": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.Empty"
+        },
+        "ColorPickerOptions": null,
+        "Name": "btnTextColor",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnTextColor.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "btnTextColor.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnTextColor.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnTextColor.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnTextColor.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "btnTextColor.TextAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnTextColor.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnTextColor.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "btnGradient",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.ScreenCaptureLib.Properties.Resources.gradient"
+        },
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 322,
+          "y": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 26,
+          "height": 24
+        },
+        "TabIndex": 5,
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "btnGradient.ToolTip"
+        },
+        "Name": "btnGradient",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnGradient.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnGradient.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnGradient.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnGradient.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnGradient.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnGradient.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "cbBold",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Left",
+        "Appearance": "Button",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 354,
+          "y": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 24,
+          "height": 24
+        },
+        "TabIndex": 6,
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "cbBold.ToolTip"
+        },
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.ScreenCaptureLib.Properties.Resources.edit_bold"
+        },
+        "Name": "cbBold",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "cbBold.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Appearance",
+          "resource_key": "cbBold.Appearance",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "cbBold.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbBold.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbBold.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbBold.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "cbBold.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "cbBold.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "cbItalic",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Left",
+        "Appearance": "Button",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 384,
+          "y": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 24,
+          "height": 24
+        },
+        "TabIndex": 7,
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "cbItalic.ToolTip"
+        },
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.ScreenCaptureLib.Properties.Resources.edit_italic"
+        },
+        "Name": "cbItalic",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "cbItalic.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Appearance",
+          "resource_key": "cbItalic.Appearance",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "cbItalic.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbItalic.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbItalic.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbItalic.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "cbItalic.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "cbItalic.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "cbUnderline",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Left",
+        "Appearance": "Button",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 414,
+          "y": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 24,
+          "height": 24
+        },
+        "TabIndex": 8,
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "cbUnderline.ToolTip"
+        },
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.ScreenCaptureLib.Properties.Resources.edit_underline"
+        },
+        "Name": "cbUnderline",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "cbUnderline.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Appearance",
+          "resource_key": "cbUnderline.Appearance",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "cbUnderline.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbUnderline.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbUnderline.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbUnderline.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "cbUnderline.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "cbUnderline.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "btnAlignmentHorizontal",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Left",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 444,
+          "y": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 24,
+          "height": 24
+        },
+        "TabIndex": 9,
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "btnAlignmentHorizontal.ToolTip"
+        },
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.ScreenCaptureLib.Properties.Resources.edit_alignment_center"
+        },
+        "Name": "btnAlignmentHorizontal",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnAlignmentHorizontal.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "btnAlignmentHorizontal.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnAlignmentHorizontal.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnAlignmentHorizontal.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnAlignmentHorizontal.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnAlignmentHorizontal.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnAlignmentHorizontal.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "btnAlignmentVertical",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Left",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 474,
+          "y": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 24,
+          "height": 24
+        },
+        "TabIndex": 10,
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "btnAlignmentVertical.ToolTip"
+        },
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.ScreenCaptureLib.Properties.Resources.edit_vertical_alignment_middle"
+        },
+        "Name": "btnAlignmentVertical",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnAlignmentVertical.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "btnAlignmentVertical.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnAlignmentVertical.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnAlignmentVertical.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnAlignmentVertical.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnAlignmentVertical.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnAlignmentVertical.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "btnOK",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Bottom, Right",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 312,
+          "y": 328
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 104,
+          "height": 24
+        },
+        "TabIndex": 3,
+        "Text": "OK",
+        "Name": "btnOK",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnOK.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "btnOK.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnOK.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnOK.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnOK.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnOK.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cmsAlignmentHorizontal",
+      "type": "System.Windows.Forms.ContextMenuStrip",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Items.literal_items": [
+          {
+            "kind": "expr",
+            "raw": "this.tsmiAlignmentLeft"
+          },
+          {
+            "kind": "expr",
+            "raw": "this.tsmiAlignmentCenter"
+          },
+          {
+            "kind": "expr",
+            "raw": "this.tsmiAlignmentRight"
+          }
+        ],
+        "Name": "cmsAlignmentHorizontal",
+        "Size": {
+          "kind": "Size",
+          "width": 110,
+          "height": 70
+        }
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "cmsAlignmentHorizontal.Size",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiAlignmentLeft",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.ScreenCaptureLib.Properties.Resources.edit_alignment"
+        },
+        "Name": "tsmiAlignmentLeft",
+        "Size": {
+          "kind": "Size",
+          "width": 109,
+          "height": 22
+        },
+        "Text": "Left"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiAlignmentLeft.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiAlignmentLeft.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiAlignmentCenter",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.ScreenCaptureLib.Properties.Resources.edit_alignment_center"
+        },
+        "Name": "tsmiAlignmentCenter",
+        "Size": {
+          "kind": "Size",
+          "width": 109,
+          "height": 22
+        },
+        "Text": "Center"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiAlignmentCenter.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiAlignmentCenter.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiAlignmentRight",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.ScreenCaptureLib.Properties.Resources.edit_alignment_right"
+        },
+        "Name": "tsmiAlignmentRight",
+        "Size": {
+          "kind": "Size",
+          "width": 109,
+          "height": 22
+        },
+        "Text": "Right"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiAlignmentRight.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiAlignmentRight.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cmsAlignmentVertical",
+      "type": "System.Windows.Forms.ContextMenuStrip",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Items.literal_items": [
+          {
+            "kind": "expr",
+            "raw": "this.tsmiAlignmentTop"
+          },
+          {
+            "kind": "expr",
+            "raw": "this.tsmiAlignmentMiddle"
+          },
+          {
+            "kind": "expr",
+            "raw": "this.tsmiAlignmentBottom"
+          }
+        ],
+        "Name": "cmsAlignmentVertical",
+        "Size": {
+          "kind": "Size",
+          "width": 115,
+          "height": 70
+        }
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "cmsAlignmentVertical.Size",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiAlignmentTop",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.ScreenCaptureLib.Properties.Resources.edit_vertical_alignment_top"
+        },
+        "Name": "tsmiAlignmentTop",
+        "Size": {
+          "kind": "Size",
+          "width": 114,
+          "height": 22
+        },
+        "Text": "Top"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiAlignmentTop.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiAlignmentTop.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiAlignmentMiddle",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.ScreenCaptureLib.Properties.Resources.edit_vertical_alignment_middle"
+        },
+        "Name": "tsmiAlignmentMiddle",
+        "Size": {
+          "kind": "Size",
+          "width": 114,
+          "height": 22
+        },
+        "Text": "Middle"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiAlignmentMiddle.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiAlignmentMiddle.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiAlignmentBottom",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.ScreenCaptureLib.Properties.Resources.edit_vertical_alignment"
+        },
+        "Name": "tsmiAlignmentBottom",
+        "Size": {
+          "kind": "Size",
+          "width": 114,
+          "height": 22
+        },
+        "Text": "Bottom"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiAlignmentBottom.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiAlignmentBottom.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblTip",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 37,
+          "y": 334
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 0,
+          "height": 13
+        },
+        "TabIndex": 2,
+        "Name": "lblTip"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "lblTip.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "AutoSize",
+          "resource_key": "lblTip.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblTip.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblTip.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblTip.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblTip.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnCancel",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Bottom, Right",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 424,
+          "y": 328
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 104,
+          "height": 24
+        },
+        "TabIndex": 4,
+        "Text": "Cancel",
+        "Name": "btnCancel",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnCancel.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "btnCancel.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnCancel.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCancel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCancel.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCancel.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cmsGradient",
+      "type": "System.Windows.Forms.ContextMenuStrip",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Items.literal_items": [
+          {
+            "kind": "expr",
+            "raw": "this.tsmiEnableGradient"
+          },
+          {
+            "kind": "expr",
+            "raw": "this.tsmiSecondColor"
+          },
+          {
+            "kind": "expr",
+            "raw": "this.tsmiGradientMode"
+          }
+        ],
+        "Name": "cmsGradient",
+        "Size": {
+          "kind": "Size",
+          "width": 176,
+          "height": 70
+        }
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "cmsGradient.Size",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiEnableGradient",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "CheckOnClick": true,
+        "Name": "tsmiEnableGradient",
+        "Size": {
+          "kind": "Size",
+          "width": 175,
+          "height": 22
+        },
+        "Text": "Enable gradient"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiEnableGradient.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiEnableGradient.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiSecondColor",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Name": "tsmiSecondColor",
+        "Size": {
+          "kind": "Size",
+          "width": 175,
+          "height": 22
+        },
+        "Text": "Second text color..."
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiSecondColor.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiSecondColor.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiGradientMode",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "DropDownItems.literal_items": [
+          {
+            "kind": "expr",
+            "raw": "this.tsrbmiGradientHorizontal"
+          },
+          {
+            "kind": "expr",
+            "raw": "this.tsrbmiGradientVertical"
+          },
+          {
+            "kind": "expr",
+            "raw": "this.tsrbmiGradientForwardDiagonal"
+          },
+          {
+            "kind": "expr",
+            "raw": "this.tsrbmiGradientBackwardDiagonal"
+          }
+        ],
+        "Name": "tsmiGradientMode",
+        "Size": {
+          "kind": "Size",
+          "width": 175,
+          "height": 22
+        },
+        "Text": "Gradient mode"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiGradientMode.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiGradientMode.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsrbmiGradientHorizontal",
+      "type": "HelpersLib.ToolStripRadioButtonMenuItem",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "CheckOnClick": true,
+        "Name": "tsrbmiGradientHorizontal",
+        "Size": {
+          "kind": "Size",
+          "width": 174,
+          "height": 22
+        },
+        "Text": "Horizontal"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsrbmiGradientHorizontal.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsrbmiGradientHorizontal.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsrbmiGradientVertical",
+      "type": "HelpersLib.ToolStripRadioButtonMenuItem",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "CheckOnClick": true,
+        "Name": "tsrbmiGradientVertical",
+        "Size": {
+          "kind": "Size",
+          "width": 174,
+          "height": 22
+        },
+        "Text": "Vertical"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsrbmiGradientVertical.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsrbmiGradientVertical.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsrbmiGradientForwardDiagonal",
+      "type": "HelpersLib.ToolStripRadioButtonMenuItem",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "CheckOnClick": true,
+        "Name": "tsrbmiGradientForwardDiagonal",
+        "Size": {
+          "kind": "Size",
+          "width": 174,
+          "height": 22
+        },
+        "Text": "Forward diagonal"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsrbmiGradientForwardDiagonal.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsrbmiGradientForwardDiagonal.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsrbmiGradientBackwardDiagonal",
+      "type": "HelpersLib.ToolStripRadioButtonMenuItem",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "CheckOnClick": true,
+        "Name": "tsrbmiGradientBackwardDiagonal",
+        "Size": {
+          "kind": "Size",
+          "width": 174,
+          "height": 22
+        },
+        "Text": "Backward diagonal"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsrbmiGradientBackwardDiagonal.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsrbmiGradientBackwardDiagonal.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "ttTextInput",
+      "type": "System.Windows.Forms.ToolTip",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoPopDelay": 5000,
+        "InitialDelay": 200,
+        "ReshowDelay": 100
+      },
+      "resources": []
+    },
+    {
+      "name": "btnSwapEnterKey",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 328
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 24,
+          "height": 24
+        },
+        "TabIndex": 1,
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.ScreenCaptureLib.Properties.Resources.keyboard_enter"
+        },
+        "Name": "btnSwapEnterKey",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnSwapEnterKey.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnSwapEnterKey.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnSwapEnterKey.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnSwapEnterKey.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "TextDrawingInputBox",
+    "type": "Form",
+    "slots": {}
+  },
+  "strings": {
+    "lblFont.Text": "Font:",
+    "lblTextSize.Text": "Size:",
+    "btnTextColor.ToolTip": "Text color",
+    "btnGradient.ToolTip": "Gradient",
+    "cbBold.ToolTip": "Bold",
+    "cbItalic.ToolTip": "Italic",
+    "cbUnderline.ToolTip": "Underline",
+    "btnAlignmentHorizontal.ToolTip": "Horizontal alignment",
+    "btnAlignmentVertical.ToolTip": "Vertical alignment",
+    "btnOK.Text": "OK",
+    "tsmiAlignmentLeft.Text": "Left",
+    "tsmiAlignmentCenter.Text": "Center",
+    "tsmiAlignmentRight.Text": "Right",
+    "tsmiAlignmentTop.Text": "Top",
+    "tsmiAlignmentMiddle.Text": "Middle",
+    "tsmiAlignmentBottom.Text": "Bottom",
+    "btnCancel.Text": "Cancel",
+    "tsmiEnableGradient.Text": "Enable gradient",
+    "tsmiSecondColor.Text": "Second text color...",
+    "tsrbmiGradientHorizontal.Text": "Horizontal",
+    "tsrbmiGradientVertical.Text": "Vertical",
+    "tsrbmiGradientForwardDiagonal.Text": "Forward diagonal",
+    "tsrbmiGradientBackwardDiagonal.Text": "Backward diagonal",
+    "tsmiGradientMode.Text": "Gradient mode",
+    "$this.Text": "ShareX - Text input"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 217,
+  "parsed_statements": 217,
+  "unparsed_lines": []
+}

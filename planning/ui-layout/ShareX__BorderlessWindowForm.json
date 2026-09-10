@@ -1,0 +1,345 @@
+{
+  "form_name": "BorderlessWindowForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX/Tools/BorderlessWindow/BorderlessWindowForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX/Tools/BorderlessWindow/BorderlessWindowForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 328,
+    "height": 161
+  },
+  "text": "ShareX - Borderless window",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 96,
+    "height": 96
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Dpi"
+  },
+  "tab_order": [
+    "mbWindowList",
+    "lblWindowTitle",
+    "txtWindowTitle",
+    "btnMakeWindowBorderless",
+    "btnSettings"
+  ],
+  "controls": [
+    {
+      "name": "components",
+      "type": "System.ComponentModel.Container",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "lblWindowTitle",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 56
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 82,
+          "height": 16
+        },
+        "TabIndex": 1,
+        "Text": "Window title:",
+        "Name": "lblWindowTitle"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblWindowTitle.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "lblWindowTitle.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblWindowTitle.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblWindowTitle.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblWindowTitle.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblWindowTitle.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtWindowTitle",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 80
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 296,
+          "height": 22
+        },
+        "TabIndex": 2,
+        "Name": "txtWindowTitle"
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "txtWindowTitle.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "txtWindowTitle.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtWindowTitle.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtWindowTitle.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnMakeWindowBorderless",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Enabled": false,
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 112
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 256,
+          "height": 32
+        },
+        "TabIndex": 3,
+        "Text": "Make window borderless",
+        "Name": "btnMakeWindowBorderless",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Enabled",
+          "resource_key": "btnMakeWindowBorderless.Enabled",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "btnMakeWindowBorderless.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnMakeWindowBorderless.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnMakeWindowBorderless.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnMakeWindowBorderless.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnMakeWindowBorderless.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnSettings",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 280,
+          "y": 112
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 32,
+          "height": 32
+        },
+        "TabIndex": 4,
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.Properties.Resources.gear"
+        },
+        "Name": "btnSettings",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "btnSettings.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnSettings.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnSettings.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnSettings.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cmsWindowList",
+      "type": "System.Windows.Forms.ContextMenuStrip",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Name": "cmsWindowList",
+        "Size": {
+          "kind": "Size",
+          "width": 61,
+          "height": 4
+        }
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "cmsWindowList.Size",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "mbWindowList",
+      "type": "HelpersLib.MenuButton",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 16
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 296,
+          "height": 32
+        },
+        "TabIndex": 0,
+        "Text": "Select a window",
+        "Menu": {
+          "kind": "expr",
+          "raw": "this.cmsWindowList"
+        },
+        "Name": "mbWindowList",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "mbWindowList.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "mbWindowList.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "mbWindowList.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "mbWindowList.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "mbWindowList.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "BorderlessWindowForm",
+    "type": "Form",
+    "slots": {}
+  },
+  "strings": {
+    "lblWindowTitle.Text": "Window title:",
+    "btnMakeWindowBorderless.Text": "Make window borderless",
+    "mbWindowList.Text": "Select a window",
+    "$this.Text": "ShareX - Borderless window"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 44,
+  "parsed_statements": 44,
+  "unparsed_lines": []
+}

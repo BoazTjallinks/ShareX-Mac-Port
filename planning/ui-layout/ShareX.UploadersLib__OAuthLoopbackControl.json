@@ -1,0 +1,283 @@
+{
+  "form_name": "OAuthLoopbackControl",
+  "base_class": "UserControl",
+  "designer_file": "reference/ShareX/ShareX.UploadersLib/Controls/OAuthLoopbackControl.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.UploadersLib/Controls/OAuthLoopbackControl.resx",
+  "client_size": null,
+  "text": null,
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 6,
+    "height": 13
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Font"
+  },
+  "tab_order": [
+    "lblStatus",
+    "flpStatus",
+    "btnConnect",
+    "lblStatusValue"
+  ],
+  "controls": [
+    {
+      "name": "btnConnect",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Top, Left, Right",
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 32
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 280,
+          "height": 32
+        },
+        "TabIndex": 1,
+        "Text": "Connect...",
+        "Name": "btnConnect",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnConnect.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "btnConnect.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnConnect.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnConnect.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnConnect.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnConnect.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblStatus",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 47,
+          "height": 16
+        },
+        "TabIndex": 0,
+        "Text": "Status:",
+        "Name": "lblStatus"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblStatus.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "lblStatus.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblStatus.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblStatus.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblStatus.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblStatus.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblStatus.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "flpStatus",
+      "type": "System.Windows.Forms.FlowLayoutPanel",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Top, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 280,
+          "height": 20
+        },
+        "TabIndex": 0,
+        "WrapContents": false,
+        "Name": "flpStatus"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "flpStatus.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "flpStatus.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "flpStatus.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "flpStatus.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "WrapContents",
+          "resource_key": "flpStatus.WrapContents",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblStatusValue",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 47,
+          "y": 0
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 0,
+          "height": 16
+        },
+        "TabIndex": 1,
+        "Name": "lblStatusValue"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblStatusValue.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "lblStatusValue.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblStatusValue.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblStatusValue.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblStatusValue.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblStatusValue.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "OAuthLoopbackControl",
+    "type": "UserControl",
+    "slots": {}
+  },
+  "strings": {
+    "btnConnect.Text": "Connect...",
+    "lblStatus.Text": "Status:"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 27,
+  "parsed_statements": 27,
+  "unparsed_lines": []
+}

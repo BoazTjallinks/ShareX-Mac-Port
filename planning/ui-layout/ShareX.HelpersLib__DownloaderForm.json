@@ -1,0 +1,300 @@
+{
+  "form_name": "DownloaderForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX.HelpersLib/UpdateChecker/DownloaderForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.HelpersLib/UpdateChecker/DownloaderForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 488,
+    "height": 205
+  },
+  "text": "ShareX - File downloader",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 96,
+    "height": 96
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Dpi"
+  },
+  "tab_order": [
+    "btnAction",
+    "lblFilename",
+    "lblStatus",
+    "lblProgress",
+    "pbProgress"
+  ],
+  "controls": [
+    {
+      "name": "lblProgress",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Font": "Arial, 12pt",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 72
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 472,
+          "height": 78
+        },
+        "TabIndex": 3,
+        "Text": "Progress:",
+        "Name": "lblProgress"
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "lblProgress.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblProgress.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblProgress.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblProgress.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblProgress.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblStatus",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Font": "Arial, 12pt",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 40
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 472,
+          "height": 24
+        },
+        "TabIndex": 2,
+        "Text": "Status:",
+        "Name": "lblStatus"
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "lblStatus.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblStatus.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblStatus.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblStatus.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblStatus.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblFilename",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Font": "Arial, 12pt",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 472,
+          "height": 24
+        },
+        "TabIndex": 1,
+        "Text": "Filename:",
+        "Name": "lblFilename"
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "lblFilename.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblFilename.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblFilename.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblFilename.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblFilename.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnAction",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Font": "Arial, 12pt",
+        "Location": {
+          "kind": "Point",
+          "x": 352,
+          "y": 163
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 128,
+          "height": 32
+        },
+        "TabIndex": 0,
+        "Text": "Download",
+        "Name": "btnAction",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "btnAction.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnAction.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnAction.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnAction.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnAction.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pbProgress",
+      "type": "BlackStyleProgressBar",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 163
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 336,
+          "height": 32
+        },
+        "TabIndex": 4,
+        "Text": "",
+        "Name": "pbProgress"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "pbProgress.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pbProgress.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pbProgress.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "pbProgress.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "DownloaderForm",
+    "type": "Form",
+    "slots": {}
+  },
+  "strings": {
+    "lblProgress.Text": "Progress:",
+    "lblStatus.Text": "Status:",
+    "lblFilename.Text": "Filename:",
+    "btnAction.Text": "Download",
+    "pbProgress.Text": "",
+    "$this.Text": "ShareX - File downloader"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 34,
+  "parsed_statements": 34,
+  "unparsed_lines": []
+}

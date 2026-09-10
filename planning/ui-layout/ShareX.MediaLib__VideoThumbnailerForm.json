@@ -1,0 +1,300 @@
+{
+  "form_name": "VideoThumbnailerForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX.MediaLib/Forms/VideoThumbnailerForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.MediaLib/Forms/VideoThumbnailerForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 721,
+    "height": 464
+  },
+  "text": "ShareX - Video thumbnailer",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 6,
+    "height": 13
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Dpi"
+  },
+  "tab_order": [
+    "txtMediaPath",
+    "btnStart",
+    "pgOptions",
+    "btnBrowse",
+    "pbProgress"
+  ],
+  "controls": [
+    {
+      "name": "txtMediaPath",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Top, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 496,
+          "height": 20
+        },
+        "TabIndex": 0,
+        "Name": "txtMediaPath"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "txtMediaPath.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "txtMediaPath.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtMediaPath.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtMediaPath.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnStart",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Top, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 544,
+          "y": 6
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 168,
+          "height": 24
+        },
+        "TabIndex": 1,
+        "Text": "Take screenshots",
+        "Name": "btnStart",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnStart.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnStart.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnStart.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnStart.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnStart.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pgOptions",
+      "type": "System.Windows.Forms.PropertyGrid",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Top, Bottom, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 40
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 704,
+          "height": 416
+        },
+        "TabIndex": 2,
+        "Name": "pgOptions",
+        "PropertySort": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.PropertySort.Categorized"
+        },
+        "ToolbarVisible": false
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "pgOptions.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "pgOptions.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pgOptions.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pgOptions.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnBrowse",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Top, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 512,
+          "y": 6
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 27,
+          "height": 24
+        },
+        "TabIndex": 3,
+        "Text": "...",
+        "Name": "btnBrowse",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnBrowse.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnBrowse.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnBrowse.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnBrowse.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnBrowse.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pbProgress",
+      "type": "System.Windows.Forms.ProgressBar",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 544,
+          "y": 6
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 168,
+          "height": 24
+        },
+        "TabIndex": 4,
+        "Visible": false,
+        "Name": "pbProgress"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "pbProgress.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pbProgress.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pbProgress.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Visible",
+          "resource_key": "pbProgress.Visible",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "AutoScaleDimensions",
+      "type": "System.Drawing.SizeF",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    }
+  ],
+  "tree": {
+    "name": "VideoThumbnailerForm",
+    "type": "Form",
+    "slots": {}
+  },
+  "strings": {
+    "btnStart.Text": "Take screenshots",
+    "btnBrowse.Text": "...",
+    "$this.Text": "ShareX - Video thumbnailer"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 36,
+  "parsed_statements": 36,
+  "unparsed_lines": []
+}

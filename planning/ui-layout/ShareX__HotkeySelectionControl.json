@@ -1,0 +1,294 @@
+{
+  "form_name": "HotkeySelectionControl",
+  "base_class": "UserControl",
+  "designer_file": "reference/ShareX/ShareX/Controls/HotkeySelectionControl.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX/Controls/HotkeySelectionControl.resx",
+  "client_size": null,
+  "text": null,
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 96,
+    "height": 96
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Dpi"
+  },
+  "tab_order": [
+    "btnTask",
+    "btnEdit",
+    "btnHotkey"
+  ],
+  "controls": [
+    {
+      "name": "components",
+      "type": "System.ComponentModel.Container",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "btnEdit",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Top, Right",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 230,
+          "y": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 27,
+          "height": 27
+        },
+        "TabIndex": 1,
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.Properties.Resources.gear"
+        },
+        "Name": "btnEdit",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnEdit.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "btnEdit.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnEdit.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnEdit.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnEdit.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cmsTask",
+      "type": "System.Windows.Forms.ContextMenuStrip",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Name": "cmsTask",
+        "Size": {
+          "kind": "Size",
+          "width": 61,
+          "height": 4
+        }
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "cmsTask.Size",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnTask",
+      "type": "HelpersLib.MenuButton",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Top, Left, Right",
+        "ImageAlign": "MiddleLeft",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 3,
+          "top": 0,
+          "right": 3,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 226,
+          "height": 27
+        },
+        "TabIndex": 0,
+        "Text": "Task...",
+        "TextAlign": "MiddleLeft",
+        "TextImageRelation": "ImageBeforeText",
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.Properties.Resources.gear"
+        },
+        "Menu": {
+          "kind": "expr",
+          "raw": "this.cmsTask"
+        },
+        "Name": "btnTask",
+        "UseMnemonic": false,
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnTask.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImageAlign",
+          "resource_key": "btnTask.ImageAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "btnTask.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnTask.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "btnTask.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnTask.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnTask.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnTask.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "btnTask.TextAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextImageRelation",
+          "resource_key": "btnTask.TextImageRelation",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnHotkey",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Top, Right",
+        "ImageAlign": "MiddleRight",
+        "Location": {
+          "kind": "Point",
+          "x": 261,
+          "y": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 219,
+          "height": 27
+        },
+        "TabIndex": 2,
+        "Text": "Hotkey",
+        "TextImageRelation": "TextBeforeImage",
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.Properties.Resources.status_away"
+        },
+        "Name": "btnHotkey",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnHotkey.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImageAlign",
+          "resource_key": "btnHotkey.ImageAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnHotkey.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnHotkey.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnHotkey.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnHotkey.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextImageRelation",
+          "resource_key": "btnHotkey.TextImageRelation",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "HotkeySelectionControl",
+    "type": "UserControl",
+    "slots": {}
+  },
+  "strings": {
+    "btnTask.Text": "Task...",
+    "btnHotkey.Text": "Hotkey"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 37,
+  "parsed_statements": 37,
+  "unparsed_lines": []
+}

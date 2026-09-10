@@ -1,0 +1,818 @@
+{
+  "form_name": "AIForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX/Tools/AI/AIForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX/Tools/AI/AIForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 928,
+    "height": 488
+  },
+  "text": "ShareX - AI",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 8,
+    "height": 16
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Font"
+  },
+  "tab_order": [
+    "btnOptions",
+    "lblInput",
+    "txtInput",
+    "lblImage",
+    "txtImage",
+    "btnImageBrowse",
+    "pbImage",
+    "btnAnalyze",
+    "btnCapture",
+    "lblResult",
+    "lblTimer",
+    "txtResult",
+    "btnResultCopy"
+  ],
+  "controls": [
+    {
+      "name": "components",
+      "type": "System.ComponentModel.Container",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "cmsPresets",
+      "type": "System.Windows.Forms.ContextMenuStrip",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Name": "cmsPresets",
+        "Size": {
+          "kind": "Size",
+          "width": 61,
+          "height": 4
+        }
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "cmsPresets.Size",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnOptions",
+      "type": "System.Windows.Forms.Button",
+      "parent": "AIForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 16
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 264,
+          "height": 32
+        },
+        "TabIndex": 0,
+        "Text": "Options...",
+        "Name": "btnOptions",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnOptions.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnOptions.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnOptions.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnOptions.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnResultCopy",
+      "type": "System.Windows.Forms.Button",
+      "parent": "AIForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Anchor": "Bottom, Right",
+        "Enabled": false,
+        "Location": {
+          "kind": "Point",
+          "x": 858,
+          "y": 434
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 32,
+          "height": 32
+        },
+        "TabIndex": 12,
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.document_copy"
+        },
+        "Name": "btnResultCopy",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnResultCopy.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Enabled",
+          "resource_key": "btnResultCopy.Enabled",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnResultCopy.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnResultCopy.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnResultCopy.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtResult",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "AIForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Anchor": "Top, Bottom, Left, Right",
+        "Font": "Microsoft Sans Serif, 12pt",
+        "Location": {
+          "kind": "Point",
+          "x": 304,
+          "y": 40
+        },
+        "Multiline": true,
+        "ScrollBars": "Both",
+        "Size": {
+          "kind": "Size",
+          "width": 608,
+          "height": 432
+        },
+        "TabIndex": 11,
+        "Name": "txtResult",
+        "ReadOnly": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "txtResult.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "txtResult.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "txtResult.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Multiline",
+          "resource_key": "txtResult.Multiline",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ScrollBars",
+          "resource_key": "txtResult.ScrollBars",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtResult.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtResult.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblTimer",
+      "type": "System.Windows.Forms.Label",
+      "parent": "AIForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Anchor": "Top, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 744,
+          "y": 12
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 168,
+          "height": 24
+        },
+        "TabIndex": 10,
+        "TextAlign": "MiddleRight",
+        "Name": "lblTimer"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "lblTimer.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblTimer.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblTimer.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblTimer.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "lblTimer.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblResult",
+      "type": "System.Windows.Forms.Label",
+      "parent": "AIForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 301,
+          "y": 16
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 48,
+          "height": 16
+        },
+        "TabIndex": 9,
+        "Text": "Result:",
+        "Name": "lblResult"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblResult.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblResult.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblResult.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblResult.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblResult.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnCapture",
+      "type": "System.Windows.Forms.Button",
+      "parent": "AIForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.camera"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 248,
+          "y": 440
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 32,
+          "height": 32
+        },
+        "TabIndex": 8,
+        "Name": "btnCapture",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnCapture.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCapture.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCapture.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnAnalyze",
+      "type": "System.Windows.Forms.Button",
+      "parent": "AIForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "Enabled": false,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 440
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 224,
+          "height": 32
+        },
+        "TabIndex": 7,
+        "Text": "Analyze image",
+        "Name": "btnAnalyze",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Enabled",
+          "resource_key": "btnAnalyze.Enabled",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnAnalyze.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnAnalyze.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnAnalyze.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnAnalyze.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pbImage",
+      "type": "HelpersLib.MyPictureBox",
+      "parent": "AIForm",
+      "parent_slot": "Controls",
+      "child_index": 7,
+      "properties": {
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        },
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
+        },
+        "DrawCheckeredBackground": true,
+        "FullscreenOnClick": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 200
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 3,
+          "right": 4,
+          "bottom": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 264,
+          "height": 234
+        },
+        "TabIndex": 6,
+        "Name": "pbImage",
+        "PictureBoxBackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        }
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "pbImage.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "pbImage.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pbImage.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pbImage.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnImageBrowse",
+      "type": "System.Windows.Forms.Button",
+      "parent": "AIForm",
+      "parent_slot": "Controls",
+      "child_index": 8,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.folder_open_image"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 248,
+          "y": 170
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 32,
+          "height": 26
+        },
+        "TabIndex": 5,
+        "Name": "btnImageBrowse",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnImageBrowse.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnImageBrowse.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnImageBrowse.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtImage",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "AIForm",
+      "parent_slot": "Controls",
+      "child_index": 9,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 172
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 224,
+          "height": 22
+        },
+        "TabIndex": 4,
+        "Name": "txtImage"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtImage.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtImage.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtImage.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblImage",
+      "type": "System.Windows.Forms.Label",
+      "parent": "AIForm",
+      "parent_slot": "Controls",
+      "child_index": 10,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 153
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 77,
+          "height": 16
+        },
+        "TabIndex": 3,
+        "Text": "Image path:",
+        "Name": "lblImage"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblImage.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblImage.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblImage.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblImage.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblImage.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtInput",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "AIForm",
+      "parent_slot": "Controls",
+      "child_index": 11,
+      "properties": {
+        "ContextMenuStrip": {
+          "kind": "ident",
+          "raw": "cmsPresets"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 70
+        },
+        "Multiline": true,
+        "ScrollBars": "Vertical",
+        "Size": {
+          "kind": "Size",
+          "width": 264,
+          "height": 80
+        },
+        "TabIndex": 2,
+        "Name": "txtInput"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtInput.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Multiline",
+          "resource_key": "txtInput.Multiline",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ScrollBars",
+          "resource_key": "txtInput.ScrollBars",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtInput.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtInput.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblInput",
+      "type": "System.Windows.Forms.Label",
+      "parent": "AIForm",
+      "parent_slot": "Controls",
+      "child_index": 12,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 51
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 53,
+          "height": 16
+        },
+        "TabIndex": 1,
+        "Text": "Prompt:",
+        "Name": "lblInput"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblInput.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblInput.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblInput.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblInput.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblInput.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "AIForm",
+    "type": "Form",
+    "slots": {
+      "Controls": [
+        {
+          "name": "btnOptions",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnResultCopy",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "txtResult",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblTimer",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblResult",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "btnCapture",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnAnalyze",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "pbImage",
+          "type": "HelpersLib.MyPictureBox",
+          "slots": {}
+        },
+        {
+          "name": "btnImageBrowse",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "txtImage",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblImage",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "txtInput",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblInput",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        }
+      ]
+    }
+  },
+  "strings": {
+    "lblInput.Text": "Prompt:",
+    "lblImage.Text": "Image path:",
+    "btnAnalyze.Text": "Analyze image",
+    "lblResult.Text": "Result:",
+    "btnOptions.Text": "Options...",
+    "$this.Text": "ShareX - AI"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 91,
+  "parsed_statements": 91,
+  "unparsed_lines": []
+}

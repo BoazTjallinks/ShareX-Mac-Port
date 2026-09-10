@@ -1,0 +1,4147 @@
+{
+  "form_name": "CustomUploaderSettingsForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX.UploadersLib/Forms/CustomUploaderSettingsForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.UploadersLib/Forms/CustomUploaderSettingsForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 984,
+    "height": 628
+  },
+  "text": "ShareX - Custom uploader settings",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 96,
+    "height": 96
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Dpi"
+  },
+  "tab_order": [
+    "rtbRequestURL",
+    "dgvArguments",
+    "pData",
+    "rtbData",
+    "rtbResultErrorMessage",
+    "rtbResultDeletionURL",
+    "rtbResultThumbnailURL",
+    "rtbResultURL",
+    "lblName",
+    "lblUploaders",
+    "btnNew",
+    "lblFileFormName",
+    "btnDataBeautify",
+    "txtName",
+    "btnRemove",
+    "txtFileFormName",
+    "btnDataMinify",
+    "lblDestinationType",
+    "btnDuplicate",
+    "mbDestinationType",
+    "lbCustomUploaderList",
+    "lblRequestMethod",
+    "eiCustomUploaders",
+    "cbRequestMethod",
+    "mbHelp",
+    "lblRequestURL",
+    "lblImageUploader",
+    "pRequestURL",
+    "cbImageUploader",
+    "lblParameters",
+    "btnImageUploaderTest",
+    "dgvParameters",
+    "lblTextUploader",
+    "lblHeaders",
+    "cbTextUploader",
+    "dgvHeaders",
+    "btnTextUploaderTest",
+    "lblBody",
+    "lblFileUploader",
+    "cbBody",
+    "cbFileUploader",
+    "pBodyArguments",
+    "pBodyData",
+    "btnFileUploaderTest",
+    "lblResultURL",
+    "lblURLShortener",
+    "pResultURL",
+    "cbURLShortener",
+    "lblResultThumbnailURL",
+    "btnURLShortenerTest",
+    "pResultThumbnailURL",
+    "lblResultDeletionURL",
+    "lblURLSharingService",
+    "pResultDeletionURL",
+    "cbURLSharingService",
+    "lblResultErrorMessage",
+    "btnURLSharingServiceTest",
+    "pResultErrorMessage",
+    "pMain",
+    "btnTestURLSyntax"
+  ],
+  "controls": [
+    {
+      "name": "components",
+      "type": "System.ComponentModel.Container",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "cmsHelp",
+      "type": "System.Windows.Forms.ContextMenuStrip",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Name": "cmsCustomUploaderHelp",
+        "ShowImageMargin": false,
+        "Size": {
+          "kind": "Size",
+          "width": 184,
+          "height": 92
+        }
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "cmsHelp.Size",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cmsDestinationType",
+      "type": "System.Windows.Forms.ContextMenuStrip",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "ImageScalingSize": {
+          "kind": "Size",
+          "width": 24,
+          "height": 24
+        },
+        "Name": "cmsCustomUploaderDestinationType",
+        "ShowCheckMargin": true,
+        "ShowImageMargin": false,
+        "Size": {
+          "kind": "Size",
+          "width": 61,
+          "height": 4
+        }
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "cmsDestinationType.Size",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "ttHelpTip",
+      "type": "System.Windows.Forms.ToolTip",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutomaticDelay": 0,
+        "AutoPopDelay": 30000,
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        },
+        "InitialDelay": 500,
+        "ReshowDelay": 100,
+        "UseAnimation": false,
+        "UseFading": false
+      },
+      "resources": []
+    },
+    {
+      "name": "pMain",
+      "type": "System.Windows.Forms.Panel",
+      "parent": "CustomUploaderSettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 296,
+          "y": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 688,
+          "height": 632
+        },
+        "TabIndex": 22,
+        "Name": "pMain"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "pMain.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pMain.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pMain.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblUploaders",
+      "type": "System.Windows.Forms.Label",
+      "parent": "CustomUploaderSettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 63,
+          "height": 15
+        },
+        "TabIndex": 0,
+        "Text": "Uploaders:",
+        "Name": "lblUploaders"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblUploaders.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblUploaders.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblUploaders.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblUploaders.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblUploaders.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "mbHelp",
+      "type": "HelpersLib.MenuButton",
+      "parent": "CustomUploaderSettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 248,
+          "y": 392
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 3,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 40,
+          "height": 24
+        },
+        "TabIndex": 6,
+        "Text": "?",
+        "TextAlign": "MiddleLeft",
+        "Menu": {
+          "kind": "ident",
+          "raw": "cmsHelp"
+        },
+        "Name": "mbHelp",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "mbHelp.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "mbHelp.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "mbHelp.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "mbHelp.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "mbHelp.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "mbHelp.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "mbHelp.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnNew",
+      "type": "System.Windows.Forms.Button",
+      "parent": "CustomUploaderSettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 24
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 88,
+          "height": 24
+        },
+        "TabIndex": 1,
+        "Text": "New",
+        "Name": "btnNew",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnNew.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnNew.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnNew.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnNew.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnNew.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnDuplicate",
+      "type": "System.Windows.Forms.Button",
+      "parent": "CustomUploaderSettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 200,
+          "y": 24
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 88,
+          "height": 24
+        },
+        "TabIndex": 3,
+        "Text": "Duplicate",
+        "Name": "btnDuplicate",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnDuplicate.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnDuplicate.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnDuplicate.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnDuplicate.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnDuplicate.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "eiCustomUploaders",
+      "type": "HelpersLib.ExportImportControl",
+      "parent": "CustomUploaderSettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "CustomFilter": "ShareX custom uploader (*.sxcu)|*.sxcu",
+        "DefaultFileName": null,
+        "ExportIgnoreDefaultValue": true,
+        "ExportIgnoreNull": true,
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 392
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 3,
+          "right": 4,
+          "bottom": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 192,
+          "height": 26
+        },
+        "TabIndex": 5,
+        "Name": "eiCustomUploaders",
+        "ObjectType": null,
+        "SerializationBinder": null
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "eiCustomUploaders.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "eiCustomUploaders.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "eiCustomUploaders.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "eiCustomUploaders.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lbCustomUploaderList",
+      "type": "System.Windows.Forms.ListBox",
+      "parent": "CustomUploaderSettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
+        },
+        "FormattingEnabled": true,
+        "IntegralHeight": false,
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 56
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 280,
+          "height": 328
+        },
+        "TabIndex": 4,
+        "Name": "lbCustomUploaderList"
+      },
+      "resources": [
+        {
+          "property": "IntegralHeight",
+          "resource_key": "lbCustomUploaderList.IntegralHeight",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lbCustomUploaderList.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lbCustomUploaderList.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lbCustomUploaderList.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnRemove",
+      "type": "System.Windows.Forms.Button",
+      "parent": "CustomUploaderSettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 7,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 104,
+          "y": 24
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 88,
+          "height": 24
+        },
+        "TabIndex": 2,
+        "Text": "Remove",
+        "Name": "btnRemove",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnRemove.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnRemove.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnRemove.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnRemove.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnRemove.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnURLSharingServiceTest",
+      "type": "System.Windows.Forms.Button",
+      "parent": "CustomUploaderSettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 8,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 216,
+          "y": 598
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 72,
+          "height": 24
+        },
+        "TabIndex": 21,
+        "Text": "Test",
+        "Name": "btnURLSharingServiceTest",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnURLSharingServiceTest.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnURLSharingServiceTest.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnURLSharingServiceTest.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnURLSharingServiceTest.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnURLSharingServiceTest.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbURLSharingService",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "CustomUploaderSettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 9,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 600
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 200,
+          "height": 23
+        },
+        "TabIndex": 20,
+        "Name": "cbURLSharingService"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbURLSharingService.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbURLSharingService.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbURLSharingService.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblURLSharingService",
+      "type": "System.Windows.Forms.Label",
+      "parent": "CustomUploaderSettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 10,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 584
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 112,
+          "height": 15
+        },
+        "TabIndex": 19,
+        "Text": "URL sharing service:",
+        "Name": "lblURLSharingService"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblURLSharingService.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblURLSharingService.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblURLSharingService.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblURLSharingService.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblURLSharingService.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblURLSharingService.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbImageUploader",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "CustomUploaderSettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 11,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 440
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 200,
+          "height": 23
+        },
+        "TabIndex": 8,
+        "Name": "cbImageUploader"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbImageUploader.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbImageUploader.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbImageUploader.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnTextUploaderTest",
+      "type": "System.Windows.Forms.Button",
+      "parent": "CustomUploaderSettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 12,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 216,
+          "y": 478
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 72,
+          "height": 24
+        },
+        "TabIndex": 12,
+        "Text": "Test",
+        "Name": "btnTextUploaderTest",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnTextUploaderTest.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnTextUploaderTest.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnTextUploaderTest.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnTextUploaderTest.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnTextUploaderTest.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblImageUploader",
+      "type": "System.Windows.Forms.Label",
+      "parent": "CustomUploaderSettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 13,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 424
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 93,
+          "height": 15
+        },
+        "TabIndex": 7,
+        "Text": "Image uploader:",
+        "Name": "lblImageUploader"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblImageUploader.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblImageUploader.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblImageUploader.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblImageUploader.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblImageUploader.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblImageUploader.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblURLShortener",
+      "type": "System.Windows.Forms.Label",
+      "parent": "CustomUploaderSettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 14,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 544
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 84,
+          "height": 15
+        },
+        "TabIndex": 16,
+        "Text": "URL shortener:",
+        "Name": "lblURLShortener"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblURLShortener.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblURLShortener.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblURLShortener.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblURLShortener.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblURLShortener.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblURLShortener.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnFileUploaderTest",
+      "type": "System.Windows.Forms.Button",
+      "parent": "CustomUploaderSettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 15,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 216,
+          "y": 518
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 72,
+          "height": 24
+        },
+        "TabIndex": 15,
+        "Text": "Test",
+        "Name": "btnFileUploaderTest",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnFileUploaderTest.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnFileUploaderTest.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnFileUploaderTest.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnFileUploaderTest.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnFileUploaderTest.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbTextUploader",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "CustomUploaderSettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 16,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 480
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 200,
+          "height": 23
+        },
+        "TabIndex": 11,
+        "Name": "cbTextUploader"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbTextUploader.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbTextUploader.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbTextUploader.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblFileUploader",
+      "type": "System.Windows.Forms.Label",
+      "parent": "CustomUploaderSettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 17,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 504
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 78,
+          "height": 15
+        },
+        "TabIndex": 13,
+        "Text": "File uploader:",
+        "Name": "lblFileUploader"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblFileUploader.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblFileUploader.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblFileUploader.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblFileUploader.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblFileUploader.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblFileUploader.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnURLShortenerTest",
+      "type": "System.Windows.Forms.Button",
+      "parent": "CustomUploaderSettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 18,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 216,
+          "y": 558
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 72,
+          "height": 24
+        },
+        "TabIndex": 18,
+        "Text": "Test",
+        "Name": "btnURLShortenerTest",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnURLShortenerTest.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnURLShortenerTest.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnURLShortenerTest.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnURLShortenerTest.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnURLShortenerTest.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnImageUploaderTest",
+      "type": "System.Windows.Forms.Button",
+      "parent": "CustomUploaderSettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 19,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 216,
+          "y": 438
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 72,
+          "height": 24
+        },
+        "TabIndex": 9,
+        "Text": "Test",
+        "Name": "btnImageUploaderTest",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnImageUploaderTest.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnImageUploaderTest.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnImageUploaderTest.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnImageUploaderTest.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnImageUploaderTest.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblTextUploader",
+      "type": "System.Windows.Forms.Label",
+      "parent": "CustomUploaderSettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 20,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 464
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 81,
+          "height": 15
+        },
+        "TabIndex": 10,
+        "Text": "Text uploader:",
+        "Name": "lblTextUploader"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblTextUploader.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblTextUploader.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblTextUploader.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblTextUploader.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblTextUploader.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblTextUploader.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbFileUploader",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "CustomUploaderSettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 21,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 520
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 200,
+          "height": 23
+        },
+        "TabIndex": 14,
+        "Name": "cbFileUploader"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbFileUploader.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbFileUploader.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbFileUploader.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbURLShortener",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "CustomUploaderSettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 22,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 560
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 200,
+          "height": 23
+        },
+        "TabIndex": 17,
+        "Name": "cbURLShortener"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbURLShortener.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbURLShortener.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbURLShortener.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiCustomUploaderGuide",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": "cmsHelp",
+      "parent_slot": "Items",
+      "child_index": 0,
+      "properties": {
+        "Name": "tsmiCustomUploaderGuide",
+        "Size": {
+          "kind": "Size",
+          "width": 183,
+          "height": 22
+        },
+        "Text": "Custom uploader guide..."
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiCustomUploaderGuide.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiCustomUploaderGuide.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiClearUploaders",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": "cmsHelp",
+      "parent_slot": "Items",
+      "child_index": 1,
+      "properties": {
+        "Name": "tsmiClearUploaders",
+        "Size": {
+          "kind": "Size",
+          "width": 183,
+          "height": 22
+        },
+        "Text": "Clear uploaders..."
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiClearUploaders.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiClearUploaders.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiExportAll",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": "cmsHelp",
+      "parent_slot": "Items",
+      "child_index": 2,
+      "properties": {
+        "Name": "tsmiExportAll",
+        "Size": {
+          "kind": "Size",
+          "width": 183,
+          "height": 22
+        },
+        "Text": "Export all...",
+        "Visible": false
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiExportAll.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiExportAll.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Visible",
+          "resource_key": "tsmiExportAll.Visible",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiUpdateFolder",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": "cmsHelp",
+      "parent_slot": "Items",
+      "child_index": 3,
+      "properties": {
+        "Name": "tsmiUpdateFolder",
+        "Size": {
+          "kind": "Size",
+          "width": 183,
+          "height": 22
+        },
+        "Text": "Update folder...",
+        "Visible": false
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiUpdateFolder.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiUpdateFolder.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Visible",
+          "resource_key": "tsmiUpdateFolder.Visible",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cArgumentsName",
+      "type": "System.Windows.Forms.DataGridViewTextBoxColumn",
+      "parent": "dgvArguments",
+      "parent_slot": "Columns",
+      "child_index": 0,
+      "properties": {
+        "HeaderText": "Name",
+        "Width": 130,
+        "Name": "cArgumentsName",
+        "SortMode": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DataGridViewColumnSortMode.NotSortable"
+        }
+      },
+      "resources": [
+        {
+          "property": "HeaderText",
+          "resource_key": "cArgumentsName.HeaderText",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Width",
+          "resource_key": "cArgumentsName.Width",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cArgumentsValue",
+      "type": "System.Windows.Forms.DataGridViewTextBoxColumn",
+      "parent": "dgvArguments",
+      "parent_slot": "Columns",
+      "child_index": 1,
+      "properties": {
+        "AutoSizeMode": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill"
+        },
+        "DefaultCellStyle": {
+          "kind": "ident",
+          "raw": "dataGridViewCellStyle6"
+        },
+        "HeaderText": "Value",
+        "Name": "cArgumentsValue",
+        "SortMode": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DataGridViewColumnSortMode.NotSortable"
+        }
+      },
+      "resources": [
+        {
+          "property": "HeaderText",
+          "resource_key": "cArgumentsValue.HeaderText",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cHeadersName",
+      "type": "System.Windows.Forms.DataGridViewTextBoxColumn",
+      "parent": "dgvHeaders",
+      "parent_slot": "Columns",
+      "child_index": 0,
+      "properties": {
+        "HeaderText": "Name",
+        "Width": 130,
+        "Name": "cHeadersName",
+        "SortMode": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DataGridViewColumnSortMode.NotSortable"
+        }
+      },
+      "resources": [
+        {
+          "property": "HeaderText",
+          "resource_key": "cHeadersName.HeaderText",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Width",
+          "resource_key": "cHeadersName.Width",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cHeadersValue",
+      "type": "System.Windows.Forms.DataGridViewTextBoxColumn",
+      "parent": "dgvHeaders",
+      "parent_slot": "Columns",
+      "child_index": 1,
+      "properties": {
+        "AutoSizeMode": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill"
+        },
+        "HeaderText": "Value",
+        "Name": "cHeadersValue",
+        "SortMode": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DataGridViewColumnSortMode.NotSortable"
+        }
+      },
+      "resources": [
+        {
+          "property": "HeaderText",
+          "resource_key": "cHeadersValue.HeaderText",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cParametersName",
+      "type": "System.Windows.Forms.DataGridViewTextBoxColumn",
+      "parent": "dgvParameters",
+      "parent_slot": "Columns",
+      "child_index": 0,
+      "properties": {
+        "HeaderText": "Name",
+        "Width": 130,
+        "Name": "cParametersName",
+        "SortMode": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DataGridViewColumnSortMode.NotSortable"
+        }
+      },
+      "resources": [
+        {
+          "property": "HeaderText",
+          "resource_key": "cParametersName.HeaderText",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Width",
+          "resource_key": "cParametersName.Width",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cParametersValue",
+      "type": "System.Windows.Forms.DataGridViewTextBoxColumn",
+      "parent": "dgvParameters",
+      "parent_slot": "Columns",
+      "child_index": 1,
+      "properties": {
+        "AutoSizeMode": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill"
+        },
+        "HeaderText": "Value",
+        "Name": "cParametersValue",
+        "SortMode": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DataGridViewColumnSortMode.NotSortable"
+        }
+      },
+      "resources": [
+        {
+          "property": "HeaderText",
+          "resource_key": "cParametersValue.HeaderText",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "dgvArguments",
+      "type": "System.Windows.Forms.DataGridView",
+      "parent": "pBodyArguments",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "AllowUserToResizeRows": false,
+        "AutoSizeRowsMode": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells"
+        },
+        "BackgroundColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        },
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.None"
+        },
+        "ColumnHeadersBorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DataGridViewHeaderBorderStyle.Single"
+        },
+        "ColumnHeadersDefaultCellStyle": {
+          "kind": "ident",
+          "raw": "dataGridViewCellStyle5"
+        },
+        "ColumnHeadersHeightSizeMode": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize"
+        },
+        "DefaultCellStyle": {
+          "kind": "ident",
+          "raw": "dataGridViewCellStyle7"
+        },
+        "EditMode": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DataGridViewEditMode.EditOnEnter"
+        },
+        "GridColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.ControlLight"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 328,
+          "height": 264
+        },
+        "TabIndex": 0,
+        "MultiSelect": false,
+        "Name": "dgvArguments",
+        "RowHeadersVisible": false
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "dgvArguments.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "dgvArguments.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "dgvArguments.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblFileFormName",
+      "type": "System.Windows.Forms.Label",
+      "parent": "pBodyArguments",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": -3,
+          "y": 272
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 90,
+          "height": 15
+        },
+        "TabIndex": 1,
+        "Text": "File form name:",
+        "Name": "lblFileFormName"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblFileFormName.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblFileFormName.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblFileFormName.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblFileFormName.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblFileFormName.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblFileFormName.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtFileFormName",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "pBodyArguments",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 288
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 328,
+          "height": 23
+        },
+        "TabIndex": 2,
+        "Name": "txtFileFormName"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtFileFormName.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtFileFormName.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtFileFormName.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnDataBeautify",
+      "type": "System.Windows.Forms.Button",
+      "parent": "pBodyData",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 288
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 160,
+          "height": 24
+        },
+        "TabIndex": 1,
+        "Text": "Beautify",
+        "Name": "btnDataBeautify",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnDataBeautify.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnDataBeautify.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnDataBeautify.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnDataBeautify.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnDataBeautify.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnDataMinify",
+      "type": "System.Windows.Forms.Button",
+      "parent": "pBodyData",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 168,
+          "y": 288
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 160,
+          "height": 24
+        },
+        "TabIndex": 2,
+        "Text": "Minify",
+        "Name": "btnDataMinify",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnDataMinify.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnDataMinify.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnDataMinify.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnDataMinify.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnDataMinify.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pData",
+      "type": "System.Windows.Forms.Panel",
+      "parent": "pBodyData",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 328,
+          "height": 280
+        },
+        "TabIndex": 0,
+        "Name": "pData"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "pData.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "pData.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pData.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pData.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "rtbData",
+      "type": "System.Windows.Forms.RichTextBox",
+      "parent": "pData",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.None"
+        },
+        "DetectUrls": false,
+        "Dock": "Fill",
+        "Location": {
+          "kind": "Point",
+          "x": 2,
+          "y": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 322,
+          "height": 274
+        },
+        "TabIndex": 0,
+        "Text": "",
+        "WordWrap": false,
+        "Name": "rtbData"
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "rtbData.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "rtbData.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "rtbData.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "rtbData.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "rtbData.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "WordWrap",
+          "resource_key": "rtbData.WordWrap",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnTestURLSyntax",
+      "type": "System.Windows.Forms.Button",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 592,
+          "y": 478
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 88,
+          "height": 24
+        },
+        "TabIndex": 23,
+        "Text": "Test...",
+        "Name": "btnTestURLSyntax",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnTestURLSyntax.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnTestURLSyntax.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnTestURLSyntax.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnTestURLSyntax.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pResultErrorMessage",
+      "type": "System.Windows.Forms.Panel",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 600
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 672,
+          "height": 20
+        },
+        "TabIndex": 22,
+        "Name": "pResultErrorMessage"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "pResultErrorMessage.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "pResultErrorMessage.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pResultErrorMessage.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pResultErrorMessage.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "dgvHeaders",
+      "type": "System.Windows.Forms.DataGridView",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "AllowUserToResizeRows": false,
+        "BackgroundColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        },
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.None"
+        },
+        "ColumnHeadersBorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DataGridViewHeaderBorderStyle.Single"
+        },
+        "ColumnHeadersDefaultCellStyle": {
+          "kind": "ident",
+          "raw": "dataGridViewCellStyle1"
+        },
+        "ColumnHeadersHeightSizeMode": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize"
+        },
+        "DefaultCellStyle": {
+          "kind": "ident",
+          "raw": "dataGridViewCellStyle2"
+        },
+        "EditMode": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DataGridViewEditMode.EditOnEnter"
+        },
+        "GridColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.ControlLight"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 296
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 328,
+          "height": 160
+        },
+        "TabIndex": 11,
+        "MultiSelect": false,
+        "Name": "dgvHeaders",
+        "RowHeadersVisible": false
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "dgvHeaders.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "dgvHeaders.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "dgvHeaders.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblResultErrorMessage",
+      "type": "System.Windows.Forms.Label",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 584
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 84,
+          "height": 15
+        },
+        "TabIndex": 21,
+        "Text": "Error message:",
+        "Name": "lblResultErrorMessage"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblResultErrorMessage.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblResultErrorMessage.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblResultErrorMessage.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblResultErrorMessage.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblResultErrorMessage.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtName",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 24
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 328,
+          "height": 23
+        },
+        "TabIndex": 1,
+        "Name": "txtName"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtName.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtName.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtName.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "dgvParameters",
+      "type": "System.Windows.Forms.DataGridView",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "AllowUserToResizeRows": false,
+        "BackgroundColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        },
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.None"
+        },
+        "ColumnHeadersBorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DataGridViewHeaderBorderStyle.Single"
+        },
+        "ColumnHeadersDefaultCellStyle": {
+          "kind": "ident",
+          "raw": "dataGridViewCellStyle3"
+        },
+        "ColumnHeadersHeightSizeMode": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize"
+        },
+        "DefaultCellStyle": {
+          "kind": "ident",
+          "raw": "dataGridViewCellStyle4"
+        },
+        "EditMode": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DataGridViewEditMode.EditOnEnter"
+        },
+        "GridColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.ControlLight"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 112
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 328,
+          "height": 160
+        },
+        "TabIndex": 9,
+        "MultiSelect": false,
+        "Name": "dgvParameters",
+        "RowHeadersVisible": false
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "dgvParameters.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "dgvParameters.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "dgvParameters.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pResultDeletionURL",
+      "type": "System.Windows.Forms.Panel",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 560
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 672,
+          "height": 20
+        },
+        "TabIndex": 20,
+        "Name": "pResultDeletionURL"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "pResultDeletionURL.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "pResultDeletionURL.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pResultDeletionURL.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pResultDeletionURL.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblName",
+      "type": "System.Windows.Forms.Label",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 7,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 42,
+          "height": 15
+        },
+        "TabIndex": 0,
+        "Text": "Name:",
+        "Name": "lblName"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblName.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblName.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblName.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblName.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblName.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblName.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblResultDeletionURL",
+      "type": "System.Windows.Forms.Label",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 8,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 544
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 78,
+          "height": 15
+        },
+        "TabIndex": 19,
+        "Text": "Deletion URL:",
+        "Name": "lblResultDeletionURL"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblResultDeletionURL.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblResultDeletionURL.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblResultDeletionURL.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblResultDeletionURL.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblResultDeletionURL.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblResultDeletionURL.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblHeaders",
+      "type": "System.Windows.Forms.Label",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 9,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 280
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 53,
+          "height": 15
+        },
+        "TabIndex": 10,
+        "Text": "Headers:",
+        "Name": "lblHeaders"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblHeaders.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblHeaders.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblHeaders.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblHeaders.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblHeaders.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblHeaders.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pResultThumbnailURL",
+      "type": "System.Windows.Forms.Panel",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 10,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 520
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 672,
+          "height": 20
+        },
+        "TabIndex": 18,
+        "Name": "pResultThumbnailURL"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "pResultThumbnailURL.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "pResultThumbnailURL.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pResultThumbnailURL.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pResultThumbnailURL.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "mbDestinationType",
+      "type": "HelpersLib.MenuButton",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 11,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 352,
+          "y": 24
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 328,
+          "height": 23
+        },
+        "TabIndex": 3,
+        "TextAlign": "MiddleLeft",
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "mbDestinationType.ToolTip"
+        },
+        "Menu": {
+          "kind": "ident",
+          "raw": "cmsDestinationType"
+        },
+        "Name": "mbDestinationType",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "mbDestinationType.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "mbDestinationType.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "mbDestinationType.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "mbDestinationType.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "mbDestinationType.TextAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "mbDestinationType.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "mbDestinationType.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "pResultURL",
+      "type": "System.Windows.Forms.Panel",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 12,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 480
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 576,
+          "height": 20
+        },
+        "TabIndex": 16,
+        "Name": "pResultURL"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "pResultURL.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "pResultURL.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pResultURL.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pResultURL.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblParameters",
+      "type": "System.Windows.Forms.Label",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 13,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 96
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 93,
+          "height": 15
+        },
+        "TabIndex": 8,
+        "Text": "URL parameters:",
+        "Name": "lblParameters"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblParameters.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblParameters.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblParameters.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblParameters.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblParameters.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblParameters.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblResultThumbnailURL",
+      "type": "System.Windows.Forms.Label",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 14,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 504
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 92,
+          "height": 15
+        },
+        "TabIndex": 17,
+        "Text": "Thumbnail URL:",
+        "Name": "lblResultThumbnailURL"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblResultThumbnailURL.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblResultThumbnailURL.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblResultThumbnailURL.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblResultThumbnailURL.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblResultThumbnailURL.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblResultThumbnailURL.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblDestinationType",
+      "type": "System.Windows.Forms.Label",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 15,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 349,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 96,
+          "height": 15
+        },
+        "TabIndex": 2,
+        "Text": "Destination type:",
+        "Name": "lblDestinationType"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblDestinationType.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblDestinationType.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblDestinationType.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblDestinationType.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblDestinationType.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblDestinationType.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblResultURL",
+      "type": "System.Windows.Forms.Label",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 16,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 464
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 31,
+          "height": 15
+        },
+        "TabIndex": 15,
+        "Text": "URL:",
+        "Name": "lblResultURL"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblResultURL.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblResultURL.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblResultURL.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblResultURL.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblResultURL.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblResultURL.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pRequestURL",
+      "type": "System.Windows.Forms.Panel",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 17,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 88,
+          "y": 64
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 592,
+          "height": 20
+        },
+        "TabIndex": 7,
+        "Name": "pRequestURL"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "pRequestURL.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "pRequestURL.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pRequestURL.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pRequestURL.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbRequestMethod",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 18,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 64
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 72,
+          "height": 23
+        },
+        "TabIndex": 5,
+        "Name": "cbRequestMethod"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbRequestMethod.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbRequestMethod.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbRequestMethod.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblRequestURL",
+      "type": "System.Windows.Forms.Label",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 19,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 85,
+          "y": 48
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 76,
+          "height": 15
+        },
+        "TabIndex": 6,
+        "Text": "Request URL:",
+        "Name": "lblRequestURL"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblRequestURL.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblRequestURL.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblRequestURL.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblRequestURL.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblRequestURL.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblRequestURL.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbBody",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 20,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "DropDownWidth": 280,
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 352,
+          "y": 112
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 328,
+          "height": 23
+        },
+        "TabIndex": 13,
+        "Name": "cbBody"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbBody.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbBody.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbBody.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblBody",
+      "type": "System.Windows.Forms.Label",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 21,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 349,
+          "y": 96
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 37,
+          "height": 15
+        },
+        "TabIndex": 12,
+        "Text": "Body:",
+        "Name": "lblBody"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblBody.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblBody.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblBody.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblBody.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblBody.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblBody.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblRequestMethod",
+      "type": "System.Windows.Forms.Label",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 22,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 48
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 52,
+          "height": 15
+        },
+        "TabIndex": 4,
+        "Text": "Method:",
+        "Name": "lblRequestMethod"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblRequestMethod.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblRequestMethod.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblRequestMethod.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblRequestMethod.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblRequestMethod.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblRequestMethod.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pBodyArguments",
+      "type": "System.Windows.Forms.Panel",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 23,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 352,
+          "y": 144
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 328,
+          "height": 312
+        },
+        "TabIndex": 14,
+        "Name": "pBodyArguments"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "pBodyArguments.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pBodyArguments.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pBodyArguments.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pBodyData",
+      "type": "System.Windows.Forms.Panel",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 24,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 352,
+          "y": 144
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 328,
+          "height": 312
+        },
+        "TabIndex": 14,
+        "Name": "pBodyData"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "pBodyData.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pBodyData.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pBodyData.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "rtbRequestURL",
+      "type": "System.Windows.Forms.RichTextBox",
+      "parent": "pRequestURL",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.None"
+        },
+        "DetectUrls": false,
+        "Dock": "Fill",
+        "Location": {
+          "kind": "Point",
+          "x": 2,
+          "y": 2
+        },
+        "Multiline": false,
+        "Size": {
+          "kind": "Size",
+          "width": 586,
+          "height": 14
+        },
+        "TabIndex": 0,
+        "Text": "",
+        "Name": "rtbRequestURL"
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "rtbRequestURL.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "rtbRequestURL.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Multiline",
+          "resource_key": "rtbRequestURL.Multiline",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "rtbRequestURL.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "rtbRequestURL.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "rtbRequestURL.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "rtbResultDeletionURL",
+      "type": "System.Windows.Forms.RichTextBox",
+      "parent": "pResultDeletionURL",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.None"
+        },
+        "DetectUrls": false,
+        "Dock": "Fill",
+        "Font": "Arial, 9pt",
+        "Location": {
+          "kind": "Point",
+          "x": 2,
+          "y": 2
+        },
+        "Multiline": false,
+        "Size": {
+          "kind": "Size",
+          "width": 666,
+          "height": 14
+        },
+        "TabIndex": 0,
+        "Text": "",
+        "Name": "rtbResultDeletionURL"
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "rtbResultDeletionURL.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "rtbResultDeletionURL.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "rtbResultDeletionURL.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Multiline",
+          "resource_key": "rtbResultDeletionURL.Multiline",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "rtbResultDeletionURL.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "rtbResultDeletionURL.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "rtbResultDeletionURL.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "rtbResultErrorMessage",
+      "type": "System.Windows.Forms.RichTextBox",
+      "parent": "pResultErrorMessage",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.None"
+        },
+        "DetectUrls": false,
+        "Dock": "Fill",
+        "Font": "Arial, 9pt",
+        "Location": {
+          "kind": "Point",
+          "x": 2,
+          "y": 2
+        },
+        "Multiline": false,
+        "Size": {
+          "kind": "Size",
+          "width": 666,
+          "height": 14
+        },
+        "TabIndex": 0,
+        "Text": "",
+        "Name": "rtbResultErrorMessage"
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "rtbResultErrorMessage.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "rtbResultErrorMessage.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "rtbResultErrorMessage.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Multiline",
+          "resource_key": "rtbResultErrorMessage.Multiline",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "rtbResultErrorMessage.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "rtbResultErrorMessage.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "rtbResultErrorMessage.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "rtbResultThumbnailURL",
+      "type": "System.Windows.Forms.RichTextBox",
+      "parent": "pResultThumbnailURL",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.None"
+        },
+        "DetectUrls": false,
+        "Dock": "Fill",
+        "Font": "Arial, 9pt",
+        "Location": {
+          "kind": "Point",
+          "x": 2,
+          "y": 2
+        },
+        "Multiline": false,
+        "Size": {
+          "kind": "Size",
+          "width": 666,
+          "height": 14
+        },
+        "TabIndex": 0,
+        "Text": "",
+        "Name": "rtbResultThumbnailURL"
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "rtbResultThumbnailURL.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "rtbResultThumbnailURL.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "rtbResultThumbnailURL.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Multiline",
+          "resource_key": "rtbResultThumbnailURL.Multiline",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "rtbResultThumbnailURL.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "rtbResultThumbnailURL.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "rtbResultThumbnailURL.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "rtbResultURL",
+      "type": "System.Windows.Forms.RichTextBox",
+      "parent": "pResultURL",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.None"
+        },
+        "DetectUrls": false,
+        "Dock": "Fill",
+        "Font": "Arial, 9pt",
+        "Location": {
+          "kind": "Point",
+          "x": 2,
+          "y": 2
+        },
+        "Multiline": false,
+        "Size": {
+          "kind": "Size",
+          "width": 570,
+          "height": 14
+        },
+        "TabIndex": 0,
+        "Text": "",
+        "Name": "rtbResultURL"
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "rtbResultURL.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "rtbResultURL.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "rtbResultURL.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Multiline",
+          "resource_key": "rtbResultURL.Multiline",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "rtbResultURL.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "rtbResultURL.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "rtbResultURL.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "CustomUploaderSettingsForm",
+    "type": "Form",
+    "slots": {
+      "Controls": [
+        {
+          "name": "pMain",
+          "type": "System.Windows.Forms.Panel",
+          "slots": {
+            "Controls": [
+              {
+                "name": "btnTestURLSyntax",
+                "type": "System.Windows.Forms.Button",
+                "slots": {}
+              },
+              {
+                "name": "pResultErrorMessage",
+                "type": "System.Windows.Forms.Panel",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "rtbResultErrorMessage",
+                      "type": "System.Windows.Forms.RichTextBox",
+                      "slots": {}
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "dgvHeaders",
+                "type": "System.Windows.Forms.DataGridView",
+                "slots": {
+                  "Columns": [
+                    {
+                      "name": "cHeadersName",
+                      "type": "System.Windows.Forms.DataGridViewTextBoxColumn",
+                      "slots": {}
+                    },
+                    {
+                      "name": "cHeadersValue",
+                      "type": "System.Windows.Forms.DataGridViewTextBoxColumn",
+                      "slots": {}
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "lblResultErrorMessage",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "txtName",
+                "type": "System.Windows.Forms.TextBox",
+                "slots": {}
+              },
+              {
+                "name": "dgvParameters",
+                "type": "System.Windows.Forms.DataGridView",
+                "slots": {
+                  "Columns": [
+                    {
+                      "name": "cParametersName",
+                      "type": "System.Windows.Forms.DataGridViewTextBoxColumn",
+                      "slots": {}
+                    },
+                    {
+                      "name": "cParametersValue",
+                      "type": "System.Windows.Forms.DataGridViewTextBoxColumn",
+                      "slots": {}
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "pResultDeletionURL",
+                "type": "System.Windows.Forms.Panel",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "rtbResultDeletionURL",
+                      "type": "System.Windows.Forms.RichTextBox",
+                      "slots": {}
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "lblName",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "lblResultDeletionURL",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "lblHeaders",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "pResultThumbnailURL",
+                "type": "System.Windows.Forms.Panel",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "rtbResultThumbnailURL",
+                      "type": "System.Windows.Forms.RichTextBox",
+                      "slots": {}
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "mbDestinationType",
+                "type": "HelpersLib.MenuButton",
+                "slots": {}
+              },
+              {
+                "name": "pResultURL",
+                "type": "System.Windows.Forms.Panel",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "rtbResultURL",
+                      "type": "System.Windows.Forms.RichTextBox",
+                      "slots": {}
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "lblParameters",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "lblResultThumbnailURL",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "lblDestinationType",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "lblResultURL",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "pRequestURL",
+                "type": "System.Windows.Forms.Panel",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "rtbRequestURL",
+                      "type": "System.Windows.Forms.RichTextBox",
+                      "slots": {}
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "cbRequestMethod",
+                "type": "System.Windows.Forms.ComboBox",
+                "slots": {}
+              },
+              {
+                "name": "lblRequestURL",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "cbBody",
+                "type": "System.Windows.Forms.ComboBox",
+                "slots": {}
+              },
+              {
+                "name": "lblBody",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "lblRequestMethod",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "pBodyArguments",
+                "type": "System.Windows.Forms.Panel",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "dgvArguments",
+                      "type": "System.Windows.Forms.DataGridView",
+                      "slots": {
+                        "Columns": [
+                          {
+                            "name": "cArgumentsName",
+                            "type": "System.Windows.Forms.DataGridViewTextBoxColumn",
+                            "slots": {}
+                          },
+                          {
+                            "name": "cArgumentsValue",
+                            "type": "System.Windows.Forms.DataGridViewTextBoxColumn",
+                            "slots": {}
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "lblFileFormName",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "txtFileFormName",
+                      "type": "System.Windows.Forms.TextBox",
+                      "slots": {}
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "pBodyData",
+                "type": "System.Windows.Forms.Panel",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "btnDataBeautify",
+                      "type": "System.Windows.Forms.Button",
+                      "slots": {}
+                    },
+                    {
+                      "name": "btnDataMinify",
+                      "type": "System.Windows.Forms.Button",
+                      "slots": {}
+                    },
+                    {
+                      "name": "pData",
+                      "type": "System.Windows.Forms.Panel",
+                      "slots": {
+                        "Controls": [
+                          {
+                            "name": "rtbData",
+                            "type": "System.Windows.Forms.RichTextBox",
+                            "slots": {}
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "lblUploaders",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "mbHelp",
+          "type": "HelpersLib.MenuButton",
+          "slots": {}
+        },
+        {
+          "name": "btnNew",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnDuplicate",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "eiCustomUploaders",
+          "type": "HelpersLib.ExportImportControl",
+          "slots": {}
+        },
+        {
+          "name": "lbCustomUploaderList",
+          "type": "System.Windows.Forms.ListBox",
+          "slots": {}
+        },
+        {
+          "name": "btnRemove",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnURLSharingServiceTest",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "cbURLSharingService",
+          "type": "System.Windows.Forms.ComboBox",
+          "slots": {}
+        },
+        {
+          "name": "lblURLSharingService",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "cbImageUploader",
+          "type": "System.Windows.Forms.ComboBox",
+          "slots": {}
+        },
+        {
+          "name": "btnTextUploaderTest",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "lblImageUploader",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblURLShortener",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "btnFileUploaderTest",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "cbTextUploader",
+          "type": "System.Windows.Forms.ComboBox",
+          "slots": {}
+        },
+        {
+          "name": "lblFileUploader",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "btnURLShortenerTest",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnImageUploaderTest",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "lblTextUploader",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "cbFileUploader",
+          "type": "System.Windows.Forms.ComboBox",
+          "slots": {}
+        },
+        {
+          "name": "cbURLShortener",
+          "type": "System.Windows.Forms.ComboBox",
+          "slots": {}
+        }
+      ]
+    }
+  },
+  "strings": {
+    "btnTextUploaderTest.Text": "Test",
+    "lblURLShortener.Text": "URL shortener:",
+    "btnURLShortenerTest.Text": "Test",
+    "lblTextUploader.Text": "Text uploader:",
+    "tsmiCustomUploaderGuide.Text": "Custom uploader guide...",
+    "tsmiClearUploaders.Text": "Clear uploaders...",
+    "tsmiExportAll.Text": "Export all...",
+    "tsmiUpdateFolder.Text": "Update folder...",
+    "mbHelp.Text": "?",
+    "btnNew.Text": "New",
+    "btnDuplicate.Text": "Duplicate",
+    "btnRemove.Text": "Remove",
+    "btnImageUploaderTest.Text": "Test",
+    "lblFileUploader.Text": "File uploader:",
+    "btnFileUploaderTest.Text": "Test",
+    "lblImageUploader.Text": "Image uploader:",
+    "cHeadersName.HeaderText": "Name",
+    "cHeadersValue.HeaderText": "Value",
+    "cParametersName.HeaderText": "Name",
+    "cParametersValue.HeaderText": "Value",
+    "lblHeaders.Text": "Headers:",
+    "lblParameters.Text": "URL parameters:",
+    "rtbRequestURL.Text": "",
+    "lblRequestURL.Text": "Request URL:",
+    "lblRequestMethod.Text": "Method:",
+    "lblBody.Text": "Body:",
+    "cArgumentsName.HeaderText": "Name",
+    "cArgumentsValue.HeaderText": "Value",
+    "lblFileFormName.Text": "File form name:",
+    "btnDataBeautify.Text": "Beautify",
+    "btnDataMinify.Text": "Minify",
+    "rtbData.Text": "",
+    "rtbResultErrorMessage.Text": "",
+    "lblResultErrorMessage.Text": "Error message:",
+    "rtbResultDeletionURL.Text": "",
+    "lblResultDeletionURL.Text": "Deletion URL:",
+    "rtbResultThumbnailURL.Text": "",
+    "rtbResultURL.Text": "",
+    "lblResultThumbnailURL.Text": "Thumbnail URL:",
+    "lblResultURL.Text": "URL:",
+    "lblDestinationType.Text": "Destination type:",
+    "lblName.Text": "Name:",
+    "mbDestinationType.ToolTip": "Currently destination type is used when users import custom uploader by double clicking the .sxcu file.",
+    "lblURLSharingService.Text": "URL sharing service:",
+    "btnURLSharingServiceTest.Text": "Test",
+    "lblUploaders.Text": "Uploaders:",
+    "btnTestURLSyntax.Text": "Test...",
+    "$this.Text": "ShareX - Custom uploader settings"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    },
+    {
+      "name": "dataGridViewCellStyle1",
+      "type": "System.Windows.Forms.DataGridViewCellStyle"
+    },
+    {
+      "name": "dataGridViewCellStyle2",
+      "type": "System.Windows.Forms.DataGridViewCellStyle"
+    },
+    {
+      "name": "dataGridViewCellStyle3",
+      "type": "System.Windows.Forms.DataGridViewCellStyle"
+    },
+    {
+      "name": "dataGridViewCellStyle4",
+      "type": "System.Windows.Forms.DataGridViewCellStyle"
+    },
+    {
+      "name": "dataGridViewCellStyle5",
+      "type": "System.Windows.Forms.DataGridViewCellStyle"
+    },
+    {
+      "name": "dataGridViewCellStyle7",
+      "type": "System.Windows.Forms.DataGridViewCellStyle"
+    },
+    {
+      "name": "dataGridViewCellStyle6",
+      "type": "System.Windows.Forms.DataGridViewCellStyle"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 531,
+  "parsed_statements": 531,
+  "unparsed_lines": []
+}

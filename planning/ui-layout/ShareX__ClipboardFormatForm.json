@@ -1,0 +1,360 @@
+{
+  "form_name": "ClipboardFormatForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX/Forms/ClipboardFormatForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX/Forms/ClipboardFormatForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 417,
+    "height": 168
+  },
+  "text": "ShareX - Clipboard content format",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 96,
+    "height": 96
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Dpi"
+  },
+  "tab_order": [
+    "lblFolderPath",
+    "txtDescription",
+    "lblFilter",
+    "txtFormat",
+    "lblExample",
+    "btnOK",
+    "btnCancel"
+  ],
+  "controls": [
+    {
+      "name": "txtFormat",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 104,
+          "y": 36
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 304,
+          "height": 20
+        },
+        "TabIndex": 3,
+        "Name": "txtFormat"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtFormat.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtFormat.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtFormat.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtDescription",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 104,
+          "y": 12
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 304,
+          "height": 20
+        },
+        "TabIndex": 1,
+        "Name": "txtDescription"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtDescription.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtDescription.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtDescription.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblFilter",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 40
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 42,
+          "height": 13
+        },
+        "TabIndex": 2,
+        "Text": "Format:",
+        "Name": "lblFilter"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblFilter.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblFilter.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblFilter.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblFilter.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblFilter.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblFolderPath",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 16
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 63,
+          "height": 13
+        },
+        "TabIndex": 0,
+        "Text": "Description:",
+        "Name": "lblFolderPath"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblFolderPath.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblFolderPath.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblFolderPath.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblFolderPath.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblFolderPath.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblExample",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 104,
+          "y": 63
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 302,
+          "height": 68
+        },
+        "TabIndex": 4,
+        "Name": "lblExample"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "lblExample.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblExample.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblExample.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnCancel",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 312,
+          "y": 136
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 96,
+          "height": 23
+        },
+        "TabIndex": 6,
+        "Text": "Cancel",
+        "Name": "btnCancel",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnCancel.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCancel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCancel.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCancel.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnOK",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 208,
+          "y": 136
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 96,
+          "height": 23
+        },
+        "TabIndex": 5,
+        "Text": "OK",
+        "Name": "btnOK",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnOK.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnOK.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnOK.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnOK.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "ClipboardFormatForm",
+    "type": "Form",
+    "slots": {}
+  },
+  "strings": {
+    "lblFilter.Text": "Format:",
+    "lblFolderPath.Text": "Description:",
+    "btnCancel.Text": "Cancel",
+    "btnOK.Text": "OK",
+    "$this.Text": "ShareX - Clipboard content format"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 44,
+  "parsed_statements": 44,
+  "unparsed_lines": []
+}

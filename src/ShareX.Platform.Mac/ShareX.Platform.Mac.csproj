@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>ShareX.Platform.Mac</RootNamespace>
+    <AssemblyName>ShareX.Platform.Mac</AssemblyName>
+    <!-- Needed for delegate* unmanaged[Cdecl]<...> function pointers used by the
+         sxm_abi.h P/Invoke bindings. -->
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ShareX.Core\ShareX.Core.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,1823 @@
+{
+  "form_name": "HistoryForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX.HistoryLib/Forms/HistoryForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.HistoryLib/Forms/HistoryForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 1184,
+    "height": 661
+  },
+  "text": "ShareX - History",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 96,
+    "height": 96
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Dpi"
+  },
+  "tab_order": [
+    "lvHistory",
+    "tsHistory",
+    "lblFilenameFilter",
+    "txtFilenameFilter",
+    "tscHistory",
+    "lblURLFilter",
+    "txtURLFilter",
+    "pbThumbnail",
+    "gbAdvancedSearch",
+    "cbDateFilter",
+    "scMain",
+    "lblFilterFrom",
+    "dtpFilterFrom",
+    "lblFilterTo",
+    "dtpFilterTo",
+    "cbTypeFilter",
+    "cbTypeFilterSelection",
+    "cbHostFilter",
+    "cbHostFilterSelection",
+    "btnAdvancedSearchReset",
+    "btnAdvancedSearchClose"
+  ],
+  "controls": [
+    {
+      "name": "scMain",
+      "type": "ShareX.HelpersLib.SplitContainerCustomSplitter",
+      "parent": "HistoryForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Dock": "Fill",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Panel1MinSize": 100,
+        "Panel2MinSize": 100,
+        "Size": {
+          "kind": "Size",
+          "width": 1184,
+          "height": 661
+        },
+        "SplitterDistance": 550,
+        "SplitterWidth": 7,
+        "TabIndex": 4,
+        "FixedPanel": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.FixedPanel.Panel1"
+        },
+        "Name": "scMain",
+        "SplitterColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.White"
+        },
+        "SplitterLineColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.FromArgb(189, 189, 189)"
+        }
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "scMain.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "scMain.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Panel1MinSize",
+          "resource_key": "scMain.Panel1MinSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Panel2MinSize",
+          "resource_key": "scMain.Panel2MinSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "scMain.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "SplitterDistance",
+          "resource_key": "scMain.SplitterDistance",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "SplitterWidth",
+          "resource_key": "scMain.SplitterWidth",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "scMain.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnAdvancedSearchClose",
+      "type": "System.Windows.Forms.Button",
+      "parent": "gbAdvancedSearch",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 272,
+          "y": 176
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 24
+        },
+        "TabIndex": 14,
+        "Text": "Close",
+        "Name": "btnAdvancedSearchClose",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnAdvancedSearchClose.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnAdvancedSearchClose.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnAdvancedSearchClose.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnAdvancedSearchClose.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnAdvancedSearchReset",
+      "type": "System.Windows.Forms.Button",
+      "parent": "gbAdvancedSearch",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 144,
+          "y": 176
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 24
+        },
+        "TabIndex": 13,
+        "Text": "Reset",
+        "Name": "btnAdvancedSearchReset",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnAdvancedSearchReset.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnAdvancedSearchReset.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnAdvancedSearchReset.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnAdvancedSearchReset.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblURLFilter",
+      "type": "System.Windows.Forms.Label",
+      "parent": "gbAdvancedSearch",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 48
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 31,
+          "height": 15
+        },
+        "TabIndex": 2,
+        "Text": "URL:",
+        "Name": "lblURLFilter"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblURLFilter.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblURLFilter.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblURLFilter.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblURLFilter.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblURLFilter.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblURLFilter.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtURLFilter",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "gbAdvancedSearch",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 96,
+          "y": 44
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 296,
+          "height": 23
+        },
+        "TabIndex": 3,
+        "Name": "txtURLFilter"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtURLFilter.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtURLFilter.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtURLFilter.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblFilenameFilter",
+      "type": "System.Windows.Forms.Label",
+      "parent": "gbAdvancedSearch",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 24
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 58,
+          "height": 15
+        },
+        "TabIndex": 0,
+        "Text": "Filename:",
+        "Name": "lblFilenameFilter"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblFilenameFilter.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblFilenameFilter.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblFilenameFilter.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblFilenameFilter.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblFilenameFilter.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblFilenameFilter.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbHostFilterSelection",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "gbAdvancedSearch",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 152,
+          "y": 142
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 240,
+          "height": 23
+        },
+        "TabIndex": 12,
+        "Name": "cbHostFilterSelection"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbHostFilterSelection.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbHostFilterSelection.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbHostFilterSelection.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbTypeFilterSelection",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "gbAdvancedSearch",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 152,
+          "y": 118
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 240,
+          "height": 23
+        },
+        "TabIndex": 10,
+        "Name": "cbTypeFilterSelection"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbTypeFilterSelection.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbTypeFilterSelection.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbTypeFilterSelection.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbHostFilter",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "gbAdvancedSearch",
+      "parent_slot": "Controls",
+      "child_index": 7,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 144
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 54,
+          "height": 19
+        },
+        "TabIndex": 11,
+        "Text": "Host:",
+        "Name": "cbHostFilter",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbHostFilter.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "cbHostFilter.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbHostFilter.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbHostFilter.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbHostFilter.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbHostFilter.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbTypeFilter",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "gbAdvancedSearch",
+      "parent_slot": "Controls",
+      "child_index": 8,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 120
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 54,
+          "height": 19
+        },
+        "TabIndex": 9,
+        "Text": "Type:",
+        "Name": "cbTypeFilter",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbTypeFilter.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "cbTypeFilter.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbTypeFilter.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbTypeFilter.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbTypeFilter.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbTypeFilter.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "dtpFilterFrom",
+      "type": "System.Windows.Forms.DateTimePicker",
+      "parent": "gbAdvancedSearch",
+      "parent_slot": "Controls",
+      "child_index": 9,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 152,
+          "y": 70
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 240,
+          "height": 23
+        },
+        "TabIndex": 6,
+        "Name": "dtpFilterFrom"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "dtpFilterFrom.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "dtpFilterFrom.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "dtpFilterFrom.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblFilterFrom",
+      "type": "System.Windows.Forms.Label",
+      "parent": "gbAdvancedSearch",
+      "parent_slot": "Controls",
+      "child_index": 10,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 93,
+          "y": 74
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 38,
+          "height": 15
+        },
+        "TabIndex": 5,
+        "Text": "From:",
+        "Name": "lblFilterFrom"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblFilterFrom.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblFilterFrom.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblFilterFrom.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblFilterFrom.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblFilterFrom.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblFilterFrom.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblFilterTo",
+      "type": "System.Windows.Forms.Label",
+      "parent": "gbAdvancedSearch",
+      "parent_slot": "Controls",
+      "child_index": 11,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 93,
+          "y": 98
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 23,
+          "height": 15
+        },
+        "TabIndex": 7,
+        "Text": "To:",
+        "Name": "lblFilterTo"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblFilterTo.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblFilterTo.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblFilterTo.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblFilterTo.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblFilterTo.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblFilterTo.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbDateFilter",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "gbAdvancedSearch",
+      "parent_slot": "Controls",
+      "child_index": 12,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 72
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 53,
+          "height": 19
+        },
+        "TabIndex": 4,
+        "Text": "Date:",
+        "Name": "cbDateFilter",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbDateFilter.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "cbDateFilter.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbDateFilter.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbDateFilter.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbDateFilter.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbDateFilter.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "dtpFilterTo",
+      "type": "System.Windows.Forms.DateTimePicker",
+      "parent": "gbAdvancedSearch",
+      "parent_slot": "Controls",
+      "child_index": 13,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 152,
+          "y": 94
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 240,
+          "height": 23
+        },
+        "TabIndex": 8,
+        "Name": "dtpFilterTo"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "dtpFilterTo.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "dtpFilterTo.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "dtpFilterTo.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtFilenameFilter",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "gbAdvancedSearch",
+      "parent_slot": "Controls",
+      "child_index": 14,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 96,
+          "y": 20
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 296,
+          "height": 23
+        },
+        "TabIndex": 1,
+        "Name": "txtFilenameFilter"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtFilenameFilter.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtFilenameFilter.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtFilenameFilter.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "chIcon",
+      "type": "System.Windows.Forms.ColumnHeader",
+      "parent": "lvHistory",
+      "parent_slot": "Columns",
+      "child_index": 0,
+      "properties": {
+        "Text": "",
+        "Width": 24
+      },
+      "resources": [
+        {
+          "property": "Text",
+          "resource_key": "chIcon.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Width",
+          "resource_key": "chIcon.Width",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "chDateTime",
+      "type": "System.Windows.Forms.ColumnHeader",
+      "parent": "lvHistory",
+      "parent_slot": "Columns",
+      "child_index": 1,
+      "properties": {
+        "Text": "Date",
+        "Width": 115
+      },
+      "resources": [
+        {
+          "property": "Text",
+          "resource_key": "chDateTime.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Width",
+          "resource_key": "chDateTime.Width",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "chFilename",
+      "type": "System.Windows.Forms.ColumnHeader",
+      "parent": "lvHistory",
+      "parent_slot": "Columns",
+      "child_index": 2,
+      "properties": {
+        "Text": "Filename",
+        "Width": 170
+      },
+      "resources": [
+        {
+          "property": "Text",
+          "resource_key": "chFilename.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Width",
+          "resource_key": "chFilename.Width",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "chURL",
+      "type": "System.Windows.Forms.ColumnHeader",
+      "parent": "lvHistory",
+      "parent_slot": "Columns",
+      "child_index": 3,
+      "properties": {
+        "Text": "URL",
+        "Width": 230
+      },
+      "resources": [
+        {
+          "property": "Text",
+          "resource_key": "chURL.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Width",
+          "resource_key": "chURL.Width",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tscHistory",
+      "type": "System.Windows.Forms.ToolStripContainer",
+      "parent": "scMain",
+      "parent_slot": "Panel1.Controls",
+      "child_index": 0,
+      "properties": {
+        "ContentPanel.Size": {
+          "kind": "Size",
+          "width": 550,
+          "height": 636
+        },
+        "Dock": "Fill",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 550,
+          "height": 661
+        },
+        "TabIndex": 2,
+        "Name": "tscHistory"
+      },
+      "resources": [
+        {
+          "property": "ContentPanel.Size",
+          "resource_key": "tscHistory.ContentPanel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ContentPanel.Size",
+          "resource_key": "tscHistory.ContentPanel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Dock",
+          "resource_key": "tscHistory.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "tscHistory.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tscHistory.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tscHistory.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "gbAdvancedSearch",
+      "type": "System.Windows.Forms.GroupBox",
+      "parent": "scMain",
+      "parent_slot": "Panel2.Controls",
+      "child_index": 0,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 409,
+          "height": 213
+        },
+        "TabIndex": 4,
+        "Text": "Advanced search",
+        "Visible": false,
+        "Name": "gbAdvancedSearch",
+        "TabStop": false
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "gbAdvancedSearch.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "gbAdvancedSearch.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "gbAdvancedSearch.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "gbAdvancedSearch.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Visible",
+          "resource_key": "gbAdvancedSearch.Visible",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pbThumbnail",
+      "type": "HelpersLib.MyPictureBox",
+      "parent": "scMain",
+      "parent_slot": "Panel2.Controls",
+      "child_index": 1,
+      "properties": {
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        },
+        "Cursor": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.Cursors.Hand"
+        },
+        "Dock": "Fill",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 3,
+          "right": 4,
+          "bottom": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 627,
+          "height": 661
+        },
+        "TabIndex": 3,
+        "DrawCheckeredBackground": true,
+        "Name": "pbThumbnail",
+        "PictureBoxBackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Control"
+        },
+        "ShowImageSizeLabel": true
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "pbThumbnail.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "pbThumbnail.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "pbThumbnail.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pbThumbnail.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pbThumbnail.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tslSearch",
+      "type": "System.Windows.Forms.ToolStripLabel",
+      "parent": "tsHistory",
+      "parent_slot": "Items",
+      "child_index": 0,
+      "properties": {
+        "Name": "tslSearch",
+        "Size": {
+          "kind": "Size",
+          "width": 45,
+          "height": 22
+        },
+        "Text": "Search:"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tslSearch.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tslSearch.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tstbSearch",
+      "type": "System.Windows.Forms.ToolStripTextBox",
+      "parent": "tsHistory",
+      "parent_slot": "Items",
+      "child_index": 1,
+      "properties": {
+        "AutoCompleteMode": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.AutoCompleteMode.Suggest"
+        },
+        "AutoCompleteSource": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.AutoCompleteSource.CustomSource"
+        },
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
+        },
+        "Name": "tstbSearch",
+        "Size": {
+          "kind": "Size",
+          "width": 300,
+          "height": 25
+        }
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tstbSearch.Size",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsbSearch",
+      "type": "System.Windows.Forms.ToolStripButton",
+      "parent": "tsHistory",
+      "parent_slot": "Items",
+      "child_index": 2,
+      "properties": {
+        "DisplayStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ToolStripItemDisplayStyle.Image"
+        },
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.magnifier"
+        },
+        "ImageTransparentColor": "Magenta",
+        "Size": {
+          "kind": "Size",
+          "width": 23,
+          "height": 22
+        },
+        "Text": "Search",
+        "Name": "tsbSearch"
+      },
+      "resources": [
+        {
+          "property": "ImageTransparentColor",
+          "resource_key": "tsbSearch.ImageTransparentColor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tsbSearch.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsbSearch.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsbAdvancedSearch",
+      "type": "System.Windows.Forms.ToolStripButton",
+      "parent": "tsHistory",
+      "parent_slot": "Items",
+      "child_index": 3,
+      "properties": {
+        "DisplayStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ToolStripItemDisplayStyle.Image"
+        },
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.magnifier__plus"
+        },
+        "ImageTransparentColor": "Magenta",
+        "Size": {
+          "kind": "Size",
+          "width": 23,
+          "height": 22
+        },
+        "Text": "Advanced search...",
+        "Name": "tsbAdvancedSearch"
+      },
+      "resources": [
+        {
+          "property": "ImageTransparentColor",
+          "resource_key": "tsbAdvancedSearch.ImageTransparentColor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tsbAdvancedSearch.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsbAdvancedSearch.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tss1",
+      "type": "System.Windows.Forms.ToolStripSeparator",
+      "parent": "tsHistory",
+      "parent_slot": "Items",
+      "child_index": 4,
+      "properties": {
+        "Name": "tss1",
+        "Size": {
+          "kind": "Size",
+          "width": 6,
+          "height": 25
+        }
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tss1.Size",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsbFavorites",
+      "type": "System.Windows.Forms.ToolStripButton",
+      "parent": "tsHistory",
+      "parent_slot": "Items",
+      "child_index": 5,
+      "properties": {
+        "CheckOnClick": true,
+        "DisplayStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ToolStripItemDisplayStyle.Image"
+        },
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.star"
+        },
+        "ImageTransparentColor": "Magenta",
+        "Size": {
+          "kind": "Size",
+          "width": 23,
+          "height": 22
+        },
+        "Text": "Favorites",
+        "Name": "tsbFavorites"
+      },
+      "resources": [
+        {
+          "property": "ImageTransparentColor",
+          "resource_key": "tsbFavorites.ImageTransparentColor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tsbFavorites.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsbFavorites.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsbShowStats",
+      "type": "System.Windows.Forms.ToolStripButton",
+      "parent": "tsHistory",
+      "parent_slot": "Items",
+      "child_index": 6,
+      "properties": {
+        "DisplayStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ToolStripItemDisplayStyle.Image"
+        },
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.chart"
+        },
+        "ImageTransparentColor": "Magenta",
+        "Size": {
+          "kind": "Size",
+          "width": 23,
+          "height": 22
+        },
+        "Text": "Show stats...",
+        "Name": "tsbShowStats"
+      },
+      "resources": [
+        {
+          "property": "ImageTransparentColor",
+          "resource_key": "tsbShowStats.ImageTransparentColor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tsbShowStats.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsbShowStats.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsbImportFolder",
+      "type": "System.Windows.Forms.ToolStripButton",
+      "parent": "tsHistory",
+      "parent_slot": "Items",
+      "child_index": 7,
+      "properties": {
+        "DisplayStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ToolStripItemDisplayStyle.Image"
+        },
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.folder_search_result"
+        },
+        "ImageTransparentColor": "Magenta",
+        "Size": {
+          "kind": "Size",
+          "width": 23,
+          "height": 22
+        },
+        "Text": "Import folder...",
+        "Name": "tsbImportFolder"
+      },
+      "resources": [
+        {
+          "property": "ImageTransparentColor",
+          "resource_key": "tsbImportFolder.ImageTransparentColor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tsbImportFolder.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsbImportFolder.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tss2",
+      "type": "System.Windows.Forms.ToolStripSeparator",
+      "parent": "tsHistory",
+      "parent_slot": "Items",
+      "child_index": 8,
+      "properties": {
+        "Name": "tss2",
+        "Size": {
+          "kind": "Size",
+          "width": 6,
+          "height": 25
+        }
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tss2.Size",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsbSettings",
+      "type": "System.Windows.Forms.ToolStripButton",
+      "parent": "tsHistory",
+      "parent_slot": "Items",
+      "child_index": 9,
+      "properties": {
+        "DisplayStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ToolStripItemDisplayStyle.Image"
+        },
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.gear"
+        },
+        "ImageTransparentColor": "Magenta",
+        "Size": {
+          "kind": "Size",
+          "width": 23,
+          "height": 22
+        },
+        "Text": "Settings...",
+        "Name": "tsbSettings"
+      },
+      "resources": [
+        {
+          "property": "ImageTransparentColor",
+          "resource_key": "tsbSettings.ImageTransparentColor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tsbSettings.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsbSettings.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lvHistory",
+      "type": "ShareX.HelpersLib.MyListView",
+      "parent": "tscHistory",
+      "parent_slot": "ContentPanel.Controls",
+      "child_index": 0,
+      "properties": {
+        "AllowSelectAll": false,
+        "AutoFillColumn": true,
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.None"
+        },
+        "Dock": "Fill",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 550,
+          "height": 636
+        },
+        "TabIndex": 0,
+        "FullRowSelect": true,
+        "HeaderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ColumnHeaderStyle.Nonclickable"
+        },
+        "Name": "lvHistory",
+        "UseCompatibleStateImageBehavior": false,
+        "View": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.View.Details"
+        },
+        "VirtualMode": true
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "lvHistory.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lvHistory.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lvHistory.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lvHistory.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsHistory",
+      "type": "System.Windows.Forms.ToolStrip",
+      "parent": "tscHistory",
+      "parent_slot": "TopToolStripPanel.Controls",
+      "child_index": 0,
+      "properties": {
+        "Dock": "None",
+        "Location": {
+          "kind": "Point",
+          "x": 3,
+          "y": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 500,
+          "height": 25
+        },
+        "TabIndex": 0,
+        "GripStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ToolStripGripStyle.Hidden"
+        },
+        "Name": "tsHistory"
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "tsHistory.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "tsHistory.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tsHistory.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tsHistory.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "HistoryForm",
+    "type": "Form",
+    "slots": {
+      "Controls": [
+        {
+          "name": "scMain",
+          "type": "ShareX.HelpersLib.SplitContainerCustomSplitter",
+          "slots": {
+            "Panel1.Controls": [
+              {
+                "name": "tscHistory",
+                "type": "System.Windows.Forms.ToolStripContainer",
+                "slots": {
+                  "ContentPanel.Controls": [
+                    {
+                      "name": "lvHistory",
+                      "type": "ShareX.HelpersLib.MyListView",
+                      "slots": {
+                        "Columns": [
+                          {
+                            "name": "chIcon",
+                            "type": "System.Windows.Forms.ColumnHeader",
+                            "slots": {}
+                          },
+                          {
+                            "name": "chDateTime",
+                            "type": "System.Windows.Forms.ColumnHeader",
+                            "slots": {}
+                          },
+                          {
+                            "name": "chFilename",
+                            "type": "System.Windows.Forms.ColumnHeader",
+                            "slots": {}
+                          },
+                          {
+                            "name": "chURL",
+                            "type": "System.Windows.Forms.ColumnHeader",
+                            "slots": {}
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "TopToolStripPanel.Controls": [
+                    {
+                      "name": "tsHistory",
+                      "type": "System.Windows.Forms.ToolStrip",
+                      "slots": {
+                        "Items": [
+                          {
+                            "name": "tslSearch",
+                            "type": "System.Windows.Forms.ToolStripLabel",
+                            "slots": {}
+                          },
+                          {
+                            "name": "tstbSearch",
+                            "type": "System.Windows.Forms.ToolStripTextBox",
+                            "slots": {}
+                          },
+                          {
+                            "name": "tsbSearch",
+                            "type": "System.Windows.Forms.ToolStripButton",
+                            "slots": {}
+                          },
+                          {
+                            "name": "tsbAdvancedSearch",
+                            "type": "System.Windows.Forms.ToolStripButton",
+                            "slots": {}
+                          },
+                          {
+                            "name": "tss1",
+                            "type": "System.Windows.Forms.ToolStripSeparator",
+                            "slots": {}
+                          },
+                          {
+                            "name": "tsbFavorites",
+                            "type": "System.Windows.Forms.ToolStripButton",
+                            "slots": {}
+                          },
+                          {
+                            "name": "tsbShowStats",
+                            "type": "System.Windows.Forms.ToolStripButton",
+                            "slots": {}
+                          },
+                          {
+                            "name": "tsbImportFolder",
+                            "type": "System.Windows.Forms.ToolStripButton",
+                            "slots": {}
+                          },
+                          {
+                            "name": "tss2",
+                            "type": "System.Windows.Forms.ToolStripSeparator",
+                            "slots": {}
+                          },
+                          {
+                            "name": "tsbSettings",
+                            "type": "System.Windows.Forms.ToolStripButton",
+                            "slots": {}
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "Panel2.Controls": [
+              {
+                "name": "gbAdvancedSearch",
+                "type": "System.Windows.Forms.GroupBox",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "btnAdvancedSearchClose",
+                      "type": "System.Windows.Forms.Button",
+                      "slots": {}
+                    },
+                    {
+                      "name": "btnAdvancedSearchReset",
+                      "type": "System.Windows.Forms.Button",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblURLFilter",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "txtURLFilter",
+                      "type": "System.Windows.Forms.TextBox",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblFilenameFilter",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "cbHostFilterSelection",
+                      "type": "System.Windows.Forms.ComboBox",
+                      "slots": {}
+                    },
+                    {
+                      "name": "cbTypeFilterSelection",
+                      "type": "System.Windows.Forms.ComboBox",
+                      "slots": {}
+                    },
+                    {
+                      "name": "cbHostFilter",
+                      "type": "System.Windows.Forms.CheckBox",
+                      "slots": {}
+                    },
+                    {
+                      "name": "cbTypeFilter",
+                      "type": "System.Windows.Forms.CheckBox",
+                      "slots": {}
+                    },
+                    {
+                      "name": "dtpFilterFrom",
+                      "type": "System.Windows.Forms.DateTimePicker",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblFilterFrom",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblFilterTo",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "cbDateFilter",
+                      "type": "System.Windows.Forms.CheckBox",
+                      "slots": {}
+                    },
+                    {
+                      "name": "dtpFilterTo",
+                      "type": "System.Windows.Forms.DateTimePicker",
+                      "slots": {}
+                    },
+                    {
+                      "name": "txtFilenameFilter",
+                      "type": "System.Windows.Forms.TextBox",
+                      "slots": {}
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "pbThumbnail",
+                "type": "HelpersLib.MyPictureBox",
+                "slots": {}
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "strings": {
+    "chIcon.Text": "",
+    "chDateTime.Text": "Date",
+    "chFilename.Text": "Filename",
+    "chURL.Text": "URL",
+    "tslSearch.Text": "Search:",
+    "tsbSearch.Text": "Search",
+    "tsbAdvancedSearch.Text": "Advanced search...",
+    "tsbFavorites.Text": "Favorites",
+    "tsbShowStats.Text": "Show stats...",
+    "tsbImportFolder.Text": "Import folder...",
+    "tsbSettings.Text": "Settings...",
+    "btnAdvancedSearchClose.Text": "Close",
+    "btnAdvancedSearchReset.Text": "Reset",
+    "lblURLFilter.Text": "URL:",
+    "lblFilenameFilter.Text": "Filename:",
+    "cbHostFilter.Text": "Host:",
+    "cbTypeFilter.Text": "Type:",
+    "lblFilterFrom.Text": "From:",
+    "lblFilterTo.Text": "To:",
+    "cbDateFilter.Text": "Date:",
+    "gbAdvancedSearch.Text": "Advanced search",
+    "$this.Text": "ShareX - History"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 225,
+  "parsed_statements": 225,
+  "unparsed_lines": []
+}

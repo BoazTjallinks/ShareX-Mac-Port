@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>ShareX.Core</RootNamespace>
+    <AssemblyName>ShareX.Core</AssemblyName>
+    <!-- Portable domain layer: no platform APIs, no RuntimeIdentifier. -->
+  </PropertyGroup>
+
+</Project>

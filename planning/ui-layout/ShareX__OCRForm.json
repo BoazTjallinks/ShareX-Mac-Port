@@ -1,0 +1,832 @@
+{
+  "form_name": "OCRForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX/Tools/OCR/OCRForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX/Tools/OCR/OCRForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 880,
+    "height": 437
+  },
+  "text": "ShareX - Optical character recognition",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 6,
+    "height": 13
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Font"
+  },
+  "tab_order": [
+    "btnSelectRegion",
+    "lblLanguage",
+    "cbLanguages",
+    "btnOpenOCRHelp",
+    "lblScaleFactor",
+    "nudScaleFactor",
+    "cbSingleLine",
+    "lblService",
+    "cbServices",
+    "cbEditServices",
+    "btnOpenServiceLink",
+    "lblResult",
+    "txtResult",
+    "btnCopyAll"
+  ],
+  "controls": [
+    {
+      "name": "lblLanguage",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 56
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 71,
+          "height": 16
+        },
+        "TabIndex": 1,
+        "Text": "Language:",
+        "Name": "lblLanguage"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblLanguage.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "lblLanguage.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblLanguage.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblLanguage.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblLanguage.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblLanguage.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbLanguages",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 80
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 272,
+          "height": 24
+        },
+        "TabIndex": 2,
+        "FormattingEnabled": true,
+        "Name": "cbLanguages"
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "cbLanguages.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbLanguages.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbLanguages.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbLanguages.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblResult",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 341,
+          "y": 16
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 48,
+          "height": 16
+        },
+        "TabIndex": 11,
+        "Text": "Result:",
+        "Name": "lblResult"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblResult.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "lblResult.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblResult.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblResult.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblResult.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblResult.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtResult",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Top, Bottom, Left, Right",
+        "Font": "Microsoft Sans Serif, 12pt",
+        "Location": {
+          "kind": "Point",
+          "x": 344,
+          "y": 40
+        },
+        "Multiline": true,
+        "ScrollBars": "Both",
+        "Size": {
+          "kind": "Size",
+          "width": 520,
+          "height": 344
+        },
+        "TabIndex": 12,
+        "Name": "txtResult"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "txtResult.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "txtResult.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "txtResult.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Multiline",
+          "resource_key": "txtResult.Multiline",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ScrollBars",
+          "resource_key": "txtResult.ScrollBars",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtResult.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtResult.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblScaleFactor",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 112
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 81,
+          "height": 16
+        },
+        "TabIndex": 4,
+        "Text": "Scale factor:",
+        "Name": "lblScaleFactor"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblScaleFactor.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "lblScaleFactor.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblScaleFactor.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblScaleFactor.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblScaleFactor.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblScaleFactor.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudScaleFactor",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "DecimalPlaces": 1,
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 136
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 80,
+          "height": 22
+        },
+        "TabIndex": 5,
+        "TextAlign": "Center",
+        "Increment": 0.5,
+        "Maximum": 4,
+        "Minimum": 1,
+        "Name": "nudScaleFactor",
+        "Value": 1
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "nudScaleFactor.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "nudScaleFactor.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudScaleFactor.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudScaleFactor.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudScaleFactor.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbServices",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 216
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 272,
+          "height": 24
+        },
+        "TabIndex": 8,
+        "FormattingEnabled": true,
+        "Name": "cbServices"
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "cbServices.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbServices.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbServices.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbServices.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnOpenServiceLink",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Enabled": false,
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 248
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 272,
+          "height": 32
+        },
+        "TabIndex": 10,
+        "Text": "Open service link...",
+        "Name": "btnOpenServiceLink",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Enabled",
+          "resource_key": "btnOpenServiceLink.Enabled",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "btnOpenServiceLink.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnOpenServiceLink.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnOpenServiceLink.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnOpenServiceLink.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnOpenServiceLink.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbEditServices",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.Properties.Resources.gear"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 296,
+          "y": 214
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 28,
+          "height": 28
+        },
+        "TabIndex": 9,
+        "Name": "cbEditServices",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbEditServices.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbEditServices.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbEditServices.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnOpenOCRHelp",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 296,
+          "y": 78
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 28,
+          "height": 28
+        },
+        "TabIndex": 3,
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.Properties.Resources.question"
+        },
+        "Name": "btnOpenOCRHelp",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "btnOpenOCRHelp.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnOpenOCRHelp.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnOpenOCRHelp.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnOpenOCRHelp.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblService",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 192
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 56,
+          "height": 16
+        },
+        "TabIndex": 7,
+        "Text": "Service:",
+        "Name": "lblService"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblService.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "lblService.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblService.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblService.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblService.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblService.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnSelectRegion",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 16
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 272,
+          "height": 32
+        },
+        "TabIndex": 0,
+        "Text": "Select region for OCR...",
+        "Name": "btnSelectRegion",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "btnSelectRegion.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "btnSelectRegion.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnSelectRegion.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnSelectRegion.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnSelectRegion.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnSelectRegion.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbSingleLine",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 168
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 88,
+          "height": 20
+        },
+        "TabIndex": 6,
+        "Text": "Single line",
+        "Name": "cbSingleLine",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbSingleLine.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "cbSingleLine.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbSingleLine.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbSingleLine.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbSingleLine.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbSingleLine.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnCopyAll",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "Enabled": false,
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 344,
+          "y": 392
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 136,
+          "height": 32
+        },
+        "TabIndex": 13,
+        "Text": "Copy all",
+        "Name": "btnCopyAll",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnCopyAll.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Enabled",
+          "resource_key": "btnCopyAll.Enabled",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "btnCopyAll.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnCopyAll.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCopyAll.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCopyAll.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCopyAll.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "OCRForm",
+    "type": "Form",
+    "slots": {}
+  },
+  "strings": {
+    "lblLanguage.Text": "Language:",
+    "lblResult.Text": "Result:",
+    "lblScaleFactor.Text": "Scale factor:",
+    "btnOpenServiceLink.Text": "Open service link...",
+    "lblService.Text": "Service:",
+    "btnSelectRegion.Text": "Select region for OCR...",
+    "cbSingleLine.Text": "Single line",
+    "btnCopyAll.Text": "Copy all",
+    "$this.Text": "ShareX - Optical character recognition"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 94,
+  "parsed_statements": 94,
+  "unparsed_lines": []
+}

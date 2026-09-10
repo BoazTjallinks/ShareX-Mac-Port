@@ -1,0 +1,555 @@
+{
+  "form_name": "TaskThumbnailPanel",
+  "base_class": "UserControl",
+  "designer_file": "reference/ShareX/ShareX/Controls/TaskThumbnailPanel.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX/Controls/TaskThumbnailPanel.resx",
+  "client_size": null,
+  "text": null,
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 6,
+    "height": 13
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Font"
+  },
+  "tab_order": [
+    "pThumbnail",
+    "lblTitle",
+    "pbProgress",
+    "pbThumbnail",
+    "lblError",
+    "lblCombineHorizontal",
+    "lblCombineVertical"
+  ],
+  "controls": [
+    {
+      "name": "components",
+      "type": "System.ComponentModel.Container",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "ttMain",
+      "type": "System.Windows.Forms.ToolTip",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoPopDelay": 5000,
+        "InitialDelay": 200,
+        "OwnerDraw": true,
+        "ReshowDelay": 100
+      },
+      "resources": []
+    },
+    {
+      "name": "lblTitle",
+      "type": "HelpersLib.BlackStyleLabel",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoEllipsis": true,
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.Transparent"
+        },
+        "Font": "Segoe UI, 9pt, style=Bold",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 256,
+          "height": 22
+        },
+        "TabIndex": 1,
+        "Text": "",
+        "ForeColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.White"
+        },
+        "Name": "lblTitle",
+        "TextAlign": {
+          "kind": "expr",
+          "raw": "System.Drawing.ContentAlignment.MiddleCenter"
+        }
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "lblTitle.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblTitle.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblTitle.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblTitle.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblTitle.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pThumbnail",
+      "type": "ShareX.TaskRoundedCornerPanel",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AllowDrop": true,
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.Transparent"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 24
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 4,
+          "right": 4,
+          "bottom": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 256,
+          "height": 256
+        },
+        "TabIndex": 0,
+        "Name": "pThumbnail",
+        "PanelColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))))"
+        },
+        "Radius": 5,
+        "Selected": false,
+        "StatusLocation": {
+          "kind": "expr",
+          "raw": "ShareX.ThumbnailTitleLocation.Top"
+        }
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "pThumbnail.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "pThumbnail.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pThumbnail.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pThumbnail.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblCombineVertical",
+      "type": "HelpersLib.BlackStyleLabel",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.Transparent"
+        },
+        "BorderColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.Empty"
+        },
+        "DrawBorder": true,
+        "Font": "Segoe UI, 14.25pt",
+        "Location": {
+          "kind": "Point",
+          "x": 40,
+          "y": 128
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 184,
+          "height": 80
+        },
+        "TabIndex": 6,
+        "Text": "Combine images\n(Vertical)",
+        "Visible": false,
+        "ForeColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.White"
+        },
+        "Name": "lblCombineVertical",
+        "TextAlign": {
+          "kind": "expr",
+          "raw": "System.Drawing.ContentAlignment.MiddleCenter"
+        }
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "lblCombineVertical.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblCombineVertical.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblCombineVertical.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblCombineVertical.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblCombineVertical.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Visible",
+          "resource_key": "lblCombineVertical.Visible",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblError",
+      "type": "HelpersLib.BlackStyleLabel",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Top",
+        "Font": "Segoe UI, 11.25pt, style=Bold",
+        "Location": {
+          "kind": "Point",
+          "x": 96,
+          "y": 7
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 75,
+          "height": 26
+        },
+        "TabIndex": 4,
+        "Text": "Error",
+        "Visible": false,
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))))"
+        },
+        "Cursor": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.Cursors.Hand"
+        },
+        "ForeColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.White"
+        },
+        "Name": "lblError",
+        "TextAlign": {
+          "kind": "expr",
+          "raw": "System.Drawing.ContentAlignment.MiddleCenter"
+        }
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "lblError.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "lblError.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblError.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblError.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblError.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblError.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Visible",
+          "resource_key": "lblError.Visible",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblCombineHorizontal",
+      "type": "HelpersLib.BlackStyleLabel",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.Transparent"
+        },
+        "BorderColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.Empty"
+        },
+        "DrawBorder": true,
+        "Font": "Segoe UI, 14.25pt",
+        "Location": {
+          "kind": "Point",
+          "x": 40,
+          "y": 40
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 184,
+          "height": 80
+        },
+        "TabIndex": 5,
+        "Text": "Combine images\n(Horizontal)",
+        "Visible": false,
+        "ForeColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.White"
+        },
+        "Name": "lblCombineHorizontal",
+        "TextAlign": {
+          "kind": "expr",
+          "raw": "System.Drawing.ContentAlignment.MiddleCenter"
+        }
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "lblCombineHorizontal.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblCombineHorizontal.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblCombineHorizontal.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblCombineHorizontal.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblCombineHorizontal.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Visible",
+          "resource_key": "lblCombineHorizontal.Visible",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pbProgress",
+      "type": "HelpersLib.BlackStyleProgressBar",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Bottom, Left, Right",
+        "Font": "Segoe UI, 9pt, style=Bold",
+        "Location": {
+          "kind": "Point",
+          "x": 7,
+          "y": 217
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 242,
+          "height": 32
+        },
+        "TabIndex": 1,
+        "Text": "",
+        "Visible": false,
+        "ForeColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.White"
+        },
+        "Name": "pbProgress",
+        "ShowPercentageText": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "pbProgress.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "pbProgress.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "pbProgress.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pbProgress.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pbProgress.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "pbProgress.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Visible",
+          "resource_key": "pbProgress.Visible",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pbThumbnail",
+      "type": "System.Windows.Forms.PictureBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.Transparent"
+        },
+        "Dock": "Fill",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 4,
+          "y": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 248,
+          "height": 248
+        },
+        "SizeMode": "CenterImage",
+        "TabIndex": 2,
+        "Name": "pbThumbnail",
+        "TabStop": false
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "pbThumbnail.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "pbThumbnail.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "pbThumbnail.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pbThumbnail.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "SizeMode",
+          "resource_key": "pbThumbnail.SizeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pbThumbnail.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "TaskThumbnailPanel",
+    "type": "UserControl",
+    "slots": {}
+  },
+  "strings": {
+    "lblTitle.Text": "",
+    "lblCombineVertical.Text": "Combine images\n(Vertical)",
+    "lblError.Text": "Error",
+    "lblCombineHorizontal.Text": "Combine images\n(Horizontal)",
+    "pbProgress.Text": ""
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 84,
+  "parsed_statements": 84,
+  "unparsed_lines": []
+}

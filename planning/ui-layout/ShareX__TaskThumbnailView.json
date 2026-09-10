@@ -1,0 +1,140 @@
+{
+  "form_name": "TaskThumbnailView",
+  "base_class": "UserControl",
+  "designer_file": "reference/ShareX/ShareX/Controls/TaskThumbnailView.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX/Controls/TaskThumbnailView.resx",
+  "client_size": null,
+  "text": null,
+  "menu_strip": null,
+  "auto_scale_dimensions": null,
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Font"
+  },
+  "tab_order": [
+    "flpMain",
+    "pMain",
+    "sbMain"
+  ],
+  "controls": [
+    {
+      "name": "flpMain",
+      "type": "System.Windows.Forms.FlowLayoutPanel",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Name": "flpMain",
+        "Padding": {
+          "kind": "Padding",
+          "left": 5,
+          "top": 3,
+          "right": 5,
+          "bottom": 5
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 128,
+          "height": 128
+        },
+        "TabIndex": 0
+      },
+      "resources": []
+    },
+    {
+      "name": "pMain",
+      "type": "System.Windows.Forms.Panel",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Dock": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DockStyle.Fill"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Name": "pMain",
+        "Size": {
+          "kind": "Size",
+          "width": 242,
+          "height": 228
+        },
+        "TabIndex": 1
+      },
+      "resources": []
+    },
+    {
+      "name": "sbMain",
+      "type": "HelpersLib.CustomVScrollBar",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Dock": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DockStyle.Right"
+        },
+        "LargeScrollStep": 100,
+        "Location": {
+          "kind": "Point",
+          "x": 224,
+          "y": 0
+        },
+        "Maximum": 0,
+        "Minimum": 0,
+        "Name": "sbMain",
+        "PageSize": 0,
+        "Size": {
+          "kind": "Size",
+          "width": 18,
+          "height": 228
+        },
+        "SmallScrollStep": 20,
+        "TabIndex": 2,
+        "Text": "customVScrollBar1",
+        "Value": 0
+      },
+      "resources": []
+    },
+    {
+      "name": "AutoScaleDimensions",
+      "type": "System.Drawing.SizeF",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "Size",
+      "type": "System.Drawing.Size",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    }
+  ],
+  "tree": {
+    "name": "TaskThumbnailView",
+    "type": "UserControl",
+    "slots": {}
+  },
+  "strings": {},
+  "binary_resources": [],
+  "local_variables": [],
+  "parse_coverage": 1.0,
+  "total_statements": 53,
+  "parsed_statements": 53,
+  "unparsed_lines": []
+}

@@ -1,0 +1,214 @@
+{
+  "form_name": "TextUploadForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX.UploadersLib/Forms/TextUploadForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.UploadersLib/Forms/TextUploadForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 632,
+    "height": 520
+  },
+  "text": "ShareX - Text upload",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 96,
+    "height": 96
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Dpi"
+  },
+  "tab_order": [
+    "txtContent",
+    "btnUpload",
+    "btnCancel"
+  ],
+  "controls": [
+    {
+      "name": "txtContent",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Top, Bottom, Left, Right",
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 8
+        },
+        "Multiline": true,
+        "ScrollBars": "Both",
+        "Size": {
+          "kind": "Size",
+          "width": 616,
+          "height": 472
+        },
+        "TabIndex": 0,
+        "Name": "txtContent"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "txtContent.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "txtContent.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "txtContent.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Multiline",
+          "resource_key": "txtContent.Multiline",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ScrollBars",
+          "resource_key": "txtContent.ScrollBars",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtContent.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtContent.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnUpload",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Bottom, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 376,
+          "y": 488
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 24
+        },
+        "TabIndex": 1,
+        "Text": "Upload",
+        "Name": "btnUpload",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnUpload.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnUpload.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnUpload.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnUpload.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnUpload.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnCancel",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Bottom, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 504,
+          "y": 488
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 24
+        },
+        "TabIndex": 2,
+        "Text": "Cancel",
+        "Name": "btnCancel",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnCancel.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnCancel.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCancel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCancel.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCancel.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "TextUploadForm",
+    "type": "Form",
+    "slots": {}
+  },
+  "strings": {
+    "btnUpload.Text": "Upload",
+    "btnCancel.Text": "Cancel",
+    "$this.Text": "ShareX - Text upload"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 25,
+  "parsed_statements": 25,
+  "unparsed_lines": []
+}

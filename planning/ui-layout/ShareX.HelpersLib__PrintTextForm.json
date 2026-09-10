@@ -1,0 +1,294 @@
+{
+  "form_name": "PrintTextForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX.HelpersLib/Forms/PrintTextForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.HelpersLib/Forms/PrintTextForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 251,
+    "height": 96
+  },
+  "text": "ShareX - Print options",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 6,
+    "height": 13
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Dpi"
+  },
+  "tab_order": [
+    "btnShowPreview",
+    "btnPrint",
+    "btnCancel",
+    "btnChangeFont",
+    "lblFont"
+  ],
+  "controls": [
+    {
+      "name": "btnCancel",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 168,
+          "y": 64
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 75,
+          "height": 23
+        },
+        "TabIndex": 11,
+        "Text": "Cancel",
+        "Name": "btnCancel",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnCancel.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCancel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCancel.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCancel.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnPrint",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 64
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 75,
+          "height": 23
+        },
+        "TabIndex": 10,
+        "Text": "Print...",
+        "Name": "btnPrint",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnPrint.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnPrint.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnPrint.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnPrint.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnShowPreview",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 88,
+          "y": 64
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 75,
+          "height": 23
+        },
+        "TabIndex": 9,
+        "Text": "Preview...",
+        "Name": "btnShowPreview",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnShowPreview.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnShowPreview.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnShowPreview.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnShowPreview.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnChangeFont",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 32
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 152,
+          "height": 23
+        },
+        "TabIndex": 12,
+        "Text": "Change font...",
+        "Name": "btnChangeFont",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnChangeFont.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnChangeFont.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnChangeFont.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnChangeFont.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblFont",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 31,
+          "height": 13
+        },
+        "TabIndex": 13,
+        "Text": "Font:",
+        "Name": "lblFont"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblFont.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblFont.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblFont.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblFont.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblFont.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "AutoScaleDimensions",
+      "type": "System.Drawing.SizeF",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    }
+  ],
+  "tree": {
+    "name": "PrintTextForm",
+    "type": "Form",
+    "slots": {}
+  },
+  "strings": {
+    "btnCancel.Text": "Cancel",
+    "btnPrint.Text": "Print...",
+    "btnShowPreview.Text": "Preview...",
+    "btnChangeFont.Text": "Change font...",
+    "lblFont.Text": "Font:",
+    "$this.Text": "ShareX - Print options"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 39,
+  "parsed_statements": 39,
+  "unparsed_lines": []
+}

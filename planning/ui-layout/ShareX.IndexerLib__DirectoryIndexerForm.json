@@ -1,0 +1,703 @@
+{
+  "form_name": "DirectoryIndexerForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX.IndexerLib/Forms/DirectoryIndexerForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.IndexerLib/Forms/DirectoryIndexerForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 884,
+    "height": 661
+  },
+  "text": "ShareX - Directory indexer",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 96,
+    "height": 96
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Dpi"
+  },
+  "tab_order": [
+    "btnUpload",
+    "txtPreview",
+    "wbPreview",
+    "tpSettings",
+    "pgSettings",
+    "btnBrowseFolder",
+    "tpPreview",
+    "txtFolderPath",
+    "btnIndexFolder",
+    "tcMain",
+    "btnSaveAs"
+  ],
+  "controls": [
+    {
+      "name": "btnSaveAs",
+      "type": "System.Windows.Forms.Button",
+      "parent": "DirectoryIndexerForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Enabled": false,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 590,
+          "y": 32
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 284,
+          "height": 23
+        },
+        "TabIndex": 5,
+        "Text": "Save as and close this window...",
+        "Name": "btnSaveAs",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Enabled",
+          "resource_key": "btnSaveAs.Enabled",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "btnSaveAs.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnSaveAs.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnSaveAs.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnSaveAs.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnSaveAs.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tcMain",
+      "type": "System.Windows.Forms.TabControl",
+      "parent": "DirectoryIndexerForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Anchor": "Top, Bottom, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 64
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 868,
+          "height": 590
+        },
+        "TabIndex": 4,
+        "Name": "tcMain",
+        "SelectedIndex": 0
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "tcMain.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "tcMain.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tcMain.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tcMain.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnUpload",
+      "type": "System.Windows.Forms.Button",
+      "parent": "DirectoryIndexerForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Enabled": false,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 308,
+          "y": 32
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 276,
+          "height": 23
+        },
+        "TabIndex": 0,
+        "Text": "Upload and close this window",
+        "Name": "btnUpload",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Enabled",
+          "resource_key": "btnUpload.Enabled",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "btnUpload.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnUpload.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnUpload.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnUpload.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnUpload.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnIndexFolder",
+      "type": "System.Windows.Forms.Button",
+      "parent": "DirectoryIndexerForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Enabled": false,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 32
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 294,
+          "height": 23
+        },
+        "TabIndex": 3,
+        "Text": "Index selected folder",
+        "Name": "btnIndexFolder",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Enabled",
+          "resource_key": "btnIndexFolder.Enabled",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "btnIndexFolder.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnIndexFolder.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnIndexFolder.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnIndexFolder.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnIndexFolder.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnBrowseFolder",
+      "type": "System.Windows.Forms.Button",
+      "parent": "DirectoryIndexerForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 7
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 176,
+          "height": 23
+        },
+        "TabIndex": 1,
+        "Text": "Browse folder...",
+        "Name": "btnBrowseFolder",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnBrowseFolder.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnBrowseFolder.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnBrowseFolder.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnBrowseFolder.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnBrowseFolder.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtFolderPath",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "DirectoryIndexerForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "Anchor": "Top, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 192,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 682,
+          "height": 23
+        },
+        "TabIndex": 2,
+        "Name": "txtFolderPath"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "txtFolderPath.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "txtFolderPath.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtFolderPath.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtFolderPath.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tpPreview",
+      "type": "System.Windows.Forms.TabPage",
+      "parent": "tcMain",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 4,
+          "y": 24
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 860,
+          "height": 562
+        },
+        "TabIndex": 1,
+        "Text": "Preview",
+        "Name": "tpPreview"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "tpPreview.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tpPreview.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tpPreview.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tpPreview.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tpSettings",
+      "type": "System.Windows.Forms.TabPage",
+      "parent": "tcMain",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 4,
+          "y": 24
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 860,
+          "height": 562
+        },
+        "TabIndex": 0,
+        "Text": "Settings",
+        "Name": "tpSettings"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "tpSettings.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tpSettings.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tpSettings.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tpSettings.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtPreview",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "tpPreview",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.None"
+        },
+        "Dock": "Fill",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Multiline": true,
+        "ScrollBars": "Both",
+        "Size": {
+          "kind": "Size",
+          "width": 860,
+          "height": 562
+        },
+        "TabIndex": 0,
+        "Name": "txtPreview"
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "txtPreview.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "txtPreview.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Multiline",
+          "resource_key": "txtPreview.Multiline",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ScrollBars",
+          "resource_key": "txtPreview.ScrollBars",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtPreview.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtPreview.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "wbPreview",
+      "type": "System.Windows.Forms.WebBrowser",
+      "parent": "tpPreview",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Dock": "Fill",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "MinimumSize": {
+          "kind": "Size",
+          "width": 20,
+          "height": 20
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 860,
+          "height": 562
+        },
+        "TabIndex": 0,
+        "Name": "wbPreview"
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "wbPreview.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "wbPreview.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "MinimumSize",
+          "resource_key": "wbPreview.MinimumSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "wbPreview.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "wbPreview.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pgSettings",
+      "type": "System.Windows.Forms.PropertyGrid",
+      "parent": "tpSettings",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        },
+        "Dock": "Fill",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 860,
+          "height": 562
+        },
+        "TabIndex": 0,
+        "Name": "pgSettings",
+        "PropertySort": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.PropertySort.Categorized"
+        },
+        "ToolbarVisible": false
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "pgSettings.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "pgSettings.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pgSettings.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pgSettings.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "DirectoryIndexerForm",
+    "type": "Form",
+    "slots": {
+      "Controls": [
+        {
+          "name": "btnSaveAs",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "tcMain",
+          "type": "System.Windows.Forms.TabControl",
+          "slots": {
+            "Controls": [
+              {
+                "name": "tpPreview",
+                "type": "System.Windows.Forms.TabPage",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "txtPreview",
+                      "type": "System.Windows.Forms.TextBox",
+                      "slots": {}
+                    },
+                    {
+                      "name": "wbPreview",
+                      "type": "System.Windows.Forms.WebBrowser",
+                      "slots": {}
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "tpSettings",
+                "type": "System.Windows.Forms.TabPage",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "pgSettings",
+                      "type": "System.Windows.Forms.PropertyGrid",
+                      "slots": {}
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "btnUpload",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnIndexFolder",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnBrowseFolder",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "txtFolderPath",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        }
+      ]
+    }
+  },
+  "strings": {
+    "btnBrowseFolder.Text": "Browse folder...",
+    "btnIndexFolder.Text": "Index selected folder",
+    "btnUpload.Text": "Upload and close this window",
+    "tpPreview.Text": "Preview",
+    "tpSettings.Text": "Settings",
+    "btnSaveAs.Text": "Save as and close this window...",
+    "$this.Text": "ShareX - Directory indexer"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 76,
+  "parsed_statements": 76,
+  "unparsed_lines": []
+}

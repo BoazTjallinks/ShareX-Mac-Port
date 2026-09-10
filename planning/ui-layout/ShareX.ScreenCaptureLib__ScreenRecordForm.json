@@ -1,0 +1,592 @@
+{
+  "form_name": "ScreenRecordForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX.ScreenCaptureLib/Forms/ScreenRecordForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.ScreenCaptureLib/Forms/ScreenRecordForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 526,
+    "height": 271
+  },
+  "text": "ShareX - Screen recording",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 7,
+    "height": 15
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Font"
+  },
+  "tab_order": [
+    "btnStart",
+    "pInfo",
+    "btnPause",
+    "btnAbort",
+    "lblTimer"
+  ],
+  "controls": [
+    {
+      "name": "components",
+      "type": "System.ComponentModel.Container",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "timerRefresh",
+      "type": "System.Windows.Forms.Timer",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "cmsMain",
+      "type": "System.Windows.Forms.ContextMenuStrip",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Name": "cmsMain",
+        "Size": {
+          "kind": "Size",
+          "width": 106,
+          "height": 70
+        }
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "cmsMain.Size",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "niTray",
+      "type": "System.Windows.Forms.NotifyIcon",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "ContextMenuStrip": {
+          "kind": "ident",
+          "raw": "cmsMain"
+        },
+        "Text": "ShareX",
+        "Visible": true
+      },
+      "resources": [
+        {
+          "property": "Text",
+          "resource_key": "niTray.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Visible",
+          "resource_key": "niTray.Visible",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pInfo",
+      "type": "System.Windows.Forms.Panel",
+      "parent": "ScreenRecordForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "AutoSize": true,
+        "AutoSizeMode": "GrowAndShrink",
+        "Location": {
+          "kind": "Point",
+          "x": 9,
+          "y": 9
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 3,
+          "right": 4,
+          "bottom": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 439,
+          "height": 42
+        },
+        "TabIndex": 0,
+        "Name": "pInfo"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "pInfo.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "AutoSizeMode",
+          "resource_key": "pInfo.AutoSizeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "pInfo.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "pInfo.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pInfo.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pInfo.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiStart",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": "cmsMain",
+      "parent_slot": "Items",
+      "child_index": 0,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.control_record"
+        },
+        "Name": "tsmiStart",
+        "Size": {
+          "kind": "Size",
+          "width": 105,
+          "height": 22
+        },
+        "Text": "Start"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiStart.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiStart.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiPause",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": "cmsMain",
+      "parent_slot": "Items",
+      "child_index": 1,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.control_pause"
+        },
+        "Name": "tsmiPause",
+        "Size": {
+          "kind": "Size",
+          "width": 105,
+          "height": 22
+        },
+        "Text": "Pause"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiPause.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiPause.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiAbort",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": "cmsMain",
+      "parent_slot": "Items",
+      "child_index": 2,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.cross"
+        },
+        "Name": "tsmiAbort",
+        "Size": {
+          "kind": "Size",
+          "width": 105,
+          "height": 22
+        },
+        "Text": "Abort"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiAbort.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiAbort.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnPause",
+      "type": "HelpersLib.NoFocusBorderButton",
+      "parent": "pInfo",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "FlatStyle": "Flat",
+        "Font": "Arial, 12pt",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 111,
+          "y": 0
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 112,
+          "height": 42
+        },
+        "TabIndex": 1,
+        "Text": "Pause",
+        "Name": "btnPause"
+      },
+      "resources": [
+        {
+          "property": "FlatStyle",
+          "resource_key": "btnPause.FlatStyle",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "btnPause.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "btnPause.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnPause.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "btnPause.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnPause.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnPause.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnPause.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnAbort",
+      "type": "ShareX.HelpersLib.NoFocusBorderButton",
+      "parent": "pInfo",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "FlatStyle": "Flat",
+        "Font": "Arial, 12pt",
+        "Location": {
+          "kind": "Point",
+          "x": 222,
+          "y": 0
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 112,
+          "height": 42
+        },
+        "TabIndex": 2,
+        "Text": "Abort",
+        "Name": "btnAbort"
+      },
+      "resources": [
+        {
+          "property": "FlatStyle",
+          "resource_key": "btnAbort.FlatStyle",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "btnAbort.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnAbort.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "btnAbort.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnAbort.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnAbort.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnAbort.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnStart",
+      "type": "ShareX.HelpersLib.NoFocusBorderButton",
+      "parent": "pInfo",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "FlatStyle": "Flat",
+        "Font": "Arial, 12pt",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 112,
+          "height": 42
+        },
+        "TabIndex": 0,
+        "Text": "Start",
+        "Name": "btnStart"
+      },
+      "resources": [
+        {
+          "property": "FlatStyle",
+          "resource_key": "btnStart.FlatStyle",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "btnStart.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnStart.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "btnStart.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnStart.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnStart.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnStart.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblTimer",
+      "type": "System.Windows.Forms.Label",
+      "parent": "pInfo",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Font": "Arial, 12pt",
+        "Location": {
+          "kind": "Point",
+          "x": 332,
+          "y": 0
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 107,
+          "height": 42
+        },
+        "TabIndex": 3,
+        "Text": "00:00:00",
+        "TextAlign": "MiddleCenter",
+        "Name": "lblTimer"
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "lblTimer.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblTimer.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblTimer.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblTimer.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblTimer.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblTimer.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "lblTimer.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "ScreenRecordForm",
+    "type": "Form",
+    "slots": {
+      "Controls": [
+        {
+          "name": "pInfo",
+          "type": "System.Windows.Forms.Panel",
+          "slots": {
+            "Controls": [
+              {
+                "name": "btnPause",
+                "type": "HelpersLib.NoFocusBorderButton",
+                "slots": {}
+              },
+              {
+                "name": "btnAbort",
+                "type": "ShareX.HelpersLib.NoFocusBorderButton",
+                "slots": {}
+              },
+              {
+                "name": "btnStart",
+                "type": "ShareX.HelpersLib.NoFocusBorderButton",
+                "slots": {}
+              },
+              {
+                "name": "lblTimer",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "strings": {
+    "btnStart.Text": "Start",
+    "lblTimer.Text": "00:00:00",
+    "btnAbort.Text": "Abort",
+    "btnPause.Text": "Pause",
+    "tsmiStart.Text": "Start",
+    "tsmiPause.Text": "Pause",
+    "tsmiAbort.Text": "Abort",
+    "niTray.Text": "ShareX",
+    "$this.Text": "ShareX - Screen recording"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 68,
+  "parsed_statements": 68,
+  "unparsed_lines": []
+}

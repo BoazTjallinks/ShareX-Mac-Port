@@ -1,0 +1,491 @@
+{
+  "form_name": "ErrorForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX.HelpersLib/Forms/ErrorForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.HelpersLib/Forms/ErrorForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 584,
+    "height": 411
+  },
+  "text": "ShareX - Error",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 96,
+    "height": 96
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Dpi"
+  },
+  "tab_order": [
+    "txtException",
+    "btnSendBugReport",
+    "lblErrorMessage",
+    "btnOpenLogFile",
+    "flpMenu",
+    "btnContinue",
+    "btnClose",
+    "btnOK"
+  ],
+  "controls": [
+    {
+      "name": "txtException",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Top, Bottom, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 48
+        },
+        "Multiline": true,
+        "ScrollBars": "Both",
+        "Size": {
+          "kind": "Size",
+          "width": 569,
+          "height": 320
+        },
+        "TabIndex": 0,
+        "Name": "txtException",
+        "ReadOnly": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "txtException.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "txtException.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Multiline",
+          "resource_key": "txtException.Multiline",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ScrollBars",
+          "resource_key": "txtException.ScrollBars",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtException.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtException.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnSendBugReport",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.Transparent"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 3
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 0,
+          "top": 3,
+          "right": 3,
+          "bottom": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 150,
+          "height": 26
+        },
+        "TabIndex": 0,
+        "Text": "Send bug report...",
+        "Name": "btnSendBugReport",
+        "UseVisualStyleBackColor": false
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnSendBugReport.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "btnSendBugReport.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnSendBugReport.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnSendBugReport.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnSendBugReport.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnClose",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSizeMode": "GrowAndShrink",
+        "Location": {
+          "kind": "Point",
+          "x": 438,
+          "y": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 26
+        },
+        "TabIndex": 3,
+        "Text": "Quit",
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.Transparent"
+        },
+        "Name": "btnClose",
+        "UseVisualStyleBackColor": false
+      },
+      "resources": [
+        {
+          "property": "AutoSizeMode",
+          "resource_key": "btnClose.AutoSizeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnClose.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnClose.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnClose.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnClose.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnOpenLogFile",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.Transparent"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 156,
+          "y": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 150,
+          "height": 26
+        },
+        "TabIndex": 1,
+        "Text": "Open log file...",
+        "Name": "btnOpenLogFile",
+        "UseVisualStyleBackColor": false
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnOpenLogFile.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnOpenLogFile.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnOpenLogFile.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnOpenLogFile.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "flpMenu",
+      "type": "System.Windows.Forms.FlowLayoutPanel",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Bottom, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 7,
+          "y": 373
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 569,
+          "height": 32
+        },
+        "TabIndex": 2,
+        "Name": "flpMenu"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "flpMenu.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "flpMenu.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "flpMenu.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "flpMenu.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnContinue",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.Transparent"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 312,
+          "y": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 26
+        },
+        "TabIndex": 2,
+        "Text": "Continue",
+        "Name": "btnContinue",
+        "UseVisualStyleBackColor": false
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnContinue.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnContinue.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnContinue.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnContinue.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnOK",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSizeMode": "GrowAndShrink",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 3,
+          "y": 35
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 26
+        },
+        "TabIndex": 4,
+        "Text": "OK",
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.Transparent"
+        },
+        "Name": "btnOK",
+        "UseVisualStyleBackColor": false
+      },
+      "resources": [
+        {
+          "property": "AutoSizeMode",
+          "resource_key": "btnOK.AutoSizeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "btnOK.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnOK.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnOK.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnOK.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnOK.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblErrorMessage",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Top, Left, Right",
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 7,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 569,
+          "height": 34
+        },
+        "TabIndex": 0,
+        "Text": "Error\nError 2",
+        "Name": "lblErrorMessage"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "lblErrorMessage.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "lblErrorMessage.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblErrorMessage.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblErrorMessage.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblErrorMessage.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblErrorMessage.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "ErrorForm",
+    "type": "Form",
+    "slots": {}
+  },
+  "strings": {
+    "btnSendBugReport.Text": "Send bug report...",
+    "btnClose.Text": "Quit",
+    "btnOpenLogFile.Text": "Open log file...",
+    "btnContinue.Text": "Continue",
+    "btnOK.Text": "OK",
+    "lblErrorMessage.Text": "Error\nError 2",
+    "$this.Text": "ShareX - Error"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 62,
+  "parsed_statements": 62,
+  "unparsed_lines": []
+}

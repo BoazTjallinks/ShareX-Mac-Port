@@ -1,0 +1,380 @@
+{
+  "form_name": "HistoryImportForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX.HistoryLib/Forms/HistoryImportForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.HistoryLib/Forms/HistoryImportForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 497,
+    "height": 192
+  },
+  "text": "ShareX - Import folder",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 7,
+    "height": 17
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Font"
+  },
+  "tab_order": [
+    "lblFolderPath",
+    "txtFolderPath",
+    "btnBrowse",
+    "cbOnlyImportImageFiles",
+    "cbSkipDuplicates",
+    "btnImport"
+  ],
+  "controls": [
+    {
+      "name": "cbOnlyImportImageFiles",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "HistoryImportForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 80
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 163,
+          "height": 21
+        },
+        "TabIndex": 3,
+        "Text": "Only import image files",
+        "Name": "cbOnlyImportImageFiles",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbOnlyImportImageFiles.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbOnlyImportImageFiles.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbOnlyImportImageFiles.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbOnlyImportImageFiles.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbOnlyImportImageFiles.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnImport",
+      "type": "System.Windows.Forms.Button",
+      "parent": "HistoryImportForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Enabled": false,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 144
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 112,
+          "height": 32
+        },
+        "TabIndex": 5,
+        "Text": "Import",
+        "Name": "btnImport",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Enabled",
+          "resource_key": "btnImport.Enabled",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnImport.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnImport.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnImport.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnImport.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblFolderPath",
+      "type": "System.Windows.Forms.Label",
+      "parent": "HistoryImportForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 16
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 78,
+          "height": 17
+        },
+        "TabIndex": 0,
+        "Text": "Folder path:",
+        "Name": "lblFolderPath"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblFolderPath.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblFolderPath.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblFolderPath.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblFolderPath.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblFolderPath.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnBrowse",
+      "type": "System.Windows.Forms.Button",
+      "parent": "HistoryImportForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 368,
+          "y": 36
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 112,
+          "height": 32
+        },
+        "TabIndex": 2,
+        "Text": "Browse...",
+        "Name": "btnBrowse",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnBrowse.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnBrowse.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnBrowse.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnBrowse.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtFolderPath",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "HistoryImportForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 40
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 344,
+          "height": 25
+        },
+        "TabIndex": 1,
+        "Name": "txtFolderPath"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtFolderPath.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtFolderPath.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtFolderPath.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbSkipDuplicates",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "HistoryImportForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 112
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 135,
+          "height": 21
+        },
+        "TabIndex": 4,
+        "Text": "Skip duplicate files",
+        "Checked": true,
+        "CheckState": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.CheckState.Checked"
+        },
+        "Name": "cbSkipDuplicates",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbSkipDuplicates.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbSkipDuplicates.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbSkipDuplicates.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbSkipDuplicates.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbSkipDuplicates.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "HistoryImportForm",
+    "type": "Form",
+    "slots": {
+      "Controls": [
+        {
+          "name": "cbOnlyImportImageFiles",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "btnImport",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "lblFolderPath",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "btnBrowse",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "txtFolderPath",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "cbSkipDuplicates",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        }
+      ]
+    }
+  },
+  "strings": {
+    "cbSkipDuplicates.Text": "Skip duplicate files",
+    "btnBrowse.Text": "Browse...",
+    "lblFolderPath.Text": "Folder path:",
+    "btnImport.Text": "Import",
+    "cbOnlyImportImageFiles.Text": "Only import image files",
+    "$this.Text": "ShareX - Import folder"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 42,
+  "parsed_statements": 42,
+  "unparsed_lines": []
+}

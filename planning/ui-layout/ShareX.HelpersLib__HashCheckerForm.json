@@ -1,0 +1,1180 @@
+{
+  "form_name": "HashCheckerForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX.HelpersLib/Forms/HashCheckerForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.HelpersLib/Forms/HashCheckerForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 665,
+    "height": 353
+  },
+  "text": "ShareX - Hash checker",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 7,
+    "height": 17
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Font"
+  },
+  "tab_order": [
+    "lblFilePath",
+    "txtFilePath",
+    "btnFilePathBrowse",
+    "cbCompareTwoFiles",
+    "lblFilePath2",
+    "txtFilePath2",
+    "btnFilePathBrowse2",
+    "lblHashType",
+    "cbHashType",
+    "btnStartHashCheck",
+    "pbProgress",
+    "lblResult",
+    "txtResult",
+    "lblTarget",
+    "txtTarget",
+    "pbTick",
+    "pbCross"
+  ],
+  "controls": [
+    {
+      "name": "pbTick",
+      "type": "System.Windows.Forms.PictureBox",
+      "parent": "HashCheckerForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.tick_circle"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 627,
+          "y": 317
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 16,
+          "height": 16
+        },
+        "SizeMode": "AutoSize",
+        "TabIndex": 15,
+        "Name": "pbTick",
+        "TabStop": false
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "pbTick.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pbTick.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "SizeMode",
+          "resource_key": "pbTick.SizeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pbTick.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pbCross",
+      "type": "System.Windows.Forms.PictureBox",
+      "parent": "HashCheckerForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.cross_circle"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 627,
+          "y": 317
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 16,
+          "height": 16
+        },
+        "SizeMode": "AutoSize",
+        "TabIndex": 16,
+        "Name": "pbCross",
+        "TabStop": false
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "pbCross.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pbCross.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "SizeMode",
+          "resource_key": "pbCross.SizeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pbCross.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pbProgress",
+      "type": "BlackStyleProgressBar",
+      "parent": "HashCheckerForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Font": "Segoe UI, 9.75pt, style=Bold",
+        "Location": {
+          "kind": "Point",
+          "x": 168,
+          "y": 192
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 480,
+          "height": 32
+        },
+        "TabIndex": 10,
+        "Text": "",
+        "Name": "pbProgress",
+        "ShowPercentageText": true
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "pbProgress.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "pbProgress.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pbProgress.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pbProgress.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "pbProgress.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblFilePath2",
+      "type": "System.Windows.Forms.Label",
+      "parent": "HashCheckerForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 96
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 0,
+          "right": 4,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 60,
+          "height": 17
+        },
+        "TabIndex": 4,
+        "Text": "File path:",
+        "Name": "lblFilePath2"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblFilePath2.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblFilePath2.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblFilePath2.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblFilePath2.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblFilePath2.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblFilePath2.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblFilePath2.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtFilePath2",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "HashCheckerForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "AllowDrop": true,
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 120
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 4,
+          "right": 4,
+          "bottom": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 504,
+          "height": 25
+        },
+        "TabIndex": 5,
+        "Name": "txtFilePath2"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtFilePath2.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "txtFilePath2.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtFilePath2.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtFilePath2.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtFilePath",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "HashCheckerForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 40
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 4,
+          "right": 4,
+          "bottom": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 504,
+          "height": 25
+        },
+        "TabIndex": 1,
+        "Name": "txtFilePath"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtFilePath.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "txtFilePath.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtFilePath.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtFilePath.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnFilePathBrowse2",
+      "type": "System.Windows.Forms.Button",
+      "parent": "HashCheckerForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 528,
+          "y": 118
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 4,
+          "right": 4,
+          "bottom": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 28
+        },
+        "TabIndex": 6,
+        "Text": "Browse...",
+        "Name": "btnFilePathBrowse2",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnFilePathBrowse2.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnFilePathBrowse2.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "btnFilePathBrowse2.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnFilePathBrowse2.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnFilePathBrowse2.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnFilePathBrowse2.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbCompareTwoFiles",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "HashCheckerForm",
+      "parent_slot": "Controls",
+      "child_index": 7,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 72
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 4,
+          "right": 4,
+          "bottom": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 133,
+          "height": 21
+        },
+        "TabIndex": 3,
+        "Text": "Compare two files",
+        "Name": "cbCompareTwoFiles",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbCompareTwoFiles.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "cbCompareTwoFiles.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbCompareTwoFiles.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "cbCompareTwoFiles.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbCompareTwoFiles.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbCompareTwoFiles.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbCompareTwoFiles.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblTarget",
+      "type": "System.Windows.Forms.Label",
+      "parent": "HashCheckerForm",
+      "parent_slot": "Controls",
+      "child_index": 8,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 288
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 0,
+          "right": 4,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 48,
+          "height": 17
+        },
+        "TabIndex": 13,
+        "Text": "Target:",
+        "Name": "lblTarget"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblTarget.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblTarget.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblTarget.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblTarget.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblTarget.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblTarget.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblTarget.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblFilePath",
+      "type": "System.Windows.Forms.Label",
+      "parent": "HashCheckerForm",
+      "parent_slot": "Controls",
+      "child_index": 9,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 16
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 0,
+          "right": 4,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 60,
+          "height": 17
+        },
+        "TabIndex": 0,
+        "Text": "File path:",
+        "Name": "lblFilePath"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblFilePath.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblFilePath.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblFilePath.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblFilePath.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblFilePath.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblFilePath.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblFilePath.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnStartHashCheck",
+      "type": "System.Windows.Forms.Button",
+      "parent": "HashCheckerForm",
+      "parent_slot": "Controls",
+      "child_index": 10,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 192
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 4,
+          "right": 4,
+          "bottom": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 144,
+          "height": 32
+        },
+        "TabIndex": 9,
+        "Text": "Check",
+        "Name": "btnStartHashCheck",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnStartHashCheck.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnStartHashCheck.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "btnStartHashCheck.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnStartHashCheck.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnStartHashCheck.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnStartHashCheck.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblResult",
+      "type": "System.Windows.Forms.Label",
+      "parent": "HashCheckerForm",
+      "parent_slot": "Controls",
+      "child_index": 11,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 232
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 0,
+          "right": 4,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 46,
+          "height": 17
+        },
+        "TabIndex": 11,
+        "Text": "Result:",
+        "Name": "lblResult"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblResult.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblResult.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblResult.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblResult.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblResult.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblResult.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblResult.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtTarget",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "HashCheckerForm",
+      "parent_slot": "Controls",
+      "child_index": 12,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 312
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 4,
+          "right": 4,
+          "bottom": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 632,
+          "height": 25
+        },
+        "TabIndex": 14,
+        "Name": "txtTarget"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtTarget.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "txtTarget.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtTarget.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtTarget.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbHashType",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "HashCheckerForm",
+      "parent_slot": "Controls",
+      "child_index": 13,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 128,
+          "y": 156
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 4,
+          "right": 4,
+          "bottom": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 25
+        },
+        "TabIndex": 8,
+        "Name": "cbHashType"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbHashType.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "cbHashType.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbHashType.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbHashType.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnFilePathBrowse",
+      "type": "System.Windows.Forms.Button",
+      "parent": "HashCheckerForm",
+      "parent_slot": "Controls",
+      "child_index": 14,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 528,
+          "y": 38
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 4,
+          "right": 4,
+          "bottom": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 28
+        },
+        "TabIndex": 2,
+        "Text": "Browse...",
+        "Name": "btnFilePathBrowse",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnFilePathBrowse.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnFilePathBrowse.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "btnFilePathBrowse.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnFilePathBrowse.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnFilePathBrowse.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnFilePathBrowse.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtResult",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "HashCheckerForm",
+      "parent_slot": "Controls",
+      "child_index": 15,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 256
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 4,
+          "right": 4,
+          "bottom": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 632,
+          "height": 25
+        },
+        "TabIndex": 12,
+        "Name": "txtResult",
+        "ReadOnly": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtResult.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "txtResult.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtResult.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtResult.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblHashType",
+      "type": "System.Windows.Forms.Label",
+      "parent": "HashCheckerForm",
+      "parent_slot": "Controls",
+      "child_index": 16,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 160
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 0,
+          "right": 4,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 69,
+          "height": 17
+        },
+        "TabIndex": 7,
+        "Text": "Hash type:",
+        "Name": "lblHashType"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblHashType.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblHashType.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblHashType.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblHashType.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblHashType.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblHashType.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblHashType.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "HashCheckerForm",
+    "type": "Form",
+    "slots": {
+      "Controls": [
+        {
+          "name": "pbTick",
+          "type": "System.Windows.Forms.PictureBox",
+          "slots": {}
+        },
+        {
+          "name": "pbCross",
+          "type": "System.Windows.Forms.PictureBox",
+          "slots": {}
+        },
+        {
+          "name": "pbProgress",
+          "type": "BlackStyleProgressBar",
+          "slots": {}
+        },
+        {
+          "name": "lblFilePath2",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "txtFilePath2",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "txtFilePath",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "btnFilePathBrowse2",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "cbCompareTwoFiles",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "lblTarget",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblFilePath",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "btnStartHashCheck",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "lblResult",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "txtTarget",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "cbHashType",
+          "type": "System.Windows.Forms.ComboBox",
+          "slots": {}
+        },
+        {
+          "name": "btnFilePathBrowse",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "txtResult",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblHashType",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        }
+      ]
+    }
+  },
+  "strings": {
+    "btnFilePathBrowse.Text": "Browse...",
+    "lblHashType.Text": "Hash type:",
+    "lblResult.Text": "Result:",
+    "lblTarget.Text": "Target:",
+    "btnStartHashCheck.Text": "Check",
+    "lblFilePath.Text": "File path:",
+    "lblFilePath2.Text": "File path:",
+    "btnFilePathBrowse2.Text": "Browse...",
+    "cbCompareTwoFiles.Text": "Compare two files",
+    "pbProgress.Text": "",
+    "$this.Text": "ShareX - Hash checker"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 113,
+  "parsed_statements": 113,
+  "unparsed_lines": []
+}

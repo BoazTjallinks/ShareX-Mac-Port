@@ -1,0 +1,558 @@
+{
+  "form_name": "DebugForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX.HelpersLib/Forms/DebugForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.HelpersLib/Forms/DebugForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 760,
+    "height": 541
+  },
+  "text": "ShareX - Debug log",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 96,
+    "height": 96
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Dpi"
+  },
+  "tab_order": [
+    "rtbDebug",
+    "btnCopyAll",
+    "btnLoadedAssemblies",
+    "btnOpenLogFile",
+    "llRunningFrom",
+    "flpRunningFrom",
+    "lblRunningFrom",
+    "btnUploadLog"
+  ],
+  "controls": [
+    {
+      "name": "btnUploadLog",
+      "type": "System.Windows.Forms.Button",
+      "parent": "DebugForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "Location": {
+          "kind": "Point",
+          "x": 486,
+          "y": 512
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 152,
+          "height": 23
+        },
+        "TabIndex": 6,
+        "Text": "Upload log...",
+        "Name": "btnUploadLog",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnUploadLog.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnUploadLog.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnUploadLog.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnUploadLog.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnUploadLog.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "flpRunningFrom",
+      "type": "System.Windows.Forms.FlowLayoutPanel",
+      "parent": "DebugForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Anchor": "Bottom, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 488
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 744,
+          "height": 16
+        },
+        "TabIndex": 5,
+        "WrapContents": false,
+        "Name": "flpRunningFrom"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "flpRunningFrom.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "flpRunningFrom.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "flpRunningFrom.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "flpRunningFrom.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "WrapContents",
+          "resource_key": "flpRunningFrom.WrapContents",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnOpenLogFile",
+      "type": "System.Windows.Forms.Button",
+      "parent": "DebugForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 168,
+          "y": 512
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 152,
+          "height": 23
+        },
+        "TabIndex": 3,
+        "Text": "Open log file...",
+        "Name": "btnOpenLogFile",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnOpenLogFile.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "btnOpenLogFile.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnOpenLogFile.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnOpenLogFile.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnOpenLogFile.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnOpenLogFile.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "rtbDebug",
+      "type": "System.Windows.Forms.RichTextBox",
+      "parent": "DebugForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Anchor": "Top, Bottom, Left, Right",
+        "Font": "Segoe UI, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 744,
+          "height": 472
+        },
+        "TabIndex": 0,
+        "Text": "",
+        "WordWrap": false,
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        },
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.None"
+        },
+        "Name": "rtbDebug",
+        "ReadOnly": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "rtbDebug.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "rtbDebug.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "rtbDebug.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "rtbDebug.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "rtbDebug.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "rtbDebug.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "WordWrap",
+          "resource_key": "rtbDebug.WordWrap",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnCopyAll",
+      "type": "System.Windows.Forms.Button",
+      "parent": "DebugForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 512
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 152,
+          "height": 23
+        },
+        "TabIndex": 1,
+        "Text": "Copy all",
+        "Name": "btnCopyAll",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnCopyAll.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnCopyAll.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCopyAll.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCopyAll.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCopyAll.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnLoadedAssemblies",
+      "type": "System.Windows.Forms.Button",
+      "parent": "DebugForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "Location": {
+          "kind": "Point",
+          "x": 328,
+          "y": 512
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 152,
+          "height": 23
+        },
+        "TabIndex": 2,
+        "Text": "Loaded assemblies",
+        "Name": "btnLoadedAssemblies",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnLoadedAssemblies.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnLoadedAssemblies.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnLoadedAssemblies.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnLoadedAssemblies.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnLoadedAssemblies.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblRunningFrom",
+      "type": "System.Windows.Forms.Label",
+      "parent": "flpRunningFrom",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 75,
+          "height": 15
+        },
+        "TabIndex": 5,
+        "Text": "Startup path:",
+        "Name": "lblRunningFrom"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblRunningFrom.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblRunningFrom.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblRunningFrom.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblRunningFrom.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblRunningFrom.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblRunningFrom.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "llRunningFrom",
+      "type": "System.Windows.Forms.LinkLabel",
+      "parent": "flpRunningFrom",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 75,
+          "y": 0
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 0,
+          "height": 15
+        },
+        "TabIndex": 4,
+        "LinkBehavior": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.LinkBehavior.NeverUnderline"
+        },
+        "Name": "llRunningFrom"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "llRunningFrom.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "llRunningFrom.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "llRunningFrom.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "llRunningFrom.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "llRunningFrom.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "DebugForm",
+    "type": "Form",
+    "slots": {
+      "Controls": [
+        {
+          "name": "btnUploadLog",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "flpRunningFrom",
+          "type": "System.Windows.Forms.FlowLayoutPanel",
+          "slots": {
+            "Controls": [
+              {
+                "name": "lblRunningFrom",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "llRunningFrom",
+                "type": "System.Windows.Forms.LinkLabel",
+                "slots": {}
+              }
+            ]
+          }
+        },
+        {
+          "name": "btnOpenLogFile",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "rtbDebug",
+          "type": "System.Windows.Forms.RichTextBox",
+          "slots": {}
+        },
+        {
+          "name": "btnCopyAll",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnLoadedAssemblies",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        }
+      ]
+    }
+  },
+  "strings": {
+    "btnLoadedAssemblies.Text": "Loaded assemblies",
+    "btnCopyAll.Text": "Copy all",
+    "rtbDebug.Text": "",
+    "btnOpenLogFile.Text": "Open log file...",
+    "lblRunningFrom.Text": "Startup path:",
+    "btnUploadLog.Text": "Upload log...",
+    "$this.Text": "ShareX - Debug log"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 55,
+  "parsed_statements": 55,
+  "unparsed_lines": []
+}

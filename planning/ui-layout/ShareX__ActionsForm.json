@@ -1,0 +1,813 @@
+{
+  "form_name": "ActionsForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX/Forms/ActionsForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX/Forms/ActionsForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 313,
+    "height": 337
+  },
+  "text": "ShareX - Actions",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 96,
+    "height": 96
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Dpi"
+  },
+  "tab_order": [
+    "lblName",
+    "txtName",
+    "lblPath",
+    "txtPath",
+    "btnPathBrowse",
+    "lblArgs",
+    "txtArguments",
+    "lblOutputExtension",
+    "txtOutputExtension",
+    "lblExtensions",
+    "txtExtensions",
+    "cbHiddenWindow",
+    "cbDeleteInputFile",
+    "btnOK",
+    "btnCancel"
+  ],
+  "controls": [
+    {
+      "name": "lblName",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 38,
+          "height": 13
+        },
+        "TabIndex": 0,
+        "Text": "Name:",
+        "Name": "lblName"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblName.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblName.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblName.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblName.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblName.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblPath",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 56
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 50,
+          "height": 13
+        },
+        "TabIndex": 2,
+        "Text": "File path:",
+        "Name": "lblPath"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblPath.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblPath.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblPath.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblPath.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblPath.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblArgs",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 104
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 60,
+          "height": 13
+        },
+        "TabIndex": 5,
+        "Text": "Arguments:",
+        "Name": "lblArgs"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblArgs.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblArgs.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblArgs.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblArgs.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblArgs.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtName",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Top, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 24
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 296,
+          "height": 20
+        },
+        "TabIndex": 1,
+        "Name": "txtName"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "txtName.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "txtName.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtName.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtName.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtPath",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Top, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 72
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 248,
+          "height": 20
+        },
+        "TabIndex": 3,
+        "Name": "txtPath"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "txtPath.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "txtPath.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtPath.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtPath.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtArguments",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Top, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 120
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 296,
+          "height": 20
+        },
+        "TabIndex": 6,
+        "Name": "txtArguments"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "txtArguments.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "txtArguments.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtArguments.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtArguments.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnPathBrowse",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Top, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 264,
+          "y": 70
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 40,
+          "height": 24
+        },
+        "TabIndex": 4,
+        "Text": "...",
+        "Name": "btnPathBrowse",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnPathBrowse.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnPathBrowse.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnPathBrowse.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnPathBrowse.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnPathBrowse.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnOK",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Bottom, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 136,
+          "y": 304
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 80,
+          "height": 24
+        },
+        "TabIndex": 13,
+        "Text": "OK",
+        "Name": "btnOK",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnOK.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnOK.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnOK.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnOK.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnOK.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnCancel",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Bottom, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 224,
+          "y": 304
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 80,
+          "height": 24
+        },
+        "TabIndex": 14,
+        "Text": "Cancel",
+        "Name": "btnCancel",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnCancel.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnCancel.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCancel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCancel.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCancel.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblExtensions",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 200
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 191,
+          "height": 13
+        },
+        "TabIndex": 9,
+        "Text": "Extension filter: (Example: jpg png mp4)",
+        "Name": "lblExtensions"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblExtensions.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblExtensions.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblExtensions.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblExtensions.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblExtensions.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtExtensions",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Top, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 216
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 296,
+          "height": 20
+        },
+        "TabIndex": 10,
+        "Name": "txtExtensions"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "txtExtensions.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "txtExtensions.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtExtensions.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtExtensions.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtOutputExtension",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Top, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 168
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 296,
+          "height": 20
+        },
+        "TabIndex": 8,
+        "Name": "txtOutputExtension"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "txtOutputExtension.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "txtOutputExtension.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtOutputExtension.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtOutputExtension.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblOutputExtension",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 152
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 277,
+          "height": 13
+        },
+        "TabIndex": 7,
+        "Text": "Output file name extension: (Empty = Use same file name)",
+        "Name": "lblOutputExtension"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblOutputExtension.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblOutputExtension.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblOutputExtension.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblOutputExtension.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblOutputExtension.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbHiddenWindow",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 248
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 99,
+          "height": 17
+        },
+        "TabIndex": 11,
+        "Text": "Hidden window",
+        "Name": "cbHiddenWindow",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbHiddenWindow.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbHiddenWindow.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "cbHiddenWindow.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbHiddenWindow.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbHiddenWindow.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbHiddenWindow.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbDeleteInputFile",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "Enabled": false,
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 272
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 99,
+          "height": 17
+        },
+        "TabIndex": 12,
+        "Text": "Delete input file",
+        "Name": "cbDeleteInputFile",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbDeleteInputFile.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Enabled",
+          "resource_key": "cbDeleteInputFile.Enabled",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbDeleteInputFile.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbDeleteInputFile.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbDeleteInputFile.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbDeleteInputFile.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "ActionsForm",
+    "type": "Form",
+    "slots": {}
+  },
+  "strings": {
+    "lblName.Text": "Name:",
+    "lblPath.Text": "File path:",
+    "lblArgs.Text": "Arguments:",
+    "btnPathBrowse.Text": "...",
+    "btnOK.Text": "OK",
+    "btnCancel.Text": "Cancel",
+    "lblExtensions.Text": "Extension filter: (Example: jpg png mp4)",
+    "lblOutputExtension.Text": "Output file name extension: (Empty = Use same file name)",
+    "cbHiddenWindow.Text": "Hidden window",
+    "cbDeleteInputFile.Text": "Delete input file",
+    "$this.Text": "ShareX - Actions"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 79,
+  "parsed_statements": 79,
+  "unparsed_lines": []
+}

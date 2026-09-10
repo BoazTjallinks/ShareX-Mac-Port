@@ -1,0 +1,490 @@
+{
+  "form_name": "ScrollingCaptureForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX.ScreenCaptureLib/Forms/ScrollingCaptureForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.ScreenCaptureLib/Forms/ScrollingCaptureForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 984,
+    "height": 661
+  },
+  "text": "ShareX - Scrolling capture",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 96,
+    "height": 96
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Dpi"
+  },
+  "tab_order": [
+    "btnCapture",
+    "pbOutput",
+    "btnUpload",
+    "btnCopy",
+    "btnOptions",
+    "btnHelp",
+    "lblResultSize",
+    "pbStatus",
+    "pOutput"
+  ],
+  "controls": [
+    {
+      "name": "btnCapture",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 160,
+          "height": 32
+        },
+        "TabIndex": 0,
+        "Text": "Capture...",
+        "Name": "btnCapture",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnCapture.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCapture.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCapture.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCapture.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pOutput",
+      "type": "System.Windows.Forms.Panel",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Top, Bottom, Left, Right",
+        "AutoScroll": true,
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 48
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 968,
+          "height": 605
+        },
+        "TabIndex": 6,
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
+        },
+        "Name": "pOutput"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "pOutput.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "AutoScroll",
+          "resource_key": "pOutput.AutoScroll",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "pOutput.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pOutput.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pOutput.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pbOutput",
+      "type": "System.Windows.Forms.PictureBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 100,
+          "height": 100
+        },
+        "SizeMode": "AutoSize",
+        "TabIndex": 0,
+        "Name": "pbOutput",
+        "TabStop": false
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "pbOutput.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pbOutput.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "SizeMode",
+          "resource_key": "pbOutput.SizeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pbOutput.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnOptions",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 512,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 160,
+          "height": 32
+        },
+        "TabIndex": 3,
+        "Text": "Options...",
+        "Name": "btnOptions",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnOptions.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnOptions.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnOptions.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnOptions.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnUpload",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Enabled": false,
+        "Location": {
+          "kind": "Point",
+          "x": 176,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 160,
+          "height": 32
+        },
+        "TabIndex": 1,
+        "Text": "Upload / Save",
+        "Name": "btnUpload",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Enabled",
+          "resource_key": "btnUpload.Enabled",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnUpload.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnUpload.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnUpload.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnUpload.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblResultSize",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Top, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 848,
+          "y": 18
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 108,
+          "height": 24
+        },
+        "TabIndex": 5,
+        "TextAlign": "MiddleRight",
+        "Name": "lblResultSize"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "lblResultSize.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblResultSize.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblResultSize.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblResultSize.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "lblResultSize.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pbStatus",
+      "type": "System.Windows.Forms.PictureBox",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": "Top, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 959,
+          "y": 23
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 16,
+          "height": 16
+        },
+        "TabIndex": 5,
+        "Name": "pbStatus",
+        "TabStop": false
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "pbStatus.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "pbStatus.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pbStatus.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pbStatus.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnHelp",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 680,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 32,
+          "height": 32
+        },
+        "TabIndex": 4,
+        "Text": "?",
+        "Name": "btnHelp",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnHelp.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnHelp.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnHelp.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnHelp.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnCopy",
+      "type": "System.Windows.Forms.Button",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Enabled": false,
+        "Location": {
+          "kind": "Point",
+          "x": 344,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 160,
+          "height": 32
+        },
+        "TabIndex": 2,
+        "Text": "Copy",
+        "Name": "btnCopy",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Enabled",
+          "resource_key": "btnCopy.Enabled",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnCopy.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCopy.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCopy.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCopy.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "ScrollingCaptureForm",
+    "type": "Form",
+    "slots": {}
+  },
+  "strings": {
+    "btnCapture.Text": "Capture...",
+    "btnOptions.Text": "Options...",
+    "btnUpload.Text": "Upload / Save",
+    "btnHelp.Text": "?",
+    "btnCopy.Text": "Copy",
+    "$this.Text": "ShareX - Scrolling capture"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 68,
+  "parsed_statements": 68,
+  "unparsed_lines": []
+}

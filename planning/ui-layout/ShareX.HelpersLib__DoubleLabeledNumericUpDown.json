@@ -1,0 +1,232 @@
+{
+  "form_name": "DoubleLabeledNumericUpDown",
+  "base_class": "UserControl",
+  "designer_file": "reference/ShareX/ShareX.HelpersLib/Controls/DoubleLabeledNumericUpDown.Designer.cs",
+  "resx_file": null,
+  "client_size": null,
+  "text": null,
+  "menu_strip": null,
+  "auto_scale_dimensions": null,
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Font"
+  },
+  "tab_order": [
+    "flpMain",
+    "lblText",
+    "nudValue",
+    "lblText2",
+    "nudValue2"
+  ],
+  "controls": [
+    {
+      "name": "flpMain",
+      "type": "System.Windows.Forms.FlowLayoutPanel",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoSize": true,
+        "AutoSizeMode": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.AutoSizeMode.GrowAndShrink"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "Name": "flpMain",
+        "Size": {
+          "kind": "Size",
+          "width": 191,
+          "height": 20
+        },
+        "TabIndex": 0,
+        "WrapContents": false
+      },
+      "resources": []
+    },
+    {
+      "name": "lblText",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.AnchorStyles.Left"
+        },
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 3
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 0,
+          "top": 0,
+          "right": 3,
+          "bottom": 0
+        },
+        "Name": "lblText",
+        "Size": {
+          "kind": "Size",
+          "width": 35,
+          "height": 13
+        },
+        "TabIndex": 0,
+        "Text": "label1"
+      },
+      "resources": []
+    },
+    {
+      "name": "nudValue",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.AnchorStyles.Left"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 38,
+          "y": 0
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "Name": "nudValue",
+        "Size": {
+          "kind": "Size",
+          "width": 55,
+          "height": 20
+        },
+        "TabIndex": 1,
+        "TextAlign": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.HorizontalAlignment.Center"
+        }
+      },
+      "resources": []
+    },
+    {
+      "name": "lblText2",
+      "type": "System.Windows.Forms.Label",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.AnchorStyles.Left"
+        },
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 98,
+          "y": 3
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 5,
+          "top": 0,
+          "right": 3,
+          "bottom": 0
+        },
+        "Name": "lblText2",
+        "Size": {
+          "kind": "Size",
+          "width": 35,
+          "height": 13
+        },
+        "TabIndex": 2,
+        "Text": "label2"
+      },
+      "resources": []
+    },
+    {
+      "name": "nudValue2",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Anchor": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.AnchorStyles.Left"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 136,
+          "y": 0
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "Name": "nudValue2",
+        "Size": {
+          "kind": "Size",
+          "width": 55,
+          "height": 20
+        },
+        "TabIndex": 3,
+        "TextAlign": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.HorizontalAlignment.Center"
+        }
+      },
+      "resources": []
+    },
+    {
+      "name": "AutoScaleDimensions",
+      "type": "System.Drawing.SizeF",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "Size",
+      "type": "System.Drawing.Size",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    }
+  ],
+  "tree": {
+    "name": "DoubleLabeledNumericUpDown",
+    "type": "UserControl",
+    "slots": {}
+  },
+  "strings": {},
+  "binary_resources": [],
+  "local_variables": [],
+  "parse_coverage": 1.0,
+  "total_statements": 63,
+  "parsed_statements": 63,
+  "unparsed_lines": []
+}

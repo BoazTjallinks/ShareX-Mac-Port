@@ -1,0 +1,87 @@
+{
+  "form_name": "BeforeUploadControl",
+  "base_class": "UserControl",
+  "designer_file": "reference/ShareX/ShareX/Controls/BeforeUploadControl.Designer.cs",
+  "resx_file": null,
+  "client_size": null,
+  "text": null,
+  "menu_strip": null,
+  "auto_scale_dimensions": null,
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Font"
+  },
+  "tab_order": [
+    "flp"
+  ],
+  "controls": [
+    {
+      "name": "flp",
+      "type": "System.Windows.Forms.FlowLayoutPanel",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoScroll": true,
+        "Dock": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DockStyle.Fill"
+        },
+        "FlowDirection": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.FlowDirection.TopDown"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Name": "flp",
+        "Padding": {
+          "kind": "Padding",
+          "left": 8,
+          "top": 8,
+          "right": 8,
+          "bottom": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 321,
+          "height": 372
+        },
+        "TabIndex": 0
+      },
+      "resources": []
+    },
+    {
+      "name": "AutoScaleDimensions",
+      "type": "System.Drawing.SizeF",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "Size",
+      "type": "System.Drawing.Size",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    }
+  ],
+  "tree": {
+    "name": "BeforeUploadControl",
+    "type": "UserControl",
+    "slots": {}
+  },
+  "strings": {},
+  "binary_resources": [],
+  "local_variables": [],
+  "parse_coverage": 1.0,
+  "total_statements": 16,
+  "parsed_statements": 16,
+  "unparsed_lines": []
+}

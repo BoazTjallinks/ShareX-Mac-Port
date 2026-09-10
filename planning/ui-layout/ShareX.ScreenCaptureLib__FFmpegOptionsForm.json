@@ -1,0 +1,4809 @@
+{
+  "form_name": "FFmpegOptionsForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX.ScreenCaptureLib/Forms/FFmpegOptionsForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.ScreenCaptureLib/Forms/FFmpegOptionsForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 664,
+    "height": 456
+  },
+  "text": "ShareX - Screen recording options",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 96,
+    "height": 96
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Dpi"
+  },
+  "tab_order": [
+    "nudGIFBayerScale",
+    "cbUseCustomFFmpegPath",
+    "lblAACBitrate",
+    "lblOpusBitrate",
+    "tpVorbis",
+    "lblVorbisQuality",
+    "lblMP3Quality",
+    "lblx264CRF",
+    "lblVP8Bitrate",
+    "lblXvidQscale",
+    "lblNVENCBitrate",
+    "lblGIFStatsMode",
+    "lblAMFBitrate",
+    "nudx264CRF",
+    "nudXvidQscale",
+    "cbGIFStatsMode",
+    "txtFFmpegPath",
+    "cbAACBitrate",
+    "cbOpusBitrate",
+    "cbVorbisQuality",
+    "cbMP3Quality",
+    "tpX264",
+    "nudVP8Bitrate",
+    "nudNVENCBitrate",
+    "nudAMFBitrate",
+    "btnFFmpegBrowse",
+    "lblAACBitrateK",
+    "lblOpusBitrateK",
+    "tpMP3",
+    "nudx264Bitrate",
+    "tpVpx",
+    "lblVP8BitrateK",
+    "lblNVENCBitrateK",
+    "lblGIFDither",
+    "lblAMFBitrateK",
+    "cbGIFDither",
+    "lblVideoSource",
+    "tpAAC",
+    "lblx264BitrateK",
+    "tpXvid",
+    "lblNVENCPreset",
+    "lblAMFUsage",
+    "cbVideoSource",
+    "tpOpus",
+    "cbx264UseBitrate",
+    "cbNVENCPreset",
+    "tpGIF",
+    "cbAMFUsage",
+    "lblQSVBitrate",
+    "lblAudioSource",
+    "lblx264Preset",
+    "tpNVENC",
+    "lblNVENCTune",
+    "lblAMFQuality",
+    "nudQSVBitrate",
+    "pbx264PresetWarning",
+    "cbx264Preset",
+    "cbAudioSource",
+    "cbNVENCTune",
+    "tpAMF",
+    "cbAMFQuality",
+    "lblQSVPreset",
+    "btnInstallHelperDevices",
+    "tpQSV",
+    "cbQSVPreset",
+    "btnHelperDevicesHelp",
+    "lblQSVBitrateK",
+    "lblHelperDevices",
+    "lblVideoEncoder",
+    "cbVideoCodec",
+    "lblAudioEncoder",
+    "cbAudioCodec",
+    "tcFFmpegVideoCodecs",
+    "tcFFmpegAudioCodecs",
+    "lblCommandLineArgs",
+    "txtUserArgs",
+    "cbCustomCommands",
+    "txtCommandLinePreview",
+    "btnResetOptions"
+  ],
+  "controls": [
+    {
+      "name": "components",
+      "type": "System.ComponentModel.Container",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "ttHelpTip",
+      "type": "System.Windows.Forms.ToolTip",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutomaticDelay": 0,
+        "AutoPopDelay": 30000,
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        },
+        "InitialDelay": 500,
+        "ReshowDelay": 100,
+        "UseAnimation": false,
+        "UseFading": false
+      },
+      "resources": []
+    },
+    {
+      "name": "btnResetOptions",
+      "type": "System.Windows.Forms.Button",
+      "parent": "FFmpegOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 504,
+          "y": 416
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 144,
+          "height": 24
+        },
+        "TabIndex": 20,
+        "Text": "Reset options...",
+        "Name": "btnResetOptions",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnResetOptions.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnResetOptions.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnResetOptions.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnResetOptions.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tcFFmpegAudioCodecs",
+      "type": "HelpersLib.TablessControl",
+      "parent": "FFmpegOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 336,
+          "y": 184
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 312,
+          "height": 80
+        },
+        "TabIndex": 15,
+        "Multiline": true,
+        "Name": "tcFFmpegAudioCodecs",
+        "SelectedIndex": 0
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "tcFFmpegAudioCodecs.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tcFFmpegAudioCodecs.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tcFFmpegAudioCodecs.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tcFFmpegVideoCodecs",
+      "type": "HelpersLib.TablessControl",
+      "parent": "FFmpegOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 184
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 312,
+          "height": 80
+        },
+        "TabIndex": 14,
+        "Multiline": true,
+        "Name": "tcFFmpegVideoCodecs",
+        "SelectedIndex": 0
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "tcFFmpegVideoCodecs.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tcFFmpegVideoCodecs.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tcFFmpegVideoCodecs.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblAudioEncoder",
+      "type": "System.Windows.Forms.Label",
+      "parent": "FFmpegOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 333,
+          "y": 144
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 88,
+          "height": 15
+        },
+        "TabIndex": 12,
+        "Text": "Audio encoder:",
+        "Name": "lblAudioEncoder"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblAudioEncoder.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblAudioEncoder.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblAudioEncoder.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblAudioEncoder.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblAudioEncoder.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblAudioEncoder.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblVideoEncoder",
+      "type": "System.Windows.Forms.Label",
+      "parent": "FFmpegOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 144
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 86,
+          "height": 15
+        },
+        "TabIndex": 10,
+        "Text": "Video encoder:",
+        "Name": "lblVideoEncoder"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblVideoEncoder.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblVideoEncoder.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblVideoEncoder.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblVideoEncoder.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblVideoEncoder.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblVideoEncoder.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbUseCustomFFmpegPath",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "FFmpegOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 13
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 164,
+          "height": 19
+        },
+        "TabIndex": 0,
+        "Text": "Use custom FFmpeg path:",
+        "Name": "cbUseCustomFFmpegPath",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbUseCustomFFmpegPath.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "cbUseCustomFFmpegPath.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbUseCustomFFmpegPath.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbUseCustomFFmpegPath.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbUseCustomFFmpegPath.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbUseCustomFFmpegPath.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbCustomCommands",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "FFmpegOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 317
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 154,
+          "height": 19
+        },
+        "TabIndex": 18,
+        "Text": "Use custom commands:",
+        "Name": "cbCustomCommands",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbCustomCommands.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "cbCustomCommands.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbCustomCommands.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbCustomCommands.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbCustomCommands.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbCustomCommands.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtCommandLinePreview",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "FFmpegOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 7,
+      "properties": {
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 336
+        },
+        "Multiline": true,
+        "ScrollBars": "Vertical",
+        "Size": {
+          "kind": "Size",
+          "width": 632,
+          "height": 72
+        },
+        "TabIndex": 19,
+        "Name": "txtCommandLinePreview",
+        "ReadOnly": true
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "txtCommandLinePreview.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "txtCommandLinePreview.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Multiline",
+          "resource_key": "txtCommandLinePreview.Multiline",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ScrollBars",
+          "resource_key": "txtCommandLinePreview.ScrollBars",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtCommandLinePreview.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtCommandLinePreview.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtUserArgs",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "FFmpegOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 8,
+      "properties": {
+        "AutoCompleteMode": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.AutoCompleteMode.SuggestAppend"
+        },
+        "AutoCompleteSource": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.AutoCompleteSource.FileSystem"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 288
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 632,
+          "height": 23
+        },
+        "TabIndex": 17,
+        "Name": "txtUserArgs"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtUserArgs.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtUserArgs.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtUserArgs.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblCommandLineArgs",
+      "type": "System.Windows.Forms.Label",
+      "parent": "FFmpegOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 9,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 272
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 205,
+          "height": 15
+        },
+        "TabIndex": 16,
+        "Text": "Additional command line arguments:",
+        "Name": "lblCommandLineArgs"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblCommandLineArgs.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblCommandLineArgs.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblCommandLineArgs.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblCommandLineArgs.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblCommandLineArgs.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblCommandLineArgs.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnHelperDevicesHelp",
+      "type": "System.Windows.Forms.Button",
+      "parent": "FFmpegOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 10,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 184,
+          "y": 112
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 24,
+          "height": 24
+        },
+        "TabIndex": 8,
+        "Text": "?",
+        "Name": "btnHelperDevicesHelp",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnHelperDevicesHelp.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnHelperDevicesHelp.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnHelperDevicesHelp.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnHelperDevicesHelp.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnHelperDevicesHelp.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbAudioCodec",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "FFmpegOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 11,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 336,
+          "y": 160
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 312,
+          "height": 23
+        },
+        "TabIndex": 13,
+        "Name": "cbAudioCodec"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbAudioCodec.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbAudioCodec.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbAudioCodec.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblHelperDevices",
+      "type": "System.Windows.Forms.Label",
+      "parent": "FFmpegOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 12,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 216,
+          "y": 117
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 445,
+          "height": 15
+        },
+        "TabIndex": 9,
+        "Text": "Installs \"screen-capture-recorder\" and \"virtual-audio-capturer\" video/audio source.",
+        "Name": "lblHelperDevices"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblHelperDevices.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblHelperDevices.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblHelperDevices.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblHelperDevices.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblHelperDevices.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblHelperDevices.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbVideoCodec",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "FFmpegOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 13,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 160
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 312,
+          "height": 23
+        },
+        "TabIndex": 11,
+        "Name": "cbVideoCodec"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbVideoCodec.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbVideoCodec.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbVideoCodec.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnInstallHelperDevices",
+      "type": "System.Windows.Forms.Button",
+      "parent": "FFmpegOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 14,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 112
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 160,
+          "height": 24
+        },
+        "TabIndex": 7,
+        "Text": "Install recorder devices...",
+        "Name": "btnInstallHelperDevices",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnInstallHelperDevices.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnInstallHelperDevices.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnInstallHelperDevices.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnInstallHelperDevices.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnInstallHelperDevices.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbVideoSource",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "FFmpegOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 15,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 80
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 312,
+          "height": 23
+        },
+        "TabIndex": 4,
+        "Name": "cbVideoSource"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbVideoSource.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbVideoSource.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbVideoSource.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnFFmpegBrowse",
+      "type": "System.Windows.Forms.Button",
+      "parent": "FFmpegOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 16,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 616,
+          "y": 30
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 32,
+          "height": 24
+        },
+        "TabIndex": 2,
+        "Text": "...",
+        "Name": "btnFFmpegBrowse",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnFFmpegBrowse.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnFFmpegBrowse.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnFFmpegBrowse.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnFFmpegBrowse.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnFFmpegBrowse.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblVideoSource",
+      "type": "System.Windows.Forms.Label",
+      "parent": "FFmpegOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 17,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 64
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 78,
+          "height": 15
+        },
+        "TabIndex": 3,
+        "Text": "Video source:",
+        "Name": "lblVideoSource"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblVideoSource.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblVideoSource.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblVideoSource.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblVideoSource.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblVideoSource.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblVideoSource.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbAudioSource",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "FFmpegOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 18,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 336,
+          "y": 80
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 312,
+          "height": 23
+        },
+        "TabIndex": 6,
+        "Name": "cbAudioSource"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbAudioSource.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbAudioSource.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbAudioSource.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtFFmpegPath",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "FFmpegOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 19,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 32
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 592,
+          "height": 23
+        },
+        "TabIndex": 1,
+        "Name": "txtFFmpegPath"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtFFmpegPath.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtFFmpegPath.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtFFmpegPath.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblAudioSource",
+      "type": "System.Windows.Forms.Label",
+      "parent": "FFmpegOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 20,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 333,
+          "y": 64
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 80,
+          "height": 15
+        },
+        "TabIndex": 5,
+        "Text": "Audio source:",
+        "Name": "lblAudioSource"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblAudioSource.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblAudioSource.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblAudioSource.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblAudioSource.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblAudioSource.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblAudioSource.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tpAAC",
+      "type": "System.Windows.Forms.TabPage",
+      "parent": "tcFFmpegAudioCodecs",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 4,
+          "y": 24
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 3,
+          "top": 3,
+          "right": 3,
+          "bottom": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 304,
+          "height": 52
+        },
+        "TabIndex": 3,
+        "Text": "AAC",
+        "Name": "tpAAC"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "tpAAC.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "tpAAC.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tpAAC.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tpAAC.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tpAAC.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tpOpus",
+      "type": "System.Windows.Forms.TabPage",
+      "parent": "tcFFmpegAudioCodecs",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 4,
+          "y": 24
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 3,
+          "top": 3,
+          "right": 3,
+          "bottom": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 304,
+          "height": 52
+        },
+        "TabIndex": 4,
+        "Text": "Opus",
+        "Name": "tpOpus",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "tpOpus.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "tpOpus.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tpOpus.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tpOpus.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tpOpus.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tpVorbis",
+      "type": "System.Windows.Forms.TabPage",
+      "parent": "tcFFmpegAudioCodecs",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 4,
+          "y": 24
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 3,
+          "top": 3,
+          "right": 3,
+          "bottom": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 304,
+          "height": 52
+        },
+        "TabIndex": 0,
+        "Text": "Vorbis",
+        "Name": "tpVorbis"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "tpVorbis.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "tpVorbis.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tpVorbis.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tpVorbis.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tpVorbis.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tpMP3",
+      "type": "System.Windows.Forms.TabPage",
+      "parent": "tcFFmpegAudioCodecs",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 4,
+          "y": 24
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 3,
+          "top": 3,
+          "right": 3,
+          "bottom": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 304,
+          "height": 52
+        },
+        "TabIndex": 2,
+        "Text": "MP3",
+        "Name": "tpMP3"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "tpMP3.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "tpMP3.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tpMP3.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tpMP3.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tpMP3.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tpX264",
+      "type": "System.Windows.Forms.TabPage",
+      "parent": "tcFFmpegVideoCodecs",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 4,
+          "y": 44
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 3,
+          "top": 3,
+          "right": 3,
+          "bottom": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 304,
+          "height": 32
+        },
+        "TabIndex": 1,
+        "Text": "x264 / x265",
+        "Name": "tpX264"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "tpX264.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "tpX264.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tpX264.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tpX264.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tpX264.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tpVpx",
+      "type": "System.Windows.Forms.TabPage",
+      "parent": "tcFFmpegVideoCodecs",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 4,
+          "y": 44
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 304,
+          "height": 32
+        },
+        "TabIndex": 2,
+        "Text": "VP8",
+        "Name": "tpVpx"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "tpVpx.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tpVpx.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tpVpx.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tpVpx.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tpXvid",
+      "type": "System.Windows.Forms.TabPage",
+      "parent": "tcFFmpegVideoCodecs",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 4,
+          "y": 44
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 304,
+          "height": 32
+        },
+        "TabIndex": 3,
+        "Text": "Xvid",
+        "Name": "tpXvid"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "tpXvid.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tpXvid.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tpXvid.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tpXvid.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tpNVENC",
+      "type": "System.Windows.Forms.TabPage",
+      "parent": "tcFFmpegVideoCodecs",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 4,
+          "y": 44
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 3,
+          "top": 3,
+          "right": 3,
+          "bottom": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 304,
+          "height": 32
+        },
+        "TabIndex": 5,
+        "Text": "NVENC",
+        "Name": "tpNVENC"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "tpNVENC.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "tpNVENC.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tpNVENC.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tpNVENC.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tpNVENC.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tpGIF",
+      "type": "System.Windows.Forms.TabPage",
+      "parent": "tcFFmpegVideoCodecs",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 4,
+          "y": 44
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 3,
+          "top": 3,
+          "right": 3,
+          "bottom": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 304,
+          "height": 32
+        },
+        "TabIndex": 4,
+        "Text": "GIF",
+        "Name": "tpGIF"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "tpGIF.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "tpGIF.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tpGIF.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tpGIF.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tpGIF.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tpAMF",
+      "type": "System.Windows.Forms.TabPage",
+      "parent": "tcFFmpegVideoCodecs",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 4,
+          "y": 44
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 3,
+          "top": 3,
+          "right": 3,
+          "bottom": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 304,
+          "height": 32
+        },
+        "TabIndex": 6,
+        "Text": "AMF",
+        "Name": "tpAMF",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "tpAMF.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "tpAMF.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tpAMF.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tpAMF.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tpAMF.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tpQSV",
+      "type": "System.Windows.Forms.TabPage",
+      "parent": "tcFFmpegVideoCodecs",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 4,
+          "y": 44
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 3,
+          "top": 3,
+          "right": 3,
+          "bottom": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 304,
+          "height": 32
+        },
+        "TabIndex": 7,
+        "Text": "QuickSync",
+        "Name": "tpQSV",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "tpQSV.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "tpQSV.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tpQSV.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tpQSV.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tpQSV.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblAACBitrateK",
+      "type": "System.Windows.Forms.Label",
+      "parent": "tpAAC",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 133,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 32,
+          "height": 15
+        },
+        "TabIndex": 2,
+        "Text": "kbps",
+        "Name": "lblAACBitrateK"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblAACBitrateK.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblAACBitrateK.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblAACBitrateK.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblAACBitrateK.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblAACBitrateK.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbAACBitrate",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "tpAAC",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 72,
+          "y": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 56,
+          "height": 23
+        },
+        "TabIndex": 1,
+        "Name": "cbAACBitrate"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbAACBitrate.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbAACBitrate.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbAACBitrate.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblAACBitrate",
+      "type": "System.Windows.Forms.Label",
+      "parent": "tpAAC",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 44,
+          "height": 15
+        },
+        "TabIndex": 0,
+        "Text": "Bitrate:",
+        "Name": "lblAACBitrate"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblAACBitrate.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblAACBitrate.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblAACBitrate.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblAACBitrate.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblAACBitrate.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblAACBitrate.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblAMFBitrateK",
+      "type": "System.Windows.Forms.Label",
+      "parent": "tpAMF",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 149,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 32,
+          "height": 15
+        },
+        "TabIndex": 2,
+        "Text": "kbps",
+        "Name": "lblAMFBitrateK"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblAMFBitrateK.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblAMFBitrateK.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblAMFBitrateK.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblAMFBitrateK.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblAMFBitrateK.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblAMFBitrateK.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudAMFBitrate",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "tpAMF",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 72,
+          "y": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 72,
+          "height": 23
+        },
+        "TabIndex": 1,
+        "TextAlign": "Center",
+        "Maximum": 100000,
+        "Minimum": 100,
+        "Name": "nudAMFBitrate",
+        "Value": 3000
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudAMFBitrate.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudAMFBitrate.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudAMFBitrate.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudAMFBitrate.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblAMFBitrate",
+      "type": "System.Windows.Forms.Label",
+      "parent": "tpAMF",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 44,
+          "height": 15
+        },
+        "TabIndex": 0,
+        "Text": "Bitrate:",
+        "Name": "lblAMFBitrate"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblAMFBitrate.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblAMFBitrate.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblAMFBitrate.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblAMFBitrate.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblAMFBitrate.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblAMFBitrate.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbAMFQuality",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "tpAMF",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 72,
+          "y": 52
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 240,
+          "height": 23
+        },
+        "TabIndex": 6,
+        "Name": "cbAMFQuality"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbAMFQuality.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbAMFQuality.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbAMFQuality.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblAMFQuality",
+      "type": "System.Windows.Forms.Label",
+      "parent": "tpAMF",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 56
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 48,
+          "height": 15
+        },
+        "TabIndex": 5,
+        "Text": "Quality:",
+        "Name": "lblAMFQuality"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblAMFQuality.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblAMFQuality.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblAMFQuality.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblAMFQuality.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblAMFQuality.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblAMFQuality.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbAMFUsage",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "tpAMF",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 72,
+          "y": 28
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 240,
+          "height": 23
+        },
+        "TabIndex": 4,
+        "Name": "cbAMFUsage"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbAMFUsage.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbAMFUsage.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbAMFUsage.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblAMFUsage",
+      "type": "System.Windows.Forms.Label",
+      "parent": "tpAMF",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 32
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 42,
+          "height": 15
+        },
+        "TabIndex": 3,
+        "Text": "Usage:",
+        "Name": "lblAMFUsage"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblAMFUsage.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblAMFUsage.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblAMFUsage.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblAMFUsage.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblAMFUsage.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblAMFUsage.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudGIFBayerScale",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "tpGIF",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 240,
+          "y": 28
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 48,
+          "height": 23
+        },
+        "TabIndex": 0,
+        "TextAlign": "Center",
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "nudGIFBayerScale.ToolTip"
+        },
+        "Maximum": 5,
+        "Name": "nudGIFBayerScale",
+        "Value": 1
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudGIFBayerScale.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudGIFBayerScale.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudGIFBayerScale.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudGIFBayerScale.TextAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "nudGIFBayerScale.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "nudGIFBayerScale.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "cbGIFDither",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "tpGIF",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 128,
+          "y": 28
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 104,
+          "height": 23
+        },
+        "TabIndex": 3,
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "cbGIFDither.ToolTip"
+        },
+        "Name": "cbGIFDither"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbGIFDither.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbGIFDither.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbGIFDither.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "cbGIFDither.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "cbGIFDither.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "lblGIFDither",
+      "type": "System.Windows.Forms.Label",
+      "parent": "tpGIF",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 32
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 93,
+          "height": 15
+        },
+        "TabIndex": 2,
+        "Text": "Dithering mode:",
+        "Name": "lblGIFDither"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblGIFDither.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblGIFDither.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblGIFDither.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblGIFDither.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblGIFDither.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblGIFDither.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbGIFStatsMode",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "tpGIF",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 128,
+          "y": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 104,
+          "height": 23
+        },
+        "TabIndex": 1,
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "cbGIFStatsMode.ToolTip"
+        },
+        "Name": "cbGIFStatsMode"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbGIFStatsMode.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbGIFStatsMode.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbGIFStatsMode.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "cbGIFStatsMode.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "cbGIFStatsMode.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "lblGIFStatsMode",
+      "type": "System.Windows.Forms.Label",
+      "parent": "tpGIF",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 80,
+          "height": 15
+        },
+        "TabIndex": 0,
+        "Text": "Palette mode:",
+        "Name": "lblGIFStatsMode"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblGIFStatsMode.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblGIFStatsMode.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblGIFStatsMode.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblGIFStatsMode.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblGIFStatsMode.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblGIFStatsMode.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbMP3Quality",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "tpMP3",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 72,
+          "y": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 48,
+          "height": 23
+        },
+        "TabIndex": 1,
+        "Name": "cbMP3Quality"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbMP3Quality.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbMP3Quality.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbMP3Quality.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblMP3Quality",
+      "type": "System.Windows.Forms.Label",
+      "parent": "tpMP3",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 48,
+          "height": 15
+        },
+        "TabIndex": 0,
+        "Text": "Quality:",
+        "Name": "lblMP3Quality"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblMP3Quality.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblMP3Quality.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblMP3Quality.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblMP3Quality.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblMP3Quality.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblMP3Quality.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbNVENCTune",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "tpNVENC",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 72,
+          "y": 52
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 240,
+          "height": 23
+        },
+        "TabIndex": 6,
+        "Name": "cbNVENCTune"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbNVENCTune.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbNVENCTune.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbNVENCTune.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblNVENCTune",
+      "type": "System.Windows.Forms.Label",
+      "parent": "tpNVENC",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 56
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 37,
+          "height": 15
+        },
+        "TabIndex": 5,
+        "Text": "Tune:",
+        "Name": "lblNVENCTune"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblNVENCTune.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblNVENCTune.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblNVENCTune.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblNVENCTune.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblNVENCTune.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblNVENCTune.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblNVENCBitrateK",
+      "type": "System.Windows.Forms.Label",
+      "parent": "tpNVENC",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 149,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 32,
+          "height": 15
+        },
+        "TabIndex": 2,
+        "Text": "kbps",
+        "Name": "lblNVENCBitrateK"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblNVENCBitrateK.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblNVENCBitrateK.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblNVENCBitrateK.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblNVENCBitrateK.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblNVENCBitrateK.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblNVENCBitrateK.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbNVENCPreset",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "tpNVENC",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 72,
+          "y": 28
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 240,
+          "height": 23
+        },
+        "TabIndex": 4,
+        "Name": "cbNVENCPreset"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbNVENCPreset.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbNVENCPreset.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbNVENCPreset.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblNVENCPreset",
+      "type": "System.Windows.Forms.Label",
+      "parent": "tpNVENC",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 32
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 42,
+          "height": 15
+        },
+        "TabIndex": 3,
+        "Text": "Preset:",
+        "Name": "lblNVENCPreset"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblNVENCPreset.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblNVENCPreset.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblNVENCPreset.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblNVENCPreset.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblNVENCPreset.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblNVENCPreset.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudNVENCBitrate",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "tpNVENC",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 72,
+          "y": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 72,
+          "height": 23
+        },
+        "TabIndex": 1,
+        "TextAlign": "Center",
+        "Maximum": 100000,
+        "Minimum": 100,
+        "Name": "nudNVENCBitrate",
+        "Value": 3000
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudNVENCBitrate.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudNVENCBitrate.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudNVENCBitrate.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudNVENCBitrate.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblNVENCBitrate",
+      "type": "System.Windows.Forms.Label",
+      "parent": "tpNVENC",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 44,
+          "height": 15
+        },
+        "TabIndex": 0,
+        "Text": "Bitrate:",
+        "Name": "lblNVENCBitrate"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblNVENCBitrate.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblNVENCBitrate.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblNVENCBitrate.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblNVENCBitrate.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblNVENCBitrate.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblNVENCBitrate.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblOpusBitrateK",
+      "type": "System.Windows.Forms.Label",
+      "parent": "tpOpus",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 133,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 32,
+          "height": 15
+        },
+        "TabIndex": 2,
+        "Text": "kbps",
+        "Name": "lblOpusBitrateK"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblOpusBitrateK.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblOpusBitrateK.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblOpusBitrateK.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblOpusBitrateK.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblOpusBitrateK.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbOpusBitrate",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "tpOpus",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 72,
+          "y": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 56,
+          "height": 23
+        },
+        "TabIndex": 1,
+        "Name": "cbOpusBitrate"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbOpusBitrate.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbOpusBitrate.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbOpusBitrate.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblOpusBitrate",
+      "type": "System.Windows.Forms.Label",
+      "parent": "tpOpus",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 44,
+          "height": 15
+        },
+        "TabIndex": 0,
+        "Text": "Bitrate:",
+        "Name": "lblOpusBitrate"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblOpusBitrate.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblOpusBitrate.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblOpusBitrate.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblOpusBitrate.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblOpusBitrate.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblOpusBitrate.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblQSVBitrateK",
+      "type": "System.Windows.Forms.Label",
+      "parent": "tpQSV",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 149,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 32,
+          "height": 15
+        },
+        "TabIndex": 8,
+        "Text": "kbps",
+        "Name": "lblQSVBitrateK"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblQSVBitrateK.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblQSVBitrateK.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblQSVBitrateK.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblQSVBitrateK.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblQSVBitrateK.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblQSVBitrateK.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbQSVPreset",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "tpQSV",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 72,
+          "y": 28
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 240,
+          "height": 23
+        },
+        "TabIndex": 7,
+        "Name": "cbQSVPreset"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbQSVPreset.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbQSVPreset.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbQSVPreset.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblQSVPreset",
+      "type": "System.Windows.Forms.Label",
+      "parent": "tpQSV",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 32
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 42,
+          "height": 15
+        },
+        "TabIndex": 6,
+        "Text": "Preset:",
+        "Name": "lblQSVPreset"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblQSVPreset.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblQSVPreset.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblQSVPreset.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblQSVPreset.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblQSVPreset.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblQSVPreset.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudQSVBitrate",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "tpQSV",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 72,
+          "y": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 72,
+          "height": 23
+        },
+        "TabIndex": 5,
+        "TextAlign": "Center",
+        "Maximum": 100000,
+        "Minimum": 100,
+        "Name": "nudQSVBitrate",
+        "Value": 3000
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudQSVBitrate.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudQSVBitrate.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudQSVBitrate.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudQSVBitrate.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblQSVBitrate",
+      "type": "System.Windows.Forms.Label",
+      "parent": "tpQSV",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 44,
+          "height": 15
+        },
+        "TabIndex": 4,
+        "Text": "Bitrate:",
+        "Name": "lblQSVBitrate"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblQSVBitrate.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblQSVBitrate.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblQSVBitrate.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblQSVBitrate.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblQSVBitrate.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblQSVBitrate.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbVorbisQuality",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "tpVorbis",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 72,
+          "y": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 48,
+          "height": 23
+        },
+        "TabIndex": 1,
+        "Name": "cbVorbisQuality"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbVorbisQuality.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbVorbisQuality.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbVorbisQuality.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblVorbisQuality",
+      "type": "System.Windows.Forms.Label",
+      "parent": "tpVorbis",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 48,
+          "height": 15
+        },
+        "TabIndex": 0,
+        "Text": "Quality:",
+        "Name": "lblVorbisQuality"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblVorbisQuality.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblVorbisQuality.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblVorbisQuality.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblVorbisQuality.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblVorbisQuality.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblVorbisQuality.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblVP8BitrateK",
+      "type": "System.Windows.Forms.Label",
+      "parent": "tpVpx",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 149,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 32,
+          "height": 15
+        },
+        "TabIndex": 2,
+        "Text": "kbps",
+        "Name": "lblVP8BitrateK"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblVP8BitrateK.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblVP8BitrateK.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblVP8BitrateK.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblVP8BitrateK.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblVP8BitrateK.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblVP8BitrateK.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudVP8Bitrate",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "tpVpx",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Increment": 100,
+        "Location": {
+          "kind": "Point",
+          "x": 72,
+          "y": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 72,
+          "height": 23
+        },
+        "TabIndex": 1,
+        "TextAlign": "Center",
+        "Maximum": 100000,
+        "Minimum": 100,
+        "Name": "nudVP8Bitrate",
+        "Value": 3000
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudVP8Bitrate.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudVP8Bitrate.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudVP8Bitrate.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudVP8Bitrate.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblVP8Bitrate",
+      "type": "System.Windows.Forms.Label",
+      "parent": "tpVpx",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 44,
+          "height": 15
+        },
+        "TabIndex": 0,
+        "Text": "Bitrate:",
+        "Name": "lblVP8Bitrate"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblVP8Bitrate.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblVP8Bitrate.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblVP8Bitrate.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblVP8Bitrate.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblVP8Bitrate.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblVP8Bitrate.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblx264BitrateK",
+      "type": "System.Windows.Forms.Label",
+      "parent": "tpX264",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 149,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 32,
+          "height": 15
+        },
+        "TabIndex": 3,
+        "Text": "kbps",
+        "Name": "lblx264BitrateK"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblx264BitrateK.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblx264BitrateK.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblx264BitrateK.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblx264BitrateK.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblx264BitrateK.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblx264BitrateK.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbx264UseBitrate",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "tpX264",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 200,
+          "y": 6
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 82,
+          "height": 19
+        },
+        "TabIndex": 4,
+        "Text": "Use bitrate",
+        "Name": "cbx264UseBitrate",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbx264UseBitrate.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "cbx264UseBitrate.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbx264UseBitrate.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbx264UseBitrate.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbx264UseBitrate.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbx264UseBitrate.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pbx264PresetWarning",
+      "type": "System.Windows.Forms.PictureBox",
+      "parent": "tpX264",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.exclamation_button"
+        },
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 224,
+          "y": 30
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 16,
+          "height": 16
+        },
+        "SizeMode": "AutoSize",
+        "TabIndex": 6,
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "pbx264PresetWarning.ToolTip"
+        },
+        "Visible": false,
+        "Name": "pbx264PresetWarning",
+        "TabStop": false
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "pbx264PresetWarning.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "pbx264PresetWarning.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pbx264PresetWarning.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "SizeMode",
+          "resource_key": "pbx264PresetWarning.SizeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pbx264PresetWarning.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "pbx264PresetWarning.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Visible",
+          "resource_key": "pbx264PresetWarning.Visible",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "pbx264PresetWarning.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "lblx264CRF",
+      "type": "System.Windows.Forms.Label",
+      "parent": "tpX264",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 31,
+          "height": 15
+        },
+        "TabIndex": 0,
+        "Text": "CRF:",
+        "Name": "lblx264CRF"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblx264CRF.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblx264CRF.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblx264CRF.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblx264CRF.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblx264CRF.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblx264CRF.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbx264Preset",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "tpX264",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 72,
+          "y": 28
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 144,
+          "height": 23
+        },
+        "TabIndex": 6,
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "cbx264Preset.ToolTip"
+        },
+        "Name": "cbx264Preset"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbx264Preset.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbx264Preset.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbx264Preset.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "cbx264Preset.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "cbx264Preset.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "lblx264Preset",
+      "type": "System.Windows.Forms.Label",
+      "parent": "tpX264",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 32
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 42,
+          "height": 15
+        },
+        "TabIndex": 5,
+        "Text": "Preset:",
+        "Name": "lblx264Preset"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblx264Preset.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblx264Preset.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblx264Preset.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblx264Preset.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblx264Preset.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblx264Preset.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudx264CRF",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "tpX264",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 72,
+          "y": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 48,
+          "height": 23
+        },
+        "TabIndex": 1,
+        "TextAlign": "Center",
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "nudx264CRF.ToolTip"
+        },
+        "Maximum": 51,
+        "Name": "nudx264CRF",
+        "Value": 23
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudx264CRF.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudx264CRF.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudx264CRF.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudx264CRF.TextAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "nudx264CRF.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "nudx264CRF.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "nudx264Bitrate",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "tpX264",
+      "parent_slot": "Controls",
+      "child_index": 7,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 72,
+          "y": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 72,
+          "height": 23
+        },
+        "TabIndex": 2,
+        "TextAlign": "Center",
+        "Maximum": 100000,
+        "Minimum": 100,
+        "Name": "nudx264Bitrate",
+        "Value": 3000
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudx264Bitrate.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudx264Bitrate.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudx264Bitrate.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudx264Bitrate.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudXvidQscale",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "tpXvid",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 128,
+          "y": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 56,
+          "height": 23
+        },
+        "TabIndex": 1,
+        "TextAlign": "Center",
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "nudXvidQscale.ToolTip"
+        },
+        "Maximum": 31,
+        "Minimum": 1,
+        "Name": "nudXvidQscale",
+        "Value": 3
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudXvidQscale.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudXvidQscale.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudXvidQscale.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudXvidQscale.TextAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "nudXvidQscale.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "nudXvidQscale.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "lblXvidQscale",
+      "type": "System.Windows.Forms.Label",
+      "parent": "tpXvid",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 88,
+          "height": 15
+        },
+        "TabIndex": 0,
+        "Text": "Variable bitrate:",
+        "Name": "lblXvidQscale"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblXvidQscale.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblXvidQscale.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblXvidQscale.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblXvidQscale.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblXvidQscale.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblXvidQscale.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "FFmpegOptionsForm",
+    "type": "Form",
+    "slots": {
+      "Controls": [
+        {
+          "name": "btnResetOptions",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "tcFFmpegAudioCodecs",
+          "type": "HelpersLib.TablessControl",
+          "slots": {
+            "Controls": [
+              {
+                "name": "tpAAC",
+                "type": "System.Windows.Forms.TabPage",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "lblAACBitrateK",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "cbAACBitrate",
+                      "type": "System.Windows.Forms.ComboBox",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblAACBitrate",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "tpOpus",
+                "type": "System.Windows.Forms.TabPage",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "lblOpusBitrateK",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "cbOpusBitrate",
+                      "type": "System.Windows.Forms.ComboBox",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblOpusBitrate",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "tpVorbis",
+                "type": "System.Windows.Forms.TabPage",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "cbVorbisQuality",
+                      "type": "System.Windows.Forms.ComboBox",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblVorbisQuality",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "tpMP3",
+                "type": "System.Windows.Forms.TabPage",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "cbMP3Quality",
+                      "type": "System.Windows.Forms.ComboBox",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblMP3Quality",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "tcFFmpegVideoCodecs",
+          "type": "HelpersLib.TablessControl",
+          "slots": {
+            "Controls": [
+              {
+                "name": "tpX264",
+                "type": "System.Windows.Forms.TabPage",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "lblx264BitrateK",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "cbx264UseBitrate",
+                      "type": "System.Windows.Forms.CheckBox",
+                      "slots": {}
+                    },
+                    {
+                      "name": "pbx264PresetWarning",
+                      "type": "System.Windows.Forms.PictureBox",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblx264CRF",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "cbx264Preset",
+                      "type": "System.Windows.Forms.ComboBox",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblx264Preset",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "nudx264CRF",
+                      "type": "System.Windows.Forms.NumericUpDown",
+                      "slots": {}
+                    },
+                    {
+                      "name": "nudx264Bitrate",
+                      "type": "System.Windows.Forms.NumericUpDown",
+                      "slots": {}
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "tpVpx",
+                "type": "System.Windows.Forms.TabPage",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "lblVP8BitrateK",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "nudVP8Bitrate",
+                      "type": "System.Windows.Forms.NumericUpDown",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblVP8Bitrate",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "tpXvid",
+                "type": "System.Windows.Forms.TabPage",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "nudXvidQscale",
+                      "type": "System.Windows.Forms.NumericUpDown",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblXvidQscale",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "tpNVENC",
+                "type": "System.Windows.Forms.TabPage",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "cbNVENCTune",
+                      "type": "System.Windows.Forms.ComboBox",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblNVENCTune",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblNVENCBitrateK",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "cbNVENCPreset",
+                      "type": "System.Windows.Forms.ComboBox",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblNVENCPreset",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "nudNVENCBitrate",
+                      "type": "System.Windows.Forms.NumericUpDown",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblNVENCBitrate",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "tpGIF",
+                "type": "System.Windows.Forms.TabPage",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "nudGIFBayerScale",
+                      "type": "System.Windows.Forms.NumericUpDown",
+                      "slots": {}
+                    },
+                    {
+                      "name": "cbGIFDither",
+                      "type": "System.Windows.Forms.ComboBox",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblGIFDither",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "cbGIFStatsMode",
+                      "type": "System.Windows.Forms.ComboBox",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblGIFStatsMode",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "tpAMF",
+                "type": "System.Windows.Forms.TabPage",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "lblAMFBitrateK",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "nudAMFBitrate",
+                      "type": "System.Windows.Forms.NumericUpDown",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblAMFBitrate",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "cbAMFQuality",
+                      "type": "System.Windows.Forms.ComboBox",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblAMFQuality",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "cbAMFUsage",
+                      "type": "System.Windows.Forms.ComboBox",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblAMFUsage",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "tpQSV",
+                "type": "System.Windows.Forms.TabPage",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "lblQSVBitrateK",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "cbQSVPreset",
+                      "type": "System.Windows.Forms.ComboBox",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblQSVPreset",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "nudQSVBitrate",
+                      "type": "System.Windows.Forms.NumericUpDown",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblQSVBitrate",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "lblAudioEncoder",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblVideoEncoder",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "cbUseCustomFFmpegPath",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "cbCustomCommands",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "txtCommandLinePreview",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "txtUserArgs",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblCommandLineArgs",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "btnHelperDevicesHelp",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "cbAudioCodec",
+          "type": "System.Windows.Forms.ComboBox",
+          "slots": {}
+        },
+        {
+          "name": "lblHelperDevices",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "cbVideoCodec",
+          "type": "System.Windows.Forms.ComboBox",
+          "slots": {}
+        },
+        {
+          "name": "btnInstallHelperDevices",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "cbVideoSource",
+          "type": "System.Windows.Forms.ComboBox",
+          "slots": {}
+        },
+        {
+          "name": "btnFFmpegBrowse",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "lblVideoSource",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "cbAudioSource",
+          "type": "System.Windows.Forms.ComboBox",
+          "slots": {}
+        },
+        {
+          "name": "txtFFmpegPath",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblAudioSource",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        }
+      ]
+    }
+  },
+  "strings": {
+    "pbx264PresetWarning.ToolTip": "For real time encoding like screen recording it is recommended to select fast as possible preset.\nOtherwise it can't keep up with recording and a lot of frame drops will happen.",
+    "cbx264Preset.ToolTip": "Faster preset = Faster encoding but higher file size.\nSlower preset = Slower encoding but lower file size.\nFor real time encoding (e.g. screen recording), the preset must be as fast as possible.",
+    "nudx264CRF.ToolTip": "Constant Rate Factor (CRF): The value can be between 0-51, where 0 is lossless, 30 is default, and 51 is the worst possible.\nA higher value means bad quality, but a low file size.",
+    "nudXvidQscale.ToolTip": "1 being highest quality/largest filesize and 31 being the lowest quality/smallest filesize.",
+    "nudGIFBayerScale.ToolTip": "Controls the Bayer Scale index, a higher scale will display more banding. Default is 2.",
+    "cbGIFDither.ToolTip": "Default is sierra2_4a.",
+    "cbGIFStatsMode.ToolTip": "Default is full.",
+    "btnFFmpegBrowse.Text": "...",
+    "cbCustomCommands.Text": "Use custom commands:",
+    "lblVideoSource.Text": "Video source:",
+    "lblAudioSource.Text": "Audio source:",
+    "btnHelperDevicesHelp.Text": "?",
+    "lblHelperDevices.Text": "Installs \"screen-capture-recorder\" and \"virtual-audio-capturer\" video/audio source.",
+    "btnInstallHelperDevices.Text": "Install recorder devices...",
+    "lblCommandLineArgs.Text": "Additional command line arguments:",
+    "cbUseCustomFFmpegPath.Text": "Use custom FFmpeg path:",
+    "lblVideoEncoder.Text": "Video encoder:",
+    "lblAudioEncoder.Text": "Audio encoder:",
+    "lblAACBitrateK.Text": "kbps",
+    "lblAACBitrate.Text": "Bitrate:",
+    "tpAAC.Text": "AAC",
+    "lblOpusBitrateK.Text": "kbps",
+    "lblOpusBitrate.Text": "Bitrate:",
+    "tpOpus.Text": "Opus",
+    "lblVorbisQuality.Text": "Quality:",
+    "tpVorbis.Text": "Vorbis",
+    "lblMP3Quality.Text": "Quality:",
+    "tpMP3.Text": "MP3",
+    "lblx264BitrateK.Text": "kbps",
+    "cbx264UseBitrate.Text": "Use bitrate",
+    "lblx264CRF.Text": "CRF:",
+    "lblx264Preset.Text": "Preset:",
+    "tpX264.Text": "x264 / x265",
+    "lblVP8BitrateK.Text": "kbps",
+    "lblVP8Bitrate.Text": "Bitrate:",
+    "tpVpx.Text": "VP8",
+    "lblXvidQscale.Text": "Variable bitrate:",
+    "tpXvid.Text": "Xvid",
+    "lblNVENCTune.Text": "Tune:",
+    "lblNVENCBitrateK.Text": "kbps",
+    "lblNVENCPreset.Text": "Preset:",
+    "lblNVENCBitrate.Text": "Bitrate:",
+    "tpNVENC.Text": "NVENC",
+    "lblGIFDither.Text": "Dithering mode:",
+    "lblGIFStatsMode.Text": "Palette mode:",
+    "tpGIF.Text": "GIF",
+    "lblAMFBitrateK.Text": "kbps",
+    "lblAMFBitrate.Text": "Bitrate:",
+    "lblAMFQuality.Text": "Quality:",
+    "lblAMFUsage.Text": "Usage:",
+    "tpAMF.Text": "AMF",
+    "lblQSVBitrateK.Text": "kbps",
+    "lblQSVPreset.Text": "Preset:",
+    "lblQSVBitrate.Text": "Bitrate:",
+    "tpQSV.Text": "QuickSync",
+    "btnResetOptions.Text": "Reset options...",
+    "$this.Text": "ShareX - Screen recording options"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 516,
+  "parsed_statements": 516,
+  "unparsed_lines": []
+}

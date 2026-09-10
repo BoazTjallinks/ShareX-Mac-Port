@@ -1,0 +1,1272 @@
+{
+  "form_name": "ImageCombinerForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX.MediaLib/Forms/ImageCombinerForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.MediaLib/Forms/ImageCombinerForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 521,
+    "height": 536
+  },
+  "text": "ShareX - Image combiner",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 96,
+    "height": 96
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Dpi"
+  },
+  "tab_order": [
+    "btnAdd",
+    "rbOrientationHorizontal",
+    "btnRemove",
+    "rbOrientationVertical",
+    "btnMoveUp",
+    "btnMoveDown",
+    "lvImages",
+    "lblOrientation",
+    "flpOrientation",
+    "lblImageAlignment",
+    "cbAlignment",
+    "lblSpace",
+    "nudSpace",
+    "lblSpacePixel",
+    "lblWrapAfter",
+    "nudWrapAfter",
+    "lblWrapAfterImages",
+    "cbAutoFillBackground",
+    "btnCombine",
+    "lblImageCount"
+  ],
+  "controls": [
+    {
+      "name": "lblImageCount",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ImageCombinerForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Anchor": "Bottom, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 472,
+          "y": 368
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 40,
+          "height": 24
+        },
+        "TabIndex": 17,
+        "Text": "0",
+        "TextAlign": "TopRight",
+        "Name": "lblImageCount"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "lblImageCount.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblImageCount.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblImageCount.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblImageCount.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblImageCount.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "lblImageCount.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblWrapAfterImages",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ImageCombinerForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 272,
+          "y": 448
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 45,
+          "height": 15
+        },
+        "TabIndex": 14,
+        "Text": "images",
+        "Name": "lblWrapAfterImages"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "lblWrapAfterImages.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "AutoSize",
+          "resource_key": "lblWrapAfterImages.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblWrapAfterImages.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblWrapAfterImages.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblWrapAfterImages.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblWrapAfterImages.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudWrapAfter",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "ImageCombinerForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "Location": {
+          "kind": "Point",
+          "x": 200,
+          "y": 444
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 64,
+          "height": 23
+        },
+        "TabIndex": 13,
+        "TextAlign": "Center",
+        "Maximum": 1000,
+        "Name": "nudWrapAfter"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "nudWrapAfter.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "nudWrapAfter.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudWrapAfter.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudWrapAfter.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudWrapAfter.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblWrapAfter",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ImageCombinerForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 448
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 65,
+          "height": 15
+        },
+        "TabIndex": 12,
+        "Text": "Wrap after:",
+        "Name": "lblWrapAfter"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "lblWrapAfter.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "AutoSize",
+          "resource_key": "lblWrapAfter.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblWrapAfter.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblWrapAfter.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblWrapAfter.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblWrapAfter.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbAutoFillBackground",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "ImageCombinerForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 470
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 135,
+          "height": 19
+        },
+        "TabIndex": 15,
+        "Text": "Auto fill background",
+        "Name": "cbAutoFillBackground",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "cbAutoFillBackground.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "AutoSize",
+          "resource_key": "cbAutoFillBackground.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbAutoFillBackground.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbAutoFillBackground.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbAutoFillBackground.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbAutoFillBackground.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "flpOrientation",
+      "type": "System.Windows.Forms.FlowLayoutPanel",
+      "parent": "ImageCombinerForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 200,
+          "y": 369
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 152,
+          "height": 25
+        },
+        "TabIndex": 6,
+        "Name": "flpOrientation"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "flpOrientation.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "AutoSize",
+          "resource_key": "flpOrientation.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "flpOrientation.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "flpOrientation.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "flpOrientation.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbAlignment",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "ImageCombinerForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "Location": {
+          "kind": "Point",
+          "x": 200,
+          "y": 396
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 23
+        },
+        "TabIndex": 8,
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Name": "cbAlignment"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "cbAlignment.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbAlignment.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbAlignment.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbAlignment.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblImageAlignment",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ImageCombinerForm",
+      "parent_slot": "Controls",
+      "child_index": 7,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 400
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 100,
+          "height": 15
+        },
+        "TabIndex": 7,
+        "Text": "Image alignment:",
+        "Name": "lblImageAlignment"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "lblImageAlignment.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "AutoSize",
+          "resource_key": "lblImageAlignment.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblImageAlignment.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblImageAlignment.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblImageAlignment.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblImageAlignment.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblSpacePixel",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ImageCombinerForm",
+      "parent_slot": "Controls",
+      "child_index": 8,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 272,
+          "y": 424
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 36,
+          "height": 15
+        },
+        "TabIndex": 11,
+        "Text": "pixels",
+        "Name": "lblSpacePixel"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "lblSpacePixel.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "AutoSize",
+          "resource_key": "lblSpacePixel.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblSpacePixel.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblSpacePixel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblSpacePixel.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblSpacePixel.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblOrientation",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ImageCombinerForm",
+      "parent_slot": "Controls",
+      "child_index": 9,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 376
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 15
+        },
+        "TabIndex": 5,
+        "Text": "Combine orientation:",
+        "Name": "lblOrientation"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "lblOrientation.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "AutoSize",
+          "resource_key": "lblOrientation.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblOrientation.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblOrientation.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblOrientation.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblOrientation.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudSpace",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "ImageCombinerForm",
+      "parent_slot": "Controls",
+      "child_index": 10,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "Location": {
+          "kind": "Point",
+          "x": 200,
+          "y": 420
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 64,
+          "height": 23
+        },
+        "TabIndex": 10,
+        "TextAlign": "Center",
+        "Maximum": 1000,
+        "Name": "nudSpace"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "nudSpace.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "nudSpace.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudSpace.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudSpace.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudSpace.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblSpace",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ImageCombinerForm",
+      "parent_slot": "Controls",
+      "child_index": 11,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 424
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 130,
+          "height": 15
+        },
+        "TabIndex": 9,
+        "Text": "Space between images:",
+        "Name": "lblSpace"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "lblSpace.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "AutoSize",
+          "resource_key": "lblSpace.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblSpace.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblSpace.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblSpace.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblSpace.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnCombine",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageCombinerForm",
+      "parent_slot": "Controls",
+      "child_index": 12,
+      "properties": {
+        "Anchor": "Bottom, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 496
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 504,
+          "height": 31
+        },
+        "TabIndex": 16,
+        "Text": "Combine images and save/upload depending on after capture settings",
+        "Name": "btnCombine",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnCombine.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnCombine.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCombine.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCombine.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCombine.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lvImages",
+      "type": "HelpersLib.MyListView",
+      "parent": "ImageCombinerForm",
+      "parent_slot": "Controls",
+      "child_index": 13,
+      "properties": {
+        "AllowDrop": true,
+        "AllowItemDrag": true,
+        "Anchor": "Top, Bottom, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 40
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 504,
+          "height": 320
+        },
+        "TabIndex": 4,
+        "AutoFillColumn": true,
+        "FullRowSelect": true,
+        "HeaderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ColumnHeaderStyle.None"
+        },
+        "Name": "lvImages",
+        "UseCompatibleStateImageBehavior": false,
+        "View": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.View.Details"
+        }
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "lvImages.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lvImages.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lvImages.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lvImages.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnMoveDown",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageCombinerForm",
+      "parent_slot": "Controls",
+      "child_index": 14,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 392,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 25
+        },
+        "TabIndex": 3,
+        "Text": "Move down",
+        "Name": "btnMoveDown",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnMoveDown.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnMoveDown.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnMoveDown.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnMoveDown.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnMoveUp",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageCombinerForm",
+      "parent_slot": "Controls",
+      "child_index": 15,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 264,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 25
+        },
+        "TabIndex": 2,
+        "Text": "Move up",
+        "Name": "btnMoveUp",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnMoveUp.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnMoveUp.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnMoveUp.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnMoveUp.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnRemove",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageCombinerForm",
+      "parent_slot": "Controls",
+      "child_index": 16,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 136,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 25
+        },
+        "TabIndex": 1,
+        "Text": "Remove",
+        "Name": "btnRemove",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnRemove.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnRemove.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnRemove.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnRemove.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnAdd",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageCombinerForm",
+      "parent_slot": "Controls",
+      "child_index": 17,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 25
+        },
+        "TabIndex": 0,
+        "Text": "Add...",
+        "Name": "btnAdd",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnAdd.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnAdd.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnAdd.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnAdd.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "rbOrientationHorizontal",
+      "type": "System.Windows.Forms.RadioButton",
+      "parent": "flpOrientation",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 3
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 0,
+          "top": 3,
+          "right": 3,
+          "bottom": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 80,
+          "height": 19
+        },
+        "TabIndex": 0,
+        "Text": "Horizontal",
+        "Name": "rbOrientationHorizontal",
+        "TabStop": true,
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "rbOrientationHorizontal.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "rbOrientationHorizontal.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "rbOrientationHorizontal.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "rbOrientationHorizontal.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "rbOrientationHorizontal.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "rbOrientationHorizontal.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "rbOrientationVertical",
+      "type": "System.Windows.Forms.RadioButton",
+      "parent": "flpOrientation",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 86,
+          "y": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 63,
+          "height": 19
+        },
+        "TabIndex": 1,
+        "Text": "Vertical",
+        "Name": "rbOrientationVertical",
+        "TabStop": true,
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "rbOrientationVertical.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "rbOrientationVertical.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "rbOrientationVertical.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "rbOrientationVertical.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "rbOrientationVertical.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "chFilepath",
+      "type": "System.Windows.Forms.ColumnHeader",
+      "parent": "lvImages",
+      "parent_slot": "Columns",
+      "child_index": 0,
+      "properties": {
+        "Text": "Image file path",
+        "Width": 487
+      },
+      "resources": [
+        {
+          "property": "Text",
+          "resource_key": "chFilepath.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Width",
+          "resource_key": "chFilepath.Width",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "ImageCombinerForm",
+    "type": "Form",
+    "slots": {
+      "Controls": [
+        {
+          "name": "lblImageCount",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblWrapAfterImages",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "nudWrapAfter",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "lblWrapAfter",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "cbAutoFillBackground",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "flpOrientation",
+          "type": "System.Windows.Forms.FlowLayoutPanel",
+          "slots": {
+            "Controls": [
+              {
+                "name": "rbOrientationHorizontal",
+                "type": "System.Windows.Forms.RadioButton",
+                "slots": {}
+              },
+              {
+                "name": "rbOrientationVertical",
+                "type": "System.Windows.Forms.RadioButton",
+                "slots": {}
+              }
+            ]
+          }
+        },
+        {
+          "name": "cbAlignment",
+          "type": "System.Windows.Forms.ComboBox",
+          "slots": {}
+        },
+        {
+          "name": "lblImageAlignment",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblSpacePixel",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblOrientation",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "nudSpace",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "lblSpace",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "btnCombine",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "lvImages",
+          "type": "HelpersLib.MyListView",
+          "slots": {
+            "Columns": [
+              {
+                "name": "chFilepath",
+                "type": "System.Windows.Forms.ColumnHeader",
+                "slots": {}
+              }
+            ]
+          }
+        },
+        {
+          "name": "btnMoveDown",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnMoveUp",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnRemove",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnAdd",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        }
+      ]
+    }
+  },
+  "strings": {
+    "btnAdd.Text": "Add...",
+    "btnRemove.Text": "Remove",
+    "btnMoveUp.Text": "Move up",
+    "btnMoveDown.Text": "Move down",
+    "chFilepath.Text": "Image file path",
+    "btnCombine.Text": "Combine images and save/upload depending on after capture settings",
+    "lblSpace.Text": "Space between images:",
+    "lblOrientation.Text": "Combine orientation:",
+    "lblSpacePixel.Text": "pixels",
+    "lblImageAlignment.Text": "Image alignment:",
+    "rbOrientationHorizontal.Text": "Horizontal",
+    "rbOrientationVertical.Text": "Vertical",
+    "cbAutoFillBackground.Text": "Auto fill background",
+    "lblWrapAfter.Text": "Wrap after:",
+    "lblWrapAfterImages.Text": "images",
+    "lblImageCount.Text": "0",
+    "$this.Text": "ShareX - Image combiner"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 136,
+  "parsed_statements": 136,
+  "unparsed_lines": []
+}

@@ -1,0 +1,562 @@
+{
+  "form_name": "EditorStartupForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX.ScreenCaptureLib/Forms/EditorStartupForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.ScreenCaptureLib/Forms/EditorStartupForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 346,
+    "height": 241
+  },
+  "text": "ShareX - Image editor",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 7,
+    "height": 15
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Font"
+  },
+  "tab_order": [
+    "btnOpenImageFile",
+    "btnLoadImageFromClipboard",
+    "btnLoadImageFromURL",
+    "btnCreateNewImage",
+    "btnCancel"
+  ],
+  "controls": [
+    {
+      "name": "btnLoadImageFromURL",
+      "type": "System.Windows.Forms.Button",
+      "parent": "EditorStartupForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "ImageAlign": "MiddleLeft",
+        "Location": {
+          "kind": "Point",
+          "x": 9,
+          "y": 102
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 3,
+          "right": 4,
+          "bottom": 3
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 327,
+          "height": 37
+        },
+        "TabIndex": 2,
+        "Text": "Load image from URL...",
+        "TextAlign": "MiddleLeft",
+        "TextImageRelation": "ImageBeforeText",
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.drive_globe"
+        },
+        "Name": "btnLoadImageFromURL",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "btnLoadImageFromURL.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImageAlign",
+          "resource_key": "btnLoadImageFromURL.ImageAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnLoadImageFromURL.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "btnLoadImageFromURL.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "btnLoadImageFromURL.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnLoadImageFromURL.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnLoadImageFromURL.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnLoadImageFromURL.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "btnLoadImageFromURL.TextAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextImageRelation",
+          "resource_key": "btnLoadImageFromURL.TextImageRelation",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnCancel",
+      "type": "System.Windows.Forms.Button",
+      "parent": "EditorStartupForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.cross"
+        },
+        "ImageAlign": "MiddleLeft",
+        "Location": {
+          "kind": "Point",
+          "x": 9,
+          "y": 194
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 3,
+          "right": 4,
+          "bottom": 3
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 327,
+          "height": 37
+        },
+        "TabIndex": 4,
+        "Text": "Cancel",
+        "TextAlign": "MiddleLeft",
+        "TextImageRelation": "ImageBeforeText",
+        "Name": "btnCancel",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImageAlign",
+          "resource_key": "btnCancel.ImageAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnCancel.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "btnCancel.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "btnCancel.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCancel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCancel.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCancel.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "btnCancel.TextAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextImageRelation",
+          "resource_key": "btnCancel.TextImageRelation",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnLoadImageFromClipboard",
+      "type": "System.Windows.Forms.Button",
+      "parent": "EditorStartupForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "ImageAlign": "MiddleLeft",
+        "Location": {
+          "kind": "Point",
+          "x": 9,
+          "y": 55
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 3,
+          "right": 4,
+          "bottom": 3
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 327,
+          "height": 37
+        },
+        "TabIndex": 1,
+        "Text": "Load image from clipboard",
+        "TextAlign": "MiddleLeft",
+        "TextImageRelation": "ImageBeforeText",
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.clipboard"
+        },
+        "Name": "btnLoadImageFromClipboard",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "btnLoadImageFromClipboard.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImageAlign",
+          "resource_key": "btnLoadImageFromClipboard.ImageAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnLoadImageFromClipboard.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "btnLoadImageFromClipboard.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "btnLoadImageFromClipboard.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnLoadImageFromClipboard.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnLoadImageFromClipboard.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnLoadImageFromClipboard.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "btnLoadImageFromClipboard.TextAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextImageRelation",
+          "resource_key": "btnLoadImageFromClipboard.TextImageRelation",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnCreateNewImage",
+      "type": "System.Windows.Forms.Button",
+      "parent": "EditorStartupForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "ImageAlign": "MiddleLeft",
+        "Location": {
+          "kind": "Point",
+          "x": 9,
+          "y": 148
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 3,
+          "right": 4,
+          "bottom": 3
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 327,
+          "height": 37
+        },
+        "TabIndex": 3,
+        "Text": "Create new image...",
+        "TextAlign": "MiddleLeft",
+        "TextImageRelation": "ImageBeforeText",
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.image_empty"
+        },
+        "Name": "btnCreateNewImage",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "btnCreateNewImage.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImageAlign",
+          "resource_key": "btnCreateNewImage.ImageAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnCreateNewImage.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "btnCreateNewImage.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "btnCreateNewImage.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCreateNewImage.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCreateNewImage.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCreateNewImage.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "btnCreateNewImage.TextAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextImageRelation",
+          "resource_key": "btnCreateNewImage.TextImageRelation",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnOpenImageFile",
+      "type": "System.Windows.Forms.Button",
+      "parent": "EditorStartupForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "ImageAlign": "MiddleLeft",
+        "Location": {
+          "kind": "Point",
+          "x": 9,
+          "y": 9
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 3,
+          "right": 4,
+          "bottom": 3
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 327,
+          "height": 37
+        },
+        "TabIndex": 0,
+        "Text": "Open image file...",
+        "TextAlign": "MiddleLeft",
+        "TextImageRelation": "ImageBeforeText",
+        "Image": {
+          "kind": "expr",
+          "raw": "Properties.Resources.folder_open_image"
+        },
+        "Name": "btnOpenImageFile",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "btnOpenImageFile.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImageAlign",
+          "resource_key": "btnOpenImageFile.ImageAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnOpenImageFile.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "btnOpenImageFile.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "btnOpenImageFile.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnOpenImageFile.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnOpenImageFile.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnOpenImageFile.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "btnOpenImageFile.TextAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextImageRelation",
+          "resource_key": "btnOpenImageFile.TextImageRelation",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "EditorStartupForm",
+    "type": "Form",
+    "slots": {
+      "Controls": [
+        {
+          "name": "btnLoadImageFromURL",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnCancel",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnLoadImageFromClipboard",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnCreateNewImage",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnOpenImageFile",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        }
+      ]
+    }
+  },
+  "strings": {
+    "btnOpenImageFile.Text": "Open image file...",
+    "btnCreateNewImage.Text": "Create new image...",
+    "btnLoadImageFromClipboard.Text": "Load image from clipboard",
+    "btnCancel.Text": "Cancel",
+    "btnLoadImageFromURL.Text": "Load image from URL...",
+    "$this.Text": "ShareX - Image editor"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 45,
+  "parsed_statements": 45,
+  "unparsed_lines": []
+}

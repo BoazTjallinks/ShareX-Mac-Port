@@ -1,0 +1,735 @@
+{
+  "form_name": "ImageHistorySettingsForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX.HistoryLib/Forms/ImageHistorySettingsForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.HistoryLib/Forms/ImageHistorySettingsForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 334,
+    "height": 241
+  },
+  "text": "ShareX - Image history settings",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 96,
+    "height": 96
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Dpi"
+  },
+  "tab_order": [
+    "lblThumbnailSize",
+    "nudThumbnailSizeWidth",
+    "lblThumbnailSizeWidthUnit",
+    "nudThumbnailSizeHeight",
+    "lblThumbnailSizeHeightUnit",
+    "lblMaximumImageLimit",
+    "nudMaximumImageLimit",
+    "cbAutoLoadMoreItems",
+    "cbFilterMissingFiles",
+    "cbImageOnly",
+    "cbRememberSearchText",
+    "cbRememberWindowState"
+  ],
+  "controls": [
+    {
+      "name": "lblThumbnailSizeHeightUnit",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ImageHistorySettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 181,
+          "y": 36
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 19,
+          "height": 15
+        },
+        "TabIndex": 4,
+        "Text": "px",
+        "Name": "lblThumbnailSizeHeightUnit"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblThumbnailSizeHeightUnit.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblThumbnailSizeHeightUnit.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblThumbnailSizeHeightUnit.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblThumbnailSizeHeightUnit.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblThumbnailSizeHeightUnit.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblThumbnailSizeHeightUnit.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudThumbnailSizeHeight",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "ImageHistorySettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 112,
+          "y": 32
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 64,
+          "height": 23
+        },
+        "TabIndex": 3,
+        "TextAlign": "Center",
+        "Maximum": 1000,
+        "Minimum": 50,
+        "Name": "nudThumbnailSizeHeight",
+        "Value": 100
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudThumbnailSizeHeight.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudThumbnailSizeHeight.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudThumbnailSizeHeight.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudThumbnailSizeHeight.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbAutoLoadMoreItems",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "ImageHistorySettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 112
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 198,
+          "height": 19
+        },
+        "TabIndex": 7,
+        "Text": "Automatically load more images",
+        "Name": "cbAutoLoadMoreItems",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbAutoLoadMoreItems.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbAutoLoadMoreItems.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbAutoLoadMoreItems.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbAutoLoadMoreItems.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbAutoLoadMoreItems.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbImageOnly",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "ImageHistorySettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 160
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 142,
+          "height": 19
+        },
+        "TabIndex": 9,
+        "Text": "Only show image files",
+        "Name": "cbImageOnly",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbImageOnly.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbImageOnly.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbImageOnly.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbImageOnly.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbImageOnly.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbRememberWindowState",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "ImageHistorySettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 208
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 157,
+          "height": 19
+        },
+        "TabIndex": 11,
+        "Text": "Remember window state",
+        "Name": "cbRememberWindowState",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbRememberWindowState.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbRememberWindowState.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbRememberWindowState.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbRememberWindowState.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbRememberWindowState.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbFilterMissingFiles",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "ImageHistorySettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 136
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 19
+        },
+        "TabIndex": 8,
+        "Text": "Filter missing files",
+        "Name": "cbFilterMissingFiles",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbFilterMissingFiles.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbFilterMissingFiles.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbFilterMissingFiles.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbFilterMissingFiles.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbFilterMissingFiles.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbRememberSearchText",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "ImageHistorySettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 184
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 152,
+          "height": 19
+        },
+        "TabIndex": 10,
+        "Text": "Remember search input",
+        "Name": "cbRememberSearchText",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbRememberSearchText.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "cbRememberSearchText.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbRememberSearchText.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbRememberSearchText.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbRememberSearchText.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbRememberSearchText.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblThumbnailSizeWidthUnit",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ImageHistorySettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 7,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 85,
+          "y": 36
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 19,
+          "height": 15
+        },
+        "TabIndex": 2,
+        "Text": "px",
+        "Name": "lblThumbnailSizeWidthUnit"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblThumbnailSizeWidthUnit.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblThumbnailSizeWidthUnit.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblThumbnailSizeWidthUnit.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblThumbnailSizeWidthUnit.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblThumbnailSizeWidthUnit.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudMaximumImageLimit",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "ImageHistorySettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 8,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 80
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 64,
+          "height": 23
+        },
+        "TabIndex": 6,
+        "TextAlign": "Center",
+        "Maximum": 10000,
+        "Name": "nudMaximumImageLimit"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudMaximumImageLimit.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudMaximumImageLimit.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudMaximumImageLimit.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudMaximumImageLimit.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudThumbnailSizeWidth",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "ImageHistorySettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 9,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 32
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 64,
+          "height": 23
+        },
+        "TabIndex": 1,
+        "TextAlign": "Center",
+        "Maximum": 1000,
+        "Minimum": 50,
+        "Name": "nudThumbnailSizeWidth",
+        "Value": 100
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudThumbnailSizeWidth.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudThumbnailSizeWidth.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudThumbnailSizeWidth.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudThumbnailSizeWidth.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblMaximumImageLimit",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ImageHistorySettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 10,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 64
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 127,
+          "height": 15
+        },
+        "TabIndex": 5,
+        "Text": "Maximum image limit:",
+        "Name": "lblMaximumImageLimit"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblMaximumImageLimit.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblMaximumImageLimit.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblMaximumImageLimit.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblMaximumImageLimit.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblMaximumImageLimit.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblThumbnailSize",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ImageHistorySettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 11,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 16
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 90,
+          "height": 15
+        },
+        "TabIndex": 0,
+        "Text": "Thumbnail size:",
+        "Name": "lblThumbnailSize"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblThumbnailSize.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblThumbnailSize.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblThumbnailSize.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblThumbnailSize.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblThumbnailSize.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "ImageHistorySettingsForm",
+    "type": "Form",
+    "slots": {
+      "Controls": [
+        {
+          "name": "lblThumbnailSizeHeightUnit",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "nudThumbnailSizeHeight",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "cbAutoLoadMoreItems",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "cbImageOnly",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "cbRememberWindowState",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "cbFilterMissingFiles",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "cbRememberSearchText",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "lblThumbnailSizeWidthUnit",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "nudMaximumImageLimit",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "nudThumbnailSizeWidth",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "lblMaximumImageLimit",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblThumbnailSize",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        }
+      ]
+    }
+  },
+  "strings": {
+    "lblThumbnailSize.Text": "Thumbnail size:",
+    "lblMaximumImageLimit.Text": "Maximum image limit:",
+    "lblThumbnailSizeWidthUnit.Text": "px",
+    "cbRememberSearchText.Text": "Remember search input",
+    "cbFilterMissingFiles.Text": "Filter missing files",
+    "cbRememberWindowState.Text": "Remember window state",
+    "cbImageOnly.Text": "Only show image files",
+    "cbAutoLoadMoreItems.Text": "Automatically load more images",
+    "lblThumbnailSizeHeightUnit.Text": "px",
+    "$this.Text": "ShareX - Image history settings"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 84,
+  "parsed_statements": 84,
+  "unparsed_lines": []
+}

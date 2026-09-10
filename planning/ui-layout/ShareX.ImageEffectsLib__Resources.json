@@ -1,0 +1,44 @@
+{
+  "form_name": "Resources",
+  "base_class": null,
+  "designer_file": "reference/ShareX/ShareX.ImageEffectsLib/Properties/Resources.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.ImageEffectsLib/Properties/Resources.resx",
+  "client_size": null,
+  "text": null,
+  "menu_strip": null,
+  "auto_scale_dimensions": null,
+  "auto_scale_mode": null,
+  "tab_order": [],
+  "controls": [],
+  "tree": {
+    "name": "Resources",
+    "type": "Form",
+    "slots": {}
+  },
+  "strings": {
+    "ImageEffectsForm_AddAllEffectsToTreeView_Filters": "Filters",
+    "ImageEffectsForm_AddAllEffectsToTreeView_Drawings": "Drawings",
+    "ImageEffectsForm_UpdatePreview_Image_effects___Width___0___Height___1___Render_time___2__ms": "Image effects - Width: {0}, Height: {1}, Render time: {2} ms",
+    "ImageEffectsForm_AddAllEffectsToTreeView_Manipulations": "Manipulations",
+    "ImageEffectsForm_EditorMode_Cancel": "Cancel",
+    "ImageEffectsForm_AddAllEffectsToTreeView_Adjustments": "Adjustments",
+    "AssetsFolderMustBeInsideShareXImageEffectsFolder": "Assets folder must be inside ShareX image effects folder.",
+    "InvalidAssetsFolderPath": "Invalid assets folder path",
+    "PackageWithThisFileNameAlreadyExistsRNWouldYouLikeToOverwriteIt": "Package with this file name already exists.\nWould you like to overwrite it?",
+    "WouldYouLikeToClearEffects": "Would you like to clear effects?",
+    "Confirmation": "Confirmation",
+    "PresetNameCannotBeEmpty": "Preset name cannot be empty.",
+    "MissingPresetName": "Missing preset name"
+  },
+  "binary_resources": [],
+  "local_variables": [],
+  "parse_coverage": 1.0,
+  "total_statements": 0,
+  "parsed_statements": 0,
+  "unparsed_lines": [
+    {
+      "line": 0,
+      "text": "InitializeComponent() body not found"
+    }
+  ]
+}

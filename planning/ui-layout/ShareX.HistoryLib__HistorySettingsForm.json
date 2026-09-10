@@ -1,0 +1,164 @@
+{
+  "form_name": "HistorySettingsForm",
+  "base_class": "Form",
+  "designer_file": "reference/ShareX/ShareX.HistoryLib/Forms/HistorySettingsForm.Designer.cs",
+  "resx_file": "reference/ShareX/ShareX.HistoryLib/Forms/HistorySettingsForm.resx",
+  "client_size": {
+    "kind": "Size",
+    "width": 334,
+    "height": 211
+  },
+  "text": "ShareX - History settings",
+  "menu_strip": null,
+  "auto_scale_dimensions": {
+    "kind": "Size",
+    "width": 96,
+    "height": 96
+  },
+  "auto_scale_mode": {
+    "kind": "expr",
+    "raw": "System.Windows.Forms.AutoScaleMode.Dpi"
+  },
+  "tab_order": [
+    "cbRememberSearchText",
+    "cbRememberWindowState"
+  ],
+  "controls": [
+    {
+      "name": "cbRememberWindowState",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "HistorySettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 40
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 157,
+          "height": 19
+        },
+        "TabIndex": 1,
+        "Text": "Remember window state",
+        "Name": "cbRememberWindowState",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbRememberWindowState.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbRememberWindowState.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbRememberWindowState.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbRememberWindowState.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbRememberWindowState.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbRememberSearchText",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "HistorySettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 16
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 152,
+          "height": 19
+        },
+        "TabIndex": 0,
+        "Text": "Remember search input",
+        "Name": "cbRememberSearchText",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbRememberSearchText.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbRememberSearchText.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbRememberSearchText.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbRememberSearchText.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbRememberSearchText.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    }
+  ],
+  "tree": {
+    "name": "HistorySettingsForm",
+    "type": "Form",
+    "slots": {
+      "Controls": [
+        {
+          "name": "cbRememberWindowState",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "cbRememberSearchText",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        }
+      ]
+    }
+  },
+  "strings": {
+    "cbRememberSearchText.Text": "Remember search input",
+    "cbRememberWindowState.Text": "Remember window state",
+    "$this.Text": "ShareX - History settings"
+  },
+  "binary_resources": [],
+  "local_variables": [
+    {
+      "name": "resources",
+      "type": "System.ComponentModel.ComponentResourceManager"
+    }
+  ],
+  "parse_coverage": 1.0,
+  "total_statements": 22,
+  "parsed_statements": 22,
+  "unparsed_lines": []
+}
