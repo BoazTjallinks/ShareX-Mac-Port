@@ -139,6 +139,62 @@ namespace ShareX.Platform.Mac
     }
 
     /// <summary>
+    /// Clipboard and Finder services over the native routes in
+    /// native/ShareXMacNative/swift/SXMClipboard.swift.
+    ///
+    /// Image / file / text are separate operations because upstream treats
+    /// CopyImageToClipboard, CopyFileToClipboard, CopyFilePathToClipboard and
+    /// CopyFolderPathToClipboard as four distinct behaviours with a defined
+    /// precedence (PROJECT-SPEC.md section 8).
+    /// </summary>
+    public sealed class MacClipboardService
+    {
+        private readonly NativeBridge _bridge;
+
+        public MacClipboardService(NativeBridge bridge) => _bridge = bridge;
+
+        public Task<OperationOutcome<bool>> CopyImageFileAsync(string path, CancellationToken ct = default)
+            => VoidCall("clipboard.copyImageFile", new Dictionary<string, object?> { ["path"] = path }, ct);
+
+        public Task<OperationOutcome<bool>> CopyTextAsync(string text, CancellationToken ct = default)
+            => VoidCall("clipboard.copyText", new Dictionary<string, object?> { ["text"] = text }, ct);
+
+        public Task<OperationOutcome<bool>> CopyFileAsync(string path, CancellationToken ct = default)
+            => VoidCall("clipboard.copyFile", new Dictionary<string, object?> { ["path"] = path }, ct);
+
+        public Task<OperationOutcome<bool>> RevealAsync(string path, CancellationToken ct = default)
+            => VoidCall("finder.reveal", new Dictionary<string, object?> { ["path"] = path }, ct);
+
+        public Task<OperationOutcome<bool>> OpenAsync(string path, CancellationToken ct = default)
+            => VoidCall("finder.open", new Dictionary<string, object?> { ["path"] = path }, ct);
+
+        public Task<OperationOutcome<bool>> OpenUrlAsync(string url, CancellationToken ct = default)
+            => VoidCall("url.open", new Dictionary<string, object?> { ["url"] = url }, ct);
+
+        /// <summary>
+        /// What the clipboard currently holds. Deliberately returns only the
+        /// category flags and a text LENGTH: clipboard contents can be sensitive
+        /// and must not leak into diagnostics.
+        /// </summary>
+        public async Task<OperationOutcome<JsonElement>> GetAsync(CancellationToken ct = default)
+        {
+            NativeResponse response = await _bridge.InvokeAsync("clipboard.get", null, ct).ConfigureAwait(false);
+            return response.Code == NativeResultCode.Ok
+                ? OperationOutcome<JsonElement>.Success(response.Payload)
+                : OperationOutcome<JsonElement>.Failure(MacCaptureService.ToTaskError(response));
+        }
+
+        private async Task<OperationOutcome<bool>> VoidCall(
+            string op, Dictionary<string, object?> args, CancellationToken ct)
+        {
+            NativeResponse response = await _bridge.InvokeAsync(op, args, ct).ConfigureAwait(false);
+            return response.Code == NativeResultCode.Ok
+                ? OperationOutcome<bool>.Success(true)
+                : OperationOutcome<bool>.Failure(MacCaptureService.ToTaskError(response));
+        }
+    }
+
+    /// <summary>
     /// Typed wrappers over the native op routes defined in
     /// native/ShareXMacNative/swift/SXMRoutes.swift ("capabilities.get", "permissions.get",
     /// "permissions.request", "displays.list", "windows.list", "capture.screenshot").

@@ -70,6 +70,8 @@ public sealed partial class MainWindowViewModel : ObservableObject, IDisposable
     private bool _disposed;
 
     private readonly CaptureCommandService _commands;
+    private readonly MacClipboardService _clipboard;
+    private readonly MacWorkflowServices _workflowServices;
 
     /// <summary>Set by the view so the region overlay can be owned by the main window.</summary>
     public Func<Avalonia.Controls.Window?> OwnerWindowAccessor { get; set; } = () => null;
@@ -77,7 +79,27 @@ public sealed partial class MainWindowViewModel : ObservableObject, IDisposable
     public MainWindowViewModel()
     {
         _capture = new MacCaptureService(_bridge);
-        _commands = new CaptureCommandService(_capture, () => OwnerWindowAccessor());
+        _clipboard = new MacClipboardService(_bridge);
+        _workflowServices = new MacWorkflowServices(_clipboard);
+        _commands = new CaptureCommandService(_capture, _workflowServices, () => OwnerWindowAccessor());
+
+        foreach (AfterCaptureTaskViewModel task in
+                 AfterCaptureCatalog.Build(_commands.Settings.AfterCaptureJob))
+        {
+            task.PropertyChanged += (_, e) =>
+            {
+                if (e.PropertyName == nameof(AfterCaptureTaskViewModel.IsChecked))
+                {
+                    ApplyAfterCaptureSelection();
+                }
+            };
+            AfterCaptureTasksList.Add(task);
+        }
+
+        _commands.Settings = _commands.Settings with
+        {
+            ScreenshotsFolder = AppPaths.DefaultScreenshotsFolder
+        };
     }
 
     /// <summary>
@@ -192,6 +214,9 @@ public sealed partial class MainWindowViewModel : ObservableObject, IDisposable
     public ObservableCollection<string> Displays { get; } = new();
     public ObservableCollection<string> Log { get; } = new();
 
+    /// <summary>Upstream's "After capture tasks" set, all 22 non-zero flags.</summary>
+    public ObservableCollection<AfterCaptureTaskViewModel> AfterCaptureTasksList { get; } = new();
+
     [ObservableProperty] private string _environmentSummary = "Querying the native bridge…";
     [ObservableProperty] private string _bundleSummary = "";
     [ObservableProperty] private Bitmap? _previewImage;
@@ -208,6 +233,25 @@ public sealed partial class MainWindowViewModel : ObservableObject, IDisposable
     public bool IsBundled => BundleInfo.IsBundled;
 
     public void InitializeAsync() => _ = RefreshAllAsync();
+
+    /// <summary>
+    /// Rebuilds the flag set from the checkboxes. The result is a new immutable
+    /// snapshot, so a job already running keeps the settings it started with.
+    /// </summary>
+    private void ApplyAfterCaptureSelection()
+    {
+        AfterCaptureTasks flags = AfterCaptureTasks.None;
+        foreach (AfterCaptureTaskViewModel task in AfterCaptureTasksList)
+        {
+            if (task.IsChecked)
+            {
+                flags |= task.Flag;
+            }
+        }
+
+        _commands.Settings = _commands.Settings with { AfterCaptureJob = flags };
+        AppendLog($"after-capture tasks set to: {flags}");
+    }
 
     // ---------------------------------------------------------------- commands
 

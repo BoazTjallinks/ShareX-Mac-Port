@@ -179,6 +179,59 @@ enum SXMRoutes {
             ctx.onCancel { work.cancel() }
         }
 
+        // MARK: - Clipboard and Finder (upstream ClipboardHelpers / FileHelpers)
+
+        // Separate operations rather than one generic "copy", because upstream
+        // treats image / file / file-path / folder-path as distinct, mutually
+        // exclusive after-capture tasks (PROJECT-SPEC.md section 8).
+        routes["clipboard.copyImageFile"] = { ctx in
+            try SXMClipboard.copyImage(fromFile: try ctx.string("path"))
+            ctx.succeed(["copied": "image"])
+        }
+
+        routes["clipboard.copyImageData"] = { ctx in
+            guard let base64 = ctx.args["pngBase64"] as? String,
+                  let data = Data(base64Encoded: base64) else {
+                throw SXMFailure(.invalidInput, "pngBase64 must be base64-encoded PNG bytes.")
+            }
+            try SXMClipboard.copyImage(pngData: data)
+            ctx.succeed(["copied": "image", "bytes": data.count])
+        }
+
+        routes["clipboard.copyText"] = { ctx in
+            try SXMClipboard.copyText(try ctx.string("text"))
+            ctx.succeed(["copied": "text"])
+        }
+
+        routes["clipboard.copyFile"] = { ctx in
+            try SXMClipboard.copyFile(try ctx.string("path"))
+            ctx.succeed(["copied": "file"])
+        }
+
+        routes["clipboard.get"] = { ctx in
+            ctx.succeed(SXMClipboard.snapshot())
+        }
+
+        routes["clipboard.clear"] = { ctx in
+            SXMClipboard.clear()
+            ctx.succeed([:])
+        }
+
+        routes["finder.reveal"] = { ctx in
+            try SXMFinder.reveal(try ctx.string("path"))
+            ctx.succeed([:])
+        }
+
+        routes["finder.open"] = { ctx in
+            try SXMFinder.open(try ctx.string("path"))
+            ctx.succeed([:])
+        }
+
+        routes["url.open"] = { ctx in
+            try SXMFinder.openUrl(try ctx.string("url"))
+            ctx.succeed([:])
+        }
+
         // MARK: - Recording (PROJECT-SPEC.md section 6)
 
         // Completes as soon as the session is RUNNING; it does not block until the

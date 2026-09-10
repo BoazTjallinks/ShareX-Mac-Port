@@ -155,9 +155,14 @@ public static class CommandTree
             new("Test URL shortener"),
             new("Test URL sharing")
         }),
-        new("Donate..."),
-        new("Follow @ShareX..."),
-        new("Discord..."),
+        // DELIBERATE DIVERGENCE from upstream's toolbar (ADR 0005):
+        // "Donate...", "Follow @ShareX..." and "Discord..." are removed.
+        //
+        // They are the ShareX project's own funding and community links. This is
+        // an unofficial port, so presenting them here would solicit support
+        // through a build the ShareX Team did not publish and cannot vouch for,
+        // and would imply an affiliation that does not exist. Credit and links to
+        // the real project live in NOTICE.md and in the About window instead.
         new("About...")
     };
 

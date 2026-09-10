@@ -5,6 +5,7 @@ using ShareX.Core.Errors;
 using ShareX.Core.Geometry;
 using ShareX.Mac.App.Support;
 using ShareX.Mac.App.Views;
+using ShareX.Core.Workflow;
 using ShareX.Platform.Mac;
 
 namespace ShareX.Mac.App.Services;
@@ -17,7 +18,8 @@ public sealed record CommandRun(
     string? FilePath = null,
     int PixelWidth = 0,
     int PixelHeight = 0,
-    double Scale = 1);
+    double Scale = 1,
+    IReadOnlyList<WorkflowStage>? Stages = null);
 
 /// <summary>
 /// Dispatches ShareX commands. This is the single entry point every trigger uses
@@ -32,6 +34,14 @@ public sealed class CaptureCommandService
 {
     private readonly MacCaptureService _capture;
     private readonly Func<Window?> _ownerWindow;
+    private readonly AfterCaptureRunner _afterCapture;
+
+    /// <summary>
+    /// Resolved settings for the next job. Upstream resolves these into an
+    /// immutable snapshot before the task starts (PROJECT-SPEC.md section 8), so
+    /// changing this between jobs cannot affect one already running.
+    /// </summary>
+    public TaskSettingsSnapshot Settings { get; set; } = new();
 
     /// <summary>
     /// Remembered region for <see cref="HotkeyType.LastRegion"/>. Stored with its
@@ -40,10 +50,12 @@ public sealed class CaptureCommandService
     /// </summary>
     public PointRect? LastRegion { get; private set; }
 
-    public CaptureCommandService(MacCaptureService capture, Func<Window?> ownerWindow)
+    public CaptureCommandService(
+        MacCaptureService capture, IWorkflowServices workflowServices, Func<Window?> ownerWindow)
     {
         _capture = capture;
         _ownerWindow = ownerWindow;
+        _afterCapture = new AfterCaptureRunner(workflowServices);
     }
 
     public async Task<CommandRun> ExecuteAsync(HotkeyType command, CancellationToken ct = default)
@@ -192,8 +204,40 @@ public sealed class CaptureCommandService
                 "The capture reported success but no image bytes were written.");
         }
 
+        // The capture is only the first half of the job. Upstream then runs the
+        // after-capture stage, which is what actually copies to the clipboard,
+        // reveals in Finder and so on.
+        var artifact = new TaskArtifact
+        {
+            FilePath = written,
+            FileName = Path.GetFileName(written),
+            Ownership = ArtifactOwnership.PermanentOutput,
+            PixelWidth = result.PixelWidth,
+            PixelHeight = result.PixelHeight,
+            Scale = result.CompositionScale
+        };
+
+        // Snapshot taken now, so a settings change mid-flight cannot affect it.
+        TaskSettingsSnapshot snapshot = Settings;
+        WorkflowResult workflow = await _afterCapture
+            .RunAsync(artifact, snapshot, ct)
+            .ConfigureAwait(true);
+
+        if (workflow.Cancelled)
+        {
+            return new CommandRun(command, Handled: true, Cancelled: true,
+                workflow.Summary, Stages: workflow.Stages);
+        }
+
+        string ran = string.Join(", ",
+            workflow.Stages.Where(s => s.Ran).Select(s => s.Name));
+        string summary = string.IsNullOrEmpty(ran)
+            ? $"Saved {fileName}"
+            : $"Saved {fileName} — {ran}";
+
         return new CommandRun(command, Handled: true, Cancelled: false,
-            $"Saved {fileName}", written, result.PixelWidth, result.PixelHeight, result.CompositionScale);
+            summary, workflow.Artifact?.FilePath ?? written,
+            result.PixelWidth, result.PixelHeight, result.CompositionScale, workflow.Stages);
     }
 
     private static CommandRun Failure(HotkeyType command, TaskError error)
