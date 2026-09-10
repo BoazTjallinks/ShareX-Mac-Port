@@ -138,6 +138,16 @@ if [ "$PROJECT_BASENAME" != "$EXECUTABLE" ]; then
 fi
 chmod +x "$MACOS_DIR/$EXECUTABLE"
 
+# Debug symbols do not belong in a shipped bundle, and codesign treats a stray
+# .pdb in Contents/MacOS as unsigned nested code, which fails the outer bundle
+# signature. Keep them out rather than signing them.
+find "$MACOS_DIR" -name '*.pdb' -delete
+
+# codesign embeds the signature into the file, so every nested binary must be
+# writable. Assemblies restored from the read-only NuGet cache can arrive
+# without the owner-write bit and then fail with "Operation not permitted".
+chmod -R u+w "$MACOS_DIR" 
+
 # libShareXMacNative.dylib: make sure the freshly-built one is what ships,
 # not a stale copy dotnet publish may have picked up as content.
 cp -f "$DYLIB_SRC" "$MACOS_DIR/libShareXMacNative.dylib"
@@ -180,25 +190,27 @@ fi
 
 ENTITLEMENTS="$REPO_ROOT/packaging/entitlements.plist"
 
-sign_one() {
-  local target="$1"
-  codesign --force --options runtime --entitlements "$ENTITLEMENTS" \
-    --sign "$SIGN_IDENTITY" "$target"
-}
-
-# Nested code first: every .dylib/.so, then the native lib explicitly (it is
-# already covered by the glob below, listed separately only for clarity),
-# then the apphost, then finally the outer bundle.
-while IFS= read -r -d '' lib; do
-  echo "    signing $lib"
-  sign_one "$lib"
-done < <(find "$MACOS_DIR" \( -name '*.dylib' -o -name '*.so' \) -print0)
-
-echo "    signing apphost $MACOS_DIR/$EXECUTABLE"
-sign_one "$MACOS_DIR/$EXECUTABLE"
-
-echo "    signing bundle $APP_BUNDLE"
-sign_one "$APP_BUNDLE"
+# One deep signature over the whole bundle.
+#
+# Why --deep, despite Apple discouraging it for App Store distribution: a
+# self-contained .NET publish puts the apphost, the managed assemblies AND
+# non-code files (runtimeconfig.json, deps.json) together in Contents/MacOS.
+# codesign treats everything under Contents/MacOS as nested code, so a plain
+# bundle signature fails with "code object is not signed at all / In
+# subcomponent: ShareX.Mac.App.runtimeconfig.json". --deep signs the nested
+# Mach-O objects and seals the rest as resources, which is the layout .NET and
+# Avalonia macOS apps actually ship.
+#
+# Consequence, stated rather than hidden: --deep applies the same entitlements to
+# nested code. The only entitlement here is com.apple.security.cs.allow-jit,
+# which is harmless on a library. See packaging/ENTITLEMENTS-RATIONALE.md.
+#
+# packaging/entitlements.plist must stay comment-free: AMFI's XML parser rejects
+# comments and codesign fails with "Failed to parse entitlements".
+echo "    deep-signing bundle $APP_BUNDLE as '$SIGN_IDENTITY'"
+codesign --force --deep --options runtime \
+  --entitlements "$ENTITLEMENTS" \
+  --sign "$SIGN_IDENTITY" "$APP_BUNDLE"
 
 # ---- 5. verify --------------------------------------------------------
 echo "==> [5/5] verify"

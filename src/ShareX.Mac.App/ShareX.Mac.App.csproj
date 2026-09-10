@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>ShareX.Mac.App</RootNamespace>
+    <AssemblyName>ShareX.Mac.App</AssemblyName>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+    <ApplicationManifest />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" />
+    <PackageReference Include="Avalonia.Desktop" />
+    <PackageReference Include="Avalonia.Themes.Fluent" />
+    <PackageReference Include="Avalonia.Fonts.Inter" />
+    <PackageReference Include="CommunityToolkit.Mvvm" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ShareX.Core\ShareX.Core.csproj" />
+    <ProjectReference Include="..\ShareX.Platform.Mac\ShareX.Platform.Mac.csproj" />
+  </ItemGroup>
+
+  <!-- The app is useless without the native bridge, so a missing dylib is a build
+       error rather than a runtime DllNotFoundException in a shipped bundle. -->
+  <Target Name="VerifyNativeLibraryPresent" BeforeTargets="BeforeBuild">
+    <Error Condition="!Exists('$(MSBuildThisFileDirectory)../../native/ShareXMacNative/build/libShareXMacNative.dylib')"
+           Text="libShareXMacNative.dylib not found. Run native/ShareXMacNative/build.sh before building this project." />
+  </Target>
+
+  <ItemGroup>
+    <None Include="../../native/ShareXMacNative/build/libShareXMacNative.dylib"
+          Condition="Exists('../../native/ShareXMacNative/build/libShareXMacNative.dylib')"
+          Link="libShareXMacNative.dylib"
+          CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

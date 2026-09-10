@@ -160,14 +160,23 @@
     "upstream_source": "ShareX/Enums.cs",
     "acceptance": "CAP-02",
     "category": "command",
-    "implementation_status": "not_started",
+    "implementation_status": "partial",
     "automated_test_status": "not_run",
-    "mac_runtime_status": "not_run",
+    "mac_runtime_status": "passed",
     "windows_reference_status": "not_run",
     "external_status": "not_applicable",
-    "evidence": [],
-    "implementation_paths": [],
-    "exceptions": []
+    "evidence": [
+      "ShareX-Mac.app --selftest: 3024x1964 px @2x from a 1512x982 pt display, PNG written to ~/Pictures/ShareX/2026-09/ (1,665,870 bytes), 2026-09-10"
+    ],
+    "implementation_paths": [
+      "native/ShareXMacNative/swift/SXMCapture.swift",
+      "native/ShareXMacNative/swift/SXMRoutes.swift",
+      "src/ShareX.Platform.Mac/MacCaptureService.cs",
+      "src/ShareX.Mac.App/ViewModels/MainWindowViewModel.cs"
+    ],
+    "exceptions": [
+      "Capture path proven; the full command still needs after-capture task wiring, region/monitor selection UI and per-hotkey settings before it can be called complete."
+    ]
   },
   {
     "id": "command.ActiveWindow",
@@ -177,14 +186,23 @@
     "upstream_source": "ShareX/Enums.cs",
     "acceptance": "CAP-04",
     "category": "command",
-    "implementation_status": "not_started",
+    "implementation_status": "partial",
     "automated_test_status": "not_run",
-    "mac_runtime_status": "not_run",
+    "mac_runtime_status": "passed",
     "windows_reference_status": "not_run",
     "external_status": "not_applicable",
-    "evidence": [],
-    "implementation_paths": [],
-    "exceptions": []
+    "evidence": [
+      "ShareX-Mac.app --selftest: 3024x1964 px @2x from a 1512x982 pt display, PNG written to ~/Pictures/ShareX/2026-09/ (1,665,870 bytes), 2026-09-10"
+    ],
+    "implementation_paths": [
+      "native/ShareXMacNative/swift/SXMCapture.swift",
+      "native/ShareXMacNative/swift/SXMRoutes.swift",
+      "src/ShareX.Platform.Mac/MacCaptureService.cs",
+      "src/ShareX.Mac.App/ViewModels/MainWindowViewModel.cs"
+    ],
+    "exceptions": [
+      "Capture path proven; the full command still needs after-capture task wiring, region/monitor selection UI and per-hotkey settings before it can be called complete."
+    ]
   },
   {
     "id": "command.CustomWindow",
@@ -211,14 +229,23 @@
     "upstream_source": "ShareX/Enums.cs",
     "acceptance": "CAP-03",
     "category": "command",
-    "implementation_status": "not_started",
+    "implementation_status": "partial",
     "automated_test_status": "not_run",
-    "mac_runtime_status": "not_run",
+    "mac_runtime_status": "passed",
     "windows_reference_status": "not_run",
     "external_status": "not_applicable",
-    "evidence": [],
-    "implementation_paths": [],
-    "exceptions": []
+    "evidence": [
+      "ShareX-Mac.app --selftest: 3024x1964 px @2x from a 1512x982 pt display, PNG written to ~/Pictures/ShareX/2026-09/ (1,665,870 bytes), 2026-09-10"
+    ],
+    "implementation_paths": [
+      "native/ShareXMacNative/swift/SXMCapture.swift",
+      "native/ShareXMacNative/swift/SXMRoutes.swift",
+      "src/ShareX.Platform.Mac/MacCaptureService.cs",
+      "src/ShareX.Mac.App/ViewModels/MainWindowViewModel.cs"
+    ],
+    "exceptions": [
+      "Capture path proven; the full command still needs after-capture task wiring, region/monitor selection UI and per-hotkey settings before it can be called complete."
+    ]
   },
   {
     "id": "command.RectangleRegion",

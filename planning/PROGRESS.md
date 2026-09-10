@@ -1,10 +1,39 @@
 # Progress
 
-Last updated: 2026-09-10 (stage 0 in progress)
+Last updated: 2026-09-10 (stage 0 COMPLETE — gate passed from the installed bundle)
 
 ## Current state
 
-Stage 0 (feasibility / native boundary) partially complete.
+**Stage 0 (feasibility / native boundary) is complete.** The gate was passed from
+a signed app bundle installed at `/Applications/ShareX-Mac.app`, not from
+`dotnet run`.
+
+## Stage 0 evidence
+
+`/Applications/ShareX-Mac.app/Contents/MacOS/ShareX-Mac --selftest`, 2026-09-10:
+
+```
+running from bundle : True
+bundle path         : /Applications/ShareX-Mac.app
+runtime             : .NET 10.0.11
+
+PASS  capabilities.get: 30 ms   os 26.6.2, arm64, abi 1, com.tjallinks.sharexmac
+PASS  permissions.get         screenRecording granted, accessibility granted, microphone granted
+PASS  displays.list   : 1     #1 1512x982 pt @2x origin (0,0) space=CgGlobalPoints main active
+PASS  windows.list    : 25
+PASS  media.encoders          h264 yes, hevc yes, prores4444 NO, pngSequence yes
+PASS  capture         : 130 ms 3024x1964 px, scale 2, source (0,0) 1512x982 CgGlobalPoints
+      file          : ~/Pictures/ShareX/2026-09/selftest_2026-09-10_13-34-50.png (1,717,371 bytes)
+RESULT: all checks passed.
+```
+
+Independently verified with `sips`: the PNG is 3024x1964, 8-bit RGBA,
+non-interlaced. A 1512x982 point display at backing scale 2 gives exactly
+3024x1964 physical pixels, so Retina scale is handled without doubling or loss.
+
+The `.app` is signed by `ShareX-Mac Local`, hardened runtime, `Mach-O thin
+(arm64)`, and `codesign --verify --strict` reports "valid on disk" and
+"satisfies its Designated Requirement".
 
 **Done and verified on this machine:**
 - Package verification passed (`scripts/verify-package.py` → `"result": "passed"`, 3971 source files, commit `d2502561f63fc3ff502cacd91514e3f7f2948c74`).
@@ -13,7 +42,16 @@ Stage 0 (feasibility / native boundary) partially complete.
 - Native bridge **builds and links**: `native/ShareXMacNative/build.sh` → `libShareXMacNative.dylib` (arm64).
 - ADRs 0001 (native boundary), 0002 (build toolchain), 0003 (dependency pins) written.
 
-**Not yet done:** managed solution, app bundle, any capture executed at runtime, any UI.
+**Done and verified since:**
+- Managed solution builds clean (0 warnings, 0 errors); 90 tests pass.
+- `ShareX-Mac.app` assembles, signs, installs to `/Applications`, and launches
+  with its main window.
+- A real ScreenCaptureKit capture reaches disk at correct Retina resolution.
+- Native recording pipeline compiles with a full state machine (runtime recording
+  is NOT yet demonstrated).
+
+**Not yet done:** everything from stage 2 onward — the command handlers behind the
+UI, both editors, effects, uploaders, settings, history, CLI.
 
 ## Verified environment (measured, not assumed)
 
@@ -38,11 +76,28 @@ python3 scripts/restore-upstream.py
 
 # native library (Command Line Tools only, no Xcode)
 ./native/ShareXMacNative/build.sh
-# → native/ShareXMacNative/build/libShareXMacNative.dylib (arm64)
-```
+# -> native/ShareXMacNative/build/libShareXMacNative.dylib (arm64)
 
-Managed build/test/package commands do not exist yet. They will be recorded here
-verbatim once the solution lands; nothing is invented in advance.
+# managed solution and tests
+dotnet build ShareX-Mac.sln -v q                                    # 0 warnings, 0 errors
+dotnet test tests/ShareX.Core.Tests/ShareX.Core.Tests.csproj        # 44 passed
+dotnet test tests/ShareX.Platform.Mac.Tests/...csproj               # 46 passed, 3 skipped
+
+# stable local signing identity (login keychain only; one-time)
+./scripts/create-signing-identity.sh
+
+# app bundle: native -> publish -> layout -> deep sign -> verify
+./packaging/make-icns.sh
+./scripts/build-app.sh
+# -> build/ShareX-Mac.app  (109 MB, self-contained, arm64)
+
+# install / uninstall
+./scripts/install-app.sh
+./scripts/install-app.sh --uninstall
+
+# the stage-0 integration gate, from the real bundle
+/Applications/ShareX-Mac.app/Contents/MacOS/ShareX-Mac --selftest
+```
 
 ## Decisions this session
 

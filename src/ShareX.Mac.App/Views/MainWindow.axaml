@@ -1,0 +1,181 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:ShareX.Mac.App.ViewModels"
+        xmlns:models="using:ShareX.Mac.App.Models"
+        x:Class="ShareX.Mac.App.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Title="ShareX"
+        Width="1120" Height="720"
+        MinWidth="820" MinHeight="520"
+        ExtendClientAreaToDecorationsHint="False">
+
+  <!-- Layout follows upstream MainForm: pToolbars docked Left (the command rail),
+       pMain filling, scMain splitting the task list from the preview.
+       Chrome, metrics and typography are macOS-native (ADR 0005). -->
+  <Grid ColumnDefinitions="252,1,*" RowDefinitions="*,Auto">
+
+    <!-- ============ command rail (upstream tsMain) ============ -->
+    <ScrollViewer Grid.Column="0" Grid.Row="0"
+                  Background="{DynamicResource SystemControlBackgroundListLowBrush}">
+      <StackPanel Margin="0,8,0,12">
+        <ItemsControl ItemsSource="{Binding MainRail}">
+          <ItemsControl.ItemTemplate>
+            <DataTemplate x:DataType="models:CommandEntry">
+              <Panel>
+                <Separator Classes="rail" IsVisible="{Binding IsSeparator}" />
+                <Button Classes="rail" IsVisible="{Binding !IsSeparator}">
+                  <Grid ColumnDefinitions="*,Auto">
+                    <TextBlock Grid.Column="0" Text="{Binding Label}" VerticalAlignment="Center" />
+                    <TextBlock Grid.Column="1" Text="›" Opacity="0.4"
+                               VerticalAlignment="Center"
+                               IsVisible="{Binding HasChildren}" />
+                  </Grid>
+                  <Button.Flyout>
+                    <MenuFlyout ItemsSource="{Binding Children}">
+                      <MenuFlyout.ItemTemplate>
+                        <DataTemplate x:DataType="models:CommandEntry">
+                          <TextBlock Text="{Binding Label}" />
+                        </DataTemplate>
+                      </MenuFlyout.ItemTemplate>
+                    </MenuFlyout>
+                  </Button.Flyout>
+                </Button>
+              </Panel>
+            </DataTemplate>
+          </ItemsControl.ItemTemplate>
+        </ItemsControl>
+      </StackPanel>
+    </ScrollViewer>
+
+    <Border Grid.Column="1" Grid.Row="0" Background="{DynamicResource SystemControlForegroundBaseLowBrush}" />
+
+    <!-- ============ main area (upstream pMain) ============ -->
+    <Grid Grid.Column="2" Grid.Row="0" RowDefinitions="Auto,*">
+
+      <!-- Capture actions + stage-0 diagnostics. The diagnostics panel exists
+           because a capture cannot be trusted until the bundle identity and
+           permission state are visible. -->
+      <StackPanel Grid.Row="0" Margin="16,14,16,8" Spacing="10">
+
+        <TextBlock Text="{Binding EnvironmentSummary}" Classes="mono" TextWrapping="Wrap" />
+
+        <Border Padding="10" CornerRadius="6"
+                Background="{DynamicResource SystemControlBackgroundListLowBrush}"
+                IsVisible="{Binding !IsBundled}">
+          <TextBlock Text="{Binding BundleSummary}" TextWrapping="Wrap" FontSize="12" />
+        </Border>
+
+        <StackPanel Orientation="Horizontal" Spacing="8">
+          <Button Content="Fullscreen" Command="{Binding CaptureFullscreenCommand}"
+                  IsEnabled="{Binding !IsBusy}" />
+          <Button Content="Monitor" Command="{Binding CaptureActiveMonitorCommand}"
+                  IsEnabled="{Binding !IsBusy}" />
+          <Button Content="Window" Command="{Binding CaptureActiveWindowCommand}"
+                  IsEnabled="{Binding !IsBusy}" />
+          <Border Width="1" Margin="4,2"
+                  Background="{DynamicResource SystemControlForegroundBaseLowBrush}" />
+          <Button Content="Screenshots folder…" Command="{Binding OpenScreenshotsFolderCommand}" />
+          <Button Content="Refresh" Command="{Binding RefreshAllCommand}" />
+        </StackPanel>
+
+        <!-- Permissions: real state, honest next step. -->
+        <TextBlock Text="PERMISSIONS" Classes="sectionHeader" Margin="0,4,0,0" />
+        <ItemsControl ItemsSource="{Binding Permissions}">
+          <ItemsControl.ItemTemplate>
+            <DataTemplate x:DataType="vm:PermissionRowViewModel">
+              <Grid ColumnDefinitions="220,90,*,Auto,Auto" Margin="0,2">
+                <TextBlock Grid.Column="0" Text="{Binding Title}" VerticalAlignment="Center" FontSize="12" />
+                <TextBlock Grid.Column="1" Text="{Binding State}" Classes="mono" VerticalAlignment="Center" />
+                <TextBlock Grid.Column="2" Text="{Binding Why}" Opacity="0.6" FontSize="11"
+                           VerticalAlignment="Center" TextWrapping="Wrap" Margin="0,0,8,0" />
+                <Button Grid.Column="3" Content="Request…" FontSize="11" Padding="8,3"
+                        IsVisible="{Binding !IsGranted}"
+                        Command="{Binding $parent[Window].((vm:MainWindowViewModel)DataContext).RequestPermissionCommand}"
+                        CommandParameter="{Binding}" />
+                <Button Grid.Column="4" Content="System Settings…" FontSize="11" Padding="8,3" Margin="6,0,0,0"
+                        IsVisible="{Binding !IsGranted}"
+                        Command="{Binding $parent[Window].((vm:MainWindowViewModel)DataContext).OpenPrivacySettingsCommand}"
+                        CommandParameter="{Binding}" />
+              </Grid>
+            </DataTemplate>
+          </ItemsControl.ItemTemplate>
+        </ItemsControl>
+      </StackPanel>
+
+      <!-- upstream scMain: task list above, preview below -->
+      <Grid Grid.Row="1" RowDefinitions="*,4,*" Margin="16,4,16,8">
+
+        <Grid Grid.Row="0" RowDefinitions="Auto,*,Auto">
+          <TextBlock Grid.Row="0" Text="TASKS" Classes="sectionHeader" Margin="0,0,0,4" />
+          <!-- Upstream uses a columned ListView (MyListView). Rendered here as a
+               Mac-style list with a header row: same columns, same order. -->
+          <Grid Grid.Row="1" RowDefinitions="Auto,*">
+            <Grid Grid.Row="0" ColumnDefinitions="80,100,220,*" Margin="6,0,6,4">
+              <TextBlock Grid.Column="0" Text="Time"   FontSize="11" Opacity="0.55" />
+              <TextBlock Grid.Column="1" Text="Status" FontSize="11" Opacity="0.55" />
+              <TextBlock Grid.Column="2" Text="File"   FontSize="11" Opacity="0.55" />
+              <TextBlock Grid.Column="3" Text="Detail" FontSize="11" Opacity="0.55" />
+            </Grid>
+            <ListBox Grid.Row="1" ItemsSource="{Binding Tasks}" FontSize="12"
+                     Background="Transparent" BorderThickness="0">
+              <ListBox.ItemTemplate>
+                <DataTemplate x:DataType="vm:TaskRowViewModel">
+                  <Grid ColumnDefinitions="80,100,220,*">
+                    <TextBlock Grid.Column="0" Text="{Binding StartedText}" Classes="mono" />
+                    <TextBlock Grid.Column="1" Text="{Binding Status}" />
+                    <TextBlock Grid.Column="2" Text="{Binding FileName}" TextTrimming="CharacterEllipsis" />
+                    <TextBlock Grid.Column="3" Text="{Binding Detail}" Opacity="0.75"
+                               TextTrimming="CharacterEllipsis" />
+                  </Grid>
+                </DataTemplate>
+              </ListBox.ItemTemplate>
+            </ListBox>
+          </Grid>
+          <TextBlock Grid.Row="2" Text="DIAGNOSTIC LOG" Classes="sectionHeader" Margin="0,8,0,4" />
+        </Grid>
+
+        <GridSplitter Grid.Row="1" Background="Transparent" />
+
+        <Grid Grid.Row="2" ColumnDefinitions="*,320">
+          <Border Grid.Column="0" CornerRadius="6" Padding="8" Margin="0,0,8,0"
+                  Background="{DynamicResource SystemControlBackgroundListLowBrush}">
+            <Grid RowDefinitions="*,Auto">
+              <Image Grid.Row="0" Source="{Binding PreviewImage}" Stretch="Uniform"
+                     HorizontalAlignment="Center" VerticalAlignment="Center" />
+              <TextBlock Grid.Row="1" Text="{Binding PreviewCaption}" Classes="mono"
+                         TextWrapping="Wrap" Margin="0,6,0,0" />
+            </Grid>
+          </Border>
+
+          <Grid Grid.Column="1" RowDefinitions="Auto,*,Auto,Auto">
+            <TextBlock Grid.Row="0" Text="DISPLAYS" Classes="sectionHeader" Margin="0,0,0,4" />
+            <ItemsControl Grid.Row="1" ItemsSource="{Binding Displays}">
+              <ItemsControl.ItemTemplate>
+                <DataTemplate x:DataType="x:String">
+                  <TextBlock Text="{Binding}" Classes="mono" TextWrapping="Wrap" Margin="0,1" />
+                </DataTemplate>
+              </ItemsControl.ItemTemplate>
+            </ItemsControl>
+            <TextBlock Grid.Row="2" Text="LOG" Classes="sectionHeader" Margin="0,6,0,4" />
+            <ScrollViewer Grid.Row="3" MaxHeight="150">
+              <ItemsControl ItemsSource="{Binding Log}">
+                <ItemsControl.ItemTemplate>
+                  <DataTemplate x:DataType="x:String">
+                    <TextBlock Text="{Binding}" Classes="mono" TextWrapping="Wrap" Opacity="0.75" />
+                  </DataTemplate>
+                </ItemsControl.ItemTemplate>
+              </ItemsControl>
+            </ScrollViewer>
+          </Grid>
+        </Grid>
+      </Grid>
+    </Grid>
+
+    <!-- ============ status bar (upstream sslStatus) ============ -->
+    <Border Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="1"
+            BorderThickness="0,1,0,0" Padding="12,6"
+            BorderBrush="{DynamicResource SystemControlForegroundBaseLowBrush}">
+      <TextBlock Text="{Binding StatusText}" FontSize="11" Opacity="0.8" />
+    </Border>
+  </Grid>
+</Window>

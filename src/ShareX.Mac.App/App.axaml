@@ -1,0 +1,48 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ShareX.Mac.App.App"
+             RequestedThemeVariant="Default">
+
+  <Application.Styles>
+    <FluentTheme />
+
+    <!-- macOS idiom (ADR 0005): ShareX's structure, Mac chrome and metrics.
+         Commands, grouping, order and labels come from upstream; spacing,
+         typography and control shapes follow the platform. -->
+    <Style Selector="Window">
+      <Setter Property="FontFamily" Value="-apple-system, SF Pro Text, Inter, sans-serif" />
+      <Setter Property="FontSize" Value="13" />
+    </Style>
+
+    <Style Selector="TextBlock.sectionHeader">
+      <Setter Property="FontSize" Value="11" />
+      <Setter Property="FontWeight" Value="SemiBold" />
+      <Setter Property="Opacity" Value="0.55" />
+      <Setter Property="Margin" Value="12,14,12,4" />
+    </Style>
+
+    <Style Selector="TextBlock.mono">
+      <Setter Property="FontFamily" Value="SF Mono, Menlo, monospace" />
+      <Setter Property="FontSize" Value="11" />
+    </Style>
+
+    <!-- Command rail entries: upstream ToolStrip items, rendered as a Mac sidebar. -->
+    <Style Selector="Button.rail">
+      <Setter Property="HorizontalAlignment" Value="Stretch" />
+      <Setter Property="HorizontalContentAlignment" Value="Left" />
+      <Setter Property="Padding" Value="10,6" />
+      <Setter Property="Margin" Value="6,1" />
+      <Setter Property="CornerRadius" Value="6" />
+      <Setter Property="Background" Value="Transparent" />
+      <Setter Property="BorderThickness" Value="0" />
+    </Style>
+    <Style Selector="Button.rail:pointerover /template/ ContentPresenter">
+      <Setter Property="Background" Value="{DynamicResource SystemControlBackgroundListLowBrush}" />
+    </Style>
+
+    <Style Selector="Separator.rail">
+      <Setter Property="Margin" Value="12,8" />
+      <Setter Property="Opacity" Value="0.35" />
+    </Style>
+  </Application.Styles>
+</Application>

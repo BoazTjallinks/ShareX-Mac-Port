@@ -12,19 +12,34 @@ An **unofficial, work-in-progress macOS port of [ShareX](https://github.com/Shar
 
 ---
 
-## Status: early. It does not do anything useful yet.
+## Status: stage 0 complete — it builds, installs, and captures.
 
 This is an honest status table, not a roadmap of intentions. Nothing is listed as
 working unless it was actually executed on a real machine.
 
 | Area | State | Evidence |
 | --- | --- | --- |
-| Native bridge (Swift + Objective-C C ABI over ScreenCaptureKit) | **builds and links**, arm64 | `native/ShareXMacNative/build.sh` |
-| Upstream enum port (75 commands, 22 after-capture, 6 after-upload flags, …) | **ported**, values verified against the pinned source | `tests/ShareX.Core.Tests` |
-| Managed interop (`LibraryImport` over the C ABI) | **builds**, unit-tested without the dylib | `tests/ShareX.Platform.Mac.Tests` |
-| `.app` packaging + local code signing | **scripted**, not yet exercised end to end | `scripts/build-app.sh` |
-| Screen capture at runtime | **not yet demonstrated** | — |
-| Recording, editors, effects, uploaders, settings UI, history, CLI | **not implemented** | — |
+| Native bridge (Swift + Objective-C C ABI over ScreenCaptureKit) | **works** | `--selftest` below |
+| Upstream enum port (75 commands, 22 after-capture, 6 after-upload flags, …) | **ported**, values verified against the pinned source | 90 passing tests |
+| Managed interop (`LibraryImport` over the C ABI) | **works** from the real bundle | `--selftest` |
+| `.app` packaging, signing, install to /Applications | **works** | `scripts/build-app.sh`, `scripts/install-app.sh` |
+| Screen capture at runtime | **works** — real Retina capture to disk | 3024×1964 px from a 1512×982 pt display @2× |
+| Main window (ShareX command structure, Mac chrome) | **renders**; command handlers not wired yet | `src/ShareX.Mac.App` |
+| Recording pipeline | **compiles**, full state machine; runtime **not** demonstrated | `native/…/SXMRecordingSession.swift` |
+| Editors, 232+51 effects, 74 uploaders, settings UI, history, CLI | **not implemented** | — |
+
+Self-test from the installed bundle:
+
+```
+$ /Applications/ShareX-Mac.app/Contents/MacOS/ShareX-Mac --selftest
+PASS  capabilities.get: 30 ms   os 26.6.2, arm64, abi 1, com.tjallinks.sharexmac
+PASS  permissions.get         screenRecording granted
+PASS  displays.list   : 1     #1 1512x982 pt @2x origin (0,0) space=CgGlobalPoints
+PASS  windows.list    : 25
+PASS  media.encoders          h264 yes, hevc yes, prores4444 NO, pngSequence yes
+PASS  capture         : 130 ms 3024x1964 px, scale 2
+RESULT: all checks passed.
+```
 
 The upstream feature ledger (`planning/feature-ledger.json`) tracks 671 catalogue
 entries. Almost all of them are still `not_started`. This README will not claim
