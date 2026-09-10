@@ -179,6 +179,63 @@ enum SXMRoutes {
             ctx.onCancel { work.cancel() }
         }
 
+        // MARK: - Recording (PROJECT-SPEC.md section 6)
+
+        // Completes as soon as the session is RUNNING; it does not block until the
+        // recording ends. Progress and state arrive on the event channel keyed by
+        // sessionId, never through this one-shot completion.
+        routes["recording.start"] = { ctx in
+            let work = SXMRecordingSessionFactory.start(
+                args: ctx.args,
+                isCancelled: { ctx.isCancelled },
+                completion: { result in
+                    switch result {
+                    case .success(let payload): ctx.succeed(payload)
+                    case .failure(let failure): ctx.fail(failure)
+                    }
+                })
+            ctx.onCancel { work.cancel() }
+        }
+
+        // Each control route resolves the session by id. An unknown id is
+        // targetDisappeared, not a silent success.
+        func session(_ ctx: SXMContext) throws -> SXMRecordingSession {
+            guard let raw = ctx.args["sessionId"] as? NSNumber else {
+                throw SXMFailure(.invalidInput, "sessionId is required.")
+            }
+            let id = raw.uint64Value
+            guard let found = SXMRecordingRegistry.shared.find(id) else {
+                throw SXMFailure(.targetDisappeared,
+                                 "No live recording session with id \(id).",
+                                 detail: ["sessionId": Int(id)])
+            }
+            return found
+        }
+
+        routes["recording.pause"]  = { ctx in ctx.succeed(try session(ctx).pause()) }
+        routes["recording.resume"] = { ctx in ctx.succeed(try session(ctx).resume()) }
+        routes["recording.abort"]  = { ctx in ctx.succeed(try session(ctx).abort()) }
+        routes["recording.status"] = { ctx in ctx.succeed(try session(ctx).status()) }
+
+        // Unlike the others, stop completes only after finalization, so the caller
+        // can rely on the returned path being a complete, playable file.
+        routes["recording.stop"] = { ctx in
+            let target = try session(ctx)
+            target.stop { result in
+                switch result {
+                case .success(let payload): ctx.succeed(payload)
+                case .failure(let failure): ctx.fail(failure)
+                }
+            }
+        }
+
+        // Discover what this machine can actually encode. The spec forbids
+        // assuming a codec is available (section 6): an unavailable codec stays
+        // unavailable rather than being silently substituted.
+        routes["media.encoders"] = { ctx in
+            ctx.succeed(SXMEncoderProbe.snapshot())
+        }
+
         return routes
     }
 }
