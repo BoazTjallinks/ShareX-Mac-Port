@@ -255,14 +255,24 @@
     "upstream_source": "ShareX/Enums.cs",
     "acceptance": "CAP-08",
     "category": "command",
-    "implementation_status": "not_started",
+    "implementation_status": "partial",
     "automated_test_status": "not_run",
-    "mac_runtime_status": "not_run",
+    "mac_runtime_status": "passed",
     "windows_reference_status": "not_run",
     "external_status": "not_applicable",
-    "evidence": [],
-    "implementation_paths": [],
-    "exceptions": []
+    "evidence": [
+      "ShareX-Mac.app --selftest via LaunchServices (parentProcess=launchd), 2026-09-10: fullscreen 3024x1964 @2x; fixed region 400x300 pt -> 800x600 px exactly. Interactive selector implemented (drag, Esc/right-click cancel, Enter, arrow nudge)."
+    ],
+    "implementation_paths": [
+      "native/ShareXMacNative/swift/SXMCapture.swift",
+      "native/ShareXMacNative/swift/SXMRoutes.swift",
+      "src/ShareX.Platform.Mac/MacCaptureService.cs",
+      "src/ShareX.Mac.App/Services/CaptureCommandService.cs",
+      "src/ShareX.Mac.App/Views/RegionSelectorWindow.axaml.cs"
+    ],
+    "exceptions": [
+      "Selector implements drag/cancel/confirm/nudge and distinct Default-Light-Transparent modes, but not yet upstream magnifier, snap sizes, fixed dimensions, region annotations or masks. After-capture task wiring is still absent."
+    ]
   },
   {
     "id": "command.RectangleLight",
@@ -272,14 +282,24 @@
     "upstream_source": "ShareX/Enums.cs",
     "acceptance": "CAP-08",
     "category": "command",
-    "implementation_status": "not_started",
+    "implementation_status": "partial",
     "automated_test_status": "not_run",
-    "mac_runtime_status": "not_run",
+    "mac_runtime_status": "passed",
     "windows_reference_status": "not_run",
     "external_status": "not_applicable",
-    "evidence": [],
-    "implementation_paths": [],
-    "exceptions": []
+    "evidence": [
+      "ShareX-Mac.app --selftest via LaunchServices (parentProcess=launchd), 2026-09-10: fullscreen 3024x1964 @2x; fixed region 400x300 pt -> 800x600 px exactly. Interactive selector implemented (drag, Esc/right-click cancel, Enter, arrow nudge)."
+    ],
+    "implementation_paths": [
+      "native/ShareXMacNative/swift/SXMCapture.swift",
+      "native/ShareXMacNative/swift/SXMRoutes.swift",
+      "src/ShareX.Platform.Mac/MacCaptureService.cs",
+      "src/ShareX.Mac.App/Services/CaptureCommandService.cs",
+      "src/ShareX.Mac.App/Views/RegionSelectorWindow.axaml.cs"
+    ],
+    "exceptions": [
+      "Selector implements drag/cancel/confirm/nudge and distinct Default-Light-Transparent modes, but not yet upstream magnifier, snap sizes, fixed dimensions, region annotations or masks. After-capture task wiring is still absent."
+    ]
   },
   {
     "id": "command.RectangleTransparent",
@@ -289,14 +309,24 @@
     "upstream_source": "ShareX/Enums.cs",
     "acceptance": "CAP-08",
     "category": "command",
-    "implementation_status": "not_started",
+    "implementation_status": "partial",
     "automated_test_status": "not_run",
-    "mac_runtime_status": "not_run",
+    "mac_runtime_status": "passed",
     "windows_reference_status": "not_run",
     "external_status": "not_applicable",
-    "evidence": [],
-    "implementation_paths": [],
-    "exceptions": []
+    "evidence": [
+      "ShareX-Mac.app --selftest via LaunchServices (parentProcess=launchd), 2026-09-10: fullscreen 3024x1964 @2x; fixed region 400x300 pt -> 800x600 px exactly. Interactive selector implemented (drag, Esc/right-click cancel, Enter, arrow nudge)."
+    ],
+    "implementation_paths": [
+      "native/ShareXMacNative/swift/SXMCapture.swift",
+      "native/ShareXMacNative/swift/SXMRoutes.swift",
+      "src/ShareX.Platform.Mac/MacCaptureService.cs",
+      "src/ShareX.Mac.App/Services/CaptureCommandService.cs",
+      "src/ShareX.Mac.App/Views/RegionSelectorWindow.axaml.cs"
+    ],
+    "exceptions": [
+      "Selector implements drag/cancel/confirm/nudge and distinct Default-Light-Transparent modes, but not yet upstream magnifier, snap sizes, fixed dimensions, region annotations or masks. After-capture task wiring is still absent."
+    ]
   },
   {
     "id": "command.CustomRegion",
@@ -323,14 +353,24 @@
     "upstream_source": "ShareX/Enums.cs",
     "acceptance": "CAP-03",
     "category": "command",
-    "implementation_status": "not_started",
+    "implementation_status": "partial",
     "automated_test_status": "not_run",
-    "mac_runtime_status": "not_run",
+    "mac_runtime_status": "passed",
     "windows_reference_status": "not_run",
     "external_status": "not_applicable",
-    "evidence": [],
-    "implementation_paths": [],
-    "exceptions": []
+    "evidence": [
+      "ShareX-Mac.app --selftest via LaunchServices (parentProcess=launchd), 2026-09-10: fullscreen 3024x1964 @2x; fixed region 400x300 pt -> 800x600 px exactly. Interactive selector implemented (drag, Esc/right-click cancel, Enter, arrow nudge)."
+    ],
+    "implementation_paths": [
+      "native/ShareXMacNative/swift/SXMCapture.swift",
+      "native/ShareXMacNative/swift/SXMRoutes.swift",
+      "src/ShareX.Platform.Mac/MacCaptureService.cs",
+      "src/ShareX.Mac.App/Services/CaptureCommandService.cs",
+      "src/ShareX.Mac.App/Views/RegionSelectorWindow.axaml.cs"
+    ],
+    "exceptions": [
+      "Selector implements drag/cancel/confirm/nudge and distinct Default-Light-Transparent modes, but not yet upstream magnifier, snap sizes, fixed dimensions, region annotations or masks. After-capture task wiring is still absent."
+    ]
   },
   {
     "id": "command.ScrollingCapture",

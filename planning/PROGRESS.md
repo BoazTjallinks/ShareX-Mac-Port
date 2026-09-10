@@ -10,30 +10,54 @@ a signed app bundle installed at `/Applications/ShareX-Mac.app`, not from
 
 ## Stage 0 evidence
 
-`/Applications/ShareX-Mac.app/Contents/MacOS/ShareX-Mac --selftest`, 2026-09-10:
+### Correction to earlier evidence
+
+An earlier version of this file recorded a passing capture that was **not valid
+evidence**. That run was launched as a child of the terminal, and macOS attributes
+a TCC request to the *responsible process* - so the capture succeeded on the
+terminal's own Screen Recording grant, not on the app's. Launching the same bundle
+through LaunchServices showed `screenRecording: required` and a failing capture.
+
+The self-test now reports its parent process for exactly this reason, and valid
+evidence must show `launchd (own LaunchServices instance)`.
+
+Two real bugs were found behind that false positive:
+
+1. `SXMCapture.requirePermission()` gated on `CGPreflightScreenCaptureAccess()`,
+   which never prompts. The app could report "permission required" forever
+   without macOS ever asking, and an app that has never requested may not even
+   appear in System Settings. Fixed with `ensureScreenRecording()`, which calls
+   `CGRequestScreenCaptureAccess()`.
+2. The prompt is asynchronous, and `--selftest` ran headless - no `NSApplication`,
+   therefore no window-server connection and no possibility of a prompt - then
+   exited immediately. It now runs inside the normal Avalonia lifetime.
+
+Also fixed: `install-app.sh` had left a timestamped backup `.app` in
+`/Applications` on every install, so **five** bundles claimed
+`com.tjallinks.sharexmac`. Backups now go outside `/Applications` and only one is
+kept.
+
+### Valid evidence
+
+`open -n -a /Applications/ShareX-Mac.app --args --selftest`, 2026-09-10:
 
 ```
-running from bundle : True
-bundle path         : /Applications/ShareX-Mac.app
-runtime             : .NET 10.0.11
-
-PASS  capabilities.get: 30 ms   os 26.6.2, arm64, abi 1, com.tjallinks.sharexmac
-PASS  permissions.get         screenRecording granted, accessibility granted, microphone granted
-PASS  displays.list   : 1     #1 1512x982 pt @2x origin (0,0) space=CgGlobalPoints main active
-PASS  windows.list    : 25
+PASS  capabilities.get: 20 ms   os 26.6.2, arm64, abi 1, com.tjallinks.sharexmac
+PASS  permissions.get         screenRecording granted
+PASS  displays.list   : 1     #1 1512x982 pt @2x origin (0,0) space=CgGlobalPoints
+PASS  windows.list    : 20
 PASS  media.encoders          h264 yes, hevc yes, prores4444 NO, pngSequence yes
-PASS  capture         : 130 ms 3024x1964 px, scale 2, source (0,0) 1512x982 CgGlobalPoints
-      file          : ~/Pictures/ShareX/2026-09/selftest_2026-09-10_13-34-50.png (1,717,371 bytes)
+PASS  capture         : 196 ms 3024x1964 px @2x
+PASS  region capture  : requested 400x300 pt at (100,100) CgGlobalPoints
+      got           : 800x600 px @2x (expected 800x600)
 RESULT: all checks passed.
+  "parentProcess": "launchd (own LaunchServices instance; TCC attributed to this app)"
 ```
 
-Independently verified with `sips`: the PNG is 3024x1964, 8-bit RGBA,
-non-interlaced. A 1512x982 point display at backing scale 2 gives exactly
-3024x1964 physical pixels, so Retina scale is handled without doubling or loss.
-
-The `.app` is signed by `ShareX-Mac Local`, hardened runtime, `Mach-O thin
-(arm64)`, and `codesign --verify --strict` reports "valid on disk" and
-"satisfies its Designated Requirement".
+Independently verified with `sips`: the full-screen PNG is 3024x1964 and the
+region PNG is exactly 800x600. A 1512x982 point display at backing scale 2 gives
+3024x1964 physical pixels, and 400x300 points at scale 2 gives 800x600 - so both
+the Retina scale and the CoreGraphics-global-points crop are correct.
 
 **Done and verified on this machine:**
 - Package verification passed (`scripts/verify-package.py` → `"result": "passed"`, 3971 source files, commit `d2502561f63fc3ff502cacd91514e3f7f2948c74`).

@@ -23,8 +23,9 @@ working unless it was actually executed on a real machine.
 | Upstream enum port (75 commands, 22 after-capture, 6 after-upload flags, …) | **ported**, values verified against the pinned source | 90 passing tests |
 | Managed interop (`LibraryImport` over the C ABI) | **works** from the real bundle | `--selftest` |
 | `.app` packaging, signing, install to /Applications | **works** | `scripts/build-app.sh`, `scripts/install-app.sh` |
-| Screen capture at runtime | **works** — real Retina capture to disk | 3024×1964 px from a 1512×982 pt display @2× |
-| Main window (ShareX command structure, Mac chrome) | **renders**; command handlers not wired yet | `src/ShareX.Mac.App` |
+| Screen capture at runtime | **works** — full screen, monitor, window | 3024×1964 px from a 1512×982 pt display @2× |
+| Region capture with interactive selector | **works** — drag, cancel, nudge, 3 modes | 400×300 pt → exactly 800×600 px |
+| Main window (ShareX command structure, Mac chrome) | **renders**; capture commands wired, the rest report "not implemented" | `src/ShareX.Mac.App` |
 | Recording pipeline | **compiles**, full state machine; runtime **not** demonstrated | `native/…/SXMRecordingSession.swift` |
 | Editors, 232+51 effects, 74 uploaders, settings UI, history, CLI | **not implemented** | — |
 
@@ -37,9 +38,24 @@ PASS  permissions.get         screenRecording granted
 PASS  displays.list   : 1     #1 1512x982 pt @2x origin (0,0) space=CgGlobalPoints
 PASS  windows.list    : 25
 PASS  media.encoders          h264 yes, hevc yes, prores4444 NO, pngSequence yes
-PASS  capture         : 130 ms 3024x1964 px, scale 2
+PASS  capture         : 196 ms 3024x1964 px, scale 2
+PASS  region capture  : requested 400x300 pt at (100,100) CgGlobalPoints
+      got           : 800x600 px @2x (expected 800x600)
 RESULT: all checks passed.
+  "parentProcess": "launchd (own LaunchServices instance; TCC attributed to this app)"
 ```
+
+The `parentProcess` line matters: a process launched from a terminal can be
+attributed to the *terminal's* privacy grant, which once produced a false
+"capture works" result here. Valid evidence must show `launchd`.
+
+### Permissions
+
+On first launch ShareX-Mac asks for **Screen & System Audio Recording**. macOS
+only applies a new grant to a **newly launched** process, so quit and reopen the
+app after approving — the in-app banner has a button for that. If the app was
+reinstalled repeatedly and the grant seems stuck, clear its stored decision with
+`tccutil reset ScreenCapture com.tjallinks.sharexmac` and relaunch.
 
 The upstream feature ledger (`planning/feature-ledger.json`) tracks 671 catalogue
 entries. Almost all of them are still `not_started`. This README will not claim

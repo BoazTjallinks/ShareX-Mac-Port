@@ -275,14 +275,78 @@ public static class SelfTest
             }
 
             Line("");
+
+            // ---- fixed-region capture ------------------------------------------
+            // Exercises the same "region" native route the interactive selector
+            // uses, with a known rectangle, so the coordinate-space contract and
+            // the crop are checkable without a human dragging a selection.
+            if (!attemptCapture)
+            {
+                Line("SKIP  region capture  : --no-capture requested");
+                results["regionCapture"] = "skipped";
+            }
+            else
+            {
+                var requested = new PointRect(100, 100, 400, 300, CoordinateSpace.CgGlobalPoints);
+                DateTime regionNow = DateTime.Now;
+                string regionFolder = AppPaths.EnsureDirectory(AppPaths.ScreenshotsFolderFor(regionNow));
+                string regionPath = Path.Combine(
+                    regionFolder, $"selftest-region_{regionNow:yyyy-MM-dd_HH-mm-ss}.png");
+
+                OperationOutcome<CaptureResult> region = await capture
+                    .CaptureAsync(CaptureTarget.Region(requested), outputPath: regionPath)
+                    .ConfigureAwait(false);
+
+                if (region.IsSuccess)
+                {
+                    CaptureResult result = region.Value;
+                    // 400x300 points at scale 2 must be 800x600 pixels. Anything
+                    // else means the coordinate space or the scale is being
+                    // mishandled, which is exactly the class of bug this catches.
+                    int expectedWidth = (int)Math.Round(requested.Width * result.CompositionScale);
+                    int expectedHeight = (int)Math.Round(requested.Height * result.CompositionScale);
+                    bool geometryOk = result.PixelWidth == expectedWidth
+                                      && result.PixelHeight == expectedHeight;
+
+                    Line($"{(geometryOk ? "PASS" : "FAIL")}  region capture  : "
+                         + $"requested {requested.Width:0}x{requested.Height:0} pt at "
+                         + $"({requested.X:0},{requested.Y:0}) {requested.Space}");
+                    Line($"      got           : {result.PixelWidth}x{result.PixelHeight} px "
+                         + $"@{result.CompositionScale:0.##}x (expected {expectedWidth}x{expectedHeight})");
+                    Line($"      file          : {result.OutputPath ?? regionPath}");
+
+                    results["regionCapture"] = geometryOk ? "pass" : "fail:geometry";
+                    results["regionPixels"] = $"{result.PixelWidth}x{result.PixelHeight}";
+                    results["regionExpected"] = $"{expectedWidth}x{expectedHeight}";
+
+                    if (!geometryOk)
+                    {
+                        allRequiredPassed = false;
+                    }
+                }
+                else
+                {
+                    Line($"FAIL  region capture  : {region.Error!.Kind} — {region.Error!.Message}");
+                    results["regionCapture"] = $"fail:{region.Error!.Kind}";
+                    allRequiredPassed = false;
+                }
+            }
+
+            Line("");
             Line(allRequiredPassed
                 ? "RESULT: all checks passed."
                 : "RESULT: one or more checks did not pass (see above).");
         }
 
-        results["responsibleProcessHint"] = Environment.GetEnvironmentVariable("TERM") is null
-            ? "launched without a terminal (LaunchServices) - TCC attributed to this app"
-            : "launched from a terminal - TCC may be attributed to the terminal instead";
+        // Honest reporting of who TCC will attribute this request to.
+        //
+        // This matters because a process launched as a CHILD of a terminal can be
+        // attributed to that terminal's own privacy grant, which once produced a
+        // false "capture works" result here. Environment variables are useless for
+        // detecting it (TERM survives `open`), so report the real parent process:
+        // launched via LaunchServices the parent is launchd (pid 1), whereas a
+        // terminal-launched child has the shell or terminal as its parent.
+        results["parentProcess"] = DescribeParentProcess();
         report.AppendLine();
         report.AppendLine("--- json ---");
         report.AppendLine(JsonSerializer.Serialize(results,
@@ -299,6 +363,65 @@ public static class SelfTest
 
         Emit(results, allRequiredPassed);
         return allRequiredPassed ? 0 : 1;
+    }
+
+    /// <summary>
+    /// Name of the parent process, used to say whether TCC will attribute this
+    /// request to the app itself or possibly to a terminal that launched it.
+    /// </summary>
+    private static string DescribeParentProcess()
+    {
+        try
+        {
+            using var current = Process.GetCurrentProcess();
+            var psi = new ProcessStartInfo
+            {
+                FileName = "/bin/ps",
+                ArgumentList = { "-o", "ppid=", "-p", current.Id.ToString() },
+                RedirectStandardOutput = true,
+                UseShellExecute = false
+            };
+
+            using Process? ps = Process.Start(psi);
+            if (ps is null)
+            {
+                return "unknown";
+            }
+
+            string parentIdText = ps.StandardOutput.ReadToEnd().Trim();
+            ps.WaitForExit(2000);
+
+            if (!int.TryParse(parentIdText, out int parentId))
+            {
+                return "unknown";
+            }
+
+            if (parentId <= 1)
+            {
+                return "launchd (own LaunchServices instance; TCC attributed to this app)";
+            }
+
+            using var name = new Process
+            {
+                StartInfo = new ProcessStartInfo
+                {
+                    FileName = "/bin/ps",
+                    ArgumentList = { "-o", "comm=", "-p", parentId.ToString() },
+                    RedirectStandardOutput = true,
+                    UseShellExecute = false
+                }
+            };
+            name.Start();
+            string parentName = name.StandardOutput.ReadToEnd().Trim();
+            name.WaitForExit(2000);
+
+            return $"{parentName} (pid {parentId}) - if this is a shell or terminal, "
+                   + "TCC may be attributed to it rather than to this app";
+        }
+        catch (Exception ex)
+        {
+            return $"unknown ({ex.GetType().Name})";
+        }
     }
 
     private static void Emit(Dictionary<string, object?> results, bool passed)
