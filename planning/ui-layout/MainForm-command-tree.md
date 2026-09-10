@@ -1,0 +1,101 @@
+# MainForm command tree (extracted from the pinned upstream designer)
+
+Source: `reference/ShareX/ShareX/Forms/MainForm.Designer.cs` @ d2502561f63f.
+Generated from `planning/ui-layout/ShareX__MainForm.json`. This is the command
+structure the macOS port must preserve (ADR 0005): same commands, same grouping,
+same order, same labels. Rendering is native Mac.
+
+
+## `tsMain` — main command rail
+
+- **Capture** <ToolStripDropDownButton>
+  - **Fullscreen** <ToolStripMenuItem>
+  - **Window** <ToolStripMenuItem>
+  - **Monitor** <ToolStripMenuItem>
+  - **Region** <ToolStripMenuItem>
+  - **Region (Light)** <ToolStripMenuItem>
+  - **Region (Transparent)** <ToolStripMenuItem>
+  - **Last region** <ToolStripMenuItem>
+  - **Screen recording** <ToolStripMenuItem>
+  - **Screen recording (GIF)** <ToolStripMenuItem>
+  - **Scrolling capture...** <ToolStripMenuItem>
+  - **Auto capture...** <ToolStripMenuItem>
+  - ---
+  - **Show cursor** <ToolStripMenuItem>
+  - **Screenshot delay** <ToolStripMenuItem>
+    - **No delay** <ToolStripMenuItem>
+    - **1 second** <ToolStripMenuItem>
+    - **2 seconds** <ToolStripMenuItem>
+    - **3 seconds** <ToolStripMenuItem>
+    - **4 seconds** <ToolStripMenuItem>
+    - **5 seconds** <ToolStripMenuItem>
+- **Upload** <ToolStripDropDownButton>
+  - **Upload file...** <ToolStripMenuItem>
+  - **Upload folder...** <ToolStripMenuItem>
+  - **Upload from clipboard...** <ToolStripMenuItem>
+  - **Upload text...** <ToolStripMenuItem>
+  - **Upload from URL...** <ToolStripMenuItem>
+  - **Drag and drop upload...** <ToolStripMenuItem>
+  - **Shorten URL...** <ToolStripMenuItem>
+- **Workflows** <ToolStripDropDownButton>
+- **Tools** <ToolStripDropDownButton>
+  - **Color picker...** <ToolStripMenuItem>
+  - **Screen color picker...** <ToolStripMenuItem>
+  - **Ruler...** <ToolStripMenuItem>
+  - **Pin to screen...** <ToolStripMenuItem>
+  - ---
+  - **Image editor...** <ToolStripMenuItem>
+  - **Image beautifier...** <ToolStripMenuItem>
+  - **Image effects...** <ToolStripMenuItem>
+  - **Image viewer...** <ToolStripMenuItem>
+  - **Background remover...** <ToolStripMenuItem>
+  - **Image comparer...** <ToolStripMenuItem>
+  - **Image combiner...** <ToolStripMenuItem>
+  - **Image splitter...** <ToolStripMenuItem>
+  - **Image thumbnailer...** <ToolStripMenuItem>
+  - ---
+  - **Video converter...** <ToolStripMenuItem>
+  - **Video thumbnailer...** <ToolStripMenuItem>
+  - ---
+  - **Analyze image...** <ToolStripMenuItem>
+  - **OCR...** <ToolStripMenuItem>
+  - **QR code...** <ToolStripMenuItem>
+  - **Hash checker...** <ToolStripMenuItem>
+  - **Metadata...** <ToolStripMenuItem>
+  - **Directory indexer...** <ToolStripMenuItem>
+  - ---
+  - **Clipboard viewer...** <ToolStripMenuItem>
+  - **Borderless window...** <ToolStripMenuItem>
+  - **Inspect window...** <ToolStripMenuItem>
+  - **Monitor test...** <ToolStripMenuItem>
+- ---
+- **After capture tasks** <ToolStripDropDownButton>
+- **After upload tasks** <ToolStripDropDownButton>
+- **Destinations** <ToolStripDropDownButton>
+  - **Image uploaders** <ToolStripMenuItem>
+  - **Text uploaders** <ToolStripMenuItem>
+  - **File uploaders** <ToolStripMenuItem>
+  - **URL shorteners** <ToolStripMenuItem>
+  - **URL sharing services** <ToolStripMenuItem>
+- ---
+- **Application settings...** <ToolStripButton>
+- **Task settings...** <ToolStripButton>
+- **Hotkey settings...** <ToolStripButton>
+- **Destination settings...** <ToolStripButton>
+- **Custom uploader settings...** <ToolStripButton>
+- ---
+- **Screenshots folder...** <ToolStripButton>
+- **History...** <ToolStripButton>
+- **Image history...** <ToolStripButton>
+- ---
+- **Debug** <ToolStripDropDownButton>
+  - **Debug log...** <ToolStripMenuItem>
+  - **Test image upload** <ToolStripMenuItem>
+  - **Test text upload** <ToolStripMenuItem>
+  - **Test file upload** <ToolStripMenuItem>
+  - **Test URL shortener** <ToolStripMenuItem>
+  - **Test URL sharing** <ToolStripMenuItem>
+- **Donate...** <ToolStripButton>
+- **Follow @ShareX...** <ToolStripButton>
+- **Discord...** <ToolStripButton>
+- **About...** <ToolStripButton>
