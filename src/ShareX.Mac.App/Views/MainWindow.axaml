@@ -23,7 +23,9 @@
             <DataTemplate x:DataType="models:CommandEntry">
               <Panel>
                 <Separator Classes="rail" IsVisible="{Binding IsSeparator}" />
-                <Button Classes="rail" IsVisible="{Binding !IsSeparator}">
+                <Button Classes="rail" IsVisible="{Binding !IsSeparator}"
+                        Command="{Binding $parent[Window].((vm:MainWindowViewModel)DataContext).RunCommandCommand}"
+                        CommandParameter="{Binding}">
                   <Grid ColumnDefinitions="*,Auto">
                     <TextBlock Grid.Column="0" Text="{Binding Label}" VerticalAlignment="Center" />
                     <TextBlock Grid.Column="1" Text="›" Opacity="0.4"
@@ -32,11 +34,16 @@
                   </Grid>
                   <Button.Flyout>
                     <MenuFlyout ItemsSource="{Binding Children}">
-                      <MenuFlyout.ItemTemplate>
-                        <DataTemplate x:DataType="models:CommandEntry">
-                          <TextBlock Text="{Binding Label}" />
-                        </DataTemplate>
-                      </MenuFlyout.ItemTemplate>
+                      <MenuFlyout.ItemContainerTheme>
+                        <ControlTheme TargetType="MenuItem" BasedOn="{StaticResource {x:Type MenuItem}}"
+                                      x:DataType="models:CommandEntry">
+                          <Setter Property="Header" Value="{Binding Label}" />
+                          <Setter Property="ItemsSource" Value="{Binding Children}" />
+                          <Setter Property="Command"
+                                  Value="{Binding $parent[Window].((vm:MainWindowViewModel)DataContext).RunCommandCommand}" />
+                          <Setter Property="CommandParameter" Value="{Binding}" />
+                        </ControlTheme>
+                      </MenuFlyout.ItemContainerTheme>
                     </MenuFlyout>
                   </Button.Flyout>
                 </Button>
@@ -65,12 +72,35 @@
           <TextBlock Text="{Binding BundleSummary}" TextWrapping="Wrap" FontSize="12" />
         </Border>
 
+        <!-- Shown only while Screen Recording is still missing. macOS applies a
+             new grant to a freshly launched process, so the relaunch button is
+             part of the fix, not a nicety. -->
+        <Border Padding="12" CornerRadius="6" Background="#33FF9500"
+                BorderBrush="#66FF9500" BorderThickness="1"
+                IsVisible="{Binding NeedsRelaunch}">
+          <StackPanel Spacing="8">
+            <TextBlock Text="Screen Recording permission is required"
+                       FontWeight="SemiBold" FontSize="13" />
+            <TextBlock TextWrapping="Wrap" FontSize="12"
+                       Text="Approve ShareX-Mac in the macOS dialog, or enable it in System Settings → Privacy &amp; Security → Screen &amp; System Audio Recording. macOS only applies a new grant to a newly launched process, so relaunch afterwards." />
+            <StackPanel Orientation="Horizontal" Spacing="8">
+              <Button Content="Open System Settings…"
+                      Command="{Binding OpenPrivacySettingsCommand}" />
+              <Button Content="Quit and reopen ShareX-Mac"
+                      Command="{Binding RelaunchAppCommand}" />
+              <Button Content="Re-check" Command="{Binding RefreshPermissionsCommand}" />
+            </StackPanel>
+          </StackPanel>
+        </Border>
+
         <StackPanel Orientation="Horizontal" Spacing="8">
           <Button Content="Fullscreen" Command="{Binding CaptureFullscreenCommand}"
                   IsEnabled="{Binding !IsBusy}" />
           <Button Content="Monitor" Command="{Binding CaptureActiveMonitorCommand}"
                   IsEnabled="{Binding !IsBusy}" />
           <Button Content="Window" Command="{Binding CaptureActiveWindowCommand}"
+                  IsEnabled="{Binding !IsBusy}" />
+          <Button Content="Region…" Command="{Binding CaptureRegionCommand}"
                   IsEnabled="{Binding !IsBusy}" />
           <Border Width="1" Margin="4,2"
                   Background="{DynamicResource SystemControlForegroundBaseLowBrush}" />

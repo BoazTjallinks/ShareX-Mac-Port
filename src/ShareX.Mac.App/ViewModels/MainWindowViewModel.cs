@@ -5,8 +5,10 @@ using Avalonia.Media.Imaging;
 using Avalonia.Threading;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using ShareX.Core.Enums;
 using ShareX.Core.Errors;
 using ShareX.Mac.App.Models;
+using ShareX.Mac.App.Services;
 using ShareX.Mac.App.Support;
 using ShareX.Platform.Mac;
 using ShareX.Platform.Mac.Interop;
@@ -67,7 +69,112 @@ public sealed partial class MainWindowViewModel : ObservableObject, IDisposable
     private readonly MacCaptureService _capture;
     private bool _disposed;
 
-    public MainWindowViewModel() => _capture = new MacCaptureService(_bridge);
+    private readonly CaptureCommandService _commands;
+
+    /// <summary>Set by the view so the region overlay can be owned by the main window.</summary>
+    public Func<Avalonia.Controls.Window?> OwnerWindowAccessor { get; set; } = () => null;
+
+    public MainWindowViewModel()
+    {
+        _capture = new MacCaptureService(_bridge);
+        _commands = new CaptureCommandService(_capture, () => OwnerWindowAccessor());
+    }
+
+    /// <summary>
+    /// Runs a ShareX command by its upstream identity. Every trigger - rail
+    /// button, menu item, later a hotkey or the CLI - goes through here, so
+    /// behaviour cannot drift between entry points.
+    /// </summary>
+    [RelayCommand]
+    private async Task RunCommandAsync(CommandEntry? entry)
+    {
+        if (entry is null || entry.IsSeparator)
+        {
+            return;
+        }
+
+        if (!entry.IsExecutable)
+        {
+            // Honest feedback instead of a dead control.
+            StatusText = entry.HasChildren
+                ? $"{entry.Label}: choose an item from the submenu."
+                : $"{entry.Label} is not implemented yet in this build.";
+            AppendLog($"command {entry.Label}: no upstream HotkeyType / not implemented");
+            return;
+        }
+
+        if (IsBusy)
+        {
+            StatusText = "Another capture is already running.";
+            return;
+        }
+
+        IsBusy = true;
+        var row = new TaskRowViewModel
+        {
+            Status = "Working",
+            FileName = entry.Label,
+            Detail = entry.Hotkey.ToString()
+        };
+        Tasks.Insert(0, row);
+
+        var stopwatch = Stopwatch.StartNew();
+        try
+        {
+            CommandRun run = await _commands.ExecuteAsync(entry.Hotkey).ConfigureAwait(true);
+            stopwatch.Stop();
+
+            if (!run.Handled)
+            {
+                row.Status = "Unavailable";
+                row.Detail = run.Message;
+                StatusText = run.Message;
+            }
+            else if (run.Cancelled)
+            {
+                // Cancellation must leave no artifact and no false success.
+                row.Status = "Cancelled";
+                row.Detail = run.Message;
+                StatusText = run.Message;
+            }
+            else if (run.FilePath is { } file)
+            {
+                row.Status = "Completed";
+                row.FileName = Path.GetFileName(file);
+                row.FilePath = file;
+                row.Detail = $"{run.PixelWidth}x{run.PixelHeight} px @{run.Scale:0.##}x";
+                StatusText = run.Message;
+
+                PreviewCaption =
+                    $"{entry.Label} - {run.PixelWidth}x{run.PixelHeight} px, scale {run.Scale:0.##} - {file}";
+                LoadPreview(file);
+            }
+            else
+            {
+                row.Status = "Failed";
+                row.Detail = run.Message;
+                StatusText = run.Message;
+                PreviewCaption = $"{entry.Label} failed - {run.Message}";
+            }
+
+            AppendLog($"command {entry.Hotkey} -> {row.Status} in {stopwatch.ElapsedMilliseconds} ms: {run.Message}");
+        }
+        catch (Exception ex)
+        {
+            stopwatch.Stop();
+            row.Status = "Failed";
+            row.Detail = ex.Message;
+            StatusText = $"{entry.Label} failed: {ex.Message}";
+            AppendLog($"command {entry.Hotkey} threw: {ex}");
+        }
+        finally
+        {
+            IsBusy = false;
+            // Permission state can change as a result of a capture attempt (the
+            // first attempt is what triggers the macOS prompt), so re-read it.
+            await RefreshPermissionsAsync().ConfigureAwait(true);
+        }
+    }
 
     public IReadOnlyList<CommandEntry> MainRail => CommandTree.MainRail;
 
@@ -92,6 +199,12 @@ public sealed partial class MainWindowViewModel : ObservableObject, IDisposable
     [ObservableProperty] private bool _isBusy;
     [ObservableProperty] private string _statusText = "Ready";
 
+    /// <summary>
+    /// True when a permission was just granted or is still pending: macOS only
+    /// applies a new Screen Recording grant to a freshly launched process.
+    /// </summary>
+    [ObservableProperty] private bool _needsRelaunch;
+
     public bool IsBundled => BundleInfo.IsBundled;
 
     public void InitializeAsync() => _ = RefreshAllAsync();
@@ -103,7 +216,56 @@ public sealed partial class MainWindowViewModel : ObservableObject, IDisposable
     {
         await RefreshCapabilitiesAsync().ConfigureAwait(true);
         await RefreshPermissionsAsync().ConfigureAwait(true);
+        await EnsureScreenRecordingAsync().ConfigureAwait(true);
         await RefreshDisplaysAsync().ConfigureAwait(true);
+    }
+
+    /// <summary>
+    /// Asks for Screen Recording on startup when it is missing, because every
+    /// capture command needs it and ShareX's whole purpose depends on it.
+    ///
+    /// Two macOS behaviours make this necessary rather than optional:
+    /// <list type="bullet">
+    /// <item>Preflight checks never prompt, so an app that only preflights can
+    /// report "permission required" forever without macOS ever asking, and may
+    /// not even appear in the Privacy list.</item>
+    /// <item>The prompt is asynchronous: the request call returns the current
+    /// (still-denied) state immediately. The app must therefore stay running for
+    /// the dialog to be usable, and macOS requires a relaunch before a new grant
+    /// takes effect for screen capture.</item>
+    /// </list>
+    /// </summary>
+    private async Task EnsureScreenRecordingAsync()
+    {
+        PermissionRowViewModel? row =
+            Permissions.FirstOrDefault(p => p.Key == "screenRecording");
+
+        if (row is null || row.IsGranted)
+        {
+            return;
+        }
+
+        AppendLog("screen recording not granted — asking macOS to prompt");
+        OperationOutcome<PermissionRequestResult> outcome =
+            await _capture.RequestPermissionAsync("screenRecording").ConfigureAwait(true);
+
+        if (outcome.IsSuccess)
+        {
+            row.State = outcome.Value.State;
+        }
+
+        if (row.IsGranted)
+        {
+            StatusText = "Screen Recording granted.";
+            NeedsRelaunch = false;
+            return;
+        }
+
+        // Do not pretend this is usable yet, and do not silently retry.
+        NeedsRelaunch = true;
+        StatusText = "Screen Recording is required. Approve ShareX-Mac in the macOS "
+                     + "dialog (or in System Settings), then quit and reopen ShareX-Mac.";
+        AppendLog($"screen recording still '{row.State}' — relaunch needed after granting");
     }
 
     [RelayCommand]
@@ -255,14 +417,23 @@ public sealed partial class MainWindowViewModel : ObservableObject, IDisposable
             });
     }
 
+    // Toolbar shortcuts. They route through the same dispatcher as the menu, so
+    // there is exactly one implementation per command.
     [RelayCommand]
-    private Task CaptureFullscreenAsync() => CaptureAsync(CaptureTarget.AllDisplays(), "Fullscreen");
+    private Task CaptureFullscreenAsync() =>
+        RunCommandAsync(new CommandEntry("Fullscreen", HotkeyType.PrintScreen));
 
     [RelayCommand]
-    private Task CaptureActiveMonitorAsync() => CaptureAsync(CaptureTarget.ActiveDisplay(), "Monitor");
+    private Task CaptureActiveMonitorAsync() =>
+        RunCommandAsync(new CommandEntry("Monitor", HotkeyType.ActiveMonitor));
 
     [RelayCommand]
-    private Task CaptureActiveWindowAsync() => CaptureAsync(CaptureTarget.ActiveWindow(), "Window");
+    private Task CaptureActiveWindowAsync() =>
+        RunCommandAsync(new CommandEntry("Window", HotkeyType.ActiveWindow));
+
+    [RelayCommand]
+    private Task CaptureRegionAsync() =>
+        RunCommandAsync(new CommandEntry("Region", HotkeyType.RectangleRegion));
 
     /// <summary>
     /// Runs a real capture, writes it to the screenshots folder and shows it.
@@ -347,6 +518,45 @@ public sealed partial class MainWindowViewModel : ObservableObject, IDisposable
         finally
         {
             IsBusy = false;
+        }
+    }
+
+    /// <summary>
+    /// Quits and reopens the app, which is what macOS requires before a new
+    /// Screen Recording grant applies. Uses `open -n` on the bundle so the new
+    /// process is its own LaunchServices instance rather than a child of this one
+    /// (a child can inherit the parent's TCC attribution and mask the real state).
+    /// </summary>
+    [RelayCommand]
+    private void RelaunchApp()
+    {
+        string? bundle = BundleInfo.BundlePath;
+        if (bundle is null)
+        {
+            StatusText = "Relaunch is only available when running from the .app bundle.";
+            return;
+        }
+
+        try
+        {
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+            {
+                FileName = "/bin/sh",
+                // Small delay so this process is gone before the new one starts.
+                ArgumentList = { "-c", $"sleep 1; open -n \"{bundle}\"" },
+                UseShellExecute = false
+            });
+        }
+        catch (Exception ex)
+        {
+            StatusText = $"Could not relaunch: {ex.Message}";
+            return;
+        }
+
+        if (Avalonia.Application.Current?.ApplicationLifetime
+            is Avalonia.Controls.ApplicationLifetimes.IClassicDesktopStyleApplicationLifetime desktop)
+        {
+            desktop.Shutdown();
         }
     }
 

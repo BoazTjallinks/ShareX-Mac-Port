@@ -24,6 +24,17 @@ public static class SelfTest
 {
     public static async Task<int> RunAsync(bool attemptCapture)
     {
+        // Also write to a file, because the meaningful TCC test is launching via
+        // LaunchServices (`open -a ... --args --selftest`), where the app is its
+        // own responsible process and there is no terminal to print to. A
+        // terminal-launched child can be attributed to the terminal's own grant,
+        // which would make a "capture worked" result misleading.
+        string logDir = Path.Combine(
+            Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),
+            "Library", "Logs", "ShareX-Mac");
+        Directory.CreateDirectory(logDir);
+        string logPath = Path.Combine(logDir, $"selftest-{DateTime.Now:yyyy-MM-dd_HH-mm-ss}.txt");
+
         var report = new StringBuilder();
         var results = new Dictionary<string, object?>();
         bool allRequiredPassed = true;
@@ -35,6 +46,7 @@ public static class SelfTest
         }
 
         Line("ShareX-Mac self-test");
+        Line($"(also written to {logPath})");
         Line("====================");
         Line($"time                : {DateTimeOffset.Now:O}");
         Line($"process path        : {Environment.ProcessPath}");
@@ -99,8 +111,8 @@ public static class SelfTest
             }
             else
             {
-                Line($"FAIL  capabilities.get: {capabilities.Error.Kind} — {capabilities.Error.Message}");
-                results["capabilities"] = $"fail:{capabilities.Error.Kind}";
+                Line($"FAIL  capabilities.get: {capabilities.Error!.Kind} — {capabilities.Error!.Message}");
+                results["capabilities"] = $"fail:{capabilities.Error!.Kind}";
                 allRequiredPassed = false;
             }
 
@@ -127,8 +139,8 @@ public static class SelfTest
             }
             else
             {
-                Line($"FAIL  permissions.get : {permissions.Error.Kind} — {permissions.Error.Message}");
-                results["permissions"] = $"fail:{permissions.Error.Kind}";
+                Line($"FAIL  permissions.get : {permissions.Error!.Kind} — {permissions.Error!.Message}");
+                results["permissions"] = $"fail:{permissions.Error!.Kind}";
                 allRequiredPassed = false;
             }
 
@@ -153,8 +165,8 @@ public static class SelfTest
             }
             else
             {
-                Line($"FAIL  displays.list   : {displays.Error.Kind} — {displays.Error.Message}");
-                results["displays"] = $"fail:{displays.Error.Kind}";
+                Line($"FAIL  displays.list   : {displays.Error!.Kind} — {displays.Error!.Message}");
+                results["displays"] = $"fail:{displays.Error!.Kind}";
                 allRequiredPassed = false;
             }
 
@@ -171,8 +183,8 @@ public static class SelfTest
             }
             else
             {
-                Line($"FAIL  windows.list    : {windows.Error.Kind} — {windows.Error.Message}");
-                results["windows"] = $"fail:{windows.Error.Kind}";
+                Line($"FAIL  windows.list    : {windows.Error!.Kind} — {windows.Error!.Message}");
+                results["windows"] = $"fail:{windows.Error!.Kind}";
                 allRequiredPassed = false;
             }
 
@@ -246,7 +258,7 @@ public static class SelfTest
                 }
                 else
                 {
-                    TaskError error = shot.Error;
+                    TaskError error = shot.Error!;
                     Line($"FAIL  capture         : {error.Kind} — {error.Message}");
                     results["capture"] = $"fail:{error.Kind}";
 
@@ -266,6 +278,23 @@ public static class SelfTest
             Line(allRequiredPassed
                 ? "RESULT: all checks passed."
                 : "RESULT: one or more checks did not pass (see above).");
+        }
+
+        results["responsibleProcessHint"] = Environment.GetEnvironmentVariable("TERM") is null
+            ? "launched without a terminal (LaunchServices) - TCC attributed to this app"
+            : "launched from a terminal - TCC may be attributed to the terminal instead";
+        report.AppendLine();
+        report.AppendLine("--- json ---");
+        report.AppendLine(JsonSerializer.Serialize(results,
+            new JsonSerializerOptions { WriteIndented = true }));
+
+        try
+        {
+            File.WriteAllText(logPath, report.ToString());
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"(could not write {logPath}: {ex.Message})");
         }
 
         Emit(results, allRequiredPassed);

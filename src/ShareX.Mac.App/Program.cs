@@ -10,13 +10,18 @@ internal static class Program
     [STAThread]
     public static int Main(string[] args)
     {
-        // Headless integration check from inside the real bundle. The stage-0 gate
-        // needs evidence that a `dotnet run` cannot produce, because macOS binds
-        // the Screen Recording grant to a bundle identity.
+        // Integration check from inside the real bundle. The stage-0 gate needs
+        // evidence that `dotnet run` cannot produce, because macOS binds the
+        // Screen Recording grant to a bundle identity.
+        //
+        // It runs inside the normal Avalonia lifetime rather than standalone: a
+        // process with no NSApplication has no window-server connection, and macOS
+        // will not display a TCC permission prompt for such a process. Running it
+        // headless was why the app could never ask for Screen Recording.
         if (args.Contains("--selftest", StringComparer.Ordinal))
         {
-            bool attemptCapture = !args.Contains("--no-capture", StringComparer.Ordinal);
-            return Support.SelfTest.RunAsync(attemptCapture).GetAwaiter().GetResult();
+            App.SelfTestOnStart = true;
+            App.SelfTestAttemptsCapture = !args.Contains("--no-capture", StringComparer.Ordinal);
         }
 
         return BuildAvaloniaApp().StartWithClassicDesktopLifetime(args);

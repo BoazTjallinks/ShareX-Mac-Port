@@ -8,6 +8,11 @@ namespace ShareX.Mac.App;
 
 public partial class App : Application
 {
+    /// <summary>Set from the command line by <c>--selftest</c>.</summary>
+    public static bool SelfTestOnStart { get; set; }
+
+    public static bool SelfTestAttemptsCapture { get; set; } = true;
+
     public override void Initialize() => AvaloniaXamlLoader.Load(this);
 
     public override void OnFrameworkInitializationCompleted()
@@ -19,7 +24,21 @@ public partial class App : Application
 
             // Start the native probes only once the loop is running, so a slow or
             // failing bridge call can never block window creation.
-            desktop.MainWindow.Opened += (_, _) => viewModel.InitializeAsync();
+            desktop.MainWindow.Opened += async (_, _) =>
+            {
+                if (!SelfTestOnStart)
+                {
+                    viewModel.InitializeAsync();
+                    return;
+                }
+
+                // Inside a real GUI process, so a TCC prompt can actually appear.
+                int exitCode = await Support.SelfTest
+                    .RunAsync(SelfTestAttemptsCapture)
+                    .ConfigureAwait(true);
+
+                desktop.Shutdown(exitCode);
+            };
         }
 
         base.OnFrameworkInitializationCompleted();

@@ -28,13 +28,21 @@ enum SXMCapture {
     /// Bound: refuse absurd allocations rather than dying with an OOM.
     static let maxPixels = 400_000_000   // ~1.6 GB at 4 bytes/pixel
 
+    /// Gate for every capture and recording entry point.
+    ///
+    /// Uses `ensureScreenRecording()` rather than a bare preflight so that a
+    /// first-time user actually sees the macOS prompt instead of an unexplained
+    /// failure. Only a stored denial reaches the throw below.
     static func requirePermission() throws {
-        if SXMPermissions.screenRecording() != .granted {
-            throw SXMFailure(.permissionRequired,
-                             "Screen Recording permission is required.",
-                             detail: ["permission": "screenRecording",
-                                      "settingsUrl": "x-apple.systempreferences:com.apple.preference.security?Privacy_ScreenCapture"])
+        if SXMPermissions.ensureScreenRecording() == .granted {
+            return
         }
+
+        throw SXMFailure(.permissionRequired,
+                         "Screen Recording permission is required. macOS has stored a "
+                             + "decision for this app, so it must be changed in System Settings.",
+                         detail: ["permission": "screenRecording",
+                                  "settingsUrl": "x-apple.systempreferences:com.apple.preference.security?Privacy_ScreenCapture"])
     }
 
     static func shareableContent() async throws -> SCShareableContent {

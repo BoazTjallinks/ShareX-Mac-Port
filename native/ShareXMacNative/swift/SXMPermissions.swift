@@ -34,6 +34,38 @@ enum SXMPermissions {
         CGRequestScreenCaptureAccess()
     }
 
+    /// Ensures the app has actually ASKED for Screen Recording before reporting
+    /// that the permission is missing.
+    ///
+    /// This exists because of a real bug: the capture path used to gate purely on
+    /// `CGPreflightScreenCaptureAccess()`, which never prompts. The app therefore
+    /// failed with "permission required" without ever giving macOS the chance to
+    /// show the dialog, and until an app requests once it may not even be listed
+    /// in System Settings > Privacy & Security > Screen & System Audio Recording.
+    /// The user was left with nothing to grant.
+    ///
+    /// `CGRequestScreenCaptureAccess()` prompts on the first call and, once a
+    /// decision is stored, returns it without prompting again. So calling it here
+    /// is safe and idempotent: it converts "never asked" into a real prompt and
+    /// leaves an existing decision untouched.
+    ///
+    /// Returns the resulting state. A stored denial stays denied; this code never
+    /// modifies TCC and never retries in a loop.
+    static func ensureScreenRecording() -> SXMPermissionState {
+        if CGPreflightScreenCaptureAccess() {
+            return .granted
+        }
+
+        // Prompts the first time; returns the stored decision afterwards.
+        if CGRequestScreenCaptureAccess() {
+            return .granted
+        }
+
+        // Re-preflight: the user may have granted in the dialog while the request
+        // call had already returned, and a fresh read is cheap.
+        return CGPreflightScreenCaptureAccess() ? .granted : .required
+    }
+
     static func accessibility() -> SXMPermissionState {
         AXIsProcessTrusted() ? .granted : .required
     }

@@ -1,0 +1,45 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="ShareX.Mac.App.Views.RegionSelectorWindow"
+        WindowDecorations="None"
+        Background="Transparent"
+        TransparencyLevelHint="Transparent"
+        Topmost="True"
+        ShowInTaskbar="False"
+        CanResize="False"
+        Focusable="True"
+        Cursor="Cross">
+
+  <!-- Full-screen selection overlay, the macOS equivalent of upstream's
+       RegionCaptureForm. The overlay window itself is excluded from the capture
+       by the native content filter (SXMCapture.selfApplications), so it never
+       appears in the result. -->
+  <Canvas Name="RootCanvas" Background="#01000000">
+
+    <!-- Dimming, drawn as four rectangles around the selection so the selected
+         area stays at full brightness. -->
+    <Rectangle Name="DimTop"    Fill="#66000000" IsHitTestVisible="False" />
+    <Rectangle Name="DimBottom" Fill="#66000000" IsHitTestVisible="False" />
+    <Rectangle Name="DimLeft"   Fill="#66000000" IsHitTestVisible="False" />
+    <Rectangle Name="DimRight"  Fill="#66000000" IsHitTestVisible="False" />
+
+    <!-- Crosshair guides, shown before a drag starts. -->
+    <Rectangle Name="GuideH" Fill="#80FFFFFF" Height="1" IsHitTestVisible="False" />
+    <Rectangle Name="GuideV" Fill="#80FFFFFF" Width="1"  IsHitTestVisible="False" />
+
+    <!-- Selection outline. -->
+    <Rectangle Name="SelectionBorder"
+               Stroke="#FFFFFFFF" StrokeThickness="1"
+               Fill="Transparent" IsHitTestVisible="False" IsVisible="False" />
+
+    <!-- Live size/position readout. -->
+    <Border Name="Readout" Background="#D0000000" CornerRadius="4"
+            Padding="8,4" IsHitTestVisible="False">
+      <StackPanel>
+        <TextBlock Name="ReadoutSize" Foreground="White" FontSize="12"
+                   FontFamily="SF Mono, Menlo, monospace" />
+        <TextBlock Name="ReadoutHint" Foreground="#B0FFFFFF" FontSize="10" />
+      </StackPanel>
+    </Border>
+  </Canvas>
+</Window>

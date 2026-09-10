@@ -69,7 +69,17 @@ if ! codesign --verify --deep --strict --verbose=2 "$SRC_APP"; then
 fi
 
 TIMESTAMP="$(date +%Y%m%d-%H%M%S)"
-BACKUP="$DEST_DIR/${APP_NAME}.backup-${TIMESTAMP}"
+# Backups deliberately do NOT live in $DEST_DIR.
+#
+# A backup is a complete .app carrying the SAME CFBundleIdentifier as the
+# installed one. Keeping copies beside the real install means several bundles
+# claim one identity, which makes LaunchServices resolution ambiguous
+# (`mdfind "kMDItemCFBundleIdentifier == ..."` returns all of them) and makes it
+# genuinely hard to reason about which bundle a privacy grant belongs to.
+# Repeated development installs multiply the copies quickly.
+BACKUP_ROOT="${SXM_BACKUP_DIR:-$HOME/Library/Application Support/ShareX-Mac/backups}"
+mkdir -p "$BACKUP_ROOT"
+BACKUP="$BACKUP_ROOT/${APP_NAME}.backup-${TIMESTAMP}"
 NEED_BACKUP=0
 if [ -e "$DEST_APP" ]; then
   NEED_BACKUP=1
@@ -88,6 +98,27 @@ if [ "$NEED_BACKUP" -eq 1 ]; then
   echo "==> existing install found at $DEST_APP; backing up to $BACKUP"
   mv "$DEST_APP" "$BACKUP"
   echo "    rollback command: mv \"$BACKUP\" \"$DEST_APP\""
+
+  # Keep exactly ONE backup.
+  #
+  # This matters for more than tidiness: every backup is a full .app carrying the
+  # SAME CFBundleIdentifier. macOS keys both LaunchServices resolution and the
+  # TCC privacy grant on bundle identity, so accumulating copies makes the
+  # Screen Recording permission attach to a bundle that is not the one being
+  # launched. Symptom: the user grants permission and the app still reports
+  # "permission required". Repeated installs during development hit this fast.
+  OLD_BACKUP_COUNT=0
+  while IFS= read -r stale; do
+    [ -z "$stale" ] && continue
+    [ "$stale" = "$BACKUP" ] && continue
+    echo "    pruning older backup (duplicate bundle id): $stale"
+    rm -rf "$stale"
+    OLD_BACKUP_COUNT=$((OLD_BACKUP_COUNT + 1))
+  done < <(find "$BACKUP_ROOT" -maxdepth 1 -name "${APP_NAME}.backup-*" 2>/dev/null | sort -r)
+
+  if [ "$OLD_BACKUP_COUNT" -gt 0 ]; then
+    echo "    pruned $OLD_BACKUP_COUNT older backup(s) so only one copy of the bundle id remains"
+  fi
 fi
 
 echo "==> installing to $DEST_APP"
