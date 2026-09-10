@@ -1,6 +1,8 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:ShareX.Mac.App.ViewModels"
         x:Class="ShareX.Mac.App.Views.RegionSelectorWindow"
+        x:DataType="vm:RegionSelectorViewModel"
         WindowDecorations="None"
         Background="Transparent"
         TransparencyLevelHint="Transparent"
@@ -10,36 +12,101 @@
         Focusable="True"
         Cursor="Cross">
 
-  <!-- Full-screen selection overlay, the macOS equivalent of upstream's
-       RegionCaptureForm. The overlay window itself is excluded from the capture
-       by the native content filter (SXMCapture.selfApplications), so it never
-       appears in the result. -->
-  <Canvas Name="RootCanvas" Background="#01000000">
+  <!-- The overlay shows a FROZEN still of the display, matching upstream's
+       region capture: select and annotate on the still, then crop from it. The
+       still is excluded from any later capture because it is our own window. -->
+  <Panel Name="RootPanel">
 
-    <!-- Dimming, drawn as four rectangles around the selection so the selected
-         area stays at full brightness. -->
-    <Rectangle Name="DimTop"    Fill="#66000000" IsHitTestVisible="False" />
-    <Rectangle Name="DimBottom" Fill="#66000000" IsHitTestVisible="False" />
-    <Rectangle Name="DimLeft"   Fill="#66000000" IsHitTestVisible="False" />
-    <Rectangle Name="DimRight"  Fill="#66000000" IsHitTestVisible="False" />
+    <!-- Renderer: frozen screen, effects, shapes, selection chrome. -->
+    <ContentControl Name="CanvasHost" />
 
-    <!-- Crosshair guides, shown before a drag starts. -->
-    <Rectangle Name="GuideH" Fill="#80FFFFFF" Height="1" IsHitTestVisible="False" />
-    <Rectangle Name="GuideV" Fill="#80FFFFFF" Width="1"  IsHitTestVisible="False" />
+    <!-- Toolbar. Repositioned in code so it never covers the selection. -->
+    <Border Name="Toolbar" IsVisible="False"
+            HorizontalAlignment="Left" VerticalAlignment="Top"
+            Background="#F21E1E1E" CornerRadius="8" Padding="6"
+            BorderBrush="#40FFFFFF" BorderThickness="1">
+      <StackPanel Spacing="6">
 
-    <!-- Selection outline. -->
-    <Rectangle Name="SelectionBorder"
-               Stroke="#FFFFFFFF" StrokeThickness="1"
-               Fill="Transparent" IsHitTestVisible="False" IsVisible="False" />
+        <!-- Tools, all 26 from ShapeCatalog in upstream order. -->
+        <ItemsControl Name="ToolButtons" ItemsSource="{Binding Tools}">
+          <ItemsControl.ItemsPanel>
+            <ItemsPanelTemplate>
+              <WrapPanel Orientation="Horizontal" MaxWidth="620" />
+            </ItemsPanelTemplate>
+          </ItemsControl.ItemsPanel>
+          <ItemsControl.ItemTemplate>
+            <DataTemplate x:DataType="vm:ShapeToolViewModel">
+              <Panel>
+                <Border Width="1" Height="22" Margin="5,0" Background="#40FFFFFF"
+                        IsVisible="{Binding IsSeparator}" VerticalAlignment="Center" />
+                <ToggleButton IsVisible="{Binding !IsSeparator}"
+                              Width="30" Height="28" Margin="1" Padding="0"
+                              FontSize="15"
+                              Content="{Binding Glyph}"
+                              ToolTip.Tip="{Binding Tooltip}"
+                              IsEnabled="{Binding IsEnabled}"
+                              IsChecked="{Binding IsActive, Mode=TwoWay}"
+                              Command="{Binding $parent[Window].((vm:RegionSelectorViewModel)DataContext).SelectToolCommand}"
+                              CommandParameter="{Binding}" />
+              </Panel>
+            </DataTemplate>
+          </ItemsControl.ItemTemplate>
+        </ItemsControl>
 
-    <!-- Live size/position readout. -->
-    <Border Name="Readout" Background="#D0000000" CornerRadius="4"
-            Padding="8,4" IsHitTestVisible="False">
-      <StackPanel>
-        <TextBlock Name="ReadoutSize" Foreground="White" FontSize="12"
-                   FontFamily="SF Mono, Menlo, monospace" />
-        <TextBlock Name="ReadoutHint" Foreground="#B0FFFFFF" FontSize="10" />
+        <!-- Style row -->
+        <StackPanel Orientation="Horizontal" Spacing="8">
+          <TextBlock Text="Colour" Foreground="#B0FFFFFF" FontSize="11" VerticalAlignment="Center" />
+          <ItemsControl ItemsSource="{Binding Palette}">
+            <ItemsControl.ItemsPanel>
+              <ItemsPanelTemplate><WrapPanel Orientation="Horizontal" /></ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+              <DataTemplate x:DataType="vm:PaletteEntryViewModel">
+                <Button Width="18" Height="18" Margin="1" Padding="0"
+                        Background="{Binding Brush}"
+                        BorderBrush="#60FFFFFF" BorderThickness="1"
+                        ToolTip.Tip="{Binding Name}"
+                        Command="{Binding $parent[Window].((vm:RegionSelectorViewModel)DataContext).SelectColorCommand}"
+                        CommandParameter="{Binding}" />
+              </DataTemplate>
+            </ItemsControl.ItemTemplate>
+          </ItemsControl>
+
+          <TextBlock Text="Width" Foreground="#B0FFFFFF" FontSize="11" VerticalAlignment="Center" />
+          <Slider Width="80" Minimum="1" Maximum="20" TickFrequency="1"
+                  IsSnapToTickEnabled="True" Value="{Binding StrokeWidth, Mode=TwoWay}" />
+          <TextBlock Text="{Binding StrokeWidth}" Foreground="White" FontSize="11"
+                     Width="20" VerticalAlignment="Center" />
+
+          <TextBlock Text="Strength" Foreground="#B0FFFFFF" FontSize="11" VerticalAlignment="Center" />
+          <Slider Width="80" Minimum="2" Maximum="60" TickFrequency="1"
+                  IsSnapToTickEnabled="True" Value="{Binding EffectStrength, Mode=TwoWay}" />
+
+          <Border Width="1" Height="20" Background="#40FFFFFF" />
+
+          <Button Content="↶" ToolTip.Tip="Undo (Cmd+Z)" Width="28" Height="26" Padding="0"
+                  Command="{Binding UndoCommand}" />
+          <Button Content="↷" ToolTip.Tip="Redo (Cmd+Shift+Z)" Width="28" Height="26" Padding="0"
+                  Command="{Binding RedoCommand}" />
+          <Button Content="Clear" FontSize="11" Padding="8,3" Command="{Binding ClearCommand}" />
+        </StackPanel>
+
+        <TextBlock Text="{Binding HintText}" Foreground="#90FFFFFF" FontSize="10"
+                   TextWrapping="Wrap" MaxWidth="600" />
       </StackPanel>
     </Border>
-  </Canvas>
+
+    <!-- Live size/position readout -->
+    <Border Name="Readout" HorizontalAlignment="Left" VerticalAlignment="Top"
+            Background="#D0000000" CornerRadius="4" Padding="8,4" IsHitTestVisible="False">
+      <TextBlock Name="ReadoutText" Foreground="White" FontSize="12"
+                 FontFamily="SF Mono, Menlo, monospace" />
+    </Border>
+
+    <!-- Inline text entry for the two text tools and the speech balloon -->
+    <TextBox Name="TextEntry" IsVisible="False"
+             HorizontalAlignment="Left" VerticalAlignment="Top"
+             MinWidth="180" FontSize="14"
+             PlaceholderText="Type, then press Enter" />
+  </Panel>
 </Window>

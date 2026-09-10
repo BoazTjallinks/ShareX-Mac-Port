@@ -5,6 +5,7 @@ using ShareX.Core.Errors;
 using ShareX.Core.Geometry;
 using ShareX.Mac.App.Support;
 using ShareX.Mac.App.Views;
+using ShareX.Core.Annotation;
 using ShareX.Core.Workflow;
 using ShareX.Platform.Mac;
 
@@ -49,6 +50,9 @@ public sealed class CaptureCommandService
     /// than replayed blindly.
     /// </summary>
     public PointRect? LastRegion { get; private set; }
+
+    /// <summary>Annotations from the most recent region selection.</summary>
+    private List<AnnotationShape> _lastAnnotations = new();
 
     public CaptureCommandService(
         MacCaptureService capture, IWorkflowServices workflowServices, Func<Window?> ownerWindow)
@@ -128,9 +132,28 @@ public sealed class CaptureCommandService
             ?? displays.Value.FirstOrDefault()
             ?? throw new InvalidOperationException("displays.list returned no displays.");
 
+        // Freeze the display BEFORE showing the overlay, the way upstream's region
+        // capture does. Three things follow from this:
+        //   1. the blur/pixelate/highlight previews are exact, because they sample
+        //      the very pixels that will be saved;
+        //   2. the final image is cropped from the same still, so nothing can
+        //      change between selecting and capturing;
+        //   3. there is no race between the overlay appearing and the desktop
+        //      moving underneath it.
+        OperationOutcome<CaptureResult> frozen = await _capture
+            .CaptureAsync(CaptureTarget.Display(target.DisplayId), showsCursor: false, ct: ct)
+            .ConfigureAwait(true);
+
+        if (!frozen.IsSuccess)
+        {
+            return Failure(command, frozen.Error!);
+        }
+
+        byte[]? background = frozen.Value.Png;
+
         PointRect? selection = await Dispatcher.UIThread.InvokeAsync(async () =>
         {
-            var selector = new RegionSelectorWindow(target.BoundsGlobalPoints, mode);
+            var selector = new RegionSelectorWindow(target.BoundsGlobalPoints, mode, background);
 
             // Position the overlay over the chosen display. One Avalonia DIP is
             // one AppKit point on macOS, so the display's point origin is also the
@@ -149,7 +172,9 @@ public sealed class CaptureCommandService
                 selector.Show();
             }
 
-            return await selector.SelectionTask.ConfigureAwait(true);
+            PointRect? chosen = await selector.SelectionTask.ConfigureAwait(true);
+            _lastAnnotations = selector.Annotations.ToList();
+            return chosen;
         }).ConfigureAwait(true);
 
         if (selection is not { } region)
@@ -164,8 +189,29 @@ public sealed class CaptureCommandService
         await Task.Delay(60, ct).ConfigureAwait(true);
 
         LastRegion = region;
-        return await CaptureTargetAsync(command, CaptureTarget.Region(region), ct)
-            .ConfigureAwait(true);
+
+        // Crop from the frozen still and burn in the annotations, rather than
+        // taking a second capture. The still is what the user selected on, so the
+        // saved image matches the preview exactly, and the annotations are real
+        // output rather than a discarded overlay.
+        PointRect displayLocal = new(
+            region.X - target.BoundsGlobalPoints.X,
+            region.Y - target.BoundsGlobalPoints.Y,
+            region.Width, region.Height, region.Space);
+
+        byte[]? rendered = AnnotationRasterizer.Render(
+            background, displayLocal, _lastAnnotations, frozen.Value.CompositionScale);
+
+        if (rendered is null)
+        {
+            // Falling back to a fresh capture would lose the annotations, so this
+            // reports the failure instead of silently saving an unannotated image.
+            return new CommandRun(command, Handled: true, Cancelled: false,
+                "Could not render the annotated image from the captured frame.");
+        }
+
+        return await SaveAndRunWorkflowAsync(command, rendered, region.Width, region.Height,
+            frozen.Value.CompositionScale, ct).ConfigureAwait(true);
     }
 
     private async Task<bool> RegionStillValidAsync(PointRect region, CancellationToken ct)
@@ -175,6 +221,35 @@ public sealed class CaptureCommandService
 
         return displays.IsSuccess
                && displays.Value.Any(d => d.BoundsGlobalPoints.Intersects(region));
+    }
+
+    /// <summary>
+    /// Writes already-rendered PNG bytes to the screenshots folder and runs the
+    /// after-capture stage, so an annotated region follows exactly the same
+    /// workflow as any other capture.
+    /// </summary>
+    private async Task<CommandRun> SaveAndRunWorkflowAsync(
+        HotkeyType command, byte[] png, double widthPoints, double heightPoints,
+        double scale, CancellationToken ct)
+    {
+        DateTime now = DateTime.Now;
+        string folder = AppPaths.EnsureDirectory(AppPaths.ScreenshotsFolderFor(now));
+        string fileName = $"{now:yyyy-MM-dd_HH-mm-ss}.png";
+        string path = Path.Combine(folder, fileName);
+
+        try
+        {
+            await File.WriteAllBytesAsync(path, png, ct).ConfigureAwait(true);
+        }
+        catch (Exception ex)
+        {
+            return new CommandRun(command, Handled: true, Cancelled: false,
+                $"Could not write {fileName}: {ex.Message}");
+        }
+
+        return await RunWorkflowAsync(command, path, fileName,
+            (int)Math.Round(widthPoints * scale), (int)Math.Round(heightPoints * scale),
+            scale, ct).ConfigureAwait(true);
     }
 
     private async Task<CommandRun> CaptureTargetAsync(
@@ -204,6 +279,16 @@ public sealed class CaptureCommandService
                 "The capture reported success but no image bytes were written.");
         }
 
+        return await RunWorkflowAsync(command, written, Path.GetFileName(written),
+            result.PixelWidth, result.PixelHeight, result.CompositionScale, ct)
+            .ConfigureAwait(true);
+    }
+
+    private async Task<CommandRun> RunWorkflowAsync(
+        HotkeyType command, string written, string fileName,
+        int pixelWidth, int pixelHeight, double scale, CancellationToken ct)
+    {
+
         // The capture is only the first half of the job. Upstream then runs the
         // after-capture stage, which is what actually copies to the clipboard,
         // reveals in Finder and so on.
@@ -212,9 +297,9 @@ public sealed class CaptureCommandService
             FilePath = written,
             FileName = Path.GetFileName(written),
             Ownership = ArtifactOwnership.PermanentOutput,
-            PixelWidth = result.PixelWidth,
-            PixelHeight = result.PixelHeight,
-            Scale = result.CompositionScale
+            PixelWidth = pixelWidth,
+            PixelHeight = pixelHeight,
+            Scale = scale
         };
 
         // Snapshot taken now, so a settings change mid-flight cannot affect it.
@@ -237,7 +322,7 @@ public sealed class CaptureCommandService
 
         return new CommandRun(command, Handled: true, Cancelled: false,
             summary, workflow.Artifact?.FilePath ?? written,
-            result.PixelWidth, result.PixelHeight, result.CompositionScale, workflow.Stages);
+            pixelWidth, pixelHeight, scale, workflow.Stages);
     }
 
     private static CommandRun Failure(HotkeyType command, TaskError error)
