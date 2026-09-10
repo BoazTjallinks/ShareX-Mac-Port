@@ -1,0 +1,26 @@
+{
+  "result": "passed",
+  "scope": "Design package/source/catalogue integrity only; no macOS app was built or runtime-tested.",
+  "commit": "d2502561f63fc3ff502cacd91514e3f7f2948c74",
+  "source_files_verified": 3971,
+  "source_links_verified": 1343,
+  "feature_ledger_entries": 671,
+  "settings_candidates": 926,
+  "category_counts": {
+    "command": 75,
+    "AfterCaptureTasks": 22,
+    "AfterUploadTasks": 6,
+    "editor_tool": 20,
+    "region_tool": 26,
+    "additional_surface": 36,
+    "option": 114,
+    "new_effect": 232,
+    "legacy_effect": 51,
+    "destination": 76,
+    "custom_function": 13
+  },
+  "upstream_archive_sha256": "8576bd33618960578e143215f3867b3335099d3e148c7366267f8ba9825043f1",
+  "mac_application_implemented": false,
+  "windows_gui_reference_run": false,
+  "macos_gui_reference_run": false
+}

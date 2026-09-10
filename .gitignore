@@ -1,0 +1,20 @@
+# Restored from vendor/ShareX-v21.0.0-source.tar.gz via scripts/restore-upstream.py
+reference/ShareX/
+
+# Build output
+bin/
+obj/
+artifacts/
+build/
+*.dylib
+*.o
+*.swiftmodule
+*.swiftdoc
+*.swiftsourceinfo
+*.abi.json
+
+# macOS
+.DS_Store
+
+# Local scratch
+.local/

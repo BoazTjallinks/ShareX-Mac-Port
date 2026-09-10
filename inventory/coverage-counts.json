@@ -1,0 +1,18 @@
+{
+  "ledger_entries": 671,
+  "categories": {
+    "AfterCaptureTasks": 22,
+    "AfterUploadTasks": 6,
+    "additional_surface": 36,
+    "command": 75,
+    "custom_function": 13,
+    "destination": 76,
+    "editor_tool": 20,
+    "legacy_effect": 51,
+    "new_effect": 232,
+    "option": 114,
+    "region_tool": 26
+  },
+  "settings_candidates": 926,
+  "source_files": 3971
+}

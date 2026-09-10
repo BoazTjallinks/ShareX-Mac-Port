@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/ShareX/ShareX.git",
+  "release_url": "https://github.com/ShareX/ShareX/releases/tag/v21.0.0",
+  "tag": "v21.0.0",
+  "tag_object": "68c86cffe2f1abb8f622ba75deb417bee79c53c7",
+  "commit": "d2502561f63fc3ff502cacd91514e3f7f2948c74",
+  "release_published_at": "2026-07-03T04:24:56Z",
+  "research_date": "2026-09-10",
+  "archive_path": "vendor/ShareX-v21.0.0-source.tar.gz",
+  "archive_sha256": "8576bd33618960578e143215f3867b3335099d3e148c7366267f8ba9825043f1",
+  "archive_format": "git archive tar.gz; prefix ShareX/; complete tracked source; no Git history",
+  "tracked_file_count": 3971,
+  "proposed_target": "osx-arm64",
+  "proposed_minimum_macos": "15.0",
+  "application_implemented": false
+}
