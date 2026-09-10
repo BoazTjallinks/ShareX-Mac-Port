@@ -6,4 +6,21 @@
     <AssemblyName>ShareX.Tools</AssemblyName>
   </PropertyGroup>
 
+  <ItemGroup>
+    <!-- QR Code tool: core ZXing.Net only (no Windows.Compatibility bindings; those pull in System.Drawing). -->
+    <PackageReference Include="ZXing.Net" />
+    <!-- Metadata tool: SKCodec for portable dimension/format probing only; EXIF/PNG-chunk parsing is hand-rolled. -->
+    <PackageReference Include="SkiaSharp" />
+    <!-- Indexer settings keep upstream's Newtonsoft attributes so the serialized
+         shape stays compatible with existing ShareX configuration. -->
+    <PackageReference Include="Newtonsoft.Json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Upstream's Resources/IndexerDefault.css, so the generated HTML index is
+         styled identically without a WinForms resource designer. -->
+    <EmbeddedResource Include="Indexing/Resources/IndexerDefault.css"
+                      LogicalName="ShareX.Tools.Indexing.Resources.IndexerDefault.css" />
+  </ItemGroup>
+
 </Project>

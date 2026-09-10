@@ -289,6 +289,26 @@ enum SXMRoutes {
             ctx.succeed(SXMEncoderProbe.snapshot())
         }
 
+        // MARK: - Added routes: OCR, pixel sampling, accessibility inspection,
+        // Keychain (PROJECT-SPEC.md section 3 table: OCR / Keychain rows;
+        // section 5: pixel color readout and magnifier are named parts of the
+        // selection overlay). See SXMVision.swift, SXMPixel.swift,
+        // SXMAccessibility.swift and SXMKeychain.swift for the implementations.
+        routes["ocr.recognize"] = { ctx in try SXMVision.recognize(ctx) }
+        routes["ocr.languages"] = { ctx in try SXMVision.languages(ctx) }
+
+        routes["pixel.colorAt"] = { ctx in try SXMPixel.colorAt(ctx) }
+        routes["pixel.magnifier"] = { ctx in try SXMPixel.magnifier(ctx) }
+
+        routes["accessibility.inspectAt"] = { ctx in try SXMAccessibility.inspectAt(ctx) }
+        routes["accessibility.inspectWindow"] = { ctx in try SXMAccessibility.inspectWindow(ctx) }
+
+        routes["keychain.set"] = { ctx in try SXMKeychain.set(ctx) }
+        routes["keychain.get"] = { ctx in try SXMKeychain.get(ctx) }
+        routes["keychain.delete"] = { ctx in try SXMKeychain.delete(ctx) }
+        routes["keychain.list"] = { ctx in try SXMKeychain.list(ctx) }
+        // MARK: - End added routes
+
         return routes
     }
 }

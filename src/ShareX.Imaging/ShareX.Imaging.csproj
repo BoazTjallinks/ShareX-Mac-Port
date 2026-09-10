@@ -6,4 +6,10 @@
     <AssemblyName>ShareX.Imaging</AssemblyName>
   </PropertyGroup>
 
+  <ItemGroup>
+    <!-- All rasterisation goes through Skia; this project must never reference
+         System.Drawing, which is what the upstream imaging code used. -->
+    <PackageReference Include="SkiaSharp" />
+  </ItemGroup>
+
 </Project>
