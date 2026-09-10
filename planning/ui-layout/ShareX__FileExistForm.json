@@ -29,234 +29,60 @@
   ],
   "controls": [
     {
-      "name": "lblTitle",
-      "type": "System.Windows.Forms.Label",
+      "name": "AutoScaleDimensions",
+      "type": "System.Drawing.SizeF",
       "parent": null,
       "parent_slot": null,
       "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "txtNewName",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "FileExistForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "Anchor": "Top, Left, Right",
-        "AutoSize": true,
         "Font": "Microsoft Sans Serif, 9.75pt",
         "Location": {
           "kind": "Point",
           "x": 8,
-          "y": 8
+          "y": 48
         },
         "Size": {
           "kind": "Size",
-          "width": 346,
-          "height": 32
+          "width": 416,
+          "height": 22
         },
-        "TabIndex": 0,
-        "Text": "There is already a file with the same name in this location.\nSelect new file name or action:",
-        "Name": "lblTitle"
+        "TabIndex": 1,
+        "Name": "txtNewName"
       },
       "resources": [
         {
           "property": "Anchor",
-          "resource_key": "lblTitle.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "AutoSize",
-          "resource_key": "lblTitle.AutoSize",
+          "resource_key": "txtNewName.Anchor",
           "source": "ApplyResources"
         },
         {
           "property": "Font",
-          "resource_key": "lblTitle.Font",
+          "resource_key": "txtNewName.Font",
           "source": "ApplyResources"
         },
         {
           "property": "Location",
-          "resource_key": "lblTitle.Location",
+          "resource_key": "txtNewName.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "lblTitle.Size",
+          "resource_key": "txtNewName.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "lblTitle.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblTitle.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnOverwrite",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Top, Left, Right",
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 120
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 416,
-          "height": 32
-        },
-        "TabIndex": 3,
-        "Text": "Overwrite:",
-        "TextAlign": "MiddleLeft",
-        "Name": "btnOverwrite",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "btnOverwrite.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnOverwrite.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnOverwrite.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnOverwrite.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnOverwrite.Text",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "btnOverwrite.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnCancel",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Top, Left, Right",
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 200
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 416,
-          "height": 32
-        },
-        "TabIndex": 5,
-        "Text": "Do not save",
-        "TextAlign": "MiddleLeft",
-        "Name": "btnCancel",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "btnCancel.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnCancel.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnCancel.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnCancel.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnCancel.Text",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "btnCancel.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnUniqueName",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Top, Left, Right",
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 160
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 416,
-          "height": 32
-        },
-        "TabIndex": 4,
-        "Text": "Use a unique name:",
-        "TextAlign": "MiddleLeft",
-        "Name": "btnUniqueName",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "btnUniqueName.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnUniqueName.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnUniqueName.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnUniqueName.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnUniqueName.Text",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "btnUniqueName.TextAlign",
+          "resource_key": "txtNewName.TabIndex",
           "source": "ApplyResources"
         }
       ]
@@ -264,9 +90,9 @@
     {
       "name": "btnNewName",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "FileExistForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
         "Anchor": "Top, Left, Right",
         "Enabled": false,
@@ -325,69 +151,276 @@
       ]
     },
     {
-      "name": "txtNewName",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "btnUniqueName",
+      "type": "System.Windows.Forms.Button",
+      "parent": "FileExistForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
       "properties": {
         "Anchor": "Top, Left, Right",
-        "Font": "Microsoft Sans Serif, 9.75pt",
         "Location": {
           "kind": "Point",
           "x": 8,
-          "y": 48
+          "y": 160
         },
         "Size": {
           "kind": "Size",
           "width": 416,
-          "height": 22
+          "height": 32
         },
-        "TabIndex": 1,
-        "Name": "txtNewName"
+        "TabIndex": 4,
+        "Text": "Use a unique name:",
+        "TextAlign": "MiddleLeft",
+        "Name": "btnUniqueName",
+        "UseVisualStyleBackColor": true
       },
       "resources": [
         {
           "property": "Anchor",
-          "resource_key": "txtNewName.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Font",
-          "resource_key": "txtNewName.Font",
+          "resource_key": "btnUniqueName.Anchor",
           "source": "ApplyResources"
         },
         {
           "property": "Location",
-          "resource_key": "txtNewName.Location",
+          "resource_key": "btnUniqueName.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "txtNewName.Size",
+          "resource_key": "btnUniqueName.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "txtNewName.TabIndex",
+          "resource_key": "btnUniqueName.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnUniqueName.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "btnUniqueName.TextAlign",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "AutoScaleDimensions",
-      "type": "System.Drawing.SizeF",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
+      "name": "btnCancel",
+      "type": "System.Windows.Forms.Button",
+      "parent": "FileExistForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Anchor": "Top, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 200
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 416,
+          "height": 32
+        },
+        "TabIndex": 5,
+        "Text": "Do not save",
+        "TextAlign": "MiddleLeft",
+        "Name": "btnCancel",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnCancel.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnCancel.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCancel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCancel.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCancel.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "btnCancel.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnOverwrite",
+      "type": "System.Windows.Forms.Button",
+      "parent": "FileExistForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "Anchor": "Top, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 120
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 416,
+          "height": 32
+        },
+        "TabIndex": 3,
+        "Text": "Overwrite:",
+        "TextAlign": "MiddleLeft",
+        "Name": "btnOverwrite",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnOverwrite.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnOverwrite.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnOverwrite.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnOverwrite.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnOverwrite.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "btnOverwrite.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblTitle",
+      "type": "System.Windows.Forms.Label",
+      "parent": "FileExistForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "Anchor": "Top, Left, Right",
+        "AutoSize": true,
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 346,
+          "height": 32
+        },
+        "TabIndex": 0,
+        "Text": "There is already a file with the same name in this location.\nSelect new file name or action:",
+        "Name": "lblTitle"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "lblTitle.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "AutoSize",
+          "resource_key": "lblTitle.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "lblTitle.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblTitle.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblTitle.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblTitle.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblTitle.Text",
+          "source": "ApplyResources"
+        }
+      ]
     }
   ],
   "tree": {
     "name": "FileExistForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "txtNewName",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "btnNewName",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnUniqueName",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnCancel",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnOverwrite",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "lblTitle",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "lblTitle.Text": "There is already a file with the same name in this location.\nSelect new file name or action:",

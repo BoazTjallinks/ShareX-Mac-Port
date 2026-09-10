@@ -31,89 +31,217 @@
   ],
   "controls": [
     {
-      "name": "lblFolder",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "btnFolderBrowse",
+      "type": "System.Windows.Forms.Button",
+      "parent": "StickerPackForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
-        "AutoSize": true,
         "Location": {
           "kind": "Point",
-          "x": 8,
-          "y": 64
+          "x": 350,
+          "y": 59
         },
         "Size": {
           "kind": "Size",
-          "width": 39,
-          "height": 13
+          "width": 24,
+          "height": 23
         },
-        "TabIndex": 3,
-        "Text": "Folder:",
-        "Name": "lblFolder"
+        "TabIndex": 5,
+        "Text": "...",
+        "Name": "btnFolderBrowse",
+        "UseVisualStyleBackColor": true
       },
       "resources": [
         {
-          "property": "AutoSize",
-          "resource_key": "lblFolder.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
           "property": "Location",
-          "resource_key": "lblFolder.Location",
+          "resource_key": "btnFolderBrowse.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "lblFolder.Size",
+          "resource_key": "btnFolderBrowse.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "lblFolder.TabIndex",
+          "resource_key": "btnFolderBrowse.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "lblFolder.Text",
+          "resource_key": "btnFolderBrowse.Text",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "txtFolder",
+      "name": "btnRemove",
+      "type": "System.Windows.Forms.Button",
+      "parent": "StickerPackForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 192,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 184,
+          "height": 23
+        },
+        "TabIndex": 1,
+        "Text": "Remove",
+        "Name": "btnRemove",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnRemove.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnRemove.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnRemove.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnRemove.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnAdd",
+      "type": "System.Windows.Forms.Button",
+      "parent": "StickerPackForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 184,
+          "height": 23
+        },
+        "TabIndex": 0,
+        "Text": "Add",
+        "Name": "btnAdd",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnAdd.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnAdd.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnAdd.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnAdd.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbStickers",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "StickerPackForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 32
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 368,
+          "height": 21
+        },
+        "TabIndex": 2,
+        "Name": "cbStickers"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbStickers.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbStickers.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbStickers.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtName",
       "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "StickerPackForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
       "properties": {
         "Location": {
           "kind": "Point",
           "x": 80,
-          "y": 60
+          "y": 84
         },
         "Size": {
           "kind": "Size",
           "width": 264,
           "height": 20
         },
-        "TabIndex": 4,
-        "Name": "txtFolder"
+        "TabIndex": 7,
+        "Name": "txtName"
       },
       "resources": [
         {
           "property": "Location",
-          "resource_key": "txtFolder.Location",
+          "resource_key": "txtName.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "txtFolder.Size",
+          "resource_key": "txtName.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "txtFolder.TabIndex",
+          "resource_key": "txtName.TabIndex",
           "source": "ApplyResources"
         }
       ]
@@ -121,9 +249,9 @@
     {
       "name": "lblName",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "StickerPackForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
       "properties": {
         "AutoSize": true,
         "Location": {
@@ -169,217 +297,89 @@
       ]
     },
     {
-      "name": "txtName",
+      "name": "txtFolder",
       "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "StickerPackForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
       "properties": {
         "Location": {
           "kind": "Point",
           "x": 80,
-          "y": 84
+          "y": 60
         },
         "Size": {
           "kind": "Size",
           "width": 264,
           "height": 20
         },
-        "TabIndex": 7,
-        "Name": "txtName"
+        "TabIndex": 4,
+        "Name": "txtFolder"
       },
       "resources": [
         {
           "property": "Location",
-          "resource_key": "txtName.Location",
+          "resource_key": "txtFolder.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "txtName.Size",
+          "resource_key": "txtFolder.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "txtName.TabIndex",
+          "resource_key": "txtFolder.TabIndex",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "cbStickers",
-      "type": "System.Windows.Forms.ComboBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "lblFolder",
+      "type": "System.Windows.Forms.Label",
+      "parent": "StickerPackForm",
+      "parent_slot": "Controls",
+      "child_index": 7,
       "properties": {
-        "DropDownStyle": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
-        },
-        "FormattingEnabled": true,
+        "AutoSize": true,
         "Location": {
           "kind": "Point",
           "x": 8,
-          "y": 32
+          "y": 64
         },
         "Size": {
           "kind": "Size",
-          "width": 368,
-          "height": 21
+          "width": 39,
+          "height": 13
         },
-        "TabIndex": 2,
-        "Name": "cbStickers"
+        "TabIndex": 3,
+        "Text": "Folder:",
+        "Name": "lblFolder"
       },
       "resources": [
         {
+          "property": "AutoSize",
+          "resource_key": "lblFolder.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
           "property": "Location",
-          "resource_key": "cbStickers.Location",
+          "resource_key": "lblFolder.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "cbStickers.Size",
+          "resource_key": "lblFolder.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "cbStickers.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnAdd",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 8
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 184,
-          "height": 23
-        },
-        "TabIndex": 0,
-        "Text": "Add",
-        "Name": "btnAdd",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnAdd.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnAdd.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnAdd.TabIndex",
+          "resource_key": "lblFolder.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "btnAdd.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnRemove",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 192,
-          "y": 8
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 184,
-          "height": 23
-        },
-        "TabIndex": 1,
-        "Text": "Remove",
-        "Name": "btnRemove",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnRemove.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnRemove.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnRemove.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnRemove.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnFolderBrowse",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 350,
-          "y": 59
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 24,
-          "height": 23
-        },
-        "TabIndex": 5,
-        "Text": "...",
-        "Name": "btnFolderBrowse",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnFolderBrowse.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnFolderBrowse.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnFolderBrowse.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnFolderBrowse.Text",
+          "resource_key": "lblFolder.Text",
           "source": "ApplyResources"
         }
       ]
@@ -388,7 +388,50 @@
   "tree": {
     "name": "StickerPackForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "btnFolderBrowse",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnRemove",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnAdd",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "cbStickers",
+          "type": "System.Windows.Forms.ComboBox",
+          "slots": {}
+        },
+        {
+          "name": "txtName",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblName",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "txtFolder",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblFolder",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "lblFolder.Text": "Folder:",

@@ -33,435 +33,11 @@
   ],
   "controls": [
     {
-      "name": "btnPathBrowse",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 272,
-          "y": 31
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 40,
-          "height": 23
-        },
-        "TabIndex": 2,
-        "Text": "...",
-        "Name": "btnPathBrowse",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnPathBrowse.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnPathBrowse.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnPathBrowse.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnPathBrowse.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "txtFilter",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 80
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 296,
-          "height": 20
-        },
-        "TabIndex": 4,
-        "Name": "txtFilter"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "txtFilter.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "txtFilter.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "txtFilter.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "txtFolderPath",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 32
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 248,
-          "height": 20
-        },
-        "TabIndex": 1,
-        "Name": "txtFolderPath"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "txtFolderPath.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "txtFolderPath.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "txtFolderPath.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblFilter",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 13,
-          "y": 64
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 32,
-          "height": 13
-        },
-        "TabIndex": 3,
-        "Text": "Filter:",
-        "Name": "lblFilter"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblFilter.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblFilter.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblFilter.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblFilter.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblFilter.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblFolderPath",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 12,
-          "y": 16
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 63,
-          "height": 13
-        },
-        "TabIndex": 0,
-        "Text": "Folder path:",
-        "Name": "lblFolderPath"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblFolderPath.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblFolderPath.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblFolderPath.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblFolderPath.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblFolderPath.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblFilterExample",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 12,
-          "y": 103
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 78,
-          "height": 13
-        },
-        "TabIndex": 5,
-        "Text": "Example: *.png",
-        "Name": "lblFilterExample"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblFilterExample.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblFilterExample.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblFilterExample.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblFilterExample.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblFilterExample.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "cbIncludeSubdirectories",
-      "type": "System.Windows.Forms.CheckBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 128
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 129,
-          "height": 17
-        },
-        "TabIndex": 6,
-        "Text": "Include subdirectories",
-        "Name": "cbIncludeSubdirectories",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "cbIncludeSubdirectories.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "cbIncludeSubdirectories.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "cbIncludeSubdirectories.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "cbIncludeSubdirectories.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "cbIncludeSubdirectories.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnCancel",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Bottom, Right",
-        "Location": {
-          "kind": "Point",
-          "x": 232,
-          "y": 175
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 80,
-          "height": 23
-        },
-        "TabIndex": 8,
-        "Text": "Cancel",
-        "Name": "btnCancel",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "btnCancel.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnCancel.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnCancel.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnCancel.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnCancel.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnOK",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Bottom, Right",
-        "Location": {
-          "kind": "Point",
-          "x": 144,
-          "y": 175
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 80,
-          "height": 23
-        },
-        "TabIndex": 7,
-        "Text": "OK",
-        "Name": "btnOK",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "btnOK.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnOK.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnOK.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnOK.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnOK.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "cbMoveToScreenshotsFolder",
       "type": "System.Windows.Forms.CheckBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "WatchFolderForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "AutoSize": true,
         "ImeMode": "NoControl",
@@ -512,12 +88,489 @@
           "source": "ApplyResources"
         }
       ]
+    },
+    {
+      "name": "btnCancel",
+      "type": "System.Windows.Forms.Button",
+      "parent": "WatchFolderForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Anchor": "Bottom, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 232,
+          "y": 175
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 80,
+          "height": 23
+        },
+        "TabIndex": 8,
+        "Text": "Cancel",
+        "Name": "btnCancel",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnCancel.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnCancel.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCancel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCancel.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCancel.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnOK",
+      "type": "System.Windows.Forms.Button",
+      "parent": "WatchFolderForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Anchor": "Bottom, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 144,
+          "y": 175
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 80,
+          "height": 23
+        },
+        "TabIndex": 7,
+        "Text": "OK",
+        "Name": "btnOK",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnOK.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnOK.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnOK.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnOK.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnOK.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbIncludeSubdirectories",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "WatchFolderForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 128
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 129,
+          "height": 17
+        },
+        "TabIndex": 6,
+        "Text": "Include subdirectories",
+        "Name": "cbIncludeSubdirectories",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbIncludeSubdirectories.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbIncludeSubdirectories.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbIncludeSubdirectories.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbIncludeSubdirectories.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbIncludeSubdirectories.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblFilterExample",
+      "type": "System.Windows.Forms.Label",
+      "parent": "WatchFolderForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 12,
+          "y": 103
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 78,
+          "height": 13
+        },
+        "TabIndex": 5,
+        "Text": "Example: *.png",
+        "Name": "lblFilterExample"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblFilterExample.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblFilterExample.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblFilterExample.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblFilterExample.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblFilterExample.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnPathBrowse",
+      "type": "System.Windows.Forms.Button",
+      "parent": "WatchFolderForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 272,
+          "y": 31
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 40,
+          "height": 23
+        },
+        "TabIndex": 2,
+        "Text": "...",
+        "Name": "btnPathBrowse",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnPathBrowse.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnPathBrowse.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnPathBrowse.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnPathBrowse.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtFilter",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "WatchFolderForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 80
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 296,
+          "height": 20
+        },
+        "TabIndex": 4,
+        "Name": "txtFilter"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtFilter.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtFilter.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtFilter.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtFolderPath",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "WatchFolderForm",
+      "parent_slot": "Controls",
+      "child_index": 7,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 32
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 248,
+          "height": 20
+        },
+        "TabIndex": 1,
+        "Name": "txtFolderPath"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtFolderPath.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtFolderPath.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtFolderPath.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblFilter",
+      "type": "System.Windows.Forms.Label",
+      "parent": "WatchFolderForm",
+      "parent_slot": "Controls",
+      "child_index": 8,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 64
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 32,
+          "height": 13
+        },
+        "TabIndex": 3,
+        "Text": "Filter:",
+        "Name": "lblFilter"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblFilter.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblFilter.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblFilter.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblFilter.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblFilter.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblFolderPath",
+      "type": "System.Windows.Forms.Label",
+      "parent": "WatchFolderForm",
+      "parent_slot": "Controls",
+      "child_index": 9,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 12,
+          "y": 16
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 63,
+          "height": 13
+        },
+        "TabIndex": 0,
+        "Text": "Folder path:",
+        "Name": "lblFolderPath"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblFolderPath.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblFolderPath.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblFolderPath.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblFolderPath.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblFolderPath.Text",
+          "source": "ApplyResources"
+        }
+      ]
     }
   ],
   "tree": {
     "name": "WatchFolderForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "cbMoveToScreenshotsFolder",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "btnCancel",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnOK",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "cbIncludeSubdirectories",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "lblFilterExample",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "btnPathBrowse",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "txtFilter",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "txtFolderPath",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblFilter",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblFolderPath",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "btnPathBrowse.Text": "...",

@@ -39,55 +39,6 @@
       "resources": []
     },
     {
-      "name": "mbAfterCaptureTasks",
-      "type": "HelpersLib.MenuButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 72
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 424,
-          "height": 23
-        },
-        "TabIndex": 0,
-        "TextAlign": "MiddleLeft",
-        "Menu": {
-          "kind": "expr",
-          "raw": "this.cmsAfterCapture"
-        },
-        "Name": "mbAfterCaptureTasks",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "mbAfterCaptureTasks.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "mbAfterCaptureTasks.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "mbAfterCaptureTasks.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "mbAfterCaptureTasks.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "cmsAfterCapture",
       "type": "System.Windows.Forms.ContextMenuStrip",
       "parent": null,
@@ -105,55 +56,6 @@
         {
           "property": "Size",
           "resource_key": "cmsAfterCapture.Size",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "mbAfterUploadTasks",
-      "type": "HelpersLib.MenuButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 120
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 424,
-          "height": 23
-        },
-        "TabIndex": 1,
-        "TextAlign": "MiddleLeft",
-        "Menu": {
-          "kind": "expr",
-          "raw": "this.cmsAfterUpload"
-        },
-        "Name": "mbAfterUploadTasks",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "mbAfterUploadTasks.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "mbAfterUploadTasks.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "mbAfterUploadTasks.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "mbAfterUploadTasks.TextAlign",
           "source": "ApplyResources"
         }
       ]
@@ -181,101 +83,84 @@
       ]
     },
     {
-      "name": "lblAfterCaptureTasks",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "btnOK",
+      "type": "System.Windows.Forms.Button",
+      "parent": "QuickTaskInfoEditForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
-        "AutoSize": true,
         "Location": {
           "kind": "Point",
-          "x": 5,
-          "y": 56
+          "x": 312,
+          "y": 160
         },
         "Size": {
           "kind": "Size",
-          "width": 99,
-          "height": 13
+          "width": 120,
+          "height": 23
         },
-        "TabIndex": 2,
-        "Text": "After capture tasks:",
-        "Name": "lblAfterCaptureTasks"
+        "TabIndex": 6,
+        "Text": "OK",
+        "Name": "btnOK",
+        "UseVisualStyleBackColor": true
       },
       "resources": [
         {
-          "property": "AutoSize",
-          "resource_key": "lblAfterCaptureTasks.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
           "property": "Location",
-          "resource_key": "lblAfterCaptureTasks.Location",
+          "resource_key": "btnOK.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "lblAfterCaptureTasks.Size",
+          "resource_key": "btnOK.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "lblAfterCaptureTasks.TabIndex",
+          "resource_key": "btnOK.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "lblAfterCaptureTasks.Text",
+          "resource_key": "btnOK.Text",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "lblAfterUploadTasks",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "txtName",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "QuickTaskInfoEditForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
-        "AutoSize": true,
         "Location": {
           "kind": "Point",
-          "x": 5,
-          "y": 104
+          "x": 8,
+          "y": 24
         },
         "Size": {
           "kind": "Size",
-          "width": 95,
-          "height": 13
+          "width": 424,
+          "height": 20
         },
-        "TabIndex": 3,
-        "Text": "After upload tasks:",
-        "Name": "lblAfterUploadTasks"
+        "TabIndex": 5,
+        "Name": "txtName"
       },
       "resources": [
         {
-          "property": "AutoSize",
-          "resource_key": "lblAfterUploadTasks.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
           "property": "Location",
-          "resource_key": "lblAfterUploadTasks.Location",
+          "resource_key": "txtName.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "lblAfterUploadTasks.Size",
+          "resource_key": "txtName.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "lblAfterUploadTasks.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblAfterUploadTasks.Text",
+          "resource_key": "txtName.TabIndex",
           "source": "ApplyResources"
         }
       ]
@@ -283,9 +168,9 @@
     {
       "name": "lblName",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "QuickTaskInfoEditForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
       "properties": {
         "AutoSize": true,
         "Location": {
@@ -331,84 +216,199 @@
       ]
     },
     {
-      "name": "txtName",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "lblAfterUploadTasks",
+      "type": "System.Windows.Forms.Label",
+      "parent": "QuickTaskInfoEditForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
       "properties": {
+        "AutoSize": true,
         "Location": {
           "kind": "Point",
-          "x": 8,
-          "y": 24
+          "x": 5,
+          "y": 104
         },
         "Size": {
           "kind": "Size",
-          "width": 424,
-          "height": 20
+          "width": 95,
+          "height": 13
         },
-        "TabIndex": 5,
-        "Name": "txtName"
+        "TabIndex": 3,
+        "Text": "After upload tasks:",
+        "Name": "lblAfterUploadTasks"
       },
       "resources": [
         {
+          "property": "AutoSize",
+          "resource_key": "lblAfterUploadTasks.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
           "property": "Location",
-          "resource_key": "txtName.Location",
+          "resource_key": "lblAfterUploadTasks.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "txtName.Size",
+          "resource_key": "lblAfterUploadTasks.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "txtName.TabIndex",
+          "resource_key": "lblAfterUploadTasks.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblAfterUploadTasks.Text",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "btnOK",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "lblAfterCaptureTasks",
+      "type": "System.Windows.Forms.Label",
+      "parent": "QuickTaskInfoEditForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
       "properties": {
+        "AutoSize": true,
         "Location": {
           "kind": "Point",
-          "x": 312,
-          "y": 160
+          "x": 5,
+          "y": 56
         },
         "Size": {
           "kind": "Size",
-          "width": 120,
+          "width": 99,
+          "height": 13
+        },
+        "TabIndex": 2,
+        "Text": "After capture tasks:",
+        "Name": "lblAfterCaptureTasks"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblAfterCaptureTasks.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblAfterCaptureTasks.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblAfterCaptureTasks.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblAfterCaptureTasks.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblAfterCaptureTasks.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "mbAfterUploadTasks",
+      "type": "HelpersLib.MenuButton",
+      "parent": "QuickTaskInfoEditForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 120
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 424,
           "height": 23
         },
-        "TabIndex": 6,
-        "Text": "OK",
-        "Name": "btnOK",
+        "TabIndex": 1,
+        "TextAlign": "MiddleLeft",
+        "Menu": {
+          "kind": "expr",
+          "raw": "this.cmsAfterUpload"
+        },
+        "Name": "mbAfterUploadTasks",
         "UseVisualStyleBackColor": true
       },
       "resources": [
         {
           "property": "Location",
-          "resource_key": "btnOK.Location",
+          "resource_key": "mbAfterUploadTasks.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "btnOK.Size",
+          "resource_key": "mbAfterUploadTasks.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "btnOK.TabIndex",
+          "resource_key": "mbAfterUploadTasks.TabIndex",
           "source": "ApplyResources"
         },
         {
-          "property": "Text",
-          "resource_key": "btnOK.Text",
+          "property": "TextAlign",
+          "resource_key": "mbAfterUploadTasks.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "mbAfterCaptureTasks",
+      "type": "HelpersLib.MenuButton",
+      "parent": "QuickTaskInfoEditForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 72
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 424,
+          "height": 23
+        },
+        "TabIndex": 0,
+        "TextAlign": "MiddleLeft",
+        "Menu": {
+          "kind": "expr",
+          "raw": "this.cmsAfterCapture"
+        },
+        "Name": "mbAfterCaptureTasks",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "mbAfterCaptureTasks.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "mbAfterCaptureTasks.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "mbAfterCaptureTasks.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "mbAfterCaptureTasks.TextAlign",
           "source": "ApplyResources"
         }
       ]
@@ -417,7 +417,45 @@
   "tree": {
     "name": "QuickTaskInfoEditForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "btnOK",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "txtName",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblName",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblAfterUploadTasks",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblAfterCaptureTasks",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "mbAfterUploadTasks",
+          "type": "HelpersLib.MenuButton",
+          "slots": {}
+        },
+        {
+          "name": "mbAfterCaptureTasks",
+          "type": "HelpersLib.MenuButton",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "lblAfterCaptureTasks.Text": "After capture tasks:",

@@ -39,441 +39,288 @@
   ],
   "controls": [
     {
-      "name": "lvImages",
-      "type": "HelpersLib.MyListView",
+      "name": "AutoScaleDimensions",
+      "type": "System.Drawing.SizeF",
       "parent": null,
       "parent_slot": null,
       "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "lblQualityPercentage",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ImageThumbnailerForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
-        "AllowDrop": true,
-        "AllowItemDrag": true,
-        "AutoFillColumn": true,
-        "Columns.literal_items": [
-          {
-            "kind": "expr",
-            "raw": "this.chImages"
-          }
-        ],
-        "FullRowSelect": true,
-        "HeaderStyle": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.ColumnHeaderStyle.None"
-        },
-        "HideSelection": false,
+        "AutoSize": true,
         "Location": {
           "kind": "Point",
-          "x": 8,
-          "y": 40
+          "x": 261,
+          "y": 436
         },
         "Size": {
           "kind": "Size",
-          "width": 560,
-          "height": 368
+          "width": 15,
+          "height": 13
         },
-        "TabIndex": 0,
-        "Name": "lvImages",
-        "UseCompatibleStateImageBehavior": false,
-        "View": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.View.Details"
-        }
+        "TabIndex": 17,
+        "Text": "%",
+        "Name": "lblQualityPercentage"
       },
       "resources": [
         {
+          "property": "AutoSize",
+          "resource_key": "lblQualityPercentage.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
           "property": "Location",
-          "resource_key": "lvImages.Location",
+          "resource_key": "lblQualityPercentage.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "lvImages.Size",
+          "resource_key": "lblQualityPercentage.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "lvImages.TabIndex",
+          "resource_key": "lblQualityPercentage.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblQualityPercentage.Text",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "btnAdd",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "nudQuality",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "ImageThumbnailerForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
         "Location": {
           "kind": "Point",
-          "x": 8,
-          "y": 8
+          "x": 200,
+          "y": 432
         },
         "Size": {
           "kind": "Size",
-          "width": 152,
-          "height": 24
+          "width": 56,
+          "height": 20
         },
-        "TabIndex": 1,
-        "Text": "Add...",
-        "Name": "btnAdd",
+        "TabIndex": 16,
+        "TextAlign": "Center",
+        "Name": "nudQuality",
+        "Value": 90
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudQuality.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudQuality.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudQuality.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudQuality.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblQuality",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ImageThumbnailerForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 197,
+          "y": 416
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 42,
+          "height": 13
+        },
+        "TabIndex": 15,
+        "Text": "Quality:",
+        "Name": "lblQuality"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblQuality.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblQuality.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblQuality.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblQuality.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblQuality.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnOutputFolder",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageThumbnailerForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 536,
+          "y": 479
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 32,
+          "height": 23
+        },
+        "TabIndex": 14,
+        "Text": "...",
+        "Name": "btnOutputFolder",
         "UseVisualStyleBackColor": true
       },
       "resources": [
         {
           "property": "Location",
-          "resource_key": "btnAdd.Location",
+          "resource_key": "btnOutputFolder.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "btnAdd.Size",
+          "resource_key": "btnOutputFolder.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "btnAdd.TabIndex",
+          "resource_key": "btnOutputFolder.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "btnAdd.Text",
+          "resource_key": "btnOutputFolder.Text",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "btnRemove",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Enabled": false,
-        "Location": {
-          "kind": "Point",
-          "x": 168,
-          "y": 8
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 152,
-          "height": 24
-        },
-        "TabIndex": 2,
-        "Text": "Remove",
-        "Name": "btnRemove",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Enabled",
-          "resource_key": "btnRemove.Enabled",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnRemove.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnRemove.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnRemove.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnRemove.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblWidth",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 5,
-          "y": 416
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 38,
-          "height": 13
-        },
-        "TabIndex": 3,
-        "Text": "Width:",
-        "Name": "lblWidth"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblWidth.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblWidth.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblWidth.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblWidth.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblWidth.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "nudWidth",
-      "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 432
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 80,
-          "height": 20
-        },
-        "TabIndex": 4,
-        "TextAlign": "Center",
-        "Maximum": 10000,
-        "Name": "nudWidth",
-        "Value": 150
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "nudWidth.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "nudWidth.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "nudWidth.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "nudWidth.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblHeight",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 101,
-          "y": 416
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 41,
-          "height": 13
-        },
-        "TabIndex": 5,
-        "Text": "Height:",
-        "Name": "lblHeight"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblHeight.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblHeight.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblHeight.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblHeight.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblHeight.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "nudHeight",
-      "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 104,
-          "y": 432
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 80,
-          "height": 20
-        },
-        "TabIndex": 6,
-        "TextAlign": "Center",
-        "Maximum": 10000,
-        "Name": "nudHeight",
-        "Value": 150
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "nudHeight.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "nudHeight.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "nudHeight.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "nudHeight.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblOutputFilename",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 5,
-          "y": 512
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 87,
-          "height": 13
-        },
-        "TabIndex": 9,
-        "Text": "Output file name:",
-        "Name": "lblOutputFilename"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblOutputFilename.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblOutputFilename.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblOutputFilename.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblOutputFilename.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblOutputFilename.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "txtOutputFilename",
+      "name": "txtOutputFolder",
       "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ImageThumbnailerForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
       "properties": {
         "Location": {
           "kind": "Point",
           "x": 8,
-          "y": 528
+          "y": 480
         },
         "Size": {
           "kind": "Size",
-          "width": 560,
+          "width": 520,
           "height": 20
         },
-        "TabIndex": 10,
-        "Text": "$filename_th",
-        "Name": "txtOutputFilename"
+        "TabIndex": 13,
+        "Name": "txtOutputFolder"
       },
       "resources": [
         {
           "property": "Location",
-          "resource_key": "txtOutputFilename.Location",
+          "resource_key": "txtOutputFolder.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "txtOutputFilename.Size",
+          "resource_key": "txtOutputFolder.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "txtOutputFilename.TabIndex",
+          "resource_key": "txtOutputFolder.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblOutputFolder",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ImageThumbnailerForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 464
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 71,
+          "height": 13
+        },
+        "TabIndex": 12,
+        "Text": "Output folder:",
+        "Name": "lblOutputFolder"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblOutputFolder.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblOutputFolder.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblOutputFolder.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblOutputFolder.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "txtOutputFilename.Text",
+          "resource_key": "lblOutputFolder.Text",
           "source": "ApplyResources"
         }
       ]
@@ -481,9 +328,9 @@
     {
       "name": "btnGenerate",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ImageThumbnailerForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
       "properties": {
         "Enabled": false,
         "Location": {
@@ -530,297 +377,533 @@
       ]
     },
     {
-      "name": "lblOutputFolder",
+      "name": "txtOutputFilename",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "ImageThumbnailerForm",
+      "parent_slot": "Controls",
+      "child_index": 7,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 528
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 560,
+          "height": 20
+        },
+        "TabIndex": 10,
+        "Text": "$filename_th",
+        "Name": "txtOutputFilename"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtOutputFilename.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtOutputFilename.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtOutputFilename.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "txtOutputFilename.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblOutputFilename",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ImageThumbnailerForm",
+      "parent_slot": "Controls",
+      "child_index": 8,
       "properties": {
         "AutoSize": true,
         "Location": {
           "kind": "Point",
           "x": 5,
-          "y": 464
+          "y": 512
         },
         "Size": {
           "kind": "Size",
-          "width": 71,
+          "width": 87,
           "height": 13
         },
-        "TabIndex": 12,
-        "Text": "Output folder:",
-        "Name": "lblOutputFolder"
+        "TabIndex": 9,
+        "Text": "Output file name:",
+        "Name": "lblOutputFilename"
       },
       "resources": [
         {
           "property": "AutoSize",
-          "resource_key": "lblOutputFolder.AutoSize",
+          "resource_key": "lblOutputFilename.AutoSize",
           "source": "ApplyResources"
         },
         {
           "property": "Location",
-          "resource_key": "lblOutputFolder.Location",
+          "resource_key": "lblOutputFilename.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "lblOutputFolder.Size",
+          "resource_key": "lblOutputFilename.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "lblOutputFolder.TabIndex",
+          "resource_key": "lblOutputFilename.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "lblOutputFolder.Text",
+          "resource_key": "lblOutputFilename.Text",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "txtOutputFolder",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "nudHeight",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "ImageThumbnailerForm",
+      "parent_slot": "Controls",
+      "child_index": 9,
       "properties": {
         "Location": {
           "kind": "Point",
-          "x": 8,
-          "y": 480
+          "x": 104,
+          "y": 432
         },
         "Size": {
           "kind": "Size",
-          "width": 520,
+          "width": 80,
           "height": 20
         },
-        "TabIndex": 13,
-        "Name": "txtOutputFolder"
+        "TabIndex": 6,
+        "TextAlign": "Center",
+        "Maximum": 10000,
+        "Name": "nudHeight",
+        "Value": 150
       },
       "resources": [
         {
           "property": "Location",
-          "resource_key": "txtOutputFolder.Location",
+          "resource_key": "nudHeight.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "txtOutputFolder.Size",
+          "resource_key": "nudHeight.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "txtOutputFolder.TabIndex",
+          "resource_key": "nudHeight.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudHeight.TextAlign",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "btnOutputFolder",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "lblHeight",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ImageThumbnailerForm",
+      "parent_slot": "Controls",
+      "child_index": 10,
       "properties": {
+        "AutoSize": true,
         "Location": {
           "kind": "Point",
-          "x": 536,
-          "y": 479
+          "x": 101,
+          "y": 416
         },
         "Size": {
           "kind": "Size",
-          "width": 32,
-          "height": 23
+          "width": 41,
+          "height": 13
         },
-        "TabIndex": 14,
-        "Text": "...",
-        "Name": "btnOutputFolder",
+        "TabIndex": 5,
+        "Text": "Height:",
+        "Name": "lblHeight"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblHeight.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblHeight.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblHeight.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblHeight.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblHeight.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudWidth",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "ImageThumbnailerForm",
+      "parent_slot": "Controls",
+      "child_index": 11,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 432
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 80,
+          "height": 20
+        },
+        "TabIndex": 4,
+        "TextAlign": "Center",
+        "Maximum": 10000,
+        "Name": "nudWidth",
+        "Value": 150
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudWidth.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudWidth.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudWidth.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudWidth.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblWidth",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ImageThumbnailerForm",
+      "parent_slot": "Controls",
+      "child_index": 12,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 416
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 38,
+          "height": 13
+        },
+        "TabIndex": 3,
+        "Text": "Width:",
+        "Name": "lblWidth"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblWidth.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblWidth.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblWidth.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblWidth.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblWidth.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnRemove",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageThumbnailerForm",
+      "parent_slot": "Controls",
+      "child_index": 13,
+      "properties": {
+        "Enabled": false,
+        "Location": {
+          "kind": "Point",
+          "x": 168,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 152,
+          "height": 24
+        },
+        "TabIndex": 2,
+        "Text": "Remove",
+        "Name": "btnRemove",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Enabled",
+          "resource_key": "btnRemove.Enabled",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnRemove.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnRemove.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnRemove.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnRemove.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnAdd",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageThumbnailerForm",
+      "parent_slot": "Controls",
+      "child_index": 14,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 152,
+          "height": 24
+        },
+        "TabIndex": 1,
+        "Text": "Add...",
+        "Name": "btnAdd",
         "UseVisualStyleBackColor": true
       },
       "resources": [
         {
           "property": "Location",
-          "resource_key": "btnOutputFolder.Location",
+          "resource_key": "btnAdd.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "btnOutputFolder.Size",
+          "resource_key": "btnAdd.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "btnOutputFolder.TabIndex",
+          "resource_key": "btnAdd.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "btnOutputFolder.Text",
+          "resource_key": "btnAdd.Text",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "lblQuality",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "lvImages",
+      "type": "HelpersLib.MyListView",
+      "parent": "ImageThumbnailerForm",
+      "parent_slot": "Controls",
+      "child_index": 15,
       "properties": {
-        "AutoSize": true,
+        "AllowDrop": true,
+        "AllowItemDrag": true,
+        "AutoFillColumn": true,
+        "Columns.literal_items": [
+          {
+            "kind": "ident",
+            "raw": "chImages"
+          }
+        ],
+        "FullRowSelect": true,
+        "HeaderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ColumnHeaderStyle.None"
+        },
+        "HideSelection": false,
         "Location": {
           "kind": "Point",
-          "x": 197,
-          "y": 416
+          "x": 8,
+          "y": 40
         },
         "Size": {
           "kind": "Size",
-          "width": 42,
-          "height": 13
+          "width": 560,
+          "height": 368
         },
-        "TabIndex": 15,
-        "Text": "Quality:",
-        "Name": "lblQuality"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblQuality.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblQuality.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblQuality.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblQuality.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblQuality.Text",
-          "source": "ApplyResources"
+        "TabIndex": 0,
+        "Name": "lvImages",
+        "UseCompatibleStateImageBehavior": false,
+        "View": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.View.Details"
         }
-      ]
-    },
-    {
-      "name": "nudQuality",
-      "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 200,
-          "y": 432
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 56,
-          "height": 20
-        },
-        "TabIndex": 16,
-        "TextAlign": "Center",
-        "Name": "nudQuality",
-        "Value": 90
       },
       "resources": [
         {
           "property": "Location",
-          "resource_key": "nudQuality.Location",
+          "resource_key": "lvImages.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "nudQuality.Size",
+          "resource_key": "lvImages.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "nudQuality.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "nudQuality.TextAlign",
+          "resource_key": "lvImages.TabIndex",
           "source": "ApplyResources"
         }
       ]
-    },
-    {
-      "name": "lblQualityPercentage",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 261,
-          "y": 436
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 15,
-          "height": 13
-        },
-        "TabIndex": 17,
-        "Text": "%",
-        "Name": "lblQualityPercentage"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblQualityPercentage.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblQualityPercentage.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblQualityPercentage.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblQualityPercentage.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblQualityPercentage.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "AutoScaleDimensions",
-      "type": "System.Drawing.SizeF",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
     }
   ],
   "tree": {
     "name": "ImageThumbnailerForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "lblQualityPercentage",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "nudQuality",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "lblQuality",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "btnOutputFolder",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "txtOutputFolder",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblOutputFolder",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "btnGenerate",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "txtOutputFilename",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblOutputFilename",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "nudHeight",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "lblHeight",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "nudWidth",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "lblWidth",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "btnRemove",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnAdd",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "lvImages",
+          "type": "HelpersLib.MyListView",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "btnAdd.Text": "Add...",

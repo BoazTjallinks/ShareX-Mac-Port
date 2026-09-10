@@ -28,191 +28,20 @@
   ],
   "controls": [
     {
-      "name": "btnCancel",
-      "type": "System.Windows.Forms.Button",
+      "name": "AutoScaleDimensions",
+      "type": "System.Drawing.SizeF",
       "parent": null,
       "parent_slot": null,
       "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 168,
-          "y": 64
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 75,
-          "height": 23
-        },
-        "TabIndex": 11,
-        "Text": "Cancel",
-        "Name": "btnCancel",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnCancel.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnCancel.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnCancel.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnCancel.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnPrint",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 64
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 75,
-          "height": 23
-        },
-        "TabIndex": 10,
-        "Text": "Print...",
-        "Name": "btnPrint",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnPrint.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnPrint.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnPrint.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnPrint.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnShowPreview",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 88,
-          "y": 64
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 75,
-          "height": 23
-        },
-        "TabIndex": 9,
-        "Text": "Preview...",
-        "Name": "btnShowPreview",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnShowPreview.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnShowPreview.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnShowPreview.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnShowPreview.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnChangeFont",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 32
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 152,
-          "height": 23
-        },
-        "TabIndex": 12,
-        "Text": "Change font...",
-        "Name": "btnChangeFont",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnChangeFont.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnChangeFont.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnChangeFont.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnChangeFont.Text",
-          "source": "ApplyResources"
-        }
-      ]
+      "properties": {},
+      "resources": []
     },
     {
       "name": "lblFont",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "PrintTextForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "AutoSize": true,
         "Location": {
@@ -258,19 +87,218 @@
       ]
     },
     {
-      "name": "AutoScaleDimensions",
-      "type": "System.Drawing.SizeF",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
+      "name": "btnChangeFont",
+      "type": "System.Windows.Forms.Button",
+      "parent": "PrintTextForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 32
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 152,
+          "height": 23
+        },
+        "TabIndex": 12,
+        "Text": "Change font...",
+        "Name": "btnChangeFont",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnChangeFont.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnChangeFont.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnChangeFont.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnChangeFont.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnCancel",
+      "type": "System.Windows.Forms.Button",
+      "parent": "PrintTextForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 168,
+          "y": 64
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 75,
+          "height": 23
+        },
+        "TabIndex": 11,
+        "Text": "Cancel",
+        "Name": "btnCancel",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnCancel.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCancel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCancel.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCancel.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnPrint",
+      "type": "System.Windows.Forms.Button",
+      "parent": "PrintTextForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 64
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 75,
+          "height": 23
+        },
+        "TabIndex": 10,
+        "Text": "Print...",
+        "Name": "btnPrint",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnPrint.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnPrint.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnPrint.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnPrint.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnShowPreview",
+      "type": "System.Windows.Forms.Button",
+      "parent": "PrintTextForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 88,
+          "y": 64
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 75,
+          "height": 23
+        },
+        "TabIndex": 9,
+        "Text": "Preview...",
+        "Name": "btnShowPreview",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnShowPreview.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnShowPreview.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnShowPreview.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnShowPreview.Text",
+          "source": "ApplyResources"
+        }
+      ]
     }
   ],
   "tree": {
     "name": "PrintTextForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "lblFont",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "btnChangeFont",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnCancel",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnPrint",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnShowPreview",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "btnCancel.Text": "Cancel",

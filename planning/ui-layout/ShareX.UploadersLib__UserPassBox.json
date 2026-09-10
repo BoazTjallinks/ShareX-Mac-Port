@@ -33,374 +33,20 @@
   ],
   "controls": [
     {
-      "name": "btnOK",
-      "type": "System.Windows.Forms.Button",
+      "name": "AutoScaleDimensions",
+      "type": "System.Drawing.SizeF",
       "parent": null,
       "parent_slot": null,
       "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 136,
-          "y": 112
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 72,
-          "height": 23
-        },
-        "TabIndex": 8,
-        "Text": "OK",
-        "Name": "btnOK",
-        "UseCompatibleTextRendering": true,
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnOK.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnOK.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnOK.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnOK.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnCancel",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 216,
-          "y": 112
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 72,
-          "height": 23
-        },
-        "TabIndex": 9,
-        "Text": "Cancel",
-        "Name": "btnCancel",
-        "UseCompatibleTextRendering": true,
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnCancel.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnCancel.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnCancel.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnCancel.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "txtUserName",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 88,
-          "y": 60
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 200,
-          "height": 20
-        },
-        "TabIndex": 5,
-        "Name": "txtUserName"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "txtUserName.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "txtUserName.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "txtUserName.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "txtPassword",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 88,
-          "y": 84
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 200,
-          "height": 20
-        },
-        "TabIndex": 7,
-        "Name": "txtPassword",
-        "UseSystemPasswordChar": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "txtPassword.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "txtPassword.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "txtPassword.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblUserName",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 64
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 61,
-          "height": 13
-        },
-        "TabIndex": 4,
-        "Text": "User name:",
-        "Name": "lblUserName"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblUserName.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblUserName.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblUserName.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblUserName.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblUserName.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblPassword",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 88
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 56,
-          "height": 13
-        },
-        "TabIndex": 6,
-        "Text": "Password:",
-        "Name": "lblPassword"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblPassword.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblPassword.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblPassword.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblPassword.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblPassword.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblFullName",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 16
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 55,
-          "height": 13
-        },
-        "TabIndex": 0,
-        "Text": "Full name:",
-        "Name": "lblFullName"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblFullName.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblFullName.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblFullName.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblFullName.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblFullName.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "txtFullName",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Enabled": false,
-        "Location": {
-          "kind": "Point",
-          "x": 88,
-          "y": 12
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 200,
-          "height": 20
-        },
-        "TabIndex": 1,
-        "Name": "txtFullName"
-      },
-      "resources": [
-        {
-          "property": "Enabled",
-          "resource_key": "txtFullName.Enabled",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "txtFullName.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "txtFullName.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "txtFullName.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
+      "properties": {},
+      "resources": []
     },
     {
       "name": "lblEmail",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "UserPassBox",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "AutoSize": true,
         "Location": {
@@ -448,9 +94,9 @@
     {
       "name": "txtEmail",
       "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "UserPassBox",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
         "Enabled": false,
         "Location": {
@@ -490,19 +136,426 @@
       ]
     },
     {
-      "name": "AutoScaleDimensions",
-      "type": "System.Drawing.SizeF",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
+      "name": "lblFullName",
+      "type": "System.Windows.Forms.Label",
+      "parent": "UserPassBox",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 16
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 55,
+          "height": 13
+        },
+        "TabIndex": 0,
+        "Text": "Full name:",
+        "Name": "lblFullName"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblFullName.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblFullName.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblFullName.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblFullName.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblFullName.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtFullName",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "UserPassBox",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Enabled": false,
+        "Location": {
+          "kind": "Point",
+          "x": 88,
+          "y": 12
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 200,
+          "height": 20
+        },
+        "TabIndex": 1,
+        "Name": "txtFullName"
+      },
+      "resources": [
+        {
+          "property": "Enabled",
+          "resource_key": "txtFullName.Enabled",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "txtFullName.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtFullName.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtFullName.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblPassword",
+      "type": "System.Windows.Forms.Label",
+      "parent": "UserPassBox",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 88
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 56,
+          "height": 13
+        },
+        "TabIndex": 6,
+        "Text": "Password:",
+        "Name": "lblPassword"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblPassword.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblPassword.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblPassword.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblPassword.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblPassword.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblUserName",
+      "type": "System.Windows.Forms.Label",
+      "parent": "UserPassBox",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 64
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 61,
+          "height": 13
+        },
+        "TabIndex": 4,
+        "Text": "User name:",
+        "Name": "lblUserName"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblUserName.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblUserName.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblUserName.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblUserName.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblUserName.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtPassword",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "UserPassBox",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 88,
+          "y": 84
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 200,
+          "height": 20
+        },
+        "TabIndex": 7,
+        "Name": "txtPassword",
+        "UseSystemPasswordChar": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtPassword.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtPassword.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtPassword.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtUserName",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "UserPassBox",
+      "parent_slot": "Controls",
+      "child_index": 7,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 88,
+          "y": 60
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 200,
+          "height": 20
+        },
+        "TabIndex": 5,
+        "Name": "txtUserName"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtUserName.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtUserName.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtUserName.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnCancel",
+      "type": "System.Windows.Forms.Button",
+      "parent": "UserPassBox",
+      "parent_slot": "Controls",
+      "child_index": 8,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 216,
+          "y": 112
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 72,
+          "height": 23
+        },
+        "TabIndex": 9,
+        "Text": "Cancel",
+        "Name": "btnCancel",
+        "UseCompatibleTextRendering": true,
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnCancel.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCancel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCancel.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCancel.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnOK",
+      "type": "System.Windows.Forms.Button",
+      "parent": "UserPassBox",
+      "parent_slot": "Controls",
+      "child_index": 9,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 136,
+          "y": 112
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 72,
+          "height": 23
+        },
+        "TabIndex": 8,
+        "Text": "OK",
+        "Name": "btnOK",
+        "UseCompatibleTextRendering": true,
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnOK.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnOK.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnOK.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnOK.Text",
+          "source": "ApplyResources"
+        }
+      ]
     }
   ],
   "tree": {
     "name": "UserPassBox",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "lblEmail",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "txtEmail",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblFullName",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "txtFullName",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblPassword",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblUserName",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "txtPassword",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "txtUserName",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "btnCancel",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnOK",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "btnOK.Text": "OK",

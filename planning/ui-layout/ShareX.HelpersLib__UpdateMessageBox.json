@@ -27,157 +27,11 @@
   ],
   "controls": [
     {
-      "name": "lblText",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Font": "Arial, 12pt",
-        "Location": {
-          "kind": "Point",
-          "x": 13,
-          "y": 16
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 368,
-          "height": 96
-        },
-        "TabIndex": 2,
-        "Name": "lblText"
-      },
-      "resources": [
-        {
-          "property": "Font",
-          "resource_key": "lblText.Font",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblText.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblText.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblText.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnNo",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Font": "Arial, 12pt",
-        "Location": {
-          "kind": "Point",
-          "x": 272,
-          "y": 176
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 112,
-          "height": 32
-        },
-        "TabIndex": 1,
-        "Text": "No",
-        "Name": "btnNo",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Font",
-          "resource_key": "btnNo.Font",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnNo.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnNo.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnNo.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnNo.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnYes",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Font": "Arial, 12pt",
-        "Location": {
-          "kind": "Point",
-          "x": 152,
-          "y": 176
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 112,
-          "height": 32
-        },
-        "TabIndex": 0,
-        "Text": "Yes",
-        "Name": "btnYes",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Font",
-          "resource_key": "btnYes.Font",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnYes.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnYes.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnYes.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnYes.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "lblViewChangelog",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "UpdateMessageBox",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "AutoSize": true,
         "Font": "Arial, 12pt, style=Underline",
@@ -231,12 +85,181 @@
           "source": "ApplyResources"
         }
       ]
+    },
+    {
+      "name": "btnNo",
+      "type": "System.Windows.Forms.Button",
+      "parent": "UpdateMessageBox",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Font": "Arial, 12pt",
+        "Location": {
+          "kind": "Point",
+          "x": 272,
+          "y": 176
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 112,
+          "height": 32
+        },
+        "TabIndex": 1,
+        "Text": "No",
+        "Name": "btnNo",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "btnNo.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnNo.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnNo.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnNo.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnNo.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnYes",
+      "type": "System.Windows.Forms.Button",
+      "parent": "UpdateMessageBox",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Font": "Arial, 12pt",
+        "Location": {
+          "kind": "Point",
+          "x": 152,
+          "y": 176
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 112,
+          "height": 32
+        },
+        "TabIndex": 0,
+        "Text": "Yes",
+        "Name": "btnYes",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "btnYes.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnYes.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnYes.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnYes.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnYes.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblText",
+      "type": "System.Windows.Forms.Label",
+      "parent": "UpdateMessageBox",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Font": "Arial, 12pt",
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 16
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 368,
+          "height": 96
+        },
+        "TabIndex": 2,
+        "Name": "lblText"
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "lblText.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblText.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblText.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblText.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
     }
   ],
   "tree": {
     "name": "UpdateMessageBox",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "lblViewChangelog",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "btnNo",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnYes",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "lblText",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "btnNo.Text": "No",

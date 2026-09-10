@@ -31,61 +31,6 @@
       "resources": []
     },
     {
-      "name": "btnEdit",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Top, Right",
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 230,
-          "y": 0
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 27,
-          "height": 27
-        },
-        "TabIndex": 1,
-        "Image": {
-          "kind": "expr",
-          "raw": "global::ShareX.Properties.Resources.gear"
-        },
-        "Name": "btnEdit",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "btnEdit.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "btnEdit.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnEdit.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnEdit.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnEdit.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "cmsTask",
       "type": "System.Windows.Forms.ContextMenuStrip",
       "parent": null,
@@ -108,11 +53,78 @@
       ]
     },
     {
+      "name": "btnHotkey",
+      "type": "System.Windows.Forms.Button",
+      "parent": "HotkeySelectionControl",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Anchor": "Top, Right",
+        "ImageAlign": "MiddleRight",
+        "Location": {
+          "kind": "Point",
+          "x": 261,
+          "y": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 219,
+          "height": 27
+        },
+        "TabIndex": 2,
+        "Text": "Hotkey",
+        "TextImageRelation": "TextBeforeImage",
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.Properties.Resources.status_away"
+        },
+        "Name": "btnHotkey",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnHotkey.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImageAlign",
+          "resource_key": "btnHotkey.ImageAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnHotkey.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnHotkey.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnHotkey.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnHotkey.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextImageRelation",
+          "resource_key": "btnHotkey.TextImageRelation",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
       "name": "btnTask",
       "type": "HelpersLib.MenuButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "HotkeySelectionControl",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
         "Anchor": "Top, Left, Right",
         "ImageAlign": "MiddleLeft",
@@ -204,68 +216,56 @@
       ]
     },
     {
-      "name": "btnHotkey",
+      "name": "btnEdit",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "HotkeySelectionControl",
+      "parent_slot": "Controls",
+      "child_index": 2,
       "properties": {
         "Anchor": "Top, Right",
-        "ImageAlign": "MiddleRight",
+        "ImeMode": "NoControl",
         "Location": {
           "kind": "Point",
-          "x": 261,
+          "x": 230,
           "y": 0
         },
         "Size": {
           "kind": "Size",
-          "width": 219,
+          "width": 27,
           "height": 27
         },
-        "TabIndex": 2,
-        "Text": "Hotkey",
-        "TextImageRelation": "TextBeforeImage",
+        "TabIndex": 1,
         "Image": {
           "kind": "expr",
-          "raw": "global::ShareX.Properties.Resources.status_away"
+          "raw": "global::ShareX.Properties.Resources.gear"
         },
-        "Name": "btnHotkey",
+        "Name": "btnEdit",
         "UseVisualStyleBackColor": true
       },
       "resources": [
         {
           "property": "Anchor",
-          "resource_key": "btnHotkey.Anchor",
+          "resource_key": "btnEdit.Anchor",
           "source": "ApplyResources"
         },
         {
-          "property": "ImageAlign",
-          "resource_key": "btnHotkey.ImageAlign",
+          "property": "ImeMode",
+          "resource_key": "btnEdit.ImeMode",
           "source": "ApplyResources"
         },
         {
           "property": "Location",
-          "resource_key": "btnHotkey.Location",
+          "resource_key": "btnEdit.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "btnHotkey.Size",
+          "resource_key": "btnEdit.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "btnHotkey.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnHotkey.Text",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextImageRelation",
-          "resource_key": "btnHotkey.TextImageRelation",
+          "resource_key": "btnEdit.TabIndex",
           "source": "ApplyResources"
         }
       ]
@@ -274,7 +274,25 @@
   "tree": {
     "name": "HotkeySelectionControl",
     "type": "UserControl",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "btnHotkey",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnTask",
+          "type": "HelpersLib.MenuButton",
+          "slots": {}
+        },
+        {
+          "name": "btnEdit",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "btnTask.Text": "Task...",

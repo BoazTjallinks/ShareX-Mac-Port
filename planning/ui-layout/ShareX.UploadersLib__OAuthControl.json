@@ -31,9 +31,9 @@
     {
       "name": "gbUserAccount",
       "type": "System.Windows.Forms.GroupBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "OAuthControl",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "Location": {
           "kind": "Point",
@@ -74,55 +74,11 @@
       ]
     },
     {
-      "name": "flpStatus",
-      "type": "System.Windows.Forms.FlowLayoutPanel",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 13,
-          "y": 136
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 299,
-          "height": 20
-        },
-        "TabIndex": 8,
-        "WrapContents": false,
-        "Name": "flpStatus"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "flpStatus.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "flpStatus.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "flpStatus.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "WrapContents",
-          "resource_key": "flpStatus.WrapContents",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "lblStatus",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "flpStatus",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "AutoSize": true,
         "Location": {
@@ -182,9 +138,9 @@
     {
       "name": "lblStatusValue",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "flpStatus",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
         "AutoSize": true,
         "Location": {
@@ -236,11 +192,55 @@
       ]
     },
     {
+      "name": "flpStatus",
+      "type": "System.Windows.Forms.FlowLayoutPanel",
+      "parent": "gbUserAccount",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 136
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 299,
+          "height": 20
+        },
+        "TabIndex": 8,
+        "WrapContents": false,
+        "Name": "flpStatus"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "flpStatus.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "flpStatus.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "flpStatus.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "WrapContents",
+          "resource_key": "flpStatus.WrapContents",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
       "name": "btnClearAuthorization",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "gbUserAccount",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
         "Enabled": false,
         "Location": {
@@ -307,9 +307,9 @@
     {
       "name": "btnRefreshAuthorization",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "gbUserAccount",
+      "parent_slot": "Controls",
+      "child_index": 2,
       "properties": {
         "Enabled": false,
         "Location": {
@@ -376,9 +376,9 @@
     {
       "name": "btnOpenAuthorizePage",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "gbUserAccount",
+      "parent_slot": "Controls",
+      "child_index": 3,
       "properties": {
         "Location": {
           "kind": "Point",
@@ -439,9 +439,9 @@
     {
       "name": "lblVerificationCode",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "gbUserAccount",
+      "parent_slot": "Controls",
+      "child_index": 4,
       "properties": {
         "AutoSize": true,
         "Location": {
@@ -489,9 +489,9 @@
     {
       "name": "btnCompleteAuthorization",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "gbUserAccount",
+      "parent_slot": "Controls",
+      "child_index": 5,
       "properties": {
         "Enabled": false,
         "Location": {
@@ -558,9 +558,9 @@
     {
       "name": "txtVerificationCode",
       "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "gbUserAccount",
+      "parent_slot": "Controls",
+      "child_index": 6,
       "properties": {
         "Location": {
           "kind": "Point",
@@ -597,7 +597,66 @@
   "tree": {
     "name": "OAuthControl",
     "type": "UserControl",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "gbUserAccount",
+          "type": "System.Windows.Forms.GroupBox",
+          "slots": {
+            "Controls": [
+              {
+                "name": "flpStatus",
+                "type": "System.Windows.Forms.FlowLayoutPanel",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "lblStatus",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    },
+                    {
+                      "name": "lblStatusValue",
+                      "type": "System.Windows.Forms.Label",
+                      "slots": {}
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "btnClearAuthorization",
+                "type": "System.Windows.Forms.Button",
+                "slots": {}
+              },
+              {
+                "name": "btnRefreshAuthorization",
+                "type": "System.Windows.Forms.Button",
+                "slots": {}
+              },
+              {
+                "name": "btnOpenAuthorizePage",
+                "type": "System.Windows.Forms.Button",
+                "slots": {}
+              },
+              {
+                "name": "lblVerificationCode",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "btnCompleteAuthorization",
+                "type": "System.Windows.Forms.Button",
+                "slots": {}
+              },
+              {
+                "name": "txtVerificationCode",
+                "type": "System.Windows.Forms.TextBox",
+                "slots": {}
+              }
+            ]
+          }
+        }
+      ]
+    }
   },
   "strings": {
     "lblStatus.Text": "Status:",

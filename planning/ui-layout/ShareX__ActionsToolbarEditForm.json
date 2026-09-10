@@ -35,100 +35,6 @@
       "resources": []
     },
     {
-      "name": "btnRemove",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 128,
-          "y": 8
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 112,
-          "height": 23
-        },
-        "TabIndex": 1,
-        "Text": "Remove",
-        "Name": "btnRemove",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnRemove.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnRemove.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnRemove.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnRemove.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnAdd",
-      "type": "HelpersLib.MenuButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 8
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 115,
-          "height": 23
-        },
-        "TabIndex": 2,
-        "Text": "Add",
-        "Menu": {
-          "kind": "expr",
-          "raw": "this.cmsAction"
-        },
-        "Name": "btnAdd",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnAdd.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnAdd.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnAdd.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnAdd.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "cmsAction",
       "type": "System.Windows.Forms.ContextMenuStrip",
       "parent": null,
@@ -146,75 +52,6 @@
         {
           "property": "Size",
           "resource_key": "cmsAction.Size",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lvActions",
-      "type": "HelpersLib.MyListView",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AllowDrop": true,
-        "AllowItemDrag": true,
-        "Anchor": "Top, Bottom, Left, Right",
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 40
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 448,
-          "height": 368
-        },
-        "TabIndex": 3,
-        "AutoFillColumn": true,
-        "Columns.literal_items": [
-          {
-            "kind": "expr",
-            "raw": "this.chAction"
-          }
-        ],
-        "FullRowSelect": true,
-        "HeaderStyle": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.ColumnHeaderStyle.None"
-        },
-        "HideSelection": false,
-        "MultiSelect": false,
-        "Name": "lvActions",
-        "SmallImageList": {
-          "kind": "expr",
-          "raw": "this.ilMain"
-        },
-        "UseCompatibleStateImageBehavior": false,
-        "View": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.View.Details"
-        }
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "lvActions.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lvActions.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lvActions.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lvActions.TabIndex",
           "source": "ApplyResources"
         }
       ]
@@ -264,12 +101,193 @@
           "source": "ApplyResources"
         }
       ]
+    },
+    {
+      "name": "lvActions",
+      "type": "HelpersLib.MyListView",
+      "parent": "ActionsToolbarEditForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "AllowDrop": true,
+        "AllowItemDrag": true,
+        "Anchor": "Top, Bottom, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 40
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 448,
+          "height": 368
+        },
+        "TabIndex": 3,
+        "AutoFillColumn": true,
+        "Columns.literal_items": [
+          {
+            "kind": "ident",
+            "raw": "chAction"
+          }
+        ],
+        "FullRowSelect": true,
+        "HeaderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ColumnHeaderStyle.None"
+        },
+        "HideSelection": false,
+        "MultiSelect": false,
+        "Name": "lvActions",
+        "SmallImageList": {
+          "kind": "expr",
+          "raw": "this.ilMain"
+        },
+        "UseCompatibleStateImageBehavior": false,
+        "View": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.View.Details"
+        }
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "lvActions.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lvActions.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lvActions.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lvActions.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnAdd",
+      "type": "HelpersLib.MenuButton",
+      "parent": "ActionsToolbarEditForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 115,
+          "height": 23
+        },
+        "TabIndex": 2,
+        "Text": "Add",
+        "Menu": {
+          "kind": "expr",
+          "raw": "this.cmsAction"
+        },
+        "Name": "btnAdd",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnAdd.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnAdd.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnAdd.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnAdd.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnRemove",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ActionsToolbarEditForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 128,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 112,
+          "height": 23
+        },
+        "TabIndex": 1,
+        "Text": "Remove",
+        "Name": "btnRemove",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnRemove.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnRemove.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnRemove.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnRemove.Text",
+          "source": "ApplyResources"
+        }
+      ]
     }
   ],
   "tree": {
     "name": "ActionsToolbarEditForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "lvActions",
+          "type": "HelpersLib.MyListView",
+          "slots": {}
+        },
+        {
+          "name": "btnAdd",
+          "type": "HelpersLib.MenuButton",
+          "slots": {}
+        },
+        {
+          "name": "btnRemove",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "btnRemove.Text": "Remove",

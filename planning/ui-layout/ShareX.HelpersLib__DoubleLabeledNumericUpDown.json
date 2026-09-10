@@ -20,11 +20,29 @@
   ],
   "controls": [
     {
-      "name": "flpMain",
-      "type": "System.Windows.Forms.FlowLayoutPanel",
+      "name": "AutoScaleDimensions",
+      "type": "System.Drawing.SizeF",
       "parent": null,
       "parent_slot": null,
       "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "Size",
+      "type": "System.Drawing.Size",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "flpMain",
+      "type": "System.Windows.Forms.FlowLayoutPanel",
+      "parent": "DoubleLabeledNumericUpDown",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "AutoSize": true,
         "AutoSizeMode": {
@@ -57,9 +75,9 @@
     {
       "name": "lblText",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "flpMain",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "Anchor": {
           "kind": "expr",
@@ -92,9 +110,9 @@
     {
       "name": "nudValue",
       "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "flpMain",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
         "Anchor": {
           "kind": "expr",
@@ -129,9 +147,9 @@
     {
       "name": "lblText2",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "flpMain",
+      "parent_slot": "Controls",
+      "child_index": 2,
       "properties": {
         "Anchor": {
           "kind": "expr",
@@ -164,9 +182,9 @@
     {
       "name": "nudValue2",
       "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "flpMain",
+      "parent_slot": "Controls",
+      "child_index": 3,
       "properties": {
         "Anchor": {
           "kind": "expr",
@@ -197,30 +215,43 @@
         }
       },
       "resources": []
-    },
-    {
-      "name": "AutoScaleDimensions",
-      "type": "System.Drawing.SizeF",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
-      "name": "Size",
-      "type": "System.Drawing.Size",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
     }
   ],
   "tree": {
     "name": "DoubleLabeledNumericUpDown",
     "type": "UserControl",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "flpMain",
+          "type": "System.Windows.Forms.FlowLayoutPanel",
+          "slots": {
+            "Controls": [
+              {
+                "name": "lblText",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "nudValue",
+                "type": "System.Windows.Forms.NumericUpDown",
+                "slots": {}
+              },
+              {
+                "name": "lblText2",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "nudValue2",
+                "type": "System.Windows.Forms.NumericUpDown",
+                "slots": {}
+              }
+            ]
+          }
+        }
+      ]
+    }
   },
   "strings": {},
   "binary_resources": [],

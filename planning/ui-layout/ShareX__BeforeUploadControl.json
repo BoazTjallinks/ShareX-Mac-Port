@@ -16,11 +16,29 @@
   ],
   "controls": [
     {
-      "name": "flp",
-      "type": "System.Windows.Forms.FlowLayoutPanel",
+      "name": "AutoScaleDimensions",
+      "type": "System.Drawing.SizeF",
       "parent": null,
       "parent_slot": null,
       "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "Size",
+      "type": "System.Drawing.Size",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "flp",
+      "type": "System.Windows.Forms.FlowLayoutPanel",
+      "parent": "BeforeUploadControl",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "AutoScroll": true,
         "Dock": {
@@ -52,30 +70,20 @@
         "TabIndex": 0
       },
       "resources": []
-    },
-    {
-      "name": "AutoScaleDimensions",
-      "type": "System.Drawing.SizeF",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
-      "name": "Size",
-      "type": "System.Drawing.Size",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
     }
   ],
   "tree": {
     "name": "BeforeUploadControl",
     "type": "UserControl",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "flp",
+          "type": "System.Windows.Forms.FlowLayoutPanel",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {},
   "binary_resources": [],

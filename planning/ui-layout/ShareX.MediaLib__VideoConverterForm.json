@@ -46,712 +46,149 @@
   ],
   "controls": [
     {
-      "name": "lblInputFilePath",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "cbVideoQualityUseBitrate",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "VideoConverterForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "AutoSize": true,
         "Location": {
           "kind": "Point",
-          "x": 13,
-          "y": 16
+          "x": 16,
+          "y": 136
         },
         "Size": {
           "kind": "Size",
-          "width": 74,
-          "height": 13
+          "width": 77,
+          "height": 17
         },
-        "TabIndex": 0,
-        "Text": "Input file path:",
-        "Name": "lblInputFilePath"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblInputFilePath.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblInputFilePath.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblInputFilePath.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblInputFilePath.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblInputFilePath.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "txtInputFilePath",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 160,
-          "y": 12
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 344,
-          "height": 20
-        },
-        "TabIndex": 1,
-        "Name": "txtInputFilePath"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "txtInputFilePath.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "txtInputFilePath.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "txtInputFilePath.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnInputFilePathBrowse",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 512,
-          "y": 11
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 32,
-          "height": 23
-        },
-        "TabIndex": 2,
-        "Text": "...",
-        "Name": "btnInputFilePathBrowse",
+        "TabIndex": 17,
+        "Text": "Use bitrate",
+        "Name": "cbVideoQualityUseBitrate",
         "UseVisualStyleBackColor": true
       },
       "resources": [
         {
+          "property": "AutoSize",
+          "resource_key": "cbVideoQualityUseBitrate.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
           "property": "Location",
-          "resource_key": "btnInputFilePathBrowse.Location",
+          "resource_key": "cbVideoQualityUseBitrate.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "btnInputFilePathBrowse.Size",
+          "resource_key": "cbVideoQualityUseBitrate.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "btnInputFilePathBrowse.TabIndex",
+          "resource_key": "cbVideoQualityUseBitrate.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "btnInputFilePathBrowse.Text",
+          "resource_key": "cbVideoQualityUseBitrate.Text",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "txtOutputFolder",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 160,
-          "y": 36
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 344,
-          "height": 20
-        },
-        "TabIndex": 4,
-        "Name": "txtOutputFolder"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "txtOutputFolder.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "txtOutputFolder.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "txtOutputFolder.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblOutputFolder",
+      "name": "lblVideoQualityBitrateHint",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "VideoConverterForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
         "AutoSize": true,
         "Location": {
           "kind": "Point",
-          "x": 13,
-          "y": 40
+          "x": 245,
+          "y": 116
         },
         "Size": {
           "kind": "Size",
-          "width": 71,
+          "width": 34,
           "height": 13
         },
-        "TabIndex": 3,
-        "Text": "Output folder:",
-        "Name": "lblOutputFolder"
+        "TabIndex": 16,
+        "Text": "kbps",
+        "Name": "lblVideoQualityBitrateHint"
       },
       "resources": [
         {
           "property": "AutoSize",
-          "resource_key": "lblOutputFolder.AutoSize",
+          "resource_key": "lblVideoQualityBitrateHint.AutoSize",
           "source": "ApplyResources"
         },
         {
           "property": "Location",
-          "resource_key": "lblOutputFolder.Location",
+          "resource_key": "lblVideoQualityBitrateHint.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "lblOutputFolder.Size",
+          "resource_key": "lblVideoQualityBitrateHint.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "lblOutputFolder.TabIndex",
+          "resource_key": "lblVideoQualityBitrateHint.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "lblOutputFolder.Text",
+          "resource_key": "lblVideoQualityBitrateHint.Text",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "btnOutputFolderBrowse",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 512,
-          "y": 35
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 32,
-          "height": 23
-        },
-        "TabIndex": 5,
-        "Text": "...",
-        "Name": "btnOutputFolderBrowse",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnOutputFolderBrowse.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnOutputFolderBrowse.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnOutputFolderBrowse.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnOutputFolderBrowse.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblOutputFileName",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 13,
-          "y": 64
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 87,
-          "height": 13
-        },
-        "TabIndex": 6,
-        "Text": "Output file name:",
-        "Name": "lblOutputFileName"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblOutputFileName.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblOutputFileName.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblOutputFileName.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblOutputFileName.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblOutputFileName.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "txtOutputFileName",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "nudVideoQualityBitrate",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "VideoConverterForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
       "properties": {
         "Location": {
           "kind": "Point",
           "x": 160,
-          "y": 60
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 344,
-          "height": 20
-        },
-        "TabIndex": 7,
-        "Name": "txtOutputFileName"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "txtOutputFileName.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "txtOutputFileName.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "txtOutputFileName.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "cbVideoEncoder",
-      "type": "System.Windows.Forms.ComboBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "DropDownStyle": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
-        },
-        "FormattingEnabled": true,
-        "Location": {
-          "kind": "Point",
-          "x": 160,
-          "y": 84
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 144,
-          "height": 21
-        },
-        "TabIndex": 9,
-        "Name": "cbVideoEncoder"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "cbVideoEncoder.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "cbVideoEncoder.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "cbVideoEncoder.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblVideoQuality",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 13,
           "y": 112
         },
         "Size": {
           "kind": "Size",
-          "width": 70,
-          "height": 13
+          "width": 80,
+          "height": 20
         },
-        "TabIndex": 10,
-        "Text": "Video quality:",
-        "Name": "lblVideoQuality"
+        "TabIndex": 15,
+        "TextAlign": "Center",
+        "Maximum": 100000,
+        "Minimum": 100,
+        "Name": "nudVideoQualityBitrate",
+        "Value": 3000
       },
       "resources": [
         {
-          "property": "AutoSize",
-          "resource_key": "lblVideoQuality.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
           "property": "Location",
-          "resource_key": "lblVideoQuality.Location",
+          "resource_key": "nudVideoQualityBitrate.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "lblVideoQuality.Size",
+          "resource_key": "nudVideoQualityBitrate.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "lblVideoQuality.TabIndex",
+          "resource_key": "nudVideoQualityBitrate.TabIndex",
           "source": "ApplyResources"
         },
         {
-          "property": "Text",
-          "resource_key": "lblVideoQuality.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnEncode",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Font": "Microsoft Sans Serif, 9.75pt",
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 296
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 184,
-          "height": 32
-        },
-        "TabIndex": 21,
-        "Text": "Start encoding",
-        "Name": "btnEncode",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Font",
-          "resource_key": "btnEncode.Font",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnEncode.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnEncode.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnEncode.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnEncode.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "txtArguments",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Font": "Verdana, 9.75pt",
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 184
-        },
-        "Multiline": true,
-        "ScrollBars": "Both",
-        "Size": {
-          "kind": "Size",
-          "width": 528,
-          "height": 72
-        },
-        "TabIndex": 19,
-        "Name": "txtArguments"
-      },
-      "resources": [
-        {
-          "property": "Font",
-          "resource_key": "txtArguments.Font",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "txtArguments.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Multiline",
-          "resource_key": "txtArguments.Multiline",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ScrollBars",
-          "resource_key": "txtArguments.ScrollBars",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "txtArguments.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "txtArguments.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "cbAutoOpenFolder",
-      "type": "System.Windows.Forms.CheckBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 264
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 152,
-          "height": 17
-        },
-        "TabIndex": 20,
-        "Text": "Open folder after encoding",
-        "Name": "cbAutoOpenFolder",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "cbAutoOpenFolder.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "cbAutoOpenFolder.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "cbAutoOpenFolder.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "cbAutoOpenFolder.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "cbAutoOpenFolder.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "pbProgress",
-      "type": "HelpersLib.BlackStyleProgressBar",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Font": "Arial, 11.25pt",
-        "Location": {
-          "kind": "Point",
-          "x": 208,
-          "y": 296
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 336,
-          "height": 32
-        },
-        "TabIndex": 22,
-        "Text": "",
-        "ForeColor": {
-          "kind": "expr",
-          "raw": "System.Drawing.Color.White"
-        },
-        "Name": "pbProgress",
-        "ShowPercentageText": true
-      },
-      "resources": [
-        {
-          "property": "Font",
-          "resource_key": "pbProgress.Font",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "pbProgress.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "pbProgress.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "pbProgress.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "pbProgress.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "cbUseCustomArguments",
-      "type": "System.Windows.Forms.CheckBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 160
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 137,
-          "height": 17
-        },
-        "TabIndex": 18,
-        "Text": "Use custom arguments:",
-        "Name": "cbUseCustomArguments",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "cbUseCustomArguments.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "cbUseCustomArguments.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "cbUseCustomArguments.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "cbUseCustomArguments.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "cbUseCustomArguments.Text",
+          "property": "TextAlign",
+          "resource_key": "nudVideoQualityBitrate.TextAlign",
           "source": "ApplyResources"
         }
       ]
@@ -759,9 +196,9 @@
     {
       "name": "lblVideoEncoder",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "VideoConverterForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
       "properties": {
         "AutoSize": true,
         "Location": {
@@ -807,69 +244,11 @@
       ]
     },
     {
-      "name": "tbVideoQuality",
-      "type": "System.Windows.Forms.TrackBar",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": false,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 153,
-          "y": 112
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 359,
-          "height": 24
-        },
-        "TabIndex": 11,
-        "BackColor": {
-          "kind": "expr",
-          "raw": "System.Drawing.SystemColors.Window"
-        },
-        "Name": "tbVideoQuality",
-        "TickStyle": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.TickStyle.None"
-        }
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "tbVideoQuality.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "tbVideoQuality.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "tbVideoQuality.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "tbVideoQuality.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "tbVideoQuality.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "lblVideoQualityValue",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "VideoConverterForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
       "properties": {
         "AutoSize": true,
         "ImeMode": "NoControl",
@@ -921,11 +300,113 @@
       ]
     },
     {
+      "name": "cbUseCustomArguments",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "VideoConverterForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 160
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 137,
+          "height": 17
+        },
+        "TabIndex": 18,
+        "Text": "Use custom arguments:",
+        "Name": "cbUseCustomArguments",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbUseCustomArguments.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbUseCustomArguments.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbUseCustomArguments.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbUseCustomArguments.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbUseCustomArguments.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbAutoOpenFolder",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "VideoConverterForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 264
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 152,
+          "height": 17
+        },
+        "TabIndex": 20,
+        "Text": "Open folder after encoding",
+        "Name": "cbAutoOpenFolder",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbAutoOpenFolder.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbAutoOpenFolder.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbAutoOpenFolder.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbAutoOpenFolder.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbAutoOpenFolder.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
       "name": "lblVideoQualityHigher",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "VideoConverterForm",
+      "parent_slot": "Controls",
+      "child_index": 7,
       "properties": {
         "ImeMode": "NoControl",
         "Location": {
@@ -979,9 +460,9 @@
     {
       "name": "lblVideoQualityLower",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "VideoConverterForm",
+      "parent_slot": "Controls",
+      "child_index": 8,
       "properties": {
         "ImeMode": "NoControl",
         "Location": {
@@ -1027,149 +508,668 @@
       ]
     },
     {
-      "name": "nudVideoQualityBitrate",
-      "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "txtOutputFileName",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "VideoConverterForm",
+      "parent_slot": "Controls",
+      "child_index": 9,
       "properties": {
         "Location": {
           "kind": "Point",
           "x": 160,
+          "y": 60
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 344,
+          "height": 20
+        },
+        "TabIndex": 7,
+        "Name": "txtOutputFileName"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtOutputFileName.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtOutputFileName.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtOutputFileName.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblOutputFileName",
+      "type": "System.Windows.Forms.Label",
+      "parent": "VideoConverterForm",
+      "parent_slot": "Controls",
+      "child_index": 10,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 64
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 87,
+          "height": 13
+        },
+        "TabIndex": 6,
+        "Text": "Output file name:",
+        "Name": "lblOutputFileName"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblOutputFileName.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblOutputFileName.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblOutputFileName.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblOutputFileName.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblOutputFileName.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tbVideoQuality",
+      "type": "System.Windows.Forms.TrackBar",
+      "parent": "VideoConverterForm",
+      "parent_slot": "Controls",
+      "child_index": 11,
+      "properties": {
+        "AutoSize": false,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 153,
           "y": 112
         },
         "Size": {
           "kind": "Size",
-          "width": 80,
-          "height": 20
+          "width": 359,
+          "height": 24
         },
-        "TabIndex": 15,
-        "TextAlign": "Center",
-        "Maximum": 100000,
-        "Minimum": 100,
-        "Name": "nudVideoQualityBitrate",
-        "Value": 3000
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "nudVideoQualityBitrate.Location",
-          "source": "ApplyResources"
+        "TabIndex": 11,
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
         },
-        {
-          "property": "Size",
-          "resource_key": "nudVideoQualityBitrate.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "nudVideoQualityBitrate.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "nudVideoQualityBitrate.TextAlign",
-          "source": "ApplyResources"
+        "Name": "tbVideoQuality",
+        "TickStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.TickStyle.None"
         }
-      ]
-    },
-    {
-      "name": "lblVideoQualityBitrateHint",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 245,
-          "y": 116
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 34,
-          "height": 13
-        },
-        "TabIndex": 16,
-        "Text": "kbps",
-        "Name": "lblVideoQualityBitrateHint"
       },
       "resources": [
         {
           "property": "AutoSize",
-          "resource_key": "lblVideoQualityBitrateHint.AutoSize",
+          "resource_key": "tbVideoQuality.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "tbVideoQuality.ImeMode",
           "source": "ApplyResources"
         },
         {
           "property": "Location",
-          "resource_key": "lblVideoQualityBitrateHint.Location",
+          "resource_key": "tbVideoQuality.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "lblVideoQualityBitrateHint.Size",
+          "resource_key": "tbVideoQuality.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "lblVideoQualityBitrateHint.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblVideoQualityBitrateHint.Text",
+          "resource_key": "tbVideoQuality.TabIndex",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "cbVideoQualityUseBitrate",
-      "type": "System.Windows.Forms.CheckBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "btnOutputFolderBrowse",
+      "type": "System.Windows.Forms.Button",
+      "parent": "VideoConverterForm",
+      "parent_slot": "Controls",
+      "child_index": 12,
       "properties": {
-        "AutoSize": true,
         "Location": {
           "kind": "Point",
-          "x": 16,
-          "y": 136
+          "x": 512,
+          "y": 35
         },
         "Size": {
           "kind": "Size",
-          "width": 77,
-          "height": 17
+          "width": 32,
+          "height": 23
         },
-        "TabIndex": 17,
-        "Text": "Use bitrate",
-        "Name": "cbVideoQualityUseBitrate",
+        "TabIndex": 5,
+        "Text": "...",
+        "Name": "btnOutputFolderBrowse",
         "UseVisualStyleBackColor": true
       },
       "resources": [
         {
-          "property": "AutoSize",
-          "resource_key": "cbVideoQualityUseBitrate.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
           "property": "Location",
-          "resource_key": "cbVideoQualityUseBitrate.Location",
+          "resource_key": "btnOutputFolderBrowse.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "cbVideoQualityUseBitrate.Size",
+          "resource_key": "btnOutputFolderBrowse.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "cbVideoQualityUseBitrate.TabIndex",
+          "resource_key": "btnOutputFolderBrowse.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "cbVideoQualityUseBitrate.Text",
+          "resource_key": "btnOutputFolderBrowse.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbVideoEncoder",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "VideoConverterForm",
+      "parent_slot": "Controls",
+      "child_index": 13,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 160,
+          "y": 84
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 144,
+          "height": 21
+        },
+        "TabIndex": 9,
+        "Name": "cbVideoEncoder"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbVideoEncoder.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbVideoEncoder.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbVideoEncoder.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblOutputFolder",
+      "type": "System.Windows.Forms.Label",
+      "parent": "VideoConverterForm",
+      "parent_slot": "Controls",
+      "child_index": 14,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 40
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 71,
+          "height": 13
+        },
+        "TabIndex": 3,
+        "Text": "Output folder:",
+        "Name": "lblOutputFolder"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblOutputFolder.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblOutputFolder.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblOutputFolder.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblOutputFolder.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblOutputFolder.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblVideoQuality",
+      "type": "System.Windows.Forms.Label",
+      "parent": "VideoConverterForm",
+      "parent_slot": "Controls",
+      "child_index": 15,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 112
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 70,
+          "height": 13
+        },
+        "TabIndex": 10,
+        "Text": "Video quality:",
+        "Name": "lblVideoQuality"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblVideoQuality.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblVideoQuality.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblVideoQuality.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblVideoQuality.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblVideoQuality.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtOutputFolder",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "VideoConverterForm",
+      "parent_slot": "Controls",
+      "child_index": 16,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 160,
+          "y": 36
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 344,
+          "height": 20
+        },
+        "TabIndex": 4,
+        "Name": "txtOutputFolder"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtOutputFolder.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtOutputFolder.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtOutputFolder.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnInputFilePathBrowse",
+      "type": "System.Windows.Forms.Button",
+      "parent": "VideoConverterForm",
+      "parent_slot": "Controls",
+      "child_index": 17,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 512,
+          "y": 11
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 32,
+          "height": 23
+        },
+        "TabIndex": 2,
+        "Text": "...",
+        "Name": "btnInputFilePathBrowse",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnInputFilePathBrowse.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnInputFilePathBrowse.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnInputFilePathBrowse.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnInputFilePathBrowse.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtInputFilePath",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "VideoConverterForm",
+      "parent_slot": "Controls",
+      "child_index": 18,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 160,
+          "y": 12
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 344,
+          "height": 20
+        },
+        "TabIndex": 1,
+        "Name": "txtInputFilePath"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtInputFilePath.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtInputFilePath.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtInputFilePath.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblInputFilePath",
+      "type": "System.Windows.Forms.Label",
+      "parent": "VideoConverterForm",
+      "parent_slot": "Controls",
+      "child_index": 19,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 16
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 74,
+          "height": 13
+        },
+        "TabIndex": 0,
+        "Text": "Input file path:",
+        "Name": "lblInputFilePath"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblInputFilePath.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblInputFilePath.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblInputFilePath.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblInputFilePath.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblInputFilePath.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnEncode",
+      "type": "System.Windows.Forms.Button",
+      "parent": "VideoConverterForm",
+      "parent_slot": "Controls",
+      "child_index": 20,
+      "properties": {
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 296
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 184,
+          "height": 32
+        },
+        "TabIndex": 21,
+        "Text": "Start encoding",
+        "Name": "btnEncode",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "btnEncode.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnEncode.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnEncode.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnEncode.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnEncode.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pbProgress",
+      "type": "HelpersLib.BlackStyleProgressBar",
+      "parent": "VideoConverterForm",
+      "parent_slot": "Controls",
+      "child_index": 21,
+      "properties": {
+        "Font": "Arial, 11.25pt",
+        "Location": {
+          "kind": "Point",
+          "x": 208,
+          "y": 296
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 336,
+          "height": 32
+        },
+        "TabIndex": 22,
+        "Text": "",
+        "ForeColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.White"
+        },
+        "Name": "pbProgress",
+        "ShowPercentageText": true
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "pbProgress.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "pbProgress.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pbProgress.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pbProgress.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "pbProgress.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtArguments",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "VideoConverterForm",
+      "parent_slot": "Controls",
+      "child_index": 22,
+      "properties": {
+        "Font": "Verdana, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 184
+        },
+        "Multiline": true,
+        "ScrollBars": "Both",
+        "Size": {
+          "kind": "Size",
+          "width": 528,
+          "height": 72
+        },
+        "TabIndex": 19,
+        "Name": "txtArguments"
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "txtArguments.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "txtArguments.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Multiline",
+          "resource_key": "txtArguments.Multiline",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ScrollBars",
+          "resource_key": "txtArguments.ScrollBars",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtArguments.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtArguments.TabIndex",
           "source": "ApplyResources"
         }
       ]
@@ -1178,7 +1178,125 @@
   "tree": {
     "name": "VideoConverterForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "cbVideoQualityUseBitrate",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "lblVideoQualityBitrateHint",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "nudVideoQualityBitrate",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "lblVideoEncoder",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblVideoQualityValue",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "cbUseCustomArguments",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "cbAutoOpenFolder",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "lblVideoQualityHigher",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblVideoQualityLower",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "txtOutputFileName",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblOutputFileName",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "tbVideoQuality",
+          "type": "System.Windows.Forms.TrackBar",
+          "slots": {}
+        },
+        {
+          "name": "btnOutputFolderBrowse",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "cbVideoEncoder",
+          "type": "System.Windows.Forms.ComboBox",
+          "slots": {}
+        },
+        {
+          "name": "lblOutputFolder",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblVideoQuality",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "txtOutputFolder",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "btnInputFilePathBrowse",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "txtInputFilePath",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblInputFilePath",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "btnEncode",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "pbProgress",
+          "type": "HelpersLib.BlackStyleProgressBar",
+          "slots": {}
+        },
+        {
+          "name": "txtArguments",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "lblInputFilePath.Text": "Input file path:",

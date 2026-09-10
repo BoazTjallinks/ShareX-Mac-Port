@@ -18,11 +18,55 @@
   ],
   "controls": [
     {
-      "name": "flpMain",
-      "type": "System.Windows.Forms.FlowLayoutPanel",
+      "name": "AutoScaleDimensions",
+      "type": "System.Drawing.SizeF",
       "parent": null,
       "parent_slot": null,
       "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "Size",
+      "type": "System.Drawing.Size",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "pMain",
+      "type": "System.Windows.Forms.Panel",
+      "parent": "TaskThumbnailView",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Dock": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DockStyle.Fill"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Name": "pMain",
+        "Size": {
+          "kind": "Size",
+          "width": 242,
+          "height": 228
+        },
+        "TabIndex": 1
+      },
+      "resources": []
+    },
+    {
+      "name": "flpMain",
+      "type": "System.Windows.Forms.FlowLayoutPanel",
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "AutoSize": true,
         "Location": {
@@ -48,37 +92,11 @@
       "resources": []
     },
     {
-      "name": "pMain",
-      "type": "System.Windows.Forms.Panel",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Dock": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.DockStyle.Fill"
-        },
-        "Location": {
-          "kind": "Point",
-          "x": 0,
-          "y": 0
-        },
-        "Name": "pMain",
-        "Size": {
-          "kind": "Size",
-          "width": 242,
-          "height": 228
-        },
-        "TabIndex": 1
-      },
-      "resources": []
-    },
-    {
       "name": "sbMain",
       "type": "HelpersLib.CustomVScrollBar",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "pMain",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
         "Dock": {
           "kind": "expr",
@@ -105,30 +123,33 @@
         "Value": 0
       },
       "resources": []
-    },
-    {
-      "name": "AutoScaleDimensions",
-      "type": "System.Drawing.SizeF",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
-      "name": "Size",
-      "type": "System.Drawing.Size",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
     }
   ],
   "tree": {
     "name": "TaskThumbnailView",
     "type": "UserControl",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "pMain",
+          "type": "System.Windows.Forms.Panel",
+          "slots": {
+            "Controls": [
+              {
+                "name": "flpMain",
+                "type": "System.Windows.Forms.FlowLayoutPanel",
+                "slots": {}
+              },
+              {
+                "name": "sbMain",
+                "type": "HelpersLib.CustomVScrollBar",
+                "slots": {}
+              }
+            ]
+          }
+        }
+      ]
+    }
   },
   "strings": {},
   "binary_resources": [],

@@ -21,61 +21,11 @@
   ],
   "controls": [
     {
-      "name": "lblAccountType",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": -3,
-          "y": 0
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 73,
-          "height": 13
-        },
-        "TabIndex": 0,
-        "Text": "Account type:",
-        "Name": "lblAccountType"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblAccountType.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblAccountType.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblAccountType.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblAccountType.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblAccountType.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "cbAccountType",
       "type": "System.Windows.Forms.ComboBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "AccountTypeControl",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "DropDownStyle": {
           "kind": "expr",
@@ -134,12 +84,75 @@
           "source": "ApplyResources"
         }
       ]
+    },
+    {
+      "name": "lblAccountType",
+      "type": "System.Windows.Forms.Label",
+      "parent": "AccountTypeControl",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": -3,
+          "y": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 73,
+          "height": 13
+        },
+        "TabIndex": 0,
+        "Text": "Account type:",
+        "Name": "lblAccountType"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblAccountType.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblAccountType.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblAccountType.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblAccountType.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblAccountType.Text",
+          "source": "ApplyResources"
+        }
+      ]
     }
   ],
   "tree": {
     "name": "AccountTypeControl",
     "type": "UserControl",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "cbAccountType",
+          "type": "System.Windows.Forms.ComboBox",
+          "slots": {}
+        },
+        {
+          "name": "lblAccountType",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "lblAccountType.Text": "Account type:",

@@ -77,618 +77,6 @@
       ]
     },
     {
-      "name": "btnAdd",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 8
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 112,
-          "height": 23
-        },
-        "TabIndex": 2,
-        "Text": "Add",
-        "Name": "btnAdd",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "ImeMode",
-          "resource_key": "btnAdd.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnAdd.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnAdd.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnAdd.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnAdd.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnRemove",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 32
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 112,
-          "height": 23
-        },
-        "TabIndex": 3,
-        "Text": "Remove",
-        "Name": "btnRemove",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "ImeMode",
-          "resource_key": "btnRemove.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnRemove.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnRemove.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnRemove.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnRemove.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "nudLocation",
-      "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "DecimalPlaces": 2,
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 144
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 112,
-          "height": 20
-        },
-        "TabIndex": 8,
-        "TextAlign": "Center",
-        "Name": "nudLocation"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "nudLocation.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "nudLocation.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "nudLocation.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "nudLocation.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblLocation",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 5,
-          "y": 128
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 51,
-          "height": 13
-        },
-        "TabIndex": 7,
-        "Text": "Location:",
-        "Name": "lblLocation"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblLocation.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblLocation.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblLocation.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblLocation.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblLocation.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblLocation.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "cbGradientType",
-      "type": "System.Windows.Forms.ComboBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "DropDownStyle": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
-        },
-        "FormattingEnabled": true,
-        "Location": {
-          "kind": "Point",
-          "x": 88,
-          "y": 176
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 120,
-          "height": 21
-        },
-        "TabIndex": 11,
-        "Name": "cbGradientType"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "cbGradientType.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "cbGradientType.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "cbGradientType.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblGradientType",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 5,
-          "y": 180
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 73,
-          "height": 13
-        },
-        "TabIndex": 10,
-        "Text": "Gradient type:",
-        "Name": "lblGradientType"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblGradientType.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblGradientType.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblGradientType.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblGradientType.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblGradientType.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblGradientType.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnOK",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 280
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 96,
-          "height": 23
-        },
-        "TabIndex": 0,
-        "Text": "OK",
-        "Name": "btnOK",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "ImeMode",
-          "resource_key": "btnOK.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnOK.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnOK.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnOK.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnOK.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnCancel",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 112,
-          "y": 280
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 96,
-          "height": 23
-        },
-        "TabIndex": 1,
-        "Text": "Cancel",
-        "Name": "btnCancel",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "ImeMode",
-          "resource_key": "btnCancel.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnCancel.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnCancel.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnCancel.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnCancel.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "pbPreview",
-      "type": "System.Windows.Forms.PictureBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 224
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 200,
-          "height": 50
-        },
-        "TabIndex": 11,
-        "Name": "pbPreview",
-        "TabStop": false
-      },
-      "resources": [
-        {
-          "property": "ImeMode",
-          "resource_key": "pbPreview.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "pbPreview.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "pbPreview.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "pbPreview.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblPreview",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 5,
-          "y": 206
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 48,
-          "height": 13
-        },
-        "TabIndex": 12,
-        "Text": "Preview:",
-        "Name": "lblPreview"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblPreview.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblPreview.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblPreview.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblPreview.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblPreview.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblPreview.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnReverse",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 80
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 112,
-          "height": 23
-        },
-        "TabIndex": 5,
-        "Text": "Reverse",
-        "Name": "btnReverse",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "ImeMode",
-          "resource_key": "btnReverse.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnReverse.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnReverse.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnReverse.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnReverse.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblPresets",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 213,
-          "y": 8
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 45,
-          "height": 13
-        },
-        "TabIndex": 13,
-        "Text": "Presets:",
-        "Name": "lblPresets"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblPresets.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblPresets.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblPresets.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblPresets.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblPresets.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblPresets.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "ilPresets",
       "type": "System.Windows.Forms.ImageList",
       "parent": null,
@@ -718,16 +106,113 @@
       ]
     },
     {
-      "name": "lvPresets",
-      "type": "System.Windows.Forms.ListView",
+      "name": "chGradient",
+      "type": "System.Windows.Forms.ColumnHeader",
       "parent": null,
       "parent_slot": null,
       "child_index": null,
       "properties": {
+        "Text": "Gradient",
+        "Width": 140
+      },
+      "resources": [
+        {
+          "property": "Text",
+          "resource_key": "chGradient.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Width",
+          "resource_key": "chGradient.Width",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "chLocation",
+      "type": "System.Windows.Forms.ColumnHeader",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Text": "Location",
+        "Width": 76
+      },
+      "resources": [
+        {
+          "property": "Text",
+          "resource_key": "chLocation.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Width",
+          "resource_key": "chLocation.Width",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnClear",
+      "type": "System.Windows.Forms.Button",
+      "parent": "GradientPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 56
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 112,
+          "height": 23
+        },
+        "TabIndex": 4,
+        "Text": "Clear",
+        "Name": "btnClear",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnClear.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnClear.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnClear.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnClear.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnClear.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lvPresets",
+      "type": "System.Windows.Forms.ListView",
+      "parent": "GradientPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
         "Columns.literal_items": [
           {
-            "kind": "expr",
-            "raw": "this.chGradient"
+            "kind": "ident",
+            "raw": "chGradient"
           }
         ],
         "HeaderStyle": {
@@ -782,52 +267,613 @@
       ]
     },
     {
-      "name": "btnClear",
+      "name": "lblPresets",
+      "type": "System.Windows.Forms.Label",
+      "parent": "GradientPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 213,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 45,
+          "height": 13
+        },
+        "TabIndex": 13,
+        "Text": "Presets:",
+        "Name": "lblPresets"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblPresets.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblPresets.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblPresets.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblPresets.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblPresets.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblPresets.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnReverse",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "GradientPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
       "properties": {
         "ImeMode": "NoControl",
         "Location": {
           "kind": "Point",
           "x": 8,
-          "y": 56
+          "y": 80
         },
         "Size": {
           "kind": "Size",
           "width": 112,
           "height": 23
         },
-        "TabIndex": 4,
-        "Text": "Clear",
-        "Name": "btnClear",
+        "TabIndex": 5,
+        "Text": "Reverse",
+        "Name": "btnReverse",
         "UseVisualStyleBackColor": true
       },
       "resources": [
         {
           "property": "ImeMode",
-          "resource_key": "btnClear.ImeMode",
+          "resource_key": "btnReverse.ImeMode",
           "source": "ApplyResources"
         },
         {
           "property": "Location",
-          "resource_key": "btnClear.Location",
+          "resource_key": "btnReverse.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "btnClear.Size",
+          "resource_key": "btnReverse.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "btnClear.TabIndex",
+          "resource_key": "btnReverse.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "btnClear.Text",
+          "resource_key": "btnReverse.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pbPreview",
+      "type": "System.Windows.Forms.PictureBox",
+      "parent": "GradientPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 224
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 200,
+          "height": 50
+        },
+        "TabIndex": 11,
+        "Name": "pbPreview",
+        "TabStop": false
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "pbPreview.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "pbPreview.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pbPreview.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pbPreview.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblPreview",
+      "type": "System.Windows.Forms.Label",
+      "parent": "GradientPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 206
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 48,
+          "height": 13
+        },
+        "TabIndex": 12,
+        "Text": "Preview:",
+        "Name": "lblPreview"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblPreview.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblPreview.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblPreview.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblPreview.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblPreview.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblPreview.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnCancel",
+      "type": "System.Windows.Forms.Button",
+      "parent": "GradientPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 112,
+          "y": 280
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 96,
+          "height": 23
+        },
+        "TabIndex": 1,
+        "Text": "Cancel",
+        "Name": "btnCancel",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnCancel.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnCancel.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCancel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCancel.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCancel.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnOK",
+      "type": "System.Windows.Forms.Button",
+      "parent": "GradientPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 7,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 280
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 96,
+          "height": 23
+        },
+        "TabIndex": 0,
+        "Text": "OK",
+        "Name": "btnOK",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnOK.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnOK.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnOK.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnOK.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnOK.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblGradientType",
+      "type": "System.Windows.Forms.Label",
+      "parent": "GradientPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 8,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 180
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 73,
+          "height": 13
+        },
+        "TabIndex": 10,
+        "Text": "Gradient type:",
+        "Name": "lblGradientType"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblGradientType.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblGradientType.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblGradientType.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblGradientType.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblGradientType.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblGradientType.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbGradientType",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "GradientPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 9,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 88,
+          "y": 176
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 21
+        },
+        "TabIndex": 11,
+        "Name": "cbGradientType"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbGradientType.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbGradientType.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbGradientType.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblLocation",
+      "type": "System.Windows.Forms.Label",
+      "parent": "GradientPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 10,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 128
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 51,
+          "height": 13
+        },
+        "TabIndex": 7,
+        "Text": "Location:",
+        "Name": "lblLocation"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblLocation.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblLocation.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblLocation.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblLocation.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblLocation.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblLocation.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudLocation",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "GradientPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 11,
+      "properties": {
+        "DecimalPlaces": 2,
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 144
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 112,
+          "height": 20
+        },
+        "TabIndex": 8,
+        "TextAlign": "Center",
+        "Name": "nudLocation"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudLocation.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudLocation.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudLocation.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudLocation.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnRemove",
+      "type": "System.Windows.Forms.Button",
+      "parent": "GradientPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 12,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 32
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 112,
+          "height": 23
+        },
+        "TabIndex": 3,
+        "Text": "Remove",
+        "Name": "btnRemove",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnRemove.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnRemove.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnRemove.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnRemove.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnRemove.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnAdd",
+      "type": "System.Windows.Forms.Button",
+      "parent": "GradientPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 13,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 112,
+          "height": 23
+        },
+        "TabIndex": 2,
+        "Text": "Add",
+        "Name": "btnAdd",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnAdd.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnAdd.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnAdd.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnAdd.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnAdd.Text",
           "source": "ApplyResources"
         }
       ]
@@ -835,9 +881,9 @@
     {
       "name": "cbtnCurrentColor",
       "type": "ColorButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "GradientPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 14,
       "properties": {
         "Color": {
           "kind": "expr",
@@ -891,14 +937,14 @@
     {
       "name": "lvGradientPoints",
       "type": "MyListView",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "GradientPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 15,
       "properties": {
         "Columns.literal_items": [
           {
-            "kind": "expr",
-            "raw": "this.chLocation"
+            "kind": "ident",
+            "raw": "chLocation"
           }
         ],
         "DisableDeselect": true,
@@ -948,58 +994,95 @@
           "source": "ApplyResources"
         }
       ]
-    },
-    {
-      "name": "chGradient",
-      "type": "System.Windows.Forms.ColumnHeader",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Text": "Gradient",
-        "Width": 140
-      },
-      "resources": [
-        {
-          "property": "Text",
-          "resource_key": "chGradient.Text",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Width",
-          "resource_key": "chGradient.Width",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "chLocation",
-      "type": "System.Windows.Forms.ColumnHeader",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Text": "Location",
-        "Width": 76
-      },
-      "resources": [
-        {
-          "property": "Text",
-          "resource_key": "chLocation.Text",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Width",
-          "resource_key": "chLocation.Width",
-          "source": "ApplyResources"
-        }
-      ]
     }
   ],
   "tree": {
     "name": "GradientPickerForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "btnClear",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "lvPresets",
+          "type": "System.Windows.Forms.ListView",
+          "slots": {}
+        },
+        {
+          "name": "lblPresets",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "btnReverse",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "pbPreview",
+          "type": "System.Windows.Forms.PictureBox",
+          "slots": {}
+        },
+        {
+          "name": "lblPreview",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "btnCancel",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnOK",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "lblGradientType",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "cbGradientType",
+          "type": "System.Windows.Forms.ComboBox",
+          "slots": {}
+        },
+        {
+          "name": "lblLocation",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "nudLocation",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "btnRemove",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnAdd",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "cbtnCurrentColor",
+          "type": "ColorButton",
+          "slots": {}
+        },
+        {
+          "name": "lvGradientPoints",
+          "type": "MyListView",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "btnAdd.Text": "Add",

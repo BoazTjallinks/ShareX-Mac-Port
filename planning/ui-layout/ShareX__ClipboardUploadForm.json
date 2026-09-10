@@ -30,11 +30,247 @@
   ],
   "controls": [
     {
+      "name": "btnUpload",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ClipboardUploadForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Anchor": "Bottom, Right",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 208,
+          "y": 328
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 99,
+          "height": 24
+        },
+        "TabIndex": 0,
+        "Text": "Upload",
+        "Name": "btnUpload",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnUpload.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "btnUpload.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnUpload.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnUpload.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnUpload.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnUpload.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pbClipboard",
+      "type": "HelpersLib.MyPictureBox",
+      "parent": "ClipboardUploadForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Anchor": "Top, Bottom, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 32
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 403,
+          "height": 288
+        },
+        "TabIndex": 3,
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        },
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
+        },
+        "DrawCheckeredBackground": true,
+        "FullscreenOnClick": true,
+        "Name": "pbClipboard",
+        "PictureBoxBackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        },
+        "ShowImageSizeLabel": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "pbClipboard.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "pbClipboard.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pbClipboard.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pbClipboard.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbDontShowThisWindow",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "ClipboardUploadForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 9,
+          "y": 332
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 137,
+          "height": 17
+        },
+        "TabIndex": 4,
+        "Text": "Don't show this window",
+        "Name": "cbDontShowThisWindow",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "cbDontShowThisWindow.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "AutoSize",
+          "resource_key": "cbDontShowThisWindow.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "cbDontShowThisWindow.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbDontShowThisWindow.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbDontShowThisWindow.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbDontShowThisWindow.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbDontShowThisWindow.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnCancel",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ClipboardUploadForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Anchor": "Bottom, Right",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 312,
+          "y": 328
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 99,
+          "height": 24
+        },
+        "TabIndex": 1,
+        "Text": "Cancel",
+        "Name": "btnCancel",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnCancel.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "btnCancel.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnCancel.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCancel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCancel.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCancel.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
       "name": "lblQuestion",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ClipboardUploadForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
       "properties": {
         "BackColor": {
           "kind": "expr",
@@ -100,68 +336,11 @@
       ]
     },
     {
-      "name": "btnCancel",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Bottom, Right",
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 312,
-          "y": 328
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 99,
-          "height": 24
-        },
-        "TabIndex": 1,
-        "Text": "Cancel",
-        "Name": "btnCancel",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "btnCancel.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "btnCancel.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnCancel.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnCancel.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnCancel.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnCancel.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "txtClipboard",
       "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ClipboardUploadForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
       "properties": {
         "Anchor": "Top, Bottom, Left, Right",
         "Location": {
@@ -220,9 +399,9 @@
     {
       "name": "lbClipboard",
       "type": "System.Windows.Forms.ListBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ClipboardUploadForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
       "properties": {
         "Anchor": "Top, Bottom, Left, Right",
         "IntegralHeight": false,
@@ -267,191 +446,50 @@
           "source": "ApplyResources"
         }
       ]
-    },
-    {
-      "name": "cbDontShowThisWindow",
-      "type": "System.Windows.Forms.CheckBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Bottom, Left",
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 9,
-          "y": 332
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 137,
-          "height": 17
-        },
-        "TabIndex": 4,
-        "Text": "Don't show this window",
-        "Name": "cbDontShowThisWindow",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "cbDontShowThisWindow.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "AutoSize",
-          "resource_key": "cbDontShowThisWindow.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "cbDontShowThisWindow.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "cbDontShowThisWindow.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "cbDontShowThisWindow.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "cbDontShowThisWindow.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "cbDontShowThisWindow.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "pbClipboard",
-      "type": "HelpersLib.MyPictureBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Top, Bottom, Left, Right",
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 32
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 403,
-          "height": 288
-        },
-        "TabIndex": 3,
-        "BackColor": {
-          "kind": "expr",
-          "raw": "System.Drawing.SystemColors.Window"
-        },
-        "BorderStyle": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
-        },
-        "DrawCheckeredBackground": true,
-        "FullscreenOnClick": true,
-        "Name": "pbClipboard",
-        "PictureBoxBackColor": {
-          "kind": "expr",
-          "raw": "System.Drawing.SystemColors.Window"
-        },
-        "ShowImageSizeLabel": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "pbClipboard.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "pbClipboard.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "pbClipboard.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "pbClipboard.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnUpload",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Bottom, Right",
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 208,
-          "y": 328
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 99,
-          "height": 24
-        },
-        "TabIndex": 0,
-        "Text": "Upload",
-        "Name": "btnUpload",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "btnUpload.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "btnUpload.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnUpload.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnUpload.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnUpload.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnUpload.Text",
-          "source": "ApplyResources"
-        }
-      ]
     }
   ],
   "tree": {
     "name": "ClipboardUploadForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "btnUpload",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "pbClipboard",
+          "type": "HelpersLib.MyPictureBox",
+          "slots": {}
+        },
+        {
+          "name": "cbDontShowThisWindow",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "btnCancel",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "lblQuestion",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "txtClipboard",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lbClipboard",
+          "type": "System.Windows.Forms.ListBox",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "lblQuestion.Text": "Your clipboard contains the following:",

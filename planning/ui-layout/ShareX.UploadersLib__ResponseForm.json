@@ -39,11 +39,506 @@
   ],
   "controls": [
     {
+      "name": "tcMain",
+      "type": "System.Windows.Forms.TabControl",
+      "parent": "ResponseForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Dock": "Fill",
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 5
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 760,
+          "height": 513
+        },
+        "TabIndex": 45,
+        "Name": "tcMain",
+        "SelectedIndex": 0
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "tcMain.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "tcMain.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tcMain.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tcMain.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "rtbResponseInfo",
+      "type": "System.Windows.Forms.RichTextBox",
+      "parent": "pResponseInfo",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.None"
+        },
+        "Dock": "Fill",
+        "Font": "Arial, 9pt",
+        "Location": {
+          "kind": "Point",
+          "x": 2,
+          "y": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 740,
+          "height": 475
+        },
+        "TabIndex": 0,
+        "Name": "rtbResponseInfo"
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "rtbResponseInfo.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "rtbResponseInfo.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "rtbResponseInfo.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "rtbResponseInfo.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "rtbResponseInfo.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "rtbResponseText",
+      "type": "System.Windows.Forms.RichTextBox",
+      "parent": "pResponseText",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.None"
+        },
+        "Dock": "Fill",
+        "Font": "Arial, 9pt",
+        "Location": {
+          "kind": "Point",
+          "x": 2,
+          "y": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 740,
+          "height": 450
+        },
+        "TabIndex": 0,
+        "Name": "rtbResponseText"
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "rtbResponseText.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "rtbResponseText.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "rtbResponseText.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "rtbResponseText.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "rtbResponseText.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "rtbResult",
+      "type": "System.Windows.Forms.RichTextBox",
+      "parent": "pResult",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.None"
+        },
+        "Dock": "Fill",
+        "Font": "Arial, 9pt",
+        "Location": {
+          "kind": "Point",
+          "x": 2,
+          "y": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 740,
+          "height": 450
+        },
+        "TabIndex": 0,
+        "Name": "rtbResult"
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "rtbResult.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "rtbResult.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "rtbResult.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "rtbResult.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "rtbResult.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tpResult",
+      "type": "System.Windows.Forms.TabPage",
+      "parent": "tcMain",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 4,
+          "y": 22
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 3,
+          "top": 3,
+          "right": 3,
+          "bottom": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 752,
+          "height": 487
+        },
+        "TabIndex": 0,
+        "Text": "Result",
+        "Name": "tpResult",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "tpResult.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "tpResult.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tpResult.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tpResult.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tpResult.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tpResponseInfo",
+      "type": "System.Windows.Forms.TabPage",
+      "parent": "tcMain",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 4,
+          "y": 22
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 3,
+          "top": 3,
+          "right": 3,
+          "bottom": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 752,
+          "height": 487
+        },
+        "TabIndex": 2,
+        "Text": "Response info",
+        "Name": "tpResponseInfo",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "tpResponseInfo.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "tpResponseInfo.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tpResponseInfo.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tpResponseInfo.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tpResponseInfo.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tpResponseText",
+      "type": "System.Windows.Forms.TabPage",
+      "parent": "tcMain",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 4,
+          "y": 22
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 3,
+          "top": 3,
+          "right": 3,
+          "bottom": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 752,
+          "height": 487
+        },
+        "TabIndex": 1,
+        "Text": "Response text",
+        "Name": "tpResponseText",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "tpResponseText.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "tpResponseText.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tpResponseText.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tpResponseText.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tpResponseText.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tpWebBrowser",
+      "type": "System.Windows.Forms.TabPage",
+      "parent": "tcMain",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 4,
+          "y": 22
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 3,
+          "top": 3,
+          "right": 3,
+          "bottom": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 752,
+          "height": 487
+        },
+        "TabIndex": 3,
+        "Text": "Web browser",
+        "Name": "tpWebBrowser",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "tpWebBrowser.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "tpWebBrowser.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tpWebBrowser.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tpWebBrowser.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tpWebBrowser.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pResponseInfo",
+      "type": "System.Windows.Forms.Panel",
+      "parent": "tpResponseInfo",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
+        },
+        "Dock": "Fill",
+        "Location": {
+          "kind": "Point",
+          "x": 3,
+          "y": 3
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 2,
+          "top": 2,
+          "right": 2,
+          "bottom": 2
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 746,
+          "height": 481
+        },
+        "TabIndex": 43,
+        "Name": "pResponseInfo"
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "pResponseInfo.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "pResponseInfo.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "pResponseInfo.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pResponseInfo.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pResponseInfo.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
       "name": "tscResponseText",
       "type": "System.Windows.Forms.ToolStripContainer",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "tpResponseText",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "ContentPanel.Size": {
           "kind": "Size",
@@ -102,11 +597,405 @@
       ]
     },
     {
+      "name": "tscResult",
+      "type": "System.Windows.Forms.ToolStripContainer",
+      "parent": "tpResult",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "ContentPanel.Size": {
+          "kind": "Size",
+          "width": 746,
+          "height": 456
+        },
+        "Dock": "Fill",
+        "Location": {
+          "kind": "Point",
+          "x": 3,
+          "y": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 746,
+          "height": 481
+        },
+        "TabIndex": 42,
+        "Name": "tscResult"
+      },
+      "resources": [
+        {
+          "property": "ContentPanel.Size",
+          "resource_key": "tscResult.ContentPanel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ContentPanel.Size",
+          "resource_key": "tscResult.ContentPanel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Dock",
+          "resource_key": "tscResult.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "tscResult.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tscResult.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tscResult.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "wbResponse",
+      "type": "System.Windows.Forms.WebBrowser",
+      "parent": "tpWebBrowser",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Dock": "Fill",
+        "Location": {
+          "kind": "Point",
+          "x": 3,
+          "y": 3
+        },
+        "MinimumSize": {
+          "kind": "Size",
+          "width": 20,
+          "height": 20
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 746,
+          "height": 481
+        },
+        "TabIndex": 0,
+        "Name": "wbResponse",
+        "ScriptErrorsSuppressed": true
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "wbResponse.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "wbResponse.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "MinimumSize",
+          "resource_key": "wbResponse.MinimumSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "wbResponse.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "wbResponse.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsbResponseTextJSONFormat",
+      "type": "System.Windows.Forms.ToolStripButton",
+      "parent": "tsResponseText",
+      "parent_slot": "Items",
+      "child_index": 0,
+      "properties": {
+        "DisplayStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ToolStripItemDisplayStyle.Text"
+        },
+        "ImageTransparentColor": "Magenta",
+        "Size": {
+          "kind": "Size",
+          "width": 78,
+          "height": 22
+        },
+        "Text": "JSON format",
+        "Name": "tsbResponseTextJSONFormat"
+      },
+      "resources": [
+        {
+          "property": "ImageTransparentColor",
+          "resource_key": "tsbResponseTextJSONFormat.ImageTransparentColor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tsbResponseTextJSONFormat.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsbResponseTextJSONFormat.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsbResponseTextXMLFormat",
+      "type": "System.Windows.Forms.ToolStripButton",
+      "parent": "tsResponseText",
+      "parent_slot": "Items",
+      "child_index": 1,
+      "properties": {
+        "DisplayStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ToolStripItemDisplayStyle.Text"
+        },
+        "ImageTransparentColor": "Magenta",
+        "Size": {
+          "kind": "Size",
+          "width": 74,
+          "height": 22
+        },
+        "Text": "XML format",
+        "Margin": {
+          "kind": "Padding",
+          "left": 3,
+          "top": 1,
+          "right": 0,
+          "bottom": 2
+        },
+        "Name": "tsbResponseTextXMLFormat"
+      },
+      "resources": [
+        {
+          "property": "ImageTransparentColor",
+          "resource_key": "tsbResponseTextXMLFormat.ImageTransparentColor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tsbResponseTextXMLFormat.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsbResponseTextXMLFormat.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsbResponseTextCopy",
+      "type": "System.Windows.Forms.ToolStripButton",
+      "parent": "tsResponseText",
+      "parent_slot": "Items",
+      "child_index": 2,
+      "properties": {
+        "DisplayStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ToolStripItemDisplayStyle.Text"
+        },
+        "ImageTransparentColor": "Magenta",
+        "Size": {
+          "kind": "Size",
+          "width": 89,
+          "height": 22
+        },
+        "Text": "Copy response",
+        "Margin": {
+          "kind": "Padding",
+          "left": 3,
+          "top": 1,
+          "right": 0,
+          "bottom": 2
+        },
+        "Name": "tsbResponseTextCopy"
+      },
+      "resources": [
+        {
+          "property": "ImageTransparentColor",
+          "resource_key": "tsbResponseTextCopy.ImageTransparentColor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tsbResponseTextCopy.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsbResponseTextCopy.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsbCopyShortenedURL",
+      "type": "System.Windows.Forms.ToolStripButton",
+      "parent": "tsResult",
+      "parent_slot": "Items",
+      "child_index": 0,
+      "properties": {
+        "DisplayStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ToolStripItemDisplayStyle.Text"
+        },
+        "ImageTransparentColor": "Magenta",
+        "Size": {
+          "kind": "Size",
+          "width": 119,
+          "height": 22
+        },
+        "Text": "Copy shortened URL",
+        "Name": "tsbCopyShortenedURL"
+      },
+      "resources": [
+        {
+          "property": "ImageTransparentColor",
+          "resource_key": "tsbCopyShortenedURL.ImageTransparentColor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tsbCopyShortenedURL.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsbCopyShortenedURL.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsbCopyURL",
+      "type": "System.Windows.Forms.ToolStripButton",
+      "parent": "tsResult",
+      "parent_slot": "Items",
+      "child_index": 1,
+      "properties": {
+        "DisplayStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ToolStripItemDisplayStyle.Text"
+        },
+        "ImageTransparentColor": "Magenta",
+        "Size": {
+          "kind": "Size",
+          "width": 63,
+          "height": 22
+        },
+        "Text": "Copy URL",
+        "Name": "tsbCopyURL"
+      },
+      "resources": [
+        {
+          "property": "ImageTransparentColor",
+          "resource_key": "tsbCopyURL.ImageTransparentColor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tsbCopyURL.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsbCopyURL.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsbCopyThumbnailURL",
+      "type": "System.Windows.Forms.ToolStripButton",
+      "parent": "tsResult",
+      "parent_slot": "Items",
+      "child_index": 2,
+      "properties": {
+        "DisplayStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ToolStripItemDisplayStyle.Text"
+        },
+        "ImageTransparentColor": "Magenta",
+        "Size": {
+          "kind": "Size",
+          "width": 121,
+          "height": 22
+        },
+        "Text": "Copy thumbnail URL",
+        "Name": "tsbCopyThumbnailURL"
+      },
+      "resources": [
+        {
+          "property": "ImageTransparentColor",
+          "resource_key": "tsbCopyThumbnailURL.ImageTransparentColor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tsbCopyThumbnailURL.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsbCopyThumbnailURL.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsbCopyDeletionURL",
+      "type": "System.Windows.Forms.ToolStripButton",
+      "parent": "tsResult",
+      "parent_slot": "Items",
+      "child_index": 3,
+      "properties": {
+        "DisplayStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ToolStripItemDisplayStyle.Text"
+        },
+        "ImageTransparentColor": "Magenta",
+        "Size": {
+          "kind": "Size",
+          "width": 109,
+          "height": 22
+        },
+        "Text": "Copy deletion URL",
+        "Name": "tsbCopyDeletionURL"
+      },
+      "resources": [
+        {
+          "property": "ImageTransparentColor",
+          "resource_key": "tsbCopyDeletionURL.ImageTransparentColor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tsbCopyDeletionURL.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsbCopyDeletionURL.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
       "name": "pResponseText",
       "type": "System.Windows.Forms.Panel",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "tscResponseText",
+      "parent_slot": "ContentPanel.Controls",
+      "child_index": 0,
       "properties": {
         "BorderStyle": {
           "kind": "expr",
@@ -162,65 +1051,11 @@
       ]
     },
     {
-      "name": "rtbResponseText",
-      "type": "System.Windows.Forms.RichTextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "BorderStyle": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.BorderStyle.None"
-        },
-        "Dock": "Fill",
-        "Font": "Arial, 9pt",
-        "Location": {
-          "kind": "Point",
-          "x": 2,
-          "y": 2
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 740,
-          "height": 450
-        },
-        "TabIndex": 0,
-        "Name": "rtbResponseText"
-      },
-      "resources": [
-        {
-          "property": "Dock",
-          "resource_key": "rtbResponseText.Dock",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Font",
-          "resource_key": "rtbResponseText.Font",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "rtbResponseText.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "rtbResponseText.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "rtbResponseText.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "tsResponseText",
       "type": "System.Windows.Forms.ToolStrip",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "tscResponseText",
+      "parent_slot": "TopToolStripPanel.Controls",
+      "child_index": 0,
       "properties": {
         "Dock": "None",
         "Location": {
@@ -238,20 +1073,6 @@
           "kind": "expr",
           "raw": "System.Windows.Forms.ToolStripGripStyle.Hidden"
         },
-        "Items.literal_items": [
-          {
-            "kind": "expr",
-            "raw": "this.tsbResponseTextJSONFormat"
-          },
-          {
-            "kind": "expr",
-            "raw": "this.tsbResponseTextXMLFormat"
-          },
-          {
-            "kind": "expr",
-            "raw": "this.tsbResponseTextCopy"
-          }
-        ],
         "Name": "tsResponseText",
         "ShowItemToolTips": false
       },
@@ -279,198 +1100,11 @@
       ]
     },
     {
-      "name": "tsbResponseTextJSONFormat",
-      "type": "System.Windows.Forms.ToolStripButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "DisplayStyle": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.ToolStripItemDisplayStyle.Text"
-        },
-        "ImageTransparentColor": "Magenta",
-        "Size": {
-          "kind": "Size",
-          "width": 78,
-          "height": 22
-        },
-        "Text": "JSON format",
-        "Name": "tsbResponseTextJSONFormat"
-      },
-      "resources": [
-        {
-          "property": "ImageTransparentColor",
-          "resource_key": "tsbResponseTextJSONFormat.ImageTransparentColor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "tsbResponseTextJSONFormat.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tsbResponseTextJSONFormat.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tsbResponseTextXMLFormat",
-      "type": "System.Windows.Forms.ToolStripButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "DisplayStyle": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.ToolStripItemDisplayStyle.Text"
-        },
-        "ImageTransparentColor": "Magenta",
-        "Size": {
-          "kind": "Size",
-          "width": 74,
-          "height": 22
-        },
-        "Text": "XML format",
-        "Margin": {
-          "kind": "Padding",
-          "left": 3,
-          "top": 1,
-          "right": 0,
-          "bottom": 2
-        },
-        "Name": "tsbResponseTextXMLFormat"
-      },
-      "resources": [
-        {
-          "property": "ImageTransparentColor",
-          "resource_key": "tsbResponseTextXMLFormat.ImageTransparentColor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "tsbResponseTextXMLFormat.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tsbResponseTextXMLFormat.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tsbResponseTextCopy",
-      "type": "System.Windows.Forms.ToolStripButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "DisplayStyle": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.ToolStripItemDisplayStyle.Text"
-        },
-        "ImageTransparentColor": "Magenta",
-        "Size": {
-          "kind": "Size",
-          "width": 89,
-          "height": 22
-        },
-        "Text": "Copy response",
-        "Margin": {
-          "kind": "Padding",
-          "left": 3,
-          "top": 1,
-          "right": 0,
-          "bottom": 2
-        },
-        "Name": "tsbResponseTextCopy"
-      },
-      "resources": [
-        {
-          "property": "ImageTransparentColor",
-          "resource_key": "tsbResponseTextCopy.ImageTransparentColor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "tsbResponseTextCopy.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tsbResponseTextCopy.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tscResult",
-      "type": "System.Windows.Forms.ToolStripContainer",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "ContentPanel.Size": {
-          "kind": "Size",
-          "width": 746,
-          "height": 456
-        },
-        "Dock": "Fill",
-        "Location": {
-          "kind": "Point",
-          "x": 3,
-          "y": 3
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 746,
-          "height": 481
-        },
-        "TabIndex": 42,
-        "Name": "tscResult"
-      },
-      "resources": [
-        {
-          "property": "ContentPanel.Size",
-          "resource_key": "tscResult.ContentPanel.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ContentPanel.Size",
-          "resource_key": "tscResult.ContentPanel.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Dock",
-          "resource_key": "tscResult.Dock",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "tscResult.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "tscResult.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "tscResult.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "pResult",
       "type": "System.Windows.Forms.Panel",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "tscResult",
+      "parent_slot": "ContentPanel.Controls",
+      "child_index": 0,
       "properties": {
         "BorderStyle": {
           "kind": "expr",
@@ -526,65 +1160,11 @@
       ]
     },
     {
-      "name": "rtbResult",
-      "type": "System.Windows.Forms.RichTextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "BorderStyle": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.BorderStyle.None"
-        },
-        "Dock": "Fill",
-        "Font": "Arial, 9pt",
-        "Location": {
-          "kind": "Point",
-          "x": 2,
-          "y": 2
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 740,
-          "height": 450
-        },
-        "TabIndex": 0,
-        "Name": "rtbResult"
-      },
-      "resources": [
-        {
-          "property": "Dock",
-          "resource_key": "rtbResult.Dock",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Font",
-          "resource_key": "rtbResult.Font",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "rtbResult.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "rtbResult.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "rtbResult.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "tsResult",
       "type": "System.Windows.Forms.ToolStrip",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "tscResult",
+      "parent_slot": "TopToolStripPanel.Controls",
+      "child_index": 0,
       "properties": {
         "Dock": "None",
         "Location": {
@@ -602,24 +1182,6 @@
           "kind": "expr",
           "raw": "System.Windows.Forms.ToolStripGripStyle.Hidden"
         },
-        "Items.literal_items": [
-          {
-            "kind": "expr",
-            "raw": "this.tsbCopyShortenedURL"
-          },
-          {
-            "kind": "expr",
-            "raw": "this.tsbCopyURL"
-          },
-          {
-            "kind": "expr",
-            "raw": "this.tsbCopyThumbnailURL"
-          },
-          {
-            "kind": "expr",
-            "raw": "this.tsbCopyDeletionURL"
-          }
-        ],
         "Name": "tsResult",
         "ShowItemToolTips": false
       },
@@ -645,606 +1207,170 @@
           "source": "ApplyResources"
         }
       ]
-    },
-    {
-      "name": "tsbCopyShortenedURL",
-      "type": "System.Windows.Forms.ToolStripButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "DisplayStyle": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.ToolStripItemDisplayStyle.Text"
-        },
-        "ImageTransparentColor": "Magenta",
-        "Size": {
-          "kind": "Size",
-          "width": 119,
-          "height": 22
-        },
-        "Text": "Copy shortened URL",
-        "Name": "tsbCopyShortenedURL"
-      },
-      "resources": [
-        {
-          "property": "ImageTransparentColor",
-          "resource_key": "tsbCopyShortenedURL.ImageTransparentColor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "tsbCopyShortenedURL.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tsbCopyShortenedURL.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tsbCopyURL",
-      "type": "System.Windows.Forms.ToolStripButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "DisplayStyle": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.ToolStripItemDisplayStyle.Text"
-        },
-        "ImageTransparentColor": "Magenta",
-        "Size": {
-          "kind": "Size",
-          "width": 63,
-          "height": 22
-        },
-        "Text": "Copy URL",
-        "Name": "tsbCopyURL"
-      },
-      "resources": [
-        {
-          "property": "ImageTransparentColor",
-          "resource_key": "tsbCopyURL.ImageTransparentColor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "tsbCopyURL.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tsbCopyURL.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tsbCopyThumbnailURL",
-      "type": "System.Windows.Forms.ToolStripButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "DisplayStyle": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.ToolStripItemDisplayStyle.Text"
-        },
-        "ImageTransparentColor": "Magenta",
-        "Size": {
-          "kind": "Size",
-          "width": 121,
-          "height": 22
-        },
-        "Text": "Copy thumbnail URL",
-        "Name": "tsbCopyThumbnailURL"
-      },
-      "resources": [
-        {
-          "property": "ImageTransparentColor",
-          "resource_key": "tsbCopyThumbnailURL.ImageTransparentColor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "tsbCopyThumbnailURL.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tsbCopyThumbnailURL.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tsbCopyDeletionURL",
-      "type": "System.Windows.Forms.ToolStripButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "DisplayStyle": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.ToolStripItemDisplayStyle.Text"
-        },
-        "ImageTransparentColor": "Magenta",
-        "Size": {
-          "kind": "Size",
-          "width": 109,
-          "height": 22
-        },
-        "Text": "Copy deletion URL",
-        "Name": "tsbCopyDeletionURL"
-      },
-      "resources": [
-        {
-          "property": "ImageTransparentColor",
-          "resource_key": "tsbCopyDeletionURL.ImageTransparentColor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "tsbCopyDeletionURL.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tsbCopyDeletionURL.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tcMain",
-      "type": "System.Windows.Forms.TabControl",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Dock": "Fill",
-        "Location": {
-          "kind": "Point",
-          "x": 5,
-          "y": 5
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 760,
-          "height": 513
-        },
-        "TabIndex": 45,
-        "Name": "tcMain",
-        "SelectedIndex": 0
-      },
-      "resources": [
-        {
-          "property": "Dock",
-          "resource_key": "tcMain.Dock",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "tcMain.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "tcMain.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "tcMain.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tpResult",
-      "type": "System.Windows.Forms.TabPage",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 4,
-          "y": 22
-        },
-        "Padding": {
-          "kind": "Padding",
-          "left": 3,
-          "top": 3,
-          "right": 3,
-          "bottom": 3
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 752,
-          "height": 487
-        },
-        "TabIndex": 0,
-        "Text": "Result",
-        "Name": "tpResult",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "tpResult.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Padding",
-          "resource_key": "tpResult.Padding",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "tpResult.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "tpResult.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tpResult.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tpResponseInfo",
-      "type": "System.Windows.Forms.TabPage",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 4,
-          "y": 22
-        },
-        "Padding": {
-          "kind": "Padding",
-          "left": 3,
-          "top": 3,
-          "right": 3,
-          "bottom": 3
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 752,
-          "height": 487
-        },
-        "TabIndex": 2,
-        "Text": "Response info",
-        "Name": "tpResponseInfo",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "tpResponseInfo.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Padding",
-          "resource_key": "tpResponseInfo.Padding",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "tpResponseInfo.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "tpResponseInfo.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tpResponseInfo.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "pResponseInfo",
-      "type": "System.Windows.Forms.Panel",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "BorderStyle": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
-        },
-        "Dock": "Fill",
-        "Location": {
-          "kind": "Point",
-          "x": 3,
-          "y": 3
-        },
-        "Padding": {
-          "kind": "Padding",
-          "left": 2,
-          "top": 2,
-          "right": 2,
-          "bottom": 2
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 746,
-          "height": 481
-        },
-        "TabIndex": 43,
-        "Name": "pResponseInfo"
-      },
-      "resources": [
-        {
-          "property": "Dock",
-          "resource_key": "pResponseInfo.Dock",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "pResponseInfo.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Padding",
-          "resource_key": "pResponseInfo.Padding",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "pResponseInfo.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "pResponseInfo.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "rtbResponseInfo",
-      "type": "System.Windows.Forms.RichTextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "BorderStyle": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.BorderStyle.None"
-        },
-        "Dock": "Fill",
-        "Font": "Arial, 9pt",
-        "Location": {
-          "kind": "Point",
-          "x": 2,
-          "y": 2
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 740,
-          "height": 475
-        },
-        "TabIndex": 0,
-        "Name": "rtbResponseInfo"
-      },
-      "resources": [
-        {
-          "property": "Dock",
-          "resource_key": "rtbResponseInfo.Dock",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Font",
-          "resource_key": "rtbResponseInfo.Font",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "rtbResponseInfo.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "rtbResponseInfo.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "rtbResponseInfo.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tpResponseText",
-      "type": "System.Windows.Forms.TabPage",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 4,
-          "y": 22
-        },
-        "Padding": {
-          "kind": "Padding",
-          "left": 3,
-          "top": 3,
-          "right": 3,
-          "bottom": 3
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 752,
-          "height": 487
-        },
-        "TabIndex": 1,
-        "Text": "Response text",
-        "Name": "tpResponseText",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "tpResponseText.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Padding",
-          "resource_key": "tpResponseText.Padding",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "tpResponseText.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "tpResponseText.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tpResponseText.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tpWebBrowser",
-      "type": "System.Windows.Forms.TabPage",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 4,
-          "y": 22
-        },
-        "Padding": {
-          "kind": "Padding",
-          "left": 3,
-          "top": 3,
-          "right": 3,
-          "bottom": 3
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 752,
-          "height": 487
-        },
-        "TabIndex": 3,
-        "Text": "Web browser",
-        "Name": "tpWebBrowser",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "tpWebBrowser.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Padding",
-          "resource_key": "tpWebBrowser.Padding",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "tpWebBrowser.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "tpWebBrowser.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tpWebBrowser.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "wbResponse",
-      "type": "System.Windows.Forms.WebBrowser",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Dock": "Fill",
-        "Location": {
-          "kind": "Point",
-          "x": 3,
-          "y": 3
-        },
-        "MinimumSize": {
-          "kind": "Size",
-          "width": 20,
-          "height": 20
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 746,
-          "height": 481
-        },
-        "TabIndex": 0,
-        "Name": "wbResponse",
-        "ScriptErrorsSuppressed": true
-      },
-      "resources": [
-        {
-          "property": "Dock",
-          "resource_key": "wbResponse.Dock",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "wbResponse.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "MinimumSize",
-          "resource_key": "wbResponse.MinimumSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "wbResponse.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "wbResponse.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
     }
   ],
   "tree": {
     "name": "ResponseForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "tcMain",
+          "type": "System.Windows.Forms.TabControl",
+          "slots": {
+            "Controls": [
+              {
+                "name": "tpResult",
+                "type": "System.Windows.Forms.TabPage",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "tscResult",
+                      "type": "System.Windows.Forms.ToolStripContainer",
+                      "slots": {
+                        "ContentPanel.Controls": [
+                          {
+                            "name": "pResult",
+                            "type": "System.Windows.Forms.Panel",
+                            "slots": {
+                              "Controls": [
+                                {
+                                  "name": "rtbResult",
+                                  "type": "System.Windows.Forms.RichTextBox",
+                                  "slots": {}
+                                }
+                              ]
+                            }
+                          }
+                        ],
+                        "TopToolStripPanel.Controls": [
+                          {
+                            "name": "tsResult",
+                            "type": "System.Windows.Forms.ToolStrip",
+                            "slots": {
+                              "Items": [
+                                {
+                                  "name": "tsbCopyShortenedURL",
+                                  "type": "System.Windows.Forms.ToolStripButton",
+                                  "slots": {}
+                                },
+                                {
+                                  "name": "tsbCopyURL",
+                                  "type": "System.Windows.Forms.ToolStripButton",
+                                  "slots": {}
+                                },
+                                {
+                                  "name": "tsbCopyThumbnailURL",
+                                  "type": "System.Windows.Forms.ToolStripButton",
+                                  "slots": {}
+                                },
+                                {
+                                  "name": "tsbCopyDeletionURL",
+                                  "type": "System.Windows.Forms.ToolStripButton",
+                                  "slots": {}
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "tpResponseInfo",
+                "type": "System.Windows.Forms.TabPage",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "pResponseInfo",
+                      "type": "System.Windows.Forms.Panel",
+                      "slots": {
+                        "Controls": [
+                          {
+                            "name": "rtbResponseInfo",
+                            "type": "System.Windows.Forms.RichTextBox",
+                            "slots": {}
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "tpResponseText",
+                "type": "System.Windows.Forms.TabPage",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "tscResponseText",
+                      "type": "System.Windows.Forms.ToolStripContainer",
+                      "slots": {
+                        "ContentPanel.Controls": [
+                          {
+                            "name": "pResponseText",
+                            "type": "System.Windows.Forms.Panel",
+                            "slots": {
+                              "Controls": [
+                                {
+                                  "name": "rtbResponseText",
+                                  "type": "System.Windows.Forms.RichTextBox",
+                                  "slots": {}
+                                }
+                              ]
+                            }
+                          }
+                        ],
+                        "TopToolStripPanel.Controls": [
+                          {
+                            "name": "tsResponseText",
+                            "type": "System.Windows.Forms.ToolStrip",
+                            "slots": {
+                              "Items": [
+                                {
+                                  "name": "tsbResponseTextJSONFormat",
+                                  "type": "System.Windows.Forms.ToolStripButton",
+                                  "slots": {}
+                                },
+                                {
+                                  "name": "tsbResponseTextXMLFormat",
+                                  "type": "System.Windows.Forms.ToolStripButton",
+                                  "slots": {}
+                                },
+                                {
+                                  "name": "tsbResponseTextCopy",
+                                  "type": "System.Windows.Forms.ToolStripButton",
+                                  "slots": {}
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "tpWebBrowser",
+                "type": "System.Windows.Forms.TabPage",
+                "slots": {
+                  "Controls": [
+                    {
+                      "name": "wbResponse",
+                      "type": "System.Windows.Forms.WebBrowser",
+                      "slots": {}
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
   },
   "strings": {
     "tsbResponseTextJSONFormat.Text": "JSON format",

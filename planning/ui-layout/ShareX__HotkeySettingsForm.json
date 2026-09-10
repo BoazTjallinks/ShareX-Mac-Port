@@ -32,11 +32,221 @@
   ],
   "controls": [
     {
+      "name": "btnReset",
+      "type": "System.Windows.Forms.Button",
+      "parent": "HotkeySettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 504,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 96,
+          "height": 27
+        },
+        "TabIndex": 6,
+        "Text": "Reset...",
+        "Name": "btnReset",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnReset.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnReset.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnReset.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnReset.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnHotkeysDisabled",
+      "type": "System.Windows.Forms.Button",
+      "parent": "HotkeySettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Anchor": "Bottom, Left, Right",
+        "Font": "Segoe UI, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 426
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 591,
+          "height": 27
+        },
+        "TabIndex": 8,
+        "Text": "Hotkeys are disabled. You can click here to enable them.",
+        "Name": "btnHotkeysDisabled",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnHotkeysDisabled.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "btnHotkeysDisabled.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnHotkeysDisabled.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnHotkeysDisabled.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnHotkeysDisabled.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnHotkeysDisabled.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnMoveDown",
+      "type": "System.Windows.Forms.Button",
+      "parent": "HotkeySettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Enabled": false,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 464,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 32,
+          "height": 27
+        },
+        "TabIndex": 5,
+        "Text": "↓",
+        "Name": "btnMoveDown",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Enabled",
+          "resource_key": "btnMoveDown.Enabled",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "btnMoveDown.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnMoveDown.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnMoveDown.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnMoveDown.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnMoveDown.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnMoveUp",
+      "type": "System.Windows.Forms.Button",
+      "parent": "HotkeySettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Enabled": false,
+        "Location": {
+          "kind": "Point",
+          "x": 424,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 32,
+          "height": 27
+        },
+        "TabIndex": 4,
+        "Text": "↑",
+        "Name": "btnMoveUp",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Enabled",
+          "resource_key": "btnMoveUp.Enabled",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnMoveUp.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnMoveUp.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnMoveUp.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnMoveUp.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
       "name": "btnDuplicate",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "HotkeySettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
       "properties": {
         "Enabled": false,
         "ImeMode": "NoControl",
@@ -91,9 +301,9 @@
     {
       "name": "flpHotkeys",
       "type": "System.Windows.Forms.FlowLayoutPanel",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "HotkeySettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
       "properties": {
         "Anchor": "Top, Bottom, Left, Right",
         "AutoScroll": true,
@@ -153,9 +363,9 @@
     {
       "name": "btnEdit",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "HotkeySettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
       "properties": {
         "Enabled": false,
         "ImeMode": "NoControl",
@@ -210,9 +420,9 @@
     {
       "name": "btnRemove",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "HotkeySettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 7,
       "properties": {
         "Enabled": false,
         "ImeMode": "NoControl",
@@ -267,9 +477,9 @@
     {
       "name": "btnAdd",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "HotkeySettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 8,
       "properties": {
         "ImeMode": "NoControl",
         "Location": {
@@ -314,222 +524,60 @@
           "source": "ApplyResources"
         }
       ]
-    },
-    {
-      "name": "btnMoveUp",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Enabled": false,
-        "Location": {
-          "kind": "Point",
-          "x": 424,
-          "y": 8
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 32,
-          "height": 27
-        },
-        "TabIndex": 4,
-        "Text": "↑",
-        "Name": "btnMoveUp",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Enabled",
-          "resource_key": "btnMoveUp.Enabled",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnMoveUp.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnMoveUp.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnMoveUp.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnMoveUp.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnMoveDown",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Enabled": false,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 464,
-          "y": 8
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 32,
-          "height": 27
-        },
-        "TabIndex": 5,
-        "Text": "↓",
-        "Name": "btnMoveDown",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Enabled",
-          "resource_key": "btnMoveDown.Enabled",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "btnMoveDown.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnMoveDown.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnMoveDown.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnMoveDown.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnMoveDown.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnHotkeysDisabled",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Bottom, Left, Right",
-        "Font": "Segoe UI, 9.75pt",
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 426
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 591,
-          "height": 27
-        },
-        "TabIndex": 8,
-        "Text": "Hotkeys are disabled. You can click here to enable them.",
-        "Name": "btnHotkeysDisabled",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "btnHotkeysDisabled.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Font",
-          "resource_key": "btnHotkeysDisabled.Font",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnHotkeysDisabled.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnHotkeysDisabled.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnHotkeysDisabled.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnHotkeysDisabled.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnReset",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 504,
-          "y": 8
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 96,
-          "height": 27
-        },
-        "TabIndex": 6,
-        "Text": "Reset...",
-        "Name": "btnReset",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnReset.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnReset.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnReset.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnReset.Text",
-          "source": "ApplyResources"
-        }
-      ]
     }
   ],
   "tree": {
     "name": "HotkeySettingsForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "btnReset",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnHotkeysDisabled",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnMoveDown",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnMoveUp",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnDuplicate",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "flpHotkeys",
+          "type": "System.Windows.Forms.FlowLayoutPanel",
+          "slots": {}
+        },
+        {
+          "name": "btnEdit",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnRemove",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnAdd",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "btnDuplicate.Text": "Duplicate",

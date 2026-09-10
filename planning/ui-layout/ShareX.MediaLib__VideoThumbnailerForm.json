@@ -28,155 +28,20 @@
   ],
   "controls": [
     {
-      "name": "txtMediaPath",
-      "type": "System.Windows.Forms.TextBox",
+      "name": "AutoScaleDimensions",
+      "type": "System.Drawing.SizeF",
       "parent": null,
       "parent_slot": null,
       "child_index": null,
-      "properties": {
-        "Anchor": "Top, Left, Right",
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 8
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 496,
-          "height": 20
-        },
-        "TabIndex": 0,
-        "Name": "txtMediaPath"
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "txtMediaPath.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "txtMediaPath.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "txtMediaPath.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "txtMediaPath.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnStart",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Top, Right",
-        "Location": {
-          "kind": "Point",
-          "x": 544,
-          "y": 6
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 168,
-          "height": 24
-        },
-        "TabIndex": 1,
-        "Text": "Take screenshots",
-        "Name": "btnStart",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "btnStart.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnStart.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnStart.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnStart.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnStart.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "pgOptions",
-      "type": "System.Windows.Forms.PropertyGrid",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Top, Bottom, Left, Right",
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 40
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 704,
-          "height": 416
-        },
-        "TabIndex": 2,
-        "Name": "pgOptions",
-        "PropertySort": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.PropertySort.Categorized"
-        },
-        "ToolbarVisible": false
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "pgOptions.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "pgOptions.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "pgOptions.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "pgOptions.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
+      "properties": {},
+      "resources": []
     },
     {
       "name": "btnBrowse",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "VideoThumbnailerForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "Anchor": "Top, Right",
         "Location": {
@@ -223,11 +88,155 @@
       ]
     },
     {
+      "name": "pgOptions",
+      "type": "System.Windows.Forms.PropertyGrid",
+      "parent": "VideoThumbnailerForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Anchor": "Top, Bottom, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 40
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 704,
+          "height": 416
+        },
+        "TabIndex": 2,
+        "Name": "pgOptions",
+        "PropertySort": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.PropertySort.Categorized"
+        },
+        "ToolbarVisible": false
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "pgOptions.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "pgOptions.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pgOptions.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pgOptions.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtMediaPath",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "VideoThumbnailerForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Anchor": "Top, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 496,
+          "height": 20
+        },
+        "TabIndex": 0,
+        "Name": "txtMediaPath"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "txtMediaPath.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "txtMediaPath.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtMediaPath.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtMediaPath.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnStart",
+      "type": "System.Windows.Forms.Button",
+      "parent": "VideoThumbnailerForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Anchor": "Top, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 544,
+          "y": 6
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 168,
+          "height": 24
+        },
+        "TabIndex": 1,
+        "Text": "Take screenshots",
+        "Name": "btnStart",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnStart.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnStart.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnStart.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnStart.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnStart.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
       "name": "pbProgress",
       "type": "System.Windows.Forms.ProgressBar",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "VideoThumbnailerForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
       "properties": {
         "Location": {
           "kind": "Point",
@@ -265,21 +274,40 @@
           "source": "ApplyResources"
         }
       ]
-    },
-    {
-      "name": "AutoScaleDimensions",
-      "type": "System.Drawing.SizeF",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
     }
   ],
   "tree": {
     "name": "VideoThumbnailerForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "btnBrowse",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "pgOptions",
+          "type": "System.Windows.Forms.PropertyGrid",
+          "slots": {}
+        },
+        {
+          "name": "txtMediaPath",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "btnStart",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "pbProgress",
+          "type": "System.Windows.Forms.ProgressBar",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "btnStart.Text": "Take screenshots",

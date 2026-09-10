@@ -16,11 +16,29 @@
   ],
   "controls": [
     {
-      "name": "dgvNews",
-      "type": "System.Windows.Forms.DataGridView",
+      "name": "AutoScaleDimensions",
+      "type": "System.Drawing.SizeF",
       "parent": null,
       "parent_slot": null,
       "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "Size",
+      "type": "System.Drawing.Size",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "dgvNews",
+      "type": "System.Windows.Forms.DataGridView",
+      "parent": "NewsListControl",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "AllowUserToAddRows": false,
         "AllowUserToDeleteRows": false,
@@ -47,20 +65,6 @@
           "raw": "System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize"
         },
         "ColumnHeadersVisible": false,
-        "Columns.literal_items": [
-          {
-            "kind": "expr",
-            "raw": "this.chIsUnread"
-          },
-          {
-            "kind": "expr",
-            "raw": "this.chDateTime"
-          },
-          {
-            "kind": "expr",
-            "raw": "this.chText"
-          }
-        ],
         "DefaultCellStyle": {
           "kind": "ident",
           "raw": "dataGridViewCellStyle3"
@@ -88,9 +92,9 @@
     {
       "name": "chIsUnread",
       "type": "System.Windows.Forms.DataGridViewTextBoxColumn",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "dgvNews",
+      "parent_slot": "Columns",
+      "child_index": 0,
       "properties": {
         "HeaderText": "IsUnread",
         "Name": "chIsUnread",
@@ -102,9 +106,9 @@
     {
       "name": "chDateTime",
       "type": "System.Windows.Forms.DataGridViewTextBoxColumn",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "dgvNews",
+      "parent_slot": "Columns",
+      "child_index": 1,
       "properties": {
         "AutoSizeMode": {
           "kind": "expr",
@@ -124,9 +128,9 @@
     {
       "name": "chText",
       "type": "System.Windows.Forms.DataGridViewTextBoxColumn",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "dgvNews",
+      "parent_slot": "Columns",
+      "child_index": 2,
       "properties": {
         "AutoSizeMode": {
           "kind": "expr",
@@ -141,30 +145,38 @@
         "ReadOnly": true
       },
       "resources": []
-    },
-    {
-      "name": "AutoScaleDimensions",
-      "type": "System.Drawing.SizeF",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
-      "name": "Size",
-      "type": "System.Drawing.Size",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
     }
   ],
   "tree": {
     "name": "NewsListControl",
     "type": "UserControl",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "dgvNews",
+          "type": "System.Windows.Forms.DataGridView",
+          "slots": {
+            "Columns": [
+              {
+                "name": "chIsUnread",
+                "type": "System.Windows.Forms.DataGridViewTextBoxColumn",
+                "slots": {}
+              },
+              {
+                "name": "chDateTime",
+                "type": "System.Windows.Forms.DataGridViewTextBoxColumn",
+                "slots": {}
+              },
+              {
+                "name": "chText",
+                "type": "System.Windows.Forms.DataGridViewTextBoxColumn",
+                "slots": {}
+              }
+            ]
+          }
+        }
+      ]
+    }
   },
   "strings": {},
   "binary_resources": [],

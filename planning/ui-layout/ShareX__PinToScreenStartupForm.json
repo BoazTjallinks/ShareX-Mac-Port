@@ -27,21 +27,21 @@
   ],
   "controls": [
     {
-      "name": "btnFromFile",
+      "name": "btnCancel",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "PinToScreenStartupForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "Image": {
           "kind": "expr",
-          "raw": "global::ShareX.Properties.Resources.folder_open_image"
+          "raw": "global::ShareX.Properties.Resources.cross"
         },
         "ImageAlign": "MiddleLeft",
         "Location": {
           "kind": "Point",
           "x": 8,
-          "y": 88
+          "y": 128
         },
         "Padding": {
           "kind": "Padding",
@@ -55,131 +55,52 @@
           "width": 296,
           "height": 32
         },
-        "TabIndex": 2,
-        "Text": "Pin to screen from file...",
+        "TabIndex": 3,
+        "Text": "Cancel",
         "TextAlign": "MiddleLeft",
         "TextImageRelation": "ImageBeforeText",
-        "Name": "btnFromFile",
+        "Name": "btnCancel",
         "UseVisualStyleBackColor": true
       },
       "resources": [
         {
           "property": "ImageAlign",
-          "resource_key": "btnFromFile.ImageAlign",
+          "resource_key": "btnCancel.ImageAlign",
           "source": "ApplyResources"
         },
         {
           "property": "Location",
-          "resource_key": "btnFromFile.Location",
+          "resource_key": "btnCancel.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Padding",
-          "resource_key": "btnFromFile.Padding",
+          "resource_key": "btnCancel.Padding",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "btnFromFile.Size",
+          "resource_key": "btnCancel.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "btnFromFile.TabIndex",
+          "resource_key": "btnCancel.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "btnFromFile.Text",
+          "resource_key": "btnCancel.Text",
           "source": "ApplyResources"
         },
         {
           "property": "TextAlign",
-          "resource_key": "btnFromFile.TextAlign",
+          "resource_key": "btnCancel.TextAlign",
           "source": "ApplyResources"
         },
         {
           "property": "TextImageRelation",
-          "resource_key": "btnFromFile.TextImageRelation",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnFromClipboard",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Image": {
-          "kind": "expr",
-          "raw": "global::ShareX.Properties.Resources.clipboard_paste_image"
-        },
-        "ImageAlign": "MiddleLeft",
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 48
-        },
-        "Padding": {
-          "kind": "Padding",
-          "left": 3,
-          "top": 0,
-          "right": 0,
-          "bottom": 0
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 296,
-          "height": 32
-        },
-        "TabIndex": 1,
-        "Text": "Pin to screen from clipboard",
-        "TextAlign": "MiddleLeft",
-        "TextImageRelation": "ImageBeforeText",
-        "Name": "btnFromClipboard",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "ImageAlign",
-          "resource_key": "btnFromClipboard.ImageAlign",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnFromClipboard.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Padding",
-          "resource_key": "btnFromClipboard.Padding",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnFromClipboard.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnFromClipboard.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnFromClipboard.Text",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "btnFromClipboard.TextAlign",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextImageRelation",
-          "resource_key": "btnFromClipboard.TextImageRelation",
+          "resource_key": "btnCancel.TextImageRelation",
           "source": "ApplyResources"
         }
       ]
@@ -187,9 +108,9 @@
     {
       "name": "btnFromScreen",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "PinToScreenStartupForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
         "Image": {
           "kind": "expr",
@@ -264,21 +185,21 @@
       ]
     },
     {
-      "name": "btnCancel",
+      "name": "btnFromClipboard",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "PinToScreenStartupForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
       "properties": {
         "Image": {
           "kind": "expr",
-          "raw": "global::ShareX.Properties.Resources.cross"
+          "raw": "global::ShareX.Properties.Resources.clipboard_paste_image"
         },
         "ImageAlign": "MiddleLeft",
         "Location": {
           "kind": "Point",
           "x": 8,
-          "y": 128
+          "y": 48
         },
         "Padding": {
           "kind": "Padding",
@@ -292,52 +213,131 @@
           "width": 296,
           "height": 32
         },
-        "TabIndex": 3,
-        "Text": "Cancel",
+        "TabIndex": 1,
+        "Text": "Pin to screen from clipboard",
         "TextAlign": "MiddleLeft",
         "TextImageRelation": "ImageBeforeText",
-        "Name": "btnCancel",
+        "Name": "btnFromClipboard",
         "UseVisualStyleBackColor": true
       },
       "resources": [
         {
           "property": "ImageAlign",
-          "resource_key": "btnCancel.ImageAlign",
+          "resource_key": "btnFromClipboard.ImageAlign",
           "source": "ApplyResources"
         },
         {
           "property": "Location",
-          "resource_key": "btnCancel.Location",
+          "resource_key": "btnFromClipboard.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Padding",
-          "resource_key": "btnCancel.Padding",
+          "resource_key": "btnFromClipboard.Padding",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "btnCancel.Size",
+          "resource_key": "btnFromClipboard.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "btnCancel.TabIndex",
+          "resource_key": "btnFromClipboard.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "btnCancel.Text",
+          "resource_key": "btnFromClipboard.Text",
           "source": "ApplyResources"
         },
         {
           "property": "TextAlign",
-          "resource_key": "btnCancel.TextAlign",
+          "resource_key": "btnFromClipboard.TextAlign",
           "source": "ApplyResources"
         },
         {
           "property": "TextImageRelation",
-          "resource_key": "btnCancel.TextImageRelation",
+          "resource_key": "btnFromClipboard.TextImageRelation",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnFromFile",
+      "type": "System.Windows.Forms.Button",
+      "parent": "PinToScreenStartupForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.Properties.Resources.folder_open_image"
+        },
+        "ImageAlign": "MiddleLeft",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 88
+        },
+        "Padding": {
+          "kind": "Padding",
+          "left": 3,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 296,
+          "height": 32
+        },
+        "TabIndex": 2,
+        "Text": "Pin to screen from file...",
+        "TextAlign": "MiddleLeft",
+        "TextImageRelation": "ImageBeforeText",
+        "Name": "btnFromFile",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImageAlign",
+          "resource_key": "btnFromFile.ImageAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnFromFile.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Padding",
+          "resource_key": "btnFromFile.Padding",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnFromFile.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnFromFile.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnFromFile.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "btnFromFile.TextAlign",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextImageRelation",
+          "resource_key": "btnFromFile.TextImageRelation",
           "source": "ApplyResources"
         }
       ]
@@ -346,7 +346,30 @@
   "tree": {
     "name": "PinToScreenStartupForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "btnCancel",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnFromScreen",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnFromClipboard",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnFromFile",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "btnFromFile.Text": "Pin to screen from file...",

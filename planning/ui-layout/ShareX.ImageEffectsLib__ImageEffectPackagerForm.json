@@ -31,96 +31,212 @@
   ],
   "controls": [
     {
-      "name": "btnPackage",
+      "name": "btnOpenImageEffectsFolder",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ImageEffectPackagerForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "Location": {
           "kind": "Point",
           "x": 16,
-          "y": 144
+          "y": 16
         },
         "Size": {
           "kind": "Size",
           "width": 384,
           "height": 24
         },
-        "TabIndex": 0,
-        "Text": "Package",
-        "Name": "btnPackage",
+        "TabIndex": 1,
+        "Text": "Open image effects folder...",
+        "Name": "btnOpenImageEffectsFolder",
         "UseVisualStyleBackColor": true
       },
       "resources": [
         {
           "property": "Location",
-          "resource_key": "btnPackage.Location",
+          "resource_key": "btnOpenImageEffectsFolder.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "btnPackage.Size",
+          "resource_key": "btnOpenImageEffectsFolder.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "btnPackage.TabIndex",
+          "resource_key": "btnOpenImageEffectsFolder.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "btnPackage.Text",
+          "resource_key": "btnOpenImageEffectsFolder.Text",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "lblAssetsFolderPath",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "btnAssetsFolderPathBrowse",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageEffectPackagerForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
-        "AutoSize": true,
         "Location": {
           "kind": "Point",
-          "x": 13,
-          "y": 48
+          "x": 368,
+          "y": 63
         },
         "Size": {
           "kind": "Size",
-          "width": 94,
-          "height": 13
+          "width": 32,
+          "height": 23
         },
-        "TabIndex": 2,
-        "Text": "Assets folder path:",
-        "Name": "lblAssetsFolderPath"
+        "TabIndex": 4,
+        "Text": "...",
+        "Name": "btnAssetsFolderPathBrowse",
+        "UseVisualStyleBackColor": true
       },
       "resources": [
         {
-          "property": "AutoSize",
-          "resource_key": "lblAssetsFolderPath.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
           "property": "Location",
-          "resource_key": "lblAssetsFolderPath.Location",
+          "resource_key": "btnAssetsFolderPathBrowse.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "lblAssetsFolderPath.Size",
+          "resource_key": "btnAssetsFolderPathBrowse.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "lblAssetsFolderPath.TabIndex",
+          "resource_key": "btnAssetsFolderPathBrowse.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "lblAssetsFolderPath.Text",
+          "resource_key": "btnAssetsFolderPathBrowse.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtAssetsFolderPath",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "ImageEffectPackagerForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 64
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 344,
+          "height": 20
+        },
+        "TabIndex": 3,
+        "Name": "txtAssetsFolderPath"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtAssetsFolderPath.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtAssetsFolderPath.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtAssetsFolderPath.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnPackageFilePathBrowse",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageEffectPackagerForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 368,
+          "y": 111
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 32,
+          "height": 23
+        },
+        "TabIndex": 7,
+        "Text": "...",
+        "Name": "btnPackageFilePathBrowse",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnPackageFilePathBrowse.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnPackageFilePathBrowse.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnPackageFilePathBrowse.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnPackageFilePathBrowse.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtPackageFilePath",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "ImageEffectPackagerForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 112
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 344,
+          "height": 20
+        },
+        "TabIndex": 6,
+        "Name": "txtPackageFilePath"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtPackageFilePath.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtPackageFilePath.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtPackageFilePath.TabIndex",
           "source": "ApplyResources"
         }
       ]
@@ -128,9 +244,9 @@
     {
       "name": "lblPackageFilePath",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ImageEffectPackagerForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
       "properties": {
         "AutoSize": true,
         "Location": {
@@ -176,212 +292,96 @@
       ]
     },
     {
-      "name": "txtPackageFilePath",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "lblAssetsFolderPath",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ImageEffectPackagerForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
       "properties": {
+        "AutoSize": true,
         "Location": {
           "kind": "Point",
-          "x": 16,
-          "y": 112
+          "x": 13,
+          "y": 48
         },
         "Size": {
           "kind": "Size",
-          "width": 344,
-          "height": 20
+          "width": 94,
+          "height": 13
         },
-        "TabIndex": 6,
-        "Name": "txtPackageFilePath"
+        "TabIndex": 2,
+        "Text": "Assets folder path:",
+        "Name": "lblAssetsFolderPath"
       },
       "resources": [
         {
+          "property": "AutoSize",
+          "resource_key": "lblAssetsFolderPath.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
           "property": "Location",
-          "resource_key": "txtPackageFilePath.Location",
+          "resource_key": "lblAssetsFolderPath.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "txtPackageFilePath.Size",
+          "resource_key": "lblAssetsFolderPath.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "txtPackageFilePath.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnPackageFilePathBrowse",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 368,
-          "y": 111
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 32,
-          "height": 23
-        },
-        "TabIndex": 7,
-        "Text": "...",
-        "Name": "btnPackageFilePathBrowse",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnPackageFilePathBrowse.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnPackageFilePathBrowse.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnPackageFilePathBrowse.TabIndex",
+          "resource_key": "lblAssetsFolderPath.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "btnPackageFilePathBrowse.Text",
+          "resource_key": "lblAssetsFolderPath.Text",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "txtAssetsFolderPath",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "btnPackage",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageEffectPackagerForm",
+      "parent_slot": "Controls",
+      "child_index": 7,
       "properties": {
         "Location": {
           "kind": "Point",
           "x": 16,
-          "y": 64
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 344,
-          "height": 20
-        },
-        "TabIndex": 3,
-        "Name": "txtAssetsFolderPath"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "txtAssetsFolderPath.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "txtAssetsFolderPath.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "txtAssetsFolderPath.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnAssetsFolderPathBrowse",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 368,
-          "y": 63
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 32,
-          "height": 23
-        },
-        "TabIndex": 4,
-        "Text": "...",
-        "Name": "btnAssetsFolderPathBrowse",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnAssetsFolderPathBrowse.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnAssetsFolderPathBrowse.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnAssetsFolderPathBrowse.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnAssetsFolderPathBrowse.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnOpenImageEffectsFolder",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 16
+          "y": 144
         },
         "Size": {
           "kind": "Size",
           "width": 384,
           "height": 24
         },
-        "TabIndex": 1,
-        "Text": "Open image effects folder...",
-        "Name": "btnOpenImageEffectsFolder",
+        "TabIndex": 0,
+        "Text": "Package",
+        "Name": "btnPackage",
         "UseVisualStyleBackColor": true
       },
       "resources": [
         {
           "property": "Location",
-          "resource_key": "btnOpenImageEffectsFolder.Location",
+          "resource_key": "btnPackage.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "btnOpenImageEffectsFolder.Size",
+          "resource_key": "btnPackage.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "btnOpenImageEffectsFolder.TabIndex",
+          "resource_key": "btnPackage.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "btnOpenImageEffectsFolder.Text",
+          "resource_key": "btnPackage.Text",
           "source": "ApplyResources"
         }
       ]
@@ -390,7 +390,50 @@
   "tree": {
     "name": "ImageEffectPackagerForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "btnOpenImageEffectsFolder",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnAssetsFolderPathBrowse",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "txtAssetsFolderPath",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "btnPackageFilePathBrowse",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "txtPackageFilePath",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblPackageFilePath",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblAssetsFolderPath",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "btnPackage",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "btnPackage.Text": "Package",

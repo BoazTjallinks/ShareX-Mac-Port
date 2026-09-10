@@ -40,687 +40,94 @@
   ],
   "controls": [
     {
-      "name": "lblStartDelay",
+      "name": "lblScrollMethod",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ScrollingCaptureOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "AutoSize": true,
         "Location": {
           "kind": "Point",
           "x": 13,
-          "y": 16
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 74,
-          "height": 16
-        },
-        "TabIndex": 0,
-        "Text": "Start delay:",
-        "Name": "lblStartDelay"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblStartDelay.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblStartDelay.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblStartDelay.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblStartDelay.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblStartDelay.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "nudStartDelay",
-      "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Increment": 100,
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 40
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 80,
-          "height": 22
-        },
-        "TabIndex": 1,
-        "TextAlign": "Center",
-        "Maximum": 5000,
-        "Minimum": 100,
-        "Name": "nudStartDelay",
-        "Value": 500
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "nudStartDelay.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "nudStartDelay.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "nudStartDelay.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "nudStartDelay.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblScrollDelay",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 13,
-          "y": 112
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 81,
-          "height": 16
-        },
-        "TabIndex": 4,
-        "Text": "Scroll delay:",
-        "Name": "lblScrollDelay"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblScrollDelay.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblScrollDelay.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblScrollDelay.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblScrollDelay.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblScrollDelay.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "nudScrollDelay",
-      "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Increment": 100,
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 136
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 80,
-          "height": 22
-        },
-        "TabIndex": 5,
-        "TextAlign": "Center",
-        "Maximum": 5000,
-        "Minimum": 100,
-        "Name": "nudScrollDelay",
-        "Value": 500
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "nudScrollDelay.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "nudScrollDelay.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "nudScrollDelay.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "nudScrollDelay.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "cbAutoScrollTop",
-      "type": "System.Windows.Forms.CheckBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 80
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 177,
-          "height": 20
-        },
-        "TabIndex": 3,
-        "Text": "Automatically scroll to top",
-        "Name": "cbAutoScrollTop",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "cbAutoScrollTop.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "cbAutoScrollTop.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "cbAutoScrollTop.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "cbAutoScrollTop.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "cbAutoScrollTop.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblScrollAmount",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 165,
           "y": 176
         },
         "Size": {
           "kind": "Size",
-          "width": 91,
+          "width": 92,
           "height": 16
         },
-        "TabIndex": 9,
-        "Text": "Scroll amount:",
-        "Name": "lblScrollAmount"
+        "TabIndex": 7,
+        "Text": "Scroll method:",
+        "Name": "lblScrollMethod"
       },
       "resources": [
         {
           "property": "AutoSize",
-          "resource_key": "lblScrollAmount.AutoSize",
+          "resource_key": "lblScrollMethod.AutoSize",
           "source": "ApplyResources"
         },
         {
           "property": "Location",
-          "resource_key": "lblScrollAmount.Location",
+          "resource_key": "lblScrollMethod.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "lblScrollAmount.Size",
+          "resource_key": "lblScrollMethod.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "lblScrollAmount.TabIndex",
+          "resource_key": "lblScrollMethod.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "lblScrollAmount.Text",
+          "resource_key": "lblScrollMethod.Text",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "nudScrollAmount",
-      "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "cbScrollMethod",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "ScrollingCaptureOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 168,
-          "y": 201
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
         },
-        "Size": {
-          "kind": "Size",
-          "width": 64,
-          "height": 22
-        },
-        "TabIndex": 10,
-        "TextAlign": "Center",
-        "Maximum": 6,
-        "Minimum": 1,
-        "Name": "nudScrollAmount",
-        "Value": 1
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "nudScrollAmount.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "nudScrollAmount.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "nudScrollAmount.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "nudScrollAmount.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "cbAutoUpload",
-      "type": "System.Windows.Forms.CheckBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
+        "FormattingEnabled": true,
         "Location": {
           "kind": "Point",
           "x": 16,
-          "y": 304
+          "y": 200
         },
         "Size": {
           "kind": "Size",
-          "width": 191,
-          "height": 20
+          "width": 144,
+          "height": 24
         },
-        "TabIndex": 14,
-        "Text": "Automatically upload / save",
-        "Name": "cbAutoUpload",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "cbAutoUpload.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "cbAutoUpload.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "cbAutoUpload.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "cbAutoUpload.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "cbAutoUpload.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblStartDelayHint",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 101,
-          "y": 43
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 25,
-          "height": 16
-        },
-        "TabIndex": 2,
-        "Text": "ms",
-        "Name": "lblStartDelayHint"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblStartDelayHint.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblStartDelayHint.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblStartDelayHint.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblStartDelayHint.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblStartDelayHint.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblScrollDelayHint",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 101,
-          "y": 139
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 25,
-          "height": 16
-        },
-        "TabIndex": 6,
-        "Text": "ms",
-        "Name": "lblScrollDelayHint"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblScrollDelayHint.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblScrollDelayHint.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblScrollDelayHint.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblScrollDelayHint.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblScrollDelayHint.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblScrollAmountHint",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 237,
-          "y": 204
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 39,
-          "height": 16
-        },
-        "TabIndex": 11,
-        "Text": "times",
-        "Name": "lblScrollAmountHint"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblScrollAmountHint.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblScrollAmountHint.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblScrollAmountHint.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblScrollAmountHint.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblScrollAmountHint.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnOK",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 152,
-          "y": 336
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 104,
-          "height": 32
-        },
-        "TabIndex": 15,
-        "Text": "OK",
-        "Name": "btnOK",
-        "UseVisualStyleBackColor": true
+        "TabIndex": 8,
+        "Name": "cbScrollMethod"
       },
       "resources": [
         {
           "property": "Location",
-          "resource_key": "btnOK.Location",
+          "resource_key": "cbScrollMethod.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "btnOK.Size",
+          "resource_key": "cbScrollMethod.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "btnOK.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnOK.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnCancel",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 264,
-          "y": 336
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 104,
-          "height": 32
-        },
-        "TabIndex": 16,
-        "Text": "Cancel",
-        "Name": "btnCancel",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnCancel.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnCancel.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnCancel.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnCancel.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "cbShowRegion",
-      "type": "System.Windows.Forms.CheckBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 272
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 201,
-          "height": 20
-        },
-        "TabIndex": 13,
-        "Text": "Show scrolling capture region",
-        "Name": "cbShowRegion",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "cbShowRegion.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "cbShowRegion.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "cbShowRegion.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "cbShowRegion.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "cbShowRegion.Text",
+          "resource_key": "cbScrollMethod.TabIndex",
           "source": "ApplyResources"
         }
       ]
@@ -728,9 +135,9 @@
     {
       "name": "cbAutoIgnoreBottomEdge",
       "type": "System.Windows.Forms.CheckBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ScrollingCaptureOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
       "properties": {
         "AutoSize": true,
         "Location": {
@@ -777,94 +184,687 @@
       ]
     },
     {
-      "name": "cbScrollMethod",
-      "type": "System.Windows.Forms.ComboBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "cbShowRegion",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "ScrollingCaptureOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
       "properties": {
-        "DropDownStyle": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
-        },
-        "FormattingEnabled": true,
+        "AutoSize": true,
         "Location": {
           "kind": "Point",
           "x": 16,
-          "y": 200
+          "y": 272
         },
         "Size": {
           "kind": "Size",
-          "width": 144,
-          "height": 24
+          "width": 201,
+          "height": 20
         },
-        "TabIndex": 8,
-        "Name": "cbScrollMethod"
+        "TabIndex": 13,
+        "Text": "Show scrolling capture region",
+        "Name": "cbShowRegion",
+        "UseVisualStyleBackColor": true
       },
       "resources": [
         {
+          "property": "AutoSize",
+          "resource_key": "cbShowRegion.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
           "property": "Location",
-          "resource_key": "cbScrollMethod.Location",
+          "resource_key": "cbShowRegion.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "cbScrollMethod.Size",
+          "resource_key": "cbShowRegion.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "cbScrollMethod.TabIndex",
+          "resource_key": "cbShowRegion.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbShowRegion.Text",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "lblScrollMethod",
+      "name": "btnCancel",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ScrollingCaptureOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 264,
+          "y": 336
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 104,
+          "height": 32
+        },
+        "TabIndex": 16,
+        "Text": "Cancel",
+        "Name": "btnCancel",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnCancel.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCancel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCancel.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCancel.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnOK",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ScrollingCaptureOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 152,
+          "y": 336
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 104,
+          "height": 32
+        },
+        "TabIndex": 15,
+        "Text": "OK",
+        "Name": "btnOK",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnOK.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnOK.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnOK.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnOK.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblScrollAmountHint",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ScrollingCaptureOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 237,
+          "y": 204
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 39,
+          "height": 16
+        },
+        "TabIndex": 11,
+        "Text": "times",
+        "Name": "lblScrollAmountHint"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblScrollAmountHint.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblScrollAmountHint.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblScrollAmountHint.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblScrollAmountHint.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblScrollAmountHint.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblScrollDelayHint",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ScrollingCaptureOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 7,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 101,
+          "y": 139
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 25,
+          "height": 16
+        },
+        "TabIndex": 6,
+        "Text": "ms",
+        "Name": "lblScrollDelayHint"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblScrollDelayHint.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblScrollDelayHint.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblScrollDelayHint.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblScrollDelayHint.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblScrollDelayHint.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblStartDelayHint",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ScrollingCaptureOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 8,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 101,
+          "y": 43
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 25,
+          "height": 16
+        },
+        "TabIndex": 2,
+        "Text": "ms",
+        "Name": "lblStartDelayHint"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblStartDelayHint.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblStartDelayHint.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblStartDelayHint.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblStartDelayHint.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblStartDelayHint.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbAutoUpload",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "ScrollingCaptureOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 9,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 304
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 191,
+          "height": 20
+        },
+        "TabIndex": 14,
+        "Text": "Automatically upload / save",
+        "Name": "cbAutoUpload",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbAutoUpload.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbAutoUpload.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbAutoUpload.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbAutoUpload.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbAutoUpload.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudScrollAmount",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "ScrollingCaptureOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 10,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 168,
+          "y": 201
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 64,
+          "height": 22
+        },
+        "TabIndex": 10,
+        "TextAlign": "Center",
+        "Maximum": 6,
+        "Minimum": 1,
+        "Name": "nudScrollAmount",
+        "Value": 1
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudScrollAmount.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudScrollAmount.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudScrollAmount.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudScrollAmount.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblScrollAmount",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ScrollingCaptureOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 11,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 165,
+          "y": 176
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 91,
+          "height": 16
+        },
+        "TabIndex": 9,
+        "Text": "Scroll amount:",
+        "Name": "lblScrollAmount"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblScrollAmount.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblScrollAmount.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblScrollAmount.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblScrollAmount.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblScrollAmount.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbAutoScrollTop",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "ScrollingCaptureOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 12,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 80
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 177,
+          "height": 20
+        },
+        "TabIndex": 3,
+        "Text": "Automatically scroll to top",
+        "Name": "cbAutoScrollTop",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbAutoScrollTop.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbAutoScrollTop.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbAutoScrollTop.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbAutoScrollTop.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbAutoScrollTop.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudScrollDelay",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "ScrollingCaptureOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 13,
+      "properties": {
+        "Increment": 100,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 136
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 80,
+          "height": 22
+        },
+        "TabIndex": 5,
+        "TextAlign": "Center",
+        "Maximum": 5000,
+        "Minimum": 100,
+        "Name": "nudScrollDelay",
+        "Value": 500
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudScrollDelay.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudScrollDelay.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudScrollDelay.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudScrollDelay.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblScrollDelay",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ScrollingCaptureOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 14,
       "properties": {
         "AutoSize": true,
         "Location": {
           "kind": "Point",
           "x": 13,
-          "y": 176
+          "y": 112
         },
         "Size": {
           "kind": "Size",
-          "width": 92,
+          "width": 81,
           "height": 16
         },
-        "TabIndex": 7,
-        "Text": "Scroll method:",
-        "Name": "lblScrollMethod"
+        "TabIndex": 4,
+        "Text": "Scroll delay:",
+        "Name": "lblScrollDelay"
       },
       "resources": [
         {
           "property": "AutoSize",
-          "resource_key": "lblScrollMethod.AutoSize",
+          "resource_key": "lblScrollDelay.AutoSize",
           "source": "ApplyResources"
         },
         {
           "property": "Location",
-          "resource_key": "lblScrollMethod.Location",
+          "resource_key": "lblScrollDelay.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "lblScrollMethod.Size",
+          "resource_key": "lblScrollDelay.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "lblScrollMethod.TabIndex",
+          "resource_key": "lblScrollDelay.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "lblScrollMethod.Text",
+          "resource_key": "lblScrollDelay.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudStartDelay",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "ScrollingCaptureOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 15,
+      "properties": {
+        "Increment": 100,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 40
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 80,
+          "height": 22
+        },
+        "TabIndex": 1,
+        "TextAlign": "Center",
+        "Maximum": 5000,
+        "Minimum": 100,
+        "Name": "nudStartDelay",
+        "Value": 500
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudStartDelay.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudStartDelay.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudStartDelay.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudStartDelay.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblStartDelay",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ScrollingCaptureOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 16,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 16
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 74,
+          "height": 16
+        },
+        "TabIndex": 0,
+        "Text": "Start delay:",
+        "Name": "lblStartDelay"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblStartDelay.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblStartDelay.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblStartDelay.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblStartDelay.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblStartDelay.Text",
           "source": "ApplyResources"
         }
       ]
@@ -873,7 +873,95 @@
   "tree": {
     "name": "ScrollingCaptureOptionsForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "lblScrollMethod",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "cbScrollMethod",
+          "type": "System.Windows.Forms.ComboBox",
+          "slots": {}
+        },
+        {
+          "name": "cbAutoIgnoreBottomEdge",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "cbShowRegion",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "btnCancel",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnOK",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "lblScrollAmountHint",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblScrollDelayHint",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblStartDelayHint",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "cbAutoUpload",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "nudScrollAmount",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "lblScrollAmount",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "cbAutoScrollTop",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "nudScrollDelay",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "lblScrollDelay",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "nudStartDelay",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "lblStartDelay",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "lblStartDelay.Text": "Start delay:",

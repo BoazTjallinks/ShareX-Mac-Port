@@ -30,327 +30,18 @@
   ],
   "controls": [
     {
-      "name": "lvPresets",
-      "type": "HelpersLib.MyListView",
+      "name": "chName",
+      "type": "System.Windows.Forms.ColumnHeader",
       "parent": null,
       "parent_slot": null,
       "child_index": null,
       "properties": {
-        "AllowDrop": true,
-        "AllowItemDrag": true,
-        "Anchor": "Top, Bottom, Left, Right",
-        "Font": "Microsoft Sans Serif, 9.75pt",
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 8
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 448,
-          "height": 328
-        },
-        "TabIndex": 0,
-        "AutoFillColumn": true,
-        "Columns.literal_items": [
-          {
-            "kind": "expr",
-            "raw": "this.chName"
-          }
-        ],
-        "FullRowSelect": true,
-        "GridLines": true,
-        "HeaderStyle": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.ColumnHeaderStyle.None"
-        },
-        "HideSelection": false,
-        "Name": "lvPresets",
-        "UseCompatibleStateImageBehavior": false,
-        "View": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.View.Details"
-        }
+        "Width": 372
       },
       "resources": [
         {
-          "property": "Anchor",
-          "resource_key": "lvPresets.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Font",
-          "resource_key": "lvPresets.Font",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lvPresets.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lvPresets.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lvPresets.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnAdd",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Bottom, Left",
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 368
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 144,
-          "height": 23
-        },
-        "TabIndex": 1,
-        "Text": "Add",
-        "Name": "btnAdd",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "btnAdd.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnAdd.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnAdd.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnAdd.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnAdd.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnEdit",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Bottom, Left",
-        "Location": {
-          "kind": "Point",
-          "x": 160,
-          "y": 368
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 144,
-          "height": 23
-        },
-        "TabIndex": 2,
-        "Text": "Edit",
-        "Name": "btnEdit",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "btnEdit.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnEdit.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnEdit.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnEdit.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnEdit.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnRemove",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Bottom, Left",
-        "Location": {
-          "kind": "Point",
-          "x": 312,
-          "y": 368
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 144,
-          "height": 23
-        },
-        "TabIndex": 3,
-        "Text": "Remove",
-        "Name": "btnRemove",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "btnRemove.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnRemove.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnRemove.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnRemove.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnRemove.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnReset",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Bottom, Left",
-        "Location": {
-          "kind": "Point",
-          "x": 272,
-          "y": 400
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 184,
-          "height": 23
-        },
-        "TabIndex": 4,
-        "Text": "Reset to default...",
-        "Name": "btnReset",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "btnReset.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnReset.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnReset.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnReset.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnReset.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnClose",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Bottom, Left",
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 400
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 256,
-          "height": 23
-        },
-        "TabIndex": 5,
-        "Text": "Close",
-        "Name": "btnClose",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "btnClose.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnClose.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnClose.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnClose.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnClose.Text",
+          "property": "Width",
+          "resource_key": "chName.Width",
           "source": "ApplyResources"
         }
       ]
@@ -358,9 +49,9 @@
     {
       "name": "lblTip",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "QuickTaskMenuEditorForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "Anchor": "Bottom, Left",
         "AutoSize": true,
@@ -412,18 +103,327 @@
       ]
     },
     {
-      "name": "chName",
-      "type": "System.Windows.Forms.ColumnHeader",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "btnClose",
+      "type": "System.Windows.Forms.Button",
+      "parent": "QuickTaskMenuEditorForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
-        "Width": 372
+        "Anchor": "Bottom, Left",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 400
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 256,
+          "height": 23
+        },
+        "TabIndex": 5,
+        "Text": "Close",
+        "Name": "btnClose",
+        "UseVisualStyleBackColor": true
       },
       "resources": [
         {
-          "property": "Width",
-          "resource_key": "chName.Width",
+          "property": "Anchor",
+          "resource_key": "btnClose.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnClose.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnClose.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnClose.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnClose.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnReset",
+      "type": "System.Windows.Forms.Button",
+      "parent": "QuickTaskMenuEditorForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "Location": {
+          "kind": "Point",
+          "x": 272,
+          "y": 400
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 184,
+          "height": 23
+        },
+        "TabIndex": 4,
+        "Text": "Reset to default...",
+        "Name": "btnReset",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnReset.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnReset.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnReset.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnReset.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnReset.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnRemove",
+      "type": "System.Windows.Forms.Button",
+      "parent": "QuickTaskMenuEditorForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "Location": {
+          "kind": "Point",
+          "x": 312,
+          "y": 368
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 144,
+          "height": 23
+        },
+        "TabIndex": 3,
+        "Text": "Remove",
+        "Name": "btnRemove",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnRemove.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnRemove.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnRemove.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnRemove.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnRemove.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnEdit",
+      "type": "System.Windows.Forms.Button",
+      "parent": "QuickTaskMenuEditorForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "Location": {
+          "kind": "Point",
+          "x": 160,
+          "y": 368
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 144,
+          "height": 23
+        },
+        "TabIndex": 2,
+        "Text": "Edit",
+        "Name": "btnEdit",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnEdit.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnEdit.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnEdit.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnEdit.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnEdit.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnAdd",
+      "type": "System.Windows.Forms.Button",
+      "parent": "QuickTaskMenuEditorForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 368
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 144,
+          "height": 23
+        },
+        "TabIndex": 1,
+        "Text": "Add",
+        "Name": "btnAdd",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnAdd.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnAdd.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnAdd.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnAdd.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnAdd.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lvPresets",
+      "type": "HelpersLib.MyListView",
+      "parent": "QuickTaskMenuEditorForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "AllowDrop": true,
+        "AllowItemDrag": true,
+        "Anchor": "Top, Bottom, Left, Right",
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 448,
+          "height": 328
+        },
+        "TabIndex": 0,
+        "AutoFillColumn": true,
+        "Columns.literal_items": [
+          {
+            "kind": "ident",
+            "raw": "chName"
+          }
+        ],
+        "FullRowSelect": true,
+        "GridLines": true,
+        "HeaderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ColumnHeaderStyle.None"
+        },
+        "HideSelection": false,
+        "Name": "lvPresets",
+        "UseCompatibleStateImageBehavior": false,
+        "View": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.View.Details"
+        }
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "lvPresets.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "lvPresets.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lvPresets.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lvPresets.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lvPresets.TabIndex",
           "source": "ApplyResources"
         }
       ]
@@ -432,7 +432,45 @@
   "tree": {
     "name": "QuickTaskMenuEditorForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "lblTip",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "btnClose",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnReset",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnRemove",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnEdit",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnAdd",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "lvPresets",
+          "type": "HelpersLib.MyListView",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "btnAdd.Text": "Add",

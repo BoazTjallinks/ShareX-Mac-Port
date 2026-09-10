@@ -71,903 +71,6 @@
       "resources": []
     },
     {
-      "name": "lblMargin",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 13,
-          "y": 16
-        },
-        "Margin": {
-          "kind": "Padding",
-          "left": 4,
-          "top": 0,
-          "right": 4,
-          "bottom": 0
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 53,
-          "height": 17
-        },
-        "TabIndex": 0,
-        "Text": "Margin:",
-        "Name": "lblMargin"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblMargin.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblMargin.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Margin",
-          "resource_key": "lblMargin.Margin",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblMargin.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblMargin.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblMargin.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tbMargin",
-      "type": "System.Windows.Forms.TrackBar",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 40
-        },
-        "Margin": {
-          "kind": "Padding",
-          "left": 4,
-          "top": 3,
-          "right": 4,
-          "bottom": 3
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 296,
-          "height": 45
-        },
-        "TabIndex": 1,
-        "Maximum": 300,
-        "Name": "tbMargin",
-        "TickFrequency": 10
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "tbMargin.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Margin",
-          "resource_key": "tbMargin.Margin",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "tbMargin.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "tbMargin.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblPadding",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 13,
-          "y": 88
-        },
-        "Margin": {
-          "kind": "Padding",
-          "left": 4,
-          "top": 0,
-          "right": 4,
-          "bottom": 0
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 59,
-          "height": 17
-        },
-        "TabIndex": 3,
-        "Text": "Padding:",
-        "Name": "lblPadding"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblPadding.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblPadding.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Margin",
-          "resource_key": "lblPadding.Margin",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblPadding.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblPadding.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblPadding.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tbPadding",
-      "type": "System.Windows.Forms.TrackBar",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 112
-        },
-        "Margin": {
-          "kind": "Padding",
-          "left": 4,
-          "top": 3,
-          "right": 4,
-          "bottom": 3
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 296,
-          "height": 45
-        },
-        "TabIndex": 4,
-        "Maximum": 200,
-        "Name": "tbPadding",
-        "TickFrequency": 10
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "tbPadding.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Margin",
-          "resource_key": "tbPadding.Margin",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "tbPadding.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "tbPadding.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "cbSmartPadding",
-      "type": "System.Windows.Forms.CheckBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 160
-        },
-        "Margin": {
-          "kind": "Padding",
-          "left": 4,
-          "top": 3,
-          "right": 4,
-          "bottom": 3
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 114,
-          "height": 21
-        },
-        "TabIndex": 6,
-        "Text": "Smart padding",
-        "Name": "cbSmartPadding",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "cbSmartPadding.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "cbSmartPadding.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Margin",
-          "resource_key": "cbSmartPadding.Margin",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "cbSmartPadding.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "cbSmartPadding.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "cbSmartPadding.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblRoundedCorner",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 13,
-          "y": 192
-        },
-        "Margin": {
-          "kind": "Padding",
-          "left": 4,
-          "top": 0,
-          "right": 4,
-          "bottom": 0
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 106,
-          "height": 17
-        },
-        "TabIndex": 7,
-        "Text": "Rounded corner:",
-        "Name": "lblRoundedCorner"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblRoundedCorner.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblRoundedCorner.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Margin",
-          "resource_key": "lblRoundedCorner.Margin",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblRoundedCorner.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblRoundedCorner.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblRoundedCorner.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tbRoundedCorner",
-      "type": "System.Windows.Forms.TrackBar",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 216
-        },
-        "Margin": {
-          "kind": "Padding",
-          "left": 4,
-          "top": 3,
-          "right": 4,
-          "bottom": 3
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 296,
-          "height": 45
-        },
-        "TabIndex": 8,
-        "Maximum": 50,
-        "Name": "tbRoundedCorner",
-        "TickFrequency": 5
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "tbRoundedCorner.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Margin",
-          "resource_key": "tbRoundedCorner.Margin",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "tbRoundedCorner.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "tbRoundedCorner.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblShadowRadius",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 32
-        },
-        "Margin": {
-          "kind": "Padding",
-          "left": 4,
-          "top": 0,
-          "right": 4,
-          "bottom": 0
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 50,
-          "height": 17
-        },
-        "TabIndex": 10,
-        "Text": "Radius:",
-        "Name": "lblShadowRadius"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblShadowRadius.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblShadowRadius.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Margin",
-          "resource_key": "lblShadowRadius.Margin",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblShadowRadius.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblShadowRadius.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblShadowRadius.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tbShadowRadius",
-      "type": "System.Windows.Forms.TrackBar",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": false,
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 56
-        },
-        "Margin": {
-          "kind": "Padding",
-          "left": 4,
-          "top": 3,
-          "right": 4,
-          "bottom": 3
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 280,
-          "height": 32
-        },
-        "TabIndex": 11,
-        "Maximum": 100,
-        "Name": "tbShadowRadius",
-        "TickFrequency": 5
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "tbShadowRadius.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "tbShadowRadius.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Margin",
-          "resource_key": "tbShadowRadius.Margin",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "tbShadowRadius.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "tbShadowRadius.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblBackground",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 13,
-          "y": 384
-        },
-        "Margin": {
-          "kind": "Padding",
-          "left": 4,
-          "top": 0,
-          "right": 4,
-          "bottom": 0
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 80,
-          "height": 17
-        },
-        "TabIndex": 13,
-        "Text": "Background:",
-        "Name": "lblBackground"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblBackground.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblBackground.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Margin",
-          "resource_key": "lblBackground.Margin",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblBackground.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblBackground.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblBackground.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblMarginValue",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 256,
-          "y": 16
-        },
-        "Margin": {
-          "kind": "Padding",
-          "left": 4,
-          "top": 0,
-          "right": 4,
-          "bottom": 0
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 56,
-          "height": 24
-        },
-        "TabIndex": 2,
-        "Text": "0",
-        "TextAlign": "MiddleRight",
-        "Name": "lblMarginValue"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "lblMarginValue.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Margin",
-          "resource_key": "lblMarginValue.Margin",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblMarginValue.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblMarginValue.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblMarginValue.Text",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "lblMarginValue.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblPaddingValue",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 256,
-          "y": 88
-        },
-        "Margin": {
-          "kind": "Padding",
-          "left": 4,
-          "top": 0,
-          "right": 4,
-          "bottom": 0
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 56,
-          "height": 24
-        },
-        "TabIndex": 5,
-        "Text": "0",
-        "TextAlign": "MiddleRight",
-        "Name": "lblPaddingValue"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "lblPaddingValue.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Margin",
-          "resource_key": "lblPaddingValue.Margin",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblPaddingValue.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblPaddingValue.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblPaddingValue.Text",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "lblPaddingValue.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblRoundedCornerValue",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 256,
-          "y": 192
-        },
-        "Margin": {
-          "kind": "Padding",
-          "left": 4,
-          "top": 0,
-          "right": 4,
-          "bottom": 0
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 56,
-          "height": 24
-        },
-        "TabIndex": 9,
-        "Text": "0",
-        "TextAlign": "MiddleRight",
-        "Name": "lblRoundedCornerValue"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "lblRoundedCornerValue.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Margin",
-          "resource_key": "lblRoundedCornerValue.Margin",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblRoundedCornerValue.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblRoundedCornerValue.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblRoundedCornerValue.Text",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "lblRoundedCornerValue.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblShadowRadiusValue",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 240,
-          "y": 32
-        },
-        "Margin": {
-          "kind": "Padding",
-          "left": 4,
-          "top": 0,
-          "right": 4,
-          "bottom": 0
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 56,
-          "height": 24
-        },
-        "TabIndex": 12,
-        "Text": "0",
-        "TextAlign": "MiddleRight",
-        "Name": "lblShadowRadiusValue"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "lblShadowRadiusValue.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Margin",
-          "resource_key": "lblShadowRadiusValue.Margin",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblShadowRadiusValue.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblShadowRadiusValue.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblShadowRadiusValue.Text",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "lblShadowRadiusValue.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tlpMain",
-      "type": "System.Windows.Forms.TableLayoutPanel",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "ColumnCount": 2,
-        "Dock": "Fill",
-        "Location": {
-          "kind": "Point",
-          "x": 0,
-          "y": 0
-        },
-        "RowCount": 1,
-        "Size": {
-          "kind": "Size",
-          "width": 1384,
-          "height": 761
-        },
-        "TabIndex": 0,
-        "LayoutSettings": "<?xml version=\"1.0\" encoding=\"utf-16\"?><TableLayoutSettings><Controls><Control Name=\"pbPreview\" Row=\"0\" RowSpan=\"1\" Column=\"1\" ColumnSpan=\"1\" /><Control Name=\"pOptions\" Row=\"0\" RowSpan=\"1\" Column=\"0\" ColumnSpan=\"1\" /></Controls><Columns Styles=\"Absolute,335,Percent,100\" /><Rows Styles=\"Percent,100\" /></TableLayoutSettings>",
-        "Name": "tlpMain"
-      },
-      "resources": [
-        {
-          "property": "ColumnCount",
-          "resource_key": "tlpMain.ColumnCount",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Dock",
-          "resource_key": "tlpMain.Dock",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "tlpMain.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "RowCount",
-          "resource_key": "tlpMain.RowCount",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "tlpMain.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "tlpMain.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "LayoutSettings",
-          "resource_key": "tlpMain.LayoutSettings",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "pbPreview",
       "type": "HelpersLib.MyPictureBox",
       "parent": null,
@@ -1080,90 +183,72 @@
       ]
     },
     {
-      "name": "btnShadowExpand",
-      "type": "System.Windows.Forms.Button",
+      "name": "ttMain",
+      "type": "System.Windows.Forms.ToolTip",
       "parent": null,
       "parent_slot": null,
       "child_index": null,
-      "properties": {
-        "Image": {
-          "kind": "expr",
-          "raw": "global::ShareX.MediaLib.Properties.Resources.plus_white"
-        },
-        "Location": {
-          "kind": "Point",
-          "x": 280,
-          "y": 260
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 30,
-          "height": 30
-        },
-        "TabIndex": 16,
-        "Name": "btnShadowExpand",
-        "Tag": "+",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnShadowExpand.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnShadowExpand.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnShadowExpand.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
+      "properties": {},
+      "resources": []
     },
     {
-      "name": "gbShadow",
-      "type": "System.Windows.Forms.GroupBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "tlpMain",
+      "type": "System.Windows.Forms.TableLayoutPanel",
+      "parent": "ImageBeautifierForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
+        "ColumnCount": 2,
+        "Dock": "Fill",
         "Location": {
           "kind": "Point",
-          "x": 8,
-          "y": 264
+          "x": 0,
+          "y": 0
         },
+        "RowCount": 1,
         "Size": {
           "kind": "Size",
-          "width": 312,
-          "height": 104
+          "width": 1384,
+          "height": 761
         },
-        "TabIndex": 25,
-        "Text": "Shadow",
-        "Name": "gbShadow",
-        "TabStop": false
+        "TabIndex": 0,
+        "LayoutSettings": "<?xml version=\"1.0\" encoding=\"utf-16\"?><TableLayoutSettings><Controls><Control Name=\"pbPreview\" Row=\"0\" RowSpan=\"1\" Column=\"1\" ColumnSpan=\"1\" /><Control Name=\"pOptions\" Row=\"0\" RowSpan=\"1\" Column=\"0\" ColumnSpan=\"1\" /></Controls><Columns Styles=\"Absolute,335,Percent,100\" /><Rows Styles=\"Percent,100\" /></TableLayoutSettings>",
+        "Name": "tlpMain"
       },
       "resources": [
         {
+          "property": "ColumnCount",
+          "resource_key": "tlpMain.ColumnCount",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Dock",
+          "resource_key": "tlpMain.Dock",
+          "source": "ApplyResources"
+        },
+        {
           "property": "Location",
-          "resource_key": "gbShadow.Location",
+          "resource_key": "tlpMain.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "RowCount",
+          "resource_key": "tlpMain.RowCount",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "gbShadow.Size",
+          "resource_key": "tlpMain.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "gbShadow.TabIndex",
+          "resource_key": "tlpMain.TabIndex",
           "source": "ApplyResources"
         },
         {
-          "property": "Text",
-          "resource_key": "gbShadow.Text",
+          "property": "LayoutSettings",
+          "resource_key": "tlpMain.LayoutSettings",
           "source": "ApplyResources"
         }
       ]
@@ -1171,9 +256,9 @@
     {
       "name": "lblShadowAngleValue",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "gbShadow",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "Location": {
           "kind": "Point",
@@ -1233,9 +318,9 @@
     {
       "name": "lblShadowDistanceValue",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "gbShadow",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
         "Location": {
           "kind": "Point",
@@ -1295,9 +380,9 @@
     {
       "name": "lblShadowOpacityValue",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "gbShadow",
+      "parent_slot": "Controls",
+      "child_index": 2,
       "properties": {
         "Location": {
           "kind": "Point",
@@ -1357,9 +442,9 @@
     {
       "name": "btnShadowColor",
       "type": "HelpersLib.ColorButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "gbShadow",
+      "parent_slot": "Controls",
+      "child_index": 3,
       "properties": {
         "Color": {
           "kind": "expr",
@@ -1411,11 +496,69 @@
       ]
     },
     {
+      "name": "tbShadowRadius",
+      "type": "System.Windows.Forms.TrackBar",
+      "parent": "gbShadow",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "AutoSize": false,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 56
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 3,
+          "right": 4,
+          "bottom": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 280,
+          "height": 32
+        },
+        "TabIndex": 11,
+        "Maximum": 100,
+        "Name": "tbShadowRadius",
+        "TickFrequency": 5
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "tbShadowRadius.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "tbShadowRadius.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "tbShadowRadius.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tbShadowRadius.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tbShadowRadius.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
       "name": "tbShadowAngle",
       "type": "System.Windows.Forms.TrackBar",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "gbShadow",
+      "parent_slot": "Controls",
+      "child_index": 5,
       "properties": {
         "Location": {
           "kind": "Point",
@@ -1451,11 +594,73 @@
       ]
     },
     {
+      "name": "lblShadowRadiusValue",
+      "type": "System.Windows.Forms.Label",
+      "parent": "gbShadow",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 240,
+          "y": 32
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 0,
+          "right": 4,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 56,
+          "height": 24
+        },
+        "TabIndex": 12,
+        "Text": "0",
+        "TextAlign": "MiddleRight",
+        "Name": "lblShadowRadiusValue"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "lblShadowRadiusValue.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblShadowRadiusValue.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblShadowRadiusValue.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblShadowRadiusValue.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblShadowRadiusValue.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "lblShadowRadiusValue.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
       "name": "lblShadowAngle",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "gbShadow",
+      "parent_slot": "Controls",
+      "child_index": 7,
       "properties": {
         "AutoSize": true,
         "Location": {
@@ -1501,11 +706,73 @@
       ]
     },
     {
+      "name": "lblShadowRadius",
+      "type": "System.Windows.Forms.Label",
+      "parent": "gbShadow",
+      "parent_slot": "Controls",
+      "child_index": 8,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 32
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 0,
+          "right": 4,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 50,
+          "height": 17
+        },
+        "TabIndex": 10,
+        "Text": "Radius:",
+        "Name": "lblShadowRadius"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblShadowRadius.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblShadowRadius.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblShadowRadius.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblShadowRadius.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblShadowRadius.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblShadowRadius.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
       "name": "tbShadowDistance",
       "type": "System.Windows.Forms.TrackBar",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "gbShadow",
+      "parent_slot": "Controls",
+      "child_index": 9,
       "properties": {
         "Location": {
           "kind": "Point",
@@ -1543,9 +810,9 @@
     {
       "name": "lblShadowOpacity",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "gbShadow",
+      "parent_slot": "Controls",
+      "child_index": 10,
       "properties": {
         "AutoSize": true,
         "Location": {
@@ -1593,9 +860,9 @@
     {
       "name": "lblShadowDistance",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "gbShadow",
+      "parent_slot": "Controls",
+      "child_index": 11,
       "properties": {
         "AutoSize": true,
         "Location": {
@@ -1643,9 +910,9 @@
     {
       "name": "tbShadowOpacity",
       "type": "System.Windows.Forms.TrackBar",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "gbShadow",
+      "parent_slot": "Controls",
+      "child_index": 12,
       "properties": {
         "Location": {
           "kind": "Point",
@@ -1682,11 +949,100 @@
       ]
     },
     {
+      "name": "btnShadowExpand",
+      "type": "System.Windows.Forms.Button",
+      "parent": "pOptions",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.MediaLib.Properties.Resources.plus_white"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 280,
+          "y": 260
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 30,
+          "height": 30
+        },
+        "TabIndex": 16,
+        "Name": "btnShadowExpand",
+        "Tag": "+",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnShadowExpand.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnShadowExpand.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnShadowExpand.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "gbShadow",
+      "type": "System.Windows.Forms.GroupBox",
+      "parent": "pOptions",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 264
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 312,
+          "height": 104
+        },
+        "TabIndex": 25,
+        "Text": "Shadow",
+        "Name": "gbShadow",
+        "TabStop": false
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "gbShadow.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "gbShadow.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "gbShadow.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "gbShadow.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
       "name": "btnResetOptions",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "pOptions",
+      "parent_slot": "Controls",
+      "child_index": 2,
       "properties": {
         "Anchor": "Bottom, Left",
         "Location": {
@@ -1735,9 +1091,9 @@
     {
       "name": "lblBackgroundImageFilePath",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "pOptions",
+      "parent_slot": "Controls",
+      "child_index": 3,
       "properties": {
         "Location": {
           "kind": "Point",
@@ -1773,9 +1129,9 @@
     {
       "name": "btnBackgroundImageFilePathBrowse",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "pOptions",
+      "parent_slot": "Controls",
+      "child_index": 4,
       "properties": {
         "Location": {
           "kind": "Point",
@@ -1818,9 +1174,9 @@
     {
       "name": "cbBackgroundType",
       "type": "System.Windows.Forms.ComboBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "pOptions",
+      "parent_slot": "Controls",
+      "child_index": 5,
       "properties": {
         "DropDownStyle": {
           "kind": "expr",
@@ -1861,9 +1217,9 @@
     {
       "name": "btnPrint",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "pOptions",
+      "parent_slot": "Controls",
+      "child_index": 6,
       "properties": {
         "Anchor": "Bottom, Left",
         "Location": {
@@ -1924,9 +1280,9 @@
     {
       "name": "btnSave",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "pOptions",
+      "parent_slot": "Controls",
+      "child_index": 7,
       "properties": {
         "Anchor": "Bottom, Left",
         "Location": {
@@ -1987,9 +1343,9 @@
     {
       "name": "btnUpload",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "pOptions",
+      "parent_slot": "Controls",
+      "child_index": 8,
       "properties": {
         "Anchor": "Bottom, Left",
         "Location": {
@@ -2050,9 +1406,9 @@
     {
       "name": "btnSaveAs",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "pOptions",
+      "parent_slot": "Controls",
+      "child_index": 9,
       "properties": {
         "Anchor": "Bottom, Left",
         "Location": {
@@ -2113,9 +1469,9 @@
     {
       "name": "btnCopy",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "pOptions",
+      "parent_slot": "Controls",
+      "child_index": 10,
       "properties": {
         "Anchor": "Bottom, Left",
         "Location": {
@@ -2176,9 +1532,9 @@
     {
       "name": "pbBackground",
       "type": "System.Windows.Forms.PictureBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "pOptions",
+      "parent_slot": "Controls",
+      "child_index": 11,
       "properties": {
         "Cursor": {
           "kind": "expr",
@@ -2217,19 +1573,671 @@
       ]
     },
     {
-      "name": "ttMain",
-      "type": "System.Windows.Forms.ToolTip",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
+      "name": "lblMargin",
+      "type": "System.Windows.Forms.Label",
+      "parent": "pOptions",
+      "parent_slot": "Controls",
+      "child_index": 12,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 16
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 0,
+          "right": 4,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 53,
+          "height": 17
+        },
+        "TabIndex": 0,
+        "Text": "Margin:",
+        "Name": "lblMargin"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblMargin.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblMargin.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblMargin.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblMargin.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblMargin.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblMargin.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tbMargin",
+      "type": "System.Windows.Forms.TrackBar",
+      "parent": "pOptions",
+      "parent_slot": "Controls",
+      "child_index": 13,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 40
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 3,
+          "right": 4,
+          "bottom": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 296,
+          "height": 45
+        },
+        "TabIndex": 1,
+        "Maximum": 300,
+        "Name": "tbMargin",
+        "TickFrequency": 10
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "tbMargin.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "tbMargin.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tbMargin.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tbMargin.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblRoundedCornerValue",
+      "type": "System.Windows.Forms.Label",
+      "parent": "pOptions",
+      "parent_slot": "Controls",
+      "child_index": 14,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 256,
+          "y": 192
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 0,
+          "right": 4,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 56,
+          "height": 24
+        },
+        "TabIndex": 9,
+        "Text": "0",
+        "TextAlign": "MiddleRight",
+        "Name": "lblRoundedCornerValue"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "lblRoundedCornerValue.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblRoundedCornerValue.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblRoundedCornerValue.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblRoundedCornerValue.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblRoundedCornerValue.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "lblRoundedCornerValue.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblPadding",
+      "type": "System.Windows.Forms.Label",
+      "parent": "pOptions",
+      "parent_slot": "Controls",
+      "child_index": 15,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 88
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 0,
+          "right": 4,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 59,
+          "height": 17
+        },
+        "TabIndex": 3,
+        "Text": "Padding:",
+        "Name": "lblPadding"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblPadding.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblPadding.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblPadding.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblPadding.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblPadding.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblPadding.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblPaddingValue",
+      "type": "System.Windows.Forms.Label",
+      "parent": "pOptions",
+      "parent_slot": "Controls",
+      "child_index": 16,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 256,
+          "y": 88
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 0,
+          "right": 4,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 56,
+          "height": 24
+        },
+        "TabIndex": 5,
+        "Text": "0",
+        "TextAlign": "MiddleRight",
+        "Name": "lblPaddingValue"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "lblPaddingValue.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblPaddingValue.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblPaddingValue.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblPaddingValue.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblPaddingValue.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "lblPaddingValue.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tbPadding",
+      "type": "System.Windows.Forms.TrackBar",
+      "parent": "pOptions",
+      "parent_slot": "Controls",
+      "child_index": 17,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 112
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 3,
+          "right": 4,
+          "bottom": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 296,
+          "height": 45
+        },
+        "TabIndex": 4,
+        "Maximum": 200,
+        "Name": "tbPadding",
+        "TickFrequency": 10
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "tbPadding.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "tbPadding.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tbPadding.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tbPadding.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblMarginValue",
+      "type": "System.Windows.Forms.Label",
+      "parent": "pOptions",
+      "parent_slot": "Controls",
+      "child_index": 18,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 256,
+          "y": 16
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 0,
+          "right": 4,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 56,
+          "height": 24
+        },
+        "TabIndex": 2,
+        "Text": "0",
+        "TextAlign": "MiddleRight",
+        "Name": "lblMarginValue"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "lblMarginValue.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblMarginValue.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblMarginValue.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblMarginValue.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblMarginValue.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "lblMarginValue.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbSmartPadding",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "pOptions",
+      "parent_slot": "Controls",
+      "child_index": 19,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 160
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 3,
+          "right": 4,
+          "bottom": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 114,
+          "height": 21
+        },
+        "TabIndex": 6,
+        "Text": "Smart padding",
+        "Name": "cbSmartPadding",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbSmartPadding.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbSmartPadding.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "cbSmartPadding.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbSmartPadding.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbSmartPadding.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbSmartPadding.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblRoundedCorner",
+      "type": "System.Windows.Forms.Label",
+      "parent": "pOptions",
+      "parent_slot": "Controls",
+      "child_index": 20,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 192
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 0,
+          "right": 4,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 106,
+          "height": 17
+        },
+        "TabIndex": 7,
+        "Text": "Rounded corner:",
+        "Name": "lblRoundedCorner"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblRoundedCorner.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblRoundedCorner.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblRoundedCorner.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblRoundedCorner.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblRoundedCorner.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblRoundedCorner.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblBackground",
+      "type": "System.Windows.Forms.Label",
+      "parent": "pOptions",
+      "parent_slot": "Controls",
+      "child_index": 21,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 384
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 0,
+          "right": 4,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 80,
+          "height": 17
+        },
+        "TabIndex": 13,
+        "Text": "Background:",
+        "Name": "lblBackground"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblBackground.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblBackground.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblBackground.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblBackground.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblBackground.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblBackground.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tbRoundedCorner",
+      "type": "System.Windows.Forms.TrackBar",
+      "parent": "pOptions",
+      "parent_slot": "Controls",
+      "child_index": 22,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 216
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 3,
+          "right": 4,
+          "bottom": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 296,
+          "height": 45
+        },
+        "TabIndex": 8,
+        "Maximum": 50,
+        "Name": "tbRoundedCorner",
+        "TickFrequency": 5
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "tbRoundedCorner.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "tbRoundedCorner.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "tbRoundedCorner.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "tbRoundedCorner.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
     }
   ],
   "tree": {
     "name": "ImageBeautifierForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "tlpMain",
+          "type": "System.Windows.Forms.TableLayoutPanel",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "lblMargin.Text": "Margin:",

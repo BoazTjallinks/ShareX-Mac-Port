@@ -31,141 +31,12 @@
       "resources": []
     },
     {
-      "name": "lblStatus",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "BackColor": {
-          "kind": "expr",
-          "raw": "System.Drawing.Color.DimGray"
-        },
-        "Dock": "Top",
-        "Location": {
-          "kind": "Point",
-          "x": 0,
-          "y": 0
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 150,
-          "height": 24
-        },
-        "TabIndex": 0,
-        "Text": "Image preview",
-        "TextAlign": "MiddleCenter",
-        "ForeColor": {
-          "kind": "expr",
-          "raw": "System.Drawing.Color.White"
-        },
-        "Name": "lblStatus"
-      },
-      "resources": [
-        {
-          "property": "Dock",
-          "resource_key": "lblStatus.Dock",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblStatus.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblStatus.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblStatus.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblStatus.Text",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "lblStatus.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "pbMain",
-      "type": "System.Windows.Forms.PictureBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Dock": "Fill",
-        "Location": {
-          "kind": "Point",
-          "x": 0,
-          "y": 0
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 150,
-          "height": 150
-        },
-        "SizeMode": "Zoom",
-        "TabIndex": 0,
-        "ErrorImage": {
-          "kind": "expr",
-          "raw": "global::ShareX.HelpersLib.Properties.Resources.cross"
-        },
-        "InitialImage": {
-          "kind": "expr",
-          "raw": "global::ShareX.HelpersLib.Properties.Resources.Loading"
-        },
-        "Name": "pbMain",
-        "TabStop": false
-      },
-      "resources": [
-        {
-          "property": "Dock",
-          "resource_key": "pbMain.Dock",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "pbMain.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "pbMain.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "SizeMode",
-          "resource_key": "pbMain.SizeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "pbMain.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "cmsMenu",
       "type": "System.Windows.Forms.ContextMenuStrip",
       "parent": null,
       "parent_slot": null,
       "child_index": null,
       "properties": {
-        "Items.literal_items": [
-          {
-            "kind": "expr",
-            "raw": "this.tsmiCopyImage"
-          }
-        ],
         "Name": "cmsMenu",
         "ShowImageMargin": false,
         "Size": {
@@ -183,39 +54,11 @@
       ]
     },
     {
-      "name": "tsmiCopyImage",
-      "type": "System.Windows.Forms.ToolStripMenuItem",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Name": "tsmiCopyImage",
-        "Size": {
-          "kind": "Size",
-          "width": 113,
-          "height": 22
-        },
-        "Text": "Copy image"
-      },
-      "resources": [
-        {
-          "property": "Size",
-          "resource_key": "tsmiCopyImage.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tsmiCopyImage.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "lblImageSize",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "MyPictureBox",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "AutoSize": true,
         "Font": "Arial, 8.25pt",
@@ -297,12 +140,181 @@
           "source": "ApplyResources"
         }
       ]
+    },
+    {
+      "name": "lblStatus",
+      "type": "System.Windows.Forms.Label",
+      "parent": "MyPictureBox",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.DimGray"
+        },
+        "Dock": "Top",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 150,
+          "height": 24
+        },
+        "TabIndex": 0,
+        "Text": "Image preview",
+        "TextAlign": "MiddleCenter",
+        "ForeColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.White"
+        },
+        "Name": "lblStatus"
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "lblStatus.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblStatus.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblStatus.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblStatus.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblStatus.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "lblStatus.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pbMain",
+      "type": "System.Windows.Forms.PictureBox",
+      "parent": "MyPictureBox",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Dock": "Fill",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 150,
+          "height": 150
+        },
+        "SizeMode": "Zoom",
+        "TabIndex": 0,
+        "ErrorImage": {
+          "kind": "expr",
+          "raw": "global::ShareX.HelpersLib.Properties.Resources.cross"
+        },
+        "InitialImage": {
+          "kind": "expr",
+          "raw": "global::ShareX.HelpersLib.Properties.Resources.Loading"
+        },
+        "Name": "pbMain",
+        "TabStop": false
+      },
+      "resources": [
+        {
+          "property": "Dock",
+          "resource_key": "pbMain.Dock",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "pbMain.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pbMain.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "SizeMode",
+          "resource_key": "pbMain.SizeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pbMain.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiCopyImage",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": "cmsMenu",
+      "parent_slot": "Items",
+      "child_index": 0,
+      "properties": {
+        "Name": "tsmiCopyImage",
+        "Size": {
+          "kind": "Size",
+          "width": 113,
+          "height": 22
+        },
+        "Text": "Copy image"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiCopyImage.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiCopyImage.Text",
+          "source": "ApplyResources"
+        }
+      ]
     }
   ],
   "tree": {
     "name": "MyPictureBox",
     "type": "UserControl",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "lblImageSize",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblStatus",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "pbMain",
+          "type": "System.Windows.Forms.PictureBox",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "lblStatus.Text": "Image preview",

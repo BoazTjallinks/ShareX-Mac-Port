@@ -30,279 +30,57 @@
   ],
   "controls": [
     {
-      "name": "cbRunStartup",
-      "type": "System.Windows.Forms.CheckBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "lblTitle",
+      "type": "System.Windows.Forms.Label",
+      "parent": "FirstTimeConfigForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "AutoSize": true,
-        "Font": "Segoe UI, 9.75pt",
+        "Font": "Segoe UI, 15.75pt",
         "Location": {
           "kind": "Point",
-          "x": 16,
-          "y": 56
+          "x": 13,
+          "y": 16
         },
         "Size": {
           "kind": "Size",
-          "width": 221,
-          "height": 21
+          "width": 229,
+          "height": 30
         },
-        "TabIndex": 2,
-        "Text": "Run ShareX when Windows starts",
-        "Name": "cbRunStartup",
-        "UseVisualStyleBackColor": false
+        "TabIndex": 1,
+        "Text": "ShareX first time config",
+        "Name": "lblTitle"
       },
       "resources": [
         {
           "property": "AutoSize",
-          "resource_key": "cbRunStartup.AutoSize",
+          "resource_key": "lblTitle.AutoSize",
           "source": "ApplyResources"
         },
         {
           "property": "Font",
-          "resource_key": "cbRunStartup.Font",
+          "resource_key": "lblTitle.Font",
           "source": "ApplyResources"
         },
         {
           "property": "Location",
-          "resource_key": "cbRunStartup.Location",
+          "resource_key": "lblTitle.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "cbRunStartup.Size",
+          "resource_key": "lblTitle.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "cbRunStartup.TabIndex",
+          "resource_key": "lblTitle.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "cbRunStartup.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "cbShellContextMenuButton",
-      "type": "System.Windows.Forms.CheckBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Font": "Segoe UI, 9.75pt",
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 80
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 435,
-          "height": 21
-        },
-        "TabIndex": 3,
-        "Text": "Show \"Upload with ShareX\" button in Windows Explorer context menu",
-        "Name": "cbShellContextMenuButton",
-        "UseVisualStyleBackColor": false
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "cbShellContextMenuButton.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Font",
-          "resource_key": "cbShellContextMenuButton.Font",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "cbShellContextMenuButton.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "cbShellContextMenuButton.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "cbShellContextMenuButton.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "cbShellContextMenuButton.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "cbSendToMenu",
-      "type": "System.Windows.Forms.CheckBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Font": "Segoe UI, 9.75pt",
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 104
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 212,
-          "height": 21
-        },
-        "TabIndex": 4,
-        "Text": "Show ShareX in \"Send to\" menu",
-        "Name": "cbSendToMenu",
-        "UseVisualStyleBackColor": false
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "cbSendToMenu.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Font",
-          "resource_key": "cbSendToMenu.Font",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "cbSendToMenu.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "cbSendToMenu.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "cbSendToMenu.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "cbSendToMenu.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "cbSteamInApp",
-      "type": "System.Windows.Forms.CheckBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Font": "Segoe UI, 9.75pt",
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 128
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 294,
-          "height": 21
-        },
-        "TabIndex": 5,
-        "Text": "While ShareX is open, show \"In-app\" in Steam",
-        "Name": "cbSteamInApp",
-        "UseVisualStyleBackColor": false
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "cbSteamInApp.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Font",
-          "resource_key": "cbSteamInApp.Font",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "cbSteamInApp.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "cbSteamInApp.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "cbSteamInApp.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "cbSteamInApp.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnOK",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Font": "Segoe UI, 9.75pt",
-        "Location": {
-          "kind": "Point",
-          "x": 392,
-          "y": 200
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 120,
-          "height": 32
-        },
-        "TabIndex": 0,
-        "Text": "OK",
-        "Name": "btnOK"
-      },
-      "resources": [
-        {
-          "property": "Font",
-          "resource_key": "btnOK.Font",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnOK.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnOK.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnOK.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnOK.Text",
+          "resource_key": "lblTitle.Text",
           "source": "ApplyResources"
         }
       ]
@@ -310,9 +88,9 @@
     {
       "name": "lblNote",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "FirstTimeConfigForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
         "AutoSize": true,
         "Font": "Segoe UI, 9.75pt",
@@ -370,57 +148,279 @@
       ]
     },
     {
-      "name": "lblTitle",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "btnOK",
+      "type": "System.Windows.Forms.Button",
+      "parent": "FirstTimeConfigForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
       "properties": {
-        "AutoSize": true,
-        "Font": "Segoe UI, 15.75pt",
+        "Font": "Segoe UI, 9.75pt",
         "Location": {
           "kind": "Point",
-          "x": 13,
-          "y": 16
+          "x": 392,
+          "y": 200
         },
         "Size": {
           "kind": "Size",
-          "width": 229,
-          "height": 30
+          "width": 120,
+          "height": 32
         },
-        "TabIndex": 1,
-        "Text": "ShareX first time config",
-        "Name": "lblTitle"
+        "TabIndex": 0,
+        "Text": "OK",
+        "Name": "btnOK"
       },
       "resources": [
         {
-          "property": "AutoSize",
-          "resource_key": "lblTitle.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
           "property": "Font",
-          "resource_key": "lblTitle.Font",
+          "resource_key": "btnOK.Font",
           "source": "ApplyResources"
         },
         {
           "property": "Location",
-          "resource_key": "lblTitle.Location",
+          "resource_key": "btnOK.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "lblTitle.Size",
+          "resource_key": "btnOK.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "lblTitle.TabIndex",
+          "resource_key": "btnOK.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "lblTitle.Text",
+          "resource_key": "btnOK.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbSteamInApp",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "FirstTimeConfigForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "AutoSize": true,
+        "Font": "Segoe UI, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 128
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 294,
+          "height": 21
+        },
+        "TabIndex": 5,
+        "Text": "While ShareX is open, show \"In-app\" in Steam",
+        "Name": "cbSteamInApp",
+        "UseVisualStyleBackColor": false
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbSteamInApp.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "cbSteamInApp.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbSteamInApp.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbSteamInApp.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbSteamInApp.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbSteamInApp.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbSendToMenu",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "FirstTimeConfigForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "AutoSize": true,
+        "Font": "Segoe UI, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 104
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 212,
+          "height": 21
+        },
+        "TabIndex": 4,
+        "Text": "Show ShareX in \"Send to\" menu",
+        "Name": "cbSendToMenu",
+        "UseVisualStyleBackColor": false
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbSendToMenu.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "cbSendToMenu.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbSendToMenu.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbSendToMenu.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbSendToMenu.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbSendToMenu.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbShellContextMenuButton",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "FirstTimeConfigForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "AutoSize": true,
+        "Font": "Segoe UI, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 80
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 435,
+          "height": 21
+        },
+        "TabIndex": 3,
+        "Text": "Show \"Upload with ShareX\" button in Windows Explorer context menu",
+        "Name": "cbShellContextMenuButton",
+        "UseVisualStyleBackColor": false
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbShellContextMenuButton.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "cbShellContextMenuButton.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbShellContextMenuButton.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbShellContextMenuButton.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbShellContextMenuButton.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbShellContextMenuButton.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbRunStartup",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "FirstTimeConfigForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "AutoSize": true,
+        "Font": "Segoe UI, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 56
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 221,
+          "height": 21
+        },
+        "TabIndex": 2,
+        "Text": "Run ShareX when Windows starts",
+        "Name": "cbRunStartup",
+        "UseVisualStyleBackColor": false
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "cbRunStartup.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "cbRunStartup.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbRunStartup.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbRunStartup.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbRunStartup.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "cbRunStartup.Text",
           "source": "ApplyResources"
         }
       ]
@@ -429,7 +429,45 @@
   "tree": {
     "name": "FirstTimeConfigForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "lblTitle",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblNote",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "btnOK",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "cbSteamInApp",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "cbSendToMenu",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "cbShellContextMenuButton",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "cbRunStartup",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "cbRunStartup.Text": "Run ShareX when Windows starts",

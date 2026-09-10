@@ -57,11 +57,1453 @@
       "resources": []
     },
     {
-      "name": "btnSaveImage",
-      "type": "System.Windows.Forms.Button",
+      "name": "cmsEffects",
+      "type": "System.Windows.Forms.ContextMenuStrip",
       "parent": null,
       "parent_slot": null,
       "child_index": null,
+      "properties": {
+        "Name": "cmsEffects",
+        "ShowImageMargin": false,
+        "Size": {
+          "kind": "Size",
+          "width": 36,
+          "height": 4
+        }
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "cmsEffects.Size",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cmsLoadImage",
+      "type": "System.Windows.Forms.ContextMenuStrip",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Name": "cmsLoadImage",
+        "ShowImageMargin": false,
+        "Size": {
+          "kind": "Size",
+          "width": 131,
+          "height": 48
+        }
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "cmsLoadImage.Size",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "ttMain",
+      "type": "System.Windows.Forms.ToolTip",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "AutoPopDelay": 5000,
+        "InitialDelay": 200,
+        "ReshowDelay": 100
+      },
+      "resources": []
+    },
+    {
+      "name": "chPreset",
+      "type": "System.Windows.Forms.ColumnHeader",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Width": 164
+      },
+      "resources": [
+        {
+          "property": "Width",
+          "resource_key": "chPreset.Width",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "chEffect",
+      "type": "System.Windows.Forms.ColumnHeader",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {
+        "Width": 50
+      },
+      "resources": [
+        {
+          "property": "Width",
+          "resource_key": "chEffect.Width",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtEffectName",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "ImageEffectsForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 384,
+          "y": 24
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 288,
+          "height": 20
+        },
+        "TabIndex": 17,
+        "Name": "txtEffectName"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtEffectName.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtEffectName.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtEffectName.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblEffectName",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ImageEffectsForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 381,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 67,
+          "height": 13
+        },
+        "TabIndex": 16,
+        "Text": "Effect name:",
+        "Name": "lblEffectName"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblEffectName.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblEffectName.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblEffectName.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblEffectName.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblEffectName.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblEffectName.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnImageEffects",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageEffectsForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 136,
+          "y": 552
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 24
+        },
+        "TabIndex": 21,
+        "Text": "Image effects...",
+        "Name": "btnImageEffects",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnImageEffects.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "btnImageEffects.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnImageEffects.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnImageEffects.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnImageEffects.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnImageEffects.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pbResult",
+      "type": "ShareX.HelpersLib.MyPictureBox",
+      "parent": "ImageEffectsForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Anchor": "Top, Bottom, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 680,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 536,
+          "height": 536
+        },
+        "TabIndex": 19,
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        },
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
+        },
+        "DrawCheckeredBackground": true,
+        "EnableRightClickMenu": true,
+        "FullscreenOnClick": true,
+        "Name": "pbResult",
+        "PictureBoxBackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Control"
+        },
+        "ShowImageSizeLabel": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "pbResult.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "pbResult.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pbResult.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pbResult.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pgSettings",
+      "type": "System.Windows.Forms.PropertyGrid",
+      "parent": "ImageEffectsForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "Anchor": "Top, Bottom, Left",
+        "HelpVisible": false,
+        "Location": {
+          "kind": "Point",
+          "x": 384,
+          "y": 56
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 288,
+          "height": 488
+        },
+        "TabIndex": 18,
+        "Name": "pgSettings",
+        "PropertySort": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.PropertySort.NoSort"
+        },
+        "ToolbarVisible": false
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "pgSettings.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "HelpVisible",
+          "resource_key": "pgSettings.HelpVisible",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "pgSettings.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pgSettings.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pgSettings.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnEffectRefresh",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageEffectsForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.ImageEffectsLib.Properties.Resources.arrow_circle_double_135"
+        },
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 292,
+          "y": 72
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 24,
+          "height": 24
+        },
+        "TabIndex": 14,
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "btnEffectRefresh.ToolTip"
+        },
+        "Name": "btnEffectRefresh",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnEffectRefresh.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnEffectRefresh.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnEffectRefresh.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnEffectRefresh.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnEffectRefresh.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnEffectRefresh.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "btnEffectClear",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageEffectsForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.ImageEffectsLib.Properties.Resources.eraser"
+        },
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 265,
+          "y": 72
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 24,
+          "height": 24
+        },
+        "TabIndex": 13,
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "btnEffectClear.ToolTip"
+        },
+        "Name": "btnEffectClear",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnEffectClear.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnEffectClear.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnEffectClear.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnEffectClear.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnEffectClear.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnEffectClear.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "btnEffectDuplicate",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageEffectsForm",
+      "parent_slot": "Controls",
+      "child_index": 7,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.ImageEffectsLib.Properties.Resources.document_copy"
+        },
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 238,
+          "y": 72
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 24,
+          "height": 24
+        },
+        "TabIndex": 12,
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "btnEffectDuplicate.ToolTip"
+        },
+        "Name": "btnEffectDuplicate",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnEffectDuplicate.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnEffectDuplicate.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnEffectDuplicate.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnEffectDuplicate.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnEffectDuplicate.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnEffectDuplicate.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "btnEffectRemove",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageEffectsForm",
+      "parent_slot": "Controls",
+      "child_index": 8,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.ImageEffectsLib.Properties.Resources.minus"
+        },
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 211,
+          "y": 72
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 24,
+          "height": 24
+        },
+        "TabIndex": 11,
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "btnEffectRemove.ToolTip"
+        },
+        "Name": "btnEffectRemove",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnEffectRemove.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnEffectRemove.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnEffectRemove.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnEffectRemove.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnEffectRemove.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnEffectRemove.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "btnEffectAdd",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageEffectsForm",
+      "parent_slot": "Controls",
+      "child_index": 9,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.ImageEffectsLib.Properties.Resources.plus"
+        },
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 184,
+          "y": 72
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 24,
+          "height": 24
+        },
+        "TabIndex": 10,
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "btnEffectAdd.ToolTip"
+        },
+        "Name": "btnEffectAdd",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnEffectAdd.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnEffectAdd.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnEffectAdd.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnEffectAdd.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnEffectAdd.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnEffectAdd.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "lblEffects",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ImageEffectsForm",
+      "parent_slot": "Controls",
+      "child_index": 10,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 181,
+          "y": 56
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 43,
+          "height": 13
+        },
+        "TabIndex": 9,
+        "Text": "Effects:",
+        "Name": "lblEffects"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblEffects.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblEffects.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblEffects.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblEffects.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblEffects.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblEffects.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lvPresets",
+      "type": "HelpersLib.MyListView",
+      "parent": "ImageEffectsForm",
+      "parent_slot": "Controls",
+      "child_index": 11,
+      "properties": {
+        "AllowDrop": true,
+        "AllowItemDrag": true,
+        "Anchor": "Top, Bottom, Left",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 53
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 168,
+          "height": 491
+        },
+        "TabIndex": 6,
+        "AutoFillColumn": true,
+        "Columns.literal_items": [
+          {
+            "kind": "ident",
+            "raw": "chPreset"
+          }
+        ],
+        "DisableDeselect": true,
+        "FullRowSelect": true,
+        "HeaderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ColumnHeaderStyle.None"
+        },
+        "HideSelection": false,
+        "MultiSelect": false,
+        "Name": "lvPresets",
+        "UseCompatibleStateImageBehavior": false,
+        "View": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.View.Details"
+        }
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "lvPresets.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lvPresets.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lvPresets.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lvPresets.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnPresetDuplicate",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageEffectsForm",
+      "parent_slot": "Controls",
+      "child_index": 12,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.ImageEffectsLib.Properties.Resources.document_copy"
+        },
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 62,
+          "y": 24
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 24,
+          "height": 24
+        },
+        "TabIndex": 5,
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "btnPresetDuplicate.ToolTip"
+        },
+        "Name": "btnPresetDuplicate",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnPresetDuplicate.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnPresetDuplicate.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnPresetDuplicate.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnPresetDuplicate.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnPresetDuplicate.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnPresetDuplicate.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "btnPresetRemove",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageEffectsForm",
+      "parent_slot": "Controls",
+      "child_index": 13,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.ImageEffectsLib.Properties.Resources.minus"
+        },
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 35,
+          "y": 24
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 24,
+          "height": 24
+        },
+        "TabIndex": 4,
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "btnPresetRemove.ToolTip"
+        },
+        "Name": "btnPresetRemove",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnPresetRemove.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnPresetRemove.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnPresetRemove.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnPresetRemove.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnPresetRemove.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnPresetRemove.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "btnPresetNew",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageEffectsForm",
+      "parent_slot": "Controls",
+      "child_index": 14,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.ImageEffectsLib.Properties.Resources.plus"
+        },
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 24
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 24,
+          "height": 24
+        },
+        "TabIndex": 3,
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "btnPresetNew.ToolTip"
+        },
+        "Name": "btnPresetNew",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnPresetNew.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnPresetNew.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnPresetNew.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnPresetNew.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnPresetNew.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnPresetNew.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "btnPackager",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageEffectsForm",
+      "parent_slot": "Controls",
+      "child_index": 15,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 552
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 24
+        },
+        "TabIndex": 20,
+        "Text": "Packager...",
+        "Name": "btnPackager",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnPackager.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "btnPackager.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnPackager.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnPackager.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnPackager.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnPackager.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblPresets",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ImageEffectsForm",
+      "parent_slot": "Controls",
+      "child_index": 16,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 45,
+          "height": 13
+        },
+        "TabIndex": 2,
+        "Text": "Presets:",
+        "Name": "lblPresets"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblPresets.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblPresets.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblPresets.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblPresets.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblPresets.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblPresets.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnUploadImage",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageEffectsForm",
+      "parent_slot": "Controls",
+      "child_index": 17,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 520,
+          "y": 552
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 24
+        },
+        "TabIndex": 24,
+        "Text": "Upload image",
+        "Visible": false,
+        "Name": "btnUploadImage",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnUploadImage.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "btnUploadImage.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnUploadImage.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnUploadImage.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnUploadImage.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnUploadImage.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Visible",
+          "resource_key": "btnUploadImage.Visible",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnOK",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageEffectsForm",
+      "parent_slot": "Controls",
+      "child_index": 18,
+      "properties": {
+        "Anchor": "Bottom, Right",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 968,
+          "y": 552
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 24
+        },
+        "TabIndex": 0,
+        "Text": "OK",
+        "Visible": false,
+        "Name": "btnOK",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnOK.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "btnOK.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnOK.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnOK.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnOK.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnOK.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Visible",
+          "resource_key": "btnOK.Visible",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnClose",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageEffectsForm",
+      "parent_slot": "Controls",
+      "child_index": 19,
+      "properties": {
+        "Anchor": "Bottom, Right",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 1096,
+          "y": 552
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 24
+        },
+        "TabIndex": 1,
+        "Text": "Close",
+        "Name": "btnClose",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnClose.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "btnClose.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnClose.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnClose.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnClose.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnClose.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtPresetName",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "ImageEffectsForm",
+      "parent_slot": "Controls",
+      "child_index": 20,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 184,
+          "y": 24
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 192,
+          "height": 20
+        },
+        "TabIndex": 8,
+        "Name": "txtPresetName"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtPresetName.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtPresetName.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtPresetName.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblPresetName",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ImageEffectsForm",
+      "parent_slot": "Controls",
+      "child_index": 21,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 181,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 69,
+          "height": 13
+        },
+        "TabIndex": 7,
+        "Text": "Preset name:",
+        "Name": "lblPresetName"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblPresetName.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblPresetName.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblPresetName.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblPresetName.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblPresetName.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblPresetName.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "mbLoadImage",
+      "type": "HelpersLib.MenuButton",
+      "parent": "ImageEffectsForm",
+      "parent_slot": "Controls",
+      "child_index": 22,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 264,
+          "y": 552
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 24
+        },
+        "TabIndex": 22,
+        "Text": "Load image",
+        "Visible": false,
+        "Menu": {
+          "kind": "expr",
+          "raw": "this.cmsLoadImage"
+        },
+        "Name": "mbLoadImage",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "mbLoadImage.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "mbLoadImage.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "mbLoadImage.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "mbLoadImage.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "mbLoadImage.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "mbLoadImage.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Visible",
+          "resource_key": "mbLoadImage.Visible",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnSaveImage",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageEffectsForm",
+      "parent_slot": "Controls",
+      "child_index": 23,
       "properties": {
         "Anchor": "Bottom, Left",
         "AutoSize": true,
@@ -126,1485 +1568,11 @@
       ]
     },
     {
-      "name": "cmsEffects",
-      "type": "System.Windows.Forms.ContextMenuStrip",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Name": "cmsEffects",
-        "ShowImageMargin": false,
-        "Size": {
-          "kind": "Size",
-          "width": 36,
-          "height": 4
-        }
-      },
-      "resources": [
-        {
-          "property": "Size",
-          "resource_key": "cmsEffects.Size",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "cmsLoadImage",
-      "type": "System.Windows.Forms.ContextMenuStrip",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Items.literal_items": [
-          {
-            "kind": "expr",
-            "raw": "this.tsmiLoadImageFromFile"
-          },
-          {
-            "kind": "expr",
-            "raw": "this.tsmiLoadImageFromClipboard"
-          }
-        ],
-        "Name": "cmsLoadImage",
-        "ShowImageMargin": false,
-        "Size": {
-          "kind": "Size",
-          "width": 131,
-          "height": 48
-        }
-      },
-      "resources": [
-        {
-          "property": "Size",
-          "resource_key": "cmsLoadImage.Size",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tsmiLoadImageFromFile",
-      "type": "System.Windows.Forms.ToolStripMenuItem",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Name": "tsmiLoadImageFromFile",
-        "Size": {
-          "kind": "Size",
-          "width": 130,
-          "height": 22
-        },
-        "Text": "From file..."
-      },
-      "resources": [
-        {
-          "property": "Size",
-          "resource_key": "tsmiLoadImageFromFile.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tsmiLoadImageFromFile.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tsmiLoadImageFromClipboard",
-      "type": "System.Windows.Forms.ToolStripMenuItem",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Name": "tsmiLoadImageFromClipboard",
-        "Size": {
-          "kind": "Size",
-          "width": 130,
-          "height": 22
-        },
-        "Text": "From clipboard"
-      },
-      "resources": [
-        {
-          "property": "Size",
-          "resource_key": "tsmiLoadImageFromClipboard.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tsmiLoadImageFromClipboard.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblPresetName",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 181,
-          "y": 8
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 69,
-          "height": 13
-        },
-        "TabIndex": 7,
-        "Text": "Preset name:",
-        "Name": "lblPresetName"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblPresetName.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblPresetName.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblPresetName.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblPresetName.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblPresetName.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblPresetName.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "txtPresetName",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 184,
-          "y": 24
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 192,
-          "height": 20
-        },
-        "TabIndex": 8,
-        "Name": "txtPresetName"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "txtPresetName.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "txtPresetName.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "txtPresetName.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnClose",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Bottom, Right",
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 1096,
-          "y": 552
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 120,
-          "height": 24
-        },
-        "TabIndex": 1,
-        "Text": "Close",
-        "Name": "btnClose",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "btnClose.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "btnClose.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnClose.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnClose.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnClose.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnClose.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnOK",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Bottom, Right",
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 968,
-          "y": 552
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 120,
-          "height": 24
-        },
-        "TabIndex": 0,
-        "Text": "OK",
-        "Visible": false,
-        "Name": "btnOK",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "btnOK.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "btnOK.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnOK.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnOK.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnOK.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnOK.Text",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Visible",
-          "resource_key": "btnOK.Visible",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnUploadImage",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Bottom, Left",
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 520,
-          "y": 552
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 120,
-          "height": 24
-        },
-        "TabIndex": 24,
-        "Text": "Upload image",
-        "Visible": false,
-        "Name": "btnUploadImage",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "btnUploadImage.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "btnUploadImage.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnUploadImage.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnUploadImage.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnUploadImage.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnUploadImage.Text",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Visible",
-          "resource_key": "btnUploadImage.Visible",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblPresets",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 5,
-          "y": 8
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 45,
-          "height": 13
-        },
-        "TabIndex": 2,
-        "Text": "Presets:",
-        "Name": "lblPresets"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblPresets.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblPresets.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblPresets.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblPresets.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblPresets.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblPresets.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnPackager",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Bottom, Left",
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 552
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 120,
-          "height": 24
-        },
-        "TabIndex": 20,
-        "Text": "Packager...",
-        "Name": "btnPackager",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "btnPackager.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "btnPackager.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnPackager.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnPackager.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnPackager.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnPackager.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnPresetNew",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Image": {
-          "kind": "expr",
-          "raw": "global::ShareX.ImageEffectsLib.Properties.Resources.plus"
-        },
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 24
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 24,
-          "height": 24
-        },
-        "TabIndex": 3,
-        "ToolTip": {
-          "kind": "resource_string",
-          "resource_key": "btnPresetNew.ToolTip"
-        },
-        "Name": "btnPresetNew",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "ImeMode",
-          "resource_key": "btnPresetNew.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnPresetNew.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnPresetNew.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnPresetNew.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ToolTip",
-          "resource_key": "btnPresetNew.ToolTip",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ToolTip",
-          "resource_key": "btnPresetNew.ToolTip",
-          "source": "GetString/GetObject"
-        }
-      ]
-    },
-    {
-      "name": "btnPresetRemove",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Image": {
-          "kind": "expr",
-          "raw": "global::ShareX.ImageEffectsLib.Properties.Resources.minus"
-        },
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 35,
-          "y": 24
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 24,
-          "height": 24
-        },
-        "TabIndex": 4,
-        "ToolTip": {
-          "kind": "resource_string",
-          "resource_key": "btnPresetRemove.ToolTip"
-        },
-        "Name": "btnPresetRemove",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "ImeMode",
-          "resource_key": "btnPresetRemove.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnPresetRemove.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnPresetRemove.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnPresetRemove.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ToolTip",
-          "resource_key": "btnPresetRemove.ToolTip",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ToolTip",
-          "resource_key": "btnPresetRemove.ToolTip",
-          "source": "GetString/GetObject"
-        }
-      ]
-    },
-    {
-      "name": "btnPresetDuplicate",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Image": {
-          "kind": "expr",
-          "raw": "global::ShareX.ImageEffectsLib.Properties.Resources.document_copy"
-        },
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 62,
-          "y": 24
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 24,
-          "height": 24
-        },
-        "TabIndex": 5,
-        "ToolTip": {
-          "kind": "resource_string",
-          "resource_key": "btnPresetDuplicate.ToolTip"
-        },
-        "Name": "btnPresetDuplicate",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "ImeMode",
-          "resource_key": "btnPresetDuplicate.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnPresetDuplicate.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnPresetDuplicate.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnPresetDuplicate.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ToolTip",
-          "resource_key": "btnPresetDuplicate.ToolTip",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ToolTip",
-          "resource_key": "btnPresetDuplicate.ToolTip",
-          "source": "GetString/GetObject"
-        }
-      ]
-    },
-    {
-      "name": "lblEffects",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 181,
-          "y": 56
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 43,
-          "height": 13
-        },
-        "TabIndex": 9,
-        "Text": "Effects:",
-        "Name": "lblEffects"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblEffects.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblEffects.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblEffects.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblEffects.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblEffects.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblEffects.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnEffectAdd",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Image": {
-          "kind": "expr",
-          "raw": "global::ShareX.ImageEffectsLib.Properties.Resources.plus"
-        },
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 184,
-          "y": 72
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 24,
-          "height": 24
-        },
-        "TabIndex": 10,
-        "ToolTip": {
-          "kind": "resource_string",
-          "resource_key": "btnEffectAdd.ToolTip"
-        },
-        "Name": "btnEffectAdd",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "ImeMode",
-          "resource_key": "btnEffectAdd.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnEffectAdd.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnEffectAdd.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnEffectAdd.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ToolTip",
-          "resource_key": "btnEffectAdd.ToolTip",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ToolTip",
-          "resource_key": "btnEffectAdd.ToolTip",
-          "source": "GetString/GetObject"
-        }
-      ]
-    },
-    {
-      "name": "btnEffectRemove",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Image": {
-          "kind": "expr",
-          "raw": "global::ShareX.ImageEffectsLib.Properties.Resources.minus"
-        },
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 211,
-          "y": 72
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 24,
-          "height": 24
-        },
-        "TabIndex": 11,
-        "ToolTip": {
-          "kind": "resource_string",
-          "resource_key": "btnEffectRemove.ToolTip"
-        },
-        "Name": "btnEffectRemove",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "ImeMode",
-          "resource_key": "btnEffectRemove.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnEffectRemove.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnEffectRemove.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnEffectRemove.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ToolTip",
-          "resource_key": "btnEffectRemove.ToolTip",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ToolTip",
-          "resource_key": "btnEffectRemove.ToolTip",
-          "source": "GetString/GetObject"
-        }
-      ]
-    },
-    {
-      "name": "btnEffectDuplicate",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Image": {
-          "kind": "expr",
-          "raw": "global::ShareX.ImageEffectsLib.Properties.Resources.document_copy"
-        },
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 238,
-          "y": 72
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 24,
-          "height": 24
-        },
-        "TabIndex": 12,
-        "ToolTip": {
-          "kind": "resource_string",
-          "resource_key": "btnEffectDuplicate.ToolTip"
-        },
-        "Name": "btnEffectDuplicate",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "ImeMode",
-          "resource_key": "btnEffectDuplicate.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnEffectDuplicate.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnEffectDuplicate.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnEffectDuplicate.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ToolTip",
-          "resource_key": "btnEffectDuplicate.ToolTip",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ToolTip",
-          "resource_key": "btnEffectDuplicate.ToolTip",
-          "source": "GetString/GetObject"
-        }
-      ]
-    },
-    {
-      "name": "btnEffectClear",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Image": {
-          "kind": "expr",
-          "raw": "global::ShareX.ImageEffectsLib.Properties.Resources.eraser"
-        },
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 265,
-          "y": 72
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 24,
-          "height": 24
-        },
-        "TabIndex": 13,
-        "ToolTip": {
-          "kind": "resource_string",
-          "resource_key": "btnEffectClear.ToolTip"
-        },
-        "Name": "btnEffectClear",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "ImeMode",
-          "resource_key": "btnEffectClear.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnEffectClear.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnEffectClear.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnEffectClear.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ToolTip",
-          "resource_key": "btnEffectClear.ToolTip",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ToolTip",
-          "resource_key": "btnEffectClear.ToolTip",
-          "source": "GetString/GetObject"
-        }
-      ]
-    },
-    {
-      "name": "btnEffectRefresh",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Image": {
-          "kind": "expr",
-          "raw": "global::ShareX.ImageEffectsLib.Properties.Resources.arrow_circle_double_135"
-        },
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 292,
-          "y": 72
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 24,
-          "height": 24
-        },
-        "TabIndex": 14,
-        "ToolTip": {
-          "kind": "resource_string",
-          "resource_key": "btnEffectRefresh.ToolTip"
-        },
-        "Name": "btnEffectRefresh",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "ImeMode",
-          "resource_key": "btnEffectRefresh.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnEffectRefresh.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnEffectRefresh.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnEffectRefresh.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ToolTip",
-          "resource_key": "btnEffectRefresh.ToolTip",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ToolTip",
-          "resource_key": "btnEffectRefresh.ToolTip",
-          "source": "GetString/GetObject"
-        }
-      ]
-    },
-    {
-      "name": "ttMain",
-      "type": "System.Windows.Forms.ToolTip",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoPopDelay": 5000,
-        "InitialDelay": 200,
-        "ReshowDelay": 100
-      },
-      "resources": []
-    },
-    {
-      "name": "pgSettings",
-      "type": "System.Windows.Forms.PropertyGrid",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Top, Bottom, Left",
-        "HelpVisible": false,
-        "Location": {
-          "kind": "Point",
-          "x": 384,
-          "y": 56
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 288,
-          "height": 488
-        },
-        "TabIndex": 18,
-        "Name": "pgSettings",
-        "PropertySort": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.PropertySort.NoSort"
-        },
-        "ToolbarVisible": false
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "pgSettings.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "HelpVisible",
-          "resource_key": "pgSettings.HelpVisible",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "pgSettings.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "pgSettings.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "pgSettings.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnImageEffects",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Bottom, Left",
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 136,
-          "y": 552
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 120,
-          "height": 24
-        },
-        "TabIndex": 21,
-        "Text": "Image effects...",
-        "Name": "btnImageEffects",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "btnImageEffects.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "btnImageEffects.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnImageEffects.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnImageEffects.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnImageEffects.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnImageEffects.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblEffectName",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 381,
-          "y": 8
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 67,
-          "height": 13
-        },
-        "TabIndex": 16,
-        "Text": "Effect name:",
-        "Name": "lblEffectName"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblEffectName.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblEffectName.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblEffectName.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblEffectName.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblEffectName.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblEffectName.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "txtEffectName",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 384,
-          "y": 24
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 288,
-          "height": 20
-        },
-        "TabIndex": 17,
-        "Name": "txtEffectName"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "txtEffectName.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "txtEffectName.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "txtEffectName.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "pbResult",
-      "type": "ShareX.HelpersLib.MyPictureBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Top, Bottom, Left, Right",
-        "Location": {
-          "kind": "Point",
-          "x": 680,
-          "y": 8
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 536,
-          "height": 536
-        },
-        "TabIndex": 19,
-        "BackColor": {
-          "kind": "expr",
-          "raw": "System.Drawing.SystemColors.Window"
-        },
-        "BorderStyle": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.BorderStyle.FixedSingle"
-        },
-        "DrawCheckeredBackground": true,
-        "EnableRightClickMenu": true,
-        "FullscreenOnClick": true,
-        "Name": "pbResult",
-        "PictureBoxBackColor": {
-          "kind": "expr",
-          "raw": "System.Drawing.SystemColors.Control"
-        },
-        "ShowImageSizeLabel": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "pbResult.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "pbResult.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "pbResult.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "pbResult.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lvPresets",
-      "type": "HelpersLib.MyListView",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AllowDrop": true,
-        "AllowItemDrag": true,
-        "Anchor": "Top, Bottom, Left",
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 53
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 168,
-          "height": 491
-        },
-        "TabIndex": 6,
-        "AutoFillColumn": true,
-        "Columns.literal_items": [
-          {
-            "kind": "expr",
-            "raw": "this.chPreset"
-          }
-        ],
-        "DisableDeselect": true,
-        "FullRowSelect": true,
-        "HeaderStyle": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.ColumnHeaderStyle.None"
-        },
-        "HideSelection": false,
-        "MultiSelect": false,
-        "Name": "lvPresets",
-        "UseCompatibleStateImageBehavior": false,
-        "View": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.View.Details"
-        }
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "lvPresets.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lvPresets.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lvPresets.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lvPresets.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "mbLoadImage",
-      "type": "HelpersLib.MenuButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Bottom, Left",
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 264,
-          "y": 552
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 120,
-          "height": 24
-        },
-        "TabIndex": 22,
-        "Text": "Load image",
-        "Visible": false,
-        "Menu": {
-          "kind": "expr",
-          "raw": "this.cmsLoadImage"
-        },
-        "Name": "mbLoadImage",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "mbLoadImage.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "mbLoadImage.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "mbLoadImage.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "mbLoadImage.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "mbLoadImage.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "mbLoadImage.Text",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Visible",
-          "resource_key": "mbLoadImage.Visible",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "lvEffects",
       "type": "ShareX.HelpersLib.MyListView",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ImageEffectsForm",
+      "parent_slot": "Controls",
+      "child_index": 24,
       "properties": {
         "AllowDrop": true,
         "AllowItemDrag": true,
@@ -1624,8 +1592,8 @@
         "CheckBoxes": true,
         "Columns.literal_items": [
           {
-            "kind": "expr",
-            "raw": "this.chEffect"
+            "kind": "ident",
+            "raw": "chEffect"
           }
         ],
         "DisableDeselect": true,
@@ -1667,35 +1635,57 @@
       ]
     },
     {
-      "name": "chPreset",
-      "type": "System.Windows.Forms.ColumnHeader",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "tsmiLoadImageFromFile",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": "cmsLoadImage",
+      "parent_slot": "Items",
+      "child_index": 0,
       "properties": {
-        "Width": 164
+        "Name": "tsmiLoadImageFromFile",
+        "Size": {
+          "kind": "Size",
+          "width": 130,
+          "height": 22
+        },
+        "Text": "From file..."
       },
       "resources": [
         {
-          "property": "Width",
-          "resource_key": "chPreset.Width",
+          "property": "Size",
+          "resource_key": "tsmiLoadImageFromFile.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiLoadImageFromFile.Text",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "chEffect",
-      "type": "System.Windows.Forms.ColumnHeader",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "tsmiLoadImageFromClipboard",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": "cmsLoadImage",
+      "parent_slot": "Items",
+      "child_index": 1,
       "properties": {
-        "Width": 50
+        "Name": "tsmiLoadImageFromClipboard",
+        "Size": {
+          "kind": "Size",
+          "width": 130,
+          "height": 22
+        },
+        "Text": "From clipboard"
       },
       "resources": [
         {
-          "property": "Width",
-          "resource_key": "chEffect.Width",
+          "property": "Size",
+          "resource_key": "tsmiLoadImageFromClipboard.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiLoadImageFromClipboard.Text",
           "source": "ApplyResources"
         }
       ]
@@ -1704,7 +1694,135 @@
   "tree": {
     "name": "ImageEffectsForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "txtEffectName",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblEffectName",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "btnImageEffects",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "pbResult",
+          "type": "ShareX.HelpersLib.MyPictureBox",
+          "slots": {}
+        },
+        {
+          "name": "pgSettings",
+          "type": "System.Windows.Forms.PropertyGrid",
+          "slots": {}
+        },
+        {
+          "name": "btnEffectRefresh",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnEffectClear",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnEffectDuplicate",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnEffectRemove",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnEffectAdd",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "lblEffects",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lvPresets",
+          "type": "HelpersLib.MyListView",
+          "slots": {}
+        },
+        {
+          "name": "btnPresetDuplicate",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnPresetRemove",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnPresetNew",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnPackager",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "lblPresets",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "btnUploadImage",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnOK",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnClose",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "txtPresetName",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblPresetName",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "mbLoadImage",
+          "type": "HelpersLib.MenuButton",
+          "slots": {}
+        },
+        {
+          "name": "btnSaveImage",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "lvEffects",
+          "type": "ShareX.HelpersLib.MyListView",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "btnSaveImage.Text": "Save image...",

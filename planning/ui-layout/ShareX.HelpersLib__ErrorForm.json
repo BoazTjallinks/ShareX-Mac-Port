@@ -31,11 +31,111 @@
   ],
   "controls": [
     {
+      "name": "lblErrorMessage",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ErrorForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Anchor": "Top, Left, Right",
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 7,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 569,
+          "height": 34
+        },
+        "TabIndex": 0,
+        "Text": "Error\nError 2",
+        "Name": "lblErrorMessage"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "lblErrorMessage.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "lblErrorMessage.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblErrorMessage.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblErrorMessage.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblErrorMessage.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblErrorMessage.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "flpMenu",
+      "type": "System.Windows.Forms.FlowLayoutPanel",
+      "parent": "ErrorForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Anchor": "Bottom, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 7,
+          "y": 373
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 569,
+          "height": 32
+        },
+        "TabIndex": 2,
+        "Name": "flpMenu"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "flpMenu.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "flpMenu.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "flpMenu.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "flpMenu.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
       "name": "txtException",
       "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ErrorForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
       "properties": {
         "Anchor": "Top, Bottom, Left, Right",
         "Location": {
@@ -90,9 +190,9 @@
     {
       "name": "btnSendBugReport",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "flpMenu",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "BackColor": {
           "kind": "expr",
@@ -149,11 +249,109 @@
       ]
     },
     {
+      "name": "btnOpenLogFile",
+      "type": "System.Windows.Forms.Button",
+      "parent": "flpMenu",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.Transparent"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 156,
+          "y": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 150,
+          "height": 26
+        },
+        "TabIndex": 1,
+        "Text": "Open log file...",
+        "Name": "btnOpenLogFile",
+        "UseVisualStyleBackColor": false
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnOpenLogFile.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnOpenLogFile.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnOpenLogFile.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnOpenLogFile.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnContinue",
+      "type": "System.Windows.Forms.Button",
+      "parent": "flpMenu",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.Transparent"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 312,
+          "y": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 26
+        },
+        "TabIndex": 2,
+        "Text": "Continue",
+        "Name": "btnContinue",
+        "UseVisualStyleBackColor": false
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnContinue.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnContinue.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnContinue.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnContinue.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
       "name": "btnClose",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "flpMenu",
+      "parent_slot": "Controls",
+      "child_index": 3,
       "properties": {
         "AutoSizeMode": "GrowAndShrink",
         "Location": {
@@ -204,153 +402,11 @@
       ]
     },
     {
-      "name": "btnOpenLogFile",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "BackColor": {
-          "kind": "expr",
-          "raw": "System.Drawing.Color.Transparent"
-        },
-        "Location": {
-          "kind": "Point",
-          "x": 156,
-          "y": 3
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 150,
-          "height": 26
-        },
-        "TabIndex": 1,
-        "Text": "Open log file...",
-        "Name": "btnOpenLogFile",
-        "UseVisualStyleBackColor": false
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnOpenLogFile.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnOpenLogFile.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnOpenLogFile.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnOpenLogFile.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "flpMenu",
-      "type": "System.Windows.Forms.FlowLayoutPanel",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Bottom, Left, Right",
-        "Location": {
-          "kind": "Point",
-          "x": 7,
-          "y": 373
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 569,
-          "height": 32
-        },
-        "TabIndex": 2,
-        "Name": "flpMenu"
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "flpMenu.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "flpMenu.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "flpMenu.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "flpMenu.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnContinue",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "BackColor": {
-          "kind": "expr",
-          "raw": "System.Drawing.Color.Transparent"
-        },
-        "Location": {
-          "kind": "Point",
-          "x": 312,
-          "y": 3
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 120,
-          "height": 26
-        },
-        "TabIndex": 2,
-        "Text": "Continue",
-        "Name": "btnContinue",
-        "UseVisualStyleBackColor": false
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnContinue.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnContinue.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnContinue.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnContinue.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "btnOK",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "flpMenu",
+      "parent_slot": "Controls",
+      "child_index": 4,
       "properties": {
         "AutoSizeMode": "GrowAndShrink",
         "ImeMode": "NoControl",
@@ -405,68 +461,58 @@
           "source": "ApplyResources"
         }
       ]
-    },
-    {
-      "name": "lblErrorMessage",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Top, Left, Right",
-        "Font": "Microsoft Sans Serif, 9.75pt",
-        "Location": {
-          "kind": "Point",
-          "x": 7,
-          "y": 8
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 569,
-          "height": 34
-        },
-        "TabIndex": 0,
-        "Text": "Error\nError 2",
-        "Name": "lblErrorMessage"
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "lblErrorMessage.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Font",
-          "resource_key": "lblErrorMessage.Font",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblErrorMessage.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblErrorMessage.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblErrorMessage.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblErrorMessage.Text",
-          "source": "ApplyResources"
-        }
-      ]
     }
   ],
   "tree": {
     "name": "ErrorForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "lblErrorMessage",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "flpMenu",
+          "type": "System.Windows.Forms.FlowLayoutPanel",
+          "slots": {
+            "Controls": [
+              {
+                "name": "btnSendBugReport",
+                "type": "System.Windows.Forms.Button",
+                "slots": {}
+              },
+              {
+                "name": "btnOpenLogFile",
+                "type": "System.Windows.Forms.Button",
+                "slots": {}
+              },
+              {
+                "name": "btnContinue",
+                "type": "System.Windows.Forms.Button",
+                "slots": {}
+              },
+              {
+                "name": "btnClose",
+                "type": "System.Windows.Forms.Button",
+                "slots": {}
+              },
+              {
+                "name": "btnOK",
+                "type": "System.Windows.Forms.Button",
+                "slots": {}
+              }
+            ]
+          }
+        },
+        {
+          "name": "txtException",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "btnSendBugReport.Text": "Send bug report...",

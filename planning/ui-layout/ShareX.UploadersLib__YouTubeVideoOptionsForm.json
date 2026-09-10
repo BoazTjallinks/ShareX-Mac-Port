@@ -31,11 +31,338 @@
   ],
   "controls": [
     {
+      "name": "btnCancel",
+      "type": "System.Windows.Forms.Button",
+      "parent": "YouTubeVideoOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 248,
+          "y": 256
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 32
+        },
+        "TabIndex": 7,
+        "Text": "Cancel",
+        "Name": "btnCancel",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnCancel.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCancel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCancel.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCancel.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnOK",
+      "type": "System.Windows.Forms.Button",
+      "parent": "YouTubeVideoOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 120,
+          "y": 256
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 32
+        },
+        "TabIndex": 6,
+        "Text": "OK",
+        "Name": "btnOK",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnOK.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnOK.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnOK.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnOK.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbVisibility",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "YouTubeVideoOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 208
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 352,
+          "height": 24
+        },
+        "TabIndex": 5,
+        "Name": "cbVisibility"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbVisibility.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbVisibility.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbVisibility.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtDescription",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "YouTubeVideoOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 88
+        },
+        "MaxLength": 5000,
+        "Multiline": true,
+        "Size": {
+          "kind": "Size",
+          "width": 352,
+          "height": 88
+        },
+        "TabIndex": 3,
+        "Name": "txtDescription"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtDescription.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "MaxLength",
+          "resource_key": "txtDescription.MaxLength",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Multiline",
+          "resource_key": "txtDescription.Multiline",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtDescription.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtDescription.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtTitle",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "YouTubeVideoOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 32
+        },
+        "MaxLength": 100,
+        "Size": {
+          "kind": "Size",
+          "width": 352,
+          "height": 22
+        },
+        "TabIndex": 1,
+        "Name": "txtTitle"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtTitle.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "MaxLength",
+          "resource_key": "txtTitle.MaxLength",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtTitle.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtTitle.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblVisibility",
+      "type": "System.Windows.Forms.Label",
+      "parent": "YouTubeVideoOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 184
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 59,
+          "height": 16
+        },
+        "TabIndex": 4,
+        "Text": "Visibility:",
+        "Name": "lblVisibility"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblVisibility.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblVisibility.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblVisibility.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblVisibility.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblVisibility.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblDescription",
+      "type": "System.Windows.Forms.Label",
+      "parent": "YouTubeVideoOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 64
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 78,
+          "height": 16
+        },
+        "TabIndex": 2,
+        "Text": "Description:",
+        "Name": "lblDescription"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblDescription.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblDescription.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblDescription.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblDescription.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblDescription.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
       "name": "lblTitle",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "YouTubeVideoOptionsForm",
+      "parent_slot": "Controls",
+      "child_index": 7,
       "properties": {
         "AutoSize": true,
         "Location": {
@@ -91,339 +418,55 @@
           "source": "ApplyResources"
         }
       ]
-    },
-    {
-      "name": "lblDescription",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 13,
-          "y": 64
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 78,
-          "height": 16
-        },
-        "TabIndex": 2,
-        "Text": "Description:",
-        "Name": "lblDescription"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblDescription.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblDescription.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblDescription.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblDescription.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblDescription.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblVisibility",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 13,
-          "y": 184
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 59,
-          "height": 16
-        },
-        "TabIndex": 4,
-        "Text": "Visibility:",
-        "Name": "lblVisibility"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblVisibility.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblVisibility.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblVisibility.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblVisibility.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblVisibility.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "txtTitle",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 32
-        },
-        "MaxLength": 100,
-        "Size": {
-          "kind": "Size",
-          "width": 352,
-          "height": 22
-        },
-        "TabIndex": 1,
-        "Name": "txtTitle"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "txtTitle.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "MaxLength",
-          "resource_key": "txtTitle.MaxLength",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "txtTitle.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "txtTitle.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "txtDescription",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 88
-        },
-        "MaxLength": 5000,
-        "Multiline": true,
-        "Size": {
-          "kind": "Size",
-          "width": 352,
-          "height": 88
-        },
-        "TabIndex": 3,
-        "Name": "txtDescription"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "txtDescription.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "MaxLength",
-          "resource_key": "txtDescription.MaxLength",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Multiline",
-          "resource_key": "txtDescription.Multiline",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "txtDescription.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "txtDescription.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "cbVisibility",
-      "type": "System.Windows.Forms.ComboBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "DropDownStyle": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
-        },
-        "FormattingEnabled": true,
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 208
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 352,
-          "height": 24
-        },
-        "TabIndex": 5,
-        "Name": "cbVisibility"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "cbVisibility.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "cbVisibility.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "cbVisibility.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnOK",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 120,
-          "y": 256
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 120,
-          "height": 32
-        },
-        "TabIndex": 6,
-        "Text": "OK",
-        "Name": "btnOK",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnOK.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnOK.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnOK.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnOK.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnCancel",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 248,
-          "y": 256
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 120,
-          "height": 32
-        },
-        "TabIndex": 7,
-        "Text": "Cancel",
-        "Name": "btnCancel",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnCancel.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnCancel.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnCancel.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnCancel.Text",
-          "source": "ApplyResources"
-        }
-      ]
     }
   ],
   "tree": {
     "name": "YouTubeVideoOptionsForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "btnCancel",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnOK",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "cbVisibility",
+          "type": "System.Windows.Forms.ComboBox",
+          "slots": {}
+        },
+        {
+          "name": "txtDescription",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "txtTitle",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblVisibility",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblDescription",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblTitle",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "lblTitle.Text": "Title:",

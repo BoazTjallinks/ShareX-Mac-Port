@@ -30,57 +30,229 @@
   ],
   "controls": [
     {
-      "name": "lblPassword",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "pbPuush",
+      "type": "System.Windows.Forms.PictureBox",
+      "parent": "PuushLoginForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
-        "AutoSize": true,
-        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.UploadersLib.Properties.Resources.puush_256"
+        },
         "Location": {
           "kind": "Point",
-          "x": 13,
-          "y": 152
+          "x": 0,
+          "y": 0
         },
         "Size": {
           "kind": "Size",
-          "width": 71,
-          "height": 16
+          "width": 264,
+          "height": 88
         },
-        "TabIndex": 1,
-        "Text": "Password:",
-        "Name": "lblPassword"
+        "SizeMode": "CenterImage",
+        "TabIndex": 8,
+        "Name": "pbPuush",
+        "TabStop": false
       },
       "resources": [
         {
-          "property": "AutoSize",
-          "resource_key": "lblPassword.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Font",
-          "resource_key": "lblPassword.Font",
-          "source": "ApplyResources"
-        },
-        {
           "property": "Location",
-          "resource_key": "lblPassword.Location",
+          "resource_key": "pbPuush.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "lblPassword.Size",
+          "resource_key": "pbPuush.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "SizeMode",
+          "resource_key": "pbPuush.SizeMode",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "lblPassword.TabIndex",
+          "resource_key": "pbPuush.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "llForgottenPassword",
+      "type": "System.Windows.Forms.LinkLabel",
+      "parent": "PuushLoginForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 208
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 106,
+          "height": 13
+        },
+        "TabIndex": 7,
+        "Text": "Forgotten password?",
+        "Name": "llForgottenPassword",
+        "TabStop": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "llForgottenPassword.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "llForgottenPassword.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "llForgottenPassword.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "llForgottenPassword.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "lblPassword.Text",
+          "resource_key": "llForgottenPassword.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnLogin",
+      "type": "System.Windows.Forms.Button",
+      "parent": "PuushLoginForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Font": "Microsoft Sans Serif, 9.75pt",
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 232
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 232,
+          "height": 32
+        },
+        "TabIndex": 6,
+        "Text": "Login",
+        "Name": "btnLogin",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "btnLogin.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnLogin.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnLogin.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnLogin.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnLogin.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtPassword",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "PuushLoginForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 176
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 232,
+          "height": 20
+        },
+        "TabIndex": 5,
+        "Name": "txtPassword",
+        "UseSystemPasswordChar": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtPassword.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtPassword.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtPassword.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtEmail",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "PuushLoginForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 120
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 232,
+          "height": 20
+        },
+        "TabIndex": 4,
+        "Name": "txtEmail"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtEmail.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtEmail.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtEmail.TabIndex",
           "source": "ApplyResources"
         }
       ]
@@ -88,9 +260,9 @@
     {
       "name": "lblEmail",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "PuushLoginForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
       "properties": {
         "AutoSize": true,
         "Font": "Microsoft Sans Serif, 9.75pt",
@@ -142,229 +314,57 @@
       ]
     },
     {
-      "name": "txtEmail",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "lblPassword",
+      "type": "System.Windows.Forms.Label",
+      "parent": "PuushLoginForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
       "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 120
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 232,
-          "height": 20
-        },
-        "TabIndex": 4,
-        "Name": "txtEmail"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "txtEmail.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "txtEmail.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "txtEmail.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "txtPassword",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 176
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 232,
-          "height": 20
-        },
-        "TabIndex": 5,
-        "Name": "txtPassword",
-        "UseSystemPasswordChar": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "txtPassword.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "txtPassword.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "txtPassword.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnLogin",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
+        "AutoSize": true,
         "Font": "Microsoft Sans Serif, 9.75pt",
         "Location": {
           "kind": "Point",
-          "x": 16,
-          "y": 232
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 232,
-          "height": 32
-        },
-        "TabIndex": 6,
-        "Text": "Login",
-        "Name": "btnLogin",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Font",
-          "resource_key": "btnLogin.Font",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnLogin.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnLogin.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnLogin.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnLogin.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "llForgottenPassword",
-      "type": "System.Windows.Forms.LinkLabel",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
           "x": 13,
-          "y": 208
+          "y": 152
         },
         "Size": {
           "kind": "Size",
-          "width": 106,
-          "height": 13
+          "width": 71,
+          "height": 16
         },
-        "TabIndex": 7,
-        "Text": "Forgotten password?",
-        "Name": "llForgottenPassword",
-        "TabStop": true
+        "TabIndex": 1,
+        "Text": "Password:",
+        "Name": "lblPassword"
       },
       "resources": [
         {
           "property": "AutoSize",
-          "resource_key": "llForgottenPassword.AutoSize",
+          "resource_key": "lblPassword.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "lblPassword.Font",
           "source": "ApplyResources"
         },
         {
           "property": "Location",
-          "resource_key": "llForgottenPassword.Location",
+          "resource_key": "lblPassword.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "llForgottenPassword.Size",
+          "resource_key": "lblPassword.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "llForgottenPassword.TabIndex",
+          "resource_key": "lblPassword.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "llForgottenPassword.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "pbPuush",
-      "type": "System.Windows.Forms.PictureBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Image": {
-          "kind": "expr",
-          "raw": "global::ShareX.UploadersLib.Properties.Resources.puush_256"
-        },
-        "Location": {
-          "kind": "Point",
-          "x": 0,
-          "y": 0
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 264,
-          "height": 88
-        },
-        "SizeMode": "CenterImage",
-        "TabIndex": 8,
-        "Name": "pbPuush",
-        "TabStop": false
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "pbPuush.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "pbPuush.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "SizeMode",
-          "resource_key": "pbPuush.SizeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "pbPuush.TabIndex",
+          "resource_key": "lblPassword.Text",
           "source": "ApplyResources"
         }
       ]
@@ -373,7 +373,45 @@
   "tree": {
     "name": "PuushLoginForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "pbPuush",
+          "type": "System.Windows.Forms.PictureBox",
+          "slots": {}
+        },
+        {
+          "name": "llForgottenPassword",
+          "type": "System.Windows.Forms.LinkLabel",
+          "slots": {}
+        },
+        {
+          "name": "btnLogin",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "txtPassword",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "txtEmail",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblEmail",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblPassword",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "lblPassword.Text": "Password:",

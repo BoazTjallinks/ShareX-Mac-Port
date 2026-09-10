@@ -26,9 +26,9 @@
     {
       "name": "tsMain",
       "type": "HelpersLib.ToolStripEx",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "PinToScreenForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "ClickThrough": true,
         "Dock": "None",
@@ -54,24 +54,6 @@
           "kind": "expr",
           "raw": "System.Windows.Forms.ToolStripGripStyle.Hidden"
         },
-        "Items.literal_items": [
-          {
-            "kind": "expr",
-            "raw": "this.tsbCopy"
-          },
-          {
-            "kind": "expr",
-            "raw": "this.tslScale"
-          },
-          {
-            "kind": "expr",
-            "raw": "this.tsbOptions"
-          },
-          {
-            "kind": "expr",
-            "raw": "this.tsbClose"
-          }
-        ],
         "Name": "tsMain"
       },
       "resources": [
@@ -105,9 +87,9 @@
     {
       "name": "tsbCopy",
       "type": "System.Windows.Forms.ToolStripButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "tsMain",
+      "parent_slot": "Items",
+      "child_index": 0,
       "properties": {
         "DisplayStyle": {
           "kind": "expr",
@@ -154,9 +136,9 @@
     {
       "name": "tslScale",
       "type": "System.Windows.Forms.ToolStripLabel",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "tsMain",
+      "parent_slot": "Items",
+      "child_index": 1,
       "properties": {
         "Font": "Segoe UI, 11.25pt",
         "Size": {
@@ -201,9 +183,9 @@
     {
       "name": "tsbOptions",
       "type": "System.Windows.Forms.ToolStripButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "tsMain",
+      "parent_slot": "Items",
+      "child_index": 2,
       "properties": {
         "DisplayStyle": {
           "kind": "expr",
@@ -250,9 +232,9 @@
     {
       "name": "tsbClose",
       "type": "System.Windows.Forms.ToolStripButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "tsMain",
+      "parent_slot": "Items",
+      "child_index": 3,
       "properties": {
         "DisplayStyle": {
           "kind": "expr",
@@ -300,7 +282,38 @@
   "tree": {
     "name": "PinToScreenForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "tsMain",
+          "type": "HelpersLib.ToolStripEx",
+          "slots": {
+            "Items": [
+              {
+                "name": "tsbCopy",
+                "type": "System.Windows.Forms.ToolStripButton",
+                "slots": {}
+              },
+              {
+                "name": "tslScale",
+                "type": "System.Windows.Forms.ToolStripLabel",
+                "slots": {}
+              },
+              {
+                "name": "tsbOptions",
+                "type": "System.Windows.Forms.ToolStripButton",
+                "slots": {}
+              },
+              {
+                "name": "tsbClose",
+                "type": "System.Windows.Forms.ToolStripButton",
+                "slots": {}
+              }
+            ]
+          }
+        }
+      ]
+    }
   },
   "strings": {
     "tsbCopy.Text": "Copy",

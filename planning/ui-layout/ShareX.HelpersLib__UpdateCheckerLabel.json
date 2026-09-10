@@ -23,104 +23,58 @@
   ],
   "controls": [
     {
-      "name": "pbLoading",
-      "type": "System.Windows.Forms.PictureBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Image": {
-          "kind": "expr",
-          "raw": "global::ShareX.HelpersLib.Properties.Resources.LoadingSmallBlack"
-        },
-        "Location": {
-          "kind": "Point",
-          "x": 0,
-          "y": 0
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 24,
-          "height": 24
-        },
-        "SizeMode": "CenterImage",
-        "TabIndex": 0,
-        "Name": "pbLoading",
-        "TabStop": false
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "pbLoading.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "pbLoading.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "SizeMode",
-          "resource_key": "pbLoading.SizeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "pbLoading.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblCheckingUpdates",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "llblUpdateAvailable",
+      "type": "System.Windows.Forms.LinkLabel",
+      "parent": "UpdateCheckerLabel",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "AutoSize": true,
         "Location": {
           "kind": "Point",
-          "x": 24,
+          "x": 0,
           "y": 3
         },
         "Size": {
           "kind": "Size",
-          "width": 117,
+          "width": 188,
           "height": 13
         },
-        "TabIndex": 1,
-        "Text": "Checking for updates...",
-        "ForeColor": {
-          "kind": "expr",
-          "raw": "System.Drawing.SystemColors.ControlDarkDark"
-        },
-        "Name": "lblCheckingUpdates"
+        "TabIndex": 3,
+        "Text": "A newer version of ShareX is available",
+        "Visible": false,
+        "Name": "llblUpdateAvailable",
+        "TabStop": true
       },
       "resources": [
         {
           "property": "AutoSize",
-          "resource_key": "lblCheckingUpdates.AutoSize",
+          "resource_key": "llblUpdateAvailable.AutoSize",
           "source": "ApplyResources"
         },
         {
           "property": "Location",
-          "resource_key": "lblCheckingUpdates.Location",
+          "resource_key": "llblUpdateAvailable.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "lblCheckingUpdates.Size",
+          "resource_key": "llblUpdateAvailable.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "lblCheckingUpdates.TabIndex",
+          "resource_key": "llblUpdateAvailable.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "lblCheckingUpdates.Text",
+          "resource_key": "llblUpdateAvailable.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Visible",
+          "resource_key": "llblUpdateAvailable.Visible",
           "source": "ApplyResources"
         }
       ]
@@ -128,9 +82,9 @@
     {
       "name": "lblStatus",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "UpdateCheckerLabel",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
         "AutoSize": true,
         "Location": {
@@ -186,58 +140,104 @@
       ]
     },
     {
-      "name": "llblUpdateAvailable",
-      "type": "System.Windows.Forms.LinkLabel",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "lblCheckingUpdates",
+      "type": "System.Windows.Forms.Label",
+      "parent": "UpdateCheckerLabel",
+      "parent_slot": "Controls",
+      "child_index": 2,
       "properties": {
         "AutoSize": true,
         "Location": {
           "kind": "Point",
-          "x": 0,
+          "x": 24,
           "y": 3
         },
         "Size": {
           "kind": "Size",
-          "width": 188,
+          "width": 117,
           "height": 13
         },
-        "TabIndex": 3,
-        "Text": "A newer version of ShareX is available",
-        "Visible": false,
-        "Name": "llblUpdateAvailable",
-        "TabStop": true
+        "TabIndex": 1,
+        "Text": "Checking for updates...",
+        "ForeColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.ControlDarkDark"
+        },
+        "Name": "lblCheckingUpdates"
       },
       "resources": [
         {
           "property": "AutoSize",
-          "resource_key": "llblUpdateAvailable.AutoSize",
+          "resource_key": "lblCheckingUpdates.AutoSize",
           "source": "ApplyResources"
         },
         {
           "property": "Location",
-          "resource_key": "llblUpdateAvailable.Location",
+          "resource_key": "lblCheckingUpdates.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "llblUpdateAvailable.Size",
+          "resource_key": "lblCheckingUpdates.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "llblUpdateAvailable.TabIndex",
+          "resource_key": "lblCheckingUpdates.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "llblUpdateAvailable.Text",
+          "resource_key": "lblCheckingUpdates.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pbLoading",
+      "type": "System.Windows.Forms.PictureBox",
+      "parent": "UpdateCheckerLabel",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.HelpersLib.Properties.Resources.LoadingSmallBlack"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 24,
+          "height": 24
+        },
+        "SizeMode": "CenterImage",
+        "TabIndex": 0,
+        "Name": "pbLoading",
+        "TabStop": false
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "pbLoading.Location",
           "source": "ApplyResources"
         },
         {
-          "property": "Visible",
-          "resource_key": "llblUpdateAvailable.Visible",
+          "property": "Size",
+          "resource_key": "pbLoading.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "SizeMode",
+          "resource_key": "pbLoading.SizeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pbLoading.TabIndex",
           "source": "ApplyResources"
         }
       ]
@@ -246,7 +246,30 @@
   "tree": {
     "name": "UpdateCheckerLabel",
     "type": "UserControl",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "llblUpdateAvailable",
+          "type": "System.Windows.Forms.LinkLabel",
+          "slots": {}
+        },
+        {
+          "name": "lblStatus",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblCheckingUpdates",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "pbLoading",
+          "type": "System.Windows.Forms.PictureBox",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "lblCheckingUpdates.Text": "Checking for updates...",

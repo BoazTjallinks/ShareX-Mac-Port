@@ -36,20 +36,6 @@
       "parent_slot": null,
       "child_index": null,
       "properties": {
-        "Items.literal_items": [
-          {
-            "kind": "expr",
-            "raw": "this.tsmiExportClipboard"
-          },
-          {
-            "kind": "expr",
-            "raw": "this.tsmiExportFile"
-          },
-          {
-            "kind": "expr",
-            "raw": "this.tsmiExportUpload"
-          }
-        ],
         "Name": "cmsExport",
         "ShowImageMargin": false,
         "Size": {
@@ -67,110 +53,12 @@
       ]
     },
     {
-      "name": "tsmiExportClipboard",
-      "type": "System.Windows.Forms.ToolStripMenuItem",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Name": "tsmiExportClipboard",
-        "Size": {
-          "kind": "Size",
-          "width": 144,
-          "height": 22
-        },
-        "Text": "Copy to clipboard"
-      },
-      "resources": [
-        {
-          "property": "Size",
-          "resource_key": "tsmiExportClipboard.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tsmiExportClipboard.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tsmiExportFile",
-      "type": "System.Windows.Forms.ToolStripMenuItem",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Name": "tsmiExportFile",
-        "Size": {
-          "kind": "Size",
-          "width": 144,
-          "height": 22
-        },
-        "Text": "Save to file..."
-      },
-      "resources": [
-        {
-          "property": "Size",
-          "resource_key": "tsmiExportFile.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tsmiExportFile.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tsmiExportUpload",
-      "type": "System.Windows.Forms.ToolStripMenuItem",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Name": "tsmiExportUpload",
-        "Size": {
-          "kind": "Size",
-          "width": 144,
-          "height": 22
-        },
-        "Text": "Upload as text"
-      },
-      "resources": [
-        {
-          "property": "Size",
-          "resource_key": "tsmiExportUpload.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tsmiExportUpload.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "cmsImport",
       "type": "System.Windows.Forms.ContextMenuStrip",
       "parent": null,
       "parent_slot": null,
       "child_index": null,
       "properties": {
-        "Items.literal_items": [
-          {
-            "kind": "expr",
-            "raw": "this.tsmiImportClipboard"
-          },
-          {
-            "kind": "expr",
-            "raw": "this.tsmiImportFile"
-          },
-          {
-            "kind": "expr",
-            "raw": "this.tsmiImportURL"
-          }
-        ],
         "Name": "cmsImport",
         "ShowImageMargin": false,
         "Size": {
@@ -188,95 +76,11 @@
       ]
     },
     {
-      "name": "tsmiImportClipboard",
-      "type": "System.Windows.Forms.ToolStripMenuItem",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Name": "tsmiImportClipboard",
-        "Size": {
-          "kind": "Size",
-          "width": 130,
-          "height": 22
-        },
-        "Text": "From clipboard"
-      },
-      "resources": [
-        {
-          "property": "Size",
-          "resource_key": "tsmiImportClipboard.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tsmiImportClipboard.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tsmiImportFile",
-      "type": "System.Windows.Forms.ToolStripMenuItem",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Name": "tsmiImportFile",
-        "Size": {
-          "kind": "Size",
-          "width": 130,
-          "height": 22
-        },
-        "Text": "From file..."
-      },
-      "resources": [
-        {
-          "property": "Size",
-          "resource_key": "tsmiImportFile.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tsmiImportFile.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tsmiImportURL",
-      "type": "System.Windows.Forms.ToolStripMenuItem",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Name": "tsmiImportURL",
-        "Size": {
-          "kind": "Size",
-          "width": 130,
-          "height": 22
-        },
-        "Text": "From URL..."
-      },
-      "resources": [
-        {
-          "property": "Size",
-          "resource_key": "tsmiImportURL.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tsmiImportURL.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "btnImport",
       "type": "MenuButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ExportImportControl",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "Location": {
           "kind": "Point",
@@ -329,9 +133,9 @@
     {
       "name": "btnExport",
       "type": "MenuButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ExportImportControl",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
         "Location": {
           "kind": "Point",
@@ -380,12 +184,193 @@
           "source": "ApplyResources"
         }
       ]
+    },
+    {
+      "name": "tsmiExportClipboard",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": "cmsExport",
+      "parent_slot": "Items",
+      "child_index": 0,
+      "properties": {
+        "Name": "tsmiExportClipboard",
+        "Size": {
+          "kind": "Size",
+          "width": 144,
+          "height": 22
+        },
+        "Text": "Copy to clipboard"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiExportClipboard.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiExportClipboard.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiExportFile",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": "cmsExport",
+      "parent_slot": "Items",
+      "child_index": 1,
+      "properties": {
+        "Name": "tsmiExportFile",
+        "Size": {
+          "kind": "Size",
+          "width": 144,
+          "height": 22
+        },
+        "Text": "Save to file..."
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiExportFile.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiExportFile.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiExportUpload",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": "cmsExport",
+      "parent_slot": "Items",
+      "child_index": 2,
+      "properties": {
+        "Name": "tsmiExportUpload",
+        "Size": {
+          "kind": "Size",
+          "width": 144,
+          "height": 22
+        },
+        "Text": "Upload as text"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiExportUpload.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiExportUpload.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiImportClipboard",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": "cmsImport",
+      "parent_slot": "Items",
+      "child_index": 0,
+      "properties": {
+        "Name": "tsmiImportClipboard",
+        "Size": {
+          "kind": "Size",
+          "width": 130,
+          "height": 22
+        },
+        "Text": "From clipboard"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiImportClipboard.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiImportClipboard.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiImportFile",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": "cmsImport",
+      "parent_slot": "Items",
+      "child_index": 1,
+      "properties": {
+        "Name": "tsmiImportFile",
+        "Size": {
+          "kind": "Size",
+          "width": 130,
+          "height": 22
+        },
+        "Text": "From file..."
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiImportFile.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiImportFile.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiImportURL",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": "cmsImport",
+      "parent_slot": "Items",
+      "child_index": 2,
+      "properties": {
+        "Name": "tsmiImportURL",
+        "Size": {
+          "kind": "Size",
+          "width": 130,
+          "height": 22
+        },
+        "Text": "From URL..."
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiImportURL.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiImportURL.Text",
+          "source": "ApplyResources"
+        }
+      ]
     }
   ],
   "tree": {
     "name": "ExportImportControl",
     "type": "UserControl",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "btnImport",
+          "type": "MenuButton",
+          "slots": {}
+        },
+        {
+          "name": "btnExport",
+          "type": "MenuButton",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "tsmiExportClipboard.Text": "Copy to clipboard",

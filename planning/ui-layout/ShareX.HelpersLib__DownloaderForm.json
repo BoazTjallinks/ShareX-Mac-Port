@@ -30,9 +30,9 @@
     {
       "name": "lblProgress",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "DownloaderForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "Font": "Arial, 12pt",
         "Location": {
@@ -80,9 +80,9 @@
     {
       "name": "lblStatus",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "DownloaderForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
         "Font": "Arial, 12pt",
         "Location": {
@@ -130,9 +130,9 @@
     {
       "name": "lblFilename",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "DownloaderForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
       "properties": {
         "Font": "Arial, 12pt",
         "Location": {
@@ -180,9 +180,9 @@
     {
       "name": "btnAction",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "DownloaderForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
       "properties": {
         "Font": "Arial, 12pt",
         "Location": {
@@ -231,9 +231,9 @@
     {
       "name": "pbProgress",
       "type": "BlackStyleProgressBar",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "DownloaderForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
       "properties": {
         "Location": {
           "kind": "Point",
@@ -276,7 +276,35 @@
   "tree": {
     "name": "DownloaderForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "lblProgress",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblStatus",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblFilename",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "btnAction",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "pbProgress",
+          "type": "BlackStyleProgressBar",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "lblProgress.Text": "Progress:",

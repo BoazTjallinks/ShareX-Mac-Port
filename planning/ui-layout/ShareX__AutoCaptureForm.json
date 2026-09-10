@@ -44,206 +44,211 @@
       "resources": []
     },
     {
-      "name": "ssBar",
-      "type": "System.Windows.Forms.StatusStrip",
+      "name": "niTray",
+      "type": "System.Windows.Forms.NotifyIcon",
       "parent": null,
       "parent_slot": null,
       "child_index": null,
       "properties": {
-        "Items.literal_items": [
-          {
-            "kind": "expr",
-            "raw": "this.tspbBar"
-          },
-          {
-            "kind": "expr",
-            "raw": "this.tsslStatus"
-          }
-        ],
+        "Text": "ShareX - Auto capture"
+      },
+      "resources": [
+        {
+          "property": "Text",
+          "resource_key": "niTray.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "gbRegion",
+      "type": "System.Windows.Forms.GroupBox",
+      "parent": "AutoCaptureForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
         "Location": {
           "kind": "Point",
-          "x": 0,
-          "y": 241
+          "x": 8,
+          "y": 8
         },
         "Size": {
           "kind": "Size",
-          "width": 319,
-          "height": 22
+          "width": 304,
+          "height": 96
         },
-        "TabIndex": 7,
-        "Text": "Status",
-        "Name": "ssBar",
-        "SizingGrip": false
+        "TabIndex": 0,
+        "Text": "Region",
+        "Name": "gbRegion",
+        "TabStop": false
       },
       "resources": [
         {
           "property": "Location",
-          "resource_key": "ssBar.Location",
+          "resource_key": "gbRegion.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "ssBar.Size",
+          "resource_key": "gbRegion.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "ssBar.TabIndex",
+          "resource_key": "gbRegion.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "ssBar.Text",
+          "resource_key": "gbRegion.Text",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "tspbBar",
-      "type": "System.Windows.Forms.ToolStripProgressBar",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Name": "tspbBar",
-        "Size": {
-          "kind": "Size",
-          "width": 75,
-          "height": 16
-        }
-      },
-      "resources": [
-        {
-          "property": "Size",
-          "resource_key": "tspbBar.Size",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tsslStatus",
-      "type": "System.Windows.Forms.ToolStripStatusLabel",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "BackColor": {
-          "kind": "expr",
-          "raw": "System.Drawing.Color.Transparent"
-        },
-        "Name": "tsslStatus",
-        "Size": {
-          "kind": "Size",
-          "width": 0,
-          "height": 17
-        }
-      },
-      "resources": [
-        {
-          "property": "Size",
-          "resource_key": "tsslStatus.Size",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnExecute",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Enabled": false,
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 208
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 288,
-          "height": 24
-        },
-        "TabIndex": 6,
-        "Text": "Start",
-        "Name": "btnExecute",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Enabled",
-          "resource_key": "btnExecute.Enabled",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnExecute.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnExecute.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnExecute.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnExecute.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "cbWaitUploads",
-      "type": "System.Windows.Forms.CheckBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "lblDurationSeconds",
+      "type": "System.Windows.Forms.Label",
+      "parent": "AutoCaptureForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
         "AutoSize": true,
         "Location": {
           "kind": "Point",
-          "x": 16,
-          "y": 184
+          "x": 96,
+          "y": 135
         },
         "Size": {
           "kind": "Size",
-          "width": 144,
-          "height": 17
+          "width": 47,
+          "height": 13
         },
-        "TabIndex": 5,
-        "Text": "Wait until tasks complete",
-        "Name": "cbWaitUploads",
-        "UseVisualStyleBackColor": true
+        "TabIndex": 3,
+        "Text": "seconds",
+        "Name": "lblDurationSeconds"
       },
       "resources": [
         {
           "property": "AutoSize",
-          "resource_key": "cbWaitUploads.AutoSize",
+          "resource_key": "lblDurationSeconds.AutoSize",
           "source": "ApplyResources"
         },
         {
           "property": "Location",
-          "resource_key": "cbWaitUploads.Location",
+          "resource_key": "lblDurationSeconds.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "cbWaitUploads.Size",
+          "resource_key": "lblDurationSeconds.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "cbWaitUploads.TabIndex",
+          "resource_key": "lblDurationSeconds.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "cbWaitUploads.Text",
+          "resource_key": "lblDurationSeconds.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudRepeatTime",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "AutoCaptureForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "DecimalPlaces": 1,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 131
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 72,
+          "height": 20
+        },
+        "TabIndex": 2,
+        "TextAlign": "Center",
+        "Maximum": 86400,
+        "Minimum": 1,
+        "Name": "nudRepeatTime",
+        "Value": 3
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudRepeatTime.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudRepeatTime.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudRepeatTime.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudRepeatTime.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblDuration",
+      "type": "System.Windows.Forms.Label",
+      "parent": "AutoCaptureForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 12,
+          "y": 112
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 67,
+          "height": 13
+        },
+        "TabIndex": 1,
+        "Text": "Repeat time:",
+        "Name": "lblDuration"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblDuration.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblDuration.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblDuration.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblDuration.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblDuration.Text",
           "source": "ApplyResources"
         }
       ]
@@ -251,9 +256,9 @@
     {
       "name": "cbAutoMinimize",
       "type": "System.Windows.Forms.CheckBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "AutoCaptureForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
       "properties": {
         "AutoSize": true,
         "Location": {
@@ -300,306 +305,148 @@
       ]
     },
     {
-      "name": "lblRegion",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "cbWaitUploads",
+      "type": "System.Windows.Forms.CheckBox",
+      "parent": "AutoCaptureForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
       "properties": {
         "AutoSize": true,
         "Location": {
           "kind": "Point",
-          "x": 14,
-          "y": 72
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 41,
-          "height": 13
-        },
-        "TabIndex": 3,
-        "Text": "Region",
-        "Name": "lblRegion"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblRegion.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblRegion.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblRegion.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblRegion.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblRegion.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnRegion",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 152,
-          "y": 44
+          "x": 16,
+          "y": 184
         },
         "Size": {
           "kind": "Size",
           "width": 144,
-          "height": 24
+          "height": 17
         },
-        "TabIndex": 2,
-        "Text": "Select region...",
-        "Name": "btnRegion",
+        "TabIndex": 5,
+        "Text": "Wait until tasks complete",
+        "Name": "cbWaitUploads",
         "UseVisualStyleBackColor": true
       },
       "resources": [
         {
+          "property": "AutoSize",
+          "resource_key": "cbWaitUploads.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
           "property": "Location",
-          "resource_key": "btnRegion.Location",
+          "resource_key": "cbWaitUploads.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "btnRegion.Size",
+          "resource_key": "cbWaitUploads.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "btnRegion.TabIndex",
+          "resource_key": "cbWaitUploads.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "btnRegion.Text",
+          "resource_key": "cbWaitUploads.Text",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "nudRepeatTime",
-      "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "btnExecute",
+      "type": "System.Windows.Forms.Button",
+      "parent": "AutoCaptureForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
       "properties": {
-        "DecimalPlaces": 1,
+        "Enabled": false,
         "Location": {
           "kind": "Point",
           "x": 16,
-          "y": 131
+          "y": 208
         },
         "Size": {
           "kind": "Size",
-          "width": 72,
-          "height": 20
+          "width": 288,
+          "height": 24
         },
-        "TabIndex": 2,
-        "TextAlign": "Center",
-        "Maximum": 86400,
-        "Minimum": 1,
-        "Name": "nudRepeatTime",
-        "Value": 3
+        "TabIndex": 6,
+        "Text": "Start",
+        "Name": "btnExecute",
+        "UseVisualStyleBackColor": true
       },
       "resources": [
         {
-          "property": "Location",
-          "resource_key": "nudRepeatTime.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "nudRepeatTime.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "nudRepeatTime.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "nudRepeatTime.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblDuration",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 12,
-          "y": 112
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 67,
-          "height": 13
-        },
-        "TabIndex": 1,
-        "Text": "Repeat time:",
-        "Name": "lblDuration"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblDuration.AutoSize",
+          "property": "Enabled",
+          "resource_key": "btnExecute.Enabled",
           "source": "ApplyResources"
         },
         {
           "property": "Location",
-          "resource_key": "lblDuration.Location",
+          "resource_key": "btnExecute.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "lblDuration.Size",
+          "resource_key": "btnExecute.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "lblDuration.TabIndex",
+          "resource_key": "btnExecute.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "lblDuration.Text",
+          "resource_key": "btnExecute.Text",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "niTray",
-      "type": "System.Windows.Forms.NotifyIcon",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Text": "ShareX - Auto capture"
-      },
-      "resources": [
-        {
-          "property": "Text",
-          "resource_key": "niTray.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblDurationSeconds",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 96,
-          "y": 135
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 47,
-          "height": 13
-        },
-        "TabIndex": 3,
-        "Text": "seconds",
-        "Name": "lblDurationSeconds"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblDurationSeconds.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblDurationSeconds.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblDurationSeconds.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblDurationSeconds.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblDurationSeconds.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "gbRegion",
-      "type": "System.Windows.Forms.GroupBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "ssBar",
+      "type": "System.Windows.Forms.StatusStrip",
+      "parent": "AutoCaptureForm",
+      "parent_slot": "Controls",
+      "child_index": 7,
       "properties": {
         "Location": {
           "kind": "Point",
-          "x": 8,
-          "y": 8
+          "x": 0,
+          "y": 241
         },
         "Size": {
           "kind": "Size",
-          "width": 304,
-          "height": 96
+          "width": 319,
+          "height": 22
         },
-        "TabIndex": 0,
-        "Text": "Region",
-        "Name": "gbRegion",
-        "TabStop": false
+        "TabIndex": 7,
+        "Text": "Status",
+        "Name": "ssBar",
+        "SizingGrip": false
       },
       "resources": [
         {
           "property": "Location",
-          "resource_key": "gbRegion.Location",
+          "resource_key": "ssBar.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "gbRegion.Size",
+          "resource_key": "ssBar.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "gbRegion.TabIndex",
+          "resource_key": "ssBar.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "gbRegion.Text",
+          "resource_key": "ssBar.Text",
           "source": "ApplyResources"
         }
       ]
@@ -607,9 +454,9 @@
     {
       "name": "rbFullscreen",
       "type": "System.Windows.Forms.RadioButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "gbRegion",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "AutoSize": true,
         "Location": {
@@ -658,9 +505,9 @@
     {
       "name": "rbCustomRegion",
       "type": "System.Windows.Forms.RadioButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "gbRegion",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
         "AutoSize": true,
         "Location": {
@@ -707,12 +554,234 @@
           "source": "ApplyResources"
         }
       ]
+    },
+    {
+      "name": "btnRegion",
+      "type": "System.Windows.Forms.Button",
+      "parent": "gbRegion",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 152,
+          "y": 44
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 144,
+          "height": 24
+        },
+        "TabIndex": 2,
+        "Text": "Select region...",
+        "Name": "btnRegion",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnRegion.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnRegion.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnRegion.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnRegion.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblRegion",
+      "type": "System.Windows.Forms.Label",
+      "parent": "gbRegion",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 14,
+          "y": 72
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 41,
+          "height": 13
+        },
+        "TabIndex": 3,
+        "Text": "Region",
+        "Name": "lblRegion"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblRegion.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblRegion.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblRegion.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblRegion.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblRegion.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tspbBar",
+      "type": "System.Windows.Forms.ToolStripProgressBar",
+      "parent": "ssBar",
+      "parent_slot": "Items",
+      "child_index": 0,
+      "properties": {
+        "Name": "tspbBar",
+        "Size": {
+          "kind": "Size",
+          "width": 75,
+          "height": 16
+        }
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tspbBar.Size",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsslStatus",
+      "type": "System.Windows.Forms.ToolStripStatusLabel",
+      "parent": "ssBar",
+      "parent_slot": "Items",
+      "child_index": 1,
+      "properties": {
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.Transparent"
+        },
+        "Name": "tsslStatus",
+        "Size": {
+          "kind": "Size",
+          "width": 0,
+          "height": 17
+        }
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsslStatus.Size",
+          "source": "ApplyResources"
+        }
+      ]
     }
   ],
   "tree": {
     "name": "AutoCaptureForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "gbRegion",
+          "type": "System.Windows.Forms.GroupBox",
+          "slots": {
+            "Controls": [
+              {
+                "name": "rbFullscreen",
+                "type": "System.Windows.Forms.RadioButton",
+                "slots": {}
+              },
+              {
+                "name": "rbCustomRegion",
+                "type": "System.Windows.Forms.RadioButton",
+                "slots": {}
+              },
+              {
+                "name": "btnRegion",
+                "type": "System.Windows.Forms.Button",
+                "slots": {}
+              },
+              {
+                "name": "lblRegion",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              }
+            ]
+          }
+        },
+        {
+          "name": "lblDurationSeconds",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "nudRepeatTime",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "lblDuration",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "cbAutoMinimize",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "cbWaitUploads",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "btnExecute",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "ssBar",
+          "type": "System.Windows.Forms.StatusStrip",
+          "slots": {
+            "Items": [
+              {
+                "name": "tspbBar",
+                "type": "System.Windows.Forms.ToolStripProgressBar",
+                "slots": {}
+              },
+              {
+                "name": "tsslStatus",
+                "type": "System.Windows.Forms.ToolStripStatusLabel",
+                "slots": {}
+              }
+            ]
+          }
+        }
+      ]
+    }
   },
   "strings": {
     "ssBar.Text": "Status",

@@ -16,37 +16,6 @@
   ],
   "controls": [
     {
-      "name": "flpMain",
-      "type": "System.Windows.Forms.FlowLayoutPanel",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "AutoSizeMode": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.AutoSizeMode.GrowAndShrink"
-        },
-        "FlowDirection": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.FlowDirection.TopDown"
-        },
-        "Location": {
-          "kind": "Point",
-          "x": 0,
-          "y": 0
-        },
-        "Name": "flpMain",
-        "Size": {
-          "kind": "Size",
-          "width": 0,
-          "height": 0
-        },
-        "TabIndex": 0
-      },
-      "resources": []
-    },
-    {
       "name": "AutoScaleDimensions",
       "type": "System.Drawing.SizeF",
       "parent": null,
@@ -72,12 +41,51 @@
       "child_index": null,
       "properties": {},
       "resources": []
+    },
+    {
+      "name": "flpMain",
+      "type": "System.Windows.Forms.FlowLayoutPanel",
+      "parent": "ParserSelectForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "AutoSize": true,
+        "AutoSizeMode": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.AutoSizeMode.GrowAndShrink"
+        },
+        "FlowDirection": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.FlowDirection.TopDown"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Name": "flpMain",
+        "Size": {
+          "kind": "Size",
+          "width": 0,
+          "height": 0
+        },
+        "TabIndex": 0
+      },
+      "resources": []
     }
   ],
   "tree": {
     "name": "ParserSelectForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "flpMain",
+          "type": "System.Windows.Forms.FlowLayoutPanel",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {},
   "binary_resources": [],

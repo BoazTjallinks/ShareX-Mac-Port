@@ -36,11 +36,658 @@
   ],
   "controls": [
     {
+      "name": "btnScanImageFile",
+      "type": "System.Windows.Forms.Button",
+      "parent": "QRCodeForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 384,
+          "y": 16
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 176,
+          "height": 40
+        },
+        "TabIndex": 2,
+        "Text": "Scan image file...",
+        "Name": "btnScanImageFile",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnScanImageFile.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnScanImageFile.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnScanImageFile.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnScanImageFile.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnScanRegion",
+      "type": "System.Windows.Forms.Button",
+      "parent": "QRCodeForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 200,
+          "y": 16
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 176,
+          "height": 40
+        },
+        "TabIndex": 1,
+        "Text": "Scan region...",
+        "Name": "btnScanRegion",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnScanRegion.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnScanRegion.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnScanRegion.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnScanRegion.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnScanScreen",
+      "type": "System.Windows.Forms.Button",
+      "parent": "QRCodeForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 16
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 176,
+          "height": 40
+        },
+        "TabIndex": 0,
+        "Text": "Scan screen",
+        "Name": "btnScanScreen",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnScanScreen.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnScanScreen.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnScanScreen.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnScanScreen.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnUploadImage",
+      "type": "System.Windows.Forms.Button",
+      "parent": "QRCodeForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "Location": {
+          "kind": "Point",
+          "x": 920,
+          "y": 560
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 160,
+          "height": 32
+        },
+        "TabIndex": 12,
+        "Text": "Upload image",
+        "Name": "btnUploadImage",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnUploadImage.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnUploadImage.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnUploadImage.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnUploadImage.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnUploadImage.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnSaveImage",
+      "type": "System.Windows.Forms.Button",
+      "parent": "QRCodeForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "Location": {
+          "kind": "Point",
+          "x": 752,
+          "y": 560
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 160,
+          "height": 32
+        },
+        "TabIndex": 11,
+        "Text": "Save image...",
+        "Name": "btnSaveImage",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnSaveImage.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnSaveImage.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnSaveImage.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnSaveImage.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnSaveImage.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnCopyImage",
+      "type": "System.Windows.Forms.Button",
+      "parent": "QRCodeForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "Anchor": "Bottom, Left",
+        "Location": {
+          "kind": "Point",
+          "x": 584,
+          "y": 560
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 160,
+          "height": 32
+        },
+        "TabIndex": 10,
+        "Text": "Copy image",
+        "Name": "btnCopyImage",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "btnCopyImage.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnCopyImage.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCopyImage.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCopyImage.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCopyImage.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblText",
+      "type": "System.Windows.Forms.Label",
+      "parent": "QRCodeForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 64
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 36,
+          "height": 16
+        },
+        "TabIndex": 3,
+        "Text": "Text:",
+        "Name": "lblText"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblText.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblText.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblText.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblText.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblText.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblQRCode",
+      "type": "System.Windows.Forms.Label",
+      "parent": "QRCodeForm",
+      "parent_slot": "Controls",
+      "child_index": 7,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 581,
+          "y": 16
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 0,
+          "right": 4,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 64,
+          "height": 16
+        },
+        "TabIndex": 5,
+        "Text": "QR code:",
+        "Name": "lblQRCode"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblQRCode.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblQRCode.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblQRCode.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblQRCode.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblQRCode.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblQRCode.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pbQRCode",
+      "type": "HelpersLib.MyPictureBox",
+      "parent": "QRCodeForm",
+      "parent_slot": "Controls",
+      "child_index": 8,
+      "properties": {
+        "Anchor": "Top, Bottom, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 584,
+          "y": 40
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 5,
+          "top": 5,
+          "right": 5,
+          "bottom": 5
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 512,
+          "height": 512
+        },
+        "TabIndex": 6,
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        },
+        "FullscreenOnClick": true,
+        "Name": "pbQRCode",
+        "PictureBoxBackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.SystemColors.Window"
+        }
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "pbQRCode.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "pbQRCode.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "pbQRCode.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pbQRCode.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pbQRCode.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblQRCodeSizeHint",
+      "type": "System.Windows.Forms.Label",
+      "parent": "QRCodeForm",
+      "parent_slot": "Controls",
+      "child_index": 9,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 1072,
+          "y": 16
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 0,
+          "right": 4,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 21,
+          "height": 16
+        },
+        "TabIndex": 9,
+        "Text": "px",
+        "Name": "lblQRCodeSizeHint"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblQRCodeSizeHint.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblQRCodeSizeHint.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblQRCodeSizeHint.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblQRCodeSizeHint.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblQRCodeSizeHint.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblQRCodeSizeHint.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblQRCodeSize",
+      "type": "System.Windows.Forms.Label",
+      "parent": "QRCodeForm",
+      "parent_slot": "Controls",
+      "child_index": 10,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 848,
+          "y": 16
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 0,
+          "right": 4,
+          "bottom": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 91,
+          "height": 16
+        },
+        "TabIndex": 7,
+        "Text": "QR code size:",
+        "Name": "lblQRCodeSize"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblQRCodeSize.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblQRCodeSize.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "lblQRCodeSize.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblQRCodeSize.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblQRCodeSize.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblQRCodeSize.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudQRCodeSize",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "QRCodeForm",
+      "parent_slot": "Controls",
+      "child_index": 11,
+      "properties": {
+        "Increment": 64,
+        "Location": {
+          "kind": "Point",
+          "x": 987,
+          "y": 13
+        },
+        "Margin": {
+          "kind": "Padding",
+          "left": 4,
+          "top": 4,
+          "right": 4,
+          "bottom": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 80,
+          "height": 22
+        },
+        "TabIndex": 8,
+        "TextAlign": "Center",
+        "Maximum": 2048,
+        "Name": "nudQRCodeSize"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudQRCodeSize.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Margin",
+          "resource_key": "nudQRCodeSize.Margin",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudQRCodeSize.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudQRCodeSize.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudQRCodeSize.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
       "name": "txtText",
       "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "QRCodeForm",
+      "parent_slot": "Controls",
+      "child_index": 12,
       "properties": {
         "Anchor": "Top, Bottom, Left",
         "Location": {
@@ -112,659 +759,80 @@
           "source": "ApplyResources"
         }
       ]
-    },
-    {
-      "name": "lblQRCodeSizeHint",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 1072,
-          "y": 16
-        },
-        "Margin": {
-          "kind": "Padding",
-          "left": 4,
-          "top": 0,
-          "right": 4,
-          "bottom": 0
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 21,
-          "height": 16
-        },
-        "TabIndex": 9,
-        "Text": "px",
-        "Name": "lblQRCodeSizeHint"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblQRCodeSizeHint.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblQRCodeSizeHint.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Margin",
-          "resource_key": "lblQRCodeSizeHint.Margin",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblQRCodeSizeHint.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblQRCodeSizeHint.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblQRCodeSizeHint.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblQRCodeSize",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 848,
-          "y": 16
-        },
-        "Margin": {
-          "kind": "Padding",
-          "left": 4,
-          "top": 0,
-          "right": 4,
-          "bottom": 0
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 91,
-          "height": 16
-        },
-        "TabIndex": 7,
-        "Text": "QR code size:",
-        "Name": "lblQRCodeSize"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblQRCodeSize.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblQRCodeSize.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Margin",
-          "resource_key": "lblQRCodeSize.Margin",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblQRCodeSize.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblQRCodeSize.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblQRCodeSize.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "nudQRCodeSize",
-      "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Increment": 64,
-        "Location": {
-          "kind": "Point",
-          "x": 987,
-          "y": 13
-        },
-        "Margin": {
-          "kind": "Padding",
-          "left": 4,
-          "top": 4,
-          "right": 4,
-          "bottom": 4
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 80,
-          "height": 22
-        },
-        "TabIndex": 8,
-        "TextAlign": "Center",
-        "Maximum": 2048,
-        "Name": "nudQRCodeSize"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "nudQRCodeSize.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Margin",
-          "resource_key": "nudQRCodeSize.Margin",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "nudQRCodeSize.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "nudQRCodeSize.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "nudQRCodeSize.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "pbQRCode",
-      "type": "HelpersLib.MyPictureBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Top, Bottom, Left, Right",
-        "Location": {
-          "kind": "Point",
-          "x": 584,
-          "y": 40
-        },
-        "Margin": {
-          "kind": "Padding",
-          "left": 5,
-          "top": 5,
-          "right": 5,
-          "bottom": 5
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 512,
-          "height": 512
-        },
-        "TabIndex": 6,
-        "BackColor": {
-          "kind": "expr",
-          "raw": "System.Drawing.SystemColors.Window"
-        },
-        "FullscreenOnClick": true,
-        "Name": "pbQRCode",
-        "PictureBoxBackColor": {
-          "kind": "expr",
-          "raw": "System.Drawing.SystemColors.Window"
-        }
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "pbQRCode.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "pbQRCode.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Margin",
-          "resource_key": "pbQRCode.Margin",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "pbQRCode.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "pbQRCode.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblQRCode",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 581,
-          "y": 16
-        },
-        "Margin": {
-          "kind": "Padding",
-          "left": 4,
-          "top": 0,
-          "right": 4,
-          "bottom": 0
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 64,
-          "height": 16
-        },
-        "TabIndex": 5,
-        "Text": "QR code:",
-        "Name": "lblQRCode"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblQRCode.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblQRCode.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Margin",
-          "resource_key": "lblQRCode.Margin",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblQRCode.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblQRCode.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblQRCode.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblText",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 13,
-          "y": 64
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 36,
-          "height": 16
-        },
-        "TabIndex": 3,
-        "Text": "Text:",
-        "Name": "lblText"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblText.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblText.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblText.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblText.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblText.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnCopyImage",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Bottom, Left",
-        "Location": {
-          "kind": "Point",
-          "x": 584,
-          "y": 560
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 160,
-          "height": 32
-        },
-        "TabIndex": 10,
-        "Text": "Copy image",
-        "Name": "btnCopyImage",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "btnCopyImage.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnCopyImage.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnCopyImage.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnCopyImage.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnCopyImage.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnSaveImage",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Bottom, Left",
-        "Location": {
-          "kind": "Point",
-          "x": 752,
-          "y": 560
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 160,
-          "height": 32
-        },
-        "TabIndex": 11,
-        "Text": "Save image...",
-        "Name": "btnSaveImage",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "btnSaveImage.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnSaveImage.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnSaveImage.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnSaveImage.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnSaveImage.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnUploadImage",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Bottom, Left",
-        "Location": {
-          "kind": "Point",
-          "x": 920,
-          "y": 560
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 160,
-          "height": 32
-        },
-        "TabIndex": 12,
-        "Text": "Upload image",
-        "Name": "btnUploadImage",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "btnUploadImage.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnUploadImage.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnUploadImage.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnUploadImage.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnUploadImage.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnScanScreen",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 16
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 176,
-          "height": 40
-        },
-        "TabIndex": 0,
-        "Text": "Scan screen",
-        "Name": "btnScanScreen",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnScanScreen.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnScanScreen.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnScanScreen.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnScanScreen.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnScanRegion",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 200,
-          "y": 16
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 176,
-          "height": 40
-        },
-        "TabIndex": 1,
-        "Text": "Scan region...",
-        "Name": "btnScanRegion",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnScanRegion.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnScanRegion.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnScanRegion.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnScanRegion.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnScanImageFile",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 384,
-          "y": 16
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 176,
-          "height": 40
-        },
-        "TabIndex": 2,
-        "Text": "Scan image file...",
-        "Name": "btnScanImageFile",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnScanImageFile.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnScanImageFile.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnScanImageFile.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnScanImageFile.Text",
-          "source": "ApplyResources"
-        }
-      ]
     }
   ],
   "tree": {
     "name": "QRCodeForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "btnScanImageFile",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnScanRegion",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnScanScreen",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnUploadImage",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnSaveImage",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnCopyImage",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "lblText",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblQRCode",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "pbQRCode",
+          "type": "HelpersLib.MyPictureBox",
+          "slots": {}
+        },
+        {
+          "name": "lblQRCodeSizeHint",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblQRCodeSize",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "nudQRCodeSize",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "txtText",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "lblQRCodeSizeHint.Text": "px",

@@ -18,11 +18,38 @@
   ],
   "controls": [
     {
-      "name": "scMain",
-      "type": "System.Windows.Forms.SplitContainer",
+      "name": "AutoScaleDimensions",
+      "type": "System.Drawing.SizeF",
       "parent": null,
       "parent_slot": null,
       "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "Margin",
+      "type": "System.Windows.Forms.Padding",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "Size",
+      "type": "System.Drawing.Size",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "scMain",
+      "type": "System.Windows.Forms.SplitContainer",
+      "parent": "TabToListView",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "Dock": {
           "kind": "expr",
@@ -58,44 +85,17 @@
       "resources": []
     },
     {
-      "name": "tcMain",
-      "type": "System.Windows.Forms.TabControl",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Dock": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.DockStyle.Fill"
-        },
-        "Location": {
-          "kind": "Point",
-          "x": 0,
-          "y": 0
-        },
-        "Name": "tcMain",
-        "SelectedIndex": 0,
-        "Size": {
-          "kind": "Size",
-          "width": 460,
-          "height": 500
-        },
-        "TabIndex": 0
-      },
-      "resources": []
-    },
-    {
       "name": "lvMain",
       "type": "MyListView",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "scMain",
+      "parent_slot": "Panel1.Controls",
+      "child_index": 0,
       "properties": {
         "AutoFillColumn": true,
         "Columns.literal_items": [
           {
-            "kind": "expr",
-            "raw": "this.columnHeader2"
+            "kind": "ident",
+            "raw": "columnHeader2"
           }
         ],
         "Dock": {
@@ -134,37 +134,60 @@
       "resources": []
     },
     {
-      "name": "AutoScaleDimensions",
-      "type": "System.Drawing.SizeF",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
-      "name": "Margin",
-      "type": "System.Windows.Forms.Padding",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
-      "name": "Size",
-      "type": "System.Drawing.Size",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
+      "name": "tcMain",
+      "type": "System.Windows.Forms.TabControl",
+      "parent": "scMain",
+      "parent_slot": "Panel2.Controls",
+      "child_index": 0,
+      "properties": {
+        "Dock": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.DockStyle.Fill"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Name": "tcMain",
+        "SelectedIndex": 0,
+        "Size": {
+          "kind": "Size",
+          "width": 460,
+          "height": 500
+        },
+        "TabIndex": 0
+      },
       "resources": []
     }
   ],
   "tree": {
     "name": "TabToListView",
     "type": "UserControl",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "scMain",
+          "type": "System.Windows.Forms.SplitContainer",
+          "slots": {
+            "Panel2.Controls": [
+              {
+                "name": "tcMain",
+                "type": "System.Windows.Forms.TabControl",
+                "slots": {}
+              }
+            ],
+            "Panel1.Controls": [
+              {
+                "name": "lvMain",
+                "type": "MyListView",
+                "slots": {}
+              }
+            ]
+          }
+        }
+      ]
+    }
   },
   "strings": {},
   "binary_resources": [],

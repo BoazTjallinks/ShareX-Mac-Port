@@ -23,11 +23,61 @@
   ],
   "controls": [
     {
+      "name": "flpStatus",
+      "type": "System.Windows.Forms.FlowLayoutPanel",
+      "parent": "OAuthLoopbackControl",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Anchor": "Top, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 280,
+          "height": 20
+        },
+        "TabIndex": 0,
+        "WrapContents": false,
+        "Name": "flpStatus"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "flpStatus.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "flpStatus.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "flpStatus.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "flpStatus.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "WrapContents",
+          "resource_key": "flpStatus.WrapContents",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
       "name": "btnConnect",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "OAuthLoopbackControl",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
         "Anchor": "Top, Left, Right",
         "Font": "Microsoft Sans Serif, 9.75pt",
@@ -82,9 +132,9 @@
     {
       "name": "lblStatus",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "flpStatus",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "AutoSize": true,
         "Font": "Microsoft Sans Serif, 9.75pt",
@@ -148,61 +198,11 @@
       ]
     },
     {
-      "name": "flpStatus",
-      "type": "System.Windows.Forms.FlowLayoutPanel",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Top, Left, Right",
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 8
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 280,
-          "height": 20
-        },
-        "TabIndex": 0,
-        "WrapContents": false,
-        "Name": "flpStatus"
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "flpStatus.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "flpStatus.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "flpStatus.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "flpStatus.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "WrapContents",
-          "resource_key": "flpStatus.WrapContents",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "lblStatusValue",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "flpStatus",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
         "AutoSize": true,
         "Font": "Microsoft Sans Serif, 9.75pt",
@@ -263,7 +263,33 @@
   "tree": {
     "name": "OAuthLoopbackControl",
     "type": "UserControl",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "flpStatus",
+          "type": "System.Windows.Forms.FlowLayoutPanel",
+          "slots": {
+            "Controls": [
+              {
+                "name": "lblStatus",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "lblStatusValue",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              }
+            ]
+          }
+        },
+        {
+          "name": "btnConnect",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "btnConnect.Text": "Connect...",

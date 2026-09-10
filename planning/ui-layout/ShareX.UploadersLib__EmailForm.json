@@ -31,289 +31,52 @@
   ],
   "controls": [
     {
-      "name": "lblToEmail",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "btnCancel",
+      "type": "System.Windows.Forms.Button",
+      "parent": "EmailForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
-        "AutoSize": true,
+        "Anchor": "Bottom, Right",
         "Location": {
           "kind": "Point",
-          "x": 5,
-          "y": 8
+          "x": 208,
+          "y": 272
         },
         "Size": {
           "kind": "Size",
-          "width": 51,
-          "height": 13
+          "width": 96,
+          "height": 24
         },
-        "TabIndex": 0,
-        "Text": "To Email:",
-        "Name": "lblToEmail"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblToEmail.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblToEmail.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblToEmail.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblToEmail.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblToEmail.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "txtToEmail",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Top, Bottom, Left, Right",
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 24
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 296,
-          "height": 20
-        },
-        "TabIndex": 1,
-        "Name": "txtToEmail"
+        "TabIndex": 7,
+        "Text": "Cancel",
+        "Name": "btnCancel",
+        "UseVisualStyleBackColor": true
       },
       "resources": [
         {
           "property": "Anchor",
-          "resource_key": "txtToEmail.Anchor",
+          "resource_key": "btnCancel.Anchor",
           "source": "ApplyResources"
         },
         {
           "property": "Location",
-          "resource_key": "txtToEmail.Location",
+          "resource_key": "btnCancel.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "txtToEmail.Size",
+          "resource_key": "btnCancel.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "txtToEmail.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblSubject",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 5,
-          "y": 48
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 46,
-          "height": 13
-        },
-        "TabIndex": 2,
-        "Text": "Subject:",
-        "Name": "lblSubject"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblSubject.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblSubject.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblSubject.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblSubject.TabIndex",
+          "resource_key": "btnCancel.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "lblSubject.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "txtSubject",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Top, Bottom, Left, Right",
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 64
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 296,
-          "height": 20
-        },
-        "TabIndex": 3,
-        "Name": "txtSubject"
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "txtSubject.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "txtSubject.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "txtSubject.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "txtSubject.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblMessage",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 5,
-          "y": 88
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 53,
-          "height": 13
-        },
-        "TabIndex": 4,
-        "Text": "Message:",
-        "Name": "lblMessage"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblMessage.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblMessage.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblMessage.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblMessage.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblMessage.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "txtMessage",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": "Top, Bottom, Left, Right",
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 104
-        },
-        "Multiline": true,
-        "Size": {
-          "kind": "Size",
-          "width": 296,
-          "height": 160
-        },
-        "TabIndex": 5,
-        "Name": "txtMessage"
-      },
-      "resources": [
-        {
-          "property": "Anchor",
-          "resource_key": "txtMessage.Anchor",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "txtMessage.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Multiline",
-          "resource_key": "txtMessage.Multiline",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "txtMessage.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "txtMessage.TabIndex",
+          "resource_key": "btnCancel.Text",
           "source": "ApplyResources"
         }
       ]
@@ -321,9 +84,9 @@
     {
       "name": "btnSend",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "EmailForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
         "Anchor": "Bottom, Right",
         "Location": {
@@ -370,52 +133,289 @@
       ]
     },
     {
-      "name": "btnCancel",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "txtMessage",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "EmailForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
       "properties": {
-        "Anchor": "Bottom, Right",
+        "Anchor": "Top, Bottom, Left, Right",
         "Location": {
           "kind": "Point",
-          "x": 208,
-          "y": 272
+          "x": 8,
+          "y": 104
         },
+        "Multiline": true,
         "Size": {
           "kind": "Size",
-          "width": 96,
-          "height": 24
+          "width": 296,
+          "height": 160
         },
-        "TabIndex": 7,
-        "Text": "Cancel",
-        "Name": "btnCancel",
-        "UseVisualStyleBackColor": true
+        "TabIndex": 5,
+        "Name": "txtMessage"
       },
       "resources": [
         {
           "property": "Anchor",
-          "resource_key": "btnCancel.Anchor",
+          "resource_key": "txtMessage.Anchor",
           "source": "ApplyResources"
         },
         {
           "property": "Location",
-          "resource_key": "btnCancel.Location",
+          "resource_key": "txtMessage.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Multiline",
+          "resource_key": "txtMessage.Multiline",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "btnCancel.Size",
+          "resource_key": "txtMessage.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "btnCancel.TabIndex",
+          "resource_key": "txtMessage.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblMessage",
+      "type": "System.Windows.Forms.Label",
+      "parent": "EmailForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 88
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 53,
+          "height": 13
+        },
+        "TabIndex": 4,
+        "Text": "Message:",
+        "Name": "lblMessage"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblMessage.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblMessage.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblMessage.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblMessage.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "btnCancel.Text",
+          "resource_key": "lblMessage.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtSubject",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "EmailForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "Anchor": "Top, Bottom, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 64
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 296,
+          "height": 20
+        },
+        "TabIndex": 3,
+        "Name": "txtSubject"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "txtSubject.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "txtSubject.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtSubject.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtSubject.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblSubject",
+      "type": "System.Windows.Forms.Label",
+      "parent": "EmailForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 48
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 46,
+          "height": 13
+        },
+        "TabIndex": 2,
+        "Text": "Subject:",
+        "Name": "lblSubject"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblSubject.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblSubject.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblSubject.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblSubject.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblSubject.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtToEmail",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "EmailForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "Anchor": "Top, Bottom, Left, Right",
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 24
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 296,
+          "height": 20
+        },
+        "TabIndex": 1,
+        "Name": "txtToEmail"
+      },
+      "resources": [
+        {
+          "property": "Anchor",
+          "resource_key": "txtToEmail.Anchor",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "txtToEmail.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtToEmail.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtToEmail.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblToEmail",
+      "type": "System.Windows.Forms.Label",
+      "parent": "EmailForm",
+      "parent_slot": "Controls",
+      "child_index": 7,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 5,
+          "y": 8
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 51,
+          "height": 13
+        },
+        "TabIndex": 0,
+        "Text": "To Email:",
+        "Name": "lblToEmail"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblToEmail.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblToEmail.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblToEmail.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblToEmail.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblToEmail.Text",
           "source": "ApplyResources"
         }
       ]
@@ -424,7 +424,50 @@
   "tree": {
     "name": "EmailForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "btnCancel",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnSend",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "txtMessage",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblMessage",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "txtSubject",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblSubject",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "txtToEmail",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblToEmail",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "lblToEmail.Text": "To Email:",

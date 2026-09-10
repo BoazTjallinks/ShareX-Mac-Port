@@ -36,281 +36,272 @@
   ],
   "controls": [
     {
-      "name": "lblImageFilePath",
-      "type": "System.Windows.Forms.Label",
+      "name": "AutoScaleDimensions",
+      "type": "System.Drawing.SizeF",
       "parent": null,
       "parent_slot": null,
       "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "lblColumnRow",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ImageSplitterForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "AutoSize": true,
         "Location": {
           "kind": "Point",
-          "x": 13,
-          "y": 16
+          "x": 184,
+          "y": 74
         },
         "Size": {
           "kind": "Size",
-          "width": 79,
+          "width": 0,
           "height": 13
         },
-        "TabIndex": 0,
-        "Text": "Image file path:",
-        "Name": "lblImageFilePath"
+        "TabIndex": 10,
+        "Name": "lblColumnRow"
       },
       "resources": [
         {
           "property": "AutoSize",
-          "resource_key": "lblImageFilePath.AutoSize",
+          "resource_key": "lblColumnRow.AutoSize",
           "source": "ApplyResources"
         },
         {
           "property": "Location",
-          "resource_key": "lblImageFilePath.Location",
+          "resource_key": "lblColumnRow.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "lblImageFilePath.Size",
+          "resource_key": "lblColumnRow.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "lblImageFilePath.TabIndex",
+          "resource_key": "lblColumnRow.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnCopyChatEmoji",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageSplitterForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 232,
+          "y": 112
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 208,
+          "height": 24
+        },
+        "TabIndex": 12,
+        "Text": "Copy chat emoji syntax",
+        "Name": "btnCopyChatEmoji",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnCopyChatEmoji.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCopyChatEmoji.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCopyChatEmoji.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "lblImageFilePath.Text",
+          "resource_key": "btnCopyChatEmoji.Text",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "lblRowCount",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "btnSplitImage",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageSplitterForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
       "properties": {
-        "AutoSize": true,
         "Location": {
           "kind": "Point",
-          "x": 13,
-          "y": 88
+          "x": 16,
+          "y": 112
         },
         "Size": {
           "kind": "Size",
-          "width": 62,
-          "height": 13
+          "width": 208,
+          "height": 24
         },
-        "TabIndex": 8,
-        "Text": "Row count:",
-        "Name": "lblRowCount"
+        "TabIndex": 11,
+        "Text": "Split image",
+        "Name": "btnSplitImage",
+        "UseVisualStyleBackColor": true
       },
       "resources": [
         {
-          "property": "AutoSize",
-          "resource_key": "lblRowCount.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
           "property": "Location",
-          "resource_key": "lblRowCount.Location",
+          "resource_key": "btnSplitImage.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "lblRowCount.Size",
+          "resource_key": "btnSplitImage.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "lblRowCount.TabIndex",
+          "resource_key": "btnSplitImage.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "lblRowCount.Text",
+          "resource_key": "btnSplitImage.Text",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "lblColumnCount",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "btnOutputFolderBrowse",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageSplitterForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
       "properties": {
-        "AutoSize": true,
         "Location": {
           "kind": "Point",
-          "x": 13,
-          "y": 64
+          "x": 408,
+          "y": 35
         },
         "Size": {
           "kind": "Size",
-          "width": 75,
-          "height": 13
+          "width": 32,
+          "height": 23
         },
-        "TabIndex": 6,
-        "Text": "Column count:",
-        "Name": "lblColumnCount"
+        "TabIndex": 5,
+        "Text": "...",
+        "Name": "btnOutputFolderBrowse",
+        "UseVisualStyleBackColor": true
       },
       "resources": [
         {
-          "property": "AutoSize",
-          "resource_key": "lblColumnCount.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
           "property": "Location",
-          "resource_key": "lblColumnCount.Location",
+          "resource_key": "btnOutputFolderBrowse.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "lblColumnCount.Size",
+          "resource_key": "btnOutputFolderBrowse.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "lblColumnCount.TabIndex",
+          "resource_key": "btnOutputFolderBrowse.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "lblColumnCount.Text",
+          "resource_key": "btnOutputFolderBrowse.Text",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "nudRowCount",
-      "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "btnImageFilePathBrowse",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ImageSplitterForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
       "properties": {
         "Location": {
           "kind": "Point",
-          "x": 120,
-          "y": 84
+          "x": 408,
+          "y": 11
         },
         "Size": {
           "kind": "Size",
-          "width": 56,
-          "height": 20
+          "width": 32,
+          "height": 23
         },
-        "TabIndex": 9,
-        "TextAlign": "Center",
-        "Minimum": 1,
-        "Name": "nudRowCount",
-        "Value": 1
+        "TabIndex": 2,
+        "Text": "...",
+        "Name": "btnImageFilePathBrowse",
+        "UseVisualStyleBackColor": true
       },
       "resources": [
         {
           "property": "Location",
-          "resource_key": "nudRowCount.Location",
+          "resource_key": "btnImageFilePathBrowse.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "nudRowCount.Size",
+          "resource_key": "btnImageFilePathBrowse.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "nudRowCount.TabIndex",
+          "resource_key": "btnImageFilePathBrowse.TabIndex",
           "source": "ApplyResources"
         },
         {
-          "property": "TextAlign",
-          "resource_key": "nudRowCount.TextAlign",
+          "property": "Text",
+          "resource_key": "btnImageFilePathBrowse.Text",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "nudColumnCount",
-      "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 120,
-          "y": 60
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 56,
-          "height": 20
-        },
-        "TabIndex": 7,
-        "TextAlign": "Center",
-        "Minimum": 1,
-        "Name": "nudColumnCount",
-        "Value": 1
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "nudColumnCount.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "nudColumnCount.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "nudColumnCount.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "nudColumnCount.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "txtImageFilePath",
+      "name": "txtOutputFolder",
       "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ImageSplitterForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
       "properties": {
         "Location": {
           "kind": "Point",
           "x": 120,
-          "y": 12
+          "y": 36
         },
         "Size": {
           "kind": "Size",
           "width": 280,
           "height": 20
         },
-        "TabIndex": 1,
-        "Name": "txtImageFilePath"
+        "TabIndex": 4,
+        "Name": "txtOutputFolder"
       },
       "resources": [
         {
           "property": "Location",
-          "resource_key": "txtImageFilePath.Location",
+          "resource_key": "txtOutputFolder.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "txtImageFilePath.Size",
+          "resource_key": "txtOutputFolder.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "txtImageFilePath.TabIndex",
+          "resource_key": "txtOutputFolder.TabIndex",
           "source": "ApplyResources"
         }
       ]
@@ -318,9 +309,9 @@
     {
       "name": "lblOutputFolder",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ImageSplitterForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
       "properties": {
         "AutoSize": true,
         "Location": {
@@ -366,281 +357,358 @@
       ]
     },
     {
-      "name": "txtOutputFolder",
+      "name": "txtImageFilePath",
       "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ImageSplitterForm",
+      "parent_slot": "Controls",
+      "child_index": 7,
       "properties": {
         "Location": {
           "kind": "Point",
           "x": 120,
-          "y": 36
+          "y": 12
         },
         "Size": {
           "kind": "Size",
           "width": 280,
           "height": 20
         },
-        "TabIndex": 4,
-        "Name": "txtOutputFolder"
+        "TabIndex": 1,
+        "Name": "txtImageFilePath"
       },
       "resources": [
         {
           "property": "Location",
-          "resource_key": "txtOutputFolder.Location",
+          "resource_key": "txtImageFilePath.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "txtOutputFolder.Size",
+          "resource_key": "txtImageFilePath.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "txtOutputFolder.TabIndex",
+          "resource_key": "txtImageFilePath.TabIndex",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "btnImageFilePathBrowse",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "nudColumnCount",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "ImageSplitterForm",
+      "parent_slot": "Controls",
+      "child_index": 8,
       "properties": {
         "Location": {
           "kind": "Point",
-          "x": 408,
-          "y": 11
+          "x": 120,
+          "y": 60
         },
         "Size": {
           "kind": "Size",
-          "width": 32,
-          "height": 23
+          "width": 56,
+          "height": 20
         },
-        "TabIndex": 2,
-        "Text": "...",
-        "Name": "btnImageFilePathBrowse",
-        "UseVisualStyleBackColor": true
+        "TabIndex": 7,
+        "TextAlign": "Center",
+        "Minimum": 1,
+        "Name": "nudColumnCount",
+        "Value": 1
       },
       "resources": [
         {
           "property": "Location",
-          "resource_key": "btnImageFilePathBrowse.Location",
+          "resource_key": "nudColumnCount.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "btnImageFilePathBrowse.Size",
+          "resource_key": "nudColumnCount.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "btnImageFilePathBrowse.TabIndex",
+          "resource_key": "nudColumnCount.TabIndex",
           "source": "ApplyResources"
         },
         {
-          "property": "Text",
-          "resource_key": "btnImageFilePathBrowse.Text",
+          "property": "TextAlign",
+          "resource_key": "nudColumnCount.TextAlign",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "btnOutputFolderBrowse",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "name": "nudRowCount",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "ImageSplitterForm",
+      "parent_slot": "Controls",
+      "child_index": 9,
       "properties": {
         "Location": {
           "kind": "Point",
-          "x": 408,
-          "y": 35
+          "x": 120,
+          "y": 84
         },
         "Size": {
           "kind": "Size",
-          "width": 32,
-          "height": 23
+          "width": 56,
+          "height": 20
         },
-        "TabIndex": 5,
-        "Text": "...",
-        "Name": "btnOutputFolderBrowse",
-        "UseVisualStyleBackColor": true
+        "TabIndex": 9,
+        "TextAlign": "Center",
+        "Minimum": 1,
+        "Name": "nudRowCount",
+        "Value": 1
       },
       "resources": [
         {
           "property": "Location",
-          "resource_key": "btnOutputFolderBrowse.Location",
+          "resource_key": "nudRowCount.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "btnOutputFolderBrowse.Size",
+          "resource_key": "nudRowCount.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "btnOutputFolderBrowse.TabIndex",
+          "resource_key": "nudRowCount.TabIndex",
           "source": "ApplyResources"
         },
         {
-          "property": "Text",
-          "resource_key": "btnOutputFolderBrowse.Text",
+          "property": "TextAlign",
+          "resource_key": "nudRowCount.TextAlign",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "btnSplitImage",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 112
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 208,
-          "height": 24
-        },
-        "TabIndex": 11,
-        "Text": "Split image",
-        "Name": "btnSplitImage",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnSplitImage.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnSplitImage.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnSplitImage.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnSplitImage.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnCopyChatEmoji",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 232,
-          "y": 112
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 208,
-          "height": 24
-        },
-        "TabIndex": 12,
-        "Text": "Copy chat emoji syntax",
-        "Name": "btnCopyChatEmoji",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnCopyChatEmoji.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnCopyChatEmoji.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnCopyChatEmoji.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnCopyChatEmoji.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblColumnRow",
+      "name": "lblColumnCount",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ImageSplitterForm",
+      "parent_slot": "Controls",
+      "child_index": 10,
       "properties": {
         "AutoSize": true,
         "Location": {
           "kind": "Point",
-          "x": 184,
-          "y": 74
+          "x": 13,
+          "y": 64
         },
         "Size": {
           "kind": "Size",
-          "width": 0,
+          "width": 75,
           "height": 13
         },
-        "TabIndex": 10,
-        "Name": "lblColumnRow"
+        "TabIndex": 6,
+        "Text": "Column count:",
+        "Name": "lblColumnCount"
       },
       "resources": [
         {
           "property": "AutoSize",
-          "resource_key": "lblColumnRow.AutoSize",
+          "resource_key": "lblColumnCount.AutoSize",
           "source": "ApplyResources"
         },
         {
           "property": "Location",
-          "resource_key": "lblColumnRow.Location",
+          "resource_key": "lblColumnCount.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "lblColumnRow.Size",
+          "resource_key": "lblColumnCount.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "lblColumnRow.TabIndex",
+          "resource_key": "lblColumnCount.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblColumnCount.Text",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "AutoScaleDimensions",
-      "type": "System.Drawing.SizeF",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
+      "name": "lblRowCount",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ImageSplitterForm",
+      "parent_slot": "Controls",
+      "child_index": 11,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 88
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 62,
+          "height": 13
+        },
+        "TabIndex": 8,
+        "Text": "Row count:",
+        "Name": "lblRowCount"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblRowCount.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblRowCount.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblRowCount.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblRowCount.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblRowCount.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblImageFilePath",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ImageSplitterForm",
+      "parent_slot": "Controls",
+      "child_index": 12,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 16
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 79,
+          "height": 13
+        },
+        "TabIndex": 0,
+        "Text": "Image file path:",
+        "Name": "lblImageFilePath"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblImageFilePath.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblImageFilePath.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblImageFilePath.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblImageFilePath.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblImageFilePath.Text",
+          "source": "ApplyResources"
+        }
+      ]
     }
   ],
   "tree": {
     "name": "ImageSplitterForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "lblColumnRow",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "btnCopyChatEmoji",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnSplitImage",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnOutputFolderBrowse",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnImageFilePathBrowse",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "txtOutputFolder",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblOutputFolder",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "txtImageFilePath",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "nudColumnCount",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "nudRowCount",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "lblColumnCount",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblRowCount",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblImageFilePath",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "lblImageFilePath.Text": "Image file path:",

@@ -49,74 +49,11 @@
       "resources": []
     },
     {
-      "name": "lblTitle",
-      "type": "HelpersLib.BlackStyleLabel",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoEllipsis": true,
-        "BackColor": {
-          "kind": "expr",
-          "raw": "System.Drawing.Color.Transparent"
-        },
-        "Font": "Segoe UI, 9pt, style=Bold",
-        "Location": {
-          "kind": "Point",
-          "x": 0,
-          "y": 0
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 256,
-          "height": 22
-        },
-        "TabIndex": 1,
-        "Text": "",
-        "ForeColor": {
-          "kind": "expr",
-          "raw": "System.Drawing.Color.White"
-        },
-        "Name": "lblTitle",
-        "TextAlign": {
-          "kind": "expr",
-          "raw": "System.Drawing.ContentAlignment.MiddleCenter"
-        }
-      },
-      "resources": [
-        {
-          "property": "Font",
-          "resource_key": "lblTitle.Font",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblTitle.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblTitle.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblTitle.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblTitle.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "pThumbnail",
       "type": "ShareX.TaskRoundedCornerPanel",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "TaskThumbnailPanel",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "AllowDrop": true,
         "BackColor": {
@@ -177,11 +114,74 @@
       ]
     },
     {
+      "name": "lblTitle",
+      "type": "HelpersLib.BlackStyleLabel",
+      "parent": "TaskThumbnailPanel",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "AutoEllipsis": true,
+        "BackColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.Transparent"
+        },
+        "Font": "Segoe UI, 9pt, style=Bold",
+        "Location": {
+          "kind": "Point",
+          "x": 0,
+          "y": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 256,
+          "height": 22
+        },
+        "TabIndex": 1,
+        "Text": "",
+        "ForeColor": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.White"
+        },
+        "Name": "lblTitle",
+        "TextAlign": {
+          "kind": "expr",
+          "raw": "System.Drawing.ContentAlignment.MiddleCenter"
+        }
+      },
+      "resources": [
+        {
+          "property": "Font",
+          "resource_key": "lblTitle.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblTitle.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblTitle.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblTitle.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblTitle.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
       "name": "lblCombineVertical",
       "type": "HelpersLib.BlackStyleLabel",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "pThumbnail",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "BackColor": {
           "kind": "expr",
@@ -252,9 +252,9 @@
     {
       "name": "lblError",
       "type": "HelpersLib.BlackStyleLabel",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "pThumbnail",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
         "Anchor": "Top",
         "Font": "Segoe UI, 11.25pt, style=Bold",
@@ -330,9 +330,9 @@
     {
       "name": "lblCombineHorizontal",
       "type": "HelpersLib.BlackStyleLabel",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "pThumbnail",
+      "parent_slot": "Controls",
+      "child_index": 2,
       "properties": {
         "BackColor": {
           "kind": "expr",
@@ -403,9 +403,9 @@
     {
       "name": "pbProgress",
       "type": "HelpersLib.BlackStyleProgressBar",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "pThumbnail",
+      "parent_slot": "Controls",
+      "child_index": 3,
       "properties": {
         "Anchor": "Bottom, Left, Right",
         "Font": "Segoe UI, 9pt, style=Bold",
@@ -470,9 +470,9 @@
     {
       "name": "pbThumbnail",
       "type": "System.Windows.Forms.PictureBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "pThumbnail",
+      "parent_slot": "Controls",
+      "child_index": 4,
       "properties": {
         "BackColor": {
           "kind": "expr",
@@ -532,7 +532,48 @@
   "tree": {
     "name": "TaskThumbnailPanel",
     "type": "UserControl",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "pThumbnail",
+          "type": "ShareX.TaskRoundedCornerPanel",
+          "slots": {
+            "Controls": [
+              {
+                "name": "lblCombineVertical",
+                "type": "HelpersLib.BlackStyleLabel",
+                "slots": {}
+              },
+              {
+                "name": "lblError",
+                "type": "HelpersLib.BlackStyleLabel",
+                "slots": {}
+              },
+              {
+                "name": "lblCombineHorizontal",
+                "type": "HelpersLib.BlackStyleLabel",
+                "slots": {}
+              },
+              {
+                "name": "pbProgress",
+                "type": "HelpersLib.BlackStyleProgressBar",
+                "slots": {}
+              },
+              {
+                "name": "pbThumbnail",
+                "type": "System.Windows.Forms.PictureBox",
+                "slots": {}
+              }
+            ]
+          }
+        },
+        {
+          "name": "lblTitle",
+          "type": "HelpersLib.BlackStyleLabel",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "lblTitle.Text": "",

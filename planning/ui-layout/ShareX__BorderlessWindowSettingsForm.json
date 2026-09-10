@@ -26,52 +26,52 @@
   ],
   "controls": [
     {
-      "name": "cbRememberWindowTitle",
+      "name": "cbExcludeTaskbarArea",
       "type": "System.Windows.Forms.CheckBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "BorderlessWindowSettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "AutoSize": true,
         "Location": {
           "kind": "Point",
           "x": 16,
-          "y": 16
+          "y": 64
         },
         "Size": {
           "kind": "Size",
-          "width": 135,
+          "width": 126,
           "height": 17
         },
-        "TabIndex": 0,
-        "Text": "Remember window title",
-        "Name": "cbRememberWindowTitle",
+        "TabIndex": 2,
+        "Text": "Exclude taskbar area",
+        "Name": "cbExcludeTaskbarArea",
         "UseVisualStyleBackColor": true
       },
       "resources": [
         {
           "property": "AutoSize",
-          "resource_key": "cbRememberWindowTitle.AutoSize",
+          "resource_key": "cbExcludeTaskbarArea.AutoSize",
           "source": "ApplyResources"
         },
         {
           "property": "Location",
-          "resource_key": "cbRememberWindowTitle.Location",
+          "resource_key": "cbExcludeTaskbarArea.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "cbRememberWindowTitle.Size",
+          "resource_key": "cbExcludeTaskbarArea.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "cbRememberWindowTitle.TabIndex",
+          "resource_key": "cbExcludeTaskbarArea.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "cbRememberWindowTitle.Text",
+          "resource_key": "cbExcludeTaskbarArea.Text",
           "source": "ApplyResources"
         }
       ]
@@ -79,9 +79,9 @@
     {
       "name": "cbAutoCloseWindow",
       "type": "System.Windows.Forms.CheckBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "BorderlessWindowSettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
         "AutoSize": true,
         "Location": {
@@ -128,52 +128,52 @@
       ]
     },
     {
-      "name": "cbExcludeTaskbarArea",
+      "name": "cbRememberWindowTitle",
       "type": "System.Windows.Forms.CheckBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "BorderlessWindowSettingsForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
       "properties": {
         "AutoSize": true,
         "Location": {
           "kind": "Point",
           "x": 16,
-          "y": 64
+          "y": 16
         },
         "Size": {
           "kind": "Size",
-          "width": 126,
+          "width": 135,
           "height": 17
         },
-        "TabIndex": 2,
-        "Text": "Exclude taskbar area",
-        "Name": "cbExcludeTaskbarArea",
+        "TabIndex": 0,
+        "Text": "Remember window title",
+        "Name": "cbRememberWindowTitle",
         "UseVisualStyleBackColor": true
       },
       "resources": [
         {
           "property": "AutoSize",
-          "resource_key": "cbExcludeTaskbarArea.AutoSize",
+          "resource_key": "cbRememberWindowTitle.AutoSize",
           "source": "ApplyResources"
         },
         {
           "property": "Location",
-          "resource_key": "cbExcludeTaskbarArea.Location",
+          "resource_key": "cbRememberWindowTitle.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "cbExcludeTaskbarArea.Size",
+          "resource_key": "cbRememberWindowTitle.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "cbExcludeTaskbarArea.TabIndex",
+          "resource_key": "cbRememberWindowTitle.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "cbExcludeTaskbarArea.Text",
+          "resource_key": "cbRememberWindowTitle.Text",
           "source": "ApplyResources"
         }
       ]
@@ -182,7 +182,25 @@
   "tree": {
     "name": "BorderlessWindowSettingsForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "cbExcludeTaskbarArea",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "cbAutoCloseWindow",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        },
+        {
+          "name": "cbRememberWindowTitle",
+          "type": "System.Windows.Forms.CheckBox",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "cbRememberWindowTitle.Text": "Remember window title",

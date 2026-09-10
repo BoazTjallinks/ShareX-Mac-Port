@@ -16,11 +16,38 @@
   ],
   "controls": [
     {
-      "name": "rtbText",
-      "type": "System.Windows.Forms.RichTextBox",
+      "name": "AutoScaleDimensions",
+      "type": "System.Drawing.SizeF",
       "parent": null,
       "parent_slot": null,
       "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "ClientSize",
+      "type": "System.Drawing.Size",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "Padding",
+      "type": "System.Windows.Forms.Padding",
+      "parent": null,
+      "parent_slot": null,
+      "child_index": null,
+      "properties": {},
+      "resources": []
+    },
+    {
+      "name": "rtbText",
+      "type": "System.Windows.Forms.RichTextBox",
+      "parent": "OutputBox",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "BorderStyle": {
           "kind": "expr",
@@ -50,39 +77,20 @@
         "Text": ""
       },
       "resources": []
-    },
-    {
-      "name": "AutoScaleDimensions",
-      "type": "System.Drawing.SizeF",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
-      "name": "ClientSize",
-      "type": "System.Drawing.Size",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
-    },
-    {
-      "name": "Padding",
-      "type": "System.Windows.Forms.Padding",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {},
-      "resources": []
     }
   ],
   "tree": {
     "name": "OutputBox",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "rtbText",
+          "type": "System.Windows.Forms.RichTextBox",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {},
   "binary_resources": [],

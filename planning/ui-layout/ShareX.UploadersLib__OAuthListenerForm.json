@@ -25,55 +25,11 @@
   ],
   "controls": [
     {
-      "name": "label1",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 21,
-          "y": 24
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 424,
-          "height": 56
-        },
-        "TabIndex": 0,
-        "Text": "Waiting for authorization in your browser to complete...",
-        "Name": "label1"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "label1.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "label1.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "label1.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "label1.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "btnCancel",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "OAuthListenerForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "Location": {
           "kind": "Point",
@@ -112,12 +68,69 @@
           "source": "ApplyResources"
         }
       ]
+    },
+    {
+      "name": "label1",
+      "type": "System.Windows.Forms.Label",
+      "parent": "OAuthListenerForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 21,
+          "y": 24
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 424,
+          "height": 56
+        },
+        "TabIndex": 0,
+        "Text": "Waiting for authorization in your browser to complete...",
+        "Name": "label1"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "label1.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "label1.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "label1.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "label1.Text",
+          "source": "ApplyResources"
+        }
+      ]
     }
   ],
   "tree": {
     "name": "OAuthListenerForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "btnCancel",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "label1",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "label1.Text": "Waiting for authorization in your browser to complete...",

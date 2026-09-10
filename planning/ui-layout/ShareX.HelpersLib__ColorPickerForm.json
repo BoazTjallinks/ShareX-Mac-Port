@@ -89,2000 +89,6 @@
       "resources": []
     },
     {
-      "name": "btnCancel",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 576,
-          "y": 296
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 96,
-          "height": 32
-        },
-        "TabIndex": 1,
-        "Text": "Cancel",
-        "Name": "btnCancel",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "ImeMode",
-          "resource_key": "btnCancel.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnCancel.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnCancel.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnCancel.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnCancel.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnOK",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 472,
-          "y": 296
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 96,
-          "height": 32
-        },
-        "TabIndex": 0,
-        "Text": "OK",
-        "Name": "btnOK",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "ImeMode",
-          "resource_key": "btnOK.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnOK.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnOK.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnOK.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnOK.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblOld",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 309,
-          "y": 262
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 26,
-          "height": 13
-        },
-        "TabIndex": 37,
-        "Text": "Old:",
-        "Name": "lblOld"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblOld.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblOld.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblOld.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblOld.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblOld.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblOld.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblNew",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 309,
-          "y": 238
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 32,
-          "height": 13
-        },
-        "TabIndex": 36,
-        "Text": "New:",
-        "Name": "lblNew"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblNew.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblNew.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblNew.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblNew.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblNew.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblNew.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "txtHex",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 600,
-          "y": 174
-        },
-        "MaxLength": 9,
-        "Size": {
-          "kind": "Size",
-          "width": 72,
-          "height": 20
-        },
-        "TabIndex": 33,
-        "Text": "FF00FF00",
-        "TextAlign": "Center",
-        "Name": "txtHex"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "txtHex.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "MaxLength",
-          "resource_key": "txtHex.MaxLength",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "txtHex.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "txtHex.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "txtHex.Text",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "txtHex.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblHex",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 485,
-          "y": 178
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 29,
-          "height": 13
-        },
-        "TabIndex": 32,
-        "Text": "Hex:",
-        "Name": "lblHex"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblHex.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblHex.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblHex.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblHex.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblHex.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblHex.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "nudKey",
-      "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "DecimalPlaces": 1,
-        "Location": {
-          "kind": "Point",
-          "x": 600,
-          "y": 142
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 56,
-          "height": 20
-        },
-        "TabIndex": 30,
-        "TextAlign": "Center",
-        "Name": "nudKey",
-        "Value": 100
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "nudKey.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "nudKey.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "nudKey.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "nudKey.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "nudYellow",
-      "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "DecimalPlaces": 1,
-        "Location": {
-          "kind": "Point",
-          "x": 600,
-          "y": 108
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 56,
-          "height": 20
-        },
-        "TabIndex": 27,
-        "TextAlign": "Center",
-        "Name": "nudYellow",
-        "Value": 100
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "nudYellow.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "nudYellow.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "nudYellow.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "nudYellow.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "nudMagenta",
-      "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "DecimalPlaces": 1,
-        "Location": {
-          "kind": "Point",
-          "x": 600,
-          "y": 78
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 56,
-          "height": 20
-        },
-        "TabIndex": 24,
-        "TextAlign": "Center",
-        "Name": "nudMagenta",
-        "Value": 100
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "nudMagenta.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "nudMagenta.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "nudMagenta.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "nudMagenta.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "nudCyan",
-      "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "DecimalPlaces": 1,
-        "Location": {
-          "kind": "Point",
-          "x": 600,
-          "y": 46
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 56,
-          "height": 20
-        },
-        "TabIndex": 21,
-        "TextAlign": "Center",
-        "Name": "nudCyan",
-        "Value": 100
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "nudCyan.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "nudCyan.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "nudCyan.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "nudCyan.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblKey",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 485,
-          "y": 146
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 28,
-          "height": 13
-        },
-        "TabIndex": 29,
-        "Text": "Key:",
-        "Name": "lblKey"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblKey.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblKey.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblKey.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblKey.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblKey.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblKey.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblYellow",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 485,
-          "y": 112
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 41,
-          "height": 13
-        },
-        "TabIndex": 26,
-        "Text": "Yellow:",
-        "Name": "lblYellow"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblYellow.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblYellow.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblYellow.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblYellow.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblYellow.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblYellow.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblMagenta",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 485,
-          "y": 82
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 52,
-          "height": 13
-        },
-        "TabIndex": 23,
-        "Text": "Magenta:",
-        "Name": "lblMagenta"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblMagenta.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblMagenta.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblMagenta.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblMagenta.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblMagenta.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblMagenta.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblCyan",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 485,
-          "y": 50
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 34,
-          "height": 13
-        },
-        "TabIndex": 20,
-        "Text": "Cyan:",
-        "Name": "lblCyan"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblCyan.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblCyan.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblCyan.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblCyan.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblCyan.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblCyan.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblHue",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Font": "Verdana, 8.25pt",
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 460,
-          "y": 112
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 13,
-          "height": 13
-        },
-        "TabIndex": 5,
-        "Text": "°",
-        "Name": "lblHue"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblHue.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Font",
-          "resource_key": "lblHue.Font",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblHue.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblHue.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblHue.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblHue.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblHue.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblBrightnessPerc",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Font": "Verdana, 8.25pt",
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 460,
-          "y": 178
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 19,
-          "height": 13
-        },
-        "TabIndex": 11,
-        "Text": "%",
-        "Name": "lblBrightnessPerc"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblBrightnessPerc.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Font",
-          "resource_key": "lblBrightnessPerc.Font",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblBrightnessPerc.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblBrightnessPerc.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblBrightnessPerc.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblBrightnessPerc.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblBrightnessPerc.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblSaturationPerc",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Font": "Verdana, 8.25pt",
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 460,
-          "y": 146
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 19,
-          "height": 13
-        },
-        "TabIndex": 8,
-        "Text": "%",
-        "Name": "lblSaturationPerc"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblSaturationPerc.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Font",
-          "resource_key": "lblSaturationPerc.Font",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblSaturationPerc.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblSaturationPerc.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblSaturationPerc.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblSaturationPerc.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblSaturationPerc.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "nudBlue",
-      "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 408,
-          "y": 78
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 48,
-          "height": 20
-        },
-        "TabIndex": 17,
-        "TextAlign": "Center",
-        "Maximum": 255,
-        "Name": "nudBlue",
-        "Value": 255
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "nudBlue.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "nudBlue.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "nudBlue.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "nudBlue.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "nudGreen",
-      "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 408,
-          "y": 46
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 48,
-          "height": 20
-        },
-        "TabIndex": 15,
-        "TextAlign": "Center",
-        "Maximum": 255,
-        "Name": "nudGreen",
-        "Value": 255
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "nudGreen.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "nudGreen.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "nudGreen.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "nudGreen.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "nudRed",
-      "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 408,
-          "y": 14
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 48,
-          "height": 20
-        },
-        "TabIndex": 13,
-        "TextAlign": "Center",
-        "Maximum": 255,
-        "Name": "nudRed",
-        "Value": 255
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "nudRed.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "nudRed.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "nudRed.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "nudRed.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "nudBrightness",
-      "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 408,
-          "y": 174
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 48,
-          "height": 20
-        },
-        "TabIndex": 10,
-        "TextAlign": "Center",
-        "Name": "nudBrightness",
-        "Value": 100
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "nudBrightness.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "nudBrightness.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "nudBrightness.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "nudBrightness.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "nudSaturation",
-      "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 408,
-          "y": 142
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 48,
-          "height": 20
-        },
-        "TabIndex": 7,
-        "TextAlign": "Center",
-        "Name": "nudSaturation",
-        "Value": 100
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "nudSaturation.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "nudSaturation.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "nudSaturation.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "nudSaturation.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "nudHue",
-      "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 408,
-          "y": 108
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 48,
-          "height": 20
-        },
-        "TabIndex": 4,
-        "TextAlign": "Center",
-        "Maximum": 360,
-        "Name": "nudHue",
-        "Value": 360
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "nudHue.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "nudHue.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "nudHue.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "nudHue.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "rbBlue",
-      "type": "System.Windows.Forms.RadioButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 312,
-          "y": 80
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 49,
-          "height": 17
-        },
-        "TabIndex": 16,
-        "Text": "Blue:",
-        "Name": "rbBlue",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "rbBlue.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "rbBlue.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "rbBlue.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "rbBlue.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "rbBlue.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "rbBlue.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "rbGreen",
-      "type": "System.Windows.Forms.RadioButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 312,
-          "y": 48
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 57,
-          "height": 17
-        },
-        "TabIndex": 14,
-        "Text": "Green:",
-        "Name": "rbGreen",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "rbGreen.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "rbGreen.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "rbGreen.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "rbGreen.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "rbGreen.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "rbGreen.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "rbRed",
-      "type": "System.Windows.Forms.RadioButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 312,
-          "y": 16
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 48,
-          "height": 17
-        },
-        "TabIndex": 12,
-        "Text": "Red:",
-        "Name": "rbRed",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "rbRed.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "rbRed.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "rbRed.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "rbRed.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "rbRed.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "rbRed.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "rbBrightness",
-      "type": "System.Windows.Forms.RadioButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 312,
-          "y": 176
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 77,
-          "height": 17
-        },
-        "TabIndex": 9,
-        "Text": "Brightness:",
-        "Name": "rbBrightness",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "rbBrightness.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "rbBrightness.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "rbBrightness.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "rbBrightness.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "rbBrightness.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "rbBrightness.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "rbSaturation",
-      "type": "System.Windows.Forms.RadioButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 312,
-          "y": 144
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 76,
-          "height": 17
-        },
-        "TabIndex": 6,
-        "Text": "Saturation:",
-        "Name": "rbSaturation",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "rbSaturation.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "rbSaturation.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "rbSaturation.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "rbSaturation.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "rbSaturation.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "rbSaturation.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "rbHue",
-      "type": "System.Windows.Forms.RadioButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 312,
-          "y": 112
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 48,
-          "height": 17
-        },
-        "TabIndex": 3,
-        "Text": "Hue:",
-        "Checked": true,
-        "Name": "rbHue",
-        "TabStop": true,
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "rbHue.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "rbHue.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "rbHue.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "rbHue.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "rbHue.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "rbHue.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblDecimal",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 485,
-          "y": 208
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 48,
-          "height": 13
-        },
-        "TabIndex": 34,
-        "Text": "Decimal:",
-        "Name": "lblDecimal"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblDecimal.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblDecimal.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblDecimal.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblDecimal.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblDecimal.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblDecimal.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "txtDecimal",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 600,
-          "y": 204
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 72,
-          "height": 20
-        },
-        "TabIndex": 35,
-        "Text": "12345678",
-        "TextAlign": "Center",
-        "Name": "txtDecimal"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "txtDecimal.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "txtDecimal.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "txtDecimal.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "txtDecimal.Text",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "txtDecimal.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblCyanPerc",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Font": "Verdana, 8.25pt",
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 658,
-          "y": 50
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 19,
-          "height": 13
-        },
-        "TabIndex": 22,
-        "Text": "%",
-        "Name": "lblCyanPerc"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblCyanPerc.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Font",
-          "resource_key": "lblCyanPerc.Font",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblCyanPerc.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblCyanPerc.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblCyanPerc.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblCyanPerc.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblCyanPerc.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblMagentaPerc",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Font": "Verdana, 8.25pt",
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 658,
-          "y": 82
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 19,
-          "height": 13
-        },
-        "TabIndex": 25,
-        "Text": "%",
-        "Name": "lblMagentaPerc"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblMagentaPerc.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Font",
-          "resource_key": "lblMagentaPerc.Font",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblMagentaPerc.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblMagentaPerc.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblMagentaPerc.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblMagentaPerc.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblMagentaPerc.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblYellowPerc",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Font": "Verdana, 8.25pt",
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 658,
-          "y": 112
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 19,
-          "height": 13
-        },
-        "TabIndex": 28,
-        "Text": "%",
-        "Name": "lblYellowPerc"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblYellowPerc.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Font",
-          "resource_key": "lblYellowPerc.Font",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblYellowPerc.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblYellowPerc.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblYellowPerc.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblYellowPerc.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblYellowPerc.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblKeyPerc",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Font": "Verdana, 8.25pt",
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 658,
-          "y": 146
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 19,
-          "height": 13
-        },
-        "TabIndex": 31,
-        "Text": "%",
-        "Name": "lblKeyPerc"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblKeyPerc.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Font",
-          "resource_key": "lblKeyPerc.Font",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblKeyPerc.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblKeyPerc.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblKeyPerc.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblKeyPerc.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblKeyPerc.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "nudAlpha",
-      "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 600,
-          "y": 14
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 48,
-          "height": 20
-        },
-        "TabIndex": 19,
-        "TextAlign": "Center",
-        "Maximum": 255,
-        "Name": "nudAlpha",
-        "Value": 255
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "nudAlpha.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "nudAlpha.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "nudAlpha.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "nudAlpha.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblAlpha",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 485,
-          "y": 18
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 37,
-          "height": 13
-        },
-        "TabIndex": 18,
-        "Text": "Alpha:",
-        "Name": "lblAlpha"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblAlpha.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblAlpha.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblAlpha.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblAlpha.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblAlpha.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblAlpha.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "ttMain",
       "type": "System.Windows.Forms.ToolTip",
       "parent": null,
@@ -2096,239 +102,12 @@
       "resources": []
     },
     {
-      "name": "btnScreenColorPicker",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Image": {
-          "kind": "expr",
-          "raw": "global::ShareX.HelpersLib.Properties.Resources.pipette"
-        },
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 392,
-          "y": 296
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 32,
-          "height": 32
-        },
-        "TabIndex": 45,
-        "ToolTip": {
-          "kind": "resource_string",
-          "resource_key": "btnScreenColorPicker.ToolTip"
-        },
-        "Visible": false,
-        "Name": "btnScreenColorPicker",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "ImeMode",
-          "resource_key": "btnScreenColorPicker.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnScreenColorPicker.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnScreenColorPicker.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnScreenColorPicker.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ToolTip",
-          "resource_key": "btnScreenColorPicker.ToolTip",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Visible",
-          "resource_key": "btnScreenColorPicker.Visible",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ToolTip",
-          "resource_key": "btnScreenColorPicker.ToolTip",
-          "source": "GetString/GetObject"
-        }
-      ]
-    },
-    {
-      "name": "btnClipboardColorPicker",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Image": {
-          "kind": "expr",
-          "raw": "global::ShareX.HelpersLib.Properties.Resources.clipboard_block"
-        },
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 432,
-          "y": 296
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 32,
-          "height": 32
-        },
-        "TabIndex": 51,
-        "ToolTip": {
-          "kind": "resource_string",
-          "resource_key": "btnClipboardColorPicker.ToolTip"
-        },
-        "Name": "btnClipboardColorPicker",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "ImeMode",
-          "resource_key": "btnClipboardColorPicker.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnClipboardColorPicker.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnClipboardColorPicker.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnClipboardColorPicker.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ToolTip",
-          "resource_key": "btnClipboardColorPicker.ToolTip",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ToolTip",
-          "resource_key": "btnClipboardColorPicker.ToolTip",
-          "source": "GetString/GetObject"
-        }
-      ]
-    },
-    {
-      "name": "cbTransparent",
-      "type": "ColorButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Color": {
-          "kind": "expr",
-          "raw": "System.Drawing.Color.Transparent"
-        },
-        "ColorPickerOptions": null,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 652,
-          "y": 13
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 23,
-          "height": 23
-        },
-        "TabIndex": 39,
-        "ToolTip": {
-          "kind": "resource_string",
-          "resource_key": "cbTransparent.ToolTip"
-        },
-        "ManualButtonClick": true,
-        "Name": "cbTransparent",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "ImeMode",
-          "resource_key": "cbTransparent.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "cbTransparent.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "cbTransparent.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "cbTransparent.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ToolTip",
-          "resource_key": "cbTransparent.ToolTip",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ToolTip",
-          "resource_key": "cbTransparent.ToolTip",
-          "source": "GetString/GetObject"
-        }
-      ]
-    },
-    {
       "name": "cmsCopy",
       "type": "System.Windows.Forms.ContextMenuStrip",
       "parent": null,
       "parent_slot": null,
       "child_index": null,
       "properties": {
-        "Items.literal_items": [
-          {
-            "kind": "expr",
-            "raw": "this.tsmiCopyAll"
-          },
-          {
-            "kind": "expr",
-            "raw": "this.tsmiCopyRGB"
-          },
-          {
-            "kind": "expr",
-            "raw": "this.tsmiCopyHexadecimal"
-          },
-          {
-            "kind": "expr",
-            "raw": "this.tsmiCopyCMYK"
-          },
-          {
-            "kind": "expr",
-            "raw": "this.tsmiCopyHSB"
-          },
-          {
-            "kind": "expr",
-            "raw": "this.tsmiCopyDecimal"
-          },
-          {
-            "kind": "expr",
-            "raw": "this.tsmiCopyPosition"
-          }
-        ],
         "Name": "cmsCopy",
         "ShowImageMargin": false,
         "Size": {
@@ -2346,876 +125,11 @@
       ]
     },
     {
-      "name": "tsmiCopyAll",
-      "type": "System.Windows.Forms.ToolStripMenuItem",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Name": "tsmiCopyAll",
-        "Size": {
-          "kind": "Size",
-          "width": 147,
-          "height": 22
-        },
-        "Text": "Copy all"
-      },
-      "resources": [
-        {
-          "property": "Size",
-          "resource_key": "tsmiCopyAll.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tsmiCopyAll.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tsmiCopyRGB",
-      "type": "System.Windows.Forms.ToolStripMenuItem",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Name": "tsmiCopyRGB",
-        "Size": {
-          "kind": "Size",
-          "width": 147,
-          "height": 22
-        },
-        "Text": "Copy RGB"
-      },
-      "resources": [
-        {
-          "property": "Size",
-          "resource_key": "tsmiCopyRGB.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tsmiCopyRGB.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tsmiCopyHexadecimal",
-      "type": "System.Windows.Forms.ToolStripMenuItem",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Name": "tsmiCopyHexadecimal",
-        "Size": {
-          "kind": "Size",
-          "width": 147,
-          "height": 22
-        },
-        "Text": "Copy hexadecimal"
-      },
-      "resources": [
-        {
-          "property": "Size",
-          "resource_key": "tsmiCopyHexadecimal.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tsmiCopyHexadecimal.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tsmiCopyCMYK",
-      "type": "System.Windows.Forms.ToolStripMenuItem",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Name": "tsmiCopyCMYK",
-        "Size": {
-          "kind": "Size",
-          "width": 147,
-          "height": 22
-        },
-        "Text": "Copy CMYK"
-      },
-      "resources": [
-        {
-          "property": "Size",
-          "resource_key": "tsmiCopyCMYK.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tsmiCopyCMYK.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tsmiCopyHSB",
-      "type": "System.Windows.Forms.ToolStripMenuItem",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Name": "tsmiCopyHSB",
-        "Size": {
-          "kind": "Size",
-          "width": 147,
-          "height": 22
-        },
-        "Text": "Copy HSB"
-      },
-      "resources": [
-        {
-          "property": "Size",
-          "resource_key": "tsmiCopyHSB.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tsmiCopyHSB.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tsmiCopyDecimal",
-      "type": "System.Windows.Forms.ToolStripMenuItem",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Name": "tsmiCopyDecimal",
-        "Size": {
-          "kind": "Size",
-          "width": 147,
-          "height": 22
-        },
-        "Text": "Copy decimal"
-      },
-      "resources": [
-        {
-          "property": "Size",
-          "resource_key": "tsmiCopyDecimal.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tsmiCopyDecimal.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "tsmiCopyPosition",
-      "type": "System.Windows.Forms.ToolStripMenuItem",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Name": "tsmiCopyPosition",
-        "Size": {
-          "kind": "Size",
-          "width": 147,
-          "height": 22
-        },
-        "Text": "Copy position"
-      },
-      "resources": [
-        {
-          "property": "Size",
-          "resource_key": "tsmiCopyPosition.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "tsmiCopyPosition.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "pCursorPosition",
-      "type": "System.Windows.Forms.Panel",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 488,
-          "y": 232
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 192,
-          "height": 48
-        },
-        "TabIndex": 42,
-        "Name": "pCursorPosition"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "pCursorPosition.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "pCursorPosition.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "pCursorPosition.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "txtY",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 136,
-          "y": 24
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 48,
-          "height": 20
-        },
-        "TabIndex": 4,
-        "Text": "0",
-        "TextAlign": "Center",
-        "Name": "txtY",
-        "ReadOnly": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "txtY.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "txtY.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "txtY.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "txtY.Text",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "txtY.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "txtX",
-      "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 136,
-          "y": 0
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 48,
-          "height": 20
-        },
-        "TabIndex": 3,
-        "Text": "0",
-        "TextAlign": "Center",
-        "Name": "txtX",
-        "ReadOnly": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "txtX.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "txtX.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "txtX.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "txtX.Text",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "txtX.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblY",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 112,
-          "y": 28
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 17,
-          "height": 13
-        },
-        "TabIndex": 2,
-        "Text": "Y:",
-        "Name": "lblY"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblY.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblY.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblY.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblY.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblY.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblY.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblX",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 112,
-          "y": 4
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 17,
-          "height": 13
-        },
-        "TabIndex": 1,
-        "Text": "X:",
-        "Name": "lblX"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblX.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblX.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblX.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblX.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblX.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblX.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblCursorPosition",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": -3,
-          "y": 4
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 79,
-          "height": 13
-        },
-        "TabIndex": 0,
-        "Text": "Cursor position:",
-        "Name": "lblCursorPosition"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblCursorPosition.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblCursorPosition.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblCursorPosition.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblCursorPosition.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblCursorPosition.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblCursorPosition.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnClose",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 576,
-          "y": 296
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 96,
-          "height": 32
-        },
-        "TabIndex": 43,
-        "Text": "Close",
-        "Name": "btnClose",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "ImeMode",
-          "resource_key": "btnClose.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "btnClose.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnClose.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnClose.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnClose.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "flpColorPalette",
-      "type": "System.Windows.Forms.FlowLayoutPanel",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 293
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 296,
-          "height": 40
-        },
-        "TabIndex": 0,
-        "Name": "flpColorPalette"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "flpColorPalette.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "flpColorPalette.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "flpColorPalette.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "rbRecentColors",
-      "type": "System.Windows.Forms.RadioButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 3,
-          "y": 3
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 91,
-          "height": 17
-        },
-        "TabIndex": 46,
-        "Text": "Recent colors",
-        "Checked": true,
-        "Name": "rbRecentColors",
-        "TabStop": true,
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "rbRecentColors.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "rbRecentColors.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "rbRecentColors.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "rbRecentColors.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "rbRecentColors.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "rbRecentColors.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "rbStandardColors",
-      "type": "System.Windows.Forms.RadioButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 100,
-          "y": 3
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 99,
-          "height": 17
-        },
-        "TabIndex": 47,
-        "Text": "Standard colors",
-        "Name": "rbStandardColors",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "rbStandardColors.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "rbStandardColors.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "rbStandardColors.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "rbStandardColors.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "rbStandardColors.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "rbStandardColors.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "flpColorPaletteSelection",
-      "type": "System.Windows.Forms.FlowLayoutPanel",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "AutoSizeMode": "GrowAndShrink",
-        "Location": {
-          "kind": "Point",
-          "x": 6,
-          "y": 269
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 202,
-          "height": 23
-        },
-        "TabIndex": 48,
-        "Name": "flpColorPaletteSelection"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "flpColorPaletteSelection.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "AutoSizeMode",
-          "resource_key": "flpColorPaletteSelection.AutoSizeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "flpColorPaletteSelection.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "flpColorPaletteSelection.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "flpColorPaletteSelection.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblName",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 309,
-          "y": 208
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 38,
-          "height": 13
-        },
-        "TabIndex": 49,
-        "Text": "Name:",
-        "Name": "lblName"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblName.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "ImeMode",
-          "resource_key": "lblName.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblName.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblName.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblName.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblName.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblNameValue",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "ImeMode": "NoControl",
-        "Location": {
-          "kind": "Point",
-          "x": 347,
-          "y": 203
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 112,
-          "height": 23
-        },
-        "TabIndex": 50,
-        "TextAlign": "MiddleRight",
-        "Name": "lblNameValue"
-      },
-      "resources": [
-        {
-          "property": "ImeMode",
-          "resource_key": "lblNameValue.ImeMode",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblNameValue.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblNameValue.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblNameValue.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TextAlign",
-          "resource_key": "lblNameValue.TextAlign",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
       "name": "btnClipboardStatus",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "AutoSize": true,
         "AutoSizeMode": "GrowAndShrink",
@@ -3296,11 +210,426 @@
       ]
     },
     {
+      "name": "btnClipboardColorPicker",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.HelpersLib.Properties.Resources.clipboard_block"
+        },
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 432,
+          "y": 296
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 32,
+          "height": 32
+        },
+        "TabIndex": 51,
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "btnClipboardColorPicker.ToolTip"
+        },
+        "Name": "btnClipboardColorPicker",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnClipboardColorPicker.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnClipboardColorPicker.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnClipboardColorPicker.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnClipboardColorPicker.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnClipboardColorPicker.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnClipboardColorPicker.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "lblName",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 309,
+          "y": 208
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 38,
+          "height": 13
+        },
+        "TabIndex": 49,
+        "Text": "Name:",
+        "Name": "lblName"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblName.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblName.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblName.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblName.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblName.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblName.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblNameValue",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 347,
+          "y": 203
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 112,
+          "height": 23
+        },
+        "TabIndex": 50,
+        "TextAlign": "MiddleRight",
+        "Name": "lblNameValue"
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "lblNameValue.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblNameValue.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblNameValue.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblNameValue.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "lblNameValue.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "flpColorPalette",
+      "type": "System.Windows.Forms.FlowLayoutPanel",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 293
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 296,
+          "height": 40
+        },
+        "TabIndex": 0,
+        "Name": "flpColorPalette"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "flpColorPalette.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "flpColorPalette.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "flpColorPalette.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "flpColorPaletteSelection",
+      "type": "System.Windows.Forms.FlowLayoutPanel",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
+      "properties": {
+        "AutoSize": true,
+        "AutoSizeMode": "GrowAndShrink",
+        "Location": {
+          "kind": "Point",
+          "x": 6,
+          "y": 269
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 202,
+          "height": 23
+        },
+        "TabIndex": 48,
+        "Name": "flpColorPaletteSelection"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "flpColorPaletteSelection.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "AutoSizeMode",
+          "resource_key": "flpColorPaletteSelection.AutoSizeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "flpColorPaletteSelection.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "flpColorPaletteSelection.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "flpColorPaletteSelection.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnScreenColorPicker",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "Image": {
+          "kind": "expr",
+          "raw": "global::ShareX.HelpersLib.Properties.Resources.pipette"
+        },
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 392,
+          "y": 296
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 32,
+          "height": 32
+        },
+        "TabIndex": 45,
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "btnScreenColorPicker.ToolTip"
+        },
+        "Visible": false,
+        "Name": "btnScreenColorPicker",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnScreenColorPicker.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnScreenColorPicker.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnScreenColorPicker.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnScreenColorPicker.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnScreenColorPicker.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Visible",
+          "resource_key": "btnScreenColorPicker.Visible",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "btnScreenColorPicker.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "btnClose",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 7,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 576,
+          "y": 296
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 96,
+          "height": 32
+        },
+        "TabIndex": 43,
+        "Text": "Close",
+        "Name": "btnClose",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnClose.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnClose.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnClose.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnClose.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnClose.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "pCursorPosition",
+      "type": "System.Windows.Forms.Panel",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 8,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 488,
+          "y": 232
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 192,
+          "height": 48
+        },
+        "TabIndex": 42,
+        "Name": "pCursorPosition"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "pCursorPosition.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "pCursorPosition.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "pCursorPosition.TabIndex",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
       "name": "mbCopy",
       "type": "MenuButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 9,
       "properties": {
         "ImeMode": "NoControl",
         "Location": {
@@ -3351,11 +680,385 @@
       ]
     },
     {
+      "name": "cbTransparent",
+      "type": "ColorButton",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 10,
+      "properties": {
+        "Color": {
+          "kind": "expr",
+          "raw": "System.Drawing.Color.Transparent"
+        },
+        "ColorPickerOptions": null,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 652,
+          "y": 13
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 23,
+          "height": 23
+        },
+        "TabIndex": 39,
+        "ToolTip": {
+          "kind": "resource_string",
+          "resource_key": "cbTransparent.ToolTip"
+        },
+        "ManualButtonClick": true,
+        "Name": "cbTransparent",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "cbTransparent.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "cbTransparent.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbTransparent.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbTransparent.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "cbTransparent.ToolTip",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ToolTip",
+          "resource_key": "cbTransparent.ToolTip",
+          "source": "GetString/GetObject"
+        }
+      ]
+    },
+    {
+      "name": "nudBlue",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 11,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 408,
+          "y": 78
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 48,
+          "height": 20
+        },
+        "TabIndex": 17,
+        "TextAlign": "Center",
+        "Maximum": 255,
+        "Name": "nudBlue",
+        "Value": 255
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudBlue.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudBlue.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudBlue.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudBlue.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudGreen",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 12,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 408,
+          "y": 46
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 48,
+          "height": 20
+        },
+        "TabIndex": 15,
+        "TextAlign": "Center",
+        "Maximum": 255,
+        "Name": "nudGreen",
+        "Value": 255
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudGreen.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudGreen.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudGreen.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudGreen.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudRed",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 13,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 408,
+          "y": 14
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 48,
+          "height": 20
+        },
+        "TabIndex": 13,
+        "TextAlign": "Center",
+        "Maximum": 255,
+        "Name": "nudRed",
+        "Value": 255
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudRed.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudRed.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudRed.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudRed.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "rbBlue",
+      "type": "System.Windows.Forms.RadioButton",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 14,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 312,
+          "y": 80
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 49,
+          "height": 17
+        },
+        "TabIndex": 16,
+        "Text": "Blue:",
+        "Name": "rbBlue",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "rbBlue.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "rbBlue.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "rbBlue.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "rbBlue.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "rbBlue.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "rbBlue.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "rbGreen",
+      "type": "System.Windows.Forms.RadioButton",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 15,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 312,
+          "y": 48
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 57,
+          "height": 17
+        },
+        "TabIndex": 14,
+        "Text": "Green:",
+        "Name": "rbGreen",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "rbGreen.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "rbGreen.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "rbGreen.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "rbGreen.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "rbGreen.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "rbGreen.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "rbRed",
+      "type": "System.Windows.Forms.RadioButton",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 16,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 312,
+          "y": 16
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 48,
+          "height": 17
+        },
+        "TabIndex": 12,
+        "Text": "Red:",
+        "Name": "rbRed",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "rbRed.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "rbRed.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "rbRed.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "rbRed.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "rbRed.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "rbRed.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
       "name": "pbColorPreview",
       "type": "MyPictureBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 17,
       "properties": {
         "BackColor": {
           "kind": "expr",
@@ -3402,11 +1105,467 @@
       ]
     },
     {
+      "name": "lblAlpha",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 18,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 485,
+          "y": 18
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 37,
+          "height": 13
+        },
+        "TabIndex": 18,
+        "Text": "Alpha:",
+        "Name": "lblAlpha"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblAlpha.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblAlpha.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblAlpha.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblAlpha.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblAlpha.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblAlpha.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudAlpha",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 19,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 600,
+          "y": 14
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 48,
+          "height": 20
+        },
+        "TabIndex": 19,
+        "TextAlign": "Center",
+        "Maximum": 255,
+        "Name": "nudAlpha",
+        "Value": 255
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudAlpha.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudAlpha.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudAlpha.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudAlpha.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblKeyPerc",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 20,
+      "properties": {
+        "AutoSize": true,
+        "Font": "Verdana, 8.25pt",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 658,
+          "y": 146
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 19,
+          "height": 13
+        },
+        "TabIndex": 31,
+        "Text": "%",
+        "Name": "lblKeyPerc"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblKeyPerc.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "lblKeyPerc.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblKeyPerc.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblKeyPerc.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblKeyPerc.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblKeyPerc.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblKeyPerc.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblYellowPerc",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 21,
+      "properties": {
+        "AutoSize": true,
+        "Font": "Verdana, 8.25pt",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 658,
+          "y": 112
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 19,
+          "height": 13
+        },
+        "TabIndex": 28,
+        "Text": "%",
+        "Name": "lblYellowPerc"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblYellowPerc.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "lblYellowPerc.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblYellowPerc.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblYellowPerc.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblYellowPerc.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblYellowPerc.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblYellowPerc.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblMagentaPerc",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 22,
+      "properties": {
+        "AutoSize": true,
+        "Font": "Verdana, 8.25pt",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 658,
+          "y": 82
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 19,
+          "height": 13
+        },
+        "TabIndex": 25,
+        "Text": "%",
+        "Name": "lblMagentaPerc"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblMagentaPerc.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "lblMagentaPerc.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblMagentaPerc.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblMagentaPerc.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblMagentaPerc.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblMagentaPerc.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblMagentaPerc.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblCyanPerc",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 23,
+      "properties": {
+        "AutoSize": true,
+        "Font": "Verdana, 8.25pt",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 658,
+          "y": 50
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 19,
+          "height": 13
+        },
+        "TabIndex": 22,
+        "Text": "%",
+        "Name": "lblCyanPerc"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblCyanPerc.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "lblCyanPerc.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblCyanPerc.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblCyanPerc.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblCyanPerc.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblCyanPerc.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblCyanPerc.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtDecimal",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 24,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 600,
+          "y": 204
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 72,
+          "height": 20
+        },
+        "TabIndex": 35,
+        "Text": "12345678",
+        "TextAlign": "Center",
+        "Name": "txtDecimal"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtDecimal.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtDecimal.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtDecimal.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "txtDecimal.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "txtDecimal.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblDecimal",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 25,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 485,
+          "y": 208
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 48,
+          "height": 13
+        },
+        "TabIndex": 34,
+        "Text": "Decimal:",
+        "Name": "lblDecimal"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblDecimal.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblDecimal.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblDecimal.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblDecimal.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblDecimal.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblDecimal.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
       "name": "colorPicker",
       "type": "ColorPicker",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 26,
       "properties": {
         "AutoSize": true,
         "Location": {
@@ -3448,12 +1607,2117 @@
           "source": "ApplyResources"
         }
       ]
+    },
+    {
+      "name": "btnCancel",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 27,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 576,
+          "y": 296
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 96,
+          "height": 32
+        },
+        "TabIndex": 1,
+        "Text": "Cancel",
+        "Name": "btnCancel",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnCancel.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnCancel.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCancel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCancel.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCancel.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnOK",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 28,
+      "properties": {
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 472,
+          "y": 296
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 96,
+          "height": 32
+        },
+        "TabIndex": 0,
+        "Text": "OK",
+        "Name": "btnOK",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "ImeMode",
+          "resource_key": "btnOK.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "btnOK.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnOK.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnOK.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnOK.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblOld",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 29,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 309,
+          "y": 262
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 26,
+          "height": 13
+        },
+        "TabIndex": 37,
+        "Text": "Old:",
+        "Name": "lblOld"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblOld.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblOld.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblOld.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblOld.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblOld.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblOld.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblNew",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 30,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 309,
+          "y": 238
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 32,
+          "height": 13
+        },
+        "TabIndex": 36,
+        "Text": "New:",
+        "Name": "lblNew"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblNew.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblNew.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblNew.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblNew.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblNew.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblNew.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtHex",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 31,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 600,
+          "y": 174
+        },
+        "MaxLength": 9,
+        "Size": {
+          "kind": "Size",
+          "width": 72,
+          "height": 20
+        },
+        "TabIndex": 33,
+        "Text": "FF00FF00",
+        "TextAlign": "Center",
+        "Name": "txtHex"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtHex.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "MaxLength",
+          "resource_key": "txtHex.MaxLength",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtHex.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtHex.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "txtHex.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "txtHex.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblHex",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 32,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 485,
+          "y": 178
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 29,
+          "height": 13
+        },
+        "TabIndex": 32,
+        "Text": "Hex:",
+        "Name": "lblHex"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblHex.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblHex.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblHex.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblHex.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblHex.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblHex.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudKey",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 33,
+      "properties": {
+        "DecimalPlaces": 1,
+        "Location": {
+          "kind": "Point",
+          "x": 600,
+          "y": 142
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 56,
+          "height": 20
+        },
+        "TabIndex": 30,
+        "TextAlign": "Center",
+        "Name": "nudKey",
+        "Value": 100
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudKey.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudKey.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudKey.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudKey.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudYellow",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 34,
+      "properties": {
+        "DecimalPlaces": 1,
+        "Location": {
+          "kind": "Point",
+          "x": 600,
+          "y": 108
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 56,
+          "height": 20
+        },
+        "TabIndex": 27,
+        "TextAlign": "Center",
+        "Name": "nudYellow",
+        "Value": 100
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudYellow.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudYellow.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudYellow.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudYellow.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudMagenta",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 35,
+      "properties": {
+        "DecimalPlaces": 1,
+        "Location": {
+          "kind": "Point",
+          "x": 600,
+          "y": 78
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 56,
+          "height": 20
+        },
+        "TabIndex": 24,
+        "TextAlign": "Center",
+        "Name": "nudMagenta",
+        "Value": 100
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudMagenta.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudMagenta.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudMagenta.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudMagenta.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudCyan",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 36,
+      "properties": {
+        "DecimalPlaces": 1,
+        "Location": {
+          "kind": "Point",
+          "x": 600,
+          "y": 46
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 56,
+          "height": 20
+        },
+        "TabIndex": 21,
+        "TextAlign": "Center",
+        "Name": "nudCyan",
+        "Value": 100
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudCyan.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudCyan.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudCyan.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudCyan.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblKey",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 37,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 485,
+          "y": 146
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 28,
+          "height": 13
+        },
+        "TabIndex": 29,
+        "Text": "Key:",
+        "Name": "lblKey"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblKey.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblKey.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblKey.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblKey.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblKey.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblKey.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblYellow",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 38,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 485,
+          "y": 112
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 41,
+          "height": 13
+        },
+        "TabIndex": 26,
+        "Text": "Yellow:",
+        "Name": "lblYellow"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblYellow.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblYellow.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblYellow.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblYellow.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblYellow.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblYellow.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblMagenta",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 39,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 485,
+          "y": 82
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 52,
+          "height": 13
+        },
+        "TabIndex": 23,
+        "Text": "Magenta:",
+        "Name": "lblMagenta"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblMagenta.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblMagenta.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblMagenta.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblMagenta.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblMagenta.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblMagenta.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblCyan",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 40,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 485,
+          "y": 50
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 34,
+          "height": 13
+        },
+        "TabIndex": 20,
+        "Text": "Cyan:",
+        "Name": "lblCyan"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblCyan.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblCyan.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblCyan.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblCyan.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblCyan.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblCyan.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblHue",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 41,
+      "properties": {
+        "AutoSize": true,
+        "Font": "Verdana, 8.25pt",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 460,
+          "y": 112
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 13,
+          "height": 13
+        },
+        "TabIndex": 5,
+        "Text": "°",
+        "Name": "lblHue"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblHue.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "lblHue.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblHue.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblHue.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblHue.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblHue.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblHue.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblBrightnessPerc",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 42,
+      "properties": {
+        "AutoSize": true,
+        "Font": "Verdana, 8.25pt",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 460,
+          "y": 178
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 19,
+          "height": 13
+        },
+        "TabIndex": 11,
+        "Text": "%",
+        "Name": "lblBrightnessPerc"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblBrightnessPerc.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "lblBrightnessPerc.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblBrightnessPerc.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblBrightnessPerc.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblBrightnessPerc.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblBrightnessPerc.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblBrightnessPerc.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblSaturationPerc",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 43,
+      "properties": {
+        "AutoSize": true,
+        "Font": "Verdana, 8.25pt",
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 460,
+          "y": 146
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 19,
+          "height": 13
+        },
+        "TabIndex": 8,
+        "Text": "%",
+        "Name": "lblSaturationPerc"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblSaturationPerc.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Font",
+          "resource_key": "lblSaturationPerc.Font",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblSaturationPerc.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblSaturationPerc.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblSaturationPerc.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblSaturationPerc.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblSaturationPerc.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudBrightness",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 44,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 408,
+          "y": 174
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 48,
+          "height": 20
+        },
+        "TabIndex": 10,
+        "TextAlign": "Center",
+        "Name": "nudBrightness",
+        "Value": 100
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudBrightness.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudBrightness.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudBrightness.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudBrightness.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudSaturation",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 45,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 408,
+          "y": 142
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 48,
+          "height": 20
+        },
+        "TabIndex": 7,
+        "TextAlign": "Center",
+        "Name": "nudSaturation",
+        "Value": 100
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudSaturation.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudSaturation.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudSaturation.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudSaturation.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "nudHue",
+      "type": "System.Windows.Forms.NumericUpDown",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 46,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 408,
+          "y": 108
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 48,
+          "height": 20
+        },
+        "TabIndex": 4,
+        "TextAlign": "Center",
+        "Maximum": 360,
+        "Name": "nudHue",
+        "Value": 360
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "nudHue.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "nudHue.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "nudHue.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "nudHue.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "rbBrightness",
+      "type": "System.Windows.Forms.RadioButton",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 47,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 312,
+          "y": 176
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 77,
+          "height": 17
+        },
+        "TabIndex": 9,
+        "Text": "Brightness:",
+        "Name": "rbBrightness",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "rbBrightness.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "rbBrightness.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "rbBrightness.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "rbBrightness.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "rbBrightness.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "rbBrightness.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "rbSaturation",
+      "type": "System.Windows.Forms.RadioButton",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 48,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 312,
+          "y": 144
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 76,
+          "height": 17
+        },
+        "TabIndex": 6,
+        "Text": "Saturation:",
+        "Name": "rbSaturation",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "rbSaturation.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "rbSaturation.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "rbSaturation.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "rbSaturation.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "rbSaturation.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "rbSaturation.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "rbHue",
+      "type": "System.Windows.Forms.RadioButton",
+      "parent": "ColorPickerForm",
+      "parent_slot": "Controls",
+      "child_index": 49,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 312,
+          "y": 112
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 48,
+          "height": 17
+        },
+        "TabIndex": 3,
+        "Text": "Hue:",
+        "Checked": true,
+        "Name": "rbHue",
+        "TabStop": true,
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "rbHue.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "rbHue.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "rbHue.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "rbHue.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "rbHue.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "rbHue.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiCopyAll",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": "cmsCopy",
+      "parent_slot": "Items",
+      "child_index": 0,
+      "properties": {
+        "Name": "tsmiCopyAll",
+        "Size": {
+          "kind": "Size",
+          "width": 147,
+          "height": 22
+        },
+        "Text": "Copy all"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiCopyAll.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiCopyAll.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiCopyRGB",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": "cmsCopy",
+      "parent_slot": "Items",
+      "child_index": 1,
+      "properties": {
+        "Name": "tsmiCopyRGB",
+        "Size": {
+          "kind": "Size",
+          "width": 147,
+          "height": 22
+        },
+        "Text": "Copy RGB"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiCopyRGB.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiCopyRGB.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiCopyHexadecimal",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": "cmsCopy",
+      "parent_slot": "Items",
+      "child_index": 2,
+      "properties": {
+        "Name": "tsmiCopyHexadecimal",
+        "Size": {
+          "kind": "Size",
+          "width": 147,
+          "height": 22
+        },
+        "Text": "Copy hexadecimal"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiCopyHexadecimal.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiCopyHexadecimal.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiCopyCMYK",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": "cmsCopy",
+      "parent_slot": "Items",
+      "child_index": 3,
+      "properties": {
+        "Name": "tsmiCopyCMYK",
+        "Size": {
+          "kind": "Size",
+          "width": 147,
+          "height": 22
+        },
+        "Text": "Copy CMYK"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiCopyCMYK.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiCopyCMYK.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiCopyHSB",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": "cmsCopy",
+      "parent_slot": "Items",
+      "child_index": 4,
+      "properties": {
+        "Name": "tsmiCopyHSB",
+        "Size": {
+          "kind": "Size",
+          "width": 147,
+          "height": 22
+        },
+        "Text": "Copy HSB"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiCopyHSB.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiCopyHSB.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiCopyDecimal",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": "cmsCopy",
+      "parent_slot": "Items",
+      "child_index": 5,
+      "properties": {
+        "Name": "tsmiCopyDecimal",
+        "Size": {
+          "kind": "Size",
+          "width": 147,
+          "height": 22
+        },
+        "Text": "Copy decimal"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiCopyDecimal.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiCopyDecimal.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "tsmiCopyPosition",
+      "type": "System.Windows.Forms.ToolStripMenuItem",
+      "parent": "cmsCopy",
+      "parent_slot": "Items",
+      "child_index": 6,
+      "properties": {
+        "Name": "tsmiCopyPosition",
+        "Size": {
+          "kind": "Size",
+          "width": 147,
+          "height": 22
+        },
+        "Text": "Copy position"
+      },
+      "resources": [
+        {
+          "property": "Size",
+          "resource_key": "tsmiCopyPosition.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "tsmiCopyPosition.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "rbRecentColors",
+      "type": "System.Windows.Forms.RadioButton",
+      "parent": "flpColorPaletteSelection",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 3,
+          "y": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 91,
+          "height": 17
+        },
+        "TabIndex": 46,
+        "Text": "Recent colors",
+        "Checked": true,
+        "Name": "rbRecentColors",
+        "TabStop": true,
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "rbRecentColors.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "rbRecentColors.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "rbRecentColors.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "rbRecentColors.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "rbRecentColors.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "rbRecentColors.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "rbStandardColors",
+      "type": "System.Windows.Forms.RadioButton",
+      "parent": "flpColorPaletteSelection",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 100,
+          "y": 3
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 99,
+          "height": 17
+        },
+        "TabIndex": 47,
+        "Text": "Standard colors",
+        "Name": "rbStandardColors",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "rbStandardColors.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "rbStandardColors.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "rbStandardColors.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "rbStandardColors.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "rbStandardColors.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "rbStandardColors.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtY",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "pCursorPosition",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 136,
+          "y": 24
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 48,
+          "height": 20
+        },
+        "TabIndex": 4,
+        "Text": "0",
+        "TextAlign": "Center",
+        "Name": "txtY",
+        "ReadOnly": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtY.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtY.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtY.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "txtY.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "txtY.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "txtX",
+      "type": "System.Windows.Forms.TextBox",
+      "parent": "pCursorPosition",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 136,
+          "y": 0
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 48,
+          "height": 20
+        },
+        "TabIndex": 3,
+        "Text": "0",
+        "TextAlign": "Center",
+        "Name": "txtX",
+        "ReadOnly": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "txtX.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "txtX.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "txtX.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "txtX.Text",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TextAlign",
+          "resource_key": "txtX.TextAlign",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblY",
+      "type": "System.Windows.Forms.Label",
+      "parent": "pCursorPosition",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 112,
+          "y": 28
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 17,
+          "height": 13
+        },
+        "TabIndex": 2,
+        "Text": "Y:",
+        "Name": "lblY"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblY.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblY.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblY.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblY.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblY.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblY.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblX",
+      "type": "System.Windows.Forms.Label",
+      "parent": "pCursorPosition",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": 112,
+          "y": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 17,
+          "height": 13
+        },
+        "TabIndex": 1,
+        "Text": "X:",
+        "Name": "lblX"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblX.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblX.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblX.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblX.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblX.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblX.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblCursorPosition",
+      "type": "System.Windows.Forms.Label",
+      "parent": "pCursorPosition",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "AutoSize": true,
+        "ImeMode": "NoControl",
+        "Location": {
+          "kind": "Point",
+          "x": -3,
+          "y": 4
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 79,
+          "height": 13
+        },
+        "TabIndex": 0,
+        "Text": "Cursor position:",
+        "Name": "lblCursorPosition"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblCursorPosition.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "ImeMode",
+          "resource_key": "lblCursorPosition.ImeMode",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblCursorPosition.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblCursorPosition.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblCursorPosition.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblCursorPosition.Text",
+          "source": "ApplyResources"
+        }
+      ]
     }
   ],
   "tree": {
     "name": "ColorPickerForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "btnClipboardStatus",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnClipboardColorPicker",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "lblName",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblNameValue",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "flpColorPalette",
+          "type": "System.Windows.Forms.FlowLayoutPanel",
+          "slots": {}
+        },
+        {
+          "name": "flpColorPaletteSelection",
+          "type": "System.Windows.Forms.FlowLayoutPanel",
+          "slots": {
+            "Controls": [
+              {
+                "name": "rbRecentColors",
+                "type": "System.Windows.Forms.RadioButton",
+                "slots": {}
+              },
+              {
+                "name": "rbStandardColors",
+                "type": "System.Windows.Forms.RadioButton",
+                "slots": {}
+              }
+            ]
+          }
+        },
+        {
+          "name": "btnScreenColorPicker",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnClose",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "pCursorPosition",
+          "type": "System.Windows.Forms.Panel",
+          "slots": {
+            "Controls": [
+              {
+                "name": "txtY",
+                "type": "System.Windows.Forms.TextBox",
+                "slots": {}
+              },
+              {
+                "name": "txtX",
+                "type": "System.Windows.Forms.TextBox",
+                "slots": {}
+              },
+              {
+                "name": "lblY",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "lblX",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              },
+              {
+                "name": "lblCursorPosition",
+                "type": "System.Windows.Forms.Label",
+                "slots": {}
+              }
+            ]
+          }
+        },
+        {
+          "name": "mbCopy",
+          "type": "MenuButton",
+          "slots": {}
+        },
+        {
+          "name": "cbTransparent",
+          "type": "ColorButton",
+          "slots": {}
+        },
+        {
+          "name": "nudBlue",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "nudGreen",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "nudRed",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "rbBlue",
+          "type": "System.Windows.Forms.RadioButton",
+          "slots": {}
+        },
+        {
+          "name": "rbGreen",
+          "type": "System.Windows.Forms.RadioButton",
+          "slots": {}
+        },
+        {
+          "name": "rbRed",
+          "type": "System.Windows.Forms.RadioButton",
+          "slots": {}
+        },
+        {
+          "name": "pbColorPreview",
+          "type": "MyPictureBox",
+          "slots": {}
+        },
+        {
+          "name": "lblAlpha",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "nudAlpha",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "lblKeyPerc",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblYellowPerc",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblMagentaPerc",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblCyanPerc",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "txtDecimal",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblDecimal",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "colorPicker",
+          "type": "ColorPicker",
+          "slots": {}
+        },
+        {
+          "name": "btnCancel",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnOK",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "lblOld",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblNew",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "txtHex",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblHex",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "nudKey",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "nudYellow",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "nudMagenta",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "nudCyan",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "lblKey",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblYellow",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblMagenta",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblCyan",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblHue",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblBrightnessPerc",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblSaturationPerc",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "nudBrightness",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "nudSaturation",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "nudHue",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "rbBrightness",
+          "type": "System.Windows.Forms.RadioButton",
+          "slots": {}
+        },
+        {
+          "name": "rbSaturation",
+          "type": "System.Windows.Forms.RadioButton",
+          "slots": {}
+        },
+        {
+          "name": "rbHue",
+          "type": "System.Windows.Forms.RadioButton",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "btnCancel.Text": "Cancel",

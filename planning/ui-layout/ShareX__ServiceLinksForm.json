@@ -32,108 +32,15 @@
   ],
   "controls": [
     {
-      "name": "cbServices",
-      "type": "System.Windows.Forms.ComboBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "DropDownStyle": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
-        },
-        "FormattingEnabled": true,
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 64
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 376,
-          "height": 21
-        },
-        "TabIndex": 4,
-        "Name": "cbServices"
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "cbServices.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "cbServices.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "cbServices.TabIndex",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblServices",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 13,
-          "y": 48
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 51,
-          "height": 13
-        },
-        "TabIndex": 3,
-        "Text": "Services:",
-        "Name": "lblServices"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblServices.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblServices.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblServices.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblServices.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblServices.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnNew",
+      "name": "btnReset",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ServiceLinksForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "Location": {
           "kind": "Point",
-          "x": 16,
+          "x": 272,
           "y": 16
         },
         "Size": {
@@ -141,163 +48,68 @@
           "width": 120,
           "height": 24
         },
-        "TabIndex": 0,
-        "Text": "New",
-        "Name": "btnNew",
+        "TabIndex": 2,
+        "Text": "Reset",
+        "Name": "btnReset",
         "UseVisualStyleBackColor": true
       },
       "resources": [
         {
           "property": "Location",
-          "resource_key": "btnNew.Location",
+          "resource_key": "btnReset.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "btnNew.Size",
+          "resource_key": "btnReset.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "btnNew.TabIndex",
+          "resource_key": "btnReset.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "btnNew.Text",
+          "resource_key": "btnReset.Text",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "btnRemove",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 144,
-          "y": 16
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 120,
-          "height": 24
-        },
-        "TabIndex": 1,
-        "Text": "Remove",
-        "Name": "btnRemove",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnRemove.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnRemove.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnRemove.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnRemove.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "lblName",
-      "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "AutoSize": true,
-        "Location": {
-          "kind": "Point",
-          "x": 13,
-          "y": 96
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 38,
-          "height": 13
-        },
-        "TabIndex": 5,
-        "Text": "Name:",
-        "Name": "lblName"
-      },
-      "resources": [
-        {
-          "property": "AutoSize",
-          "resource_key": "lblName.AutoSize",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Location",
-          "resource_key": "lblName.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "lblName.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "lblName.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "lblName.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "txtName",
+      "name": "txtURL",
       "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ServiceLinksForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
         "Location": {
           "kind": "Point",
           "x": 16,
-          "y": 112
+          "y": 160
         },
         "Size": {
           "kind": "Size",
           "width": 376,
           "height": 20
         },
-        "TabIndex": 6,
-        "Name": "txtName"
+        "TabIndex": 8,
+        "Name": "txtURL"
       },
       "resources": [
         {
           "property": "Location",
-          "resource_key": "txtName.Location",
+          "resource_key": "txtURL.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "txtName.Size",
+          "resource_key": "txtURL.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "txtName.TabIndex",
+          "resource_key": "txtURL.TabIndex",
           "source": "ApplyResources"
         }
       ]
@@ -305,9 +117,9 @@
     {
       "name": "lblURL",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ServiceLinksForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
       "properties": {
         "AutoSize": true,
         "Location": {
@@ -353,53 +165,103 @@
       ]
     },
     {
-      "name": "txtURL",
+      "name": "txtName",
       "type": "System.Windows.Forms.TextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ServiceLinksForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
       "properties": {
         "Location": {
           "kind": "Point",
           "x": 16,
-          "y": 160
+          "y": 112
         },
         "Size": {
           "kind": "Size",
           "width": 376,
           "height": 20
         },
-        "TabIndex": 8,
-        "Name": "txtURL"
+        "TabIndex": 6,
+        "Name": "txtName"
       },
       "resources": [
         {
           "property": "Location",
-          "resource_key": "txtURL.Location",
+          "resource_key": "txtName.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "txtURL.Size",
+          "resource_key": "txtName.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "txtURL.TabIndex",
+          "resource_key": "txtName.TabIndex",
           "source": "ApplyResources"
         }
       ]
     },
     {
-      "name": "btnReset",
+      "name": "lblName",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ServiceLinksForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 96
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 38,
+          "height": 13
+        },
+        "TabIndex": 5,
+        "Text": "Name:",
+        "Name": "lblName"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblName.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblName.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblName.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblName.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblName.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnRemove",
       "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "ServiceLinksForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
       "properties": {
         "Location": {
           "kind": "Point",
-          "x": 272,
+          "x": 144,
           "y": 16
         },
         "Size": {
@@ -407,30 +269,168 @@
           "width": 120,
           "height": 24
         },
-        "TabIndex": 2,
-        "Text": "Reset",
-        "Name": "btnReset",
+        "TabIndex": 1,
+        "Text": "Remove",
+        "Name": "btnRemove",
         "UseVisualStyleBackColor": true
       },
       "resources": [
         {
           "property": "Location",
-          "resource_key": "btnReset.Location",
+          "resource_key": "btnRemove.Location",
           "source": "ApplyResources"
         },
         {
           "property": "Size",
-          "resource_key": "btnReset.Size",
+          "resource_key": "btnRemove.Size",
           "source": "ApplyResources"
         },
         {
           "property": "TabIndex",
-          "resource_key": "btnReset.TabIndex",
+          "resource_key": "btnRemove.TabIndex",
           "source": "ApplyResources"
         },
         {
           "property": "Text",
-          "resource_key": "btnReset.Text",
+          "resource_key": "btnRemove.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnNew",
+      "type": "System.Windows.Forms.Button",
+      "parent": "ServiceLinksForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 16
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 24
+        },
+        "TabIndex": 0,
+        "Text": "New",
+        "Name": "btnNew",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnNew.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnNew.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnNew.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnNew.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "lblServices",
+      "type": "System.Windows.Forms.Label",
+      "parent": "ServiceLinksForm",
+      "parent_slot": "Controls",
+      "child_index": 7,
+      "properties": {
+        "AutoSize": true,
+        "Location": {
+          "kind": "Point",
+          "x": 13,
+          "y": 48
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 51,
+          "height": 13
+        },
+        "TabIndex": 3,
+        "Text": "Services:",
+        "Name": "lblServices"
+      },
+      "resources": [
+        {
+          "property": "AutoSize",
+          "resource_key": "lblServices.AutoSize",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Location",
+          "resource_key": "lblServices.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "lblServices.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "lblServices.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "lblServices.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "cbServices",
+      "type": "System.Windows.Forms.ComboBox",
+      "parent": "ServiceLinksForm",
+      "parent_slot": "Controls",
+      "child_index": 8,
+      "properties": {
+        "DropDownStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.ComboBoxStyle.DropDownList"
+        },
+        "FormattingEnabled": true,
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 64
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 376,
+          "height": 21
+        },
+        "TabIndex": 4,
+        "Name": "cbServices"
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "cbServices.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "cbServices.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "cbServices.TabIndex",
           "source": "ApplyResources"
         }
       ]
@@ -439,7 +439,55 @@
   "tree": {
     "name": "ServiceLinksForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "btnReset",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "txtURL",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblURL",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "txtName",
+          "type": "System.Windows.Forms.TextBox",
+          "slots": {}
+        },
+        {
+          "name": "lblName",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "btnRemove",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnNew",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "lblServices",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "cbServices",
+          "type": "System.Windows.Forms.ComboBox",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "lblServices.Text": "Services:",

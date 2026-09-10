@@ -34,11 +34,146 @@
   ],
   "controls": [
     {
+      "name": "gbBackgroundColor",
+      "type": "System.Windows.Forms.GroupBox",
+      "parent": "NewImageForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 80
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 232,
+          "height": 88
+        },
+        "TabIndex": 6,
+        "Text": "Background color",
+        "Name": "gbBackgroundColor",
+        "TabStop": false
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "gbBackgroundColor.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "gbBackgroundColor.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "gbBackgroundColor.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "gbBackgroundColor.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnCancel",
+      "type": "System.Windows.Forms.Button",
+      "parent": "NewImageForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 136,
+          "y": 176
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 112,
+          "height": 23
+        },
+        "TabIndex": 8,
+        "Text": "Cancel",
+        "Name": "btnCancel",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnCancel.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnCancel.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnCancel.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnCancel.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
+      "name": "btnOK",
+      "type": "System.Windows.Forms.Button",
+      "parent": "NewImageForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Location": {
+          "kind": "Point",
+          "x": 16,
+          "y": 176
+        },
+        "Size": {
+          "kind": "Size",
+          "width": 112,
+          "height": 23
+        },
+        "TabIndex": 7,
+        "Text": "OK",
+        "Name": "btnOK",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": [
+        {
+          "property": "Location",
+          "resource_key": "btnOK.Location",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Size",
+          "resource_key": "btnOK.Size",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "TabIndex",
+          "resource_key": "btnOK.TabIndex",
+          "source": "ApplyResources"
+        },
+        {
+          "property": "Text",
+          "resource_key": "btnOK.Text",
+          "source": "ApplyResources"
+        }
+      ]
+    },
+    {
       "name": "lblHeightPixels",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "NewImageForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
       "properties": {
         "AutoSize": true,
         "ImeMode": "NoControl",
@@ -92,9 +227,9 @@
     {
       "name": "lblWidthPixels",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "NewImageForm",
+      "parent_slot": "Controls",
+      "child_index": 4,
       "properties": {
         "AutoSize": true,
         "ImeMode": "NoControl",
@@ -148,9 +283,9 @@
     {
       "name": "lblHeight",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "NewImageForm",
+      "parent_slot": "Controls",
+      "child_index": 5,
       "properties": {
         "AutoSize": true,
         "ImeMode": "NoControl",
@@ -204,9 +339,9 @@
     {
       "name": "lblWidth",
       "type": "System.Windows.Forms.Label",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "NewImageForm",
+      "parent_slot": "Controls",
+      "child_index": 6,
       "properties": {
         "AutoSize": true,
         "ImeMode": "NoControl",
@@ -260,9 +395,9 @@
     {
       "name": "nudHeight",
       "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "NewImageForm",
+      "parent_slot": "Controls",
+      "child_index": 7,
       "properties": {
         "Location": {
           "kind": "Point",
@@ -306,9 +441,9 @@
     {
       "name": "nudWidth",
       "type": "System.Windows.Forms.NumericUpDown",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "NewImageForm",
+      "parent_slot": "Controls",
+      "child_index": 8,
       "properties": {
         "Location": {
           "kind": "Point",
@@ -352,9 +487,9 @@
     {
       "name": "cbTransparent",
       "type": "System.Windows.Forms.CheckBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "gbBackgroundColor",
+      "parent_slot": "Controls",
+      "child_index": 0,
       "properties": {
         "AutoSize": true,
         "Location": {
@@ -403,9 +538,9 @@
     {
       "name": "btnChangeColor",
       "type": "HelpersLib.ColorButton",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
+      "parent": "gbBackgroundColor",
+      "parent_slot": "Controls",
+      "child_index": 1,
       "properties": {
         "Color": {
           "kind": "expr",
@@ -455,147 +590,73 @@
           "source": "ApplyResources"
         }
       ]
-    },
-    {
-      "name": "btnOK",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 176
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 112,
-          "height": 23
-        },
-        "TabIndex": 7,
-        "Text": "OK",
-        "Name": "btnOK",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnOK.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnOK.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnOK.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnOK.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "btnCancel",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 136,
-          "y": 176
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 112,
-          "height": 23
-        },
-        "TabIndex": 8,
-        "Text": "Cancel",
-        "Name": "btnCancel",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "btnCancel.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "btnCancel.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "btnCancel.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "btnCancel.Text",
-          "source": "ApplyResources"
-        }
-      ]
-    },
-    {
-      "name": "gbBackgroundColor",
-      "type": "System.Windows.Forms.GroupBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Location": {
-          "kind": "Point",
-          "x": 16,
-          "y": 80
-        },
-        "Size": {
-          "kind": "Size",
-          "width": 232,
-          "height": 88
-        },
-        "TabIndex": 6,
-        "Text": "Background color",
-        "Name": "gbBackgroundColor",
-        "TabStop": false
-      },
-      "resources": [
-        {
-          "property": "Location",
-          "resource_key": "gbBackgroundColor.Location",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Size",
-          "resource_key": "gbBackgroundColor.Size",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "TabIndex",
-          "resource_key": "gbBackgroundColor.TabIndex",
-          "source": "ApplyResources"
-        },
-        {
-          "property": "Text",
-          "resource_key": "gbBackgroundColor.Text",
-          "source": "ApplyResources"
-        }
-      ]
     }
   ],
   "tree": {
     "name": "NewImageForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "gbBackgroundColor",
+          "type": "System.Windows.Forms.GroupBox",
+          "slots": {
+            "Controls": [
+              {
+                "name": "cbTransparent",
+                "type": "System.Windows.Forms.CheckBox",
+                "slots": {}
+              },
+              {
+                "name": "btnChangeColor",
+                "type": "HelpersLib.ColorButton",
+                "slots": {}
+              }
+            ]
+          }
+        },
+        {
+          "name": "btnCancel",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnOK",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "lblHeightPixels",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblWidthPixels",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblHeight",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "lblWidth",
+          "type": "System.Windows.Forms.Label",
+          "slots": {}
+        },
+        {
+          "name": "nudHeight",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        },
+        {
+          "name": "nudWidth",
+          "type": "System.Windows.Forms.NumericUpDown",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {
     "lblHeightPixels.Text": "pixels",

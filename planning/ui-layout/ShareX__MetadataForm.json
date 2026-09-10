@@ -19,126 +19,6 @@
   ],
   "controls": [
     {
-      "name": "btnOpen",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": {
-          "kind": "expr",
-          "raw": "((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)))"
-        },
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 520
-        },
-        "Name": "btnOpen",
-        "Size": {
-          "kind": "Size",
-          "width": 120,
-          "height": 32
-        },
-        "TabIndex": 1,
-        "Text": "Open...",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": []
-    },
-    {
-      "name": "rtbMetadata",
-      "type": "System.Windows.Forms.RichTextBox",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": {
-          "kind": "expr",
-          "raw": "((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)))"
-        },
-        "BorderStyle": {
-          "kind": "expr",
-          "raw": "System.Windows.Forms.BorderStyle.None"
-        },
-        "Font": {
-          "kind": "expr",
-          "raw": "new System.Drawing.Font(\"Segoe UI\", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)))"
-        },
-        "Location": {
-          "kind": "Point",
-          "x": 8,
-          "y": 8
-        },
-        "Name": "rtbMetadata",
-        "ReadOnly": true,
-        "Size": {
-          "kind": "Size",
-          "width": 568,
-          "height": 504
-        },
-        "TabIndex": 0,
-        "Text": ""
-      },
-      "resources": []
-    },
-    {
-      "name": "btnCopyAll",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": {
-          "kind": "expr",
-          "raw": "((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)))"
-        },
-        "Location": {
-          "kind": "Point",
-          "x": 136,
-          "y": 520
-        },
-        "Name": "btnCopyAll",
-        "Size": {
-          "kind": "Size",
-          "width": 120,
-          "height": 32
-        },
-        "TabIndex": 2,
-        "Text": "Copy all",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": []
-    },
-    {
-      "name": "btnStripMetadata",
-      "type": "System.Windows.Forms.Button",
-      "parent": null,
-      "parent_slot": null,
-      "child_index": null,
-      "properties": {
-        "Anchor": {
-          "kind": "expr",
-          "raw": "((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)))"
-        },
-        "Location": {
-          "kind": "Point",
-          "x": 264,
-          "y": 520
-        },
-        "Name": "btnStripMetadata",
-        "Size": {
-          "kind": "Size",
-          "width": 160,
-          "height": 32
-        },
-        "TabIndex": 3,
-        "Text": "Strip metadata...",
-        "UseVisualStyleBackColor": true
-      },
-      "resources": []
-    },
-    {
       "name": "AutoScaleDimensions",
       "type": "System.Drawing.SizeF",
       "parent": null,
@@ -182,12 +62,155 @@
       "child_index": null,
       "properties": {},
       "resources": []
+    },
+    {
+      "name": "btnStripMetadata",
+      "type": "System.Windows.Forms.Button",
+      "parent": "MetadataForm",
+      "parent_slot": "Controls",
+      "child_index": 0,
+      "properties": {
+        "Anchor": {
+          "kind": "expr",
+          "raw": "((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)))"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 264,
+          "y": 520
+        },
+        "Name": "btnStripMetadata",
+        "Size": {
+          "kind": "Size",
+          "width": 160,
+          "height": 32
+        },
+        "TabIndex": 3,
+        "Text": "Strip metadata...",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": []
+    },
+    {
+      "name": "btnCopyAll",
+      "type": "System.Windows.Forms.Button",
+      "parent": "MetadataForm",
+      "parent_slot": "Controls",
+      "child_index": 1,
+      "properties": {
+        "Anchor": {
+          "kind": "expr",
+          "raw": "((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)))"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 136,
+          "y": 520
+        },
+        "Name": "btnCopyAll",
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 32
+        },
+        "TabIndex": 2,
+        "Text": "Copy all",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": []
+    },
+    {
+      "name": "rtbMetadata",
+      "type": "System.Windows.Forms.RichTextBox",
+      "parent": "MetadataForm",
+      "parent_slot": "Controls",
+      "child_index": 2,
+      "properties": {
+        "Anchor": {
+          "kind": "expr",
+          "raw": "((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)))"
+        },
+        "BorderStyle": {
+          "kind": "expr",
+          "raw": "System.Windows.Forms.BorderStyle.None"
+        },
+        "Font": {
+          "kind": "expr",
+          "raw": "new System.Drawing.Font(\"Segoe UI\", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)))"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 8
+        },
+        "Name": "rtbMetadata",
+        "ReadOnly": true,
+        "Size": {
+          "kind": "Size",
+          "width": 568,
+          "height": 504
+        },
+        "TabIndex": 0,
+        "Text": ""
+      },
+      "resources": []
+    },
+    {
+      "name": "btnOpen",
+      "type": "System.Windows.Forms.Button",
+      "parent": "MetadataForm",
+      "parent_slot": "Controls",
+      "child_index": 3,
+      "properties": {
+        "Anchor": {
+          "kind": "expr",
+          "raw": "((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)))"
+        },
+        "Location": {
+          "kind": "Point",
+          "x": 8,
+          "y": 520
+        },
+        "Name": "btnOpen",
+        "Size": {
+          "kind": "Size",
+          "width": 120,
+          "height": 32
+        },
+        "TabIndex": 1,
+        "Text": "Open...",
+        "UseVisualStyleBackColor": true
+      },
+      "resources": []
     }
   ],
   "tree": {
     "name": "MetadataForm",
     "type": "Form",
-    "slots": {}
+    "slots": {
+      "Controls": [
+        {
+          "name": "btnStripMetadata",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "btnCopyAll",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        },
+        {
+          "name": "rtbMetadata",
+          "type": "System.Windows.Forms.RichTextBox",
+          "slots": {}
+        },
+        {
+          "name": "btnOpen",
+          "type": "System.Windows.Forms.Button",
+          "slots": {}
+        }
+      ]
+    }
   },
   "strings": {},
   "binary_resources": [],
