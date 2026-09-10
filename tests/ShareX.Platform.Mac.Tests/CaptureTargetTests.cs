@@ -57,7 +57,10 @@ namespace ShareX.Platform.Mac.Tests
             var json = CaptureTarget.Region(rect).ToJson();
 
             Assert.Equal("region", json["kind"]);
-            Assert.Equal("cgGlobalPoints", json["space"]);
+            // The ABI's SXMSpace raw value, not the C# enum spelling. See
+            // CoordinateSpaceWireNameTests: this originally asserted
+            // "cgGlobalPoints", which the native route rejects.
+            Assert.Equal("cg-global-points", json["space"]);
             var rectJson = Assert.IsType<Dictionary<string, object?>>(json["rect"]);
             Assert.Equal(1d, rectJson["x"]);
             Assert.Equal(2d, rectJson["y"]);
@@ -71,7 +74,7 @@ namespace ShareX.Platform.Mac.Tests
             var rect = new PointRect(0, 0, 1, 1, CoordinateSpace.AppKitPoints);
             var json = CaptureTarget.Region(rect).ToJson();
 
-            Assert.Equal("appKitPoints", json["space"]);
+            Assert.Equal("appkit-points", json["space"]);
         }
 
         [Theory]

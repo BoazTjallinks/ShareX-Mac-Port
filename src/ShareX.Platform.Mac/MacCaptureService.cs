@@ -114,9 +114,28 @@ namespace ShareX.Platform.Mac
                     ["width"] = Rect.Width,
                     ["height"] = Rect.Height
                 },
-                ["space"] = Rect.Space == CoordinateSpace.AppKitPoints ? "appKitPoints" : "cgGlobalPoints"
+                // These strings are the ABI's own SXMSpace raw values
+                // (native/ShareXMacNative/swift/SXMGeometry.swift). They are
+                // kebab-case, NOT the C# enum spelling: the native route rejects
+                // any other value with SXM_INVALID_INPUT rather than guessing.
+                ["space"] = Rect.Space == CoordinateSpace.AppKitPoints
+                    ? NativeSpaceNames.AppKitPoints
+                    : NativeSpaceNames.CgGlobalPoints
             };
         }
+    }
+
+    /// <summary>
+    /// Wire values for the native ABI's coordinate spaces, mirroring the SXMSpace
+    /// raw values in native/ShareXMacNative/swift/SXMGeometry.swift. Kept in one
+    /// place because a mismatch here fails only at runtime, on the native side.
+    /// </summary>
+    internal static class NativeSpaceNames
+    {
+        internal const string CgGlobalPoints = "cg-global-points";
+        internal const string AppKitPoints = "appkit-points";
+        internal const string DisplayPixels = "display-pixels";
+        internal const string DisplayPoints = "display-points";
     }
 
     /// <summary>
